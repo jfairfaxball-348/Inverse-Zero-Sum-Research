@@ -1,10 +1,10 @@
 # External reviewer register
 
-**Confirmed reviewer: NONE. Intended first reviewer approach: Pingzhi Yuan.**
-No outreach has yet been authorized or sent by this programme. The owner's
-2026-10-02 preference is to pursue Pingzhi Yuan in parallel with CAND-01 due
-diligence, but publication history, earlier correspondence or subject-matter
-expertise is not review willingness.
+**Confirmed reviewer: NONE. No outreach is currently authorized.**
+The prepared Pingzhi Yuan package is a CAND-01 artifact and is **on hold** under
+owner decision D-016 while CAND-02 is scrutinized. S003 must reassess reviewer
+fit for CAND-02 rather than assuming Pingzhi remains the strongest first
+approach.
 
 Private contact observations remain owner-supplied summaries only. Do not copy
 private messages or email addresses into the public repository.
@@ -122,3 +122,18 @@ The complete two-stage package is
 **No message has been sent. No reviewer is confirmed.** Earlier correspondence
 is not an agreement. Owner authorization is required before transmitting the
 prepared Stage-1 request.
+
+
+## S003 reviewer reassessment requirement
+
+For CAND-02, compare the actual public expertise and independence/conflict
+position of Pingzhi Yuan, David J. Grynkiewicz, Benjamin Girard, Wolfgang A.
+Schmid and any stronger rank-three inverse-EGZ specialist found in the source
+audit. Girard and Schmid's authorship of the closest direct/inverse baseline is
+an important expertise signal but may make them less suitable as the programme's
+independent pre-submission reviewer; assess rather than assume.
+
+If CAND-02 survives the literature audit, S003 may prepare an **unsent**
+target-specific Stage-1 status/proposal-review package for the strongest
+conflict-appropriate reviewer candidate. No message is authorized until the
+owner settles the target and separately authorizes outreach.
