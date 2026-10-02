@@ -84,3 +84,31 @@ completed sessions. Record the audit in the corresponding session directory.
 Repetition of a failed approach without new information requires a recorded
 reason. Repository size, session count, model agreement and green builds are
 not substitutes for research progress.
+
+
+## Frontier after S002
+
+S002 completed the target-status, publication and reviewer-preparation parts of
+P1 without doing mathematical work.
+
+- **Target gate OPEN:** CAND-01 is exactly specified against Gao's original
+  formulation, multiplicativity, historical cases, the 2010 large-prime
+  announcement and Schlage-Puchta's 2025 existential sufficiently-large-prime
+  theorem. The full all-`n` identity remains selected, while the operative
+  status-unknown residue is the finite exceptional-prime layer below an
+  unspecified cutoff. No openness claim is inferred.
+- **Publication gate OPEN:** E-JC is the retained leading venue based on current
+  official scope, peer review, substantive-AI permission, active web route,
+  comparable zero-sum papers and conflict policy.
+- **External review gate CLOSED:** Pingzhi Yuan's public identity/contact route
+  and subject match are verified and the Stage-1/Stage-2 drafts are prepared,
+  but nothing was sent and no willingness exists.
+- **Computation gate CLOSED:** proof search, examples, experiments and
+  formalisation remain prohibited.
+
+The immediate dependency is owner authorization to transmit the prepared
+Stage-1 Pingzhi Yuan status/proposal request. While B-002 is active there is no
+ready next numbered session. After an authorized send, independent literature
+maintenance may continue while awaiting a reply, but proof/computation does not
+begin until the external proposal assessment and remaining gate requirements
+are actually completed.
