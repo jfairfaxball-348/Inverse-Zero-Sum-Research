@@ -1,10 +1,11 @@
 # External reviewer register
 
 **Confirmed reviewer: NONE. No outreach is currently authorized.**
-The prepared Pingzhi Yuan package is a CAND-01 artifact and is **on hold** under
-owner decision D-016 while CAND-02 is scrutinized. S003 must reassess reviewer
-fit for CAND-02 rather than assuming Pingzhi remains the strongest first
-approach.
+The prepared Pingzhi Yuan package for CAND-01 and Xue Li package for CAND-02
+are both **on hold and unsent**. Owner decision D-019 postpones target-specific
+outreach while S004 audits CAND-03 and CAND-04. S004 may prepare additional
+unsent Stage-1 packages for surviving candidates, but target selection and
+separate explicit send authorization remain prerequisites for transmission.
 
 Private contact observations remain owner-supplied summaries only. Do not copy
 private messages or email addresses into the public repository.
@@ -185,3 +186,25 @@ Prepared package:
 requires separate explicit authorization and a fresh public identity/contact
 check immediately before sending. If the owner retains CAND-01, the prepared
 Pingzhi Yuan package remains the relevant target-specific route instead.
+
+
+## S004 reviewer-audit requirement
+
+S004 must perform candidate-specific reviewer reassessment for the two remaining
+candidates rather than reusing earlier contacts by convenience.
+
+For CAND-03, assess at least Qinghai Zhong, Wanzhen Hui, Xue Li, Pingzhi Yuan,
+and any stronger independently sourced generalized-Narkiewicz/factorization
+specialist. Distinguish exact status expertise from independence where authors
+of the defining or closest completion papers are considered.
+
+For CAND-04, assess at least Wolfgang A. Schmid, Benjamin Girard,
+Jan-Christoph Schlage-Puchta, David J. Grynkiewicz, Pingzhi Yuan, and any
+stronger independently sourced higher-rank Property-D/EGZ specialist. Pay
+particular attention to whether authorship of controlling direct/Property-D
+results makes a person better suited as a status expert than as the first
+independent proposal reviewer.
+
+If either candidate survives strongly enough for final owner consideration,
+S004 may prepare a concise **unsent** Stage-1 status/proposal-review package for
+its strongest conflict-appropriate lead. No message is authorized during S004.
