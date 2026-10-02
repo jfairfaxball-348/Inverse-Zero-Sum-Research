@@ -14,7 +14,19 @@ retired as a clean standalone inverse target because its proposed p>=7 range
 depends on an unresolved direct rank-three EGZ value and Property D0 evidence
 must not be confused with Property D.
 
-B-004 is now ACTIVE and requires the owner to select CAND-01, CAND-02 or
-CAND-03, or explicitly reject all three and request renewed discovery.
-CAND-01 remains incumbent. No next numbered session is scheduled, no outreach
-is authorized, and external review/computation remain CLOSED.
+B-004 was resolved after S004 by explicit owner decision D-024: **CAND-02
+is now the selected programme target**. No outreach was authorized by that
+choice. S005 is scheduled as a bounded CAND-02 external-review-readiness
+session: refresh status, reverify Xue Li's public reviewer route/conflict
+position, and finalize the unsent Stage-1 package. External review and
+computation remain CLOSED.
+
+
+## Post-S004 owner decision checkpoint
+
+- Incoming authority: `002dc499c2dc4fa7e10e814423cdea8eaf8fdcee`.
+- Owner selected CAND-02; B-004 resolved.
+- This checkpoint is not a numbered research session and adds no mathematical
+  result.
+- Next numbered session: S005, external-review readiness for CAND-02.
+- No external message has been sent or authorized.
