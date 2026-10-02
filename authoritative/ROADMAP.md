@@ -179,3 +179,45 @@ existing Pingzhi Yuan package remains the relevant prepared route. In either
 case, target selection does not authorize transmission; a separate explicit
 send authorization is still required. External review and computation remain
 CLOSED.
+
+
+## S004 full candidate-set due diligence
+
+Owner decision D-019 supersedes B-003 as the immediate blocker without making
+a target choice. The programme will first audit the two remaining S001
+candidates to the same standard as CAND-01 and CAND-02.
+
+S004 is one bounded pre-proof session containing two complete audits:
+
+1. **CAND-03:** generalized Narkiewicz-sense inverse structure at
+   `eta^N(C_3^3)-1=24`. The audit must reconstruct the exact generalized
+   invariant and "innerly non-zero-sum-joint" definitions, verify the 2024
+   direct result, inspect the 2026 rank-two inverse completion and subsequent
+   literature, test whether `C_3^3` remains a genuine first higher-rank
+   frontier, and define the exact structural contribution that could support a
+   journal paper.
+2. **CAND-04:** rank-three Property D for `C_p^3`, `p>=7`. The audit must
+   not assume the S001 shorthand remains well posed. It must first establish
+   the current direct `s(C_p^3)` landscape, exact Property-D hypotheses,
+   known higher-rank families and reductions, and whether unresolved direct
+   constants make the proposed inverse target conditional, narrower, or
+   unsuitable.
+
+For both candidates S004 must perform primary/current-status and prior-art
+searches through the current date, including later papers/preprints,
+forward/backward citations, alternate notation, theses, surveys and conference
+records; build novelty/status matrices; refresh target-specific venue and
+substantive-AI eligibility; and reassess the strongest conflict-appropriate
+independent reviewer leads. Reviewer packages may be prepared but not sent.
+
+At S004 closeout, CAND-01 through CAND-04 must be compared on the same
+research-space dimensions: conceptual breadth, proximity to prior completion,
+novelty/overlap risk, strength of unresolved-status evidence, dependency on
+unknown direct results, contribution type, significance if fully completed,
+venue fit and reviewer ecosystem. Proof difficulty, compute cost and probability
+of success remain excluded from target ranking.
+
+CAND-01 remains the selected incumbent during S004. If two or more credible
+candidates survive the four-way comparison, activate a new owner target-selection
+blocker and suppress any next-session prompt. No proof, computation,
+enumeration, formalisation or outreach is authorized in S004.
