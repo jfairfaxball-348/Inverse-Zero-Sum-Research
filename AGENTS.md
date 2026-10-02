@@ -12,8 +12,10 @@ preferences before relying on them in subsequent sessions.
   journal peer review, acceptance and publication. Acceptance is externally
   controlled and must never be promised or inferred from a preprint.
 - Initial territory: inverse zero-sum problems in combinatorial number theory.
-  No exact target is selected. Existing projects supply workflow lessons, not
-  an automatic mathematical starting point.
+  The current exact target is carried by `authoritative/STATE.json` and the
+  target register; do not infer it from initialization text or conversation
+  history. Existing projects supply workflow lessons, not an automatic
+  mathematical starting point.
 - Before mathematical computation or proof development, establish the target
   by name, genre, type and exact scope; an eligible, relevant publication
   shortlist; and explicit willingness for external proposal and manuscript
