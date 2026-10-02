@@ -14,14 +14,39 @@ Each session performs one bounded useful unit and updates the true frontier.
 | P6: manuscript and external review | Self-contained paper and independent manuscript feedback | Material review issues addressed; current venue fit and AI policy confirmed |
 | P7: journal submission and revisions | Authorized submission, response-to-referee record, revisions or documented venue change | Actual editorial acceptance, then publication |
 
-## Current frontier after S001
+## Current frontier after target selection
 
-P0 field orientation is complete enough to support an owner target decision.
-Four unranked candidate questions (CAND-01 through CAND-04) are documented in
-`authoritative/TARGET_REGISTER.md` and `sessions/S001/FIELD_MAP_AND_CANDIDATES.md`.
-Blocker B-001 is active: the owner must select one candidate or explicitly reject
-all four and request another bounded discovery pass. No later gate opens merely
-because the comparison exists.
+P0 is complete. Owner decision D-010 selects **CAND-01: rank-two Property D for
+`C_n^2`**.
+
+The programme is now entering P1. The immediate workflow is deliberately
+due-diligence-heavy:
+
+1. **Target-status audit:** inspect the primary Property B/C/D literature,
+   exact theorem statements, multiplicativity reductions, known moduli and the
+   2025 sufficiently-large-prime result; search forward citations and recent
+   preprints/current literature for overlap.
+2. **Novelty matrix:** separate full-conjecture scope, already-settled families,
+   unverified gaps and plausible partial contributions. Never infer openness
+   from failed searching.
+3. **Publication track:** confirm CAND-01-specific fit for E-JC and maintain at
+   least one credible backup venue only if substantive-AI eligibility and field
+   relevance are explicit.
+4. **Reviewer track in parallel:** prepare a concise proposal for Pingzhi Yuan
+   containing the exact question, known baseline, intended contribution, E-JC
+   fit and transparent AI workflow; verify recipient identity and draft a
+   two-stage review request. **Do not send without explicit owner authorization.**
+5. **External proposal assessment:** once review willingness is explicit, obtain
+   criticism of framing, baseline, relevance and venue fit and resolve material
+   objections.
+6. **Only then open mathematical investigation:** proof/counterexample search,
+   bounded experiments where justified, dependency tracking and independent
+   checks.
+
+Literature/current-status work and reviewer logistics may run in parallel.
+Proof attempts, enumeration, experiments and formalisation do not begin merely
+because outreach is pending; the computation gate still requires all three
+preflight gates to be OPEN.
 
 ## Gate definitions
 
