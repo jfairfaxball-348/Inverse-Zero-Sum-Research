@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "project": "Inverse Zero-Sum Research Programme",
+  "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
+  "authority_branch": "main",
+  "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
+  "last_completed_session": "S000",
+  "next_session": "S001",
+  "next_brief": "authoritative/S001_FIELD_AND_TARGET_DISCOVERY_BRIEF.md",
+  "stage": "P0_PREFLIGHT_DISCOVERY",
+  "programme_status": "OPEN",
+  "exact_target": null,
+  "mathematical_results": [],
+  "target_gate": "CLOSED",
+  "publication_gate": "CLOSED",
+  "external_review_gate": "CLOSED",
+  "computation_gate": "CLOSED",
+  "leading_journal": "Electronic Journal of Combinatorics",
+  "confirmed_reviewers": [],
+  "active_owner_blockers": [],
+  "future_owner_requirements": [
+    "Approve an exact mathematical target after source-level comparison.",
+    "Authorize or personally send outreach to a suitably matched reviewer.",
+    "Obtain explicit willingness for proposal review and conditional manuscript review.",
+    "Resolve substantive proposal-review objections and confirm the journal shortlist."
+  ],
+  "next_prompt_status": "READY",
+  "session_checkpoints": [
+    {"id": "S000", "status": "COMPLETED", "record": "sessions/S000/CLOSEOUT.md"}
+  ],
+  "bootstrap_verified_sources_date": "2026-10-02"
+}
