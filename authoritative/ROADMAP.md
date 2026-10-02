@@ -112,3 +112,25 @@ ready next numbered session. After an authorized send, independent literature
 maintenance may continue while awaiting a reply, but proof/computation does not
 begin until the external proposal assessment and remaining gate requirements
 are actually completed.
+
+
+## S003 pre-switch reassessment
+
+Owner decision D-016 changes the immediate frontier without silently switching
+targets. The prepared CAND-01 outreach is on hold and no message is authorized.
+CAND-01 remains the incumbent selected target while **CAND-02** receives the
+same target-specific due-diligence standard used in S002.
+
+S003 will audit the exact inverse EGZ classification for
+`C_2 + C_{2m} + C_{2m}`, including the Girard--Schmid direct theorem, the
+distinct `C_2 + C_2 + C_{2n}` inverse theorem, all practical later overlap and
+alternate formulations, small-case/source boundaries, CAND-02-specific E-JC
+fit and the strongest conflict-appropriate reviewer strategy.
+
+The purpose is not to decide by proof difficulty. It is to determine whether
+CAND-02 offers a broader and genuinely distinct structural contribution after
+current-status scrutiny, or whether hidden prior art/narrowing makes CAND-01
+the better-supported incumbent. If a real retain/switch choice remains after
+S003, that decision belongs to the owner and blocks further numbered work.
+
+No proof, computation, enumeration or formalisation is authorized in S003.
