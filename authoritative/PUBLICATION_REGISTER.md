@@ -6,7 +6,7 @@ acceptance likelihood.
 
 | ID | Journal | Status | Evidence and submission route |
 | --- | --- | --- | --- |
-| J-01 | Electronic Journal of Combinatorics | **LEADING WORKFLOW-ELIGIBLE CANDIDATE; target-specific fit pending** | Official About page rechecked 2026-10-02: fully refereed discrete-mathematics scope; AI may assist in researching/writing mathematics and in finding proofs/arguments, with authors fully responsible for checking proofs/details and citations. Official Submissions page rechecked 2026-10-02: new submissions use the web system; main manuscript PDF plus HTML abstract; no source files initially; checklist requires AI-policy compliance. The About page states E-JC is free for authors and readers. |
+| J-01 | Electronic Journal of Combinatorics | **LEADING RETAINED VENUE; PUBLICATION GATE OPEN** | Official About page rechecked 2026-10-02: fully refereed discrete-mathematics scope; AI may assist in researching/writing mathematics and in finding proofs/arguments, with authors fully responsible for checking proofs/details and citations. Official Submissions page rechecked 2026-10-02: new submissions use the web system; main manuscript PDF plus HTML abstract; no source files initially; checklist requires AI-policy compliance. The About page states E-JC is free for authors and readers. |
 | J-02 | Research in Number Theory | PROVISIONAL; not admitted to confirmed shortlist | Bootstrap scope and LLM-use instructions remain a lead. S001 did not need to resolve exact proof-discovery permission because no target has been selected. |
 | J-03 | The Ramanujan Journal | PROVISIONAL; exact subject fit and workflow unresolved | Bootstrap number-theory scope and LLM-use instructions remain a lead. Do not retain without target-specific fit and exact-workflow confirmation. |
 | J-X1 | Integers | EXCLUDED under observed policy | Bootstrap inspection found a prohibition on substantive AI-produced mathematics/code/bibliographic content; grammar/spelling permission is insufficient for this programme. Recheck only if policy materially changes. |
@@ -42,10 +42,11 @@ accepted.
 
 CAND-01 is now the selected target and E-JC remains the intended leading venue.
 This is a subject/workflow preference, not a submission decision or acceptance
-prediction. The **publication gate remains CLOSED** until S002 completes a
-CAND-01-specific significance/overlap check, confirms the live submission and
-AI-policy details, and establishes a defensible final shortlist or records why
-E-JC alone is sufficient.
+prediction. The **publication gate is OPEN** after S002. E-JC is retained as the leading
+and presently sufficient pre-proof venue shortlist: its current scope, peer
+review, substantive-AI policy, submission route, comparable zero-sum papers
+and referee-conflict rules were rechecked for CAND-01. This is an eligibility
+and fit conclusion, not an acceptance prediction.
 
 ## Eligibility record for each retained venue
 
@@ -62,3 +63,29 @@ E-JC alone is sufficient.
 Electronic publication satisfies the programme's publication objective if the
 journal's actual peer-review, acceptance and publication process is completed.
 A preprint or private review never counts as journal acceptance.
+
+
+## S002 CAND-01 venue refresh
+
+Official E-JC pages rechecked 2026-10-02 state that the journal is fully
+refereed and publishes substantial work across discrete mathematics. Its AI
+policy expressly permits assistance in researching and writing mathematics and
+in finding proofs or arguments, while leaving authors responsible for checking
+proofs, details and citations. New submissions use the web system, initially
+with a PDF and HTML abstract; the submission checklist requires AI-policy
+compliance.
+
+CAND-01 has direct subject precedents in the journal, including
+Grynkiewicz--Liu, *A Multiplicative Property for Zero-Sums II*, E-JC 29(3)
+(2022), P3.12, DOI 10.37236/10921, and Zeng--Yuan, *On Sequences Without Short
+Zero-Sum Subsequences*, E-JC 30(4) (2023), P4.21, DOI 10.37236/11963.
+A structural all-prime completion or substantial theorem eliminating the
+exceptional layer is therefore a credible subject fit. A routine isolated
+finite case could fail the journal's stated substantial-content standard even
+if correct.
+
+E-JC's referee-conflict rules require disclosure of close personal relations,
+joint grants, close collaboration on the topic, student/supervisor relationships
+and same-department relationships. The programme's private pre-submission
+reviewer is not promised or nominated as a journal referee; editors control the
+journal process.
