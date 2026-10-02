@@ -12,14 +12,15 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md,
    authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md,
    and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002, S003 and S004 due-diligence records before any target
-   selection or later target-specific work.
+7. The completed S002, S003, S004 and S005 due-diligence/readiness records
+   before any target selection or later target-specific work.
 
 Current state: **S005 completed. CAND-02 remains the selected programme
-target after a bounded current-status and external-review-readiness refresh.
-The exact Xue Li Stage-1 status/proposal-review message is send-ready but has
-not been authorized or sent. Owner blocker B-005 is active, so no next session
-is scheduled.**
+target. On 2026-10-02 the owner reported sending the S005 Xue Li Stage-1
+status/proposal message. A reply and reviewer willingness remain pending and
+must not be inferred. B-005 is resolved. S006 is ready as a bounded
+source-extraction, structural-baseline and dependency-mapping session while the
+programme waits for the external response.**
 
 ## Present boundary
 
@@ -39,19 +40,22 @@ is scheduled.**
   public institutional route, strong same-architecture subject fit and no
   obvious public conflict indicator with the controlling Girard--Schmid
   ordinary-EGZ baseline. Willingness and actual conflicts remain unconfirmed.
-- Exact Xue Li Stage-1 package: SEND-READY at
-  sessions/S005/XUE_LI_STAGE1_PACKAGE.md; NOT AUTHORIZED OR SENT.
+- Xue Li Stage-1 package: owner reports the S005 message was SENT on
+  2026-10-02. Transmission is an owner-reported external action; no reply,
+  agreement or reviewer status is inferred.
 - External-review gate: CLOSED.
 - Computation/proof gate: CLOSED.
-- Active owner blocker: **B-005 — Owner authorization to send Xue Li Stage-1 message required.**
-- Next session: NONE while B-005 is active; the live next-session prompt is
-  suppressed under the repository blocker rule.
+- Active owner blocker: **NONE.**
+- Next session: **S006**, a pre-proof structural-baseline and dependency-map
+  session that may run while the Xue Li reply is pending.
+- Live prompt: authoritative/NEXT_SESSION_PROMPT.md.
 
-Target selection did not authorize outreach. S005 has now completed the fresh
-status/recipient/conflict check and finalized the exact message. The remaining
-required owner action is explicit authorization (or refusal) to transmit that
-specific Stage-1 message through the freshly verified public correspondence
-route.
+The owner-reported send resolves the transmission blocker only. Xue Li is not a
+confirmed reviewer, the external-review gate remains CLOSED, and no proof,
+enumeration, experiment, computation or formalisation is authorized. S006 is
+limited to primary-source proof inspection, extraction of published tools,
+notation normalization, dependency mapping and precise identification of what a
+later mathematical investigation would still have to establish.
 
 ## Authority and reconciliation rule
 

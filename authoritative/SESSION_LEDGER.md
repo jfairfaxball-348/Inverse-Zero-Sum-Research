@@ -45,3 +45,17 @@ computation remain CLOSED.
   send-ready but not sent.
 - B-005 suppresses the live next-session prompt pending explicit owner send
   authorization.
+
+
+## Post-S005 owner send checkpoint
+
+- Incoming authority: `d6ba88c8fae8d3b63f2669eb3d4032529c7dc00a`.
+- On 2026-10-02 the owner reported sending the S005 Xue Li Stage-1
+  status/proposal message.
+- B-005 is resolved; this checkpoint is not a numbered research session and
+  adds no mathematical result.
+- Xue Li's reply, proposal assessment and later manuscript-review willingness
+  remain pending; confirmed reviewer status remains NONE.
+- External-review and computation gates remain CLOSED.
+- Next numbered session: S006, bounded structural-baseline/source-dependency
+  preparation while awaiting the reply.

@@ -320,3 +320,26 @@ sessions/S005/XUE_LI_STAGE1_PACKAGE.md and is SEND-READY, NOT AUTHORIZED and
 NOT SENT. **B-005 is active.** No next session is scheduled while the owner
 decides whether to authorize that exact transmission. Target and publication
 gates remain OPEN; external review and computation remain CLOSED.
+
+
+## Frontier after owner-reported Xue Li Stage-1 send
+
+On 2026-10-02 the owner reported sending the S005 Xue Li Stage-1
+status/proposal message. B-005 is resolved. This is a transmission event only:
+Xue Li is not yet a confirmed reviewer, no independent proposal assessment has
+been received, and later manuscript-review willingness remains unestablished.
+The external-review and computation gates therefore remain CLOSED.
+
+The next independently runnable unit is **S006: CAND-02 structural baseline and
+dependency map**. While the reply is pending, S006 may inspect the full proofs
+of the controlling Girard--Schmid direct theorem and the closest published
+inverse/rank-three results; normalize notation; extract source-backed lemmas,
+reductions and method architecture; distinguish exactly applicable published
+tools from analogies; and build a proof-readiness gap/dependency map. It may
+perform additional literature checks needed to source those dependencies.
+
+S006 is still pre-proof. It must not invent or attempt new lemmas, enumerate
+small cases, run experiments or computation, use formalisation as a proof
+search, or infer openness from missing literature. Mathematical investigation
+begins only after the external proposal assessment and the remaining preflight
+gate requirements are actually satisfied.

@@ -1,11 +1,9 @@
 # External reviewer register
 
-**Confirmed reviewer: NONE. No outreach is currently authorized.**
-Owner decision D-024 selects CAND-02, so the active prepared reviewer route is
-**Xue Li (R-04)**. Her S003 Stage-1 package is prepared and unsent. S005 must
-freshly recheck public identity/contact route, independence/conflict indicators
-and any status evidence before presenting the exact message for later owner
-send authorization.
+**Confirmed reviewer: NONE.** Owner decision D-024 selects CAND-02. On
+2026-10-02 the owner reported sending the S005 Xue Li (R-04) Stage-1
+status/proposal message. A reply and willingness remain pending; transmission
+does not itself create reviewer status or complete external proposal review.
 
 The earlier CAND-01 Pingzhi Yuan and CAND-03 David J. Grynkiewicz packages
 remain historical alternatives and are not active outreach routes.
@@ -306,4 +304,21 @@ not churn to another reviewer.
 Current package:
 sessions/S005/XUE_LI_STAGE1_PACKAGE.md
 
-Status: **SEND-READY; NOT AUTHORIZED; NOT SENT.**
+Historical S005 readiness status before owner action:
+**SEND-READY; NOT AUTHORIZED; NOT SENT.**
+
+
+## Post-S005 owner-reported Xue Li transmission
+
+Date reported sent: 2026-10-02.
+
+The owner reports that the S005 Stage-1 status/proposal message to Xue Li was
+sent. Repository status is therefore **SENT; REPLY PENDING**. The repository
+does not publish the email address or private correspondence.
+
+This does **not** establish that Xue Li has agreed to act as an independent
+reviewer, endorsed the target, certified novelty/open status, or agreed to
+review a later manuscript. Those remain separate evidentiary requirements.
+When a reply is supplied, preserve only the minimum necessary status/content
+summary unless the owner explicitly authorizes publication of private
+correspondence.

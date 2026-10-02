@@ -28,6 +28,7 @@
 | D-022 | 2026-10-02 | CAND-01 remains incumbent, but the full audit leaves a genuine owner choice among surviving CAND-01, CAND-02 and CAND-03; activate B-004 and schedule no next session until the owner explicitly selects one or rejects all three | S004 four-candidate comparison and repository blocker rule |
 | D-023 | 2026-10-02 | Retain E-JC as leading eligible venue; JCTA is a policy-qualified CAND-03 backup. David J. Grynkiewicz is the strongest independent first CAND-03 reviewer lead found; his package remains unsent. No CAND-04 package is prepared because the clean target is retired | S004 venue/reviewer refresh |
 | D-024 | 2026-10-02 | **Select CAND-02 as the programme target** after the four-candidate audit, prioritizing the publication objective at E-JC: a known direct threshold, broad infinite-family inverse structure, strong E-JC subject precedent and a substantial-contribution path outweigh CAND-01's compressed finite residue and CAND-03's fixed-group scope | Explicit owner instruction after reviewing the completed S004 comparison |
+| D-027 | 2026-10-02 | Record the owner's report that the S005 Xue Li Stage-1 status/proposal message has been sent; resolve B-005 and allow independent pre-proof source/dependency work while awaiting a reply. Transmission alone does not confirm review willingness, complete proposal assessment or open the external-review/computation gates. | Explicit owner report: “I've sent the message” |
 
 ## S001 target-selection resolution
 
@@ -44,16 +45,15 @@ audit before the target gate can open.
 
 ## Active owner blockers
 
+**NONE.**
+
 ### B-005 — Owner authorization to send Xue Li Stage-1 message required.
 
-**ACTIVE.** S005 completed the bounded current-status refresh, freshly verified
-the public Xue Li route and reasonable conflict indicators, and finalized the
-exact Stage-1 message at sessions/S005/XUE_LI_STAGE1_PACKAGE.md.
-
-Required owner action: explicitly authorize or decline transmission of that
-exact message through the freshly verified public correspondence route. This
-blocker does not authorize edits, a different recipient, manuscript review,
-journal-referee service, proof work, computation or any other external action.
+**RESOLVED by D-027.** On 2026-10-02 the owner reported that the S005 Xue Li
+Stage-1 status/proposal message had been sent. The repository records the
+transmission as an owner-reported external action; it does not independently
+verify the exact delivered rendering or infer receipt, reply, willingness,
+agreement, novelty certification or completed review.
 
 ### B-004 — final target selection after four audits
 
@@ -66,13 +66,12 @@ send-ready package without contacting anyone.
 
 ## Future owner requirements
 
-- Run S005 to refresh selected-target status and Xue Li reviewer readiness.
-- After S005, explicitly authorize transmission of the exact Stage-1 reviewer
-  message before any email or message is sent.
+- Preserve any Xue Li reply accurately when the owner supplies it; do not infer
+  a response or willingness from elapsed time or successful transmission.
 - Obtain an actual independent proposal/status assessment and separately
   establish willingness in principle for a later manuscript review.
-- The external-review and computation gates remain closed until their recorded
-  requirements are met.
+- Keep the external-review and computation gates closed until their recorded
+  requirements are genuinely met.
 - Later: authorize journal submission or other external author actions.
 
 ## Communication boundary
@@ -125,3 +124,18 @@ send-authorizable text is the message in sessions/S005/XUE_LI_STAGE1_PACKAGE.md.
 Authorization to send that text would not by itself open the external-review
 gate; the programme must still receive and assess an independent status/proposal
 response and separately establish later manuscript-review willingness.
+
+
+## Post-S005 owner-reported transmission
+
+On 2026-10-02 the owner reported sending the S005 Xue Li Stage-1
+status/proposal message. This resolves B-005. The message is now treated as
+**SENT; REPLY PENDING** for workflow purposes. No reviewer is confirmed, no
+proposal assessment is complete, and no later manuscript-review willingness is
+inferred.
+
+While the response is pending, S006 may perform independent primary-source
+proof inspection, notation normalization, published-tool extraction and
+dependency mapping for CAND-02. It must not attempt a new proof, enumerate
+examples, run experiments/computation, formalise mathematics, contact another
+reviewer, or represent the exact target as certified open.
