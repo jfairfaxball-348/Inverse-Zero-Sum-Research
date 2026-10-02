@@ -135,10 +135,25 @@ active.
 
 ## Validation
 
-Final authority validation and remote-head verification are performed after this
-closeout is committed. The externally reported close report must state the
-actual result and outgoing SHA. A passing documentation validator does not
-validate mathematical truth or certify candidate openness.
+Validation completed on 2026-10-02.
+
+- The repository's `scripts/check_authority.py` was executed against a
+  materialized structural mirror of the final authority state and S001 local-link
+  topology. It passed session uniqueness, preflight gates, blocker/prompt
+  consistency, represented local links and licence preservation.
+- The live GitHub state was checked separately: required S001 records and linked
+  authority registers exist on `main`; `authoritative/NEXT_SESSION_PROMPT.md`
+  is absent while B-001 is active; and the remote `LICENSE` blob SHA is exactly
+  `261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64`, matching the validator's
+  required Apache-2.0 blob.
+- Direct network cloning was unavailable in the execution container, so
+  validation combined connector-backed live-tree checks with the materialized
+  checker run rather than claiming a local clone of GitHub.
+- The actual outgoing `main` SHA is verified after this closeout update and
+  reported externally, because a commit cannot contain its own hash.
+
+These checks validate repository authority consistency, not mathematical truth,
+proof correctness, novelty or current openness.
 
 ## Active owner blocker
 
