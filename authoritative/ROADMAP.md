@@ -134,3 +134,48 @@ the better-supported incumbent. If a real retain/switch choice remains after
 S003, that decision belongs to the owner and blocks further numbered work.
 
 No proof, computation, enumeration or formalisation is authorized in S003.
+
+
+## Frontier after S003
+
+S003 completed the pre-switch due diligence for CAND-02 without proof,
+computation or outreach.
+
+The controlling source boundary is now sharper:
+
+- Girard--Schmid (2019) establish
+  `s(C_2+C_{2m}+C_{2m})=8m+1` unconditionally for the equal-factor family.
+- Girard--Schmid (2020) solve the ordinary EGZ inverse problem for the distinct
+  family `C_2+C_2+C_{2n}`; the common `C_2^3` endpoint is the already
+  classified `m=1` degeneration.
+- Later work located on the same rank-three group architecture, notably the
+  Li--Yin `disc(G)` line, concerns different invariants and does not by itself
+  solve the ordinary-`s(G)` inverse problem.
+- The bounded current-status audit did not locate an exact all-`m>=2`
+  CAND-02 completion, a completed `m=2` case, or a source explicitly declaring
+  the exact CAND-02 problem open. Its status is therefore
+  **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
+
+The surviving CAND-02 contribution genre is a full infinite-family structural
+classification, or a broad uniform structural theorem that materially advances
+it. This is conceptually broader than an isolated finite cleanup. CAND-01, by
+contrast, has stronger named-conjecture provenance but S002 showed that the
+2025 sufficiently-large-prime theorem compresses its operative residue to a
+finite exceptional-prime layer below an unspecified cutoff.
+
+Both targets therefore survive for different reasons. S003 cannot settle that
+research-identity choice without the owner. **B-003 is active:** explicitly
+retain CAND-01 or switch the selected mathematical target to CAND-02. No next
+numbered session is scheduled while that blocker is active.
+
+E-JC is now target-specifically refreshed for CAND-02 as well as CAND-01.
+Journal of Number Theory is a policy-qualified CAND-02 backup under Elsevier's
+June-2026 generative-AI policy, subject to a journal-specific recheck before
+submission. No acceptance inference is made.
+
+If CAND-02 is selected, Xue Li is the first-reviewer lead produced by S003 and
+an unsent Stage-1 status/proposal package is ready. If CAND-01 is retained, the
+existing Pingzhi Yuan package remains the relevant prepared route. In either
+case, target selection does not authorize transmission; a separate explicit
+send authorization is still required. External review and computation remain
+CLOSED.
