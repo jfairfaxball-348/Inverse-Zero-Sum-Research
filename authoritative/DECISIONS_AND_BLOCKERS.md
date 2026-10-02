@@ -27,6 +27,7 @@
 | D-021 | 2026-10-02 | Retire CAND-04 as a clean standalone inverse target: the general direct formula s(C_p^3)=9p-8 for p>=7 remains a material unresolved dependency in the inspected literature, and known p=7,11,13 statements are Property D0 rather than Property D | S004 higher-rank Property-D/EGZ audit |
 | D-022 | 2026-10-02 | CAND-01 remains incumbent, but the full audit leaves a genuine owner choice among surviving CAND-01, CAND-02 and CAND-03; activate B-004 and schedule no next session until the owner explicitly selects one or rejects all three | S004 four-candidate comparison and repository blocker rule |
 | D-023 | 2026-10-02 | Retain E-JC as leading eligible venue; JCTA is a policy-qualified CAND-03 backup. David J. Grynkiewicz is the strongest independent first CAND-03 reviewer lead found; his package remains unsent. No CAND-04 package is prepared because the clean target is retired | S004 venue/reviewer refresh |
+| D-024 | 2026-10-02 | **Select CAND-02 as the programme target** after the four-candidate audit, prioritizing the publication objective at E-JC: a known direct threshold, broad infinite-family inverse structure, strong E-JC subject precedent and a substantial-contribution path outweigh CAND-01's compressed finite residue and CAND-03's fixed-group scope | Explicit owner instruction after reviewing the completed S004 comparison |
 
 ## S001 target-selection resolution
 
@@ -43,33 +44,22 @@ audit before the target gate can open.
 
 ## Active owner blockers
 
+**NONE.**
+
 ### B-004 — final target selection after four audits
 
-**ACTIVE.**
+**RESOLVED by D-024.** The owner explicitly selected **CAND-02**.
 
-Required owner action: explicitly select **CAND-01, CAND-02 or CAND-03** as
-the programme target, or explicitly reject all three and request a renewed
-target-discovery pass.
-
-CAND-01 remains the incumbent until this decision. CAND-04 is not in the
-selection set because S004 retired it as a clean standalone inverse target
-after finding that its general p>=7 formulation depends on the unresolved
-rank-three direct EGZ value and that the p=7,11,13 literature provides only
-the weaker Property D0.
-
-This blocker covers research identity, not proof feasibility. The three
-survivors have now received comparable due diligence and remain credible for
-different source-supported reasons. The programme must not choose silently.
-
-No prepared reviewer package has been sent. Resolving B-004 does not authorize
-outreach; a separate explicit send authorization remains required.
+This resolves research identity only. It does **not** authorize transmission of
+the prepared Xue Li Stage-1 request. S005 is independently runnable because it
+can perform the required fresh recipient/conflict/status check and finalize the
+send-ready package without contacting anyone.
 
 ## Future owner requirements
 
-- Resolve B-004 by explicitly selecting CAND-01, CAND-02 or CAND-03, or
-  explicitly reject all three and request renewed target discovery.
-- Only after the target is settled should the programme seek authorization to
-  send a target-specific external proposal/status-review request.
+- Run S005 to refresh selected-target status and Xue Li reviewer readiness.
+- After S005, explicitly authorize transmission of the exact Stage-1 reviewer
+  message before any email or message is sent.
 - Obtain an actual independent proposal/status assessment and separately
   establish willingness in principle for a later manuscript review.
 - The external-review and computation gates remain closed until their recorded
@@ -101,3 +91,12 @@ No message was sent. CAND-04 received no package because its clean target was
 retired. After B-004 is resolved, verify the selected target's current reviewer
 identity/contact route and conflicts, then obtain separate explicit owner
 authorization before any transmission.
+
+## Post-S004 owner selection
+
+D-024 supersedes D-010 as the live target-selection decision. CAND-02 is now
+selected. The CAND-01 Pingzhi Yuan and CAND-03 David J. Grynkiewicz packages
+remain historical prepared alternatives and must not be sent unless the target
+is explicitly changed again. The CAND-02 Xue Li package is the active prepared
+route, but remains unsent pending S005 refresh and later explicit owner send
+authorization.
