@@ -1,9 +1,10 @@
 # Target register
 
-**Exact target: UNSELECTED.** S001 produced four source-defined candidate
-questions. None is promoted here to a certified open problem, programme theorem
-or novelty claim. Owner selection is now required before one becomes the
-authoritative target.
+**Exact target selected by owner: CAND-01 — rank-two Property D for `C_n^2`.**
+The selection fixes the programme's mathematical identity; it does **not** certify
+current openness for every modulus, novelty of any future partial result, or
+publishability. A target-specific current-status and overlap audit is required in
+S002 before the target gate can open.
 
 ## S001 candidate set
 
@@ -44,5 +45,19 @@ For a selected candidate, record:
 6. Reviewer expertise and explicit two-stage willingness before later gates.
 7. Source-access gaps and evidence that would retire or narrow the target.
 
-The target gate remains CLOSED until the owner selects an exact target and the
-selection is recorded.
+## Selected-target specification frontier
+
+Owner decision D-010 selects CAND-01. S002 must now pin the exact literature
+boundary around the full conjecture and any admissible partial contribution:
+known moduli/families, multiplicativity consequences, the 2025 sufficiently-large-
+prime theorem, later citations or improvements, unpublished/preprint overlap,
+and exact theorem identifiers.
+
+The intended contribution remains **completion of, or a genuinely new
+mathematically substantial advance toward, rank-two Property D**. Any narrowing
+must be justified by the literature audit and recorded explicitly rather than
+silently replacing the selected target.
+
+The target gate remains CLOSED until the exact current baseline, quantifiers,
+restrictions and proposed contribution are documented without an unsupported
+openness claim.
