@@ -20,6 +20,8 @@
 | D-014 | 2026-10-02 | Open the publication gate with E-JC as the retained leading venue after target-specific scope, AI, submission, comparable-paper and conflict checks | S002 official-policy refresh; eligibility only, not acceptance prediction |
 | D-015 | 2026-10-02 | Prepare Pingzhi Yuan Stage-1 status/proposal review now and a separate conditional Stage-2 manuscript-review request; no transmission occurs without owner authorization | S002 reviewer preparation and standing communication rule |
 | D-016 | 2026-10-02 | Hold the prepared CAND-01 Pingzhi Yuan outreach and subject CAND-02 to an S002-level due-diligence audit before deciding whether to switch targets | Explicit owner instruction after reviewing S002 narrowing |
+| D-017 | 2026-10-02 | After S003, treat CAND-02 as a surviving source-defined/current-status-unknown challenger: its direct threshold is established, the closest published inverse theorem is a different rank-three family, and no exact completion or explicit open-problem declaration was located in the bounded audit | S003 primary/current-status audit; no openness inference |
+| D-018 | 2026-10-02 | For CAND-02, retain E-JC as the leading eligible venue, JNT as a policy-qualified backup, and Xue Li as the strongest first independent reviewer lead found by the audit; the reviewer package remains unsent and conditional on target selection plus separate send authorization | S003 venue/reviewer refresh |
 
 ## S001 target-selection resolution
 
@@ -36,18 +38,37 @@ audit before the target gate can open.
 
 ## Active owner blockers
 
-**NONE.**
+### B-003 — Owner target decision required
 
-B-002 is **RESOLVED/SUPERSEDED** by D-016. The owner did not authorize the
-CAND-01 outreach; instead the owner explicitly directed the programme to hold
-that message and scrutinize CAND-02 before deciding whether to switch targets.
-S003 is therefore independently runnable.
+S003 completed the requested equal-rigor audit of CAND-02. It did not retire
+either candidate. CAND-01 remains the incumbent selected target until the owner
+acts, but the research programme is now blocked on a genuine identity choice:
+
+- **retain CAND-01**: rank-two Property D, with the operative status-unknown
+  residue narrowed by the 2025 sufficiently-large-prime theorem to a finite
+  exceptional-prime layer below an unspecified cutoff; or
+- **switch to CAND-02**: the full inverse-EGZ structural classification for
+  length-`8m` extremal sequences over `C_2+C_{2m}+C_{2m}`, `m>=2`,
+  which survives the audit as a broader infinite-family classification but is
+  not source-certified open.
+
+Required owner action: explicitly choose one of those two target identities.
+
+No target-specific reviewer message is authorized by resolving B-003. A
+separate explicit send authorization will still be required after the target is
+settled.
+
+Under D-008 and the session protocol, B-003 suppresses every next-session
+prompt. `STATE.json` therefore has no next session/brief and the live prompt
+file must be absent.
+
+B-002 remains **RESOLVED/SUPERSEDED** by D-016. The CAND-01 Pingzhi Yuan
+outreach was not sent. S003 has now completed the intervening CAND-02 audit.
 
 ## Future owner requirements
 
-- After S003, if CAND-02 survives strongly enough that retaining CAND-01 versus
-  switching to CAND-02 is a genuine choice, the owner must make that target
-  decision explicitly.
+- Resolve B-003 by explicitly retaining CAND-01 or switching the selected
+  mathematical target to CAND-02.
 - Only after the target is settled should the programme seek authorization to
   send a target-specific external proposal/status-review request.
 - Obtain an actual independent proposal/status assessment and separately
@@ -59,11 +80,12 @@ S003 is therefore independently runnable.
 ## Communication boundary
 
 D-012 remains historical evidence that Pingzhi Yuan was the intended first
-approach for CAND-01. D-016 now places that prepared outreach on hold while
-CAND-02 is audited. It is **not** authorized for transmission. The repository's
-standing rule remains: settle the target, prepare the exact target-specific
-proposal, verify the recipient, and obtain explicit send authorization before
-outreach.
+approach for CAND-01. D-016 placed that package on hold and it remains
+**not authorized for transmission**. S003 has now prepared a separate,
+unsent Xue Li Stage-1 package for CAND-02. Neither package may be sent until
+B-003 is resolved and the owner separately authorizes the target-specific
+message. The standing rule remains: settle the target, verify the current
+recipient route, then obtain explicit send authorization before outreach.
 
 While waiting for a reviewer response later, independent literature, novelty,
 source and dependency work may continue. Mathematical proof attempts,
