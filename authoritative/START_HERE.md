@@ -15,38 +15,36 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 7. The completed S002, S003 and S004 due-diligence records before any target
    selection or later target-specific work.
 
-Current state: **S004 completed. No next numbered session is scheduled because
-B-004 requires the owner to select the programme target from the surviving
-audited set.**
+Current state: **S004 completed. The owner has now selected CAND-02 as
+the programme target after the full four-candidate audit. S005 is scheduled as
+a bounded external-review-readiness session for CAND-02.**
 
 ## Present boundary
 
-- Incumbent exact target: CAND-01, rank-two Property D for C_n^2.
-- CAND-01 completed S002 due diligence and survives.
-- CAND-02 completed S003 due diligence and survives as a
-  source-defined/current-status-unknown challenger.
-- CAND-03 completed S004 due diligence and survives as a
-  source-defined/current-status-unknown generalized-Narkiewicz challenger.
-- CAND-04 completed S004 due diligence and is RETIRED AS A CLEAN STANDALONE
-  INVERSE TARGET because the general direct value s(C_p^3)=9p-8 for p>=7 is
-  itself an unresolved source-level dependency; the p=7,11,13 literature
-  located concerns weaker Property D0, not Property D.
-- No target switch has occurred. CAND-01 remains incumbent pending B-004.
+- Selected exact target: **CAND-02**, the inverse EGZ classification for
+  `G_m=C_2 \oplus C_{2m} \oplus C_{2m}`, `m>=2`: classify every
+  length-`8m` sequence with no zero-sum subsequence of length `2m`.
+- The intended publication-level contribution is the full all-`m` structural
+  classification, or a broad uniform theorem materially advancing it; a routine
+  isolated small-`m` catalogue is not the selected contribution.
+- CAND-01 and CAND-03 remain audited alternatives but are no longer selected.
+  CAND-04 remains retired as a clean standalone inverse target.
 - Mathematical results by this programme: NONE.
-- Leading journal: Electronic Journal of Combinatorics.
+- Leading journal: Electronic Journal of Combinatorics; CAND-02-specific fit
+  and current substantive-AI eligibility were established in S003.
 - Confirmed external reviewer: NONE.
-- CAND-01 Pingzhi Yuan outreach: PREPARED BUT ON HOLD; NOT AUTHORIZED OR SENT.
-- CAND-02 Xue Li Stage-1 package: PREPARED; NOT AUTHORIZED OR SENT.
-- CAND-03 David J. Grynkiewicz Stage-1 package: PREPARED; NOT AUTHORIZED OR SENT.
+- Intended first CAND-02 reviewer lead: Xue Li, subject to S005 fresh public
+  identity/contact/conflict verification.
+- Xue Li Stage-1 package: PREPARED; NOT AUTHORIZED OR SENT.
 - External-review gate: CLOSED.
 - Computation/proof gate: CLOSED.
-- Active owner blocker: B-004.
+- Active owner blockers: NONE.
+- Next session: **S005**, CAND-02 external-review readiness. It may refresh and
+  finalize the reviewer package but may not transmit outreach.
 
-B-004 requires an explicit owner choice among CAND-01, CAND-02 and CAND-03,
-or an explicit rejection of all three with a request for renewed discovery.
-No reviewer outreach or further numbered research session is authorized by
-target selection alone; transmission still requires separate explicit
-authorization.
+Target selection does not authorize outreach. A separate explicit send
+authorization remains required after the send-ready package and recipient route
+are freshly verified.
 
 ## Authority and reconciliation rule
 
