@@ -2,9 +2,10 @@
 
 **Incumbent exact target: CAND-01 — rank-two Property D for `C_n^2`.**
 S002 specified its exact baseline and surviving contribution frontier, so its
-target gate is OPEN. Owner decision D-016 now places **CAND-02 under pre-switch
-due diligence** before deciding whether to retain CAND-01 or replace it.
-No switch has yet occurred.
+target gate is OPEN. CAND-02 completed equivalent due diligence in S003 and
+survives as a source-defined/current-status-unknown challenger. Owner decision
+D-019 postpones target selection until **CAND-03 and CAND-04** receive the same
+standard in S004. No switch has occurred.
 
 ## S001 candidate set
 
@@ -187,6 +188,45 @@ a non-isomorphic family. Its weakness is status provenance rather than scope:
 S003 found no primary source explicitly certifying the exact equal-factor
 ordinary-EGZ problem as open.
 
-Neither candidate is retired. **CAND-01 remains selected until the owner
-resolves B-003 by explicitly retaining CAND-01 or switching to CAND-02.**
-No comparison here ranks proof difficulty or probability of success.
+Neither candidate is retired. **CAND-01 remains selected.** D-019 explicitly
+postpones the target choice until S004 audits CAND-03 and CAND-04 and compares
+the full four-candidate set. No comparison here ranks proof difficulty or
+probability of success.
+
+
+## S004 remaining-candidate audit instruction
+
+Owner decision D-019 directs one S004 session to audit **both remaining S001
+candidates** to the S002/S003 standard before any final selection.
+
+### CAND-03 entering S004
+
+> Classify length-`24` sequences over `C_3^3\{0}` with no two innerly
+> non-zero-sum-joint short zero-sum subsequences.
+
+S004 must reconstruct the generalized Narkiewicz definitions from primary
+sources, verify `eta^N(C_3^3)=25`, inspect the 2026 rank-two inverse
+completion and all later overlap, determine whether `C_3^3` is genuinely the
+first surviving higher-rank case, and define the exact substantial
+publication-level scope without inferring openness from search failure.
+
+### CAND-04 entering S004
+
+> Property D for `C_p^3` for primes `p>=7`.
+
+S004 must first verify that this is a mathematically clean inverse target in the
+stated range. In particular it must establish the current direct
+`s(C_p^3)` landscape, exact higher-rank Property-D definition, known
+families, multiplicativity/reduction statements, and any unresolved direct
+dependency. The candidate must be narrowed or retired if primary-source
+evidence requires it rather than preserved for symmetry.
+
+After both audits, S004 must place CAND-01 through CAND-04 on one comparison
+matrix covering research-space breadth, proximity to prior completion,
+novelty/status evidence, direct dependencies, contribution type, significance
+if completed, publication fit and reviewer ecosystem. The comparison must not
+rank proof difficulty, computational cost or probability of success.
+
+If two or more credible candidates survive, final target selection returns to
+the owner as a new blocker. No reviewer outreach is authorized before that
+selection.
