@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S005",
-  "next_session": "S006",
-  "next_brief": "authoritative/S006_CANDIDATE_2_STRUCTURAL_BASELINE_BRIEF.md",
+  "last_completed_session": "S006",
+  "next_session": "S007",
+  "next_brief": "authoritative/S007_CANDIDATE_2_HOMOCYCLIC_KERNEL_AUDIT_BRIEF.md",
   "stage": "P1_PROPOSAL_AND_REVIEW_ARRANGEMENTS",
   "programme_status": "OPEN",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — CAND-02 selected; S005 external-review readiness completed",
+  "candidate_under_due_diligence": "NONE — CAND-02 selected; S006 structural baseline and dependency map completed",
   "mathematical_results": [],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -56,6 +56,11 @@
       "id": "S005",
       "status": "COMPLETED",
       "record": "sessions/S005/CLOSEOUT.md"
+    },
+    {
+      "id": "S006",
+      "status": "COMPLETED",
+      "record": "sessions/S006/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -66,5 +71,6 @@
   "s004_source_refresh_date": "2026-10-02",
   "intended_first_reviewer": "Xue Li — S005 freshly verified current public affiliation/correspondence route and same-architecture inverse zero-sum fit; no obvious public conflict indicator with the controlling Girard–Schmid ordinary-EGZ baseline was found; willingness and actual conflicts remain unconfirmed",
   "outreach_status": "CAND-02 SELECTED; OWNER REPORTS XUE LI STAGE-1 MESSAGE SENT 2026-10-02; REPLY PENDING; NO REVIEWER CONFIRMED",
-  "s005_source_refresh_date": "2026-10-02"
+  "s005_source_refresh_date": "2026-10-02",
+  "s006_source_refresh_date": "2026-10-02"
 }

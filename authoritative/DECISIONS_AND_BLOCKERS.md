@@ -139,3 +139,33 @@ proof inspection, notation normalization, published-tool extraction and
 dependency mapping for CAND-02. It must not attempt a new proof, enumerate
 examples, run experiments/computation, formalise mathematics, contact another
 reviewer, or represent the exact target as certified open.
+
+
+## S006 structural-baseline decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-028 | 2026-10-02 | Record the S006 structural baseline: the sharp equal-factor direct proof is a value-level inductive argument through `C_m^2 <= G_m -> C_2^3`; the closest published ordinary-EGZ inverse proof instead depends on cyclic-kernel near-extremal structure and does not transfer as a classification theorem to the homocyclic kernel. | S006 full-proof inspection of Girard--Schmid 2019/2020 and cited dependencies |
+| D-029 | 2026-10-02 | Keep the external-review and computation/proof gates CLOSED and schedule S007 as a source-only audit of homocyclic `C_m^2` equality/near-equality machinery while the Xue Li reply remains pending. | S006 dependency map; no programme proof and no reviewer response |
+
+D-028 is a source/method boundary, not a new mathematical theorem. The 2019
+equal-factor proof obtains `eta(G_m)=6m+2` and `s(G_m)=8m+1` using the
+natural kernel `C_m^2`, quotient `C_2^3`, exact component constants and
+published subgroup/quotient inequalities. Those inequalities do not state an
+equality-case classification for length-`8m` extremals.
+
+The closest 2020 inverse theorem is for `C_2^2\oplus C_{2n}` and uses a
+cyclic kernel `C_n` plus explicit near-extremal cyclic restricted-sum
+structure. Girard--Schmid 2019 Lemma 4.3, which supplies analogous rigidity in
+an unequal-factor rank-two regime, explicitly does not extend to the
+homocyclic `C_m^2` case.
+
+Girard--Schmid 2019 Lemma 4.4(2) does specialize to the exact CAND-02 length:
+under its progressive-subsums hypothesis with a subsequence of size at least
+`m-1`, a translate contains a length-`6m+1=eta(G_m)-1`
+short-zero-sum extremal core. The inspected sources do not force that
+hypothesis for every CAND-02 extremal.
+
+No new proof, computation, experiment, formalisation or outreach is claimed.
+CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN and Xue Li's reply
+remains pending.

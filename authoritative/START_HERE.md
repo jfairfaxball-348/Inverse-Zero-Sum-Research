@@ -12,50 +12,45 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md,
    authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md,
    and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002, S003, S004 and S005 due-diligence/readiness records
-   before any target selection or later target-specific work.
+7. The completed S002--S006 records before later target-specific work.
 
-Current state: **S005 completed. CAND-02 remains the selected programme
-target. On 2026-10-02 the owner reported sending the S005 Xue Li Stage-1
-status/proposal message. A reply and reviewer willingness remain pending and
-must not be inferred. B-005 is resolved. S006 is ready as a bounded
-source-extraction, structural-baseline and dependency-mapping session while the
-programme waits for the external response.**
+Current state: **S006 completed. CAND-02 remains selected. The owner-reported
+Xue Li Stage-1 message was sent on 2026-10-02; a reply and reviewer willingness
+remain pending. S007 is ready as a bounded source-only audit of the
+homocyclic-kernel/equality-rigidity dependencies exposed by S006.**
 
 ## Present boundary
 
-- Selected exact target: **CAND-02**, the inverse EGZ classification for
-  `G_m=C_2 \oplus C_{2m} \oplus C_{2m}`, `m>=2`: classify every
-  length-`8m` sequence with no zero-sum subsequence of length `2m`.
-- The intended publication-level contribution is the full all-`m` structural
-  classification, or a broad uniform theorem materially advancing it; a routine
-  isolated small-`m` catalogue is not the selected contribution.
-- CAND-01 and CAND-03 remain audited alternatives but are no longer selected.
-  CAND-04 remains retired as a clean standalone inverse target.
-- Mathematical results by this programme: NONE.
-- Leading journal: Electronic Journal of Combinatorics; CAND-02-specific fit
-  and current substantive-AI eligibility were established in S003.
-- Confirmed external reviewer: NONE.
-- Intended first CAND-02 reviewer lead: Xue Li. S005 freshly verified a current
-  public institutional route, strong same-architecture subject fit and no
-  obvious public conflict indicator with the controlling Girard--Schmid
-  ordinary-EGZ baseline. Willingness and actual conflicts remain unconfirmed.
-- Xue Li Stage-1 package: owner reports the S005 message was SENT on
-  2026-10-02. Transmission is an owner-reported external action; no reply,
-  agreement or reviewer status is inferred.
-- External-review gate: CLOSED.
-- Computation/proof gate: CLOSED.
-- Active owner blocker: **NONE.**
-- Next session: **S006**, a pre-proof structural-baseline and dependency-map
-  session that may run while the Xue Li reply is pending.
+- Exact target: classify, for every `m>=2`, every length-`8m` sequence over
+  `G_m=C_2\oplus C_{2m}\oplus C_{2m}` with no zero-sum subsequence of
+  length `2m`.
+- Mathematical results by this programme: **NONE**.
+- S006 full-proof inspection shows the equal-factor direct proof uses
+  `H=C_m^2` and quotient `C_2^3` to prove the threshold, but does not
+  classify equality/extremal cases.
+- The closest published ordinary-EGZ inverse proof uses a cyclic kernel
+  `C_n`; its decisive near-extremal restricted-sum step is not a theorem for
+  the CAND-02 kernel `C_m^2`.
+- Girard--Schmid 2019 Lemma 4.3 explicitly excludes/fails in the homocyclic
+  regime and must not be imported.
+- Girard--Schmid Lemma 4.4(2) is a genuine conditional bridge at the exact
+  target length, but the literature inspected in S006 does not force its
+  progressive-subsums hypothesis for every extremal.
+- CAND-02 status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**; no
+  openness inference is made.
+- Leading journal: Electronic Journal of Combinatorics.
+- Confirmed external reviewer: **NONE**.
+- Xue Li Stage-1: owner reports SENT 2026-10-02; REPLY PENDING.
+- External-review gate: **CLOSED**.
+- Computation/proof gate: **CLOSED**.
+- Active owner blocker: **NONE**.
+- Next session: **S007**.
 - Live prompt: authoritative/NEXT_SESSION_PROMPT.md.
 
-The owner-reported send resolves the transmission blocker only. Xue Li is not a
-confirmed reviewer, the external-review gate remains CLOSED, and no proof,
-enumeration, experiment, computation or formalisation is authorized. S006 is
-limited to primary-source proof inspection, extraction of published tools,
-notation normalization, dependency mapping and precise identification of what a
-later mathematical investigation would still have to establish.
+S007 may inspect published homocyclic rank-two extremal/near-extremal structure,
+restricted-sum results and equality/stability refinements of the direct
+subgroup/quotient method. It must not prove the missing statements, enumerate
+cases, compute, formalise, send outreach or open gates.
 
 ## Authority and reconciliation rule
 

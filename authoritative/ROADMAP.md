@@ -343,3 +343,35 @@ small cases, run experiments or computation, use formalisation as a proof
 search, or infer openness from missing literature. Mathematical investigation
 begins only after the external proposal assessment and the remaining preflight
 gate requirements are actually satisfied.
+
+
+## Frontier after S006
+
+S006 completed the bounded pre-proof structural baseline for CAND-02.
+
+- **Threshold/value layer — source-supplied.** The equal-factor direct proof
+  uses `H=C_m^2` and `G_m/H=C_2^3`; published exact constants and
+  subgroup/quotient inequalities give `eta(G_m)=6m+2` and
+  `s(G_m)=8m+1`.
+- **Local quotient layer — source-supplied.** Exact `C_2^3` lemmas from the
+  closest inverse paper are available once a legitimate reduction produces
+  their hypotheses.
+- **Equality/near-equality bridge — unprovided by the inspected literature.**
+  The direct value proof does not classify the one-below-threshold case or
+  force the pair/block decomposition used by the distinct-family inverse proof.
+- **Kernel rigidity — unprovided in the needed all-`m` form.** The closest
+  inverse proof is cyclic-kernel; the strong 2019 unequal-factor lemma
+  explicitly excludes the homocyclic regime. Property-D-dependent rank-two
+  structure cannot be treated as unconditional input.
+- **Conditional eta-core bridge — source-supplied.** Lemma 4.4(2) applies at
+  length `8m` if its progressive-subsums hypothesis is met, but the source
+  does not force that hypothesis.
+
+No mathematical result was proved by the programme. CAND-02 remains
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. The Xue Li reply remains pending;
+external review and computation/proof remain CLOSED.
+
+The next independently runnable unit is **S007**, a source-only audit for
+unconditional homocyclic `C_m^2` extremal/near-extremal structure and
+equality/stability refinements of the subgroup/quotient method. S007 must report
+a source gap rather than attempt to fill one mathematically.

@@ -236,3 +236,31 @@ No mathematical result was proved by the programme in S004.
   DOI 10.4064/aa251008-9-4; publisher record includes a public correspondence
   link.
   https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/224/3/116487/the-structure-of-sequences-with-zero-sum-subsequences-of-the-same-length-on-finite-abelian-groups-of-rank-two
+
+
+## S006 proof-inspection and dependency claims
+
+The following claims were checked on **2026-10-02**. They are published-source
+facts or access-boundary records, not programme proofs.
+
+| Claim | Classification | Bounded content | Support / remaining boundary |
+| --- | --- | --- | --- |
+| C-38 | SOURCE_RESULT / FULL-PROOF INSPECTION | In the equal-factor case `G_m=C_2\oplus C_{2m}^2`, Girard--Schmid prove the sharp `eta` and `s` values through `H=C_m^2`, quotient `C_2^3`, exact component constants and published subgroup/quotient inequalities. | ZS-10 proof inspected; ZS-29 lower-bound proposition inspected; ZS-34 statement cross-check. Threshold proof only, not extremal classification. |
+| C-39 | SOURCE_RESULT / FULL-PROOF INSPECTION | Girard--Schmid 2019 Lemma 4.3 assumes the unequal-factor regime `n>=2` and explicitly notes that the relevant conclusion is false for homocyclic `C_m^2`. | ZS-10; cannot be specialized silently to CAND-02. |
+| C-40 | SOURCE_RESULT / CONDITIONAL REDUCTION | Girard--Schmid 2019 Lemma 4.4(2), specialized to CAND-02, turns a length-`8m` extremal into a translated length-`6m+1=eta(G_m)-1` short-zero-sum extremal core if a subsequence `C` of length at least `m-1` satisfies the lemma's progressive-subsums hypothesis. | ZS-10 plus C-38. No inspected source forces such a `C` for every target extremal. |
+| C-41 | SOURCE_RESULT / FULL-PROOF INSPECTION | The 2020 inverse proof for `C_2^2\oplus C_{2n}` uses the unique cyclic kernel `C_n`, explicit structure of length-`s(C_n)-2` cyclic extremals and a restricted-sum complement of size at most one before the `C_2^3` residue analysis and eta-extremal classification. | ZS-22, Theorem 3.2, Theorem 4.1 and proof of Theorem 5.1 inspected. |
+| C-42 | SOURCE_RESULT / LOCAL TOOL | The `C_2^3` quotient lemmas used in the 2020 inverse proof are exact published local theorems, including the squarefree length-five/unique four-term zero-sum fact. | ZS-22, Lemmas 3.3--3.4; CAND-02 still needs a valid reduction producing their hypotheses. |
+| C-43 | ACCESS BOUNDARY | Li--Yin 2024 covers `disc(G)` for the same broad rank-three architecture, but S006 obtained only official abstract/metadata, not the full proof; the invariant is distinct from ordinary EGZ. | ZS-23; no ordinary-EGZ lemma inferred from inaccessible proof text. |
+| C-44 | SOURCE_RESULT / STATEMENT CROSS-CHECK | The subgroup/quotient inequalities used in the direct proof require `exp(G)=exp(H)exp(G/H)` and give the standard `eta` and `s` upper bounds with factor `exp(G/H)`. | ZS-34; exact proposition statement cross-checked through later primary literature; original monograph proof not separately audited. |
+
+### S006 source-access upgrades/addition
+
+| ID | Source | S006 inspection level | Purpose / limit |
+| --- | --- | --- | --- |
+| ZS-10 | Benjamin Girard and Wolfgang A. Schmid, *Direct zero-sum problems for certain groups of rank three*, JNT 197 (2019), DOI 10.1016/j.jnt.2018.08.016, arXiv:1806.07636v2, https://arxiv.org/abs/1806.07636 | **Full relevant proof inspected**, including Theorems 3.1--3.2 and Lemmas 4.1--4.4; PDF pages visually checked | Controlling direct proof and subgroup/quotient architecture |
+| ZS-22 | Benjamin Girard and Wolfgang A. Schmid, *Inverse zero-sum problems for certain groups of rank three*, Acta Math. Hung. 160 (2020), DOI 10.1007/s10474-019-00983-w, arXiv:1809.03178v2, https://arxiv.org/abs/1809.03178 | **Full relevant proof inspected**, including Theorem 3.2, Lemmas 3.3--3.4, Theorem 4.1 and Theorem 5.1 | Closest ordinary-EGZ inverse architecture; distinct family |
+| ZS-29 | Yves Edel, Christian Elsholtz, Alfred Geroldinger, Silke Kubertin, Laurence Rackham, *Zero-sum problems in finite abelian groups and affine caps*, QJM 58 (2007), 159--186 | **Full relevant proposition/proof inspected**, especially Proposition 3.1 | Lower-bound construction used by the equal-factor direct proof |
+| ZS-34 | Alfred Geroldinger and Franz Halter-Koch, *Non-Unique Factorizations: Algebraic, Combinatorial and Analytic Theory*, Chapman & Hall/CRC (2006), Proposition 5.7.11 | Exact proposition statement cross-checked through later primary literature; original book proof not separately inspected | Subgroup/quotient inequalities used by Girard--Schmid |
+| ZS-23 | Xue Li and Qiuyu Yin, *On the existence of zero-sum subsequences of distinct lengths over certain groups of rank three*, Acta Math. Hung. 174 (2024), DOI 10.1007/s10474-024-01482-3 | Official publisher abstract/metadata only in S006 | Same architecture under distinct `disc(G)`; proof access gap preserved |
+
+No S006 search non-hit is an openness claim.
