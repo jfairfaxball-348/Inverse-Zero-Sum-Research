@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S003",
-  "next_session": null,
-  "next_brief": null,
+  "next_session": "S004",
+  "next_brief": "authoritative/S004_CANDIDATES_3_AND_4_DUE_DILIGENCE_BRIEF.md",
   "stage": "P1_PROPOSAL_AND_REVIEW_ARRANGEMENTS",
   "programme_status": "OPEN",
   "exact_target": "CAND-01 remains incumbent pending B-003: rank-two Property D for C_n^2",
-  "candidate_under_due_diligence": "CAND-02 audit completed: inverse EGZ classification for length-8m sequences over C_2 + C_{2m} + C_{2m}; survives as source-defined/current-status-unknown challenger",
+  "candidate_under_due_diligence": "CAND-03 and CAND-04 scheduled for equal-rigor S004 audits before final target selection",
   "mathematical_results": [],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -18,17 +18,15 @@
   "computation_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [
-    "B-003"
-  ],
+  "active_owner_blockers": [],
   "future_owner_requirements": [
-    "Resolve B-003 by explicitly retaining CAND-01 or switching the selected target to CAND-02.",
+    "After S004, explicitly select the programme target from the full surviving audited candidate set if two or more credible candidates remain.",
     "After the target is settled, explicitly authorize any target-specific external reviewer outreach before transmission.",
     "Obtain an independent proposal/status assessment and separately establish willingness in principle for a later manuscript review.",
     "Only after all three preflight gates are genuinely open may proof/computation/formalisation be scheduled.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
+  "next_prompt_status": "READY",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -56,6 +54,6 @@
   "selected_target_date": "2026-10-02",
   "s002_source_refresh_date": "2026-10-02",
   "s003_source_refresh_date": "2026-10-02",
-  "intended_first_reviewer": "UNSET pending B-003; CAND-01 Pingzhi Yuan package on hold; CAND-02 Xue Li package prepared and unsent",
-  "outreach_status": "CAND01_PREPARED_ON_HOLD_NOT_SENT; CAND02_XUE_LI_PREPARED_NOT_SENT"
+  "intended_first_reviewer": "UNSET pending full four-candidate audit; CAND-01 Pingzhi Yuan package and CAND-02 Xue Li package remain prepared and unsent",
+  "outreach_status": "ALL_TARGET_OUTREACH_ON_HOLD_PENDING_S004_AND_FINAL_SELECTION"
 }
