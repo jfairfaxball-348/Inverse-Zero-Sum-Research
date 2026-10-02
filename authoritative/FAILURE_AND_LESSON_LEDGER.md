@@ -18,6 +18,10 @@ programme. S001 adds literature-status and source-discipline lessons.
 | FL-011 | Gao's long-standing `nu(G)` conjecture was announced disproved in a preprint dated 2026-09-15, only weeks before S001 | Treat even famous, repeatedly cited conjectures as time-sensitive research status; refresh immediately before target commitment and novelty claims. |
 | FL-012 | A source-defined adjacent extension can be precise without being certified open | Label CAND-02 and CAND-03 UNKNOWN until overlap/current-status evidence supports a stronger status. Precision is not an openness certificate. |
 
+| FL-013 | A sufficiently-large-prime theorem with an existential cutoff can reduce an infinite conjecture to a finite residual layer without identifying any residual cases | Record the logical reduction, but do not enumerate or claim the remaining primes until an effective cutoff/source supplies them. |
+| FL-014 | A recent preprint can formalize a conclusion that was publicly announced much earlier | Search historical conference abstracts, author records and alternate terminology before assigning novelty to the date of a full write-up. |
+| FL-015 | Citation counts, database labels and exact-title non-hits are not openness certificates | Preserve them only as search observations; require primary literature and expert status checking for novelty/open-status decisions. |
+
 For each later failure or correction append: the exact failed claim/route,
 triggering evidence, scope affected, what survives, why the error arose, the
 lesson and the bounded repair or pivot. Preserve counterexamples and falsifying
