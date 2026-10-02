@@ -1,33 +1,48 @@
 # Target register
 
-**Exact target: UNSELECTED.** No programme theorem, novelty certificate or open
-problem certificate exists. The following are orientation leads only.
-
-| ID | Territory | Genre and contribution type | Source leads and present boundary |
-| --- | --- | --- | --- |
-| T-01 | Extremal inverse zero-sum classification | Combinatorial number theory; structural classification | ZS-03, ZS-04: classical cyclic and rank-two baselines must be checked to avoid selecting a solved problem |
-| T-02 | Length-restricted inverse zero-sum problems | Additive combinatorics; classify extremal sequences avoiding zero sums of prescribed or bounded length | ZS-05: published intermediate-length conjectures and established parameter ranges; present unresolved ranges require a fresh source audit |
-| T-03 | Near-extremal structure | Combinatorial number theory; stability or classification below an extremal threshold | Research direction only; S001 must locate exact source-defined questions rather than manufacture an open claim |
-| T-04 | Property D | Inverse zero-sum theory; exact-length extremal structure | ZS-06: 2025 preprint covers sufficiently large primes; remaining scope and status need assessment |
-| T-05 | Higher-rank or noncommutative extensions | Additive/group combinatorics; structural classification | Optional comparison territory, not an automatic scope expansion; precise baselines needed |
-
-## Candidate record requirements
-
-For each real candidate identified in P0, record:
-
-1. A clear name and source-defined question; genre and contribution type.
-2. Exact group/domain, repetitions, subsequence conventions, quantifiers,
-   length restrictions and exceptional cases.
-3. What is established, by whom, source version and theorem identifiers.
-4. What a proposed new result would add and why the difference matters.
-5. Openness status: verified author statement / published conjecture awaiting
-   current-status confirmation / already solved / unknown. Failed searching
-   never upgrades "unknown" to "open".
-6. Journals matching the subject and workflow; relevant reviewer expertise.
-7. Source access gaps, overlap risks and what evidence would eliminate the target.
-
-Do not rank this initial selection by difficulty, compute cost or proof-success
-probability. Compare mathematical identity, relevance, evidence and publication
-fit. Feasibility and resources can be considered later without silently changing
-the selected claim. Owner selection is required before a candidate becomes the
+**Exact target: UNSELECTED.** S001 produced four source-defined candidate
+questions. None is promoted here to a certified open problem, programme theorem
+or novelty claim. Owner selection is now required before one becomes the
 authoritative target.
+
+## S001 candidate set
+
+| ID | Precise question | Genre / contribution type | Established baseline and present status | Publication / review fit |
+| --- | --- | --- | --- | --- |
+| CAND-01 | For every `n >= 2`, does `C_n^2` have Property D; equivalently, must every length-`4n-4` sequence with no `n`-term zero sum have Property-D form `T^(n-1)`? | Rank-two extremal inverse EGZ; completion of a named structural conjecture | Property D is multiplicative; `s(C_n^2)=4n-3`; Schlage-Puchta (2025) proves all sufficiently large primes. Bounded 2026-10-02 search found no all-modulus completion; status remains to be re-audited, not certified open. | Strong E-JC subject/workflow fit; reviewer needs rank-two inverse/Property-D expertise. |
+| CAND-02 | For every `m >= 2`, classify length-`8m` sequences over `C_2 + C_{2m} + C_{2m}` with no zero-sum subsequence of length `2m`. | Rank-three extremal inverse EGZ; structural classification beside a known direct threshold | Original Girard--Schmid direct theorem gives `s(G)=8m+1`; their inverse theorem covers the different family `C_2 + C_2 + C_{2n}`. No completion for the displayed equal-factor family was found in the bounded audit, so openness is UNKNOWN. | E-JC compatible; JNT/Acta Math. Hung. are baseline venues; reviewer needs rank-three inverse EGZ expertise. |
+| CAND-03 | Classify length-`24` sequences over `C_3^3\{0}` with no two innerly non-zero-sum-joint short zero-sum subsequences. | Generalized Narkiewicz-sense inverse problem; first natural rank-three structural classification after rank-two completion | Gao et al. (2024), Theorem 3.6, gives `eta^N(C_3^3)=25`; Hui--Zhong (2026) completely settle the inverse problem for all rank-two groups. Exact rank-three case is a source-defined extension; current openness UNKNOWN. | E-JC compatible; Acta Arith./JCTA baselines; reviewer needs generalized Narkiewicz/factorization expertise. |
+| CAND-04 | Does `C_p^3` have Property D for every prime `p >= 7`? | Higher-rank extremal inverse EGZ; specialization of the general Property-D conjecture | Gao--Geroldinger--Schmid (2007) state the general `C_n^r` conjecture. Gao et al. (2024) collect known families including `C_{2^a}^r`, `C_3^r`, and `C_{3^a5^b}^3`. No all-`p>=7` completion was found in the bounded audit; status requires refresh. | E-JC compatible; JNT/JCTA higher-rank precedents; reviewer needs higher-rank Property-D/EGZ expertise. |
+
+The candidates are intentionally unranked by difficulty, compute cost or
+probability of proof. Their fuller definitions, source boundaries and comparison
+are in
+[the S001 field map](../sessions/S001/FIELD_MAP_AND_CANDIDATES.md).
+
+## Retired or non-shortlisted S001 leads
+
+| Lead | S001 disposition | Evidence boundary |
+| --- | --- | --- |
+| Intermediate restricted-length inverse classification for rank-two groups | **RETIRED AS SOLVED** | Ebert--Grynkiewicz (2024) establish the remaining prime case and state that, with other work, the conjectured structure follows for all rank-two abelian groups. |
+| Inverse `D_k(G)` for rank-two groups | **RETIRED AS SOLVED** | Zhong, *Combinatorica* 45 (2025), treats all rank-two groups. |
+| Inverse Narkiewicz-sense `eta^N` for rank-two groups | **RETIRED AS SOLVED** | Hui--Zhong, JCTA 224 (2026), completely settle the rank-two problem. |
+| Gao's universal lower-bound conjecture for `nu(G)` | **RETIRED AS DISPROVED** | Geroldinger--Wang--Yang, arXiv:2609.17127 v1 (2026-09-15), abstract announces a disproof. Exact counterexample details were not inspected in S001. |
+| 2026 local zero-sum thresholds | **CURRENT ADJACENT ACTIVITY; NOT SHORTLISTED** | Gao--Jiang--Mu (arXiv:2607.11313) determine stated local invariants and inverse problems; this is not automatically the programme target. |
+| Near-extremal stability | **NOT YET SOURCE-DEFINED** | No precise current conjecture was manufactured merely to fill the candidate list. |
+
+## Candidate record requirements retained for P1
+
+For a selected candidate, record:
+
+1. Exact group/domain, repetitions, subsequence conventions, quantifiers,
+   length restrictions and exceptional cases.
+2. Established results with source version and theorem identifiers.
+3. A target-specific current-status/overlap audit; search failure never becomes
+   openness or novelty.
+4. The proposed contribution and why it would matter if proved.
+5. Target-specific journals, substantive-AI eligibility and submission route.
+6. Reviewer expertise and explicit two-stage willingness before later gates.
+7. Source-access gaps and evidence that would retire or narrow the target.
+
+The target gate remains CLOSED until the owner selects an exact target and the
+selection is recorded.
