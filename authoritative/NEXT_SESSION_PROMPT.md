@@ -1,3 +1,9 @@
+# Live next-session prompt
+
+Status: READY.
+Session: S005.
+
+```text
 Begin S005 in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
@@ -36,3 +42,4 @@ verify remote main. If CAND-02 and the Xue Li route remain sound and the package
 is send-ready, activate the owner blocker requiring explicit authorization to
 send that exact Stage-1 message; under the repository blocker rule output NO
 next-session prompt after S005.
+```
