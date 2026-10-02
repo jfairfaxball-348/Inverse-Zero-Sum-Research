@@ -1,8 +1,10 @@
 # External reviewer register
 
-**Confirmed reviewer: NONE. No outreach was sent in S001 or earlier by this
-programme.** Publication history, an arXiv endorsement, an earlier request to
-receive a paper, or subject-matter expertise is not review willingness.
+**Confirmed reviewer: NONE. Intended first reviewer approach: Pingzhi Yuan.**
+No outreach has yet been authorized or sent by this programme. The owner's
+2026-10-02 preference is to pursue Pingzhi Yuan in parallel with CAND-01 due
+diligence, but publication history, earlier correspondence or subject-matter
+expertise is not review willingness.
 
 Private contact observations remain owner-supplied summaries only. Do not copy
 private messages or email addresses into the public repository.
@@ -73,6 +75,22 @@ expertise lead, but before calling that person an **independent reviewer** the
 programme must assess actual contribution history, current collaboration,
 conflicts and whether the proposed request preserves critical independence.
 
-When reviewer outreach becomes the next required action, prepare the target
-proposal and a reviewable draft first, then request the owner's explicit send
-or authorization. No outreach is authorized merely by this register.
+## CAND-01 reviewer-preparation plan
+
+For Pingzhi Yuan, prepare a short proposal package before outreach containing:
+
+- exact Property-D question and conventions;
+- what is established, with theorem/source identifiers;
+- what the 2025 sufficiently-large-prime result does and does not settle;
+- the intended contribution boundary after the S002 novelty audit;
+- why the problem is relevant to inverse zero-sum theory and E-JC;
+- transparent description of substantive AI use and human verification;
+- two separate asks: proposal assessment now, and willingness in principle to
+  review a later manuscript subject to scope, timing and availability.
+
+Verify the current institutional identity/contact route before presenting a
+send-ready draft. Do not publish private addresses in the repository.
+
+When the package is ready, explicit owner send authorization is required.
+D-012 records a desire to obtain a reply, not permission to transmit the
+message.
