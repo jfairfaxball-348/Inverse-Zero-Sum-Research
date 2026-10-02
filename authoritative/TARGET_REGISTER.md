@@ -252,8 +252,11 @@ Source-supported baseline:
 - Gao--Hui--X. Li--Y. Li--Qu--Zhong (2024) define eta^N, identify it with the
   older Narkiewicz-sense eta* invariant, and Theorem 3.6 yields
   eta^N(C_3^3)=25.
+- Fan--Hui--Zhong (2024), *On the inverse problem of the revised Narkiewicz
+  constant for finite abelian groups*, solves the exact eta^N inverse condition
+  for rank-two families C_n+C_{nm} with n in {2,3}, m>=2.
 - Fan--Zhong (2025) develops the equivalent joint-short-minimal-zero-sum
-  rank-two line.
+  rank-two line and its direct/inverse homocyclic structure.
 - Hui--Zhong (2026) completely settles the inverse eta^N problem for every
   finite abelian group of rank two.
 - The S004 bounded search found neither an exact C_3^3 completion nor an

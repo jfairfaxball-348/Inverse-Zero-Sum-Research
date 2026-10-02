@@ -28,9 +28,10 @@ literature, including the G^bullet sequence domain, repetition convention,
 innerly non-zero-sum-joint short-zero-sum relation, eta^N=eta* notation bridge,
 and Theorem 3.6 value eta^N(C_3^3)=25.
 
-Fan--Zhong (2025) and Hui--Zhong (2026) establish the nearby rank-two
-development, with the latter completing the inverse eta^N problem for all
-rank-two finite abelian groups. The bounded S004 search found neither a
+Fan--Hui--Zhong (2024) already solve eta^N inverse structure for the rank-two
+families C_n+C_{nm} with n in {2,3}; Fan--Zhong (2025) develops the full
+rank-two direct/joint-short framework, and Hui--Zhong (2026) completes the
+inverse eta^N problem for all rank-two finite abelian groups. The bounded S004 search found neither a
 C_3^3 inverse completion nor an explicit source calling this exact case open.
 
 Classification: SOURCE-DEFINED / CURRENT STATUS UNKNOWN. The surviving target

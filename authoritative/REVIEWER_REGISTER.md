@@ -219,10 +219,10 @@ No reviewer is confirmed and no outreach occurred.
 | Person | CAND-03 public fit | Independence / source-proximity observation | S004 disposition |
 | --- | --- | --- | --- |
 | Qinghai Zhong | Coauthor of 2024 defining paper, 2025 rank-two joint-short paper and 2026 rank-two completion | Exact status expert but author of controlling literature | Exact status expert; not first independent approach |
-| Wanzhen Hui | Coauthor of 2024 defining paper and 2026 complete rank-two inverse theorem | Exact source-line proximity | Exact status expert; not first independent approach |
+| Wanzhen Hui | Coauthor of the 2024 defining paper, the 2024 revised-Narkiewicz rank-two inverse paper and the 2026 complete rank-two inverse theorem | Exact source-line proximity | Exact status expert; not first independent approach |
 | Xue Li | Coauthor of 2024 generalized-Narkiewicz paper and current inverse zero-sum work | Defining-paper authorship | Strong status expert; not first independent approach |
 | Alfred Geroldinger | Coauthor of the 2011 Narkiewicz-constant line and 2026 factorization monograph | Foundational source-line author | Factorization status expert; not first independent approach |
-| Yushuang Fan | Coauthor of 2025 rank-two generalized inverse work | Nearest-predecessor authorship | Status/method expert; not first independent approach |
+| Yushuang Fan | Coauthor of the 2024 revised-Narkiewicz rank-two inverse paper and 2025 joint-short rank-two work | Nearest-predecessor authorship | Status/method expert; not first independent approach |
 | **David J. Grynkiewicz** | Extensive inverse zero-sum/structural additive work; 2026 coauthor of *Combinatorial Factorization Theory* | Not an author of the 2024 defining paper or 2025/2026 rank-two eta^N completion papers | **Strongest independent first CAND-03 proposal/status lead found in S004** |
 | Pingzhi Yuan | E-JC inverse/short-zero-sum expertise and current 2026 zero-sum work | No authorship of controlling Narkiewicz papers | Strong independent alternative |
 

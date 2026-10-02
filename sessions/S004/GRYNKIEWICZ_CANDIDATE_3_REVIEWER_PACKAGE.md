@@ -37,11 +37,14 @@ Source baseline:
    DOI 10.4064/aa230118-1-10, define eta^N and prove
    eta^N(C_3^3)=25. The paper also identifies eta^N with the older
    Narkiewicz-sense eta* invariant.
-2. Fan--Zhong, JCTA 212 (2025), 105984, develops the equivalent innerly-joint
+2. Fan--Hui--Zhong, Colloq. Math. 176 (2024), 207--217,
+   DOI 10.4064/cm9413-10-2024, already solves the exact eta^N inverse
+   condition for rank-two C_n+C_{nm} with n in {2,3}, m>=2.
+3. Fan--Zhong, JCTA 212 (2025), 105984, develops the equivalent innerly-joint
    short-minimal-zero-sum formulation and rank-two theory.
-3. Hui--Zhong, JCTA 224 (2026), 106238, completely settles the inverse
+4. Hui--Zhong, JCTA 224 (2026), 106238, completely settles the inverse
    eta^N problem for rank-two finite abelian groups.
-4. The S004 bounded search found no exact C_3^3 inverse completion or
+5. The S004 bounded search found no exact C_3^3 inverse completion or
    theorem subsuming it, but also found no source explicitly declaring the
    displayed problem open. The programme therefore labels its current status
    SOURCE-DEFINED / CURRENT STATUS UNKNOWN, not "open".

@@ -80,6 +80,15 @@ eta* / Narkiewicz terminology and factorization literature.
 
 ## 4. Rank-two completion chain
 
+Yushuang Fan, Wanzhen Hui and Qinghai Zhong,
+"On the inverse problem of the revised Narkiewicz constant for finite abelian
+groups", Colloquium Mathematicum 176 (2024), 207--217,
+DOI 10.4064/cm9413-10-2024, already treats the exact eta^N inverse condition
+for the rank-two families C_n + C_{nm} with n in {2,3} and m>=2, while also
+determining eta^N for those groups. This is a substantial intermediate inverse
+result, but its ambient groups remain rank two and therefore do not contain
+C_3^3.
+
 Yushuang Fan and Qinghai Zhong,
 "On joint short minimal zero-sum subsequences over finite abelian groups of
 rank two", Journal of Combinatorial Theory, Series A 212 (2025), 105984,
@@ -94,8 +103,9 @@ abelian groups of rank 2", Journal of Combinatorial Theory, Series A 224
 problem at eta^N(G)-1 and completely settles it for finite abelian groups of
 rank two.
 
-The latter paper is therefore the nearest completed inverse theory, but its
-theorems are rank two. No inspected theorem says that its structural
+The 2026 paper is therefore the nearest completed inverse theory, with the
+2024 revised-Narkiewicz paper an important earlier rank-two inverse milestone;
+all of these theorems are rank two. No inspected theorem says that its structural
 classification extends to C_3^3 or reduces the rank-three case to rank two.
 
 ## 5. Current-status and overlap audit
@@ -108,7 +118,8 @@ The bounded audit searched, through 2026-10-02:
   subsequences;
 - C_3^3, elementary 3-groups, rank three, higher rank, extremal length 24 and
   eta^N(G)-1 formulations;
-- forward/backward citation trails around the 2011, 2024, 2025 and 2026 papers;
+- forward/backward citation trails around the 2011 Narkiewicz source, both
+  2024 generalized/revised-Narkiewicz papers, and the 2025/2026 rank-two papers;
 - recent publication lists, factorization-project records, preprints,
   theses/dissertations, surveys/books and conference records;
 - adjacent inverse invariants such as disc(G), D_k(G), restricted-length
@@ -154,7 +165,7 @@ Accordingly CAND-03 is not upgraded to EXPLICIT_OPEN_QUESTION.
 | Definition of eta^N and sequence conventions | ESTABLISHED | Baseline |
 | Equality eta^N=eta* / alternate Narkiewicz notation | ESTABLISHED | Search-equivalence key |
 | eta^N(C_3^3)=25 | ESTABLISHED | Exact direct threshold |
-| Rank-two eta^N inverse problem | ESTABLISHED / COMPLETED | Closest completed theory |
+| Rank-two eta^N inverse problem, including the 2024 revised-Narkiewicz subfamilies and 2026 full completion | ESTABLISHED / COMPLETED | Closest completed theory |
 | Classical Property D/Property C input for C_3^3 | ESTABLISHED, DISTINCT STRUCTURAL INPUT | Does not classify eta^N extremals |
 | Full length-24 C_3^3 eta^N inverse classification | SOURCE-DEFINED / CURRENT STATUS UNKNOWN | Survives; no openness certificate |
 | Explicit source stating exact CAND-03 is open | NOT LOCATED | External status review remains material |
@@ -215,8 +226,9 @@ No acceptance prediction is made.
 ## 10. CAND-03 reviewer reassessment
 
 Exact source-line experts include Qinghai Zhong, Wanzhen Hui, Xue Li, Yushuang
-Fan and Alfred Geroldinger, but each is an author of the defining, predecessor
-or nearest-completion Narkiewicz literature. They are exceptionally useful
+Fan and Alfred Geroldinger, but each is an author of the defining, 2024
+revised-Narkiewicz inverse, predecessor, foundational or nearest-completion
+Narkiewicz literature. They are exceptionally useful
 status experts; that proximity makes them less clean as the first independent
 reviewer of a proposed extension.
 
