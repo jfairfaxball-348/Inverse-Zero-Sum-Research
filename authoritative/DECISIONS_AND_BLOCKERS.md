@@ -19,6 +19,7 @@
 | D-013 | 2026-10-02 | After S002, retain full rank-two Property D as CAND-01 but treat the operative unresolved/status-unknown frontier as the finite exceptional-prime layer below Schlage-Puchta's existential cutoff; do not claim openness from the bounded search | S002 primary-source/current-status audit |
 | D-014 | 2026-10-02 | Open the publication gate with E-JC as the retained leading venue after target-specific scope, AI, submission, comparable-paper and conflict checks | S002 official-policy refresh; eligibility only, not acceptance prediction |
 | D-015 | 2026-10-02 | Prepare Pingzhi Yuan Stage-1 status/proposal review now and a separate conditional Stage-2 manuscript-review request; no transmission occurs without owner authorization | S002 reviewer preparation and standing communication rule |
+| D-016 | 2026-10-02 | Hold the prepared CAND-01 Pingzhi Yuan outreach and subject CAND-02 to an S002-level due-diligence audit before deciding whether to switch targets | Explicit owner instruction after reviewing S002 narrowing |
 
 ## S001 target-selection resolution
 
@@ -35,39 +36,34 @@ audit before the target gate can open.
 
 ## Active owner blockers
 
-### B-002 — Owner authorization required to send the prepared Pingzhi Yuan Stage-1 proposal/status-check outreach.
+**NONE.**
 
-S002 completed the independent due-diligence, venue and reviewer-package work.
-The next useful external-review action is to transmit the prepared Stage-1
-proposal/status-check message to Pingzhi Yuan. The repository's communication
-rule requires an explicit owner instruction to send, or the owner may send it
-personally.
-
-Prepared evidence/draft:
-[sessions/S002/PINGZHI_YUAN_REVIEWER_PACKAGE.md](../sessions/S002/PINGZHI_YUAN_REVIEWER_PACKAGE.md).
-
-**Required owner action:** explicitly authorize sending the prepared Pingzhi
-Yuan Stage-1 proposal/status-check message, or send it personally and report
-that it was sent.
+B-002 is **RESOLVED/SUPERSEDED** by D-016. The owner did not authorize the
+CAND-01 outreach; instead the owner explicitly directed the programme to hold
+that message and scrutinize CAND-02 before deciding whether to switch targets.
+S003 is therefore independently runnable.
 
 ## Future owner requirements
 
-- After Stage 1 is sent, supply/record Pingzhi Yuan's reply if it arrives
-  outside connected tools.
-- Obtain an actual independent proposal/status assessment and resolve any
-  material objection or prior-art correction.
-- Only separately thereafter seek willingness in principle for a later
-  manuscript review; Stage-1 correspondence is not manuscript-review consent.
-- The external-review and computation gates remain closed until those
+- After S003, if CAND-02 survives strongly enough that retaining CAND-01 versus
+  switching to CAND-02 is a genuine choice, the owner must make that target
+  decision explicitly.
+- Only after the target is settled should the programme seek authorization to
+  send a target-specific external proposal/status-review request.
+- Obtain an actual independent proposal/status assessment and separately
+  establish willingness in principle for a later manuscript review.
+- The external-review and computation gates remain closed until their recorded
   requirements are met.
 - Later: authorize journal submission or other external author actions.
 
 ## Communication boundary
 
-D-012 is a strategic preference to pursue a Pingzhi Yuan reply in parallel with
-due diligence. It is **not** an instruction to transmit an email or message.
-The repository's standing rule remains: prepare the exact proposal, verify the
-recipient, and obtain explicit send authorization before outreach.
+D-012 remains historical evidence that Pingzhi Yuan was the intended first
+approach for CAND-01. D-016 now places that prepared outreach on hold while
+CAND-02 is audited. It is **not** authorized for transmission. The repository's
+standing rule remains: settle the target, prepare the exact target-specific
+proposal, verify the recipient, and obtain explicit send authorization before
+outreach.
 
 While waiting for a reviewer response later, independent literature, novelty,
 source and dependency work may continue. Mathematical proof attempts,
