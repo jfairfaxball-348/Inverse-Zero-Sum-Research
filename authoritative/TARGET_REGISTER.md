@@ -1,10 +1,10 @@
 # Target register
 
-**Exact target selected by owner: CAND-01 — rank-two Property D for `C_n^2`.**
-S002 has now specified the exact baseline and surviving contribution frontier, so
-the **target gate is OPEN**. This does **not** certify that the residual cases are
-currently open, novel, or publishable; the external status check remains required
-before mathematical work begins.
+**Incumbent exact target: CAND-01 — rank-two Property D for `C_n^2`.**
+S002 specified its exact baseline and surviving contribution frontier, so its
+target gate is OPEN. Owner decision D-016 now places **CAND-02 under pre-switch
+due diligence** before deciding whether to retain CAND-01 or replace it.
+No switch has yet occurred.
 
 ## S001 candidate set
 
@@ -95,3 +95,20 @@ exceptional layer. A merely isolated finite-prime verification is insufficient
 for the intended publication route unless it introduces a reusable method or
 closes the entire residual set. External expert status checking can still
 narrow or retire this scope.
+
+
+## S003 challenger status: CAND-02
+
+The owner has explicitly requested an S002-level audit of CAND-02 before any
+switch:
+
+> For every `m >= 2`, classify length-`8m` sequences over
+> `C_2 + C_{2m} + C_{2m}` with no zero-sum subsequence of length `2m`.
+
+At S003 entry this remains a **source-defined challenger with current openness
+UNKNOWN**, not the selected target. S001 established the original
+Girard--Schmid direct value `s(G)=8m+1` and observed that their inverse work
+concerns the distinct family `C_2+C_2+C_{2n}`; S003 must now test that apparent
+gap exhaustively enough for an owner retain/switch decision.
+
+No CAND-01 evidence is retired merely because CAND-02 is being reassessed.
