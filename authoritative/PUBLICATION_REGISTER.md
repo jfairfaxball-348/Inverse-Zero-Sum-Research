@@ -89,3 +89,13 @@ joint grants, close collaboration on the topic, student/supervisor relationships
 and same-department relationships. The programme's private pre-submission
 reviewer is not promised or nominated as a journal referee; editors control the
 journal process.
+
+
+## S003 candidate-specific publication status
+
+The publication gate currently reflects the audited incumbent CAND-01 route.
+CAND-02 is under pre-switch due diligence and **does not inherit CAND-01's
+target-specific venue conclusion automatically**. S003 must refresh E-JC fit,
+comparable rank-three inverse/zero-sum papers, current substantive-AI policy,
+submission/conflict rules and any credible backup before a target switch could
+preserve an OPEN publication gate.
