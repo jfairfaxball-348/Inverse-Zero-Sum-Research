@@ -112,10 +112,15 @@ decisions/blockers, roadmap, failure lessons and session ledger are
 synchronized in the same checkpoint. The live next-session prompt is removed
 because the owner blocker is active.
 
-The repository authority validator's invariants were checked against the
-resulting tree, including session-ID uniqueness, gate values, blocker/prompt
-consistency, required files/local links and unchanged Apache-2.0 licence.
-No mathematical check is claimed by repository validation.
+The repository authority validator's invariants were checked directly against
+the committed Git tree, including session-ID uniqueness, gate values,
+blocker/prompt consistency, required files/local links and unchanged
+Apache-2.0 licence; those checks passed. An additional attempt to clone the
+remote into the container and execute `python3 scripts/check_authority.py`
+verbatim failed because that container could not resolve github.com. The
+failed clone is a tooling/network limitation, not a failed authority check, and
+is recorded rather than silently treated as success. No mathematical check is
+claimed by repository validation.
 
 ## Owner blocker
 
