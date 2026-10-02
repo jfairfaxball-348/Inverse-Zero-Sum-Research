@@ -44,7 +44,16 @@ audit before the target gate can open.
 
 ## Active owner blockers
 
-**NONE.**
+### B-005 — Owner authorization to send Xue Li Stage-1 message required.
+
+**ACTIVE.** S005 completed the bounded current-status refresh, freshly verified
+the public Xue Li route and reasonable conflict indicators, and finalized the
+exact Stage-1 message at sessions/S005/XUE_LI_STAGE1_PACKAGE.md.
+
+Required owner action: explicitly authorize or decline transmission of that
+exact message through the freshly verified public correspondence route. This
+blocker does not authorize edits, a different recipient, manuscript review,
+journal-referee service, proof work, computation or any other external action.
 
 ### B-004 — final target selection after four audits
 
@@ -100,3 +109,19 @@ remain historical prepared alternatives and must not be sent unless the target
 is explicitly changed again. The CAND-02 Xue Li package is the active prepared
 route, but remains unsent pending S005 refresh and later explicit owner send
 authorization.
+
+
+## S005 decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-025 | 2026-10-02 | Retain CAND-02 without narrowing after the S005 current-status refresh. The inspected 2024--2026 literature adds relevant adjacent direct and disc(G) work but no located exact ordinary-EGZ all-m inverse completion or broader theorem that clearly subsumes it. Status remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN; this is not an openness claim. | S005 focused primary/current-status and overlap refresh |
+| D-026 | 2026-10-02 | Retain Xue Li as the first CAND-02 Stage-1 status/proposal reviewer route and freeze the S005 exact message as SEND-READY, NOT AUTHORIZED, NOT SENT. No alternate reviewer comparison was warranted because no new evidence materially weakened the S003 assessment. | Fresh official affiliation/subject-fit/correspondence check plus bounded public conflict screen |
+
+## S005 communication boundary
+
+No outreach occurred. B-005 is the only active owner blocker. The exact
+send-authorizable text is the message in sessions/S005/XUE_LI_STAGE1_PACKAGE.md.
+Authorization to send that text would not by itself open the external-review
+gate; the programme must still receive and assess an independent status/proposal
+response and separately establish later manuscript-review willingness.

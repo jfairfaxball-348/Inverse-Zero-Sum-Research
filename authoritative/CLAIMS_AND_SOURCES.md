@@ -204,3 +204,35 @@ small-prime statements are D0, not D. The clean CAND-04 target is retired for
 that dependency reason, not merely because a search failed.
 
 No mathematical result was proved by the programme in S004.
+
+
+## S005 current-status and reviewer-readiness additions
+
+| ID | Claim | Status | Source / note |
+| --- | --- | --- | --- |
+| C-32 | Shiwen Zhang's recent rank-three paper studies s_L(G), including k-th EGZ and short-zero-sum direct invariants, rather than the structural inverse problem for sequences of length s(G)-1 in CAND-02. | VERIFIED for scope inspected | ZS-32 |
+| C-33 | Girard--Zotova's 2025 preprint concerns direct EGZ values/upper bounds for rank-two-like p-groups and coprime cyclic products; its inspected abstract/introduction does not supply the CAND-02 ordinary-EGZ extremal classification. | VERIFIED for inspected scope | ZS-33 |
+| C-34 | The 2024 Li--Yin rank-three disc(G) theorem includes the ambient architecture C_2 + C_{n_1} + C_{n_2}, hence CAND-02 equal-factor groups, but disc(G) is a distinct invariant and the paper is not an ordinary s(G) inverse completion. | VERIFIED / adjacent only | Existing ZS-23; reconfirmed S005 |
+| C-35 | Current public Tianjin University of Commerce material identifies Xue Li's research directions as combinatorial number theory and algebraic combinatorics; the July 2026 Acta Arithmetica record confirms College of Science, Tianjin University of Commerce and a public correspondence route. | VERIFIED current public identity/route | REV-09, REV-10 |
+| C-36 | The S005 bounded public screen found no obvious coauthorship, same-department or public joint-project conflict between Xue Li and the controlling Girard--Schmid ordinary-EGZ baseline authors. This is not proof of independence and does not establish willingness. | BOUNDED NEGATIVE / REVIEWER SCREEN ONLY | REV-09, REV-10 plus targeted searches |
+| C-37 | The S005 bounded refresh located no exact all-m CAND-02 completion, no broader rank-three inverse theorem clearly subsuming it and no small/prime/power subfamily result that materially narrows the selected scope. This is a search result, not an openness claim. | BOUNDED NON-HIT | S005 search log in sessions/S005/CANDIDATE_2_STATUS_REFRESH.md |
+
+### S005 sources
+
+- **ZS-32** — Shiwen Zhang, *On some zero-sum invariants for abelian groups of
+  rank three*, Publicationes Mathematicae Debrecen (2025),
+  DOI 10.5486/PMD.2025.9991; arXiv:2310.05458.
+  https://arxiv.org/abs/2310.05458
+- **ZS-33** — Benjamin Girard and Sofia Zotova,
+  *The Erdős-Ginzburg-Ziv constant of rank-two-like p-groups*,
+  arXiv:2510.23543 (2025).
+  https://arxiv.org/abs/2510.23543
+- **REV-09** — Tianjin University of Commerce, College of Science, official
+  faculty profile for Li Xue.
+  https://lxy.tjcu.edu.cn/info/1169/2742.htm
+- **REV-10** — Wanzhen Hui and Xue Li,
+  *The structure of sequences with zero-sum subsequences of the same length on
+  finite abelian groups of rank two*, Acta Arith. 224 (2026), 221--231,
+  DOI 10.4064/aa251008-9-4; publisher record includes a public correspondence
+  link.
+  https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/all/224/3/116487/the-structure-of-sequences-with-zero-sum-subsequences-of-the-same-length-on-finite-abelian-groups-of-rank-two

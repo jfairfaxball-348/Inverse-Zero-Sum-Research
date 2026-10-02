@@ -331,3 +331,38 @@ layer.
 
 Target gate: **OPEN**. S005 may refresh status and reviewer readiness but may
 not begin proof/computation/formalisation.
+
+
+## S005 selected-target refresh — CAND-02
+
+Date: 2026-10-02.
+
+The live target remains:
+
+> For every integer m >= 2, classify all sequences S over
+> G_m = C_2 + C_{2m} + C_{2m} with |S| = 8m and
+> 0 not in Sigma_{2m}(S).
+
+S005 re-tested the exact ordinary-EGZ equal-factor family under alternate
+notation including C_2 + C_{2m}^2, direct-product notation,
+Z/2Z + (Z/2mZ)^2, s(G)-1 language and concrete small cases such as
+C_2 + C_4 + C_4. It also checked recent rank-three literature, forward
+citations, preprints and adjacent inverse invariants.
+
+The refresh located relevant but non-subsuming work: Li--Yin on rank-three
+disc(G), Hui--Li on rank-two disc(G), Zhang on other prescribed-length
+rank-three direct invariants, and Girard--Zotova on direct EGZ constants for
+rank-two-like p-groups. None of these sources, as inspected, supplies the
+ordinary-EGZ structural classification of all length-8m extremals in this
+equal-factor family.
+
+No exact all-m completion, broader inverse theorem clearly implying it, or
+m=2/prime/power subfamily result that materially narrows the chosen
+contribution was located in the bounded refresh. Search non-hits are not an
+openness declaration. The target status remains:
+
+**SOURCE-DEFINED / CURRENT STATUS UNKNOWN.**
+
+The selected publication-level contribution remains a full all-m structural
+classification, or a broad uniform theorem materially resolving/advancing it.
+A routine isolated small-m catalogue remains outside the selected target.

@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S004",
-  "next_session": "S005",
-  "next_brief": "authoritative/S005_CANDIDATE_2_EXTERNAL_REVIEW_READINESS_BRIEF.md",
+  "last_completed_session": "S005",
+  "next_session": null,
+  "next_brief": null,
   "stage": "P1_PROPOSAL_AND_REVIEW_ARRANGEMENTS",
   "programme_status": "OPEN",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — four-candidate audit complete; CAND-02 is selected and S005 is an external-review-readiness session",
+  "candidate_under_due_diligence": "NONE — CAND-02 selected; S005 external-review readiness completed",
   "mathematical_results": [],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -18,15 +18,17 @@
   "computation_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [],
+  "active_owner_blockers": [
+    "B-005 — Owner authorization to send Xue Li Stage-1 message required."
+  ],
   "future_owner_requirements": [
-    "Run S005 to refresh CAND-02 current-status/reviewer readiness and finalize the exact Stage-1 Xue Li outreach package without sending it.",
-    "After S005, explicitly authorize any target-specific external reviewer outreach before transmission.",
-    "Obtain an independent proposal/status assessment and separately establish willingness in principle for a later manuscript review.",
+    "Explicitly authorize or decline transmission of the exact Stage-1 message in sessions/S005/XUE_LI_STAGE1_PACKAGE.md; no outreach may be sent before that decision.",
+    "If authorized, transmit only that exact Stage-1 status/proposal-review message through the freshly verified public correspondence route and record the response/status.",
+    "Obtain an independent proposal/status assessment and separately establish willingness in principle for a later manuscript review before opening the external-review gate.",
     "Only after all three preflight gates are genuinely open may proof/computation/formalisation be scheduled.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "READY",
+  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -52,6 +54,11 @@
       "id": "S004",
       "status": "COMPLETED",
       "record": "sessions/S004/CLOSEOUT.md"
+    },
+    {
+      "id": "S005",
+      "status": "COMPLETED",
+      "record": "sessions/S005/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -60,6 +67,7 @@
   "s002_source_refresh_date": "2026-10-02",
   "s003_source_refresh_date": "2026-10-02",
   "s004_source_refresh_date": "2026-10-02",
-  "intended_first_reviewer": "Xue Li — strongest conflict-appropriate CAND-02 lead from S003, subject to S005 fresh identity/contact/conflict verification; package prepared and unsent",
-  "outreach_status": "CAND-02 SELECTED; XUE LI STAGE-1 PACKAGE PREPARED BUT NOT AUTHORIZED OR SENT; S005 WILL REFRESH SEND READINESS"
+  "intended_first_reviewer": "Xue Li — S005 freshly verified current public affiliation/correspondence route and same-architecture inverse zero-sum fit; no obvious public conflict indicator with the controlling Girard–Schmid ordinary-EGZ baseline was found; willingness and actual conflicts remain unconfirmed",
+  "outreach_status": "CAND-02 SELECTED; S005 XUE LI STAGE-1 PACKAGE SEND-READY BUT NOT AUTHORIZED OR SENT; B-005 ACTIVE",
+  "s005_source_refresh_date": "2026-10-02"
 }

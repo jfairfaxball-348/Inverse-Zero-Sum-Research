@@ -295,3 +295,28 @@ CAND-02 is the selected target. CAND-01 and CAND-03 remain audited alternatives
 only; CAND-04 remains retired. S005 is scheduled as the last independently
 runnable pre-outreach readiness unit. Target and publication gates are OPEN;
 external review and computation remain CLOSED.
+
+
+## Frontier after S005
+
+S005 completed the last independently runnable pre-outreach readiness unit for
+the selected CAND-02 target. The bounded refresh re-tested exact/alternate
+notation, recent 2024--2026 literature and preprints, forward-citation paths,
+small/subfamily possibilities, broader rank-three inverse theorems, and adjacent
+invariants. No material overlap was located, but no source was found that
+certifies the exact target open; the status therefore remains
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+
+Xue Li remains the first Stage-1 status/proposal reviewer route. Her current
+Tianjin University of Commerce affiliation and a public publisher
+correspondence route were freshly verified, as was continued inverse zero-sum
+subject fit. The bounded public screen found no obvious authorship,
+same-department or collaboration conflict with the controlling
+Girard--Schmid ordinary-EGZ baseline, but actual conflicts and willingness
+remain unknown.
+
+The exact Stage-1 message is frozen at
+sessions/S005/XUE_LI_STAGE1_PACKAGE.md and is SEND-READY, NOT AUTHORIZED and
+NOT SENT. **B-005 is active.** No next session is scheduled while the owner
+decides whether to authorize that exact transmission. Target and publication
+gates remain OPEN; external review and computation remain CLOSED.

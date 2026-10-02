@@ -252,3 +252,13 @@ content scope, explicit substantive-AI permission and active submission route.
 JNT remains the credible backup because it published the controlling direct
 CAND-02 theorem and has an explicit publisher-level substantive-AI route.
 These are fit/eligibility findings only, never an acceptance prediction.
+
+
+## S005 publication-route note
+
+No venue decision changed in S005. E-JC remains the leading eligible venue and
+the publication gate remains OPEN. The Stage-1 reviewer question is deliberately
+about mathematical scope: whether, assuming no hidden prior completion, the
+full all-m CAND-02 structural theorem is a substantial E-JC-level research
+target. It does not ask the reviewer to predict acceptance, provide a favourable
+review, or act as a journal referee.

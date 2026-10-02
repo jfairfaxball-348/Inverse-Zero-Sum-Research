@@ -269,3 +269,41 @@ reasonable conflict indicators immediately before finalizing the package. It
 must not publish a private address and must not send the message. If the route
 remains appropriate, S005 should stop on a new owner blocker asking for
 explicit authorization to transmit the exact Stage-1 request.
+
+
+## S005 Xue Li readiness refresh
+
+Date checked: 2026-10-02.
+
+Fresh public evidence supports retaining Xue Li as the first CAND-02
+status/proposal reviewer route:
+
+- Tianjin University of Commerce, College of Science, currently lists Li Xue
+  with a science doctorate and research directions in combinatorial number
+  theory and algebraic combinatorics. The same official profile lists multiple
+  zero-sum papers and participation in a 2021--2024 NSFC project on zero-sum
+  theory over finite abelian groups.
+- Wanzhen Hui and Xue Li, Acta Arithmetica 224 (2026), 221--231, published
+  online 3 July 2026, gives the current affiliation as College of Science,
+  Tianjin University of Commerce and provides a public publisher
+  correspondence route. The repository does not copy the address.
+- Li--Yin's rank-three disc(G) work covers groups
+  C_2 + C_{n_1} + C_{n_2} with 2 | n_1 | n_2, giving unusually close
+  same-architecture expertise while remaining a different invariant from the
+  ordinary-EGZ target.
+
+Bounded public conflict indicators were also rechecked. Xue Li is not an author
+of the controlling Girard--Schmid 2019 direct or 2020 inverse ordinary-EGZ
+papers; no coauthorship, same-department tie or obvious public joint-project
+link with those baseline authors was located in the inspected current profile,
+publication and search records. This is not a conflict guarantee. Willingness,
+availability, private relationships and undisclosed conflicts remain unknown
+and must not be inferred.
+
+No new evidence materially changes the S003 reviewer comparison, so S005 did
+not churn to another reviewer.
+
+Current package:
+sessions/S005/XUE_LI_STAGE1_PACKAGE.md
+
+Status: **SEND-READY; NOT AUTHORIZED; NOT SENT.**

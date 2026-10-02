@@ -15,9 +15,11 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 7. The completed S002, S003 and S004 due-diligence records before any target
    selection or later target-specific work.
 
-Current state: **S004 completed. The owner has now selected CAND-02 as
-the programme target after the full four-candidate audit. S005 is scheduled as
-a bounded external-review-readiness session for CAND-02.**
+Current state: **S005 completed. CAND-02 remains the selected programme
+target after a bounded current-status and external-review-readiness refresh.
+The exact Xue Li Stage-1 status/proposal-review message is send-ready but has
+not been authorized or sent. Owner blocker B-005 is active, so no next session
+is scheduled.**
 
 ## Present boundary
 
@@ -33,18 +35,23 @@ a bounded external-review-readiness session for CAND-02.**
 - Leading journal: Electronic Journal of Combinatorics; CAND-02-specific fit
   and current substantive-AI eligibility were established in S003.
 - Confirmed external reviewer: NONE.
-- Intended first CAND-02 reviewer lead: Xue Li, subject to S005 fresh public
-  identity/contact/conflict verification.
-- Xue Li Stage-1 package: PREPARED; NOT AUTHORIZED OR SENT.
+- Intended first CAND-02 reviewer lead: Xue Li. S005 freshly verified a current
+  public institutional route, strong same-architecture subject fit and no
+  obvious public conflict indicator with the controlling Girard--Schmid
+  ordinary-EGZ baseline. Willingness and actual conflicts remain unconfirmed.
+- Exact Xue Li Stage-1 package: SEND-READY at
+  sessions/S005/XUE_LI_STAGE1_PACKAGE.md; NOT AUTHORIZED OR SENT.
 - External-review gate: CLOSED.
 - Computation/proof gate: CLOSED.
-- Active owner blockers: NONE.
-- Next session: **S005**, CAND-02 external-review readiness. It may refresh and
-  finalize the reviewer package but may not transmit outreach.
+- Active owner blocker: **B-005 — Owner authorization to send Xue Li Stage-1 message required.**
+- Next session: NONE while B-005 is active; the live next-session prompt is
+  suppressed under the repository blocker rule.
 
-Target selection does not authorize outreach. A separate explicit send
-authorization remains required after the send-ready package and recipient route
-are freshly verified.
+Target selection did not authorize outreach. S005 has now completed the fresh
+status/recipient/conflict check and finalized the exact message. The remaining
+required owner action is explicit authorization (or refusal) to transmit that
+specific Stage-1 message through the freshly verified public correspondence
+route.
 
 ## Authority and reconciliation rule
 
