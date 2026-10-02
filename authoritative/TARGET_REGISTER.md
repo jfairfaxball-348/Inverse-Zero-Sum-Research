@@ -112,3 +112,81 @@ concerns the distinct family `C_2+C_2+C_{2n}`; S003 must now test that apparent
 gap exhaustively enough for an owner retain/switch decision.
 
 No CAND-01 evidence is retired merely because CAND-02 is being reassessed.
+
+
+## S003 CAND-02 completed audit and owner decision frontier
+
+Full record:
+[sessions/S003/CANDIDATE_2_DUE_DILIGENCE.md](../sessions/S003/CANDIDATE_2_DUE_DILIGENCE.md).
+
+The exact challenger remains
+
+> For every `m >= 2`, classify all sequences `S` over
+> `G_m=C_2+C_{2m}+C_{2m}` with `|S|=8m` and no zero-sum
+> subsequence of length `2m`.
+
+Source-supported baseline after S003:
+
+- `exp(G_m)=2m`.
+- Girard--Schmid, JNT 197 (2019), Theorem 3.2, give
+  `s(G_m)=8m+1`; the proof explicitly handles the equal-factor `n=1`
+  specialization and Corollary 3.3 records that route without Property D.
+- Girard--Schmid, Acta Math. Hung. 160 (2020), Theorem 5.1, classify
+  `s(G)-1` extremal sequences for the **different** family
+  `G=C_2+C_2+C_{2n}`, `n>=2`.
+- Their paper separately records the `n=1` group `C_2^3`: the unique
+  length-eight sequence without a two-term zero sum is the squarefree sequence
+  of all elements. This is exactly the CAND-02 `m=1` endpoint and supports
+  the retained domain `m>=2`.
+- Li--Yin's 2024 rank-three `disc(G)` work includes the same ambient
+  `C_2+C_{n_1}+C_{n_2}` group architecture, but its direct/inverse condition
+  is a distinct zero-sum invariant and does not subsume the ordinary EGZ
+  extremal classification.
+- Targeted searches for `m=2`, small equal-factor groups, prime/power
+  subfamilies, forward citations, 2024--2026 papers/preprints, theses,
+  conference records and alternate notation found no exact ordinary-`s`
+  inverse completion and no source explicitly declaring the full CAND-02
+  statement open. These are bounded search observations, not openness claims.
+
+### CAND-02 status matrix
+
+| Scope | Status after S003 | Programme disposition |
+| --- | --- | --- |
+| Direct threshold `s(C_2+C_{2m}^2)=8m+1` | ESTABLISHED | Baseline |
+| `m=1` / `C_2^3` extremal inverse structure | ESTABLISHED | Excluded endpoint |
+| Inverse EGZ for `C_2^2+C_{2n}` | ESTABLISHED, DISTINCT FAMILY | Method/baseline only |
+| Rank-three `disc(G)` on same ambient family | ESTABLISHED, DISTINCT INVARIANT | Adjacent prior art |
+| Full CAND-02 for every `m>=2` | SOURCE-DEFINED / CURRENT STATUS UNKNOWN | Survives; no openness certificate |
+| `m=2`, prime/power or other broad subfamilies | STATUS UNKNOWN after targeted search | Partial targets only after source/expert check |
+| Explicit source saying CAND-02 is open | NOT LOCATED | External status assessment remains material |
+
+### Surviving contribution boundary
+
+A substantial CAND-02 result should be one of:
+
+- a complete all-`m>=2` structural classification, preferably as canonical
+  normal forms modulo translation and automorphism with all parameter regimes
+  explicit; or
+- a broad, uniform structural theorem that materially advances the full
+  classification and is not merely finite cleanup.
+
+A routine isolated small-`m` verification, finite catalogue or height bound is
+not the intended publication-level contribution unless it supplies a reusable
+method or closes a demonstrably complete remaining layer.
+
+### Comparison with incumbent CAND-01
+
+CAND-01 retains stronger explicit named-conjecture provenance, but S002 showed
+that the 2025 sufficiently-large-prime theorem and multiplicativity compress
+its operative status-unknown frontier to finitely many exceptional primes below
+an unspecified cutoff.
+
+CAND-02 retains a broader infinite-family structural problem after S003: its
+direct threshold is completely known and the nearest inverse theorem concerns
+a non-isomorphic family. Its weakness is status provenance rather than scope:
+S003 found no primary source explicitly certifying the exact equal-factor
+ordinary-EGZ problem as open.
+
+Neither candidate is retired. **CAND-01 remains selected until the owner
+resolves B-003 by explicitly retaining CAND-01 or switching to CAND-02.**
+No comparison here ranks proof difficulty or probability of success.
