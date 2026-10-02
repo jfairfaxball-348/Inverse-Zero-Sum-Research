@@ -14,6 +14,15 @@ Each session performs one bounded useful unit and updates the true frontier.
 | P6: manuscript and external review | Self-contained paper and independent manuscript feedback | Material review issues addressed; current venue fit and AI policy confirmed |
 | P7: journal submission and revisions | Authorized submission, response-to-referee record, revisions or documented venue change | Actual editorial acceptance, then publication |
 
+## Current frontier after S001
+
+P0 field orientation is complete enough to support an owner target decision.
+Four unranked candidate questions (CAND-01 through CAND-04) are documented in
+`authoritative/TARGET_REGISTER.md` and `sessions/S001/FIELD_MAP_AND_CANDIDATES.md`.
+Blocker B-001 is active: the owner must select one candidate or explicitly reject
+all four and request another bounded discovery pass. No later gate opens merely
+because the comparison exists.
+
 ## Gate definitions
 
 - **Target gate:** owner decision recorded; exact domain, quantifiers, restrictions,
