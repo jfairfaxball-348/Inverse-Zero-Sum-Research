@@ -5,11 +5,11 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S001",
-  "next_session": null,
-  "next_brief": null,
-  "stage": "P0_PREFLIGHT_DISCOVERY",
+  "next_session": "S002",
+  "next_brief": "authoritative/S002_PROPERTY_D_DUE_DILIGENCE_AND_REVIEWER_PREP_BRIEF.md",
+  "stage": "P1_PROPOSAL_AND_REVIEW_ARRANGEMENTS",
   "programme_status": "OPEN",
-  "exact_target": null,
+  "exact_target": "CAND-01: rank-two Property D for C_n^2",
   "mathematical_results": [],
   "target_gate": "CLOSED",
   "publication_gate": "CLOSED",
@@ -17,15 +17,13 @@
   "computation_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [
-    "B-001"
-  ],
+  "active_owner_blockers": [],
   "future_owner_requirements": [
-    "Authorize or personally send outreach to a suitably matched reviewer after target-specific proposal preparation.",
+    "Explicitly authorize sending the prepared Pingzhi Yuan outreach message or send it personally.",
     "Obtain explicit willingness for proposal review and conditional manuscript review.",
     "Resolve substantive proposal-review objections and confirm the target-specific journal shortlist."
   ],
-  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
+  "next_prompt_status": "READY",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -39,5 +37,7 @@
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
-  "s001_source_refresh_date": "2026-10-02"
+  "s001_source_refresh_date": "2026-10-02",
+  "selected_target_date": "2026-10-02",
+  "intended_first_reviewer": "Pingzhi Yuan"
 }
