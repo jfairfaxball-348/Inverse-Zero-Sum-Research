@@ -221,3 +221,65 @@ CAND-01 remains the selected incumbent during S004. If two or more credible
 candidates survive the four-way comparison, activate a new owner target-selection
 blocker and suppress any next-session prompt. No proof, computation,
 enumeration, formalisation or outreach is authorized in S004.
+
+
+## Frontier after S004
+
+S004 completed equal-rigor audits of CAND-03 and CAND-04 without proof,
+computation, enumeration, formalisation or outreach.
+
+### CAND-03
+
+The modern generalized-Narkiewicz definition uses sequences over G minus {0}
+with repetitions allowed and forbids two innerly non-zero-sum-joint short
+zero-sum subsequences. The 2024 defining paper identifies eta^N with the older
+Narkiewicz-sense eta* notation and proves eta^N(C_3^3)=25. Fan--Zhong (2025)
+develop the rank-two joint-short-minimal-zero-sum theory and Hui--Zhong (2026)
+complete the inverse eta^N problem for all rank-two finite abelian groups.
+
+The bounded audit located no exact C_3^3 inverse completion and no source
+explicitly declaring that exact case open. CAND-03 therefore survives as
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Its intended contribution is a full
+structural classification of the length-24 extremals, not a computational
+catalogue. The literature does not justify treating ordinary Property D or
+rank-two eta^N structure as an automatic rank-three classification.
+
+### CAND-04
+
+The 2007 Property-D framework remains a meaningful general conjecture, but
+the clean inverse interpretation for C_p^3, p>=7, fails the programme's direct
+baseline test. For odd n the expected rank-three formula s(C_n^3)=9n-8 is a
+standing conjectural direct value outside known families. The controlling
+higher-rank literature gives Property D0 with respect to 9 for p=7,11,13;
+Property D0 is strictly weaker than Property D and must not be substituted for
+it.
+
+Accordingly CAND-04 is retired as a clean standalone inverse target. A future
+all-p>=7 project would have to be explicitly redefined as a broader combined
+direct-and-inverse programme, which is a different target identity.
+
+### Four-way selection frontier
+
+Three audited candidates survive:
+
+1. CAND-01 — classical rank-two Property D, with an operative finite
+   exceptional-prime layer after the sufficiently-large-prime theorem.
+2. CAND-02 — an infinite-family ordinary rank-three inverse EGZ classification
+   beside a known direct threshold, with exact current openness unverified.
+3. CAND-03 — a fixed rank-three generalized-Narkiewicz inverse classification
+   at a known direct threshold after complete rank-two theory, with exact
+   current openness unverified.
+
+The comparison intentionally does not rank proof difficulty, computational
+cost or probability of success. No source result automatically chooses among
+these three research identities.
+
+**B-004 is active.** CAND-01 remains incumbent until the owner explicitly
+selects CAND-01, CAND-02 or CAND-03 (or rejects all three and requests renewed
+discovery). While B-004 is active there is no live next-session prompt.
+
+E-JC remains the leading eligible venue. JCTA is a current policy-qualified
+CAND-03 backup under Elsevier's June-2026 generative-AI policy. A CAND-03
+Stage-1 package for David J. Grynkiewicz is prepared but unsent. Existing
+CAND-01 and CAND-02 packages also remain unsent. External review and
+computation remain CLOSED.

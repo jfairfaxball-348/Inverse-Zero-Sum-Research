@@ -6,11 +6,15 @@
 | S001 | COMPLETED | 9d40874b65753e48dc82d975e4e9110e5ffe1250 | Primary-source field map; four candidates; stale leads retired; E-JC refresh; reviewer-expertise map | [S001 closeout](../sessions/S001/CLOSEOUT.md) |
 | S002 | COMPLETED | a2978c95094cd249fd320f6bf6111b4528c6fea3 | Property-D due diligence and novelty/status matrix; exact surviving target; E-JC gate refresh; verified, unsent Pingzhi Yuan two-stage reviewer package; no proof/computation/outreach | [S002 closeout](../sessions/S002/CLOSEOUT.md) |
 | S003 | COMPLETED | ccf476e72ae32c5c59078cb7996b63e0e6455480 | CAND-02 primary/current-status audit; exact surviving structural scope; CAND-01 comparison; E-JC/JNT venue refresh; unsent Xue Li reviewer package; B-003 owner target-decision blocker; no proof/computation/outreach | [S003 closeout](../sessions/S003/CLOSEOUT.md) |
-| S004 | READY; not started | Pin live main at entry | Full due-diligence audits of CAND-03 and CAND-04; four-candidate comparison; candidate-specific venue/reviewer refresh; no proof/computation/outreach | [S004 brief](S004_CANDIDATES_3_AND_4_DUE_DILIGENCE_BRIEF.md) |
+| S004 | COMPLETED | 17fab131e8ea3617063e8086309b38d548b3b4d6 | Full CAND-03/CAND-04 audits; CAND-03 survives status-unknown; CAND-04 retired as clean inverse target; four-candidate comparison; unsent CAND-03 reviewer package; B-004 owner selection blocker | [S004 closeout](../sessions/S004/CLOSEOUT.md) |
 
-S003 completed the requested CAND-02 audit. Owner decision D-019 then
-superseded B-003 as the immediate blocker by explicitly postponing target
-selection until CAND-03 and CAND-04 receive equivalent audits. S004 is the
-single READY session. CAND-01 remains the incumbent; no target switch or
-outreach authorization has occurred. External review and computation remain
-CLOSED.
+S004 completed the requested remaining-candidate audits. CAND-01, CAND-02 and
+CAND-03 survive on distinct source-supported research identities; CAND-04 is
+retired as a clean standalone inverse target because its proposed p>=7 range
+depends on an unresolved direct rank-three EGZ value and Property D0 evidence
+must not be confused with Property D.
+
+B-004 is now ACTIVE and requires the owner to select CAND-01, CAND-02 or
+CAND-03, or explicitly reject all three and request renewed discovery.
+CAND-01 remains incumbent. No next numbered session is scheduled, no outreach
+is authorized, and external review/computation remain CLOSED.

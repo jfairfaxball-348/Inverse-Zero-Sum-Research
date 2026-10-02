@@ -191,3 +191,55 @@ publishes number theory; current substantive-AI eligibility must be explicit.
 
 Publication-fit conclusions remain eligibility assessments, never acceptance
 predictions.
+
+
+## S004 CAND-03 and CAND-04 venue refresh
+
+Official observations were rechecked on **2026-10-02**.
+
+### CAND-03
+
+Electronic Journal of Combinatorics remains the leading venue. Its current
+official About page states that it is fully refereed and seeks substantial work
+throughout discrete mathematics. Its Artificial Intelligence Policy explicitly
+permits AI assistance in researching and writing mathematics, including help
+finding proofs/arguments, while assigning authors responsibility for checking
+proofs, details and citations. The current Submissions page requires an initial
+PDF and HTML abstract through the web system and an AI-policy compliance check.
+The conflict policy requires disclosure of close personal relationships, joint
+grants, closely related collaboration, student/supervisor relationships and
+same-department relationships.
+
+CAND-03 has direct subject fit as an inverse short-zero-sum structural problem.
+Zeng--Yuan, *On Sequences Without Short Zero-Sum Subsequences*, E-JC 30(4)
+(2023), P4.21, is a current inverse/short-zero-sum precedent.
+
+**J-05 — Journal of Combinatorial Theory, Series A:** CREDIBLE CAND-03 BACKUP;
+CURRENT PUBLISHER-WORKFLOW ELIGIBLE, RECHECK BEFORE SUBMISSION. The two
+nearest rank-two generalized-Narkiewicz inverse papers are Fan--Zhong, JCTA 212
+(2025), 105984, and Hui--Zhong, JCTA 224 (2026), 106238. Elsevier's
+journal-wide generative-AI policy, updated June 2026, allows AI tools in the
+research process/formal research methods with human oversight, reproducible
+method description and disclosure. Recheck any journal-specific exception
+before submission.
+
+Official/current sources:
+- https://www.combinatorics.org/ojs/index.php/eljc/about/index
+- https://www.combinatorics.org/ojs/index.php/eljc/about/submissions
+- https://doi.org/10.37236/11963
+- https://doi.org/10.1016/j.jcta.2024.105984
+- https://doi.org/10.1016/j.jcta.2026.106238
+- https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
+
+### CAND-04
+
+The clean CAND-04 target is retired, so no active submission route is opened
+for it. If the owner deliberately creates the broader combined rank-three
+direct-and-inverse project later, E-JC has clear subject/workflow fit under the
+same current policy and **J-04 Journal of Number Theory** remains a credible
+Elsevier-policy-qualified backup because Fan--Gao--Zhong's controlling
+higher-rank EGZ paper appeared there.
+
+These are workflow/subject-eligibility findings only, not acceptance
+predictions. The publication gate remains OPEN for the programme because
+eligible routes exist for the surviving incumbent/challengers.

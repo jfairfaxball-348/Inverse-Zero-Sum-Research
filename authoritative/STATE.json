@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S003",
-  "next_session": "S004",
-  "next_brief": "authoritative/S004_CANDIDATES_3_AND_4_DUE_DILIGENCE_BRIEF.md",
+  "last_completed_session": "S004",
+  "next_session": null,
+  "next_brief": null,
   "stage": "P1_PROPOSAL_AND_REVIEW_ARRANGEMENTS",
   "programme_status": "OPEN",
-  "exact_target": "CAND-01 remains incumbent while S004 audits CAND-03 and CAND-04 before final four-candidate selection",
-  "candidate_under_due_diligence": "CAND-03 and CAND-04 scheduled for equal-rigor S004 audits before final target selection",
+  "exact_target": "CAND-01 remains incumbent pending B-004 owner selection among surviving audited CAND-01, CAND-02 and CAND-03",
+  "candidate_under_due_diligence": "NONE — S004 completed CAND-03/CAND-04 audits; CAND-04 retired as a clean standalone inverse target",
   "mathematical_results": [],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -18,15 +18,17 @@
   "computation_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [],
+  "active_owner_blockers": [
+    "B-004"
+  ],
   "future_owner_requirements": [
-    "After S004, explicitly select the programme target from the full surviving audited candidate set if two or more credible candidates remain.",
+    "Resolve B-004 by explicitly selecting CAND-01, CAND-02 or CAND-03 as the programme target, or explicitly reject all three and request renewed target discovery.",
     "After the target is settled, explicitly authorize any target-specific external reviewer outreach before transmission.",
     "Obtain an independent proposal/status assessment and separately establish willingness in principle for a later manuscript review.",
     "Only after all three preflight gates are genuinely open may proof/computation/formalisation be scheduled.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "READY",
+  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -47,6 +49,11 @@
       "id": "S003",
       "status": "COMPLETED",
       "record": "sessions/S003/CLOSEOUT.md"
+    },
+    {
+      "id": "S004",
+      "status": "COMPLETED",
+      "record": "sessions/S004/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -54,6 +61,7 @@
   "selected_target_date": "2026-10-02",
   "s002_source_refresh_date": "2026-10-02",
   "s003_source_refresh_date": "2026-10-02",
-  "intended_first_reviewer": "UNSET pending full four-candidate audit; CAND-01 Pingzhi Yuan package and CAND-02 Xue Li package remain prepared and unsent",
-  "outreach_status": "ALL_TARGET_OUTREACH_ON_HOLD_PENDING_S004_AND_FINAL_SELECTION"
+  "s004_source_refresh_date": "2026-10-02",
+  "intended_first_reviewer": "UNSET pending B-004; CAND-01 Pingzhi Yuan, CAND-02 Xue Li and CAND-03 David J. Grynkiewicz packages/leads are prepared or recorded and unsent",
+  "outreach_status": "ALL_TARGET_OUTREACH_ON_HOLD_PENDING_B-004_AND_SEPARATE_SEND_AUTHORIZATION"
 }

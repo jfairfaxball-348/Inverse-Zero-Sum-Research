@@ -23,6 +23,10 @@
 | D-017 | 2026-10-02 | After S003, treat CAND-02 as a surviving source-defined/current-status-unknown challenger: its direct threshold is established, the closest published inverse theorem is a different rank-three family, and no exact completion or explicit open-problem declaration was located in the bounded audit | S003 primary/current-status audit; no openness inference |
 | D-018 | 2026-10-02 | For CAND-02, retain E-JC as the leading eligible venue, JNT as a policy-qualified backup, and Xue Li as the strongest first independent reviewer lead found by the audit; the reviewer package remains unsent and conditional on target selection plus separate send authorization | S003 venue/reviewer refresh |
 | D-019 | 2026-10-02 | Defer the post-S003 target choice and audit both remaining S001 candidates, CAND-03 and CAND-04, to the same due-diligence standard in S004 before choosing among the full audited set | Explicit owner instruction: “we might as well check them all” |
+| D-020 | 2026-10-02 | After S004, retain CAND-03 as a source-defined/current-status-unknown challenger: eta^N(C_3^3)=25 is established and rank-two inverse eta^N is complete, but no exact C_3^3 completion or explicit open declaration was located | S004 primary/current-status audit; no openness inference |
+| D-021 | 2026-10-02 | Retire CAND-04 as a clean standalone inverse target: the general direct formula s(C_p^3)=9p-8 for p>=7 remains a material unresolved dependency in the inspected literature, and known p=7,11,13 statements are Property D0 rather than Property D | S004 higher-rank Property-D/EGZ audit |
+| D-022 | 2026-10-02 | CAND-01 remains incumbent, but the full audit leaves a genuine owner choice among surviving CAND-01, CAND-02 and CAND-03; activate B-004 and schedule no next session until the owner explicitly selects one or rejects all three | S004 four-candidate comparison and repository blocker rule |
+| D-023 | 2026-10-02 | Retain E-JC as leading eligible venue; JCTA is a policy-qualified CAND-03 backup. David J. Grynkiewicz is the strongest independent first CAND-03 reviewer lead found; his package remains unsent. No CAND-04 package is prepared because the clean target is retired | S004 venue/reviewer refresh |
 
 ## S001 target-selection resolution
 
@@ -39,24 +43,31 @@ audit before the target gate can open.
 
 ## Active owner blockers
 
-**NONE.**
+### B-004 — final target selection after four audits
 
-B-003 is **RESOLVED/SUPERSEDED by D-019 as an immediate blocker**. The owner
-did not choose between CAND-01 and CAND-02; instead the owner explicitly
-directed the programme to postpone the target decision until the two remaining
-S001 candidates, CAND-03 and CAND-04, receive equivalent audits in S004.
+**ACTIVE.**
 
-This does not erase the unresolved target-selection requirement. If S004 leaves
-two or more credible candidates, a new owner selection blocker must be activated
-for the full surviving audited set.
+Required owner action: explicitly select **CAND-01, CAND-02 or CAND-03** as
+the programme target, or explicitly reject all three and request a renewed
+target-discovery pass.
 
-B-002 remains **RESOLVED/SUPERSEDED** by D-016. No prepared reviewer package
-has been sent.
+CAND-01 remains the incumbent until this decision. CAND-04 is not in the
+selection set because S004 retired it as a clean standalone inverse target
+after finding that its general p>=7 formulation depends on the unresolved
+rank-three direct EGZ value and that the p=7,11,13 literature provides only
+the weaker Property D0.
+
+This blocker covers research identity, not proof feasibility. The three
+survivors have now received comparable due diligence and remain credible for
+different source-supported reasons. The programme must not choose silently.
+
+No prepared reviewer package has been sent. Resolving B-004 does not authorize
+outreach; a separate explicit send authorization remains required.
 
 ## Future owner requirements
 
-- After S004, explicitly select the programme target from the full surviving
-  audited candidate set if two or more credible candidates remain.
+- Resolve B-004 by explicitly selecting CAND-01, CAND-02 or CAND-03, or
+  explicitly reject all three and request renewed target discovery.
 - Only after the target is settled should the programme seek authorization to
   send a target-specific external proposal/status-review request.
 - Obtain an actual independent proposal/status assessment and separately
@@ -80,3 +91,13 @@ While waiting for a reviewer response later, independent literature, novelty,
 source and dependency work may continue. Mathematical proof attempts,
 enumeration, experiments and formalisation remain gated until the repository's
 three preflight gates are open.
+
+
+## S004 communication boundary
+
+S004 prepared an unsent CAND-03 Stage-1 package for David J. Grynkiewicz and
+left the existing CAND-01 Pingzhi Yuan and CAND-02 Xue Li packages untouched.
+No message was sent. CAND-04 received no package because its clean target was
+retired. After B-004 is resolved, verify the selected target's current reviewer
+identity/contact route and conflicts, then obtain separate explicit owner
+authorization before any transmission.

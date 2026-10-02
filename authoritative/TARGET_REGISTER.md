@@ -1,11 +1,13 @@
 # Target register
 
-**Incumbent exact target: CAND-01 — rank-two Property D for `C_n^2`.**
-S002 specified its exact baseline and surviving contribution frontier, so its
-target gate is OPEN. CAND-02 completed equivalent due diligence in S003 and
-survives as a source-defined/current-status-unknown challenger. Owner decision
-D-019 postpones target selection until **CAND-03 and CAND-04** receive the same
-standard in S004. No switch has occurred.
+**Incumbent exact target: CAND-01 — rank-two Property D for C_n^2.**
+S002 specified its baseline and surviving frontier. CAND-02 completed
+equivalent due diligence in S003 and survives. S004 completed the remaining
+audits: CAND-03 survives as a source-defined/current-status-unknown challenger,
+while CAND-04 is retired as a clean standalone inverse target because the
+general direct rank-three EGZ threshold in its proposed p>=7 range is not
+established. B-004 now requires the owner to select CAND-01, CAND-02 or
+CAND-03 (or reject all three). No switch has occurred.
 
 ## S001 candidate set
 
@@ -230,3 +232,69 @@ rank proof difficulty, computational cost or probability of success.
 If two or more credible candidates survive, final target selection returns to
 the owner as a new blocker. No reviewer outreach is authorized before that
 selection.
+
+
+## S004 completed audits and final owner-selection set
+
+Full record:
+[sessions/S004/CANDIDATES_3_AND_4_DUE_DILIGENCE.md](../sessions/S004/CANDIDATES_3_AND_4_DUE_DILIGENCE.md).
+
+### CAND-03 — survives
+
+Exact audited target:
+
+> Classify all length-24 sequences over C_3^3 minus {0} having no two
+> innerly non-zero-sum-joint short zero-sum subsequences, where short means
+> length at most 3.
+
+Source-supported baseline:
+
+- Gao--Hui--X. Li--Y. Li--Qu--Zhong (2024) define eta^N, identify it with the
+  older Narkiewicz-sense eta* invariant, and Theorem 3.6 yields
+  eta^N(C_3^3)=25.
+- Fan--Zhong (2025) develops the equivalent joint-short-minimal-zero-sum
+  rank-two line.
+- Hui--Zhong (2026) completely settles the inverse eta^N problem for every
+  finite abelian group of rank two.
+- The S004 bounded search found neither an exact C_3^3 completion nor an
+  explicit source declaring this exact problem open.
+
+Status: **SOURCE-DEFINED / CURRENT STATUS UNKNOWN.**
+
+The intended journal-level contribution is a complete structural
+classification, or a comparably decisive reduction of every extremal sequence
+to explicit structural forms. An isolated orbit or computation-only catalogue
+is not the programme target.
+
+### CAND-04 — retired as the audited clean target
+
+S001 proposed Property D for C_p^3 for every prime p>=7. S004 found that:
+
+- for odd n the expected direct formula s(C_n^3)=9n-8 is itself a standing
+  higher-rank conjectural value outside known families;
+- genuine Property-D families include the p=3,5 rank-three line through
+  C_{3^a5^b}^3;
+- p=7,11,13 are recorded in the controlling higher-rank literature for the
+  weaker **Property D0** with respect to 9, not Property D;
+- higher-rank multiplicativity/lifting requires compatible direct constants
+  and does not give the unconditional prime reduction available in rank two.
+
+Therefore CAND-04 does not remain a clean inverse classification beside a
+known direct threshold. A future all-p>=7 programme would have to be
+explicitly redefined as a broader combined direct-and-inverse project and is
+not silently substituted here.
+
+### Surviving owner-selection set
+
+| Candidate | S004 disposition | Exact research identity after audit |
+| --- | --- | --- |
+| CAND-01 | SURVIVES; incumbent | Complete rank-two Property D, with operative finite exceptional-prime residue after the sufficiently-large-prime theorem |
+| CAND-02 | SURVIVES | Infinite-family ordinary inverse EGZ classification for C_2+C_{2m}^2, m>=2, beside a known direct threshold |
+| CAND-03 | SURVIVES | Full length-24 C_3^3 inverse eta^N classification at the known threshold 25 |
+| CAND-04 | RETIRED AS CLEAN TARGET | General p>=7 formulation hides an unresolved direct s(C_p^3) dependency; D0 evidence is not D |
+
+B-004 is ACTIVE. CAND-01 remains incumbent until the owner explicitly selects
+CAND-01, CAND-02 or CAND-03, or rejects all three and requests renewed target
+discovery. The selection is about mathematical identity and contribution type;
+the comparison does not rank proof difficulty, computation cost or probability
+of success.

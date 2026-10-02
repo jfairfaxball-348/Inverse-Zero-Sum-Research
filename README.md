@@ -2,36 +2,38 @@
 
 A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
-publication. The exact problem has not yet been selected.
+publication.
 
-**Current stage: preflight and target discovery. No mathematical computation
-or proof development is authorized at this stage.**
+**Current stage: P1 preflight. CAND-01 remains the incumbent while B-004
+requires the owner to choose among the three surviving audited targets
+CAND-01, CAND-02 and CAND-03. No mathematical computation or proof development
+is authorized at this stage.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
 authority; conversation history is not the project state.
 
-The owner copies a closeout's next-session prompt into a new session. That
-session runs the bounded task autonomously, validates and checkpoints useful
-work, then automatically provides a close report.
+A numbered session runs one bounded task autonomously, validates and
+checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.**
+and no next-session prompt.** B-004 is currently active, so no live
+next-session prompt exists.
 
 ## The three preflight requirements
 
 1. A mathematical target with a name, genre, contribution type and exact scope.
-   Initial selection is not ranked by difficulty or probability of proof.
+   Initial comparison is not ranked by difficulty or probability of proof.
 2. Relevant journals allowing substantive AI contributions, with verified
    policies and an actual submission route. The leading candidate is the
    Electronic Journal of Combinatorics.
 3. Explicit willingness for external review of the proposal and, in principle,
    a later manuscript. Our reviewer is distinct from journal-appointed referees.
 
-These requirements are currently open planning tasks, not active blockers to
-the first literature-orientation session. When progress depends on a decision
-or outreach, the session must request it and suppress the next-session prompt.
+The target and publication records are developed; external review and
+computation remain closed. Current blocker/state details live in the authority
+records rather than in this README.
 
 ## Main records
 
@@ -45,8 +47,7 @@ or outreach, the session must request it and suppress the next-session prompt.
 - [Decisions and blockers](authoritative/DECISIONS_AND_BLOCKERS.md)
 - [Failure and lesson ledger](authoritative/FAILURE_AND_LESSON_LEDGER.md)
 - [Session ledger](authoritative/SESSION_LEDGER.md)
-- [Next session brief](authoritative/S001_FIELD_AND_TARGET_DISCOVERY_BRIEF.md)
-- [Next session prompt](authoritative/NEXT_SESSION_PROMPT.md)
+- [Completed S004 audit](sessions/S004/CANDIDATES_3_AND_4_DUE_DILIGENCE.md)
 - [Autonomous session protocol](docs/SESSION_PROTOCOL.md)
 
 Validate the records with `python3 scripts/check_authority.py`. This checks

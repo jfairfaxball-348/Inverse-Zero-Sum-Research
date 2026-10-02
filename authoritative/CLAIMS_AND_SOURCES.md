@@ -154,3 +154,52 @@ restatement issue recorded in FL-010 remains resolved by source priority:
 Girard--Schmid's original Theorem 3.2 controls, and the later paper itself uses
 `s(C_2+C_{2m}^2)=8m+1` in a proof passage. No substantive change to C-08 is
 made.
+
+
+## S004 CAND-03/CAND-04 claim and source refresh
+
+The following were checked or added on **2026-10-02**. They are source-result
+records or bounded status observations, not programme proofs.
+
+| Claim | Classification | Bounded content | Support / remaining boundary |
+| --- | --- | --- | --- |
+| C-25 | SOURCE_RESULT | eta^N(G) is defined on sequences over G minus {0} using two innerly non-zero-sum-joint short zero-sum subsequences; the modern paper identifies eta^N with the older Narkiewicz-sense eta* invariant. | ZS-25 definitions/equivalence inspected; no proof audit |
+| C-26 | SOURCE_RESULT | Gao--Hui--X. Li--Y. Li--Qu--Zhong Theorem 3.6 gives eta^N(C_3^3)=25. | ZS-25 full theorem statement inspected |
+| C-27 | SOURCE_RESULT | Fan--Zhong (2025) develops the equivalent innerly-joint short-minimal-zero-sum rank-two formulation; Hui--Zhong (2026) completely settles the inverse eta^N problem for finite abelian groups of rank two. | ZS-26 and ZS-27 abstract/definition/main-scope material inspected |
+| C-28 | SOURCE_RESULT | Property D for C_n^r requires s(C_n^r)=c(n-1)+1 and classifies every s(G)-1 extremal sequence as T^(n-1); the general Property-D conjecture is stated in the 2007 source. | ZS-09 primary definitions/conjecture re-used |
+| C-29 | SOURCE_RESULT | For odd rank-three groups the lower bound s(C_n^3)>=9n-8 is classical and equality for all odd n is a standing conjectural formula in the controlling higher-rank literature; Fan--Gao--Zhong (2011) study this direct/inverse frontier. | ZS-28 primary 2011 paper plus ZS-29 higher-rank survey/source |
+| C-30 | SOURCE_RESULT | The p=7,11,13 rank-three results located in the higher-rank direct literature concern Property D0 with respect to 9, a weaker special-form forcing property, not Property D. Genuine Property-D rank-three families include the 3^a5^b line. | ZS-28 statement-level inspection and ZS-25 known-family summary |
+| C-31 | SOURCE_RESULT | E-JC's current official AI policy permits AI assistance in mathematical research/proof discovery with human checking; Elsevier's June-2026 policy permits AI in research methods with oversight/disclosure. | PUB-01/PUB-02 rechecked and PUB-07 current policy rechecked 2026-10-02 |
+
+### Added/expanded S004 sources
+
+| ID | Source | S004 inspection level | Purpose / limit |
+| --- | --- | --- | --- |
+| ZS-25 | Weidong Gao, Wanzhen Hui, Xue Li, Yuanlin Li, Yongke Qu, Qinghai Zhong, *On generalized Narkiewicz constants of finite abelian groups*, Acta Arith. 212 (2024), 133--172, DOI 10.4064/aa230118-1-10 | Definitions, eta^N=eta* discussion, Property C/D input and Theorem 3.6 inspected | CAND-03 exact definition/direct threshold and known-family context; no proof audit |
+| ZS-26 | Yushuang Fan, Qinghai Zhong, *On joint short minimal zero-sum subsequences over finite abelian groups of rank two*, JCTA 212 (2025), 105984, DOI 10.1016/j.jcta.2024.105984 | Definition/equivalence and main rank-two scope inspected | Immediate predecessor and alternate terminology |
+| ZS-27 | Wanzhen Hui, Qinghai Zhong, *On the inverse problem of the Narkiewicz-sense eta-constant for finite abelian groups of rank 2*, JCTA 224 (2026), 106238, DOI 10.1016/j.jcta.2026.106238 | Definition/introduction/main-scope material inspected | Complete rank-two inverse eta^N baseline |
+| ZS-28 | Yushuang Fan, Weidong Gao, Qinghai Zhong, *On the Erdos--Ginzburg--Ziv constant of finite abelian groups of high rank*, JNT 131 (2011), 1864--1874, DOI 10.1016/j.jnt.2011.02.017, arXiv:1010.5101 | Primary statement-level direct/inverse framework, Property D0 and known-family material inspected | CAND-04 direct threshold and D0-vs-D boundary; no proof audit |
+| ZS-29 | Yves Edel, Christian Elsholtz, Alfred Geroldinger, Silke Kubertin, Laurence Rackham, *Zero-sum problems in finite abelian groups and affine caps*, QJM 58 (2007), 159--186 | Higher-rank lower-bound/conjectural context inspected | Classical s(C_n^3)>=9n-8 and odd-rank-three conjectural equality context |
+| ZS-30 | Weidong Gao, Alfred Geroldinger, Qinghong Wang, *A Quantitative Aspect of Non-Unique Factorizations: The Narkiewicz Constants*, IJNT 7 (2011), 1463--1502, DOI 10.1142/S1793042111004721 | Bibliographic/definition-line context inspected | Older eta* / factorization terminology for CAND-03 |
+| REV-06 | David J. Grynkiewicz current University of Memphis CV / University of Graz research records; Geroldinger--Grynkiewicz--Zhong, *Combinatorial Factorization Theory*, AMS Mathematical Surveys and Monographs 296 (2026) | Current public expertise/identity signals inspected | CAND-03 independent reviewer lead; no willingness inferred |
+| REV-07 | Pingzhi Yuan, current zero-sum preprint *A Multiplicative Fourier Proof of the Length-Four Index Conjecture*, arXiv:2608.12310 (2026), plus E-JC 2023 inverse short-zero-sum paper | Abstract/publication records inspected | Current zero-sum activity and independent CAND-03 alternative |
+| REV-08 | Jan-Christoph Schlage-Puchta, *All large primes have Property D*, arXiv:2509.02436 | Current theorem/metadata re-used | Property-D reviewer lead for any future broadened CAND-04-style programme |
+
+### S004 bounded current-status observations
+
+For CAND-03, searches covered eta^N, eta*, generalized/revised
+Narkiewicz terminology, innerly joint/non-zero-sum-joint formulations, C_3^3,
+rank three/higher rank, factorization sources, forward/backward citations,
+recent preprints, theses, surveys/books and conference/publication records.
+No exact C_3^3 inverse completion, subsuming higher-rank theorem or explicit
+open-problem declaration was located. This is a status observation only.
+
+For CAND-04, searches covered Property D/D0, C_p^3, s(C_p^3), 9p-8, p=7,
+11,13, higher-rank EGZ/inverse terminology, known arithmetic families,
+citations and 2024--2026 sources. No theorem proving s(C_p^3)=9p-8 or Property
+D for every p>=7 was located. Positive primary evidence simultaneously shows
+that 9n-8 is a standing odd-rank-three conjectural formula and that the named
+small-prime statements are D0, not D. The clean CAND-04 target is retired for
+that dependency reason, not merely because a search failed.
+
+No mathematical result was proved by the programme in S004.

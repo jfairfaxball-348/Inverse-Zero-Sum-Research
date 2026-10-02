@@ -29,3 +29,8 @@ For each later failure or correction append: the exact failed claim/route,
 triggering evidence, scope affected, what survives, why the error arose, the
 lesson and the bounded repair or pivot. Preserve counterexamples and falsifying
 arguments. Retired routes are not silently revived without new information.
+
+| FL-019 | A modern notation can rename an older invariant without changing the mathematical object: eta^N is identified with the older Narkiewicz-sense eta* | Search both notations and factorization-language formulations before novelty claims; an exact-title search in eta^N alone is insufficient. |
+| FL-020 | Property D0 is materially weaker than Property D. The p=7,11,13 rank-three statements located are D0 with respect to 9 and do not classify EGZ-extremal sequences | Record the exact property name/hypotheses and never promote a D0 computation or lifting input into Property D. |
+| FL-021 | A named inverse property can remain meaningful while the explicit direct threshold needed for a clean inverse target is unknown | For higher-rank Property D, separate the structural conjecture from the direct s(G) problem. Retire or explicitly broaden a target rather than hiding an unresolved direct constant. |
+| FL-022 | A direct construction obtained from classical Property C/D machinery does not classify all extremals for a generalized Narkiewicz invariant | Treat construction/lower-bound mechanisms as baseline only; require an actual inverse theorem before transferring structure. |

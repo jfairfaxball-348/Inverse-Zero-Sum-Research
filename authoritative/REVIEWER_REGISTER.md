@@ -1,11 +1,11 @@
 # External reviewer register
 
 **Confirmed reviewer: NONE. No outreach is currently authorized.**
-The prepared Pingzhi Yuan package for CAND-01 and Xue Li package for CAND-02
-are both **on hold and unsent**. Owner decision D-019 postpones target-specific
-outreach while S004 audits CAND-03 and CAND-04. S004 may prepare additional
-unsent Stage-1 packages for surviving candidates, but target selection and
-separate explicit send authorization remain prerequisites for transmission.
+B-004 now blocks target-specific outreach until the owner selects CAND-01,
+CAND-02 or CAND-03. The prepared Pingzhi Yuan package for CAND-01, Xue Li
+package for CAND-02, and David J. Grynkiewicz package for CAND-03 are all
+**on hold and unsent**. CAND-04 was retired as a clean target and has no
+reviewer package.
 
 Private contact observations remain owner-supplied summaries only. Do not copy
 private messages or email addresses into the public repository.
@@ -208,3 +208,46 @@ independent proposal reviewer.
 If either candidate survives strongly enough for final owner consideration,
 S004 may prepare a concise **unsent** Stage-1 status/proposal-review package for
 its strongest conflict-appropriate lead. No message is authorized during S004.
+
+
+## S004 reviewer reassessment
+
+No reviewer is confirmed and no outreach occurred.
+
+### CAND-03
+
+| Person | CAND-03 public fit | Independence / source-proximity observation | S004 disposition |
+| --- | --- | --- | --- |
+| Qinghai Zhong | Coauthor of 2024 defining paper, 2025 rank-two joint-short paper and 2026 rank-two completion | Exact status expert but author of controlling literature | Exact status expert; not first independent approach |
+| Wanzhen Hui | Coauthor of 2024 defining paper and 2026 complete rank-two inverse theorem | Exact source-line proximity | Exact status expert; not first independent approach |
+| Xue Li | Coauthor of 2024 generalized-Narkiewicz paper and current inverse zero-sum work | Defining-paper authorship | Strong status expert; not first independent approach |
+| Alfred Geroldinger | Coauthor of the 2011 Narkiewicz-constant line and 2026 factorization monograph | Foundational source-line author | Factorization status expert; not first independent approach |
+| Yushuang Fan | Coauthor of 2025 rank-two generalized inverse work | Nearest-predecessor authorship | Status/method expert; not first independent approach |
+| **David J. Grynkiewicz** | Extensive inverse zero-sum/structural additive work; 2026 coauthor of *Combinatorial Factorization Theory* | Not an author of the 2024 defining paper or 2025/2026 rank-two eta^N completion papers | **Strongest independent first CAND-03 proposal/status lead found in S004** |
+| Pingzhi Yuan | E-JC inverse/short-zero-sum expertise and current 2026 zero-sum work | No authorship of controlling Narkiewicz papers | Strong independent alternative |
+
+Prepared package:
+[sessions/S004/GRYNKIEWICZ_CANDIDATE_3_REVIEWER_PACKAGE.md](../sessions/S004/GRYNKIEWICZ_CANDIDATE_3_REVIEWER_PACKAGE.md).
+
+The package is **NOT SENT**. Public sources show current activity/identity routes
+for Grynkiewicz, but affiliation/contact route, actual conflicts and
+availability must be freshly verified before any authorized send. If CAND-03
+is selected, owner target selection still does not authorize transmission.
+
+### CAND-04 / broader frontier only
+
+CAND-04 is retired as a clean standalone inverse target, so S004 prepared no
+package. If the owner later deliberately creates the broader combined
+rank-three direct + inverse Property-D project, **Jan-Christoph
+Schlage-Puchta** is the strongest conflict-appropriate first Property-D lead
+found in the bounded audit: his 2025 sufficiently-large-prime work is the
+current Property-D advance, while he is not an author of the controlling 2007
+general framework or 2011 rank-three direct paper.
+
+Wolfgang A. Schmid, Benjamin Girard and Fan--Gao--Zhong remain especially
+valuable exact status experts but are closer to the controlling framework or
+rank-three direct literature. David J. Grynkiewicz is a strong broader
+independent inverse specialist; Pingzhi Yuan remains a credible broader
+zero-sum specialist.
+
+No willingness, availability or conflict status is inferred.
