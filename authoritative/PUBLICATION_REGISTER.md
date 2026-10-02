@@ -7,7 +7,7 @@ acceptance likelihood.
 | ID | Journal | Status | Evidence and submission route |
 | --- | --- | --- | --- |
 | J-01 | Electronic Journal of Combinatorics | **LEADING RETAINED VENUE; PUBLICATION GATE OPEN** | Official About page rechecked 2026-10-02: fully refereed discrete-mathematics scope; AI may assist in researching/writing mathematics and in finding proofs/arguments, with authors fully responsible for checking proofs/details and citations. Official Submissions page rechecked 2026-10-02: new submissions use the web system; main manuscript PDF plus HTML abstract; no source files initially; checklist requires AI-policy compliance. The About page states E-JC is free for authors and readers. |
-| J-02 | Research in Number Theory | PROVISIONAL; not admitted to confirmed shortlist | Bootstrap scope and LLM-use instructions remain a lead. S001 did not need to resolve exact proof-discovery permission because no target has been selected. |
+| J-02 | Research in Number Theory | PROVISIONAL; not admitted to confirmed shortlist | Bootstrap scope and LLM-use instructions remain a lead. It is not needed for the current CAND-02 shortlist because E-JC and JNT already supply target-specific eligible routes. |
 | J-03 | The Ramanujan Journal | PROVISIONAL; exact subject fit and workflow unresolved | Bootstrap number-theory scope and LLM-use instructions remain a lead. Do not retain without target-specific fit and exact-workflow confirmation. |
 | J-X1 | Integers | EXCLUDED under observed policy | Bootstrap inspection found a prohibition on substantive AI-produced mathematics/code/bibliographic content; grammar/spelling permission is insufficient for this programme. Recheck only if policy materially changes. |
 
@@ -40,13 +40,12 @@ accepted.
 | CAND-03 rank-three inverse `eta^N` | Combinatorial structure with factorization-theory connection | Defining paper Acta Arith. 2024; rank-two inverse completion JCTA 2026 | Determine whether final emphasis is primarily combinatorial or arithmetic/factorization-theoretic |
 | CAND-04 rank-three Property D | Within higher-rank additive/discrete combinatorics | Property-D and higher-rank EGZ literature includes JNT/JCTA | Reassess exact theorem significance and closest-current venue once scoped |
 
-CAND-01 is now the selected target and E-JC remains the intended leading venue.
-This is a subject/workflow preference, not a submission decision or acceptance
-prediction. The **publication gate is OPEN** after S002. E-JC is retained as the leading
-and presently sufficient pre-proof venue shortlist: its current scope, peer
-review, substantive-AI policy, submission route, comparable zero-sum papers
-and referee-conflict rules were rechecked for CAND-01. This is an eligibility
-and fit conclusion, not an acceptance prediction.
+CAND-02 is now the selected target by D-024 and E-JC remains the intended
+leading venue. This is a subject/workflow preference, not a submission decision
+or acceptance prediction. The **publication gate remains OPEN** because S003
+already performed a target-specific E-JC refresh for CAND-02 and retained JNT
+as a policy-qualified backup. Recheck current policies again before any actual
+submission.
 
 ## Eligibility record for each retained venue
 
@@ -243,3 +242,13 @@ higher-rank EGZ paper appeared there.
 These are workflow/subject-eligibility findings only, not acceptance
 predictions. The publication gate remains OPEN for the programme because
 eligible routes exist for the surviving incumbent/challengers.
+
+
+## D-024 selected-target publication status
+
+CAND-02 is the live target. E-JC remains the leading eligible venue on the
+S003 evidence: direct rank-three inverse-structure precedent, substantial-
+content scope, explicit substantive-AI permission and active submission route.
+JNT remains the credible backup because it published the controlling direct
+CAND-02 theorem and has an explicit publisher-level substantive-AI route.
+These are fit/eligibility findings only, never an acceptance prediction.
