@@ -12,9 +12,10 @@ counterexample or correction can be a legitimate contribution if its novelty
 and significance justify a paper.
 
 The current territory is inverse zero-sum theory in finite abelian groups.
-This is an exploration choice, not a selected theorem. Existing Pascal, tree,
-Collatz and Hadwiger projects are not default mathematical inputs. Any later
-use must be justified on its merits and recorded with exact dependencies.
+The live selected theorem is carried by `STATE.json` and the target register
+and changes only by explicit owner decision. Existing Pascal, tree, Collatz and
+Hadwiger projects are not default mathematical inputs. Any later use must be
+justified on its merits and recorded with exact dependencies.
 
 ## Owner decisions already established
 
@@ -60,5 +61,8 @@ transparent AI workflow. Ask separately about proposal assessment and willingnes
 in principle for a later manuscript review, with realistic scope and availability.
 Do not ask for a favourable review or guaranteed journal acceptance.
 
-No exact target selection, reviewer commitment, outreach, submission, repository
-rename or manuscript publication has occurred in this initialization session.
+At initialization no exact target selection, reviewer commitment, outreach,
+submission, repository rename or manuscript publication had occurred. Later
+authority records supersede that initialization boundary; as of 2026-10-02 the
+owner has selected CAND-02, while reviewer commitment and outreach remain
+unfulfilled.
