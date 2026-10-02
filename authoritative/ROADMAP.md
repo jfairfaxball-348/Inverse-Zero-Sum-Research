@@ -14,39 +14,44 @@ Each session performs one bounded useful unit and updates the true frontier.
 | P6: manuscript and external review | Self-contained paper and independent manuscript feedback | Material review issues addressed; current venue fit and AI policy confirmed |
 | P7: journal submission and revisions | Authorized submission, response-to-referee record, revisions or documented venue change | Actual editorial acceptance, then publication |
 
-## Current frontier after target selection
+## Current frontier after final target selection
 
-P0 is complete. Owner decision D-010 selects **CAND-01: rank-two Property D for
-`C_n^2`**.
+P0 is complete. Owner decision D-024 selects **CAND-02**:
 
-The programme is now entering P1. The immediate workflow is deliberately
-due-diligence-heavy:
+> For every `m>=2`, classify all sequences `S` over
+> `G_m=C_2\oplus C_{2m}\oplus C_{2m}` with `|S|=8m` and no
+> zero-sum subsequence of length `2m`.
 
-1. **Target-status audit:** inspect the primary Property B/C/D literature,
-   exact theorem statements, multiplicativity reductions, known moduli and the
-   2025 sufficiently-large-prime result; search forward citations and recent
-   preprints/current literature for overlap.
-2. **Novelty matrix:** separate full-conjecture scope, already-settled families,
-   unverified gaps and plausible partial contributions. Never infer openness
-   from failed searching.
-3. **Publication track:** confirm CAND-01-specific fit for E-JC and maintain at
-   least one credible backup venue only if substantive-AI eligibility and field
-   relevance are explicit.
-4. **Reviewer track in parallel:** prepare a concise proposal for Pingzhi Yuan
-   containing the exact question, known baseline, intended contribution, E-JC
-   fit and transparent AI workflow; verify recipient identity and draft a
-   two-stage review request. **Do not send without explicit owner authorization.**
-5. **External proposal assessment:** once review willingness is explicit, obtain
-   criticism of framing, baseline, relevance and venue fit and resolve material
-   objections.
+The programme remains in P1. S003 already established the direct baseline
+`s(G_m)=8m+1`, the distinction from the solved
+`C_2\oplus C_2\oplus C_{2n}` inverse family, the all-`m`
+structural contribution boundary, E-JC/JNT publication route and the unsent
+Xue Li Stage-1 package. S004 compared all four candidates; D-024 now makes
+CAND-02 the live target.
+
+The immediate workflow is:
+
+1. **S005 selected-target freshness check:** search for any post-audit or missed
+   primary/current-status evidence that completes, narrows or renames the exact
+   equal-factor ordinary-EGZ inverse problem. Search failure still does not
+   establish openness.
+2. **Reviewer readiness:** freshly verify Xue Li's public institutional/contact
+   route, independence/conflict indicators and exact expertise; compare an
+   alternative only if new evidence materially changes the S003 conclusion.
+3. **Finalize the Stage-1 request:** update the send-ready status/proposal
+   message to reflect D-024 and any S005 evidence. Do not send it in S005.
+4. **Owner send authorization:** if the package remains appropriate, S005
+   should activate an owner blocker requesting explicit authorization to
+   transmit that exact message. No next-session prompt while that blocker is
+   active.
+5. **External proposal assessment:** after authorized outreach and an actual
+   response, preserve the assessment and resolve material objections.
 6. **Only then open mathematical investigation:** proof/counterexample search,
    bounded experiments where justified, dependency tracking and independent
    checks.
 
-Literature/current-status work and reviewer logistics may run in parallel.
-Proof attempts, enumeration, experiments and formalisation do not begin merely
-because outreach is pending; the computation gate still requires all three
-preflight gates to be OPEN.
+Proof attempts, enumeration, experiments and formalisation remain prohibited
+while the external-review gate is closed.
 
 ## Gate definitions
 
@@ -283,3 +288,10 @@ CAND-03 backup under Elsevier's June-2026 generative-AI policy. A CAND-03
 Stage-1 package for David J. Grynkiewicz is prepared but unsent. Existing
 CAND-01 and CAND-02 packages also remain unsent. External review and
 computation remain CLOSED.
+
+## Frontier after D-024
+
+CAND-02 is the selected target. CAND-01 and CAND-03 remain audited alternatives
+only; CAND-04 remains retired. S005 is scheduled as the last independently
+runnable pre-outreach readiness unit. Target and publication gates are OPEN;
+external review and computation remain CLOSED.
