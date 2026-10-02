@@ -4,26 +4,30 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S001",
-  "next_session": "S002",
-  "next_brief": "authoritative/S002_PROPERTY_D_DUE_DILIGENCE_AND_REVIEWER_PREP_BRIEF.md",
+  "last_completed_session": "S002",
+  "next_session": null,
+  "next_brief": null,
   "stage": "P1_PROPOSAL_AND_REVIEW_ARRANGEMENTS",
   "programme_status": "OPEN",
-  "exact_target": "CAND-01: rank-two Property D for C_n^2",
+  "exact_target": "CAND-01: rank-two Property D for C_n^2; intended contribution is an all-prime completion or substantial structural/effective elimination of the residual exceptional-prime layer",
   "mathematical_results": [],
-  "target_gate": "CLOSED",
-  "publication_gate": "CLOSED",
+  "target_gate": "OPEN",
+  "publication_gate": "OPEN",
   "external_review_gate": "CLOSED",
   "computation_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [],
-  "future_owner_requirements": [
-    "Explicitly authorize sending the prepared Pingzhi Yuan outreach message or send it personally.",
-    "Obtain explicit willingness for proposal review and conditional manuscript review.",
-    "Resolve substantive proposal-review objections and confirm the target-specific journal shortlist."
+  "active_owner_blockers": [
+    "B-002 — Owner authorization required to send the prepared Pingzhi Yuan Stage-1 proposal/status-check outreach."
   ],
-  "next_prompt_status": "READY",
+  "future_owner_requirements": [
+    "After an authorized Stage-1 send, record Pingzhi Yuan's reply and obtain an independent proposal/status assessment.",
+    "Resolve any material prior-art, framing, significance or venue objection raised by external review.",
+    "Separately obtain willingness in principle for a later independent manuscript review, subject to scope, timing and conflicts.",
+    "Only after all three preflight gates are genuinely open may mathematical proof/computation/formalisation be scheduled.",
+    "Later: explicitly authorize journal submission or other external author actions."
+  ],
+  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -34,10 +38,17 @@
       "id": "S001",
       "status": "COMPLETED",
       "record": "sessions/S001/CLOSEOUT.md"
+    },
+    {
+      "id": "S002",
+      "status": "COMPLETED",
+      "record": "sessions/S002/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
   "s001_source_refresh_date": "2026-10-02",
   "selected_target_date": "2026-10-02",
-  "intended_first_reviewer": "Pingzhi Yuan"
+  "s002_source_refresh_date": "2026-10-02",
+  "intended_first_reviewer": "Pingzhi Yuan",
+  "outreach_status": "PREPARED_NOT_SENT"
 }
