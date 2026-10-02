@@ -171,3 +171,23 @@ The publication gate remains **OPEN**. This means an eligible, relevant route
 exists for the incumbent and would remain available if CAND-02 were selected;
 it is not a claim that any future result is publishable or likely to be
 accepted.
+
+
+## S004 candidate-specific publication requirement
+
+CAND-03 and CAND-04 do not automatically inherit the target-specific venue
+conclusions already established for CAND-01 and CAND-02. S004 must refresh,
+separately for each surviving candidate, E-JC subject fit, current substantive-AI
+permission, submission route, comparable papers and conflict/referee rules.
+
+For CAND-03, the audit should compare E-JC against the Acta Arithmetica/JCTA
+baseline created by the generalized Narkiewicz literature and retain a backup
+only where substantive-AI eligibility is explicit for this workflow.
+
+For CAND-04, the audit should compare E-JC against the actual venues of the
+controlling higher-rank Property-D/EGZ literature after the direct-constant
+landscape is clarified. A backup must not be admitted merely because it
+publishes number theory; current substantive-AI eligibility must be explicit.
+
+Publication-fit conclusions remain eligibility assessments, never acceptance
+predictions.
