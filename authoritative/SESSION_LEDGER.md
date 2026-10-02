@@ -7,7 +7,8 @@
 | S002 | COMPLETED | a2978c95094cd249fd320f6bf6111b4528c6fea3 | Property-D due diligence and novelty/status matrix; exact surviving target; E-JC gate refresh; verified, unsent Pingzhi Yuan two-stage reviewer package; no proof/computation/outreach | [S002 closeout](../sessions/S002/CLOSEOUT.md) |
 | S003 | COMPLETED | ccf476e72ae32c5c59078cb7996b63e0e6455480 | CAND-02 primary/current-status audit; exact surviving structural scope; CAND-01 comparison; E-JC/JNT venue refresh; unsent Xue Li reviewer package; B-003 owner target-decision blocker; no proof/computation/outreach | [S003 closeout](../sessions/S003/CLOSEOUT.md) |
 | S004 | COMPLETED | 17fab131e8ea3617063e8086309b38d548b3b4d6 | Full CAND-03/CAND-04 audits; CAND-03 survives status-unknown; CAND-04 retired as clean inverse target; four-candidate comparison; unsent CAND-03 reviewer package; B-004 owner selection blocker | [S004 closeout](../sessions/S004/CLOSEOUT.md) |
-| S005 | COMPLETED | c847e75c6c9b077542626ad6941227b1157c9c0f | CAND-02 current-status/overlap refresh; Xue Li public route/fit/conflict recheck; exact Stage-1 package frozen send-ready; B-005 explicit send-authorization blocker; no proof/computation/outreach | [S005 closeout](../sessions/S005/CLOSEOUT.md) |\n| S006 | COMPLETED | 71f51c28856d965c9789ec3cb941f355d2216f16 | Full-proof CAND-02 structural baseline; published-tool classification; dependency/gap map; no proof/computation/outreach | [S006 closeout](../sessions/S006/CLOSEOUT.md) |
+| S005 | COMPLETED | c847e75c6c9b077542626ad6941227b1157c9c0f | CAND-02 current-status/overlap refresh; Xue Li public route/fit/conflict recheck; exact Stage-1 package frozen send-ready; B-005 explicit send-authorization blocker; no proof/computation/outreach | [S005 closeout](../sessions/S005/CLOSEOUT.md) |
+| S006 | COMPLETED | 71f51c28856d965c9789ec3cb941f355d2216f16 | Full-proof CAND-02 structural baseline; published-tool classification; dependency/gap map; no proof/computation/outreach | [S006 closeout](../sessions/S006/CLOSEOUT.md) |
 
 S004 completed the requested remaining-candidate audits. CAND-01, CAND-02 and
 CAND-03 survive on distinct source-supported research identities; CAND-04 is
@@ -56,7 +57,7 @@ computation remain CLOSED.
   adds no mathematical result.
 - Xue Li's reply, proposal assessment and later manuscript-review willingness
   remain pending; confirmed reviewer status remains NONE.
-- External-review and computation gates remain CLOSED.
+- **Historical state at that checkpoint:** external-review and legacy computation gates were CLOSED; D-030--D-032 later decoupled and opened mathematical investigation.
 - Next numbered session: S006, bounded structural-baseline/source-dependency
   preparation while awaiting the reply.
 
@@ -76,5 +77,12 @@ computation remain CLOSED.
   outreach occurred.
 - Active owner blockers: NONE.
 - Xue Li reply/status assessment remains pending; no reviewer is confirmed.
-- Next numbered session: S007, bounded source-only homocyclic-kernel and
-  equality/near-equality audit.
+- Next numbered session: S007, first bounded mathematical-investigation session on the progressive-subsums bridge (D6-08), under the later owner protocol change D-030--D-032.
+
+## Post-S006 owner protocol correction checkpoint
+
+- After the initial S006 checkpoint was created, the owner explicitly changed the preflight protocol and instructed that the change govern S006 closeout and later work.
+- D-030 decouples mathematical-investigation authorization from external-review completion; D-031 opens the mathematical-investigation gate for CAND-02; D-032 replaces the unrun source-only S007 plan.
+- External-review gate remains CLOSED, Xue Li reply remains pending, and no reviewer willingness or endorsement is inferred.
+- S006 itself remains pre-proof: no new proof, computation, experiment or formalisation was performed in S006.
+- Next numbered session: S007, bounded mathematical investigation of dependency D6-08.

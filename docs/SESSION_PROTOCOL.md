@@ -40,8 +40,13 @@ the machine state to `SUPPRESSED_OWNER_BLOCKER`. Clear the next-session and
 next-brief fields and update links that pointed to the removed live prompt.
 
 Later-stage unfulfilled requirements may remain future tasks while a genuinely
-independent authorized unit is runnable. Do not use this distinction to bypass
-an actual dependency. Explicit owner stop conditions always apply.
+independent authorized unit is runnable. External reviewer silence is one such
+parallel requirement once mathematical investigation is authorized. Do not use
+this distinction to bypass an actual mathematical or owner dependency. If later
+external feedback identifies prior art, a known solution, material overlap, a
+mistaken premise or a serious scope/significance concern, pause the affected
+mathematical direction, preserve the feedback accurately and reassess before
+continuing. Explicit owner stop conditions always apply.
 
 ## 4. Prepare the durable closeout
 
@@ -51,12 +56,15 @@ route or claim fails. Write `sessions/<ID>/CLOSEOUT.md` following the template.
 Classify results honestly and include changed files, validation, limits,
 remaining obligations and the next useful unit or required owner action.
 
-If unblocked, create the next brief and `authoritative/NEXT_SESSION_PROMPT.md`
+If unblocked, create the next brief and authoritative/NEXT_SESSION_PROMPT.md
 with one ready kickoff. It must not depend on unstated approval or an assumed
-reply. Do not schedule proof/computation while the preflight gate is closed.
-If blocked, write the request and leave no live kickoff file. Past completed
-session records remain historical records; their old prompts are never live
-authority for a blocked or superseded state.
+reply. Proof/counterexample work, mathematical computation, experiments and
+formalisation may be scheduled only when mathematical_investigation_gate is
+OPEN; that gate does not require external_review_gate to be OPEN. External
+review proceeds independently in parallel. If blocked, write the request and
+leave no live kickoff file. Past completed session records remain historical
+records; their old prompts and old gate semantics are never live authority for
+a blocked or superseded state.
 
 ## 5. Validate and checkpoint
 

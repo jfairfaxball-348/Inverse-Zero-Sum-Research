@@ -16,19 +16,27 @@ preferences before relying on them in subsequent sessions.
   target register; do not infer it from initialization text or conversation
   history. Existing projects supply workflow lessons, not an automatic
   mathematical starting point.
-- Before mathematical computation or proof development, establish the target
-  by name, genre, type and exact scope; an eligible, relevant publication
-  shortlist; and explicit willingness for external proposal and manuscript
-  review. The initial comparison must not rank targets by complexity or
-  probability of obtaining a proof.
+- Before mathematical investigation opens, establish the target by name,
+  genre, type and exact scope; an eligible, relevant publication route; and
+  sufficiently mature literature/status due diligence. External proposal/status
+  review continues in parallel but is not a prerequisite for proof search,
+  counterexample search, mathematical computation or bounded experiments. The
+  machine-readable mathematical_investigation_gate controls that work.
 - The Electronic Journal of Combinatorics is the leading journal candidate,
   not a submission decision or an acceptance prediction. Exclude journals
   prohibiting substantive AI contributions; copy-editing-only permission is
   insufficient. Unclear policies are pending, not confirmed eligibility.
 - The external mathematician's intended role is independent pre-submission
-  reviewer. Journal referees are selected by editors. Record and disclose prior
-  involvement as required; never promise that our reviewer will referee for the
-  journal. Authorship must follow actual contributions if the role changes.
+  reviewer. External review is a parallel risk-control and publication-readiness
+  process, not a prerequisite for mathematical investigation. A sent message,
+  silence or non-response never establishes willingness, endorsement, novelty
+  certification or approval. A later substantive reply identifying prior art,
+  a known solution, material overlap, a mistaken premise or a serious
+  scope/significance concern must pause the affected mathematical direction for
+  reassessment. Appropriate independent scrutiny remains required before journal
+  submission. Journal referees are selected by editors; never represent a
+  private reviewer as a journal referee. Authorship must follow actual
+  contributions if the role changes.
 
 ## Autonomous work and closeout
 
@@ -69,10 +77,13 @@ Formalisation verifies the encoded statement under its trust boundary; it does
 not establish novelty, significance, semantic correspondence or journal review.
 Never treat repeated LLM agreement as independent mathematical peer review.
 
-No mathematical experiments, searches over examples, new proof attempts or Lean
-development during preflight. Document validation and ordinary file operations
-are permitted. Recheck sources and policies when a decision depends on current
-status. Preserve a transparent account of substantive AI use.
+Mathematical experiments, searches over examples, new proof attempts and
+formalisation are permitted only when mathematical_investigation_gate is OPEN
+and the current session brief authorizes their bounded role. Label programme
+proofs, conjectural deductions and experimental evidence separately. Document
+validation and ordinary file operations remain permitted regardless. Recheck
+sources and policies when a decision depends on current status. Preserve a
+transparent account of substantive AI use.
 
 Use the existing Apache-2.0 licence. Do not publish private correspondence,
 addresses or promises; preserve only the minimum necessary contact-status

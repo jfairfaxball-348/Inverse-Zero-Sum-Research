@@ -18,19 +18,24 @@ INSPECTED LITERATURE**, or **ACCESS GAP**. A source gap is not an openness claim
 | D6-11 | Apply exact `C_2^3` residue combinatorics | **SOURCE-SUPPLIED LOCALLY** | Needs valid quotient configuration |
 | D6-12 | Reconstruct all full length-`8m` extremals and prove sufficiency | **UNPROVIDED BY INSPECTED LITERATURE** | 2020 reconstruction is family-specific |
 | D6-13 | Preserve all-`m>=2` unconditional scope | **TARGET REQUIREMENT** | Property-D-only routes cannot silently become all-`m` |
-| D6-14 | External current-status/proposal assessment | **PENDING EXTERNAL INPUT** | Xue Li message owner-reported sent; reply pending |
+| D6-14 | External current-status/proposal assessment | **PENDING PARALLEL EXTERNAL INPUT; NONBLOCKING FOR MATHEMATICAL INVESTIGATION UNDER D-030** | Xue Li message owner-reported sent; reply pending; adverse substantive feedback can pause/reframe the affected direction |
 
 ## Readiness conclusion
 
 Source-ready: target notation/values, direct proof architecture, local
 `C_2^3` tools, homocyclic eta-overlap rigidity, conditional Lemma 4.4(2).
 
-Not ready for mathematical execution: equality-rigid decomposition, universal
-target-to-kernel reduction, all-`m` homocyclic near-extremal restricted-sum
-rigidity, equal-factor eta-core classification, reconstruction, and the
-external proposal/status gate.
+Open mathematical dependencies: equality-rigid decomposition, universal
+target-to-kernel reduction, all-m homocyclic near-extremal restricted-sum
+rigidity, equal-factor eta-core classification and reconstruction. These are
+research obligations, not gate blockers under D-030. External proposal/status
+review is a parallel risk-control stream rather than an execution prerequisite.
 
 S007 should audit published sources specifically for D6-04 through D6-10:
 unconditional `C_m^2` structure at `s-1`, `s-2`, `eta-1`, restricted
 sum sets, and equality/stability refinements of the inductive inequalities.
 If no adequate source is found, record the source gap rather than proving it.
+
+## D-030 execution update
+
+The owner has opened mathematical investigation despite D6-14 remaining pending. S007 is authorized to attack D6-08 directly. This authorization does not resolve any mathematical dependency and does not strengthen the target's open-status or novelty claim.

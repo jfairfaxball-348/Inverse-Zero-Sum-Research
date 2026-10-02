@@ -1,5 +1,8 @@
 # Target register
 
+**Current protocol note (D-030--D-032):** historical entries below preserve the gate rules that governed their sessions. Any historical statement that external-review completion is required before proof/computation is superseded. The mathematical-investigation gate is now OPEN for CAND-02 while external review remains CLOSED and parallel. This does not change the target's status: SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+
+
 **Selected exact target: CAND-02 — rank-three inverse EGZ for
 `C_2 \oplus C_{2m} \oplus C_{2m}`, `m>=2`.**
 
@@ -366,3 +369,13 @@ openness declaration. The target status remains:
 The selected publication-level contribution remains a full all-m structural
 classification, or a broad uniform theorem materially resolving/advancing it.
 A routine isolated small-m catalogue remains outside the selected target.
+
+## Post-S006 mathematical-investigation authorization
+
+Owner decisions D-030--D-032 do not narrow or certify CAND-02. The exact all-m target and conservative status remain unchanged.
+
+Mathematical investigation is now authorized because target and publication gates are OPEN and S003--S006 have supplied sufficiently mature literature/status and structural-baseline due diligence. External review continues in parallel and is not a proof-start prerequisite.
+
+The first bounded mathematical question is dependency D6-08 from S006: whether every target extremal necessarily satisfies the progressive-subsums entry hypothesis of Girard--Schmid 2019 Lemma 4.4(2). Treat this as a programme question until proved. A counterexample or obstruction retires or weakens that route rather than the full target automatically.
+
+Beginning mathematical work does not strengthen the novelty/open-status label. A later substantive reviewer reply can narrow, pause or retire the affected direction if it supplies prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern.

@@ -12,29 +12,35 @@ Use the committed repository as authority, not conversation history. Pin live
 main, reconcile any intervening changes, confirm S007 is unique, and read
 AGENTS.md, authoritative/START_HERE.md, all required authority records, the
 complete S006 record, and
-authoritative/S007_CANDIDATE_2_HOMOCYCLIC_KERNEL_AUDIT_BRIEF.md.
+authoritative/S007_CANDIDATE_2_PROGRESSIVE_SUBSUMS_BRIDGE_BRIEF.md.
 
-CAND-02 remains the selected all-m ordinary inverse-EGZ target. The
-owner-reported Xue Li Stage-1 message was sent on 2026-10-02; unless committed
-authority contains a later reply, treat the response, reviewer willingness,
-proposal assessment and later manuscript-review agreement as pending.
+Owner decisions D-030--D-032 have changed the protocol. The
+mathematical-investigation gate is OPEN even though the external-review gate is
+CLOSED. Xue Li's Stage-1 reply remains pending unless newer committed authority
+says otherwise. Do not infer willingness, endorsement, novelty certification or
+approval from transmission or silence. If a substantive reply has arrived and
+identifies prior art, a known solution, material overlap, a mistaken premise or
+a serious scope/significance concern, pause the affected mathematical direction
+and reassess it before proceeding.
 
-Run one bounded pre-proof source audit of the dependencies exposed by S006.
-Inspect primary literature for unconditional all-m extremal/near-extremal
-structure of C_m^2, restricted-sum rigidity relevant to s(C_m^2)-2 or
-eta(C_m^2)-1, and any published equality/stability/refinement version of the
-subgroup/quotient inequalities used in the direct proof. Distinguish
-unconditional results from Property-D, prime/power or other conditional
-subfamilies. Search specifically for a legitimate homocyclic replacement for
-the cyclic-kernel one-point-complement step used by the 2020 inverse theorem.
+Run one bounded CAND-02 mathematical-investigation session on dependency D6-08
+only: determine whether every length-8m extremal S over
+C_2 + C_{2m} + C_{2m} necessarily admits h and a subsequence C with
+|C| >= m-1 such that jh lies in Sigma_j(C) for every 1 <= j <= |C|, which
+would activate Girard--Schmid 2019 Lemma 4.4(2).
 
-Update each exposed dependency only from source-backed results. If no adequate
-theorem is located, record a source gap without inferring openness.
+Attempt both proof and falsification. Clearly separate published inputs,
+programme deductions, conjectural steps and experimental evidence. You may run
+carefully scoped small-m computation only if the theoretical analysis identifies
+a precise finite structural question; preserve code/parameters/results and do
+not generalize experimental evidence into a theorem. If the bridge is false,
+record the counterexample/obstruction and the strongest justified weaker
+statement. If the bridge is proved, apply the published eta-core consequence
+and stop there rather than attempting the full classification in the same
+session.
 
-Do NOT attempt new proofs, formulate missing lemmas as results, enumerate
-small cases, run experiments/computation, formalise mathematics, send outreach,
-or open the external-review/computation gates. Produce the required S007
-records and synchronized authority updates, validate with
-scripts/check_authority.py, commit to main, verify the remote checkpoint, and
-close out under the repository protocol.
+Do not send outreach or treat CAND-02 as certified open. Produce the required
+S007 records, synchronize authority, run scripts/check_authority.py and any
+mathematical/code checks warranted by the work, commit to main, verify the
+remote checkpoint, and close out under the repository protocol.
 ```

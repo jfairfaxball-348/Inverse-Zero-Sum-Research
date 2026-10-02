@@ -1,76 +1,46 @@
 # Roadmap and stage gates
 
-The stages are outcome-driven, not a promise that one session finishes a stage.
-Each session performs one bounded useful unit and updates the true frontier.
+**Protocol supersession D-030--D-032:** external proposal/status review is now a parallel risk-control and publication-readiness process, not a prerequisite for mathematical investigation. Historical sections later in this file preserve earlier session states; any statement there that proof/computation must wait for external-review completion is superseded and has no current force.
+
+The stages are outcome-driven and may overlap where the owner has explicitly decoupled dependencies.
 
 | Stage | Required output | Gate to advance |
 | --- | --- | --- |
-| P0: field orientation and discovery | Current field map; three to five sourced, precisely scoped candidate questions; eligible journal mapping | Owner selects a target after evidence is presented |
-| P1: proposal and review arrangements | Target specification; literature comparison; publication shortlist; reviewable outreach package | Explicit reviewer willingness for both proposal review and conditional later manuscript review |
-| P2: external proposal assessment | Reviewer assesses framing, baseline, relevance and venue fit; feedback preserved accurately | Substantive objections resolved, owner target decision recorded, all three preflight gates open |
-| P3: mathematical investigation | Bounded proof/counterexample tasks, dependency map, independent checks; experiments only with specified evidentiary role | A rigorous contribution with no concealed obligations |
-| P4: result and literature audit | Reassess novelty for the actual theorem, proof correctness, significance and scope | Surviving contribution suitable for a paper |
-| P5: formalisation and verification | Scope-selected machine checking, reproducible environment, paper correspondence and trust statement | All advertised checks genuinely pass; unformalised boundaries explicit |
-| P6: manuscript and external review | Self-contained paper and independent manuscript feedback | Material review issues addressed; current venue fit and AI policy confirmed |
+| P0: field orientation and discovery | Current field map; sourced candidate questions; eligible journal mapping | Owner selects a target after evidence is presented |
+| P1: target/publication/status due diligence | Exact target; current-status audit; publication route; structural source baseline | Target and publication gates OPEN; due diligence mature enough for bounded mathematics |
+| P2: external review, parallel | Independent proposal/status feedback and later manuscript scrutiny when available | Required for publication readiness before submission, not for entry to P3 |
+| P3: mathematical investigation | Bounded proof/counterexample tasks, new deductions, dependency map, scoped experiments with defined evidentiary role | A rigorous contribution or rigorous falsification/obstruction with no concealed obligations |
+| P4: result and literature audit | Reassess novelty for the actual result, proof correctness, significance and scope | Surviving contribution suitable for a paper |
+| P5: formalisation and verification | Scope-selected machine checking, reproducible environment, paper correspondence and trust statement | All advertised checks pass; unformalised boundaries explicit |
+| P6: manuscript and independent external review | Self-contained paper and appropriate independent manuscript scrutiny | Material issues addressed; current venue fit and AI policy confirmed |
 | P7: journal submission and revisions | Authorized submission, response-to-referee record, revisions or documented venue change | Actual editorial acceptance, then publication |
 
-## Current frontier after final target selection
+## Current frontier after S006 and owner protocol change
 
-P0 is complete. Owner decision D-024 selects **CAND-02**:
+CAND-02 remains selected: classify, for every m>=2, all length-8m sequences over G_m=C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m.
 
-> For every `m>=2`, classify all sequences `S` over
-> `G_m=C_2\oplus C_{2m}\oplus C_{2m}` with `|S|=8m` and no
-> zero-sum subsequence of length `2m`.
+S003--S006 established the direct threshold, current-status boundary, publication route, reviewer outreach package, current-status refresh, and a full relevant proof/dependency baseline. The owner now judges this due diligence sufficiently mature for bounded mathematical investigation.
 
-The programme remains in P1. S003 already established the direct baseline
-`s(G_m)=8m+1`, the distinction from the solved
-`C_2\oplus C_2\oplus C_{2n}` inverse family, the all-`m`
-structural contribution boundary, E-JC/JNT publication route and the unsent
-Xue Li Stage-1 package. S004 compared all four candidates; D-024 now makes
-CAND-02 the live target.
+Current gates:
+- Target gate: OPEN.
+- Publication gate: OPEN.
+- Mathematical-investigation gate: OPEN.
+- External-review gate: CLOSED and parallel.
 
-The immediate workflow is:
+External-review silence does not block P3. A sent message, silence or non-response does not imply willingness, endorsement, novelty certification or approval. A later substantive reply that identifies prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern pauses the affected mathematical direction for reassessment.
 
-1. **S005 selected-target freshness check:** search for any post-audit or missed
-   primary/current-status evidence that completes, narrows or renames the exact
-   equal-factor ordinary-EGZ inverse problem. Search failure still does not
-   establish openness.
-2. **Reviewer readiness:** freshly verify Xue Li's public institutional/contact
-   route, independence/conflict indicators and exact expertise; compare an
-   alternative only if new evidence materially changes the S003 conclusion.
-3. **Finalize the Stage-1 request:** update the send-ready status/proposal
-   message to reflect D-024 and any S005 evidence. Do not send it in S005.
-4. **Owner send authorization:** if the package remains appropriate, S005
-   should activate an owner blocker requesting explicit authorization to
-   transmit that exact message. No next-session prompt while that blocker is
-   active.
-5. **External proposal assessment:** after authorized outreach and an actual
-   response, preserve the assessment and resolve material objections.
-6. **Only then open mathematical investigation:** proof/counterexample search,
-   bounded experiments where justified, dependency tracking and independent
-   checks.
-
-Proof attempts, enumeration, experiments and formalisation remain prohibited
-while the external-review gate is closed.
+Before journal submission, appropriate independent scrutiny of the contribution/manuscript remains required, subject to actual reviewer willingness and availability. The private reviewer is not a journal referee.
 
 ## Gate definitions
 
-- **Target gate:** owner decision recorded; exact domain, quantifiers, restrictions,
-  proposed contribution and known baseline specified; no unsupported openness claim.
-- **Publication gate:** relevant shortlist with substantive-AI eligibility evidence,
-  working submission route and unresolved policy questions closed for retained venues.
-- **External review gate:** appropriate reviewer explicitly agrees to assess the
-  proposal and is willing in principle to assess a later manuscript; proposal
-  assessment completed and material objections resolved. Agreement alone is not
-  a successful review. Conditional later availability must remain explicit.
-- **Computation gate:** the previous three are OPEN and the owner-approved scope
-  allows the specified mathematical work. Formalisation and proof attempts are
-  subject to the same preflight restriction as experiments.
+- **Target gate:** exact domain, quantifiers, contribution and known baseline are owner-authorized; no unsupported openness claim.
+- **Publication gate:** at least one relevant journal route with substantive-AI eligibility and working submission route is verified. OPEN is not submission approval or an acceptance prediction.
+- **Mathematical-investigation gate:** authorizes bounded proof/counterexample search, derivation, structural reductions, mathematical computation and scoped experiments. It requires target and publication readiness plus mature due diligence; it does not require external-review completion.
+- **External-review gate:** records sufficient independent external scrutiny for publication readiness. It remains separate from the mathematical-investigation gate and never designates a journal referee.
 
-P0 and independent preparatory work do not require choosing a reviewer now.
-When a missing decision or external action prevents the next useful authorized
-unit, activate the owner blocker. Do not call a future dependency completed.
+## First mathematical obligation
 
+S007 attacks dependency D6-08 only: whether every CAND-02 extremal satisfies the progressive-subsums entry condition needed by Girard--Schmid 2019 Lemma 4.4(2). The session may prove it, falsify it, or isolate a rigorously justified weaker statement. Small-m computation is allowed only for a precisely stated finite structural question and remains experimental evidence unless proved.
 ## Recovery and periodic audits
 
 Known overlap, a false candidate, a gap, or an unhelpful route is a useful result
@@ -328,7 +298,7 @@ On 2026-10-02 the owner reported sending the S005 Xue Li Stage-1
 status/proposal message. B-005 is resolved. This is a transmission event only:
 Xue Li is not yet a confirmed reviewer, no independent proposal assessment has
 been received, and later manuscript-review willingness remains unestablished.
-The external-review and computation gates therefore remain CLOSED.
+**Historical state at the post-S005 checkpoint (superseded by D-030--D-032):** the external-review and legacy computation gates were then CLOSED.
 
 The next independently runnable unit is **S006: CAND-02 structural baseline and
 dependency map**. While the reply is pending, S006 may inspect the full proofs
@@ -338,11 +308,12 @@ reductions and method architecture; distinguish exactly applicable published
 tools from analogies; and build a proof-readiness gap/dependency map. It may
 perform additional literature checks needed to source those dependencies.
 
-S006 is still pre-proof. It must not invent or attempt new lemmas, enumerate
+S006 was still pre-proof and did not invent or attempt new lemmas, enumerate
 small cases, run experiments or computation, use formalisation as a proof
-search, or infer openness from missing literature. Mathematical investigation
-begins only after the external proposal assessment and the remaining preflight
-gate requirements are actually satisfied.
+search, or infer openness from missing literature. The final sentence of the
+then-current protocol tied mathematical investigation to external proposal
+assessment; **D-030 explicitly supersedes that cross-session prerequisite for
+S007 and later work.**
 
 
 ## Frontier after S006
@@ -368,10 +339,9 @@ S006 completed the bounded pre-proof structural baseline for CAND-02.
   does not force that hypothesis.
 
 No mathematical result was proved by the programme. CAND-02 remains
-SOURCE-DEFINED / CURRENT STATUS UNKNOWN. The Xue Li reply remains pending;
-external review and computation/proof remain CLOSED.
-
-The next independently runnable unit is **S007**, a source-only audit for
-unconditional homocyclic `C_m^2` extremal/near-extremal structure and
-equality/stability refinements of the subgroup/quotient method. S007 must report
-a source gap rather than attempt to fill one mathematically.
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. The Xue Li reply remains pending.
+**Historical initial closeout plan (superseded before S007 by D-030--D-032):**
+external review and the legacy computation/proof gate were then CLOSED and a
+source-only S007 was proposed. The amended closeout instead opens the separate
+mathematical-investigation gate and schedules the progressive-subsums bridge
+investigation.

@@ -6,7 +6,7 @@
 | --- | --- | --- | --- |
 | D-001 | 2026-10-02 | Root goal is a distinct contribution through journal peer review and publication | Explicit owner instruction |
 | D-002 | 2026-10-02 | Explore inverse zero-sum territory | Owner agreed to field exploration |
-| D-003 | 2026-10-02 | Establish target, eligible journals and external reviewer arrangements before computation | Explicit owner instruction |
+| D-003 | 2026-10-02 | **SUPERSEDED IN PART BY D-030.** Establish target and eligible publication route before mathematical investigation; external review remains required for later publication readiness but no longer blocks proof/computation. | Original owner instruction, revised by later explicit owner protocol change |
 | D-004 | 2026-10-02 | Initial target comparison is by name, genre and type, not difficulty/proof likelihood | Explicit owner instruction |
 | D-005 | 2026-10-02 | E-JC is the leading publication candidate; prohibit irrelevant or substantive-AI-banning venues | Explicit owner preference and requirement |
 | D-006 | 2026-10-02 | External support is intended as proposal and manuscript review, not planned collaboration | Explicit owner instruction |
@@ -68,10 +68,9 @@ send-ready package without contacting anyone.
 
 - Preserve any Xue Li reply accurately when the owner supplies it; do not infer
   a response or willingness from elapsed time or successful transmission.
-- Obtain an actual independent proposal/status assessment and separately
-  establish willingness in principle for a later manuscript review.
-- Keep the external-review and computation gates closed until their recorded
-  requirements are genuinely met.
+- Continue seeking an independent proposal/status assessment in parallel; do not infer willingness or endorsement from silence.
+- Obtain appropriate independent scrutiny of the actual mathematical contribution/manuscript before journal submission, subject to willingness and availability.
+- If substantive external feedback reveals prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern, pause the affected mathematical direction and reassess.
 - Later: authorize journal submission or other external author actions.
 
 ## Communication boundary
@@ -85,10 +84,9 @@ unsent reviewer packages where justified, but no message may be transmitted.
 After the final target is settled, verify the current recipient route and
 obtain separate explicit send authorization before outreach.
 
-While waiting for a reviewer response later, independent literature, novelty,
-source and dependency work may continue. Mathematical proof attempts,
-enumeration, experiments and formalisation remain gated until the repository's
-three preflight gates are open.
+While waiting for a reviewer response, external review and literature/status
+maintenance continue in parallel. Under D-030, reviewer silence is not a
+prerequisite blocker once the separate mathematical-investigation gate is OPEN.
 
 
 ## S004 communication boundary
@@ -146,7 +144,7 @@ reviewer, or represent the exact target as certified open.
 | ID | Date | Decision | Basis |
 | --- | --- | --- | --- |
 | D-028 | 2026-10-02 | Record the S006 structural baseline: the sharp equal-factor direct proof is a value-level inductive argument through `C_m^2 <= G_m -> C_2^3`; the closest published ordinary-EGZ inverse proof instead depends on cyclic-kernel near-extremal structure and does not transfer as a classification theorem to the homocyclic kernel. | S006 full-proof inspection of Girard--Schmid 2019/2020 and cited dependencies |
-| D-029 | 2026-10-02 | Keep the external-review and computation/proof gates CLOSED and schedule S007 as a source-only audit of homocyclic `C_m^2` equality/near-equality machinery while the Xue Li reply remains pending. | S006 dependency map; no programme proof and no reviewer response |
+| D-029 | 2026-10-02 | **SUPERSEDED BEFORE S007 BY D-030--D-032.** Initial S006 closeout plan kept mathematical work closed and scheduled a source-only S007. | S006 dependency map under the former gate rule |
 
 D-028 is a source/method boundary, not a new mathematical theorem. The 2019
 equal-factor proof obtains `eta(G_m)=6m+2` and `s(G_m)=8m+1` using the
@@ -169,3 +167,17 @@ hypothesis for every CAND-02 extremal.
 No new proof, computation, experiment, formalisation or outreach is claimed.
 CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN and Xue Li's reply
 remains pending.
+
+## Post-S006 owner protocol change
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-030 | 2026-10-02 | **Decouple mathematical investigation from external-review completion.** Once target and publication gates are OPEN and literature/status due diligence is sufficiently mature, bounded proof/counterexample search, derivation, mathematical computation and scoped experiments may begin while reviewer outreach is unanswered or in progress. External review remains a parallel risk-control and later publication-readiness process. | Explicit owner protocol change supplied at S006 closeout |
+| D-031 | 2026-10-02 | **OPEN the mathematical-investigation gate for CAND-02 now.** S006 completed the structural baseline and dependency map; target and publication gates are already OPEN. Keep external-review gate CLOSED because no reviewer is confirmed and no substantive external assessment has been received. | Owner protocol change plus completed S003--S006 due diligence |
+| D-032 | 2026-10-02 | Replace the unrun source-only S007 plan with the first bounded CAND-02 mathematical-investigation session, attacking dependency D6-08: whether the progressive-subsums entry hypothesis of Girard--Schmid Lemma 4.4(2) can be forced for an arbitrary CAND-02 extremal, or whether that route has a concrete obstruction/counterexample. | S006 dependency map; owner instruction to choose one high-leverage mathematical obligation |
+
+D-030 supersedes the cross-session prerequisite in D-003 and the initial source-only scheduling decision D-029. It does not retroactively authorize proof work inside S006; S006 remains a pre-proof structural-baseline session.
+
+A sent message, silence or non-response never establishes reviewer willingness, novelty certification, endorsement or approval. If a later substantive Xue Li reply identifies prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern, the affected mathematical direction must pause for reassessment even if proof work has begun.
+
+Before journal submission, the programme must obtain appropriate independent scrutiny of the contribution/manuscript, subject to actual reviewer willingness and availability. This private reviewer is not a journal referee; journal referees are selected by the journal.

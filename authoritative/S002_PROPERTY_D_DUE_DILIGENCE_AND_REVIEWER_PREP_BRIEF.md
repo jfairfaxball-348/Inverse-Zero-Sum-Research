@@ -1,3 +1,5 @@
+**Historical protocol note — superseded by D-030 (2026-10-02):** This completed S002 brief records the rule then in force. Its cross-session statement that proof/computation must wait for external-review completion no longer governs later sessions. The S002-specific no-proof boundary remains historical fact.
+
 # S002: CAND-01 due diligence and reviewer preparation
 
 Status: COMPLETED 2026-10-02. Predecessor: S001 plus owner decision D-010 selecting CAND-01.
@@ -59,7 +61,8 @@ useful step requires owner authorization, activate an owner blocker with the
 exact draft/evidence and close with NO next-session prompt.
 
 Do not begin proof search merely because outreach is prepared or awaiting a
-reply. Proof/computation remains gated by target, publication and external
+reply. **Historical S002 rule (superseded for later sessions by D-030):** at
+that time proof/computation was gated by target, publication and external
 review requirements.
 
 ## Validation and closeout

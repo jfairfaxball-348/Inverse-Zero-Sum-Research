@@ -48,9 +48,10 @@ prompt.
 ## Boundary and gates
 
 No proof attempt, unproved programme lemma, enumeration, computation,
-experiment, formalisation or outreach occurred. External-review and
-computation/proof gates remain CLOSED. Xue Li's reply remains pending; no
-reviewer is confirmed.
+experiment, formalisation or outreach occurred inside S006. Under the owner
+protocol addendum D-030--D-032 installed at closeout, the external-review gate
+remains CLOSED but the separate mathematical-investigation gate is now OPEN for
+subsequent sessions. Xue Li's reply remains pending; no reviewer is confirmed.
 
 Validation uses `python3 scripts/check_authority.py` on a materialized
 structural mirror before the branch ref is moved, followed by remote GitHub
@@ -59,5 +60,14 @@ mathematical truth or novelty.
 
 **Active owner blockers: NONE.**
 
-S007 is a bounded, independently runnable pre-proof source audit of the
-homocyclic-kernel/equality-rigidity dependencies exposed by S006.
+S007 is now the first bounded mathematical-investigation session. It attacks dependency D6-08 only: the progressive-subsums entry condition for Girard--Schmid Lemma 4.4(2), with proof and falsification both authorized and scoped computation permitted only for a defined structural question.
+
+## Owner protocol addendum incorporated at S006 closeout
+
+The owner explicitly changed the preflight protocol: external proposal/status review remains valuable and required for later publication readiness, but an unanswered reviewer message is no longer a prerequisite blocker for mathematical investigation once target/publication readiness and literature/status due diligence are mature.
+
+Chronology note: the initial S006 checkpoint 835ee215a763802a32df387fdf09013cf0cfd394 had already been committed before this addendum arrived. This corrective authority checkpoint amends the S006 closeout and future gate semantics without pretending the instruction existed earlier. The addendum does not retroactively authorize any proof work inside S006.
+
+The revised closeout state is: target gate OPEN; publication gate OPEN; mathematical-investigation gate OPEN; external-review gate CLOSED. CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+
+If later substantive external feedback identifies prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern, the affected mathematical direction must pause for reassessment. Appropriate independent scrutiny remains required before journal submission.

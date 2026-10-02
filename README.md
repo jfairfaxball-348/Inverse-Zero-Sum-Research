@@ -4,11 +4,10 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: P1 preflight. CAND-02 is now the selected programme target
-after the full four-candidate audit. S005 is scheduled to refresh reviewer
-readiness and finalize the unsent Xue Li Stage-1 status/proposal package. No
-mathematical computation, proof development or outreach is authorized at this
-stage.**
+**Current stage: P3 mathematical investigation, with external review continuing
+in parallel. CAND-02 is selected. S006 completed the structural baseline; the
+mathematical-investigation gate is now OPEN. Xue Li's Stage-1 message is
+owner-reported SENT on 2026-10-02, while reply and willingness remain pending.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -19,22 +18,16 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-004 is resolved; S005 is immediately runnable
-because it performs reviewer/status readiness work without sending outreach.
+and no next-session prompt.** B-004 and B-005 are resolved. S007 is immediately runnable as the first bounded mathematical-investigation session.
 
-## The three preflight requirements
+## Current readiness dimensions
 
-1. A mathematical target with a name, genre, contribution type and exact scope.
-   Initial comparison is not ranked by difficulty or probability of proof.
-2. Relevant journals allowing substantive AI contributions, with verified
-   policies and an actual submission route. The leading candidate is the
-   Electronic Journal of Combinatorics.
-3. Explicit willingness for external review of the proposal and, in principle,
-   a later manuscript. Our reviewer is distinct from journal-appointed referees.
+1. Target gate — OPEN: CAND-02 is exactly specified; novelty/open-status claims remain conservative.
+2. Publication gate — OPEN: E-JC is the leading eligible route, with JNT as a policy-qualified backup.
+3. Mathematical-investigation gate — OPEN: bounded proof/counterexample search, structural derivation and scoped computation/experiments may run under session briefs.
+4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
 
-The target and publication records are developed; external review and
-computation remain closed. Current blocker/state details live in the authority
-records rather than in this README.
+Beginning proof work does not certify that the target is open or novel. If later external feedback reveals prior art, a known solution, material overlap, a mistaken premise, or a serious significance/scope concern, pause the affected direction and reassess it.
 
 ## Main records
 

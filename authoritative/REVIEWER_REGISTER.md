@@ -322,3 +322,13 @@ review a later manuscript. Those remain separate evidentiary requirements.
 When a reply is supplied, preserve only the minimum necessary status/content
 summary unless the owner explicitly authorizes publication of private
 correspondence.
+
+## D-030 parallel-review protocol
+
+External review now proceeds in parallel with mathematical investigation. The owner-reported Xue Li Stage-1 transmission remains **SENT; REPLY PENDING** and no reviewer is confirmed.
+
+Transmission, silence, elapsed time or lack of response must never be treated as willingness, endorsement, novelty certification, proposal approval or agreement to review a later manuscript.
+
+A substantive later reply must be incorporated honestly. If it identifies prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern, the affected mathematical direction pauses for reassessment rather than continuing merely because proof work has begun.
+
+Appropriate independent scrutiny of the mathematical contribution/manuscript remains required before journal submission, subject to actual willingness and availability. This independent reviewer is not a journal referee; journal referees are selected by the journal.

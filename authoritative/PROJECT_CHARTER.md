@@ -24,14 +24,19 @@ justified on its merits and recorded with exact dependencies.
   close with a report; a manual "finish up" request is unnecessary.
 - A prompt is a guarantee of immediate runnability within its stated scope.
   An active owner blocker means a concrete request and **no next prompt**.
-- Establish target identity, eligible publication route and external review
-  willingness before mathematical computation or proof development.
+- Establish target identity, an eligible publication route and sufficiently
+  mature literature/status due diligence before mathematical investigation.
+  External reviewer outreach and proposal/status review proceed in parallel and
+  are not prerequisites for bounded proof, counterexample, derivation,
+  computation or experiments once mathematical investigation is authorized.
 - Target identity covers name, genre and contribution type, followed by exact
   mathematical scope. Do not initially select by complexity or proof likelihood.
 - Exclude journals prohibiting substantive AI use or lacking field relevance.
   The Electronic Journal of Combinatorics is the leading candidate.
-- External mathematical support is intended as independent proposal and
-  manuscript review, not planned coauthorship or an acceptance arrangement.
+- External mathematical support is intended as independent proposal/status and
+  pre-submission manuscript review, not planned coauthorship or an acceptance
+  arrangement. Appropriate independent scrutiny remains required before journal
+  submission, subject to actual willingness and availability.
 - The owner is willing to approach relevant people. No message is authorized
   to be sent merely by this statement.
 
@@ -63,6 +68,8 @@ Do not ask for a favourable review or guaranteed journal acceptance.
 
 At initialization no exact target selection, reviewer commitment, outreach,
 submission, repository rename or manuscript publication had occurred. Later
-authority records supersede that initialization boundary; as of 2026-10-02 the
-owner has selected CAND-02, while reviewer commitment and outreach remain
-unfulfilled.
+authority supersedes that boundary. As of 2026-10-02 CAND-02 is selected and
+the owner reports that the Xue Li Stage-1 message was sent; reply, willingness
+and substantive external assessment remain pending. Under D-030 this does not
+block mathematical investigation. Adverse substantive feedback must be
+incorporated honestly and may pause the affected direction.

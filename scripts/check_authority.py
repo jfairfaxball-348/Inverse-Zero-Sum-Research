@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
-"""Check repository authority and prompt gating, not mathematical truth."""
+"""Check repository authority and gate consistency, not mathematical truth."""
 
 import hashlib
 import json
 import re
 import sys
 from pathlib import Path
-
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
@@ -20,13 +19,11 @@ REQUIRED = [
     "authoritative/SESSION_LEDGER.md", "docs/SESSION_PROTOCOL.md",
     "docs/CLOSEOUT_TEMPLATE.md",
 ]
-GATES = ["target_gate", "publication_gate", "external_review_gate", "computation_gate"]
+GATES = ["target_gate", "publication_gate", "mathematical_investigation_gate", "external_review_gate"]
 PROMPT = ROOT / "authoritative/NEXT_SESSION_PROMPT.md"
-
 
 def main():
     errors = []
-
     def require(condition, message):
         if not condition:
             errors.append(message)
@@ -39,13 +36,19 @@ def main():
         print(f"FAIL: cannot read authority state: {error}")
         return 1
 
-    require(state.get("schema_version") == 1, "Unknown state schema")
+    require(state.get("schema_version") == 2, "Unknown state schema")
+    require("computation_gate" not in state, "Legacy computation_gate remains; use mathematical_investigation_gate")
     require(isinstance(state.get("active_owner_blockers"), list), "Blockers must be a list")
     require(isinstance(state.get("confirmed_reviewers"), list), "Reviewers must be a list")
-    require(re.fullmatch(r"[0-9a-f]{40}", state.get("bootstrap_predecessor", "")),
-            "Bootstrap predecessor must be a full commit SHA")
+    require(re.fullmatch(r"[0-9a-f]{40}", state.get("bootstrap_predecessor", "")), "Bootstrap predecessor must be a full commit SHA")
     for gate in GATES:
         require(state.get(gate) in {"OPEN", "CLOSED"}, f"Invalid gate: {gate}")
+
+    semantics = state.get("gate_semantics")
+    require(isinstance(semantics, dict), "Gate semantics must be recorded")
+    if isinstance(semantics, dict):
+        for gate in GATES:
+            require(isinstance(semantics.get(gate), str) and bool(semantics.get(gate)), f"Missing gate semantics: {gate}")
 
     checkpoints = state.get("session_checkpoints", [])
     require(isinstance(checkpoints, list) and bool(checkpoints), "No checkpoint ledger")
@@ -53,27 +56,19 @@ def main():
     require(len(ids) == len(set(ids)), "Duplicate session IDs")
     for item in checkpoints:
         require(re.fullmatch(r"S[0-9]{3,}", item.get("id", "")), "Invalid session ID")
-        require(item.get("status") in {"COMPLETED", "PARTIAL", "BLOCKED", "RUNNING"},
-                f"Invalid status for {item.get('id')}")
-        require((ROOT / item.get("record", "__missing__")).is_file(),
-                f"Missing checkpoint record for {item.get('id')}")
-    require(sum(item.get("status") == "RUNNING" for item in checkpoints) <= 1,
-            "More than one running session")
-    require(any(item.get("id") == state.get("last_completed_session")
-                and item.get("status") == "COMPLETED" for item in checkpoints),
-            "Last completed session is not completed in checkpoint ledger")
+        require(item.get("status") in {"COMPLETED", "PARTIAL", "BLOCKED", "RUNNING"}, f"Invalid status for {item.get('id')}")
+        require((ROOT / item.get("record", "__missing__")).is_file(), f"Missing checkpoint record for {item.get('id')}")
+    require(sum(item.get("status") == "RUNNING" for item in checkpoints) <= 1, "More than one running session")
+    require(any(item.get("id") == state.get("last_completed_session") and item.get("status") == "COMPLETED" for item in checkpoints), "Last completed session is not completed in checkpoint ledger")
 
     blockers = state.get("active_owner_blockers", [])
     if blockers:
-        require(state.get("next_prompt_status") == "SUPPRESSED_OWNER_BLOCKER",
-                "Owner blocker must suppress prompt status")
-        require(not PROMPT.exists(), "Owner blocker exists but live prompt file remains")
-        require(state.get("next_session") is None and state.get("next_brief") is None,
-                "Owner blocker cannot leave a scheduled ready session/brief")
+        require(state.get("next_prompt_status") == "SUPPRESSED_OWNER_BLOCKER", "Owner blocker must suppress prompt status")
+        require(not PROMPT.exists(), "Owner blocker exists but live prompt remains")
+        require(state.get("next_session") is None and state.get("next_brief") is None, "Owner blocker cannot leave a scheduled ready session/brief")
         blocker_text = (ROOT / "authoritative/DECISIONS_AND_BLOCKERS.md").read_text()
         for blocker in blockers:
-            require(isinstance(blocker, str) and blocker in blocker_text,
-                    f"Active blocker absent from decision record: {blocker}")
+            require(isinstance(blocker, str) and blocker in blocker_text, f"Active blocker absent from decision record: {blocker}")
     else:
         status = state.get("next_prompt_status")
         require(status in {"READY", "NONE"}, "Invalid unblocked prompt status")
@@ -87,20 +82,18 @@ def main():
             if PROMPT.is_file():
                 prompt_text = PROMPT.read_text()
                 require(f"Session: {next_id}." in prompt_text, "Prompt/state session mismatch")
-                require("Status: READY." in prompt_text and "```text" in prompt_text,
-                        "Ready prompt lacks explicit status or copyable block")
+                require("Status: READY." in prompt_text and "```text" in prompt_text, "Ready prompt lacks explicit status or copyable block")
         else:
             require(not PROMPT.exists(), "NONE status must not leave live prompt")
-            require(state.get("next_session") is None and state.get("next_brief") is None,
-                    "NONE status cannot imply scheduled continuation")
+            require(state.get("next_session") is None and state.get("next_brief") is None, "NONE status cannot imply scheduled continuation")
 
     if state.get("target_gate") == "OPEN":
         require(bool(state.get("exact_target")), "Open target gate needs exact target")
+    if state.get("mathematical_investigation_gate") == "OPEN":
+        require(state.get("target_gate") == "OPEN", "Mathematical investigation requires an open target gate")
+        require(state.get("publication_gate") == "OPEN", "Mathematical investigation requires an open publication gate")
     if state.get("external_review_gate") == "OPEN":
-        require(bool(state.get("confirmed_reviewers")), "Open review gate needs reviewer")
-    if state.get("computation_gate") == "OPEN":
-        require(all(state.get(gate) == "OPEN" for gate in GATES[:3]),
-                "Computation gate cannot open before all three preflight gates")
+        require(bool(state.get("confirmed_reviewers")), "Open external-review gate needs confirmed external reviewer evidence")
 
     checked_links = 0
     for path in ROOT.rglob("*.md"):
@@ -110,24 +103,20 @@ def main():
             target = target.split("#", 1)[0]
             if target:
                 checked_links += 1
-                require((path.parent / target).exists(),
-                        f"Broken local link in {path.relative_to(ROOT)}: {target}")
+                require((path.parent / target).exists(), f"Broken local link in {path.relative_to(ROOT)}: {target}")
 
     licence = ROOT / "LICENSE"
     if licence.is_file():
         content = licence.read_bytes()
         blob = hashlib.sha1(b"blob " + str(len(content)).encode() + b"\0" + content).hexdigest()
-        require(blob == "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
-                "Existing Apache licence changed; reconcile deliberately")
+        require(blob == "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64", "Existing Apache licence changed; reconcile deliberately")
 
     if errors:
         for error in errors:
             print(f"FAIL: {error}")
         return 1
-    print(f"PASS: authority state, session uniqueness, preflight gates, blocker/prompt "
-          f"consistency, {checked_links} local links, and original licence")
+    print(f"PASS: authority state, session uniqueness, independent gate semantics, blocker/prompt consistency, {checked_links} local links, and original licence")
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())

@@ -1,3 +1,5 @@
+**Closeout protocol note (D-030--D-032):** S006 itself remains governed by this brief's no-proof boundary and performed no new mathematics. The owner changed the cross-session gate rule at closeout: external-review completion is no longer a prerequisite for mathematical investigation in S007 and later work. Any forward-looking gate language in this historical S006 brief is superseded accordingly.
+
 # S006 — CAND-02 structural baseline and dependency-map brief
 
 ## Status and purpose
@@ -9,8 +11,9 @@ CAND-02 is selected:
 > length `2m`.
 
 The owner reports that the S005 Xue Li Stage-1 status/proposal message was sent
-on 2026-10-02. A reply is pending. The external-review and computation gates
-remain CLOSED.
+on 2026-10-02. A reply is pending. **At S006 entry under the then-current
+schema**, the external-review and legacy computation gates were CLOSED. D-030
+later supersedes that forward-looking coupling for S007 and later work.
 
 S006 is an independently runnable **pre-proof** unit. Its purpose is to make the
 eventual mathematical investigation efficient and auditable without crossing
@@ -114,8 +117,8 @@ S006 must not:
 - use LLM agreement as mathematical evidence;
 - contact Xue Li again or approach another reviewer;
 - infer that CAND-02 is open from search failure;
-- open the external-review or computation gates without the recorded evidence
-  required by the roadmap.
+- alter the then-current gate state during S006. The owner later changed the
+  cross-session gate architecture at closeout through D-030--D-032.
 
 ## Closeout
 

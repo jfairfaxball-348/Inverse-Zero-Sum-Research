@@ -262,3 +262,9 @@ about mathematical scope: whether, assuming no hidden prior completion, the
 full all-m CAND-02 structural theorem is a substantial E-JC-level research
 target. It does not ask the reviewer to predict acceptance, provide a favourable
 review, or act as a journal referee.
+
+## Post-S006 submission-readiness boundary
+
+The publication gate remains **OPEN** because a relevant substantive-AI-compatible route is established. Under D-030 this gate, together with target readiness and mature due diligence, may support an OPEN mathematical-investigation gate even while external review is CLOSED.
+
+Publication-gate OPEN does not mean the programme is submission-ready. Before any journal submission, obtain appropriate independent scrutiny of the actual contribution/manuscript, subject to reviewer willingness and availability, recheck current venue policy, and obtain the owner's explicit submission authorization. A private independent reviewer is never represented as a journal-appointed referee.
