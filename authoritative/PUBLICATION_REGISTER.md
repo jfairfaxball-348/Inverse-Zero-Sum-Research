@@ -99,3 +99,75 @@ target-specific venue conclusion automatically**. S003 must refresh E-JC fit,
 comparable rank-three inverse/zero-sum papers, current substantive-AI policy,
 submission/conflict rules and any credible backup before a target switch could
 preserve an OPEN publication gate.
+
+
+## S003 CAND-02 venue refresh
+
+Official policy observations were rechecked on **2026-10-02**.
+
+### J-01 — Electronic Journal of Combinatorics
+
+E-JC remains the leading venue and is now target-specifically supported for
+CAND-02 as well as CAND-01.
+
+- The official About page describes E-JC as fully refereed and seeking papers
+  of substantial content and interest across discrete mathematics.
+- Its current Artificial Intelligence Policy explicitly permits AI assistance
+  in researching and writing mathematics, including assistance in finding a
+  proof or argument, while making authors responsible for checking proofs,
+  details and prior-work citations.
+- The official Submissions page uses the web system, requires an initial PDF
+  and HTML abstract, and includes AI-policy compliance in the checklist.
+- Its conflict policy requires disclosure of close personal relationships,
+  joint grants, close collaboration on the topic, student/supervisor
+  relationships and same-department relationships. Private pre-submission
+  review never promises or determines a journal referee.
+- In addition to the programme's existing E-JC zero-sum precedents,
+  Wolfgang A. Schmid's
+  *The Inverse Problem Associated to the Davenport Constant for
+  C_2+C_2+C_{2n}, and Applications to the Arithmetical Characterization of
+  Class Groups*, E-JC 18(1) (2011), P33, DOI 10.37236/520, is a direct
+  rank-three inverse-structure precedent.
+
+A complete all-`m` CAND-02 classification is therefore a credible subject
+fit. The journal's substantial-content standard is also why no isolated small
+case is presumed sufficient without a reusable structural contribution.
+
+Official sources:
+- https://www.combinatorics.org/ojs/index.php/eljc/about
+- https://www.combinatorics.org/ojs/index.php/eljc/about/submissions
+- https://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p33
+
+### J-04 — Journal of Number Theory
+
+Status: **CREDIBLE CAND-02 BACKUP; CURRENT PUBLISHER-WORKFLOW ELIGIBLE,
+RECHECK BEFORE SUBMISSION.**
+
+The controlling Girard--Schmid direct paper appeared in JNT 197 (2019),
+297--316, making the venue demonstrably relevant to the exact mathematical
+line. Elsevier's current *Generative AI policies for journals*, updated June
+2026, allow responsible AI use with human oversight and disclosure and
+explicitly state that the policy does not prevent AI tools in formal research
+design or research methods; research-process use is to be described
+reproducibly in the Methods section.
+
+This is sufficiently explicit substantive-workflow permission to retain JNT as
+a backup at pre-proof stage. It is not an acceptance inference, and any JNT
+journal-specific exception or changed policy must be rechecked immediately
+before submission.
+
+Sources:
+- Girard--Schmid JNT paper:
+  https://doi.org/10.1016/j.jnt.2018.08.016
+- Elsevier generative-AI policy:
+  https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals
+
+Acta Mathematica Hungarica remains an important baseline venue because it
+published the 2020 inverse paper. S003 does not add it to the confirmed backup
+shortlist because the bounded audit did not establish equally explicit current
+substantive-AI eligibility for this workflow.
+
+The publication gate remains **OPEN**. This means an eligible, relevant route
+exists for the incumbent and would remain available if CAND-02 were selected;
+it is not a claim that any future result is publishable or likely to be
+accepted.
