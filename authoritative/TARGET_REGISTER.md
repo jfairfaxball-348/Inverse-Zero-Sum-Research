@@ -1,10 +1,10 @@
 # Target register
 
 **Exact target selected by owner: CAND-01 — rank-two Property D for `C_n^2`.**
-The selection fixes the programme's mathematical identity; it does **not** certify
-current openness for every modulus, novelty of any future partial result, or
-publishability. A target-specific current-status and overlap audit is required in
-S002 before the target gate can open.
+S002 has now specified the exact baseline and surviving contribution frontier, so
+the **target gate is OPEN**. This does **not** certify that the residual cases are
+currently open, novel, or publishable; the external status check remains required
+before mathematical work begins.
 
 ## S001 candidate set
 
@@ -58,6 +58,40 @@ mathematically substantial advance toward, rank-two Property D**. Any narrowing
 must be justified by the literature audit and recorded explicitly rather than
 silently replacing the selected target.
 
-The target gate remains CLOSED until the exact current baseline, quantifiers,
-restrictions and proposed contribution are documented without an unsupported
-openness claim.
+The target gate is **OPEN** after S002: the exact current baseline, quantifiers,
+multiplicativity and proposed contribution boundary are documented without an
+unsupported openness claim.
+
+
+## S002 Property-D status and surviving scope
+
+The primary audit is in [sessions/S002/PROPERTY_D_DUE_DILIGENCE.md](../sessions/S002/PROPERTY_D_DUE_DILIGENCE.md).
+
+Source-supported baseline:
+
+- Gao (2000), Conjecture 0.2, is the original rank-two length-`4n-4` formulation.
+- Property D is multiplicative with no rank-two coprimality condition; Schmid
+  (2012) explicitly notes that this reduces the conjecture to prime moduli.
+- Sury--Thangadurai (2002) prove the prime `p=7` case; Schmid (2012) records
+  Property D for every `m<=10` and, by multiplicativity, for moduli with no
+  prime divisor greater than 7.
+- Schlage-Puchta, arXiv:2509.02436v1 (2025), proves Property D for every
+  sufficiently large prime via an existential cutoff `p_0`; the theorem
+  statement supplies no numerical cutoff.
+- A 2010 Schlage-Puchta conference abstract, described as joint work with
+  Gautami Bhowmik, had already publicly announced that every large prime has
+  Property D.
+
+Thus, combining multiplicativity with the 2025 theorem, any unresolved residue
+of the full all-`n` target is confined to a finite exceptional-prime layer below
+an unspecified cutoff. S002's bounded search did not locate an all-prime
+completion, an explicit cutoff, or a later theorem shrinking that layer. Those
+non-hits remain **STATUS UNKNOWN**, not an openness certificate.
+
+The selected mathematical identity remains the full all-`n` Property-D
+statement. The intended contribution boundary is now: an all-prime completion
+or a genuinely substantial structural/effective advance that eliminates the
+exceptional layer. A merely isolated finite-prime verification is insufficient
+for the intended publication route unless it introduces a reusable method or
+closes the entire residual set. External expert status checking can still
+narrow or retire this scope.
