@@ -1,13 +1,16 @@
 # Target register
 
-**Incumbent exact target: CAND-01 — rank-two Property D for C_n^2.**
-S002 specified its baseline and surviving frontier. CAND-02 completed
-equivalent due diligence in S003 and survives. S004 completed the remaining
-audits: CAND-03 survives as a source-defined/current-status-unknown challenger,
-while CAND-04 is retired as a clean standalone inverse target because the
-general direct rank-three EGZ threshold in its proposed p>=7 range is not
-established. B-004 now requires the owner to select CAND-01, CAND-02 or
-CAND-03 (or reject all three). No switch has occurred.
+**Selected exact target: CAND-02 — rank-three inverse EGZ for
+`C_2 \oplus C_{2m} \oplus C_{2m}`, `m>=2`.**
+
+Owner decision D-024, made after the completed S002--S004 audits, supersedes
+the earlier CAND-01 selection. The exact target is to classify every
+length-`8m` sequence over
+`G_m=C_2 \oplus C_{2m} \oplus C_{2m}` having no zero-sum
+subsequence of length `2m`, for all `m>=2`.
+
+CAND-01 and CAND-03 remain audited alternatives but are no longer selected.
+CAND-04 remains retired as a clean standalone inverse target.
 
 ## S001 candidate set
 
@@ -48,9 +51,9 @@ For a selected candidate, record:
 6. Reviewer expertise and explicit two-stage willingness before later gates.
 7. Source-access gaps and evidence that would retire or narrow the target.
 
-## Selected-target specification frontier
+## Historical CAND-01 selected-target frontier (superseded by D-024)
 
-Owner decision D-010 selects CAND-01. S002 must now pin the exact literature
+Owner decision D-010 originally selected CAND-01. S002 must now pin the exact literature
 boundary around the full conjecture and any admissible partial contribution:
 known moduli/families, multiplicativity consequences, the 2025 sufficiently-large-
 prime theorem, later citations or improvements, unpublished/preprint overlap,
@@ -301,3 +304,30 @@ CAND-01, CAND-02 or CAND-03, or rejects all three and requests renewed target
 discovery. The selection is about mathematical identity and contribution type;
 the comparison does not rank proof difficulty, computation cost or probability
 of success.
+
+
+## D-024 selected-target specification — CAND-02
+
+The live selected target is:
+
+> For every integer `m>=2`, classify all sequences `S` over
+> `G_m=C_2 \oplus C_{2m} \oplus C_{2m}` with `|S|=8m` and
+> `0\notin\Sigma_{2m}(S)`.
+
+The direct threshold `s(G_m)=8m+1` is established by Girard--Schmid (2019).
+Their 2020 ordinary-EGZ inverse theorem concerns the different family
+`C_2\oplus C_2\oplus C_{2n}`; the common `m=1` endpoint is already
+understood and excluded. The S003 bounded audit found no exact all-`m>=2`
+completion and no source explicitly declaring the displayed problem open, so
+current openness/novelty remains to be externally checked rather than assumed.
+
+The intended E-JC-level contribution is the complete all-`m` structural
+classification, preferably in canonical forms modulo translation and
+automorphisms with necessity/sufficiency and exceptional parameter regimes, or
+a broad uniform structural theorem that materially advances that classification.
+A routine isolated small-`m` catalogue is not the selected contribution unless
+it exposes a reusable mechanism or closes a demonstrably complete remaining
+layer.
+
+Target gate: **OPEN**. S005 may refresh status and reviewer readiness but may
+not begin proof/computation/formalisation.
