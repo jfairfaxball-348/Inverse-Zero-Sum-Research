@@ -102,3 +102,55 @@ search observations, not SOURCE_RESULT claims and not an openness certificate.
 No proof of any Property-D source was independently audited in S002. The 2010
 conference item is announcement-level evidence. The programme has still proved
 no mathematical result.
+
+
+## S003 CAND-02 claim/source refresh
+
+The following source claims were rechecked or added on **2026-10-02**. They are
+source-result records, not programme proofs.
+
+| Claim | Classification | Bounded content | Support / remaining boundary |
+| --- | --- | --- | --- |
+| C-19 | SOURCE_RESULT | Girard--Schmid's direct Theorem 3.2 gives `s(C_2+C_{2m}+C_{2m})=8m+1`; the equal-factor proof is unconditional in `m>=1`. | ZS-10 primary full text re-inspected; proof treats `n=1` and Corollary 3.3 records the `n=1` route. No proof audit. |
+| C-20 | SOURCE_RESULT | Girard--Schmid's inverse Theorem 5.1 classifies the ordinary EGZ-extremal sequences for `C_2+C_2+C_{2n}`, `n>=2`, not for `C_2+C_{2m}+C_{2m}`, `m>=2`; the `n=1` endpoint `C_2^3` has the unique squarefree length-eight extremal sequence. | ZS-22 full arXiv v2 theorem statement and Section 5 inspected. |
+| C-21 | SOURCE_RESULT | Li--Yin study direct/inverse `disc(G)` for rank-three groups including `C_2+C_{n_1}+C_{n_2}` with `2|n_1|n_2`, hence the CAND-02 ambient family, but the invariant is distinct from the ordinary EGZ inverse condition. | ZS-23 publication metadata/abstract; no proof audit. |
+| C-22 | SOURCE_RESULT | Hui--Li (2026) give current inverse structural work for `disc(G)` in rank two and publicly identify Xue Li with Tianjin University of Commerce. | ZS-24 official IMPAN publication record/abstract. |
+| C-23 | SOURCE_RESULT | E-JC's current policy explicitly allows AI help in researching mathematics and finding a proof/argument subject to human checking; Schmid's 2011 E-JC paper is a rank-three inverse zero-sum structural precedent. | PUB-01/PUB-02 rechecked; PUB-06 added. |
+| C-24 | SOURCE_RESULT | Elsevier's generative-AI journal policy, updated June 2026, allows AI tools in the research process/formal research methods with human oversight and disclosure; the controlling CAND-02 direct paper appeared in Journal of Number Theory. | PUB-07 plus ZS-10 publication record. This supports workflow eligibility, not acceptance. |
+
+### Added/expanded sources
+
+| ID | Source | S003 inspection level | Purpose / limit |
+| --- | --- | --- | --- |
+| ZS-22 | Benjamin Girard and Wolfgang A. Schmid, *Inverse zero-sum problems for certain groups of rank three*, Acta Math. Hung. 160 (2020), 229--247, DOI 10.1007/s10474-019-00983-w, arXiv:1809.03178v2, https://arxiv.org/abs/1809.03178 | Full abstract, definitions, Section 5 and Theorem 5.1 statement inspected; surrounding proof architecture inspected for scope only | Controlling distinct-family inverse baseline and `m=1` degeneracy; no proof audit |
+| ZS-23 | Xue Li and Qiuyu Yin, *On the existence of zero-sum subsequences of distinct lengths over certain groups of rank three*, Acta Math. Hung. 174 (2024), 323--340, DOI 10.1007/s10474-024-01482-3 | Publication metadata and abstract/current indexing inspected | Same rank-three group architecture under the distinct `disc(G)` invariant |
+| ZS-24 | Wanzhen Hui and Xue Li, *The structure of sequences with zero-sum subsequences of the same length on finite abelian groups of rank two*, Acta Arith. 224 (2026), 221--231, DOI 10.4064/aa251008-9-4, https://www.impan.pl/en/publishing-house/journals-and-series/acta-arithmetica/online/116487/the-structure-of-sequences-with-zero-sum-subsequences-of-the-same-length-on-finite-abelian-groups-of-rank-two | Official publisher abstract/author record inspected | Current inverse-zero-sum activity and Xue Li public affiliation/contact-route evidence |
+| PUB-06 | Wolfgang A. Schmid, *The Inverse Problem Associated to the Davenport Constant for C_2+C_2+C_{2n}, and Applications to the Arithmetical Characterization of Class Groups*, E-JC 18(1) (2011), P33, DOI 10.37236/520, https://www.combinatorics.org/ojs/index.php/eljc/article/view/v18i1p33 | Official E-JC article record/abstract inspected | CAND-02-adjacent rank-three inverse publication precedent |
+| PUB-07 | Elsevier, *Generative AI policies for journals*, updated June 2026, https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals | Current official policy inspected | JNT-backup substantive AI/research-method eligibility; recheck any journal-specific exception before submission |
+| REV-05 | Xue Li current public publication/affiliation record via Hui--Li, Acta Arith. 224 (2026), DOI 10.4064/aa251008-9-4 | Official publisher author record inspected | Identity/affiliation route and current inverse-zero-sum expertise; no willingness inferred |
+
+### S003 bounded current-status observations
+
+Searches used exact titles/DOIs, citation trails, recent 2024--2026 papers and
+preprints, theses/dissertations, survey/conference records, small groups and
+alternate notation including
+`C_2+C_{2m}^2`, `C_2 x C_{2m} x C_{2m}`,
+`Z/2Z + (Z/2mZ)^2`, `8m`, `2m`, `s(G)-1` and EGZ-extremal language.
+
+The bounded search did **not** locate:
+
+- a full ordinary-`s(G)` inverse classification for
+  `C_2+C_{2m}+C_{2m}`, `m>=2`;
+- an ordinary-EGZ inverse theorem isolating `m=2`;
+- a clear prime/power subfamily completion;
+- a later theorem explicitly subsuming the CAND-02 classification; or
+- a source explicitly stating that the exact CAND-02 question is open.
+
+These are search observations and remain subject to external expert correction.
+They do not upgrade CAND-02 to an OPEN classification.
+
+The 2024 generalized-Narkiewicz paper's compressed ordinary-`s(G)`
+restatement issue recorded in FL-010 remains resolved by source priority:
+Girard--Schmid's original Theorem 3.2 controls, and the later paper itself uses
+`s(C_2+C_{2m}^2)=8m+1` in a proof passage. No substantive change to C-08 is
+made.
