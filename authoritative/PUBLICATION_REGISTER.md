@@ -1,32 +1,61 @@
 # Publication register
 
-Policy observations date: **2026-10-02**. Refresh at selection and submission.
-Status refers to subject/workflow eligibility, never acceptance likelihood.
+Policy observations date: **2026-10-02**. Refresh at target selection and again
+before submission. Status refers to subject/workflow eligibility, never
+acceptance likelihood.
 
 | ID | Journal | Status | Evidence and submission route |
 | --- | --- | --- | --- |
-| J-01 | Electronic Journal of Combinatorics | LEADING CANDIDATE; substantive-AI permission explicit; exact target fit pending | PUB-01 explicitly permits AI assistance in finding proofs subject to human checking. PUB-02 provides online submission; ZS-05 is a relevant published example. |
-| J-02 | Research in Number Theory | PROVISIONAL; not admitted to the confirmed shortlist | PUB-04 gives number-theory scope and declared LLM-use instructions; exact proof-discovery workflow needs editorial confirmation if selected. |
-| J-03 | The Ramanujan Journal | PROVISIONAL; exact subject fit and workflow unresolved | PUB-05: number theory, partitions and related topics; declared LLM use. Do not retain for a zero-sum target without a clear fit and exact-workflow confirmation. |
-| J-X1 | Integers | EXCLUDED under observed policy | PUB-03 prohibits AI-produced mathematics, code and bibliographic content; grammar/spelling exception does not qualify. |
+| J-01 | Electronic Journal of Combinatorics | **LEADING WORKFLOW-ELIGIBLE CANDIDATE; target-specific fit pending** | Official About page rechecked 2026-10-02: fully refereed discrete-mathematics scope; AI may assist in researching/writing mathematics and in finding proofs/arguments, with authors fully responsible for checking proofs/details and citations. Official Submissions page rechecked 2026-10-02: new submissions use the web system; main manuscript PDF plus HTML abstract; no source files initially; checklist requires AI-policy compliance. The About page states E-JC is free for authors and readers. |
+| J-02 | Research in Number Theory | PROVISIONAL; not admitted to confirmed shortlist | Bootstrap scope and LLM-use instructions remain a lead. S001 did not need to resolve exact proof-discovery permission because no target has been selected. |
+| J-03 | The Ramanujan Journal | PROVISIONAL; exact subject fit and workflow unresolved | Bootstrap number-theory scope and LLM-use instructions remain a lead. Do not retain without target-specific fit and exact-workflow confirmation. |
+| J-X1 | Integers | EXCLUDED under observed policy | Bootstrap inspection found a prohibition on substantive AI-produced mathematics/code/bibliographic content; grammar/spelling permission is insufficient for this programme. Recheck only if policy materially changes. |
+
+## J-01 current official evidence
+
+- Scope, refereeing, AI policy and author-cost statement:
+  https://www.combinatorics.org/ojs/index.php/eljc/about/index
+- Submission checklist and route:
+  https://www.combinatorics.org/ojs/index.php/eljc/about/submissions
+- E-JC zero-sum precedent: Grynkiewicz--Liu,
+  *A Multiplicative Property for Zero-Sums II*, 29(3) (2022), #P3.12,
+  https://doi.org/10.37236/10921
+- E-JC inverse/short-zero-sum precedent: Zeng--Yuan,
+  *On Sequences Without Short Zero-Sum Subsequences*, 30(4) (2023), #P4.21,
+  https://doi.org/10.37236/11963
+
+The AI policy expressly covers proof/argument discovery rather than language
+editing alone. It requires human checking and enough detail for another human
+to check the work. The journal states that publication acceptability is always
+decided by a human. This is substantive-workflow eligibility, not permission to
+delegate author responsibility and not evidence that any future paper will be
+accepted.
+
+## Candidate-fit map from S001
+
+| Candidate | Subject fit with E-JC | Comparable publication evidence | Remaining venue question |
+| --- | --- | --- | --- |
+| CAND-01 rank-two Property D | Directly within additive/discrete combinatorics and inverse zero-sum structure | E-JC 2022/2023 structural zero-sum precedents | Whether the eventual contribution is substantial and distinct enough for E-JC |
+| CAND-02 rank-three inverse EGZ | Within discrete mathematics; classical zero-sum structure | Closest baseline papers are JNT 2019 and Acta Math. Hung. 2020 | Compare E-JC against the baseline venues after exact overlap audit |
+| CAND-03 rank-three inverse `eta^N` | Combinatorial structure with factorization-theory connection | Defining paper Acta Arith. 2024; rank-two inverse completion JCTA 2026 | Determine whether final emphasis is primarily combinatorial or arithmetic/factorization-theoretic |
+| CAND-04 rank-three Property D | Within higher-rank additive/discrete combinatorics | Property-D and higher-rank EGZ literature includes JNT/JCTA | Reassess exact theorem significance and closest-current venue once scoped |
+
+No candidate is assigned a journal yet. The **publication gate remains CLOSED**
+because the exact target is unselected and a final target-specific shortlist has
+not been confirmed.
 
 ## Eligibility record for each retained venue
 
-- Relevant scope supported by published policy and preferably comparable papers.
-- Actual journal refereeing and editorial decision process.
-- Substantive AI discovery/proof/code eligibility, not just language editing.
-- Policy URL, dated retrieval, exact short excerpt or bounded paraphrase and
-  journal-specific exceptions; unclear means pending, never implied permission.
-- Active submission system, required files, disclosure and author responsibilities.
-- Fees and funding requirements when material; do not assume open access is free.
-- Conflicts and reviewer rules; our arranged review does not appoint journal referees.
-- Preprint policy if arXiv is proposed; it is not assumed from past projects.
+- Relevant scope supported by official policy and preferably comparable papers.
+- Actual refereeing/editorial decision process.
+- Substantive AI discovery/proof/code eligibility, not merely language editing.
+- Policy URL, dated retrieval and journal-specific exceptions.
+- Active submission system, required files, disclosure and author duties.
+- Fees/funding requirements when material.
+- Conflicts and reviewer rules; an arranged pre-submission reviewer does not
+  become a journal referee.
+- Preprint policy if arXiv is later proposed.
 
-J-01 is an electronic journal with formal refereeing and acceptance, numbered
-articles, volumes and issues. Its historical annual print edition ran 1997-2009.
-Electronic publication can satisfy the root objective. This observation is not
-a decision to submit before a suitable manuscript exists.
-
-A final shortlist must exclude J-X1 and any other venue that prohibits the
-actual AI workflow or lacks relevant subject scope. A general publisher policy
-alone is not permission for any imaginable autonomous research workflow.
+Electronic publication satisfies the programme's publication objective if the
+journal's actual peer-review, acceptance and publication process is completed.
+A preprint or private review never counts as journal acceptance.
