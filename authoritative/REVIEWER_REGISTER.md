@@ -1,11 +1,14 @@
 # External reviewer register
 
 **Confirmed reviewer: NONE. No outreach is currently authorized.**
-B-004 now blocks target-specific outreach until the owner selects CAND-01,
-CAND-02 or CAND-03. The prepared Pingzhi Yuan package for CAND-01, Xue Li
-package for CAND-02, and David J. Grynkiewicz package for CAND-03 are all
-**on hold and unsent**. CAND-04 was retired as a clean target and has no
-reviewer package.
+Owner decision D-024 selects CAND-02, so the active prepared reviewer route is
+**Xue Li (R-04)**. Her S003 Stage-1 package is prepared and unsent. S005 must
+freshly recheck public identity/contact route, independence/conflict indicators
+and any status evidence before presenting the exact message for later owner
+send authorization.
+
+The earlier CAND-01 Pingzhi Yuan and CAND-03 David J. Grynkiewicz packages
+remain historical alternatives and are not active outreach routes.
 
 Private contact observations remain owner-supplied summaries only. Do not copy
 private messages or email addresses into the public repository.
@@ -251,3 +254,18 @@ independent inverse specialist; Pingzhi Yuan remains a credible broader
 zero-sum specialist.
 
 No willingness, availability or conflict status is inferred.
+
+
+## D-024 active reviewer route
+
+CAND-02 is selected. **Xue Li remains the intended first independent
+status/proposal reviewer lead**, based on S003's combination of same-rank-three-
+group expertise and non-authorship of the controlling Girard--Schmid
+ordinary-EGZ baseline. This remains an expertise/independence assessment, not
+reviewer consent.
+
+S005 must freshly verify the public institutional correspondence route and
+reasonable conflict indicators immediately before finalizing the package. It
+must not publish a private address and must not send the message. If the route
+remains appropriate, S005 should stop on a new owner blocker asking for
+explicit authorization to transmit the exact Stage-1 request.
