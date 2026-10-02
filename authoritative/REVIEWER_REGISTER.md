@@ -137,3 +137,51 @@ If CAND-02 survives the literature audit, S003 may prepare an **unsent**
 target-specific Stage-1 status/proposal-review package for the strongest
 conflict-appropriate reviewer candidate. No message is authorized until the
 owner settles the target and separately authorizes outreach.
+
+
+## S003 CAND-02 reviewer reassessment
+
+No reviewer is confirmed and no outreach is authorized.
+
+S003 compared the public expertise and independence position of the required
+CAND-02 leads and searched for a stronger adjacent specialist.
+
+| Person | CAND-02 public fit | Independence / conflict observation | S003 disposition |
+| --- | --- | --- | --- |
+| Benjamin Girard | Coauthor of the exact 2019 direct rank-three theorem and 2020 inverse theorem | Authorship of the controlling baseline makes him exceptionally informed but less clean as the programme's independent first reviewer of a proposed extension | Exact status expert; not first independent approach |
+| Wolfgang A. Schmid | Coauthor of both controlling Girard--Schmid papers; additional rank-three inverse Davenport work | Same baseline-authorship issue; also especially close to the methods/literature being extended | Exact status expert; not first independent approach |
+| David J. Grynkiewicz | Deep inverse zero-sum record including EGZ inverse theorems, rank-two structural work and current field activity | No authorship of the controlling CAND-02 papers identified; broad rather than same-family match | Strong independent alternative |
+| Pingzhi Yuan | Inverse/short-zero-sum structural expertise and existing CAND-01 package | Less direct public alignment with the equal-factor rank-three family than the strongest S003 lead | Retain for CAND-01; not assumed optimal for CAND-02 |
+| **Xue Li** | Coauthor of Li--Yin's 2024 rank-three direct/inverse `disc(G)` paper for `C_2+C_{n_1}+C_{n_2}`, including the CAND-02 ambient family; coauthor of current 2026 inverse zero-sum work | Not an author of the controlling Girard--Schmid ordinary-EGZ direct/inverse papers. Actual personal/collaboration conflicts still require checking before outreach | **Strongest conflict-appropriate first CAND-02 reviewer lead found in S003** |
+| Qiuyu Yin | Coauthor of the same 2024 rank-three `disc(G)` work and earlier inverse zero-sum papers | Not an author of the controlling ordinary-EGZ baseline; current contact/affiliation should be refreshed before any approach | Strong secondary same-family lead |
+
+### R-04 — Xue Li
+
+Current public evidence identifies Xue Li with the College of Science, Tianjin
+University of Commerce. Wanzhen Hui and Xue Li,
+*The structure of sequences with zero-sum subsequences of the same length on
+finite abelian groups of rank two*, Acta Arith. 224 (2026), 221--231,
+DOI 10.4064/aa251008-9-4, supplies a current public institutional
+correspondence route. The repository intentionally does not copy the address
+itself.
+
+Most target-specific expertise evidence is Xue Li and Qiuyu Yin,
+*On the existence of zero-sum subsequences of distinct lengths over certain
+groups of rank three*, Acta Math. Hung. 174 (2024), 323--340,
+DOI 10.1007/s10474-024-01482-3. Its group class
+`C_2+C_{n_1}+C_{n_2}` with `2|n_1|n_2` includes the CAND-02 equal-factor
+groups, while the invariant studied is distinct from ordinary `s(G)`.
+
+This combination makes Xue Li a particularly useful independent status checker:
+close enough to the same rank-three group architecture to recognize hidden
+overlap/terminology, but not an author of the Girard--Schmid ordinary-EGZ
+baseline that CAND-02 would extend. This is an expertise judgement only.
+Willingness, availability and actual conflict status are unknown.
+
+Prepared package:
+[sessions/S003/XUE_LI_REVIEWER_PACKAGE.md](../sessions/S003/XUE_LI_REVIEWER_PACKAGE.md).
+
+**The package is NOT SENT.** If the owner selects CAND-02, transmission still
+requires separate explicit authorization and a fresh public identity/contact
+check immediately before sending. If the owner retains CAND-01, the prepared
+Pingzhi Yuan package remains the relevant target-specific route instead.
