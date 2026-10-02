@@ -40,9 +40,12 @@ accepted.
 | CAND-03 rank-three inverse `eta^N` | Combinatorial structure with factorization-theory connection | Defining paper Acta Arith. 2024; rank-two inverse completion JCTA 2026 | Determine whether final emphasis is primarily combinatorial or arithmetic/factorization-theoretic |
 | CAND-04 rank-three Property D | Within higher-rank additive/discrete combinatorics | Property-D and higher-rank EGZ literature includes JNT/JCTA | Reassess exact theorem significance and closest-current venue once scoped |
 
-No candidate is assigned a journal yet. The **publication gate remains CLOSED**
-because the exact target is unselected and a final target-specific shortlist has
-not been confirmed.
+CAND-01 is now the selected target and E-JC remains the intended leading venue.
+This is a subject/workflow preference, not a submission decision or acceptance
+prediction. The **publication gate remains CLOSED** until S002 completes a
+CAND-01-specific significance/overlap check, confirms the live submission and
+AI-policy details, and establishes a defensible final shortlist or records why
+E-JC alone is sufficient.
 
 ## Eligibility record for each retained venue
 
