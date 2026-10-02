@@ -4,10 +4,11 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: P1 preflight. CAND-01 remains the incumbent while B-004
-requires the owner to choose among the three surviving audited targets
-CAND-01, CAND-02 and CAND-03. No mathematical computation or proof development
-is authorized at this stage.**
+**Current stage: P1 preflight. CAND-02 is now the selected programme target
+after the full four-candidate audit. S005 is scheduled to refresh reviewer
+readiness and finalize the unsent Xue Li Stage-1 status/proposal package. No
+mathematical computation, proof development or outreach is authorized at this
+stage.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -18,8 +19,8 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-004 is currently active, so no live
-next-session prompt exists.
+and no next-session prompt.** B-004 is resolved; S005 is immediately runnable
+because it performs reviewer/status readiness work without sending outreach.
 
 ## The three preflight requirements
 
@@ -48,6 +49,7 @@ records rather than in this README.
 - [Failure and lesson ledger](authoritative/FAILURE_AND_LESSON_LEDGER.md)
 - [Session ledger](authoritative/SESSION_LEDGER.md)
 - [Completed S004 audit](sessions/S004/CANDIDATES_3_AND_4_DUE_DILIGENCE.md)
+- [Live next-session prompt](authoritative/NEXT_SESSION_PROMPT.md)
 - [Autonomous session protocol](docs/SESSION_PROTOCOL.md)
 
 Validate the records with `python3 scripts/check_authority.py`. This checks
