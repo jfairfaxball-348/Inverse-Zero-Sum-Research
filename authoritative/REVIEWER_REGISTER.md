@@ -94,3 +94,31 @@ send-ready draft. Do not publish private addresses in the repository.
 When the package is ready, explicit owner send authorization is required.
 D-012 records a desire to obtain a reply, not permission to transmit the
 message.
+
+
+## S002 Pingzhi Yuan verification and prepared request
+
+Current public evidence verifies Pingzhi Yuan with the School of Mathematical
+Science, South China Normal University. His 2023 E-JC paper with Xiangneng Zeng
+prints a public SCNU institutional correspondence route, and current 2026
+publication records continue the same institutional affiliation. The repository
+does not copy the address itself; the public institutional route should be
+rechecked immediately before any authorized send.
+
+Subject match remains strong: Yuan's 2009 E-JC paper on subsequence sums of
+zero-sum-free sequences and the 2023 Zeng--Yuan E-JC inverse short-zero-sum
+paper are directly relevant evidence. This establishes expertise, not consent.
+
+The complete two-stage package is
+[sessions/S002/PINGZHI_YUAN_REVIEWER_PACKAGE.md](../sessions/S002/PINGZHI_YUAN_REVIEWER_PACKAGE.md).
+
+- Stage 1 asks for an independent status/novelty/target check, including missed
+  completion, later improvement, unpublished overlap, terminology and whether
+  the residual all-prime target remains worthwhile.
+- Stage 2 is a separate later request, only after Stage 1, asking willingness
+  in principle for an independent pre-submission manuscript read subject to
+  timing, scope and conflicts.
+
+**No message has been sent. No reviewer is confirmed.** Earlier correspondence
+is not an agreement. Owner authorization is required before transmitting the
+prepared Stage-1 request.
