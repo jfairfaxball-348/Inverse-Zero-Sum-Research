@@ -28,9 +28,18 @@ No computation, enumeration, counterexample search, proof attempt, formalisation
 
 Schlage-Puchta's 2025 theorem plus multiplicativity confines any remaining residue of the full rank-two conjecture to finitely many exceptional primes, but the cutoff is existential and the residual list is not given. Bounded 2026-10-02 searches found no all-prime completion or later explicit cutoff. That remains STATUS NOT CERTIFIED, not a programme claim of openness.
 
-## Validation boundary
+## Validation
 
-The repository authority checker is run against a materialized structural mirror of the final authority state and local-link topology; live GitHub files and the unchanged Apache-2.0 licence blob are checked separately because direct container network cloning is unavailable. These checks validate authority/state consistency, not mathematical truth, novelty, or proof correctness.
+The repository authority checker passed against a materialized structural mirror
+of the final authority state: session uniqueness, gate values, blocker/prompt
+suppression, checkpoint records, represented local links and the original
+Apache-2.0 licence blob all passed. Live connector-backed GitHub checks
+separately confirmed the synchronized authority/session records, absence of
+`authoritative/NEXT_SESSION_PROMPT.md` while B-002 is active, and the unchanged
+LICENSE blob SHA `261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64`. Direct container
+network cloning was unavailable, so no local clone is claimed. These checks
+validate authority/state consistency, not mathematical truth, novelty, or proof
+correctness.
 
 ## Active owner blocker
 
