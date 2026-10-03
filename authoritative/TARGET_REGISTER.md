@@ -418,3 +418,26 @@ D7-01 statement remains unresolved because the programme does not assume the
 rank-two Property-D conjecture. The next route is narrower than Property D:
 exploit the extra restricted-sum constraints imposed on the kernel extremals by
 the eight residual `C_2^3` representatives.
+
+
+## S009 D8-02 mathematical frontier
+
+S009 does not change the selected target or its literature-status label.
+CAND-02 remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
+
+For any distinct CAND-compatible one-change kernel pair, write the two
+extremals as `T x` and `T y`, with `|T|=4m-5` and
+`delta=x-y!=0`. The eight residual quotient classes form all of `C_2^3`.
+Their fourteen affine planes impose an exact incidence-dependent double-hole
+pattern: seven `delta`-paired holes in `Sigma_{m-2}(T)` and seven in
+`Sigma_{m-3}(T)`, with a further full-set pair in `Sigma_{m-4}(T)` when
+`m>=4`.
+
+Independently, the sharp rank-two threshold forces
+`-(x+y) in Sigma_{m-2}(T)`. Thus a D8-02 failure is no longer an arbitrary
+one-change instability: it must realize this CAND-labelled restricted-sum
+package. S009 did not prove the package impossible and did not construct one,
+so D8-02 and universal D7-01 remain unresolved.
+
+The next route D9-01 keeps this exact footprint and asks whether its affine
+plane incidence relations force `delta=0` without assuming Property D.

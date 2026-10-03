@@ -282,3 +282,17 @@ results and from experimental evidence.
 | C-50 | PROGRAMME_PROVED | S008-P2: a non-monochromatic quotient fiber yields two distinct `C_m^2` EGZ-extremals sharing exactly `4m-5` terms. | sessions/S008/CENTERED_SYMMETRY_FORCING.md |
 | C-51 | PROGRAMME_PROVED / CONDITIONAL SOURCE INPUT | S008-P3: either D7-01 holds or the C-50 one-change obstruction occurs. Girard--Schmid Lemma 4.1 excludes that obstruction when `m` has Property D, so D7-01 holds on every Property-D modulus; a D7-01 counterexample would force Property-D failure at the same modulus. | S008 proof plus ZS-10 Lemma 4.1. No all-m Property-D assumption is made. |
 | C-52 | PROGRAMME_PROVED | S008-P4: for a maximal pairing with residual sequence `R` and pair-sum extremal `P`, any quotient-zero residual subsequence `A` of even size `2t`, `t<=m`, satisfies `-sigma(A) notin Sigma_{m-t}(P)`. | sessions/S008/CENTERED_SYMMETRY_FORCING.md |
+
+
+## S009 programme-proved claims
+
+These are internal deductions from S008 plus the already established
+rank-two threshold. They do not certify novelty, openness or publication
+significance.
+
+| Claim | Classification | Bounded content | Support / remaining boundary |
+| --- | --- | --- | --- |
+| C-53 | PROGRAMME_PROVED | S009-P1: the nonempty even zero-sum subsets of the squarefree residual `C_2^3` quotient are exactly fourteen affine planes of size four and the full eight-set. | `sessions/S009/PAIR_SUM_STABILITY.md` |
+| C-54 | PROGRAMME_PROVED | S009-P2: comparing the two residual choices gives the exact incidence-dependent double-hole footprint on the common core `T`: seven `delta`-paired holes in `Sigma_{m-2}(T)`, seven in `Sigma_{m-3}(T)`, and for `m>=4` a full-set pair in `Sigma_{m-4}(T)`; duplicated companion exclusions are identified. | `sessions/S009/PAIR_SUM_STABILITY.md`; uses S008-P4 |
+| C-55 | PROGRAMME_PROVED | S009-P3: for distinct near-identical EGZ-extremals `T x` and `T y` over `C_m^2`, the sharp threshold forces `-(x+y) in Sigma_{m-2}(T)`. | `sessions/S009/PAIR_SUM_STABILITY.md`; uses source value `s(C_m^2)=4m-3` already recorded in C-38 |
+| C-56 | PROGRAMME_PROVED / REDUCTION | S009-P4: any D8-02 failure must realize the exact CAND-labelled double-hole package on one length-`4m-5` common core. S009 neither proves that package impossible nor constructs one. | `sessions/S009/PAIR_SUM_STABILITY.md` |

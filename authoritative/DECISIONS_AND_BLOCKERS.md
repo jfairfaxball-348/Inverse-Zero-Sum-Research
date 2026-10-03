@@ -205,3 +205,15 @@ parallel and no reviewer status is inferred.
 
 No active owner blocker is created by S008. Xue Li's reply remains pending in
 parallel and no reviewer status, endorsement or novelty certification is inferred.
+
+
+## S009 pair-sum stability decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-039 | 2026-10-03 | Record S009-P1--P4 as programme-proved bounded reductions: exact affine-plane residual classification, the incidence-dependent double-hole footprint, the forced `-(x+y) in Sigma_{m-2}(T)` threshold witness, and the exact obstruction package for any D8-02 failure. Keep D8-02 and all-m D7-01 unresolved. | Direct programme proofs in `sessions/S009/PAIR_SUM_STABILITY.md`; published Girard--Schmid hypotheses rechecked without importing Property D |
+| D-040 | 2026-10-03 | Schedule S010 on D9-01, the CAND double-hole rigidity problem for the `s(C_m^2)-2` common core, and include the mandatory S001--S010 ten-session audit. | S009 dependency update plus the roadmap's every-tenth-session audit rule |
+
+No active owner blocker is created by S009. Xue Li's reply remains pending in
+parallel and no reviewer status, endorsement or novelty certification is
+inferred.

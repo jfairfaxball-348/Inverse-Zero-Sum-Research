@@ -394,3 +394,32 @@ progressive-subsums bridge.
 S009 is a bounded investigation of the CAND-compatible one-change stability
 obstruction only. It must use the residual quotient constraints and must not
 silently replace the selected target with the full rank-two Property-D problem.
+
+
+## Frontier after S009
+
+S009 attacked D8-02, the CAND-compatible one-change stability obstruction.
+
+- **Residual geometry — programme-proved.** The only nonempty even zero-sum
+  subsets of the eight residual `C_2^3` classes are fourteen affine planes
+  and the full set.
+- **Double-hole comparison — programme-proved.** Writing the two kernel
+  extremals as `T x` and `T y`, `delta=x-y!=0`, the seven planes through
+  the changed quotient class give `delta`-paired holes in
+  `Sigma_{m-2}(T)`; the seven avoiding it give `delta`-paired holes in
+  `Sigma_{m-3}(T)`. The full residual set gives a further pair in
+  `Sigma_{m-4}(T)` when `m>=4`.
+- **Threshold witness — programme-proved.** Since
+  `|Txy|=s(C_m^2)`, any forced `m`-zero sum must use both exceptional terms,
+  so `-(x+y) in Sigma_{m-2}(T)`.
+- **D8-02 — unresolved.** No theorem was obtained that forces
+  `delta=0` from the exact CAND footprint, and no compatible package was
+  constructed. The all-`m` D7-01 frontier therefore remains open as a
+  programme dependency.
+- **No universal eta-core reduction.** Because D8-02 was not proved, S009 does
+  not activate Girard--Schmid Lemma 4.4(2) beyond the scopes already obtained
+  in S007--S008.
+
+The next mathematical obligation is D9-01: prove or falsify the exact CAND
+double-hole package on the `s(C_m^2)-2` common core without assuming Property
+D. S010 must also perform the protocol-mandated audit of sessions S001--S010.

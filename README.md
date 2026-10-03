@@ -5,10 +5,11 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation, with external review continuing
-in parallel. CAND-02 is selected. S008 extracted sharp equality structure from
-the natural `C_m^2 -> C_2^3` pairing argument. D7-01 is proved for every
-modulus satisfying rank-two Property D but remains unresolved unconditionally;
-S009 is ready on the narrower CAND-compatible pair-sum stability obstruction.**
+in parallel. CAND-02 is selected. S009 sharpened the CAND-compatible one-change
+obstruction to an exact affine-plane double-hole pattern on a
+`C_m^2` common core and proved a forced `(m-2)`-subsum witness. D8-02 and
+universal D7-01 remain unresolved; S010 is ready on the resulting double-hole
+rigidity problem and the required ten-session audit.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -28,13 +29,14 @@ and no next-session prompt.** There is currently no active owner blocker.
 3. Mathematical-investigation gate — OPEN: bounded proof/counterexample search, structural derivation and scoped computation/experiments may run under session briefs.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
 
-S008 proved that every extremal has odd multiplicity in each of the eight
-`C_2^3` quotient fibers and that every maximal same-fiber pairing gives an
-EGZ-extremal sequence in `C_m^2`. A non-monochromatic fiber would create two
-such extremals differing in one term. Girard--Schmid 2019 Lemma 4.1 excludes
-that obstruction whenever `m` has Property D, so D7-01 holds on every such
-modulus. The universal all-`m` statement is still unresolved; no computation
-or counterexample is claimed.
+S009 proved that the eight residual quotient classes contribute exactly fourteen
+affine-plane restrictions and that comparing the two one-change pairings gives
+seven `delta`-paired holes in `Sigma_{m-2}(T)`, seven in
+`Sigma_{m-3}(T)`, plus a full-set pair one level lower when available. The
+sharp rank-two EGZ threshold also forces `-(x+y) in Sigma_{m-2}(T)`. This
+strictly narrows the CAND obstruction beyond arbitrary one-change stability,
+but it does not yet force `delta=0`; no counterexample or computation is
+claimed.
 
 Beginning proof work does not certify that the target is open or novel. If
 later external feedback reveals prior art, a known solution, material overlap,
