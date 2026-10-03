@@ -4,12 +4,10 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: P3 mathematical investigation, with external review continuing
-in parallel. CAND-02 is selected. S009 sharpened the CAND-compatible one-change
-obstruction to an exact affine-plane double-hole pattern on a
-`C_m^2` common core and proved a forced `(m-2)`-subsum witness. D8-02 and
-universal D7-01 remain unresolved; S010 is ready on the resulting double-hole
-rigidity problem and the required ten-session audit.**
+**Current stage: P3 mathematical investigation, with parallel external review.
+S010 and the S001–S010 audit are complete. The double-hole problem D9-01 is
+unresolved. A possible failure must have low multiplicity in every kernel
+pairing; S011 will assess the simultaneous all-pairings capacity constraints.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -29,14 +27,17 @@ and no next-session prompt.** There is currently no active owner blocker.
 3. Mathematical-investigation gate — OPEN: bounded proof/counterexample search, structural derivation and scoped computation/experiments may run under session briefs.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
 
-S009 proved that the eight residual quotient classes contribute exactly fourteen
-affine-plane restrictions and that comparing the two one-change pairings gives
-seven `delta`-paired holes in `Sigma_{m-2}(T)`, seven in
-`Sigma_{m-3}(T)`, plus a full-set pair one level lower when available. The
-sharp rank-two EGZ threshold also forces `-(x+y) in Sigma_{m-2}(T)`. This
-strictly narrows the CAND obstruction beyond arbitrary one-change stability,
-but it does not yet force `delta=0`; no counterexample or computation is
-claimed.
+S010 proves an unconditional multiplicity criterion for one-change isolation
+and an exact equivalence, on actual CAND extremals, between the D7 capacity
+condition and monochromatic quotient fibers. It also shows why the forced
+witness does not automatically yield an eta-free complement. The full
+incidence restrictions and proof/falsification limits are recorded in
+[sessions/S010/DOUBLE_HOLE_RIGIDITY.md](sessions/S010/DOUBLE_HOLE_RIGIDITY.md).
+
+The [ten-session audit](sessions/S010/TEN_SESSION_AUDIT.md) finds bounded
+structural progress but no universal eta-core reduction, counterexample,
+classification or publication-ready contribution. No mathematical computation
+was run in S010.
 
 Beginning proof work does not certify that the target is open or novel. If
 later external feedback reveals prior art, a known solution, material overlap,

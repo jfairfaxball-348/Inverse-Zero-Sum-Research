@@ -441,3 +441,26 @@ so D8-02 and universal D7-01 remain unresolved.
 
 The next route D9-01 keeps this exact footprint and asks whether its affine
 plane incidence relations force `delta=0` without assuming Property D.
+
+## S010 current mathematical boundary
+
+CAND-02 remains the selected all-m target and SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN. No target narrowing or openness claim is made.
+
+D9-01 remains unresolved. S010 supplies exact incidence equations and shows
+that plane centers may coincide; proves unconditional one-change isolation
+once a rank-two extremal reaches multiplicity floor((m-1)/2); and proves, on
+actual CAND extremals, D7-01 iff monochromatic fibers iff some maximal pairing
+reaches that multiplicity. Failure therefore requires M_z below that threshold
+for every z and all residual constraints for all maximal pairings.
+
+The forced threshold witness has a complement of the right eta-extremal
+length, but S010-P4 proves that it has a short zero sum in the hypothetical
+nonzero-delta actual case. This particular eta-core shortcut is blocked.
+Universal D9/D8/D7/D6-08 and the eta-core reduction remain unproved. The
+Property-D scope from S008, including m=3, is preserved.
+
+S011 assesses global all-pairings compatibility once, with the stop condition
+in the completed ten-session audit. A local residual-lift example is not a
+D7 counterexample and these partial deductions are not a certified publication
+contribution.

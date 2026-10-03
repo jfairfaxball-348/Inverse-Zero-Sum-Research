@@ -277,7 +277,7 @@ results and from experimental evidence.
 | C-45 | PROGRAMME_PROVED | S007-P1: after translating a candidate block by `-h`, the progressive-subsums condition is equivalent to zero-sum subsequences of every cardinality. | sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md |
 | C-46 | PROGRAMME_PROVED | S007-P2: a block centered at `h` which translates to at least one zero plus zero-sum pairs `a(-a)` satisfies the progressive-subsums condition; this yields the capacity `kappa_h`. | sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md |
 | C-47 | PROGRAMME_PROVED | S007-P3: D6-08 holds for `m=2`; published Lemma 4.4(2) then yields a translated length-13 eta-extremal core. | S007 proof plus existing source result C-40 |
-| C-48 | PROGRAMME_PROVED | S007-P4: for `m=3`, the bridge holds exactly when the extremal has a repetition or a centered three-term progression. | sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md; universal m=3 existence question remains unresolved |
+| C-48 | PROGRAMME_PROVED | S007-P4: for `m=3`, the bridge holds exactly when the extremal has a repetition or a centered three-term progression. | sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md; unresolved at S007, covered after S008-P3 because 3 has Property D (S010 index correction AC-010-01) |
 | C-49 | PROGRAMME_PROVED | S008-P1: all eight natural `C_2^3` quotient fibers of a CAND-02 extremal have odd multiplicity, and every maximal same-fiber pairing yields a length-`4m-4` `C_m^2` EGZ-extremal. | sessions/S008/CENTERED_SYMMETRY_FORCING.md; uses source value `s(C_m^2)=4m-3` from C-38 |
 | C-50 | PROGRAMME_PROVED | S008-P2: a non-monochromatic quotient fiber yields two distinct `C_m^2` EGZ-extremals sharing exactly `4m-5` terms. | sessions/S008/CENTERED_SYMMETRY_FORCING.md |
 | C-51 | PROGRAMME_PROVED / CONDITIONAL SOURCE INPUT | S008-P3: either D7-01 holds or the C-50 one-change obstruction occurs. Girard--Schmid Lemma 4.1 excludes that obstruction when `m` has Property D, so D7-01 holds on every Property-D modulus; a D7-01 counterexample would force Property-D failure at the same modulus. | S008 proof plus ZS-10 Lemma 4.1. No all-m Property-D assumption is made. |
@@ -296,3 +296,24 @@ significance.
 | C-54 | PROGRAMME_PROVED | S009-P2: comparing the two residual choices gives the exact incidence-dependent double-hole footprint on the common core `T`: seven `delta`-paired holes in `Sigma_{m-2}(T)`, seven in `Sigma_{m-3}(T)`, and for `m>=4` a full-set pair in `Sigma_{m-4}(T)`; duplicated companion exclusions are identified. | `sessions/S009/PAIR_SUM_STABILITY.md`; uses S008-P4 |
 | C-55 | PROGRAMME_PROVED | S009-P3: for distinct near-identical EGZ-extremals `T x` and `T y` over `C_m^2`, the sharp threshold forces `-(x+y) in Sigma_{m-2}(T)`. | `sessions/S009/PAIR_SUM_STABILITY.md`; uses source value `s(C_m^2)=4m-3` already recorded in C-38 |
 | C-56 | PROGRAMME_PROVED / REDUCTION | S009-P4: any D8-02 failure must realize the exact CAND-labelled double-hole package on one length-`4m-5` common core. S009 neither proves that package impossible nor constructs one. | `sessions/S009/PAIR_SUM_STABILITY.md` |
+
+## S010 programme claims and focused source refresh
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-57 | PROGRAMME_PROVED | S010-P1: Fano incidence equations; through-plane center freedom for gcd(m,6)=1 before core compatibility; all centers can coincide for odd-m residual lifts but not for even m. | sessions/S010/DOUBLE_HOLE_RIGIDITY.md; no actual T or CAND counterexample follows |
+| C-58 | PROGRAMME_PROVED / SOURCE INPUTS | S010-P2: an H-extremal is isolated under one-term changes if its multiplicity reaches floor((m-1)/2), m>=3, or it has a qualifying progressive block. | S010 proof; GS Theorem 2.4, Lemmas 4.2/4.4(2), unconditional eta inputs; not Property D |
+| C-59 | PROGRAMME_PROVED | S010-P3: on actual CAND extremals, D7-01 iff monochromatic fibers iff some maximal pair-sum extremal reaches that multiplicity; failure iff every M_z<=floor((m-1)/2)-1. | S010 proof using S008-P1 and C-58; no abstract-to-actual realization implication |
+| C-60 | PROGRAMME_PROVED / OBSTRUCTION | S010-P4: a forced witness in an actual nonzero-delta CAND configuration gives a translated zero-sum (2m-1)-block containing 0, with a length-(6m+1) complement having no 1/2-zero sum but an even short zero sum. | S010 proof; prevents the direct witness-complement eta-core shortcut, not all possible eta-core routes |
+
+On 2026-10-03 ZS-10's relevant eta and stability hypotheses were rechecked,
+including Theorem 2.4's unconditional homocyclic eta-extremal multiplicities.
+The underlying cited proof of that theorem was not separately re-audited.
+ZS-20's abstract/version metadata and PUB-01/PUB-02's current official policies
+were inspected. Details: sessions/S010/SOURCE_CHECK.md. This is a focused
+source refresh, not a new exhaustive target-status/novelty audit.
+
+Audit correction AC-010-01 updates C-48's current qualifier: m=3 was unresolved
+at S007 but is covered after S008-P3. No historical theorem is retracted.
+These programme deductions are not claimed novel, independently reviewed,
+formally verified or publication-ready.

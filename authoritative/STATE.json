@@ -4,18 +4,18 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S009",
-  "next_session": "S010",
-  "next_brief": "authoritative/S010_CANDIDATE_2_DOUBLE_HOLE_RIGIDITY_AND_AUDIT_BRIEF.md",
+  "last_completed_session": "S010",
+  "next_session": "S011",
+  "next_brief": "authoritative/S011_CANDIDATE_2_ALL_PAIRINGS_CAPACITY_BRIEF.md",
   "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
   "programme_status": "OPEN",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — CAND-02 selected; S009 sharpens D8-02 to a CAND-specific double-hole restricted-sum obstruction; D8-02 and all-m D7-01 remain unresolved",
+  "candidate_under_due_diligence": "NONE — CAND-02 selected; S010 restricts D9-01 to low-multiplicity/all-pairings capacity obstructions; D9-01, D8-02 and universal D7-01 remain unresolved",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P3 PROGRAMME RESULT: D6-08 holds for m=2; Girard--Schmid 2019 Lemma 4.4(2) then yields a translated length-13 eta-extremal core.",
-    "S007-P4 PROGRAMME LEMMA: for m=3, the bridge condition is equivalent to the target extremal containing either a repeated term or a centered three-term progression. The universal m=3 case itself remains unresolved.",
+    "S007-P4 PROGRAMME LEMMA: for m=3, the bridge is equivalent to a repetition or centered three-term progression. The universal m=3 case was unresolved at S007 but is covered by S008-P3 since 3 has Property D; live index corrected in S010.",
     "S008-P1 PROGRAMME LEMMA: for every CAND-02 extremal, all eight C_2^3 quotient fibers have odd multiplicity, and every maximal same-fiber pairing yields a length-(4m-4) m-zero-sum-free extremal sequence over C_m^2.",
     "S008-P2 PROGRAMME LEMMA: if one C_2^3 quotient fiber is non-monochromatic, two maximal same-fiber pairings yield two distinct C_m^2 EGZ-extremals sharing exactly 4m-5 terms.",
     "S008-P3 PROGRAMME RESULT: every CAND-02 extremal either satisfies D7-01 or induces the one-change extremal obstruction of S008-P2; hence Girard--Schmid 2019 Lemma 4.1 proves D7-01 for every modulus m having Property D, and any D7-01 counterexample would force failure of Property D at that modulus.",
@@ -23,7 +23,11 @@
     "S009-P1 PROGRAMME LEMMA: the nonempty even zero-sum subsets of the squarefree residual C_2^3 quotient are exactly its fourteen affine planes and the full eight-element set.",
     "S009-P2 PROGRAMME LEMMA: comparing the two CAND residual choices gives seven delta-paired holes in Sigma_{m-2}(T), seven delta-paired holes in Sigma_{m-3}(T), and for m>=4 a full-set pair in Sigma_{m-4}(T), with the companion exclusions that cancel identified exactly.",
     "S009-P3 PROGRAMME LEMMA: if T x and T y are distinct near-identical C_m^2 EGZ-extremals, then -(x+y) lies in Sigma_{m-2}(T), forced solely by the sharp rank-two EGZ threshold.",
-    "S009-P4 PROGRAMME REDUCTION: any D8-02 failure must realize the exact CAND-labelled double-hole package on one length-(4m-5) common core; S009 does not prove that package impossible or construct one."
+    "S009-P4 PROGRAMME REDUCTION: any D8-02 failure must realize the exact CAND-labelled double-hole package on one length-(4m-5) common core; S009 does not prove that package impossible or construct one.",
+    "S010-P1 PROGRAMME LEMMA: exact Fano incidence equations; arbitrary through-plane centers for gcd(m,6)=1 before sumset compatibility; complete center collision possible for odd-m residual lifts, impossible for even m. Residual labels alone are not a D9 counterexample.",
+    "S010-P2 PROGRAMME LEMMA: for m>=3, a rank-two EGZ-extremal with maximum multiplicity at least floor((m-1)/2), or a qualifying progressive block, is isolated under one-term changes by unconditional eta inputs. Distinct one-change extensions must both have lower multiplicity.",
+    "S010-P3 PROGRAMME RESULT: on actual CAND extremals for m>=3, D7-01 is equivalent to monochromatic quotient fibers and to some maximal pair-sum sequence reaching multiplicity floor((m-1)/2). Failure is equivalent to M_z(S)<=floor((m-1)/2)-1 for every z in H.",
+    "S010-P4 PROGRAMME OBSTRUCTION: any forced witness in an actual nonzero-delta CAND configuration yields after translation a zero-sum (2m-1)-block containing 0; its length-(6m+1) complement has no 1/2-term zero sum but has an even short zero sum, so is not an eta-extremal core."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -88,6 +92,11 @@
       "id": "S009",
       "status": "COMPLETED",
       "record": "sessions/S009/CLOSEOUT.md"
+    },
+    {
+      "id": "S010",
+      "status": "COMPLETED",
+      "record": "sessions/S010/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -110,5 +119,8 @@
   },
   "protocol_revision": "D-030/D-031: external review decoupled from mathematical-investigation authorization",
   "s008_mathematical_investigation_date": "2026-10-03",
-  "s009_mathematical_investigation_date": "2026-10-03"
+  "s009_mathematical_investigation_date": "2026-10-03",
+  "s010_mathematical_investigation_date": "2026-10-03",
+  "last_ten_session_audit": "sessions/S010/TEN_SESSION_AUDIT.md",
+  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; UNIVERSAL BRIDGE UNRESOLVED; ONE ALL-PAIRINGS CAPACITY ASSESSMENT WITH RECOVERY STOP"
 }

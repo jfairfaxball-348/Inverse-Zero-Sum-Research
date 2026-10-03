@@ -132,3 +132,18 @@ computation remain CLOSED.
 - External-review gate remains CLOSED; Xue Li reply remains pending.
 - Next numbered session: S010, D9-01 double-hole rigidity plus the required
   S001--S010 ten-session audit.
+
+## S010 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S010 | COMPLETED | 565c51f24dff06b812ee7a45dfdc9e566d91e170 | D9 unresolved; Fano incidence/freedom, high-multiplicity isolation, exact actual-CAND capacity equivalence, witness-complement obstruction; S001–S010 audit | [S010 closeout](../sessions/S010/CLOSEOUT.md) |
+
+- S010 was unique; all 69 incoming remote blobs were verified.
+- D9-01, D8-02 and universal D7-01 remain unresolved; no actual or local
+  sequence counterexample was constructed and no universal eta-core is claimed.
+- No mathematical computation, formalisation or outreach was run.
+- Current m=3 status is corrected as already covered by S008's Property-D scope.
+- External-review gate remains CLOSED; Xue Li reply remains pending.
+- Active owner blockers: NONE.
+- S011 is ready on D10-01 under the audit's explicit recovery stop condition.

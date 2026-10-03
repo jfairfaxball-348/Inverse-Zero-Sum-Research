@@ -268,3 +268,13 @@ review, or act as a journal referee.
 The publication gate remains **OPEN** because a relevant substantive-AI-compatible route is established. Under D-030 this gate, together with target readiness and mature due diligence, may support an OPEN mathematical-investigation gate even while external review is CLOSED.
 
 Publication-gate OPEN does not mean the programme is submission-ready. Before any journal submission, obtain appropriate independent scrutiny of the actual contribution/manuscript, subject to reviewer willingness and availability, recheck current venue policy, and obtain the owner's explicit submission authorization. A private independent reviewer is never represented as a journal-appointed referee.
+
+## S010 publication credibility audit
+
+E-JC About/AI-policy and Submissions pages were rechecked on 2026-10-03;
+leading-venue eligibility remains supported. The current mathematical records
+are not a publication-ready result: all-m bridge, actual-result novelty and
+significance, independent scrutiny and manuscript remain outstanding.
+The JNT backup retains its earlier dated policy evidence and was not freshly
+rechecked in S010. No submission or acceptance is claimed. See
+sessions/S010/TEN_SESSION_AUDIT.md and sessions/S010/SOURCE_CHECK.md.

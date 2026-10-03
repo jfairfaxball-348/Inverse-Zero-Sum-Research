@@ -57,3 +57,14 @@ arguments. Retired routes are not silently revived without new information.
 
 | FL-034 | 2026-10-03 | Two residual-restricted-sum exclusions arising from a one-change pairing do not automatically provide two independent constraints: after decomposing `Sigma_k(Tx)`, half of the companion exclusions cancel exactly because the residual shift and exceptional-term shift compensate. | Compare the two pairings algebraically before counting constraints; retain only the incidence-dependent double-hole information actually gained. | S009 |
 | FL-035 | 2026-10-03 | Near-identical EGZ-extremals themselves contain extra threshold information before any Property-D structure is used: adjoining both exceptional terms reaches exactly `s(C_m^2)` and forces an `(m-2)`-subsum witness in the common core. | Exploit sharp threshold witnesses before importing stronger conjectural multiplicity or restricted-sum structure. | S009 |
+
+## S010 audit and mathematical lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-036 | 2026-10-03 | Seven plane-indexed hole pairs need not have distinct centers; odd-m residual lifts can collapse all plane sums. | Keep incidence labels and genuine restricted-sumset compatibility; do not infer complement cardinality or periodicity by counting labels. | S010-P1 |
+| FL-037 | 2026-10-03 | A forced witness complement has eta-extremal length but need not be eta-free; in the actual nonzero-delta configuration it necessarily contains a short zero sum. | Apply eta-overlap only after proving short-zero-sum-freeness; retain the S010-P4 obstruction and seek a different exchange. | S010-P4 |
+| FL-038 | 2026-10-03 | Necessary-condition refinements can approach an unresolved Property-D-sensitive obstacle without proving the original bridge. | Count eliminated cases or new mechanisms, not new dependency names; use S011's bounded assessment and recovery stop. | Ten-session audit |
+| FL-039 | 2026-10-03 | A current claim index retained S007's m=3 unresolved qualifier after S008 covered it. | Qualify historical statements and synchronize live claim/state scope without rewriting history. | AC-010-01 |
+| FL-040 | 2026-10-03 | S007's committed MILP entry point stops at a no-incumbent timeout, while its narrative log describes a restart not completely preserved in executable state. | Treat those observations as incompletely reproducible diagnostics only; future authorized experiments must save actual runner, restart state and results. Do not rerun a settled case or invent missing evidence. | Ten-session audit |
+| FL-041 | 2026-10-03 | A cached local checkout differed from authoritative S009 main. | Reuse cached files only after blob verification; pin remote authority and attribute any independently re-proved deductions to the current session. | S010 reconciliation |

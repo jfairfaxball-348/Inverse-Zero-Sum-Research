@@ -217,3 +217,16 @@ parallel and no reviewer status, endorsement or novelty certification is inferre
 No active owner blocker is created by S009. Xue Li's reply remains pending in
 parallel and no reviewer status, endorsement or novelty certification is
 inferred.
+
+## S010 investigation and ten-session audit decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-041 | 2026-10-03 | Record S010-P1–P4 as programme-proved bounded deductions; keep D9-01, D8-02 and universal D7-01 unresolved. No universal eta-core reduction is activated. | sessions/S010/DOUBLE_HOLE_RIGIDITY.md; unconditional eta source inputs used only with proved hypotheses |
+| D-042 | 2026-10-03 | Complete the S001–S010 audit; correct the stale current m=3 status while preserving S007 history; qualify S007 MILP restart reproducibility and reject plane-label cardinality and witness-complement shortcuts. | sessions/S010/TEN_SESSION_AUDIT.md, AC-010-01–03 |
+| D-043 | 2026-10-03 | Schedule one S011 all-pairings low-capacity compatibility assessment, D10-01, with a concrete exchange/residual mechanism and a stop against repeated equivalent reformulations. If no new mechanism survives, prepare a bounded recovery/pivot. | S010-P3/P4 and the ten-session audit; no target change |
+
+Active owner blockers remain NONE. External review remains CLOSED, Xue Li's
+reply remains pending and no reviewer is confirmed. No outreach was sent.
+E-JC eligibility was rechecked; neither novelty nor publication readiness is
+established by this audit.

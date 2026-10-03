@@ -423,3 +423,29 @@ S009 attacked D8-02, the CAND-compatible one-change stability obstruction.
 The next mathematical obligation is D9-01: prove or falsify the exact CAND
 double-hole package on the `s(C_m^2)-2` common core without assuming Property
 D. S010 must also perform the protocol-mandated audit of sessions S001--S010.
+
+## Frontier after S010 and the first ten-session audit
+
+S010 completed D9-01's bounded investigation without proving or falsifying it.
+The Fano incidence equations and residual-lift freedom are exact; they do not
+supply restricted-sumset realizability. Unconditional eta inputs now isolate
+any one-change extremal reaching multiplicity floor((m-1)/2). On actual CAND
+extremals, D7-01 is equivalent to monochromatic fibers and to some maximal
+pairing reaching that threshold. A forced-witness complement cannot simply be
+used as an eta-core: S010-P4 proves a short even zero sum remains in it.
+
+Every surviving actual D7 failure therefore has simultaneous bounds
+M_z(S)<=floor((m-1)/2)-1 for every z in H and must meet all residual restrictions
+for every maximal pairing. D9/D8/D7 and the universal D6-08/D6-09 bridge remain
+unresolved; D6-10/D6-12 classification/reconstruction are untouched.
+
+The S001–S010 audit is complete in sessions/S010/TEN_SESSION_AUDIT.md. It records
+six pre-proof sessions and four mathematical-investigation sessions, current
+status corrections, failed routes, external-review uncertainty and a venue
+route that is credible in scope but not yet supported by a publication-ready
+result. The m=3 bridge was covered by S008, superseding S007's old open qualifier.
+
+S011 executes exactly one all-pairings capacity compatibility assessment,
+D10-01. If no concrete new mechanism survives, the next preparation must be a
+bounded repair/pivot, not another renamed version of the local-hole obstacle.
+The next periodic ten-session audit is S020, covering S011–S020.

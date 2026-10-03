@@ -332,3 +332,12 @@ Transmission, silence, elapsed time or lack of response must never be treated as
 A substantive later reply must be incorporated honestly. If it identifies prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern, the affected mathematical direction pauses for reassessment rather than continuing merely because proof work has begun.
 
 Appropriate independent scrutiny of the mathematical contribution/manuscript remains required before journal submission, subject to actual willingness and availability. This independent reviewer is not a journal referee; journal referees are selected by the journal.
+
+## S010 external-review audit
+
+No newer committed record contains substantive Xue Li feedback. Status remains
+owner-reported SENT 2026-10-02 / REPLY PENDING, confirmed reviewers NONE,
+external-review gate CLOSED. S010 sent no outreach and inferred no willingness,
+endorsement, novelty certification or approval. Mathematical investigation
+remains independently OPEN; appropriate independent scrutiny remains a later
+publication-readiness requirement.
