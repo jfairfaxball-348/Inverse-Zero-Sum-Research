@@ -394,3 +394,27 @@ contains one.
 The bounded m=3 searches are diagnostic only and do not narrow the
 publication-level target to a small case.
 
+
+
+## S008 D7-01 mathematical frontier
+
+S008 does not change the selected target or its literature-status label.
+CAND-02 remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
+
+For the natural subgroup `H=C_m^2` and quotient `G_m/H=C_2^3`, every
+length-`8m` CAND-02 extremal has odd multiplicity in all eight quotient
+fibers. Every maximal pairing within fibers produces a length-`4m-4`
+EGZ-extremal over `H`.
+
+If a quotient fiber is non-monochromatic, two choices of residual term produce
+two distinct kernel extremals with a common subsequence of length `4m-5`.
+Published Girard--Schmid 2019 Lemma 4.1 rules this out whenever `m` has
+Property D. Therefore the reflection-capacity dependency D7-01 holds for every
+Property-D modulus. Conversely, a D7-01 counterexample would force failure of
+Property D at its modulus.
+
+This is a mathematical reduction, not an openness or novelty claim. The all-m
+D7-01 statement remains unresolved because the programme does not assume the
+rank-two Property-D conjecture. The next route is narrower than Property D:
+exploit the extra restricted-sum constraints imposed on the kernel extremals by
+the eight residual `C_2^3` representatives.

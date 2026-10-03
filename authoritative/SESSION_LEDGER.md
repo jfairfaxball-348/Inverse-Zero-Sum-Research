@@ -10,6 +10,7 @@
 | S005 | COMPLETED | c847e75c6c9b077542626ad6941227b1157c9c0f | CAND-02 current-status/overlap refresh; Xue Li public route/fit/conflict recheck; exact Stage-1 package frozen send-ready; B-005 explicit send-authorization blocker; no proof/computation/outreach | [S005 closeout](../sessions/S005/CLOSEOUT.md) |
 | S006 | COMPLETED | 71f51c28856d965c9789ec3cb941f355d2216f16 | Full-proof CAND-02 structural baseline; published-tool classification; dependency/gap map; no proof/computation/outreach | [S006 closeout](../sessions/S006/CLOSEOUT.md) |
 | S007 | COMPLETED | 1f71645064208be363515edf7e40db3552a7f144 | First mathematical investigation of D6-08; translation and centered-symmetry lemmas; bridge proved for m=2; exact m=3 criterion; bounded experiment inconclusive for universal bridge | [S007 closeout](../sessions/S007/CLOSEOUT.md) |
+| S008 | COMPLETED | eb7b5b1426cc41c2f1c47ba1b97b09d680e0a135 | D7-01 quotient-pairing equality structure; one-change kernel-extremal obstruction; D7 proved for Property-D moduli; residual restricted-sum constraints; all-m D7 remains unresolved; no computation | [S008 closeout](../sessions/S008/CLOSEOUT.md) |
 
 S004 completed the requested remaining-candidate audits. CAND-01, CAND-02 and
 CAND-03 survive on distinct source-supported research identities; CAND-04 is
@@ -101,3 +102,18 @@ computation remain CLOSED.
 - Active owner blockers: NONE.
 - External-review gate remains CLOSED; Xue Li reply remains pending.
 - Next numbered session: S008, centered-symmetry forcing D7-01.
+
+
+## S008 closeout checkpoint
+
+- Incoming live main: `eb7b5b1426cc41c2f1c47ba1b97b09d680e0a135`.
+- S008 was unique at entry and worked only on D7-01.
+- S008-P1--P4 are recorded in the centered-symmetry mathematics file.
+- D7-01 is proved for every modulus satisfying Property D but remains
+  unresolved for arbitrary `m`.
+- Any D7-01 counterexample would induce two distinct `C_m^2` EGZ-extremals
+  differing in one term and therefore force Property D to fail at that modulus.
+- No computation, experiment, formalisation or outreach occurred in S008.
+- Active owner blockers: NONE.
+- External-review gate remains CLOSED; Xue Li reply remains pending.
+- Next numbered session: S009, CAND-compatible pair-sum one-change stability.

@@ -1,7 +1,8 @@
 # Failure and lesson ledger
 
-No mathematical proof attempt, computation or experiment has been made by this
-programme. S001 adds literature-status and source-discipline lessons.
+This ledger includes literature/status lessons from the pre-proof stages and
+mathematical-investigation lessons from S007 onward. Historical entries retain
+their original session context.
 
 | ID | Lesson / risk | Required response |
 | --- | --- | --- |
@@ -48,3 +49,7 @@ arguments. Retired routes are not silently revived without new information.
 | FL-030 | 2026-10-03 | A technical progressive-subsums hypothesis can hide a simpler symmetry structure after translation. For m=3, the full bridge is exactly equivalent to a repetition or centered three-term progression, not merely to high multiplicity. | Normalize by translation first and prove exact low-threshold equivalences before designing computation. | S007 |
 | FL-031 | 2026-10-03 | Producing many centered-3AP-free 24-subsets is not close to a counterexample unless the fixed-length six-zero-sum prohibition is also satisfied; heuristic and timed-out MILP non-hits are not nonexistence proofs. | Keep the zero-sum-six constraint explicit and classify all solver/search outcomes as experimental unless independently certified. | S007 |
 
+
+
+| FL-032 | 2026-10-03 | Equality in a sharp subgroup/quotient upper-bound argument can contain more structure than the published value statement: at the CAND-02 extremal length it forces all eight quotient-fiber parities and an extremal kernel pair-sum sequence for every maximal pairing. | Extract equality consequences of the value proof before launching generic energy or enumeration arguments. | S008 |
+| FL-033 | 2026-10-03 | Forcing monochromatic quotient fibers by one-change stability is conditional on rank-two Property D in Girard--Schmid Lemma 4.1. Treating that lemma as unconditional would silently import the unresolved CAND-01 conjectural layer. | Keep the all-m D7-01 status unresolved; use the extra residual `C_2^3` compatibility constraints to seek a narrower unconditional stability theorem. | S008 |

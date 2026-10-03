@@ -1,8 +1,9 @@
 # Claims and source register
 
 Observations below are bounded source inspections through **2026-10-02**.
-They are attributed source claims, not programme proofs or proof audits.
-No mathematical result has been proved by this programme.
+Source entries are attributed claims, not programme proofs. Programme-proved
+claims from S007 onward are recorded separately below with their exact proof
+records and do not certify novelty, openness or publication significance.
 
 ## Claim classifications
 
@@ -264,3 +265,20 @@ facts or access-boundary records, not programme proofs.
 | ZS-23 | Xue Li and Qiuyu Yin, *On the existence of zero-sum subsequences of distinct lengths over certain groups of rank three*, Acta Math. Hung. 174 (2024), DOI 10.1007/s10474-024-01482-3 | Official publisher abstract/metadata only in S006 | Same architecture under distinct `disc(G)`; proof access gap preserved |
 
 No S006 search non-hit is an openness claim.
+
+
+## S007--S008 programme-proved claims
+
+These are internal mathematical deductions, distinct from published-source
+results and from experimental evidence.
+
+| Claim | Classification | Bounded content | Support / remaining boundary |
+| --- | --- | --- | --- |
+| C-45 | PROGRAMME_PROVED | S007-P1: after translating a candidate block by `-h`, the progressive-subsums condition is equivalent to zero-sum subsequences of every cardinality. | sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md |
+| C-46 | PROGRAMME_PROVED | S007-P2: a block centered at `h` which translates to at least one zero plus zero-sum pairs `a(-a)` satisfies the progressive-subsums condition; this yields the capacity `kappa_h`. | sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md |
+| C-47 | PROGRAMME_PROVED | S007-P3: D6-08 holds for `m=2`; published Lemma 4.4(2) then yields a translated length-13 eta-extremal core. | S007 proof plus existing source result C-40 |
+| C-48 | PROGRAMME_PROVED | S007-P4: for `m=3`, the bridge holds exactly when the extremal has a repetition or a centered three-term progression. | sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md; universal m=3 existence question remains unresolved |
+| C-49 | PROGRAMME_PROVED | S008-P1: all eight natural `C_2^3` quotient fibers of a CAND-02 extremal have odd multiplicity, and every maximal same-fiber pairing yields a length-`4m-4` `C_m^2` EGZ-extremal. | sessions/S008/CENTERED_SYMMETRY_FORCING.md; uses source value `s(C_m^2)=4m-3` from C-38 |
+| C-50 | PROGRAMME_PROVED | S008-P2: a non-monochromatic quotient fiber yields two distinct `C_m^2` EGZ-extremals sharing exactly `4m-5` terms. | sessions/S008/CENTERED_SYMMETRY_FORCING.md |
+| C-51 | PROGRAMME_PROVED / CONDITIONAL SOURCE INPUT | S008-P3: either D7-01 holds or the C-50 one-change obstruction occurs. Girard--Schmid Lemma 4.1 excludes that obstruction when `m` has Property D, so D7-01 holds on every Property-D modulus; a D7-01 counterexample would force Property-D failure at the same modulus. | S008 proof plus ZS-10 Lemma 4.1. No all-m Property-D assumption is made. |
+| C-52 | PROGRAMME_PROVED | S008-P4: for a maximal pairing with residual sequence `R` and pair-sum extremal `P`, any quotient-zero residual subsequence `A` of even size `2t`, `t<=m`, satisfies `-sigma(A) notin Sigma_{m-t}(P)`. | sessions/S008/CENTERED_SYMMETRY_FORCING.md |

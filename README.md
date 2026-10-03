@@ -5,9 +5,10 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation, with external review continuing
-in parallel. CAND-02 is selected. S007 completed the first bounded proof/
-falsification session. The universal progressive-subsums bridge remains
-unresolved; S008 is ready on the stronger centered-symmetry forcing route.**
+in parallel. CAND-02 is selected. S008 extracted sharp equality structure from
+the natural `C_m^2 -> C_2^3` pairing argument. D7-01 is proved for every
+modulus satisfying rank-two Property D but remains unresolved unconditionally;
+S009 is ready on the narrower CAND-compatible pair-sum stability obstruction.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -27,10 +28,13 @@ and no next-session prompt.** There is currently no active owner blocker.
 3. Mathematical-investigation gate — OPEN: bounded proof/counterexample search, structural derivation and scoped computation/experiments may run under session briefs.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
 
-S007 proved the bridge for m=2, derived a general centered-symmetry sufficient
-criterion, and reduced m=3 exactly to the presence of a repetition or centered
-three-term progression. It did not prove the all-m bridge, and its bounded m=3
-search is experimental evidence only.
+S008 proved that every extremal has odd multiplicity in each of the eight
+`C_2^3` quotient fibers and that every maximal same-fiber pairing gives an
+EGZ-extremal sequence in `C_m^2`. A non-monochromatic fiber would create two
+such extremals differing in one term. Girard--Schmid 2019 Lemma 4.1 excludes
+that obstruction whenever `m` has Property D, so D7-01 holds on every such
+modulus. The universal all-`m` statement is still unresolved; no computation
+or counterexample is claimed.
 
 Beginning proof work does not certify that the target is open or novel. If
 later external feedback reveals prior art, a known solution, material overlap,

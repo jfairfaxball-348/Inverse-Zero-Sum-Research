@@ -4,18 +4,22 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S007",
-  "next_session": "S008",
-  "next_brief": "authoritative/S008_CANDIDATE_2_CENTERED_SYMMETRY_FORCING_BRIEF.md",
+  "last_completed_session": "S008",
+  "next_session": "S009",
+  "next_brief": "authoritative/S009_CANDIDATE_2_PAIR_SUM_STABILITY_BRIEF.md",
   "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
   "programme_status": "OPEN",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — CAND-02 selected; S007 first mathematical-investigation session complete; D6-08 remains unresolved in general",
+  "candidate_under_due_diligence": "NONE — CAND-02 selected; S008 proves D7-01 for every Property-D modulus and isolates an unconditional pair-sum stability obstruction; the all-m D7-01 case remains unresolved",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P3 PROGRAMME RESULT: D6-08 holds for m=2; Girard--Schmid 2019 Lemma 4.4(2) then yields a translated length-13 eta-extremal core.",
-    "S007-P4 PROGRAMME LEMMA: for m=3, the bridge condition is equivalent to the target extremal containing either a repeated term or a centered three-term progression. The universal m=3 case itself remains unresolved."
+    "S007-P4 PROGRAMME LEMMA: for m=3, the bridge condition is equivalent to the target extremal containing either a repeated term or a centered three-term progression. The universal m=3 case itself remains unresolved.",
+    "S008-P1 PROGRAMME LEMMA: for every CAND-02 extremal, all eight C_2^3 quotient fibers have odd multiplicity, and every maximal same-fiber pairing yields a length-(4m-4) m-zero-sum-free extremal sequence over C_m^2.",
+    "S008-P2 PROGRAMME LEMMA: if one C_2^3 quotient fiber is non-monochromatic, two maximal same-fiber pairings yield two distinct C_m^2 EGZ-extremals sharing exactly 4m-5 terms.",
+    "S008-P3 PROGRAMME RESULT: every CAND-02 extremal either satisfies D7-01 or induces the one-change extremal obstruction of S008-P2; hence Girard--Schmid 2019 Lemma 4.1 proves D7-01 for every modulus m having Property D, and any D7-01 counterexample would force failure of Property D at that modulus.",
+    "S008-P4 PROGRAMME LEMMA: for any maximal pairing with eight quotient residual representatives R and pair-sum extremal P, every even quotient-zero residual subsequence A of length 2t with t<=m satisfies -sigma(A) notin Sigma_{m-t}(P)."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -70,6 +74,11 @@
       "id": "S007",
       "status": "COMPLETED",
       "record": "sessions/S007/CLOSEOUT.md"
+    },
+    {
+      "id": "S008",
+      "status": "COMPLETED",
+      "record": "sessions/S008/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -90,5 +99,6 @@
     "mathematical_investigation_gate": "OPEN authorizes bounded proof/counterexample search, derivation, structural reductions, and scoped computation/experiments under session briefs. It requires target and publication readiness, not external-review completion.",
     "external_review_gate": "OPEN records sufficient independent external scrutiny for publication readiness. It is independent of the mathematical-investigation gate and does not designate a journal referee."
   },
-  "protocol_revision": "D-030/D-031: external review decoupled from mathematical-investigation authorization"
+  "protocol_revision": "D-030/D-031: external review decoupled from mathematical-investigation authorization",
+  "s008_mathematical_investigation_date": "2026-10-03"
 }

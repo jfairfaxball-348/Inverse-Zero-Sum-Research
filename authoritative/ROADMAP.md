@@ -365,3 +365,32 @@ S007 completed the first bounded mathematical-investigation session on D6-08.
 The next all-m route is D7-01: force reflection-balanced capacity at least
 m-1 around some h. This is stronger than D6-08 but, if true, proves it.
 
+
+
+## Frontier after S008
+
+S008 attacked D7-01, the stronger reflection-balanced capacity route to the
+progressive-subsums bridge.
+
+- **Quotient equality structure — programme-proved.** In the natural
+  `C_m^2 <= G_m -> C_2^3` quotient, every one of the eight quotient fibers
+  has odd multiplicity. Pairing all but one term inside each fiber always
+  yields a length-`4m-4=s(C_m^2)-1` sequence over `C_m^2` with no
+  `m`-term zero sum.
+- **One-change obstruction — programme-proved.** A non-monochromatic quotient
+  fiber yields two distinct such kernel extremals sharing `4m-5` terms.
+- **Property-D scope — programme-proved conditional consequence.** Published
+  Girard--Schmid 2019 Lemma 4.1 forbids that one-change obstruction whenever
+  `m` has Property D. Hence D7-01 holds for every Property-D modulus; any
+  D7-01 counterexample would force Property D to fail at the same modulus.
+  The programme does not assume Property D for all `m`.
+- **Residual compatibility — programme-proved.** The eight residual quotient
+  representatives impose shifted restricted-sum exclusions on the kernel
+  extremal. These extra constraints are not present in an arbitrary
+  `C_m^2` extremal and provide the next narrower route.
+- **Universal D7-01 — unresolved.** No all-`m` proof and no rigorous
+  counterexample was obtained. No computation was run in S008.
+
+S009 is a bounded investigation of the CAND-compatible one-change stability
+obstruction only. It must use the residual quotient constraints and must not
+silently replace the selected target with the full rank-two Property-D problem.

@@ -193,3 +193,15 @@ Before journal submission, the programme must obtain appropriate independent scr
 No active owner blocker is created by S007. Xue Li's reply remains pending in
 parallel and no reviewer status is inferred.
 
+
+
+## S008 centered-symmetry decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-036 | 2026-10-03 | Record S008-P1--P2: equality in the natural quotient-pairing count forces all eight `C_2^3` fibers to have odd multiplicity, every maximal same-fiber pairing to yield a `C_m^2` EGZ-extremal, and every non-monochromatic fiber to yield two such extremals differing in one term. | Direct programme proofs in sessions/S008/CENTERED_SYMMETRY_FORCING.md |
+| D-037 | 2026-10-03 | Record S008-P3--P4 and keep D7-01 unresolved for arbitrary `m`. D7-01 holds whenever `m` has Property D by published Girard--Schmid Lemma 4.1; any D7-01 counterexample would force Property-D failure at that modulus. Residual representatives also impose exact shifted restricted-sum exclusions. | S008 direct deductions plus existing source result ZS-10; no universal Property-D assumption |
+| D-038 | 2026-10-03 | Schedule S009 on the narrower CAND-compatible one-change stability problem: determine whether the residual `C_2^3` restrictions rule out the S008-P2 obstruction without assuming Property D. | S008 dependency update; this advances D7-01 without broadening to the full CAND-02 classification |
+
+No active owner blocker is created by S008. Xue Li's reply remains pending in
+parallel and no reviewer status, endorsement or novelty certification is inferred.
