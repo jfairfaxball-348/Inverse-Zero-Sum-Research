@@ -5,9 +5,9 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation, with external review continuing
-in parallel. CAND-02 is selected. S006 completed the structural baseline; the
-mathematical-investigation gate is now OPEN. Xue Li's Stage-1 message is
-owner-reported SENT on 2026-10-02, while reply and willingness remain pending.**
+in parallel. CAND-02 is selected. S007 completed the first bounded proof/
+falsification session. The universal progressive-subsums bridge remains
+unresolved; S008 is ready on the stronger centered-symmetry forcing route.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -18,7 +18,7 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-004 and B-005 are resolved. S007 is immediately runnable as the first bounded mathematical-investigation session.
+and no next-session prompt.** There is currently no active owner blocker.
 
 ## Current readiness dimensions
 
@@ -27,7 +27,15 @@ and no next-session prompt.** B-004 and B-005 are resolved. S007 is immediately 
 3. Mathematical-investigation gate — OPEN: bounded proof/counterexample search, structural derivation and scoped computation/experiments may run under session briefs.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
 
-Beginning proof work does not certify that the target is open or novel. If later external feedback reveals prior art, a known solution, material overlap, a mistaken premise, or a serious significance/scope concern, pause the affected direction and reassess it.
+S007 proved the bridge for m=2, derived a general centered-symmetry sufficient
+criterion, and reduced m=3 exactly to the presence of a repetition or centered
+three-term progression. It did not prove the all-m bridge, and its bounded m=3
+search is experimental evidence only.
+
+Beginning proof work does not certify that the target is open or novel. If
+later external feedback reveals prior art, a known solution, material overlap,
+a mistaken premise, or a serious significance/scope concern, pause the affected
+direction and reassess it.
 
 ## Main records
 
@@ -41,7 +49,6 @@ Beginning proof work does not certify that the target is open or novel. If later
 - [Decisions and blockers](authoritative/DECISIONS_AND_BLOCKERS.md)
 - [Failure and lesson ledger](authoritative/FAILURE_AND_LESSON_LEDGER.md)
 - [Session ledger](authoritative/SESSION_LEDGER.md)
-- [Completed S004 audit](sessions/S004/CANDIDATES_3_AND_4_DUE_DILIGENCE.md)
 - [Live next-session prompt](authoritative/NEXT_SESSION_PROMPT.md)
 - [Autonomous session protocol](docs/SESSION_PROTOCOL.md)
 

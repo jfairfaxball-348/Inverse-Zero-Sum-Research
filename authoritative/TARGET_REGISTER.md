@@ -379,3 +379,18 @@ Mathematical investigation is now authorized because target and publication gate
 The first bounded mathematical question is dependency D6-08 from S006: whether every target extremal necessarily satisfies the progressive-subsums entry hypothesis of Girard--Schmid 2019 Lemma 4.4(2). Treat this as a programme question until proved. A counterexample or obstruction retires or weakens that route rather than the full target automatically.
 
 Beginning mathematical work does not strengthen the novelty/open-status label. A later substantive reviewer reply can narrow, pause or retire the affected direction if it supplies prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern.
+
+## S007 mathematical status
+
+S007 did not change the selected all-m target or its conservative
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN label.
+
+The first programme mathematics is now recorded. The progressive-subsums bridge
+D6-08 is automatic for m=2 and has an exact repetition/centered-3AP criterion
+for m=3. For arbitrary m, a reflection-balanced block of size at least m-1
+around some center h is sufficient, but S007 did not prove that every extremal
+contains one.
+
+The bounded m=3 searches are diagnostic only and do not narrow the
+publication-level target to a small case.
+

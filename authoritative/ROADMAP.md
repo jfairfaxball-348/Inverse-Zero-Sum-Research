@@ -345,3 +345,23 @@ external review and the legacy computation/proof gate were then CLOSED and a
 source-only S007 was proposed. The amended closeout instead opens the separate
 mathematical-investigation gate and schedules the progressive-subsums bridge
 investigation.
+
+## Frontier after S007
+
+S007 completed the first bounded mathematical-investigation session on D6-08.
+
+- **Translation normalization — programme-proved.** The progressive condition
+  becomes zero-sum subsequences of every cardinality after translation by -h.
+- **Centered-symmetry route — programme-proved sufficient.** A block made from
+  at least one translated zero plus zero-sum pairs a(-a) is progressive.
+- **m=2 — resolved positively.** The bridge is automatic and the published
+  Lemma 4.4(2) yields a translated length-13 eta-extremal core.
+- **m=3 — exact local criterion.** The bridge is present iff there is a repeated
+  term or a centered three-term progression. Existence of a 24-term extremal
+  avoiding both remains unresolved.
+- **All m — unresolved.** No universal forcing theorem and no rigorous
+  counterexample was obtained.
+
+The next all-m route is D7-01: force reflection-balanced capacity at least
+m-1 around some h. This is stronger than D6-08 but, if true, proves it.
+

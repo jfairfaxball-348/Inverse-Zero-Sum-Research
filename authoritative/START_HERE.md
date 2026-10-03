@@ -10,15 +10,15 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002--S006 records before later target-specific work.
+7. The completed S002--S007 records before later target-specific work.
 
 ## Current state
 
-**S006 is completed and its closeout is amended by owner decisions D-030--D-032. CAND-02 remains selected. Mathematical investigation is now authorized while external review continues in parallel.**
+**S007 is completed. CAND-02 remains selected. Mathematical investigation is OPEN while external review continues in parallel and remains CLOSED.**
 
 Selected target: for every integer m>=2, classify all length-8m sequences over G_m=C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m.
 
-Current status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. Beginning proof work does not turn literature non-hits into an openness or novelty claim.
+Current status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. Mathematical progress does not certify openness or novelty.
 
 ### Gates
 
@@ -32,13 +32,20 @@ The owner reports the Xue Li Stage-1 message was sent on 2026-10-02. A reply, wi
 
 If later substantive external feedback identifies prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern, pause the affected mathematical direction and reassess it. Appropriate independent scrutiny of the contribution/manuscript remains required before journal submission; a private reviewer is never represented as a journal-appointed referee.
 
-## S006 mathematical frontier
+## S007 mathematical frontier
 
-S006 inspected the controlling Girard--Schmid proofs at full relevant proof level. The direct equal-factor theorem uses the natural kernel C_m^2 and quotient C_2^3, but is value-level rather than an equality-case classification. The closest published inverse theorem relies on cyclic-kernel near-extremal rigidity that does not transfer as a theorem to C_m^2.
+Girard--Schmid 2019 Lemma 4.4(2) remains the controlling published conditional bridge. S007 did not prove or disprove its progressive-subsums entry condition for every CAND-02 extremal.
 
-Girard--Schmid 2019 Lemma 4.4(2) gives a high-leverage conditional bridge: for a CAND-02 extremal, if there are h and C|S with |C|>=m-1 and jh in Sigma_j(C) for every 1<=j<=|C|, a translate contains a length-6m+1=eta(G_m)-1 short-zero-sum extremal core.
+S007 proved four bounded programme facts:
 
-S007 is the first bounded mathematical-investigation session. It attacks only that entry condition: prove it for arbitrary CAND-02 extremals, disprove it by a rigorous obstruction/counterexample, or isolate the exact weaker statement that survives. Computation may be used only for a precisely stated structural question and remains experimental evidence unless proved.
+- translating a candidate block by -h converts the hypothesis jh in Sigma_j(C) into zero-sum subsequences of every cardinality in the translated block;
+- a reflection-balanced block 0^r product a_i(-a_i), r>=1, has zero-sum subsequences of every cardinality, yielding a general centered-symmetry sufficient condition;
+- for m=2 the bridge always holds, and the published lemma yields a translated length-13 eta-extremal core;
+- for m=3 the bridge holds exactly when the sequence contains either a repeated term or a centered three-term progression. Thus a bridge-failing m=3 extremal would have to be a 24-element squarefree centered-3AP-free subset with no zero-sum six-subset.
+
+A deterministic bounded m=3 search found no counterexample, but this is experimental evidence only and supplies no nonexistence theorem.
+
+S008 attacks the general centered-symmetry sufficient route: determine whether every CAND-02 extremal must have a reflection-balanced block of size at least m-1, or rigorously exhibit the obstruction to that stronger route.
 
 Live prompt: authoritative/NEXT_SESSION_PROMPT.md.
 

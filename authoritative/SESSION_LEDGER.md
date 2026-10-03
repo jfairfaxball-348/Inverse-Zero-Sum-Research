@@ -9,6 +9,7 @@
 | S004 | COMPLETED | 17fab131e8ea3617063e8086309b38d548b3b4d6 | Full CAND-03/CAND-04 audits; CAND-03 survives status-unknown; CAND-04 retired as clean inverse target; four-candidate comparison; unsent CAND-03 reviewer package; B-004 owner selection blocker | [S004 closeout](../sessions/S004/CLOSEOUT.md) |
 | S005 | COMPLETED | c847e75c6c9b077542626ad6941227b1157c9c0f | CAND-02 current-status/overlap refresh; Xue Li public route/fit/conflict recheck; exact Stage-1 package frozen send-ready; B-005 explicit send-authorization blocker; no proof/computation/outreach | [S005 closeout](../sessions/S005/CLOSEOUT.md) |
 | S006 | COMPLETED | 71f51c28856d965c9789ec3cb941f355d2216f16 | Full-proof CAND-02 structural baseline; published-tool classification; dependency/gap map; no proof/computation/outreach | [S006 closeout](../sessions/S006/CLOSEOUT.md) |
+| S007 | COMPLETED | 1f71645064208be363515edf7e40db3552a7f144 | First mathematical investigation of D6-08; translation and centered-symmetry lemmas; bridge proved for m=2; exact m=3 criterion; bounded experiment inconclusive for universal bridge | [S007 closeout](../sessions/S007/CLOSEOUT.md) |
 
 S004 completed the requested remaining-candidate audits. CAND-01, CAND-02 and
 CAND-03 survive on distinct source-supported research identities; CAND-04 is
@@ -86,3 +87,17 @@ computation remain CLOSED.
 - External-review gate remains CLOSED, Xue Li reply remains pending, and no reviewer willingness or endorsement is inferred.
 - S006 itself remains pre-proof: no new proof, computation, experiment or formalisation was performed in S006.
 - Next numbered session: S007, bounded mathematical investigation of dependency D6-08.
+
+
+## S007 closeout checkpoint
+
+- Incoming live main: `1f71645064208be363515edf7e40db3552a7f144`.
+- S007 was unique at entry and worked only on D6-08.
+- Programme proofs S007-P1--P4 are recorded in the session mathematics file.
+- D6-08 is proved for m=2 but remains unresolved for general m.
+- The exact m=3 bridge-failure candidate is squarefree, centered-3AP-free and
+  six-zero-sum-free; bounded deterministic and MILP searches found no example
+  but supply no theorem.
+- Active owner blockers: NONE.
+- External-review gate remains CLOSED; Xue Li reply remains pending.
+- Next numbered session: S008, centered-symmetry forcing D7-01.

@@ -181,3 +181,15 @@ D-030 supersedes the cross-session prerequisite in D-003 and the initial source-
 A sent message, silence or non-response never establishes reviewer willingness, novelty certification, endorsement or approval. If a later substantive Xue Li reply identifies prior art, a known solution, material overlap, a mistaken premise or a serious scope/significance concern, the affected mathematical direction must pause for reassessment even if proof work has begun.
 
 Before journal submission, the programme must obtain appropriate independent scrutiny of the contribution/manuscript, subject to actual reviewer willingness and availability. This private reviewer is not a journal referee; journal referees are selected by the journal.
+
+## S007 mathematical-investigation decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-033 | 2026-10-03 | Record S007-P1--P4 as programme-proved bounded deductions: translation normalization; reflection-balanced sufficient criterion; universal bridge for m=2; and the exact repetition/centered-3AP criterion for m=3. Keep D6-08 unresolved for general m. | S007 direct proofs in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md |
+| D-034 | 2026-10-03 | Treat the bounded m=3 greedy and cutting-plane searches strictly as experimental evidence. No counterexample was found, but no nonexistence theorem or certified infeasibility was obtained. | S007 experiment log and preserved code |
+| D-035 | 2026-10-03 | Schedule S008 on the all-m reflection-balanced capacity condition D7-01. A proof would settle D6-08 through S007-P2; a falsification would retire only this stronger sufficient route unless the full progressive condition also fails. | S007 dependency update |
+
+No active owner blocker is created by S007. Xue Li's reply remains pending in
+parallel and no reviewer status is inferred.
+
