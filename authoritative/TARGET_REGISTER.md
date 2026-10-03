@@ -464,3 +464,15 @@ S011 assesses global all-pairings compatibility once, with the stop condition
 in the completed ten-session audit. A local residual-lift example is not a
 D7 counterexample and these partial deductions are not a certified publication
 contribution.
+
+## S011 current mathematical boundary
+
+The exact selected target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN label
+are unchanged. D10-01 is unresolved. The two-pair mechanism reaches a precise
+original-position lifting defect and is stopped under the S010 audit's rule.
+The parabola counterfamily in S011 is not extremal and falsifies only a
+capacity/parity relaxation; it supplies no actual D7 or Property-D failure.
+
+No universal eta-core, full classification or new arithmetic scope is claimed.
+S012 is prepared as one repair toward the weaker D6-08 progressive-block
+condition, not another local-hole reformulation or a change of research target.

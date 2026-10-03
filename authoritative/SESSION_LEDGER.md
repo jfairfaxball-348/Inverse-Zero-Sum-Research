@@ -147,3 +147,18 @@ computation remain CLOSED.
 - External-review gate remains CLOSED; Xue Li reply remains pending.
 - Active owner blockers: NONE.
 - S011 is ready on D10-01 under the audit's explicit recovery stop condition.
+
+## S011 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S011 | COMPLETED BOUNDED ASSESSMENT; D10-01 UNRESOLVED | 21b411b5a8420258b697ebdf889cb5f1e4f32e38 | Exact all-pairings encoding; concrete two-pair lifting-defect certificate; symbolic counterexample to capacity/parity relaxation only; recovery stop applied | [S011 closeout](../sessions/S011/CLOSEOUT.md) |
+
+- S011 was unique; all 77 incoming blobs and the complete tree were verified.
+- No actual counterexample or universal eta-core was obtained; no new modulus
+  or full classification was claimed.
+- No mathematical computation, formalisation or outreach ran.
+- S010-P3/P4 and all prior source restrictions are preserved.
+- External review remains CLOSED and Xue Li reply pending; owner blockers NONE.
+- S012 is prepared on D11-01, one weaker progressive-block repair. It has not
+  started. S020 remains the next ten-session audit.

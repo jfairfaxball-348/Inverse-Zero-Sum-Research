@@ -10,74 +10,68 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002--S010 records before later target-specific work.
+7. The completed S002–S011 records before later target-specific work, with
+   particular attention to the S010 audit and S011 exchange obstruction.
 
 ## Current state
 
-**S010 is completed. D9-01 remains unresolved. CAND-02 is selected;
-mathematical investigation is OPEN and parallel external review is CLOSED.**
+**S011 is completed. D10-01 remains unresolved; the assessed two-pair
+mechanism is stopped. S012 is a bounded repair toward the weaker D6-08
+progressive-block condition.**
 
-Selected target: for every integer m>=2, classify every length-8m sequence
-in `G_m=C_2+C_{2m}+C_{2m}` with no 2m-term zero sum.
+CAND-02 remains selected: for every integer m>=2, classify every length-8m
+sequence in `G_m=C_2+C_{2m}+C_{2m}` with no 2m-term zero sum.
 Status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
 
-- Target gate: OPEN.
-- Publication gate: OPEN (venue eligibility, not submission readiness).
-- Mathematical-investigation gate: OPEN.
-- External-review gate: CLOSED; no confirmed reviewer.
+- Target, publication-eligibility and mathematical-investigation gates: OPEN.
+- External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
+- Xue Li Stage-1 status: owner-reported SENT 2026-10-02 / REPLY PENDING.
 
-The owner-reported Xue Li Stage-1 send of 2026-10-02 remains SENT / REPLY
-PENDING. Transmission or silence establishes no willingness, endorsement,
-novelty certification or approval. Substantive adverse feedback must pause and
-reassess the affected direction. Independent scrutiny remains required before
-journal submission.
+No willingness, endorsement, novelty certification or approval follows from
+transmission or silence. Substantive adverse feedback must pause and reassess
+its affected direction. Independent scrutiny remains required before submission.
 
 ## Current mathematical frontier
 
-S008's all-fiber odd parity, universal maximal-pairing extremality and
-Property-D-modulus consequence remain intact. S009's exact double-hole packet
-and forced witness remain necessary. S010 proves four bounded deductions:
+Preserve S008's odd-fiber decomposition and Property-D scope, S009's exact
+labelled footprint, and all S010 deductions. S010-P3 remains exact on actual
+CAND extremals: D7-01 iff monochromatic fibers iff some maximal pair-sum
+sequence reaches multiplicity `floor((m-1)/2)`. Its failure is equivalent to
+`M_z(S)<=floor((m-1)/2)-1` for every z in H. These bounds have not been
+shown realizable by an actual extremal.
 
-- exact Fano incidence equations; for gcd(m,6)=1 the seven through-plane
-  centers are freely realizable before core compatibility; centers can coincide;
-- unconditional one-change isolation when a kernel extremal reaches
-  multiplicity `floor((m-1)/2)` (m>=3), using the published eta inputs;
-- on actual CAND extremals, D7-01 is equivalent to monochromatic quotient
-  fibers and to some maximal pair-sum sequence reaching that multiplicity;
-- deleting a forced witness in a nonzero-delta actual configuration does not
-  give an eta-core: the relevant complement necessarily has a short even zero
-  sum despite having none of length 1 or 2.
+S011 assessed a concrete two-pair exchange while retaining all residual
+restrictions. Its threshold witness necessarily uses overlapping original
+pairs. The lift therefore needs one unused completing term or pair; that
+completion is not forced. The translated complements have short even zero
+sums, preserving S010-P4's prohibition on declaring them eta-extremal.
 
-Thus every possible actual D7 failure must have
-`M_z(S)<=floor((m-1)/2)-1` simultaneously for every z in H, where M_z counts
-maximum disjoint pairs of sum z, and must satisfy the S009 constraints for all
-maximal pairings. This is an exact obstruction, not an existence theorem.
-D9-01, D8-02, universal D7-01 and the universal eta-core reduction remain
-unresolved. No counterexample, full classification or new known modulus is claimed.
+S011 also proves the complete all-pairings system exactly encodes extremality
+on the odd-fiber domain, and exhibits a symbolic parabola family satisfying
+length/parity/low-capacity bounds but with an explicit forbidden zero sum.
+The latter is a counterexample to a relaxation only, not an actual D7 failure.
 
-The stale current m=3 qualification is repaired: unresolved at S007, it was
-already covered after S008 because 3 has Property D. Historical files remain
-unchanged. See [S010 mathematics](../sessions/S010/DOUBLE_HOLE_RIGIDITY.md),
-[dependency update](../sessions/S010/DEPENDENCY_UPDATE.md), and
-[ten-session audit](../sessions/S010/TEN_SESSION_AUDIT.md).
+D10-01, D9-01, D8-02, universal D7-01 and universal D6-08/D6-09 remain
+unresolved. No new modulus, universal eta-core, classification or publication-
+ready result is claimed. No mathematical computation ran in S011.
+See [S011 assessment](../sessions/S011/ALL_PAIRINGS_CAPACITY.md) and
+[dependency update](../sessions/S011/DEPENDENCY_UPDATE.md).
 
-## Audit and next unit
+## Recovery and next unit
 
-The S001–S010 audit records genuine bounded structural progress but no completed
-universal bridge or publication-ready result. It distinguishes six pre-proof
-sessions from four mathematical-investigation sessions, preserves failed routes,
-and qualifies the incomplete reproducibility of the old S007 MILP restart log.
-No S010 mathematical computation was run.
+The [S010 ten-session audit](../sessions/S010/TEN_SESSION_AUDIT.md) required a
+repair if this assessment found no new forcing mechanism. That stop now applies:
+do not schedule another equivalent local-hole/capacity refinement.
 
-S011 is ready for one all-pairings low-capacity compatibility assessment
-(D10-01), using a concrete two-pair exchange or residual-change mechanism.
-A restatement of the existing obstruction does not count as progress. If no
-mechanism survives, prepare a bounded repair/pivot rather than another equivalent
-local-hole unit. Do not begin classification.
+S012 assesses D11-01: a precise maximal-progressive-block enlargement or
+replacement, using the maximal-short-zero-sum argument in published GS
+Lemma 4.4(2). It returns to D6-08 without requiring reflection-pair form or
+monochromatic fibers. This repair is prepared, not executed or proved by S011.
 
-Live brief: `authoritative/S011_CANDIDATE_2_ALL_PAIRINGS_CAPACITY_BRIEF.md`.
+Live brief: `authoritative/S012_CANDIDATE_2_PROGRESSIVE_BLOCK_REPAIR_BRIEF.md`.
 Live prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
+S020 remains the next periodic audit, covering S011–S020.
 
 ## Authority and reconciliation rule
 

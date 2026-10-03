@@ -68,3 +68,10 @@ arguments. Retired routes are not silently revived without new information.
 | FL-039 | 2026-10-03 | A current claim index retained S007's m=3 unresolved qualifier after S008 covered it. | Qualify historical statements and synchronize live claim/state scope without rewriting history. | AC-010-01 |
 | FL-040 | 2026-10-03 | S007's committed MILP entry point stops at a no-incumbent timeout, while its narrative log describes a restart not completely preserved in executable state. | Treat those observations as incompletely reproducible diagnostics only; future authorized experiments must save actual runner, restart state and results. Do not rerun a settled case or invent missing evidence. | Ten-session audit |
 | FL-041 | 2026-10-03 | A cached local checkout differed from authoritative S009 main. | Reuse cached files only after blob verification; pin remote authority and attribute any independently re-proved deductions to the current session. | S010 reconciliation |
+
+## S011 exchange and recovery lessons
+
+| ID | Date (UTC) | Failed route / triggering evidence | Scope, surviving facts and repair |
+| --- | --- | --- | --- |
+| FL-042 | 2026-10-03 | Appending a crossed edge to two disjoint original pairs reaches s(H), but every forced kernel zero sum uses overlapping endpoints. Its actual lift lacks one or two terms. The old unused-looking opposite edge can also meet the lift. | Track positions, not just group sums. S011-P2 gives the exact missing completion and uses the retained residual to make genuinely disjoint common pairs. A completing term/pair is not forced; preserve S010-P4 and do not declare the complement eta-free. |
+| FL-043 | 2026-10-03 | Length, odd-fiber parity and all low M_z bounds have explicit false positives: S011-P3's parabola family has a displayed 2p-zero sum. Also, choosing pairings never changes the invariant M_z(S). | Preserve the full extremality/residual restrictions. This falsifies only the relaxed shortcut, not D7. The assessed mechanism has no surviving forcing step; apply D-045 and return to the weaker progressive-block route instead of adding more equivalent hole labels. |

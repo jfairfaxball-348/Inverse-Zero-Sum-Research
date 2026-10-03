@@ -449,3 +449,25 @@ S011 executes exactly one all-pairings capacity compatibility assessment,
 D10-01. If no concrete new mechanism survives, the next preparation must be a
 bounded repair/pivot, not another renamed version of the local-hole obstacle.
 The next periodic ten-session audit is S020, covering S011–S020.
+
+## Frontier after S011 — recovery stop applied
+
+S011 completed D10-01's bounded assessment without proving or falsifying the
+actual all-pairings low-capacity obstruction. A concrete two-pair exchange
+retains all original-position and residual constraints, but its threshold
+witness requires overlapping edges. The resulting original block needs one
+unused completing term or pair; no mechanism supplies it. Its translated
+complement is not eta-free. The symbolic parabola family falsifies only the
+relaxation dropping full extremality, not the programme dependency.
+
+The complete all-pairings restrictions exactly encode original extremality
+on the odd-fiber domain. This clarification is not counted as a universal
+bridge, a new modulus, or a publication-level advance. S010's audit stop is
+therefore applied: no next equivalent local-hole or capacity-refinement unit.
+
+S012 will assess one repair directly toward D6-08, using maximal progressive
+blocks and the maximal-short-zero-sum argument behind GS Lemma 4.4(2). It must
+test a precise enlargement/replacement with all length witnesses and must not
+require reflection-pair form. D11-01 is prepared only. D6-10/D6-12 and the
+full classification remain untouched. The all-m target and current-status
+label remain unchanged. S020 remains the next ten-session audit.

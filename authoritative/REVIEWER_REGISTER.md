@@ -341,3 +341,12 @@ external-review gate CLOSED. S010 sent no outreach and inferred no willingness,
 endorsement, novelty certification or approval. Mathematical investigation
 remains independently OPEN; appropriate independent scrutiny remains a later
 publication-readiness requirement.
+
+## S011 external-review boundary
+
+The pinned main contained no newer substantive Xue Li feedback. Status remains
+owner-reported SENT / REPLY PENDING, confirmed reviewers NONE and external
+review CLOSED. S011 sent no outreach and inferred no willingness, endorsement,
+novelty certification or approval. This creates no owner-action blocker for
+the authorized mathematical repair; later adverse substantive feedback still
+requires reassessment of the affected direction.

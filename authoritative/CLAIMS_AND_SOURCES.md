@@ -317,3 +317,16 @@ Audit correction AC-010-01 updates C-48's current qualifier: m=3 was unresolved
 at S007 but is covered after S008-P3. No historical theorem is retracted.
 These programme deductions are not claimed novel, independently reviewed,
 formally verified or publication-ready.
+
+## S011 exchange assessment
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-61 | PROGRAMME_PROVED / DIAGNOSTIC | S011-P1: with length 8m and odd fibers, the complete all-maximal-pairings extremality and residual-exclusion system is equivalent to original 2m-zero-sum-freeness. | sessions/S011/ALL_PAIRINGS_CAPACITY.md; does not imply a lower bound on M_z |
+| C-62 | PROGRAMME_PROVED / FAILED-MECHANISM CERTIFICATE | S011-P2: the assessed two-pair threshold witness uses overlapping edges and lifts to a block missing one completing term or pair. Under low capacities, the relevant translated complements contain short even zero sums. | S011 proof, S010-P3/P4 and the existing unconditional eta input; no contradiction or universal eta-core obtained |
+| C-63 | PROGRAMME_PROVED / RELAXATION COUNTEREXAMPLE | S011-P3: eight copies in distinct quotient fibers of the parabola in F_p^2, p>=19 prime, give length 8p and every M_z<=8 below the threshold, but have an explicit 2p-zero sum. | S011 symbolic construction; not an actual CAND, D7, D9 or Property-D counterexample |
+
+ZS-10's pertinent hypotheses and Lemma 4.4(2) proof were rechecked in S011;
+see sessions/S011/SOURCE_CHECK.md. No new source, effective modulus range or
+current-openness conclusion is added. D10-01 is unresolved; the examined
+mechanism is stopped and a weaker D6-08 repair is prepared, not executed.

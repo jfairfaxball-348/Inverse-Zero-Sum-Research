@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S010",
-  "next_session": "S011",
-  "next_brief": "authoritative/S011_CANDIDATE_2_ALL_PAIRINGS_CAPACITY_BRIEF.md",
+  "last_completed_session": "S011",
+  "next_session": "S012",
+  "next_brief": "authoritative/S012_CANDIDATE_2_PROGRESSIVE_BLOCK_REPAIR_BRIEF.md",
   "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
   "programme_status": "OPEN",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — CAND-02 selected; S010 restricts D9-01 to low-multiplicity/all-pairings capacity obstructions; D9-01, D8-02 and universal D7-01 remain unresolved",
+  "candidate_under_due_diligence": "NONE — CAND-02 selected; S011 leaves D10-01 unresolved and stops the assessed two-pair mechanism at its original-position lifting defect; S012 prepares a weaker D6-08 progressive-block repair",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -27,7 +27,10 @@
     "S010-P1 PROGRAMME LEMMA: exact Fano incidence equations; arbitrary through-plane centers for gcd(m,6)=1 before sumset compatibility; complete center collision possible for odd-m residual lifts, impossible for even m. Residual labels alone are not a D9 counterexample.",
     "S010-P2 PROGRAMME LEMMA: for m>=3, a rank-two EGZ-extremal with maximum multiplicity at least floor((m-1)/2), or a qualifying progressive block, is isolated under one-term changes by unconditional eta inputs. Distinct one-change extensions must both have lower multiplicity.",
     "S010-P3 PROGRAMME RESULT: on actual CAND extremals for m>=3, D7-01 is equivalent to monochromatic quotient fibers and to some maximal pair-sum sequence reaching multiplicity floor((m-1)/2). Failure is equivalent to M_z(S)<=floor((m-1)/2)-1 for every z in H.",
-    "S010-P4 PROGRAMME OBSTRUCTION: any forced witness in an actual nonzero-delta CAND configuration yields after translation a zero-sum (2m-1)-block containing 0; its length-(6m+1) complement has no 1/2-term zero sum but has an even short zero sum, so is not an eta-extremal core."
+    "S010-P4 PROGRAMME OBSTRUCTION: any forced witness in an actual nonzero-delta CAND configuration yields after translation a zero-sum (2m-1)-block containing 0; its length-(6m+1) complement has no 1/2-term zero sum but has an even short zero sum, so is not an eta-extremal core.",
+    "S011-P1 PROGRAMME DIAGNOSTIC LEMMA: on the odd-fiber length-8m domain, extremality of every maximal pair-sum sequence together with all residual exclusions is equivalent to the original 2m-zero-sum prohibition; this is not a capacity lower bound.",
+    "S011-P2 PROGRAMME FAILED-MECHANISM CERTIFICATE: a concrete two-pair exchange reaches the kernel threshold only by adding an overlapping edge; its forced witness lifts to a block requiring one unused term or pair, not supplied by the argument. Under low capacities the translated complements contain short even zero sums and cannot supply eta-free cores.",
+    "S011-P3 PROGRAMME COUNTEREXAMPLE TO RELAXATION ONLY: for primes p>=19, the eight-fiber parabola sequence has length 8p, odd fibers and every M_z<=8<=floor((p-1)/2)-1, but an explicit 2p-zero sum. It is not CAND-extremal and does not refute D7 or Property D."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -97,6 +100,11 @@
       "id": "S010",
       "status": "COMPLETED",
       "record": "sessions/S010/CLOSEOUT.md"
+    },
+    {
+      "id": "S011",
+      "status": "COMPLETED",
+      "record": "sessions/S011/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -122,5 +130,7 @@
   "s009_mathematical_investigation_date": "2026-10-03",
   "s010_mathematical_investigation_date": "2026-10-03",
   "last_ten_session_audit": "sessions/S010/TEN_SESSION_AUDIT.md",
-  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; UNIVERSAL BRIDGE UNRESOLVED; ONE ALL-PAIRINGS CAPACITY ASSESSMENT WITH RECOVERY STOP"
+  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; UNIVERSAL BRIDGE UNRESOLVED; ONE ALL-PAIRINGS CAPACITY ASSESSMENT WITH RECOVERY STOP",
+  "s011_mathematical_investigation_date": "2026-10-03",
+  "current_route_disposition": "D10-01 UNRESOLVED; assessed two-pair/local-capacity mechanism STOPPED; D11-01 weaker progressive-block repair prepared for S012 only"
 }

@@ -5,9 +5,9 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation, with parallel external review.
-S010 and the S001–S010 audit are complete. The double-hole problem D9-01 is
-unresolved. A possible failure must have low multiplicity in every kernel
-pairing; S011 will assess the simultaneous all-pairings capacity constraints.**
+S011 is complete and D10-01 remains unresolved. The assessed two-pair exchange
+stops at an original-position lifting defect. S012 will assess a repair toward
+the weaker progressive-block bridge.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -27,17 +27,17 @@ and no next-session prompt.** There is currently no active owner blocker.
 3. Mathematical-investigation gate — OPEN: bounded proof/counterexample search, structural derivation and scoped computation/experiments may run under session briefs.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
 
-S010 proves an unconditional multiplicity criterion for one-change isolation
-and an exact equivalence, on actual CAND extremals, between the D7 capacity
-condition and monochromatic quotient fibers. It also shows why the forced
-witness does not automatically yield an eta-free complement. The full
-incidence restrictions and proof/falsification limits are recorded in
-[sessions/S010/DOUBLE_HOLE_RIGIDITY.md](sessions/S010/DOUBLE_HOLE_RIGIDITY.md).
+S010's exact capacity equivalence and witness-complement obstruction remain
+intact. S011 checks a concrete exchange: its threshold witness reuses original
+positions and needs a completing term or pair that the argument does not force.
+An explicit parabola family shows that length, parity and low capacity alone
+admit false positives; it is not an actual extremal counterexample. See
+[the S011 assessment](sessions/S011/ALL_PAIRINGS_CAPACITY.md).
 
-The [ten-session audit](sessions/S010/TEN_SESSION_AUDIT.md) finds bounded
-structural progress but no universal eta-core reduction, counterexample,
-classification or publication-ready contribution. No mathematical computation
-was run in S010.
+The [ten-session audit](sessions/S010/TEN_SESSION_AUDIT.md) required a repair
+if no new forcing mechanism survived. S011 applies that stop. There is still no
+universal eta-core reduction, actual counterexample, full classification or
+publication-ready contribution. No mathematical computation ran in S011.
 
 Beginning proof work does not certify that the target is open or novel. If
 later external feedback reveals prior art, a known solution, material overlap,

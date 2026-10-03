@@ -278,3 +278,11 @@ significance, independent scrutiny and manuscript remain outstanding.
 The JNT backup retains its earlier dated policy evidence and was not freshly
 rechecked in S010. No submission or acceptance is claimed. See
 sessions/S010/TEN_SESSION_AUDIT.md and sessions/S010/SOURCE_CHECK.md.
+
+## S011 publication boundary
+
+No venue decision or eligibility claim is changed; the dated S010 official
+checks remain the latest recorded refresh. S011's failed exchange and relaxed
+counterexample do not establish a publication-ready contribution. Actual-result
+novelty, significance, independent scrutiny and manuscript work remain pending.
+No submission, acceptance or publication occurred.

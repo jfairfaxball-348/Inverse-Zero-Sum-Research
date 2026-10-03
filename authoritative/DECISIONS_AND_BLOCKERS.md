@@ -230,3 +230,14 @@ Active owner blockers remain NONE. External review remains CLOSED, Xue Li's
 reply remains pending and no reviewer is confirmed. No outreach was sent.
 E-JC eligibility was rechecked; neither novelty nor publication readiness is
 established by this audit.
+
+## S011 bounded assessment and recovery decisions
+
+| ID | Date (UTC) | Decision | Basis |
+| --- | --- | --- | --- |
+| D-044 | 2026-10-03 | Record S011-P1–P3 with their diagnostic/failed-mechanism/relaxation-only limits. D10-01 and all unresolved universal bridges remain unresolved. No actual counterexample or universal eta-core is claimed. | sessions/S011/ALL_PAIRINGS_CAPACITY.md; exact original-position lift checked |
+| D-045 | 2026-10-03 | Apply D-043's recovery stop: stop the assessed local-hole/capacity exchange route and prepare S012 as one weaker D6-08 progressive-block repair, D11-01. Do not execute it within S011. | S010 audit and S011's missing completing term/pair; target identity unchanged |
+
+Active owner blockers remain NONE. Mathematical investigation remains OPEN;
+external review CLOSED; Xue Li reply pending; reviewers NONE. No outreach was
+sent. Venue eligibility is unchanged, and no publication readiness is inferred.
