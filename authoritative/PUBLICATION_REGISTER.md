@@ -330,3 +330,18 @@ literature have not been established to publication standard.
 The full classification, actual-result literature audit, independent scrutiny,
 manuscript and explicit submission authorization all remain outstanding. No
 submission, acceptance or publication occurred.
+
+## S015 publication boundary
+
+No venue decision or policy claim changes in S015. E-JC remains the leading
+eligible route and JNT the recorded backup under the latest policy checks.
+
+S015's core-transport, value-class saturation, deficit-descent and
+factorization results are internal programme mathematics. Their novelty,
+significance and relation to prior inverse-EGZ exchange literature have not
+been established to publication standard. The focused source non-hit is not a
+novelty certificate.
+
+The full classification, actual-result literature audit, independent scrutiny,
+manuscript and explicit submission authorization remain outstanding. No
+submission, acceptance or publication occurred.
