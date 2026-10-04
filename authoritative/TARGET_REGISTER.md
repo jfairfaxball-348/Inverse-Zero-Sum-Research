@@ -598,3 +598,23 @@ The current ambient mechanism stops at shifted outside residuals or
 cross-boundary exchanges. B-007 therefore suppresses an automatic S017 pending
 owner strategy reassessment. This workflow stop does not change the selected
 target or its source-status label.
+
+## S020 target-strategy boundary
+
+Date: 2026-10-04.
+
+CAND-02 remains exactly the selected all-m target and remains
+**SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. The S020 audit neither narrows the
+target nor certifies openness.
+
+S014–S016 provide durable all-m ambient structural results, and S017–S019 give
+a strict 2-primary counting/incidence reduction. Neither chain currently
+classifies CAND-02, constructs a counterexample, excludes a near-full deficit
+stratum, or supplies the mixed-primary transfer needed for the full target.
+
+D-050, D-057 and D-063 remain binding. No source- and hypothesis-justified
+S021 route clears the anti-churn bar, so B-008 is active. The owner must decide
+whether to retain full CAND-02 under a genuinely new strategy/source direction,
+deliberately narrow/reframe to a source-justified partial contribution with a
+fresh exact status audit, or reassess/switch the target. Until then no numbered
+successor is scheduled.
