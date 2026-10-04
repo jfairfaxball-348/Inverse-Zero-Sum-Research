@@ -346,3 +346,35 @@ case; no Property-D or homocyclic Lemma 4.3 input is imported. This focused
 source recheck does not change the target's current-status label or certify
 novelty.
 
+## S013 source-route comparison refresh
+
+Retrieval date: **2026-10-04**. This is a bounded route/applicability audit,
+not an openness or novelty certification. Existing ZS-10, ZS-22, ZS-23,
+ZS-32 and ZS-33 retain their earlier identities and inspection boundaries.
+
+| Claim | Classification | Bounded content | Support / remaining boundary |
+| --- | --- | --- | --- |
+| C-67 | SOURCE_RESULT / APPLICABILITY LIMIT | In the standard restricted-length invariant `s_{<=t}(G)`, the universal finite regime starts at `t>=exp(G)`; Wang--Zhao give the exact rank-two constants `s_{<=D(G)-k}(C_a+C_b)=D(G)+k`, Ebert--Grynkiewicz classify the corresponding rank-two p-group extremals, and Zhao--Hong 2026 prove a broad bound at cutoff `D(G)-2`. These results do not force a zero sum in S012's required interval `1,...,c+1`, where `c+1<=m-1<exp(G_m)=2m`. | ZS-35, ZS-36, ZS-37; Zhang ZS-32 supplies the explicit `t<exp(G)` nonexistence boundary. This does not exclude a CAND-specific theorem with stronger hypotheses. |
+| C-68 | SOURCE_RESULT / INVARIANT BOUNDARY | Current near-extremal rank-two structure for `D_k`, Narkiewicz-sense `eta^N`, and `disc`, plus Schlage-Puchta's sufficiently-large-prime Property-D theorem, does not supply a new unconditional all-`m` ordinary-EGZ one-change stability theorem at `4m-5`. | ZS-38, ZS-39, ZS-20 and existing rank-two `disc` sources. Different forbidden configurations are not imported into S008/S009. |
+| C-69 | SOURCE_COMPARISON / STRATEGIC GAP | S013's bounded comparison found no checked source input meeting the programme's promotion bar for Route A, B or C. No mathematical route is promoted; B-006 is activated for owner strategy/target reassessment. | `sessions/S013/SOURCE_ROUTE_COMPARISON.md`. This is a workflow conclusion from checked applicability, not a claim that the literature contains no such theorem. |
+
+### S013 added/refreshed primary sources
+
+| ID | Source | S013 inspection level | Purpose / limit |
+| --- | --- | --- | --- |
+| ZS-35 | Chunlin Wang and Kevin Zhao, *On zero-sum subsequences of length not exceeding a given number*, J. Number Theory 176 (2017), 365--374, DOI 10.1016/j.jnt.2016.12.019 | Theorem statement cross-checked through the later Ebert--Grynkiewicz primary paper and publisher metadata | Exact rank-two `s_{<=t}` line; cutoff remains at least exponent |
+| ZS-36 | John J. Ebert and David J. Grynkiewicz, *Structure of a sequence with prescribed zero-sum subsequences: Rank two p-groups*, European J. Combin. 118 (2024), 103888, DOI 10.1016/j.ejc.2023.103888 | Publisher/arXiv theorem statements, especially Theorems 1.1 and 1.4, inspected | Completed restricted-length rank-two extremal structure under stronger no-short-zero-sum hypotheses than CAND supplies |
+| ZS-37 | Kevin Zhao and Siao Hong, *On zero-sum subsequences over finite abelian groups of length not exceeding a given number*, Colloq. Math., online first 1 Sep. 2026, DOI 10.4064/cm9599-7-2026 | Official publisher abstract/main statement inspected | Current broad `s_{<=t}` result; correct invariant but wrong length scale for S012 |
+| ZS-38 | Wanzhen Hui and Qinghai Zhong, *On the inverse problem of the Narkiewicz-sense eta-constant for finite abelian groups of rank 2*, JCTA 224 (2026), 106238, DOI 10.1016/j.jcta.2026.106238 | Current version-of-record theorem statements, including Theorems 1.1--1.2, inspected | Near-extremal homocyclic structure for `eta^N`; different forbidden configuration from ordinary EGZ |
+| ZS-39 | Qinghai Zhong, *On the Inverse Problem of the k-th Davenport Constants for Groups of Rank 2*, Combinatorica 45 (2025), article 31, DOI 10.1007/s00493-025-00153-3 | Publisher/introduction/main-scope record rechecked | Current rank-two inverse structure for `D_k`; distinct invariant |
+| ZS-40 | Weidong Gao, Xiao Jiang, Yuanlin Li and Huijuan Qi, *On the existence of zero-sum subsequences with length not divided by a given number*, J. Number Theory 284 (2026), 15--37, DOI 10.1016/j.jnt.2025.12.002 | Publisher abstract/scope inspected | Current modular-length line; chiefly cyclic and not a bounded-length zero sum in `G_m` |
+| ZS-41 | Weidong Gao, Xiao Jiang and Yucen Mu, *Two local zero-sum problems*, arXiv:2607.11313v1 (2026-07-13) | Current abstract inspected | Local divisibility invariants for integer sequences; not the group-valued S012 splice condition |
+
+S013 also rechecked ZS-32 (Zhang, rank-three prescribed-length invariants),
+ZS-23 (Li--Yin, same-ambient rank-three `disc(G)`), ZS-20
+(Schlage-Puchta, Property D), ZS-33 (Girard--Zotova direct EGZ),
+ZS-10 (Girard--Schmid 2019 equal-factor direct/conditional reduction) and
+ZS-22 (Girard--Schmid 2020 distinct-family inverse theorem).
+
+No bounded search non-hit in S013 upgrades CAND-02 from
+**SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
