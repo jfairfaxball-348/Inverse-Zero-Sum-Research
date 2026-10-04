@@ -98,3 +98,11 @@ arguments. Retired routes are not silently revived without new information.
 | --- | --- | --- | --- | --- |
 | FL-050 | 2026-10-04 | Exact-threshold extension alone gives the generic coverage identity `Sigma_{n-1}(S)=G`, which by itself has little classification content. | Demand positional consequences. In S014 the clone swap makes all old support copies essential and yields the exact deletion/replacement core; do not count generic saturation alone as progress. | S014-P1/P2 |
 | FL-051 | 2026-10-04 | The new ambient replacement theorem can still degenerate into an isolated one-change problem and thereby recreate the stopped S008--S011 architecture under different notation. | S015 must use the simultaneous family of ambient cores and multiplicity-deficit witnesses. If it needs the old kernel local-hole/capacity machinery to move, record route collapse and stop. | S014-P3/P4 promotion assessment |
+
+## S015 replacement-core lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-052 | 2026-10-04 | Treating `K_x` as an arbitrary positional intersection hides repeated-value structure and risks counting different copies of the same value as independent incidence data. | Use S015-P1: core membership is all-or-nothing on each support value class. Work with weighted support classes and exact transported cores. | S015-P1 |
+| FL-053 | 2026-10-04 | A nontrivial safe replacement does not automatically iterate into a monotone contradiction: the move transports the core by swapping the external target token with one core occurrence, preserving the augmented core multiset. | Do not claim cumulative growth from repeated safe moves. Use the exact multiplicity-deficit witnesses and residual-factorization deficit instead. | S015-P1/P2 |
+| FL-054 | 2026-10-04 | Even a core of size near `n-1` need not be unique merely from its size; the remaining representation freedom must be tracked explicitly. | Use S015-P4. Deficit zero is unique, deficit one has a forced equal-valued reservoir, and deficit two is the first unresolved fixed-sum pair system. | S015-P4 |
