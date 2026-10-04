@@ -618,3 +618,22 @@ whether to retain full CAND-02 under a genuinely new strategy/source direction,
 deliberately narrow/reframe to a source-justified partial contribution with a
 fresh exact status audit, or reassess/switch the target. Until then no numbered
 successor is scheduled.
+
+## Post-S020 target reassessment authorization
+
+Date: 2026-10-04.
+
+Owner decision D-066 selects B-008 option 3: **reassess/switch target**.
+CAND-02 is therefore no longer authorized for automatic proof continuation.
+It remains the historical incumbent until an explicit replacement is selected,
+so the repository does not silently rewrite the selected-target record.
+
+S021 will freshly re-audit CAND-01 and CAND-03 and may introduce at most two
+new source-defined replacement candidates after current primary-source due
+diligence. CAND-04 remains retired unless positive primary evidence shows that
+its hidden direct rank-three EGZ dependency has materially changed.
+
+S021 is target-selection work only. It must return a concrete recommendation
+and viable alternatives for owner selection; it may not silently switch target
+or begin mathematical investigation on a replacement.
+
