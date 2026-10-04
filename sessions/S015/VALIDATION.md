@@ -22,7 +22,7 @@ The S015 deductions were checked symbolically for arbitrary `m>=2`, with
    Together with S014's existing `n-2` exclusion and `n-1` isolation,
    this yields the stated target/source bounds.
 4. **Deficit descent.** After a safe `b -> a` replacement, deleting all
-   `a` copies removes exactly the original `a)-positions plus the replaced
+   `a` copies removes exactly the original `a`-positions plus the replaced
    source position. S014-P4 therefore gives the claimed exact length
    `n-v_a(S)-2` witness in the original support-deleted sequence with that
    source position removed.
@@ -57,9 +57,22 @@ symbolic all-`m` deductions.
 
 ## Repository validation
 
-The exact authority checker and warranted JSON/session/prompt checks are run
-against the synchronized candidate authority before final publication. Remote
-`main` and the final containing commit are then re-read separately.
+The repository checker was run on a materialized structural mirror carrying
+S015 as the unique completed checkpoint and S016 as the single ready successor:
+
+`python3 scripts/check_authority.py`
+
+The first mirror setup attempt created `S00`--`S15` directories instead of
+`S000`--`S015`; the checker correctly failed because all checkpoint records
+were therefore absent. This was a validation-mirror construction error only;
+no repository file was changed by that attempt. After correcting the directory
+names, the exact checker passed:
+
+`PASS: authority state, session uniqueness, independent gate semantics, blocker/prompt consistency, 0 local links, and original licence`
+
+A JSON parse plus explicit checks for one S015 checkpoint, completed S015 state,
+ready S016 state and live-prompt status also passed. Live GitHub authority is
+re-read separately after the final writes.
 
 Repository checks establish bookkeeping consistency only; they do not certify
 mathematical truth, novelty, independent review or publication readiness.
