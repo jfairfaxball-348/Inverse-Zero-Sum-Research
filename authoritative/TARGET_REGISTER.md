@@ -536,3 +536,23 @@ one-term extension saturation / support-cloning at the exact EGZ threshold.
 This route selection does not change the target's evidence status. CAND-02
 remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**, and no openness or novelty
 claim is inferred from the absence of an exact completion in prior searches.
+
+## S014 target boundary
+
+Date: 2026-10-04.
+
+CAND-02 remains exactly the selected all-`m` target and remains
+**SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. S014 neither narrows the target nor
+certifies that the new deductions are novel.
+
+S014 adds a new internal structural layer in the original ambient group. With
+`n=2m`, every extremal has full `(n-1)`-sum coverage; support cloning makes
+all copies of each support value essential in the corresponding target
+representation; and the resulting cores `K_x(S)` exactly classify
+single-position replacements that preserve extremality. Multiplicity `n-2`
+is forbidden.
+
+D14-01 is the next bounded question: whether a support core can contain
+different-valued old positions and, if so, what simultaneous incidence
+constraints follow. This is not a claim that D14-01 is open in the literature
+or that its resolution alone would complete CAND-02.
