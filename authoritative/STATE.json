@@ -7,10 +7,10 @@
   "last_completed_session": "S020",
   "next_session": "S021",
   "next_brief": "authoritative/S021_TARGET_REASSESSMENT_BRIEF.md",
-  "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
+  "stage": "P1_TARGET_REASSESSMENT_WITH_PARALLEL_EXTERNAL_REVIEW",
   "programme_status": "S021_READY_POST_CAND02_TARGET_REASSESSMENT",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "CAND-02 remains the full all-m inverse EGZ target. S019 proves that, on the verified 2-primary class, unrestricted binary inclusion/design constraints through codegree n admit every S016 delta=0/1/2 signature; no near-full stratum, actual 2n/3n zero-sum layer, modulo-4 split or mixed-primary case is resolved.",
+  "candidate_under_due_diligence": "CAND-01 and CAND-03 require fresh current-status re-audit; S021 may add at most two new source-defined replacement candidates. CAND-02 remains the historical incumbent until explicit owner replacement selection, but its proof programme is paused.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -201,9 +201,9 @@
   "s009_mathematical_investigation_date": "2026-10-03",
   "s010_mathematical_investigation_date": "2026-10-03",
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
-  "audit_verdict": "S020 confirms durable S014-S019 ambient/counting progress but no full classification, deficit exclusion, mixed-primary transfer or publication-ready contribution. No source- and hypothesis-justified non-equivalent S021 route clears the anti-churn bar; B-008 is active and the live prompt is suppressed.",
+  "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "D-050, D-057 and D-063 remain binding. D7-D10 local-hole/capacity/Fano, progressive blocks, S016 shifted-residual/cross-boundary continuations and the pure binary design route remain stopped. The remaining modulo-4/actual-zero-sum arithmetic lacks a committed entry theorem, and mixed-primary counting still requires an exact full-group prescribed-length theorem. B-008 requires owner strategy disposition before S021.",
+  "current_route_disposition": "CAND-02 proof continuation is paused after S020. D-050, D-057 and D-063 route stops remain historical binding boundaries. S021 will re-audit CAND-01/CAND-03 and up to two new replacement candidates, then return an explicit target recommendation for owner selection.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-04",
@@ -219,5 +219,6 @@
   "s019_mathematical_investigation_date": "2026-10-04",
   "s019_source_refresh_date": "2026-10-04",
   "s020_audit_date": "2026-10-04",
-  "b008_resolution_date": "2026-10-04"
+  "b008_resolution_date": "2026-10-04",
+  "target_reassessment_date": "2026-10-04"
 }
