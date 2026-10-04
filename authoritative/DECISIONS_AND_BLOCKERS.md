@@ -334,3 +334,42 @@ target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical investigation
 remains OPEN; external review remains CLOSED and parallel. Xue Li's reply
 remains pending absent substantive committed feedback. No outreach was sent and
 no willingness, endorsement, novelty certification or approval is inferred.
+
+
+## S016 near-full threshold-star decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-055 | 2026-10-04 | Record S016-P1--P4 as programme-proved bounded mathematics. A near-full support core reconstructs a threshold deletion star whose augmented core is the exact common intersection of all `n)-zero sums; deficits 0--2 have exact residual normal forms; the common-deletion witness is the same residual family; deficit descent obeys the shifted exchange equation. These are not novelty or publication claims. | `sessions/S016/NEAR_FULL_REPLACEMENT_CORE.md`; S014/S015 ambient inputs and the already-rechecked threshold only. |
+| D-056 | 2026-10-04 | Do not schedule a cosmetic S017. The remaining near-full question is exactly a large-common-intersection threshold-star existence problem with an uncontrolled shifted-residual/cross-boundary exchange. Activate **B-007** for owner strategy reassessment before another numbered mathematical session. The stopped D7--D10 and progressive routes remain stopped. | S016-P3/P4 stopping obstruction plus D-050's anti-churn rule. |
+
+### B-007 — strategy reassessment after the ambient near-full stop
+
+**ACTIVE.**
+
+S014--S016 produced a genuinely new ambient replacement-core theory, ending
+with the S016 threshold-star normal form. It does not prove that nontrivial
+near-full cores exist or are impossible. The exact remaining escape is a
+shifted outside residual or cross-boundary exchange; no current ambient theorem
+controls it. Simply renaming the same configuration as a threshold-star problem
+would be session churn.
+
+**Required owner action:** choose one strategic disposition before another
+numbered mathematical session:
+
+1. retain full CAND-02 and authorize a materially new theorem/mechanism or
+   tightly focused source-acquisition direction that controls threshold
+   zero-sum intersections or the shifted exchanges, without returning to the
+   stopped routes;
+2. narrow to a source-justified contribution and re-audit that exact scope; or
+3. reassess/switch the selected target.
+
+While B-007 is active, `next_session` and `next_brief` are null,
+`next_prompt_status=SUPPRESSED_OWNER_BLOCKER`, and there is no live
+`authoritative/NEXT_SESSION_PROMPT.md`.
+
+CAND-02 itself remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+Target, publication and mathematical-investigation gates remain OPEN; external
+review remains CLOSED and parallel. Xue Li's reply remains pending absent
+substantive committed feedback. No outreach was sent and no willingness,
+endorsement, novelty certification or approval is inferred.

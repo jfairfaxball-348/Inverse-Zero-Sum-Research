@@ -632,3 +632,31 @@ whether a nontrivial support core can have `delta_a<=2`. The stopped
 D7--D10 and progressive architectures remain stopped. External review remains
 CLOSED, Xue Li reply pending, owner blockers NONE. S020 remains the next
 periodic audit.
+
+
+## Frontier after S016 — near-full threshold stars and ambient-route stop
+
+S016 proves a new exact normalization. For a support core `K_a` of deficit
+`delta`, adjoin a fresh `a` and set `M=K_a a_*`. Every deletion of a
+token of `M` is extremal, the corresponding core is `M` minus that token,
+and one common residual family reconstructs every target representation.
+Equivalently, `M` is exactly the common positional intersection of all
+`n)-term zero sums in the threshold sequence `U`.
+
+For `delta=0` the threshold zero sum is unique. For `delta=1` all
+`n)-zero sums use `M` plus one term from a single equal-valued reservoir.
+For `delta=2` they use `M` plus an edge of a fixed-sum positional graph;
+the value-class component structure is classified exactly.
+
+The S015 common-deletion theorem becomes exactly the same residual family.
+Deficit descent instead forces
+`|Y|=delta+|X|` and
+`sigma(Y)-sigma(X)=q+u-t`. Its shifted-residual and cross-boundary escape
+modes are not ruled out by the present ambient theory. Thus D15-01's
+existence/exclusion question remains unresolved.
+
+No old quotient/capacity/progressive machinery was used. A direct S017 attack
+on the same threshold-star existence question would be cosmetic absent a new
+forcing theorem. B-007 is active for owner strategy reassessment and next-
+session authority is suppressed. S020 remains the next periodic audit if the
+programme later reaches it.

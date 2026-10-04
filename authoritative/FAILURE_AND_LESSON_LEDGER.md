@@ -106,3 +106,12 @@ arguments. Retired routes are not silently revived without new information.
 | FL-052 | 2026-10-04 | Treating `K_x` as an arbitrary positional intersection hides repeated-value structure and risks counting different copies of the same value as independent incidence data. | Use S015-P1: core membership is all-or-nothing on each support value class. Work with weighted support classes and exact transported cores. | S015-P1 |
 | FL-053 | 2026-10-04 | A nontrivial safe replacement does not automatically iterate into a monotone contradiction: the move transports the core by swapping the external target token with one core occurrence, preserving the augmented core multiset. | Do not claim cumulative growth from repeated safe moves. Use the exact multiplicity-deficit witnesses and residual-factorization deficit instead. | S015-P1/P2 |
 | FL-054 | 2026-10-04 | Even a core of size near `n-1` need not be unique merely from its size; the remaining representation freedom must be tracked explicitly. | Use S015-P4. Deficit zero is unique, deficit one has a forced equal-valued reservoir, and deficit two is the first unresolved fixed-sum pair system. | S015-P4 |
+
+
+## S016 near-full ambient lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-055 | 2026-10-04 | In a near-full core, the ambient two-extension/common-deletion witness can look like a second constraint, but after deletion-star normalization it is exactly the same residual family already present in core factorization. | Factor the witness completely before counting it as independent information. Do not double-count S015-P3 against S015-P4. | S016-P3 |
+| FL-056 | 2026-10-04 | Deficit descent and common deletion have the same cardinality after support deletion but their sums differ by the nonzero source-target shift. This leaves either a shifted outside residual or a cross-boundary exchange, not a contradiction. | Track the exact sum shift and boundary exchange. A near-full size argument alone cannot force `delta>=3`. | S016-P4 |
+| FL-057 | 2026-10-04 | Once the ambient system is normalized as a threshold deletion star, scheduling another session merely to restate the same existence problem under the new name would be dependency churn. | Require a genuinely new theorem/mechanism or source input controlling large zero-sum intersections or shifted exchanges; otherwise stop and obtain an owner strategy decision. | S016 disposition / B-007 |

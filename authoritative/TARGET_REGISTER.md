@@ -577,3 +577,24 @@ The next bounded dependency D15-01 asks only about the first unresolved
 near-full ambient strata, `delta_a<=2`, under a nontrivial support incidence.
 This is not a claim that D15-01 is open in the literature or that resolving it
 would itself complete the full classification.
+
+
+## S016 target boundary
+
+Date: 2026-10-04.
+
+CAND-02 remains exactly the selected all-`m` target and remains
+**SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. S016 neither narrows the target nor
+establishes openness or novelty.
+
+D15-01 is not settled as an existence question. S016 proves that any actual
+near-full nontrivial core would induce a threshold deletion star whose
+augmented core is the exact common intersection of all `n)-term zero sums.
+Deficits zero, one and two have exact residual normal forms, and the remaining
+deficit-descent constraint is the shifted exchange equation recorded in S016.
+
+No actual `delta<=2` extremal is constructed and no theorem excludes one.
+The current ambient mechanism stops at shifted outside residuals or
+cross-boundary exchanges. B-007 therefore suppresses an automatic S017 pending
+owner strategy reassessment. This workflow stop does not change the selected
+target or its source-status label.

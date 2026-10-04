@@ -402,3 +402,16 @@ endorsement, novelty certification or approval.
 The new S015 deductions have not been independently reviewed. If they survive
 into an actual contribution, appropriate independent result/manuscript scrutiny
 remains separately required before journal submission.
+
+
+## S016 external-review boundary
+
+No newer committed record contains substantive Xue Li feedback. Status remains
+owner-reported SENT 2026-10-02 / REPLY PENDING, confirmed reviewers NONE and
+external-review gate CLOSED. S016 sent no outreach and inferred no willingness,
+endorsement, novelty certification or approval.
+
+B-007 concerns the mathematical strategy after the ambient route's exact
+stopping frontier. It does not reinterpret silence or alter the independent
+external-review gate. Any later substantive reply must still be assessed
+honestly under D-030.

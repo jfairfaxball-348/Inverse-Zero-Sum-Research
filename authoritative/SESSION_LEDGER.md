@@ -247,3 +247,23 @@ computation remain CLOSED.
 - External-review gate remains CLOSED; Xue Li reply remains pending.
 - Next numbered session: S016, D15-01 near-full ambient replacement cores.
 - S020 remains the next periodic ten-session audit.
+
+
+## S016 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S016 | COMPLETED BOUNDED INVESTIGATION; NEAR-FULL NORMAL FORM PROVED; EXISTENCE UNRESOLVED; OWNER STRATEGY BLOCKER ACTIVE | 51b4173dcc26eed2361f670c31d77cc00311cefd | Threshold deletion-star reconstruction; exact delta 0/1/2 zero-sum-family normal forms; common-deletion factorization; shifted deficit-descent exchange obstruction | [S016 closeout](../sessions/S016/CLOSEOUT.md) |
+
+- The supplied checkpoint matched live `main`; S016 was unique at entry.
+- S016-P1--P4 remain entirely in the ambient replacement-core system.
+- D15-01 is structurally sharpened but the existence or impossibility of an
+  actual nontrivial `delta<=2` core remains unresolved.
+- No quotient/kernel capacity, Fano or progressive-block machinery was used.
+- No mathematical computation, formalisation or outreach ran.
+- A focused source check found adjacent fixed-length EGZ literature but no
+  checked theorem directly resolving the threshold-star intersection problem;
+  the non-hit is not novelty evidence.
+- B-007 is active; no S017 or live next-session prompt is scheduled.
+- External review remains CLOSED; Xue Li reply pending.
+- S020 remains the next periodic audit if the programme later reaches it.

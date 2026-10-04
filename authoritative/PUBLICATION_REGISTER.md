@@ -345,3 +345,19 @@ novelty certificate.
 The full classification, actual-result literature audit, independent scrutiny,
 manuscript and explicit submission authorization remain outstanding. No
 submission, acceptance or publication occurred.
+
+
+## S016 publication boundary
+
+No venue decision or policy claim changes in S016. E-JC remains the leading
+eligible route and JNT the recorded backup under the latest policy checks.
+
+The S016 threshold-star reconstruction and near-full residual classifications
+are internal programme mathematics. Their novelty, significance and relation
+to prior inverse-EGZ literature have not been established to publication
+standard; the focused search non-hit is not a novelty certificate.
+
+The full classification, actual-result literature audit, independent scrutiny,
+manuscript and explicit submission authorization remain outstanding. B-007 is
+a research-strategy blocker, not evidence of publication readiness. No
+submission, acceptance or publication occurred.

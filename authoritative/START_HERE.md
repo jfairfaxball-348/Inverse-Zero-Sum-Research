@@ -151,3 +151,36 @@ rather than re-enter the old kernel/capacity/progressive architectures.
 CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. External review is
 CLOSED and parallel; Xue Li's reply remains pending absent substantive
 committed feedback. S020 remains the next periodic audit.
+
+
+## Frontier after S016
+
+S016 derives an exact **threshold deletion-star** normal form for near-full
+ambient cores. If `K_a` has deficit `delta`, adjoining a fresh target
+token gives `U=MO` with `M=K_a a_*`. Every deletion of a token of `M`
+is extremal, every corresponding core is `M` minus that token, and the same
+outside residual family reconstructs all representations. Thus `M` is
+exactly the positional intersection of every `n)-term zero sum in `U`.
+
+For `delta=0` there is a unique `n)-zero sum. For `delta=1` the zero
+sums are `M` plus one term from one equal-valued reservoir. For
+`delta=2` they are `M` plus an edge of a completely classified fixed-sum
+value-class graph.
+
+The S015 common-deletion witness is not independent in this normalization. The
+remaining deficit-descent input gives the exact shifted exchange
+`|Y|=delta+|X|`,
+`sigma(Y)-sigma(X)=q+u-t`. The present ambient theorems do not exclude the
+shifted-residual or cross-boundary escape modes. Therefore S016 does not prove
+or construct a nontrivial near-full core.
+
+Per D-050's anti-churn rule, no cosmetic S017 is scheduled. **B-007 is active**
+for owner strategy reassessment. While it is active there is no live next-
+session prompt. The owner must choose a materially new full-target mechanism or
+source-acquisition direction, a deliberate narrowing/re-audit, or target
+reassessment.
+
+CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Target, publication
+and mathematical-investigation gates remain OPEN; external review remains
+CLOSED. Xue Li's reply remains pending. S020 remains the next periodic audit if
+the programme later reaches it.

@@ -434,3 +434,25 @@ replacement, one-position/one-term exchange and inverse-EGZ formulations did
 not surface an additional primary theorem statement directly matching
 C-75--C-78. This is a bounded search non-hit and **does not** certify novelty,
 openness, completeness, significance or publishability.
+
+
+## S016 near-full threshold-star claims
+
+Proof / focused-check date: **2026-10-04**. These are internal programme
+deductions, not independently reviewed, formally verified or novelty-certified.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-79 | PROGRAMME_PROVED | S016-P1: adjoining the target to a core of deficit `delta` gives a threshold deletion star `U=MO`. Every token deletion from `M` is extremal, every transported target core is `M` minus that token, one residual family is shared by the orbit, and `M` is exactly the common intersection of all `n)-zero sums in `U`. | `sessions/S016/NEAR_FULL_REPLACEMENT_CORE.md`; S014/S015 only. |
+| C-80 | PROGRAMME_PROVED | S016-P2: delta 0 gives a unique threshold zero sum; delta 1 gives `M` plus one occurrence from one equal-valued outside reservoir; delta 2 gives `M` plus an edge of a fixed-sum positional graph, with an exact value-class component/intersection classification. | S016 proof; a necessary normal form, not an existence theorem. |
+| C-81 | PROGRAMME_PROVED | S016-P3/P4: the S015 common-deletion family is exactly the same residual family, while deficit descent satisfies `|Y|=delta+|X|` and `sigma(Y)-sigma(X)=q+u-t`. | S016 proof; the shifted residual or cross-boundary exchange remains uncontrolled. |
+| C-82 | PROGRAMME_BOUNDARY | S016 does not prove `delta>=3` and does not construct an actual `delta<=2` nontrivial core. The current ambient system stops at the shifted-exchange frontier; no cosmetic S017 is promoted. | D15-01 remains unresolved as an existence/exclusion question; B-007 active. |
+
+### S016 focused source boundary
+
+A narrow search for unique/common-intersection/critical-deletion EGZ theorems
+surfaced adjacent generalized/fixed-length literature, including the
+already-recorded Gao--Hong--Peng 2022 line (ZS-42), but no checked primary
+statement directly resolving the S016 threshold-star common-intersection
+problem. No new source is promoted. This search non-hit is not evidence of
+novelty, openness, completeness, significance or publishability.

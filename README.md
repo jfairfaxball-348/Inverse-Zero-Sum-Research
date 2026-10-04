@@ -108,3 +108,23 @@ factorization. Deficit zero is unique; deficit one is a forced equal-valued
 reservoir; deficit two is the first unresolved near-full case. S016 attacks
 that near-full ambient stratum only. These programme deductions are not
 novelty or publication-readiness claims.
+
+
+## S016 near-full threshold-star checkpoint
+
+S016 converts every hypothetical near-full nontrivial ambient core into an
+exact threshold deletion star. After adjoining the target, the augmented core
+is the common positional intersection of all `n)-term zero sums, and every
+single deletion from that common core leaves an extremal. Deficits zero, one
+and two have exact residual normal forms; the deficit-two residual system is a
+classified fixed-sum positional graph.
+
+The common-deletion witness supplies no additional residual family. Deficit
+descent instead produces a shifted-residual/cross-boundary exchange equation,
+and the present ambient theory does not rule out either escape. Thus S016 does
+not prove `delta>=3` and does not construct a `delta<=2` example.
+
+A direct S017 restatement would be cosmetic. B-007 is active for owner strategy
+reassessment, so no live next-session prompt is present. The old
+kernel/capacity and progressive routes remain stopped; CAND-02 remains the full
+selected target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
