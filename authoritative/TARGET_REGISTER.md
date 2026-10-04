@@ -524,3 +524,15 @@ strategy, narrow it to a source-justified contribution followed by a fresh
 status audit, or reassess/switch the target. Until that decision the selected
 target remains CAND-02 and the mathematical-investigation gate remains OPEN,
 but no next numbered session is scheduled.
+
+
+## Post-S013 owner disposition
+
+On 2026-10-04 the owner resolved B-006 by choosing to **retain the full CAND-02
+target**. There is no narrowing, no subfamily substitution and no target switch.
+
+The next mathematical route is deliberately new: S014 will assess global
+one-term extension saturation / support-cloning at the exact EGZ threshold.
+This route selection does not change the target's evidence status. CAND-02
+remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**, and no openness or novelty
+claim is inferred from the absence of an exact completion in prior searches.
