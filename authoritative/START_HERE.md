@@ -16,11 +16,11 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S013 is completed. Its bounded source comparison found no checked route
-meeting the promotion bar after the S010--S012 recovery stops. Universal D6-08
-remains unresolved, the stopped D7/capacity mechanism remains stopped, and
-B-006 requires owner target/strategy reassessment before another numbered
-session is scheduled.**
+**S013 is completed. Owner decision D-050 retains full CAND-02 and resolves
+B-006. S014 is READY as one bounded assessment of a materially new global
+extension-saturation/support-cloning mechanism. Universal D6-08 remains
+unresolved; the stopped D7/capacity/local-hole and progressive-block
+architectures remain stopped.**
 
 CAND-02 remains selected: for every integer m>=2, classify every length-8m
 sequence in `G_m=C_2+C_{2m}+C_{2m}` with no 2m-term zero sum.
@@ -28,7 +28,7 @@ Status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
 
 - Target, publication-eligibility and mathematical-investigation gates: OPEN.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: B-006 — target/strategy reassessment after S013.
+- Active owner blockers: NONE.
 - Xue Li Stage-1 status: owner-reported SENT 2026-10-02 / REPLY PENDING.
 
 No willingness, endorsement, novelty certification or approval follows from
@@ -58,20 +58,30 @@ S013 compared three distinct source routes against those exact hypotheses:
 No source non-hit is an openness or novelty claim. Full details:
 [S013 source-route comparison](../sessions/S013/SOURCE_ROUTE_COMPARISON.md).
 
-## Recovery and owner blocker
+## Post-S013 owner strategy resolution
 
-D-047 required an owner reassessment if no route cleared the source-backed
-promotion bar. S013 triggers that condition. B-006 is therefore ACTIVE.
+D-050 records the owner's choice of B-006 option 1: retain the full CAND-02
+target and authorize a materially new strategy rather than narrowing or
+switching targets.
 
-The owner must choose whether to retain full CAND-02 with a materially new
-mechanism/source-acquisition strategy, narrow CAND-02 to a source-justified
-contribution followed by a fresh scope audit, or reassess/switch the selected
-target. Until then there is no live next-session prompt or scheduled next brief.
-The target and mathematical-investigation gates remain OPEN; the blocker is a
-workflow stop against automatic continuation, not a silent target change.
+S014 is prepared on a global **one-term extension saturation / support-cloning**
+mechanism. It starts from the exact direct threshold, not from D6-08 or the
+stopped kernel-capacity route: for an extremal length-`8m` sequence, adjoining
+one term produces a length-`8m+1` sequence and therefore forces a
+`2m`-term zero sum. S014 must rigorously test what additional rigidity follows
+when the adjoined term duplicates a support value, including the positional
+swap argument and simultaneous constraints across all support values.
 
-S020 remains the next periodic audit if the programme later continues through
-that session number.
+No consequence of that mechanism is authoritative until proved in S014.
+If it yields only the generic saturation identity or collapses back to a
+stopped route, S014 must record that failure and not schedule a cosmetic
+follow-up. If it yields a genuinely new structural obligation, the next
+session may pursue that obligation under a fresh brief.
+
+The target remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. External review is
+still CLOSED and parallel; Xue Li's reply remains pending absent substantive
+committed feedback. S020 remains the next periodic audit if the programme
+reaches it.
 
 ## Authority and reconciliation rule
 
