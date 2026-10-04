@@ -308,3 +308,16 @@ The S014 mechanism is a planning authorization, not a proved mathematical
 claim. Its starting observation must be established inside S014 from the
 published threshold and original-position swap logic before any derived
 consequence is recorded.
+
+## S014 extension-saturation decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-051 | 2026-10-04 | Record S014-P1--P4 as programme-proved bounded mathematics: exact threshold coverage, all-copy support essentiality, the ambient deletion/replacement-core theorem, and the forbidden `2m-2` multiplicity stratum with exact deficit witnesses. These are not novelty or publication claims. | `sessions/S014/EXTENSION_SATURATION.md`; published GS 2019 threshold rechecked. |
+| D-052 | 2026-10-04 | Promote D14-01 and schedule S015 on simultaneous **ambient** replacement-core incidence. The promotion bar is met because S014 supplies a new original-group replacement theorem, not merely generic saturation. S015 must stop if it reduces to the stopped `C_m^2` kernel one-change/local-hole/capacity or progressive architecture. | S014-P2--P4 and the D-050 strategy boundary. |
+
+Active owner blockers remain **NONE**. CAND-02 is not narrowed or switched.
+Mathematical investigation remains OPEN; external review remains CLOSED and
+parallel. Xue Li's reply remains pending absent substantive committed feedback.
+No outreach was sent and no willingness, endorsement, novelty certification or
+approval is inferred.
