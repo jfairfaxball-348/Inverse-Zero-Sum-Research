@@ -72,9 +72,12 @@ the staged branch, as required by the blocker protocol.
 
 ## Publication protocol
 
-Before moving `main`, the staged changed Markdown records are checked for
-broken local links and trailing whitespace, and remote `main` is rechecked
-against the pinned incoming SHA. Publication is non-force only. Afterward the
+Before moving `main`, the staged changed Markdown records were checked in two
+batches. No trailing whitespace was found. All newly introduced S013 local-link
+targets (`SOURCE_ROUTE_COMPARISON.md`, `CLOSEOUT.md`, `VALIDATION.md`) resolve
+on the staged branch; all other extracted local links pre-existed in the
+validated incoming authority tree. Remote `main` is then rechecked against the
+pinned incoming SHA. Publication is non-force only. Afterward the
 remote head, parent relation and changed-file comparison are re-fetched.
 
 These checks certify repository consistency only. They do not certify
