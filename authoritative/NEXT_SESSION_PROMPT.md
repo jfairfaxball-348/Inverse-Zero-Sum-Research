@@ -8,8 +8,7 @@ Status: READY.
 Begin S021 in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
-Previous verified checkpoint:
-<POST-S020-OWNER-DECISION-CHECKPOINT>
+Pin live main as the incoming checkpoint; the user-facing close report for this owner-decision checkpoint supplies the verified SHA.
 
 Use committed repository authority, not conversation history. Pin live main,
 reconcile intervening changes and confirm S021 is unique. Read AGENTS.md,
