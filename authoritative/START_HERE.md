@@ -184,3 +184,18 @@ CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Target, publication
 and mathematical-investigation gates remain OPEN; external review remains
 CLOSED. Xue Li's reply remains pending. S020 remains the next periodic audit if
 the programme later reaches it.
+
+
+## Owner resolution after S016
+
+D-057 resolves B-007 by retaining full CAND-02 and authorizing a materially new
+zero-sum counting/congruence route. S017 is READY and is source-first: it must
+verify exact primary-source counting identities for exponent-length zero sums
+and test them against S016's exact threshold-family cardinalities. It must not
+repackage replacement-core transport, shifted exchanges, the stopped
+D7--D10/capacity/Fano architecture or the progressive-block route.
+
+CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical
+investigation remains OPEN and external review CLOSED. Xue Li's reply remains
+pending absent substantive committed feedback. S020 remains the next periodic
+audit.

@@ -267,3 +267,21 @@ computation remain CLOSED.
 - B-007 is active; no S017 or live next-session prompt is scheduled.
 - External review remains CLOSED; Xue Li reply pending.
 - S020 remains the next periodic audit if the programme later reaches it.
+
+
+## Post-S016 owner strategy checkpoint
+
+- Incoming authority: 45589f47ae7fb219fcad15d36cefbaa4d3df608f.
+- The owner selected B-007 option 1: retain full CAND-02 and authorize a
+  materially new theorem/mechanism or tightly focused source-acquisition
+  direction.
+- D-057 resolves B-007. This checkpoint is not a numbered research session and
+  adds no mathematical theorem or novelty claim.
+- S017 is READY on a zero-sum counting/congruence route at the exact EGZ
+  threshold. The primary task is theorem acquisition and exact applicability,
+  followed by transfer to the S016 delta 0/1/2 zero-sum-family counts if valid.
+- The stopped D7--D10 local-hole/capacity/Fano and progressive-block routes
+  remain stopped.
+- External review remains CLOSED; Xue Li reply pending; no reviewer is
+  confirmed.
+- S020 remains the next periodic ten-session audit.

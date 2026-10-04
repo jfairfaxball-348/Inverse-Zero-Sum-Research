@@ -373,3 +373,23 @@ Target, publication and mathematical-investigation gates remain OPEN; external
 review remains CLOSED and parallel. Xue Li's reply remains pending absent
 substantive committed feedback. No outreach was sent and no willingness,
 endorsement, novelty certification or approval is inferred.
+
+
+## Post-S016 owner strategy decision
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-057 | 2026-10-04 | **Resolve B-007 by retaining the full CAND-02 target and authorizing a materially new theorem/source-acquisition direction.** Schedule S017 as one bounded, source-first assessment of zero-sum counting congruences and algebraic counting identities at the exact EGZ threshold. The new invariant is the number of positional n-term zero sums in the S016 threshold sequence, not another replacement-core or shifted-exchange reformulation. The stopped D7--D10 local-hole/capacity/Fano architecture and the progressive-block route remain stopped. Promote a successor only if a verified counting theorem yields a substantive restriction or a genuinely new dependency; otherwise stop rather than scheduling a cosmetic variant. | Explicit owner choice of B-007 option 1: “1”; S016-P1--P4 identify the threshold family whose cardinality can now be attacked by a different algebraic invariant. |
+
+B-007 is resolved. CAND-02 remains selected at the unchanged full all-m scope
+and remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. Target, publication
+and mathematical-investigation gates remain OPEN; external review remains
+CLOSED and parallel. Xue Li's reply remains pending absent substantive
+committed feedback. No reviewer willingness, endorsement, novelty certification
+or approval is inferred.
+
+S017 is READY on D16-01: determine whether verified zero-sum counting
+congruences/divisibility identities at the exact threshold constrain or exclude
+the S016 delta=0,1,2 normal forms. This is a source-acquisition and theorem-
+transfer route; applicability must be checked exactly, especially for composite
+n=2m and the mixed-primary group C_2 + C_n + C_n.

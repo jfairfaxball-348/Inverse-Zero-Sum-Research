@@ -660,3 +660,30 @@ on the same threshold-star existence question would be cosmetic absent a new
 forcing theorem. B-007 is active for owner strategy reassessment and next-
 session authority is suppressed. S020 remains the next periodic audit if the
 programme later reaches it.
+
+
+## Frontier after D-057 — zero-sum counting/congruence route
+
+The owner resolved B-007 by retaining full CAND-02 and authorizing a materially
+new direction. S014--S016's ambient replacement-core theory remains valid, but
+S017 will not attempt another direct exchange or common-intersection argument.
+
+The new observable is the **cardinality of the threshold zero-sum family**.
+For a hypothetical S016 threshold deletion star U=MO, let N_n(U) be the number
+of positional n-term zero sums. S016 gives exact combinatorial normal forms:
+delta=0 gives N_n(U)=1; delta=1 gives the size of one equal-valued outside
+reservoir; and delta=2 gives the number of edges in the fixed-sum residual
+graph. S017 will ask whether established algebraic zero-sum-count congruences,
+Chevalley--Warning/Olson-type identities or related primary-source counting
+theorems impose incompatible modular/divisibility conditions on these exact
+counts or on counts in carefully chosen deletions.
+
+This is deliberately source-first. Candidate literature may have prime or
+p-group hypotheses that do not apply to G_m=C_2 + C_{2m} + C_{2m}; S017 must
+verify exact statements rather than extrapolate. A useful outcome can be a
+genuine all-m exclusion, a rigorous modulus-class reduction, or a precise new
+theorem obligation after showing why known congruences do not transfer. A
+search non-hit is not evidence of novelty or openness.
+
+The old D7--D10 local-hole/capacity/Fano machinery and progressive-block route
+remain stopped. S020 remains the next periodic ten-session audit.
