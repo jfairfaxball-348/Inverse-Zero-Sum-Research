@@ -5,10 +5,11 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation, with parallel external review.
-S013 is complete. Owner decision D-050 retains the full CAND-02 target and
-resolves B-006. S014 is READY as a bounded assessment of a materially new
-global extension-saturation/support-cloning mechanism; the stopped
-D7/capacity/local-hole and progressive-block routes remain stopped.**
+S014 is complete. Its global extension-saturation/support-cloning argument
+proved an exact ambient deletion/replacement-core theorem and excluded
+multiplicity 2m-2. S015 is READY on the resulting simultaneous replacement-core
+incidence problem; the stopped D7/capacity/local-hole and progressive-block
+routes remain stopped.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -19,7 +20,7 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 is resolved by D-050; the S014 prompt is
+and no next-session prompt.** B-006 is resolved by D-050; S014 is complete and the S015 prompt is
 live.
 
 ## Current readiness dimensions
@@ -74,3 +75,19 @@ with special attention to appending a duplicate support value and the resulting
 swap rigidity. This is a new route-selection decision, not a mathematical
 claim. S014 must stop if the mechanism reduces to a tautology or merely
 repackages the stopped local routes.
+
+
+## S014 extension-saturation checkpoint
+
+S014 established, with (n=2m), exact fixed-length coverage
+`Sigma_{n-1}(S)=G_m`, proved that all old copies of a support value are
+essential in every representation of its negative, and converted that
+essentiality into an exact ambient one-position replacement criterion through
+the cores `K_x(S)`. It also proves that support multiplicity `n-2` is
+impossible and records exact deficit witnesses in the remaining high
+multiplicity strata.
+
+D14-01 is the next bounded obligation: test whether `K_a` can contain
+different-valued positions without reducing the problem to the stopped kernel
+one-change/capacity architecture. These programme results are not a novelty or
+publication-readiness claim.
