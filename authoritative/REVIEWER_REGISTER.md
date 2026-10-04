@@ -415,3 +415,15 @@ B-007 concerns the mathematical strategy after the ambient route's exact
 stopping frontier. It does not reinterpret silence or alter the independent
 external-review gate. Any later substantive reply must still be assessed
 honestly under D-030.
+
+## S020 external-review audit
+
+No newer committed record contains substantive Xue Li feedback. Status remains
+owner-reported SENT 2026-10-02 / REPLY PENDING, confirmed reviewers NONE, and
+external-review gate CLOSED. S020 sent no outreach and inferred no willingness,
+endorsement, novelty certification or approval from silence.
+
+B-008 concerns mathematical target/strategy disposition only. It does not
+reinterpret the pending Stage-1 message, open the external-review gate, or
+remove the later requirement for appropriate independent scrutiny of any
+actual contribution/manuscript before submission.
