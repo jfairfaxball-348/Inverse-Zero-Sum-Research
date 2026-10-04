@@ -254,3 +254,38 @@ investigation remains OPEN; external review remains CLOSED; Xue Li's reply
 remains pending and confirmed reviewers remain NONE. No outreach was sent and
 no willingness, endorsement, novelty certification or approval is inferred.
 
+## S013 source-route comparison decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-048 | 2026-10-04 | Record S013's three-route source comparison with **no route promoted**. Current restricted-length results do not reach S012's strictly sub-exponent splice range; no new unconditional all-m homocyclic ordinary-EGZ stability/equality input was identified; and no checked equal-factor ordinary-eta equality theorem bypasses D6-08. Do not reopen D7--D10 under adjacent invariants or renamed mechanisms. | `sessions/S013/SOURCE_ROUTE_COMPARISON.md`; exact source/hypothesis comparison, with non-hits preserved as non-evidence |
+| D-049 | 2026-10-04 | Activate **B-006** for owner target/strategy reassessment. Suppress all next-session material until the owner decides whether to retain full CAND-02 with a materially new strategy, narrow/re-audit a source-justified contribution, or reassess/switch the selected target. The target and mathematical-investigation gates are not silently changed by this blocker. | D-047 stop condition plus S013's failure to find a source-backed route meeting the promotion bar |
+
+### B-006 — target/strategy reassessment after S013
+
+**ACTIVE.**
+
+S010--S012 exhausted and then stopped the current local-hole/capacity and
+progressive-block proof architecture. S013 then checked three genuinely
+different source routes and found no theorem whose exact hypotheses supply the
+missing sub-exponent splice, unconditional all-m kernel stability/equality, or
+equal-factor ordinary eta-core reduction.
+
+**Required owner action:** choose one of the following strategic dispositions:
+
+1. retain full CAND-02 and authorize a materially new mechanism or source-
+   acquisition strategy that is not another variant of the stopped routes;
+2. narrow CAND-02 to a source-justified subfamily/contribution and require a
+   fresh status/prior-art audit of that exact scope before proof work; or
+3. reassess/switch the selected target.
+
+Evidence:
+`sessions/S013/SOURCE_ROUTE_COMPARISON.md` and
+`sessions/S013/DEPENDENCY_UPDATE.md`.
+
+While B-006 is active, `authoritative/NEXT_SESSION_PROMPT.md` is absent,
+`next_session` and `next_brief` are null, and
+`next_prompt_status=SUPPRESSED_OWNER_BLOCKER`. External review remains
+parallel and CLOSED; Xue Li's reply remains pending absent substantive committed
+feedback. No willingness, endorsement, novelty certification or approval is
+inferred from silence.
