@@ -103,7 +103,7 @@ By S015-P1 this is equivalent to one, hence every, old `b`-position being
 safely replaceable by `a`.  The relation is reflexive.
 
 **PROGRAMME COROLLARY; PROVED.** Suppose `b!=a` and
-`b \\rightsquigarrow a`. Put
+`b \rightsquigarrow a`. Put
 \[
 r=v_a(S),\qquad s=v_b(S),\qquad d_a=n-r-1.
 \]
