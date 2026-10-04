@@ -19,9 +19,9 @@ with `v_a<=n-4`, `v_b<=n-3`, and it forces an exact one-step
 multiplicity-deficit witness after deleting every source occurrence.
 
 Let
-[
+\[
 \delta_a=n-1-|K_a(S)|.
-]
+\]
 S015 also proves exact core factorization. At `delta_a=0` the
 `-a` representation is unique. At `delta_a=1`, all representations are
 `K_a` plus one occurrence from a single equal-valued reservoir of size at
@@ -32,13 +32,13 @@ representations are fixed-sum pairs with empty positional intersection.
 
 Determine whether an actual CAND-02 extremal can have a nontrivial support
 incidence
-[
+\[
 K_a(S)\setminus P_a\ne\varnothing
-]
+\]
 with
-[
+\[
 \delta_a\le2.
-]
+\]
 
 Use the **simultaneous ambient** system: core transport, augmented-core
 invariance, weighted support classes, exact deficit descent, the S015-P3
