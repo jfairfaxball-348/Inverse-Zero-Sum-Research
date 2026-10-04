@@ -517,3 +517,16 @@ not independently reviewed, formally verified or novelty-certified.
 No S019 source non-hit is used as evidence of openness, novelty, completeness,
 significance or publishability. The mixed-primary source boundary from
 S017/S018 remains unchanged.
+
+## S020 audit boundary
+
+Audit date: **2026-10-04**. No new mathematical theorem is claimed in S020.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-97 | PROGRAMME_AUDIT_BOUNDARY | S011–S019 contain durable structural progress, especially S014–S016 all-m replacement-core/threshold-star theory and S017–S019 2-primary counting/incidence reductions, but no full CAND-02 classification, counterexample, near-full deficit exclusion or mixed-primary prescribed-length transfer has been obtained. | `sessions/S020/TEN_SESSION_AUDIT.md`. This is an internal strategy assessment, not independent review or novelty certification. |
+| C-98 | PROGRAMME_ROUTE_BOUNDARY | S019 rules out only unrestricted F2 inclusion/design separation. The remaining modulo-4/actual-zero-sum arithmetic is unresolved, but no committed source/mechanism supplies a genuinely distinct immediately runnable S021; mixed-primary continuation still requires an exact full-group prescribed-length theorem. | D-063 and S020 audit. Search/source non-hits are not openness evidence. |
+
+No S020 source non-hit is used as evidence of openness, novelty, completeness,
+significance or publishability.
+
