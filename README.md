@@ -5,12 +5,12 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation with parallel external review.
-S017 is complete. On the infinite 2-primary class `m=2^s`, a verified
-Gao--Geroldinger recurrence links the exact S016 threshold zero-sum count to
-`2n/3n/4n` common-core incidence modulo four and gives an all-length
-modulo-eight incidence law. No near-full stratum is excluded. S018 is READY
-on the new higher-length incidence dependency; the stopped D7--D10/capacity/
-Fano and progressive-block routes remain stopped.**
+S018 is complete. On the infinite 2-primary class, singleton 2n/3n incidence
+parities are separated and every codegree through order n obeys an explicit
+binary higher-layer law recovering the S016 residual hypergraph after the
+top-layer correction. No near-full stratum is excluded. S019 is READY on the
+binary layer-separator/design dependency; the stopped D7--D10/capacity/Fano
+and progressive-block routes remain stopped.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -21,8 +21,7 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-007 is resolved by D-057; S017 is complete and
-the S018 prompt is live.
+and no next-session prompt.** B-007 is resolved by D-057; S018 is complete and the S019 prompt is live.
 
 ## Current readiness dimensions
 
@@ -146,3 +145,8 @@ class; no p-group theorem is extrapolated to mixed-primary `n`.
 
 S018 attacks exactly that new higher-length incidence dependency. CAND-02
 remains the full selected target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+
+
+## S018 binary-incidence checkpoint
+
+S018 proves separated singleton 2n/3n parities and an n-wise four-layer parity law on the verified 2-primary class. Since the n-layer is the exact S016 residual family and the 4n layer is explicit, higher-layer codegrees recover the reservoir/edge graph as a binary shadow. The strict source length bound blocks mod-4 double deletion and all kappa=3 use. S019 is one bounded inclusion-matrix/design assessment of the remaining layer-separation dependency.

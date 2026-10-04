@@ -709,3 +709,10 @@ so the exact S016 unique/reservoir/edge count now enters a genuinely different a
 No near-full stratum is yet excluded because the `2n` and `3n` incidences are uncontrolled. If `n` has an odd factor, the group is mixed-primary; a Sylow projection zero-sum count aggregates nonzero complementary sums and cannot be substituted for the full-group count. No inspected source supplies the required mixed-primary recurrence.
 
 D17-01 is therefore the next bounded dependency. S018 will attempt to close the higher-length incidence terms on the verified 2-primary class and will admit a mixed-primary route only through an exact source theorem. The stopped D7--D10 local-hole/capacity/Fano and progressive routes remain stopped. S020 remains the next periodic audit.
+
+
+## Frontier after S018 — binary layer separation
+
+On n a power of two, S018 replaces the S017 uncontrolled A_2n/A_3n pair by separated singleton parities and an n-wise combined parity law whose right side is the exact S016 residual hypergraph plus an explicit top-layer correction. The strict Gao--Geroldinger hypothesis permits kappa=2 only through one deletion; deeper information is mod 2 and kappa=3 is unavailable. No deficit stratum is excluded.
+
+D18-01 is therefore a genuinely new layer-separator problem: use binary inclusion matrices/design p-ranks, fixed block sizes or another independent theorem to distinguish the 2n and 3n layers beyond their combined shadow. S019 is one bounded assessment, not another recurrence sweep. Mixed-primary transfer remains source-blocked. S020 remains the next periodic audit.

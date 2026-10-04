@@ -402,3 +402,13 @@ n=2m and the mixed-primary group C_2 + C_n + C_n.
 | D-059 | 2026-10-04 | Promote D17-01 and schedule S018 on the new **2-primary higher-length incidence closure** problem. This promotion is allowed because S017 introduced a genuinely different algebraic counting dependency on an infinite modulus class. S018 must stop if `A_{2n}`/`A_{3n}` remain uncontrolled and no exact mixed-primary counting theorem is found; it must not re-enter D7--D10/Fano/capacity or progressive routes. | S017-P1--P4 and D-057 promotion rule. |
 
 Active owner blockers remain **NONE**. CAND-02 remains the unchanged full all-`m` target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical investigation remains OPEN; external review remains CLOSED and parallel. Xue Li's reply remains pending absent substantive committed feedback. No reviewer willingness, endorsement, novelty certification or approval is inferred.
+
+
+## S018 higher-length incidence decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-060 | 2026-10-04 | Record S018-P1--P5 as bounded programme mathematics/source-transfer results: separated singleton 2n/3n parities, an n-wise four-layer parity law, exact double-deletion/all-length constraints and a conditional total-sum-deletion mod-4 residue. No deficit stratum or mixed-primary transfer is claimed. | `sessions/S018/HIGHER_LENGTH_INCIDENCE.md` and `SOURCE_AUDIT.md`. |
+| D-061 | 2026-10-04 | Promote D18-01 and schedule S019 on the new **binary incidence separator/design-realization** dependency. The promotion bar is met because S018 changes the dependency from uncontrolled higher counts to an n-wise binary shadow recovering the S016 residual hypergraph. S019 must not repeat the exhausted recurrence and must stop if no independent separator exists. | S018-P2--P5 and D-057/D-059 anti-churn boundary. |
+
+Active owner blockers remain **NONE**. CAND-02 remains full all-m and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical investigation remains OPEN; external review remains CLOSED. Xue Li reply remains pending absent substantive committed feedback. No willingness, endorsement, novelty certification or approval is inferred.

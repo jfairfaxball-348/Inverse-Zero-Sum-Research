@@ -16,12 +16,13 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S017 is completed. A verified Gao--Geroldinger p-group recurrence now gives
-a new modulo-4/modulo-8 counting dependency on the infinite 2-primary class
-`m=2^s`, linking S016's exact `N_n(U)` to `2n/3n/4n` common-core incidence.
-No near-full stratum is excluded. D17-01 is promoted and S018 is READY on the
-new higher-length incidence terms. The stopped D7--D10/capacity/Fano and
-progressive-block architectures remain stopped.**
+**S018 is completed. On the verified 2-primary class, singleton 2n/3n
+incidence parities are separated and every codegree through order n obeys an
+explicit binary higher-layer law recovering the S016 residual hypergraph after
+the top-layer correction. No near-full stratum is excluded. D18-01 is promoted
+and S019 is READY on the remaining binary layer-separator/design dependency.
+The stopped D7--D10/capacity/Fano and progressive-block architectures remain
+stopped.**
 
 CAND-02 remains selected at full all-`m` scope and
 **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
@@ -225,3 +226,8 @@ S018 is prepared on D17-01: close the higher-length incidence terms on the
 verified 2-primary class, or rigorously stop if they remain free. A mixed-
 primary transfer is admissible only from an exact full-group prescribed-sum
 theorem. S020 remains the next periodic audit.
+
+
+## Frontier after S018 — n-wise binary incidence shadow
+
+S018 proves `A_3n(x)=A_n(x) mod 2`, `A_2n(x)=A_4n(x) mod 2`, and for every nonempty `D` with `|D|<=n`, `A_n(D)+A_2n(D)+A_3n(D)+A_4n(D)=0 mod 2`. The n-layer is the exact S016 residual family and the 4n layer is explicit, so the combined 2n/3n codegrees recover the reservoir/edge graph. The strict source length bound blocks mod-4 double deletion and all kappa=3 use. S019 is READY on the genuinely narrower binary layer-separator/design problem and must stop if it only renames the remaining bit. Mixed-primary status is unchanged. S020 remains the next periodic audit.

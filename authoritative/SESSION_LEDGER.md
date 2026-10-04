@@ -300,3 +300,18 @@ computation remain CLOSED.
 - External review remains CLOSED; Xue Li reply remains pending.
 - Next numbered session: S018, D17-01 2-primary higher-length threshold-star incidence.
 - S020 remains the next periodic ten-session audit.
+
+
+## S018 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S018 | COMPLETED BOUNDED INVESTIGATION; STRICT BINARY INCIDENCE REDUCTION; NO STRATUM EXCLUDED | 51d4f6f0b1e2d85e45f5632050f5f50502f2b351 | Exact complement/deletion calculus; separated singleton 2n/3n parities; n-wise binary higher-layer shadow recovering the S016 residual hypergraph; double-deletion/source-depth ceiling | [S018 closeout](../sessions/S018/CLOSEOUT.md) |
+
+- Supplied checkpoint matched live main; S018 was unique.
+- D17-01 is strictly reduced on m=2^s; no delta<=2 stratum is excluded.
+- kappa=2 was not extrapolated to length 4n-1; the strict source boundary is preserved.
+- No computation, formalisation or outreach ran.
+- Active owner blockers: NONE. External review remains CLOSED; Xue Li reply pending.
+- Next numbered session: S019, D18-01 binary incidence separator/design realization.
+- S020 remains the next periodic audit.

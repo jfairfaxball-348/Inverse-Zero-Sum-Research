@@ -476,3 +476,21 @@ novelty, openness, completeness, significance or publishability.
 | C-84 | PROGRAMME_PROVED | S017-P2: every common-core token satisfies `N_n(U)+A_2n+A_3n+A_4n=0 mod 4`, and summing gives `I_2n+I_3n+I_4n=delta N_n(U) mod 4`. | Algebraic subtraction of C-83 across the S016 deletion star; `A_4n` is explicitly determined by `sigma(U)`. |
 | C-85 | PROGRAMME_PROVED_FROM_SOURCE | S017-P3: on the same 2-primary class, the total number of zero-sum subsequences of `U` containing any fixed common-core token is divisible by 8. | ZS-46 Theorem 1.1(2) applied to `U` and its deletion. |
 | C-86 | PROGRAMME_BOUNDARY | S017 excludes none of `delta=0,1,2`: `A_2n/A_3n` remain uncontrolled. No checked source transfers the p-group recurrence to arbitrary mixed-primary `n`; Sylow projection does not preserve the full-group zero-sum count. | D16-01 partially resolved; D17-01 promoted. Search non-hits are not openness/novelty evidence. |
+
+
+## S018 higher-length incidence claims
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-87 | PROGRAMME_PROVED | Exact complement/deletion/double-deletion calculus; the 4n layer is explicit from sigma(U). | S018-P1. |
+| C-88 | PROGRAMME_PROVED_FROM_SOURCE | For n a power of two, `A_3n(x)=A_n(x) mod 2` and `A_2n(x)=A_4n(x) mod 2`; one mod-4 layer-split bit remains. | ZS-46 kappa=1,2 with strict lengths checked. |
+| C-89 | PROGRAMME_PROVED_FROM_SOURCE | Every nonempty D with `|D|<=n` satisfies `A_n(D)+A_2n(D)+A_3n(D)+A_4n(D)=0 mod 2`; at codegree n this recovers the S016 reservoir/edge graph after top-layer correction. | ZS-46 r=3,j=1 plus S016-P2. |
+| C-90 | PROGRAMME_PROVED | Common-core double deletions have `N_2n+N_3n=1 mod 2`; all-length singleton incidence is divisible by 8 and 2..n+1 multi-incidence by 4. | ZS-46 parts (2),(3). |
+| C-91 | PROGRAMME_PROVED | A deletion by a sigma(U)-valued token satisfies `N_2n=2+2N_n mod 4`; if core, `N_3n=0`, `N_2n=2 mod 4`. | Complementation plus ZS-46 kappa=2. |
+| C-92 | PROGRAMME_BOUNDARY | No deficit stratum excluded; kappa=2 fails at double-deletion equality and kappa=3 is unavailable. No mixed-primary fixed-length transfer identified. | Source-method ceiling, not actual-freedom theorem. |
+
+### S018 source addition
+
+| ID | Source | Exact boundary |
+| --- | --- | --- |
+| ZS-49 | G. J. Chang, S.-H. Chen, Y. Qu, G. Wang and H. Zhang, *On the Number of Subsequences with a Given Sum in a Finite Abelian Group*, EJC 18(1) (2011), P133, DOI 10.37236/620 | Arbitrary finite abelian group, but total prescribed-sum count over all lengths rather than fixed n,2n,3n,4n. Not a mixed-primary transfer. |

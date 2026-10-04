@@ -123,3 +123,12 @@ arguments. Retired routes are not silently revived without new information.
 | FL-058 | 2026-10-04 | An accessible theorem rendering can define a count at one length while its displayed embedding proof isolates a different auxiliary prime-power length. Treating the prose definition alone as transferable can create a false congruence. | Check the proof's auxiliary coordinate, sequence-length window and the actual selected cardinality. For Gao 2003 S017 records the ambiguity and does not repair it by assumption. | S017 source audit |
 | FL-059 | 2026-10-04 | A p-group counting congruence applied after Sylow projection counts all subsequences with projected sum zero, including those with nonzero complementary-primary sum. It is not the full-group zero-sum count. | Require a theorem or proof that keeps the complete prescribed sum. Do not turn primary decomposition into a mixed-primary congruence without disaggregation. | S017 mixed-primary boundary |
 | FL-060 | 2026-10-04 | A valid congruence involving `N_n` need not exclude a near-full stratum if uncontrolled `2n`/`3n` counts can absorb every residue. | Treat S017 as a new dependency, not a contradiction. S018 must control the higher-length incidence or stop; repeating the same congruence is not progress. | S017-P2/P4 |
+
+
+## S018 higher-length incidence lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-061 | 2026-10-04 | Mod-4 recurrence appears temptingly reusable after two deletions, but length 4n-1 is exactly equality in a source hypothesis requiring >4n-1. | Use only kappa=1 after double deletion; claim no mod-4 pair incidence or mod-8 pair total incidence. | S018 source audit |
+| FL-062 | 2026-10-04 | Even an n-wise combined 2n/3n parity shadow does not identify which layer carries the parity; one singleton mod-4 split bit remains. | Require an independent layer separator; neither call the layers determined nor claim arbitrary realizability. | S018-P2/P3 |
+| FL-063 | 2026-10-04 | An arbitrary finite-abelian theorem can still be the wrong observable if it counts all lengths rather than prescribed lengths. | Match the fixed-length count exactly; ZS-49 is adjacent only. | S018 mixed-primary check |

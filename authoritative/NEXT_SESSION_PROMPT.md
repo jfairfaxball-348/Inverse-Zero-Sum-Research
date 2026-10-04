@@ -1,68 +1,58 @@
 # Next session prompt
 
-Session: S018.
+Session: S019.
 
 Status: READY.
 
 ```text
-Begin S018 in:
+Begin S019 in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 Use committed repository authority, not conversation history. Pin live main,
-reconcile intervening changes and confirm S018 is unique. Read AGENTS.md,
-authoritative/START_HERE.md, all required authority, the complete S006–S017
+reconcile intervening changes and confirm S019 is unique. Read AGENTS.md,
+authoritative/START_HERE.md, all required authority, the complete S006–S018
 mathematics and closeouts, sessions/S010/TEN_SESSION_AUDIT.md,
 sessions/S016/NEAR_FULL_REPLACEMENT_CORE.md,
-sessions/S017/ZERO_SUM_COUNTING_CONGRUENCES.md, sessions/S017/SOURCE_AUDIT.md,
-and authoritative/S018_CANDIDATE_2_2PRIMARY_HIGHER_LENGTH_INCIDENCE_BRIEF.md.
+sessions/S017/ZERO_SUM_COUNTING_CONGRUENCES.md,
+sessions/S018/HIGHER_LENGTH_INCIDENCE.md, sessions/S018/SOURCE_AUDIT.md, and
+authoritative/S019_CANDIDATE_2_BINARY_INCIDENCE_SEPARATOR_BRIEF.md.
 
-CAND-02 remains the full all-m target, SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
-D-050, D-057 and the S017 transfer boundary remain in force. Do not reopen the
-stopped D7–D10 local-hole/capacity/Fano architecture or the progressive-block
-route, and do not translate the new counting relation back into S016's shifted
-residual/cross-boundary exchange system.
+CAND-02 remains full all-m and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+D-050, D-057 and the S017/S018 transfer boundaries remain in force. Do not
+reopen D7–D10 local-hole/capacity/Fano, progressive blocks, or S016 shifted
+residual/cross-boundary exchanges.
 
-Run one bounded investigation on D17-01, the 2-primary higher-length
-threshold-star incidence dependency created by S017. Put n=2m and initially
-restrict the theorem transfer to the verified class n a power of two. For the
-S016 threshold deletion star U=MO, S017 proved for every tau in M
+Run one bounded investigation on D18-01 for n=2m a power of two. S018 proved
+for every nonempty D with |D|<=n
 
-  N_n(U)+A_{2n}(tau)+A_{3n}(tau)+A_{4n}(tau) = 0 (mod 4),
+  A_2n(D)+A_3n(D)
+    = A_n(D)+v_{sigma(U)}(U)-e_{sigma(U)}(D) (mod 2),
 
-with A_{4n} explicit, and after summing over M
+with A_n(D) explicit from the S016 deficit-0/1/2 residual family. It also
+proved A_3n(x)=A_n(x) and A_2n(x)=A_4n(x) mod 2 at singleton level, while
+one modulo-4 2n/3n split bit remains.
 
-  I_{2n}+I_{3n}+I_{4n} = delta N_n(U) (mod 4).
+Attack this as a binary inclusion-matrix/design-realization or layer-separation
+problem. Seek an exact p-rank/inclusion-matrix theorem, a direct fixed-block-
+size linear-algebra argument, or another independent mechanism distinguishing
+the 2n and 3n layers. Do not perform another equivalent Gao–Geroldinger sweep:
+S018 already proved kappa=2 unavailable after two deletions and kappa=3
+unavailable at threshold.
 
-It also proved that the number of all zero-sum subsequences of U containing
-each tau is divisible by 8. The exact S016 values of N_n(U) for delta=0,1,2
-remain in force.
-
-Derive all exact complement, deletion, double-deletion and incidence identities
-that control A_{2n} or A_{3n} without using the stopped architectures. Recheck
-the Gao–Geroldinger recurrence for any other source parameters or residue
-classes actually admissible at lengths 4n and 4n+1; do not claim extra p-adic
-precision beyond the strict source length hypothesis. Seek an exclusion of a
-delta<=2 stratum on an infinite 2-primary class, a strict residue/incidence
-reduction with classification leverage, or a rigorous proof that the higher-
-length counts remain irreducibly free.
-
-A mixed-primary continuation is allowed only if a primary source states an
-exact full-group prescribed-sum theorem covering C_2+C_n+C_n. Sylow projection
-alone is not a transfer. Search non-hits are not novelty/open-status evidence.
-
-Small computation is allowed only after an exact finite congruence system or
-candidate identity is stated, with code/parameters/results preserved; experiment
-is not proof.
+Mixed-primary continuation still requires an exact primary-source full-group
+prescribed-length theorem. Search non-hits are not novelty/open-status evidence.
+Small computation is allowed only after an exact finite incidence system is
+stated, with code/parameters/results preserved.
 
 Mathematical investigation remains OPEN and external review CLOSED unless newer
-committed authority says otherwise. Xue Li's Stage-1 reply remains pending
-unless a newer committed record contains substantive feedback. Do not infer
-willingness, endorsement, novelty certification or approval from transmission
-or silence.
+committed authority says otherwise. Xue Li Stage-1 remains reply pending absent
+substantive committed feedback. Infer no willingness, endorsement, novelty
+certification or approval from silence.
 
 Close under repository protocol: synchronize authority, run
 scripts/check_authority.py and warranted checks, commit safely to main, verify
-the remote SHA/tree, and automatically give the close report. Promote S019 only
-if the dependency structure genuinely changes; otherwise stop and reassess.
-S020 remains the next periodic ten-session audit.
+remote SHA/tree, and automatically give the close report. If the binary design
+system yields no independent separator, stop and reassess rather than promoting
+another renamed incidence session. S020 remains the next periodic ten-session
+audit.
 ```

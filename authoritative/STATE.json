@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S017",
-  "next_session": "S018",
-  "next_brief": "authoritative/S018_CANDIDATE_2_2PRIMARY_HIGHER_LENGTH_INCIDENCE_BRIEF.md",
+  "last_completed_session": "S018",
+  "next_session": "S019",
+  "next_brief": "authoritative/S019_CANDIDATE_2_BINARY_INCIDENCE_SEPARATOR_BRIEF.md",
   "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
-  "programme_status": "S018_READY_2PRIMARY_HIGHER_LENGTH_INCIDENCE",
+  "programme_status": "S019_READY_BINARY_INCIDENCE_SEPARATOR",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — CAND-02 remains selected at full all-m scope. S017 found a verified Gao--Geroldinger modulo-4/modulo-8 counting dependency on the infinite 2-primary class m=2^s. No near-full stratum is excluded; S018 is READY on the new 2n/3n higher-length incidence terms. No p-group theorem is transferred to mixed-primary n without a rigorous full-group prescribed-sum theorem.",
+  "candidate_under_due_diligence": "NONE — CAND-02 remains selected at full all-m scope. S018 strictly reduces the verified 2-primary higher-length dependency to an n-wise binary incidence shadow and a remaining 2n/3n layer separator; no delta<=2 stratum is excluded and no mixed-primary prescribed-length transfer is claimed.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -49,7 +49,11 @@
     "S017-P1 PROGRAMME RESULT: when n=2m is a power of two, Gao--Geroldinger 2007 with kappa=2 gives 1+N_n(U)+N_2n(U)+N_3n(U)+N_4n(U)=0 mod 4 and the corresponding deletion congruence with N_n(U tau^{-1})=0 for every common-core token tau.",
     "S017-P2 PROGRAMME COROLLARY: on the same 2-primary class, every tau in M satisfies N_n(U)+A_2n(tau)+A_3n(tau)+A_4n(tau)=0 mod 4; summing gives I_2n+I_3n+I_4n=delta N_n(U) mod 4, tying the exact S016 delta 0/1/2 counts to higher-length common-core incidence.",
     "S017-P3 PROGRAMME COROLLARY: Gao--Geroldinger p=2 total-count divisibility implies that the number of all zero-sum subsequences of U containing any fixed tau in M is divisible by 8.",
-    "S017-P4 PROGRAMME BOUNDARY: no S017 source transfers these p-group recurrences to arbitrary mixed-primary n, and the uncontrolled 2n/3n incidences prevent exclusion of delta 0/1/2. The new dependency is exact but incomplete."
+    "S017-P4 PROGRAMME BOUNDARY: no S017 source transfers these p-group recurrences to arbitrary mixed-primary n, and the uncontrolled 2n/3n incidences prevent exclusion of delta 0/1/2. The new dependency is exact but incomplete.",
+    "S018-P1 PROGRAMME LEMMA: exact complement/deletion/double-deletion identities express higher-length incidence as prescribed-sum counts on deletions; the 4n layer is explicit from sigma(U).",
+    "S018-P2 PROGRAMME RESULT: on n a power of two, every position x satisfies A_3n(x)=A_n(x) mod 2 and A_2n(x)=A_4n(x) mod 2, while the universal mod-4 point relation leaves one binary 2n/3n split bit.",
+    "S018-P3 PROGRAMME THEOREM: every nonempty D with |D|<=n satisfies A_n(D)+A_2n(D)+A_3n(D)+A_4n(D)=0 mod 2; codegree n recovers the S016 reservoir/edge residual hypergraph after the explicit top-layer correction.",
+    "S018-P4/P5 PROGRAMME RESULT/BOUNDARY: double deletions obey only kappa=1 parity, all-length multi-incidence has exact divisibility, a sigma(U)-valued deletion has a mod-4 N_2n residue, and the present source cannot separate the remaining 2n/3n bit. No actual freedom or deficit exclusion is claimed."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -154,6 +158,11 @@
       "id": "S017",
       "status": "COMPLETED",
       "record": "sessions/S017/CLOSEOUT.md"
+    },
+    {
+      "id": "S018",
+      "status": "COMPLETED",
+      "record": "sessions/S018/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -179,9 +188,9 @@
   "s009_mathematical_investigation_date": "2026-10-03",
   "s010_mathematical_investigation_date": "2026-10-03",
   "last_ten_session_audit": "sessions/S010/TEN_SESSION_AUDIT.md",
-  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; S017 ADDS A VERIFIED 2-PRIMARY MOD-4/MOD-8 COUNTING DEPENDENCY; NO DELTA<=2 STRATUM EXCLUDED; S018 READY ON HIGHER-LENGTH INCIDENCE; OLD D7/CAPACITY/FANO/PROGRESSIVE ROUTES REMAIN STOPPED",
+  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; S018 PROVES SEPARATED SINGLETON PARITIES AND AN n-WISE BINARY INCIDENCE SHADOW ON THE 2-PRIMARY CLASS; NO DELTA<=2 STRATUM EXCLUDED; S019 READY ON THE NEW LAYER-SEPARATOR/DESIGN DEPENDENCY",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S017 partially resolves D16-01 on the infinite 2-primary class m=2^s: the Gao--Geroldinger p-group recurrence links the exact S016 N_n(U) count to 2n/3n/4n common-core incidences modulo 4, and all-length token incidence is divisible by 8. S018 attacks D17-01, the new higher-length incidence closure problem. Mixed-primary continuation requires an exact full-group prescribed-sum theorem; Sylow projection is insufficient.",
+  "current_route_disposition": "S018 strictly reduces D17-01 on m=2^s to an n-wise binary 2n/3n incidence shadow plus a remaining layer-separator bit. The Gao--Geroldinger p-adic depth is exhausted at threshold; D18-01 is the new binary design/inclusion-matrix dependency. Mixed-primary continuation still requires an exact full-group prescribed-length theorem.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-04",
@@ -191,5 +200,7 @@
   "s016_focused_source_check_date": "2026-10-04",
   "b007_resolution_date": "2026-10-04",
   "s017_source_refresh_date": "2026-10-04",
-  "s017_mathematical_investigation_date": "2026-10-04"
+  "s017_mathematical_investigation_date": "2026-10-04",
+  "s018_mathematical_investigation_date": "2026-10-04",
+  "s018_source_refresh_date": "2026-10-04"
 }
