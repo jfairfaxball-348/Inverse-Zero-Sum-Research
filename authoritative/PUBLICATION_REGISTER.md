@@ -318,3 +318,15 @@ claim or venue gate: E-JC remains the leading eligible route, the publication
 gate remains OPEN as an eligibility/readiness dimension only, and no
 acceptance prediction or submission authorization is created. S014 is a
 mathematical mechanism assessment, not a publication-readiness event.
+
+## S014 publication boundary
+
+No venue decision or policy claim changes in S014. E-JC remains the leading
+eligible route and JNT the recorded backup under the latest policy checks.
+S014's extension-saturation/replacement-core lemmas are internal programme
+mathematics only. Their novelty, significance and relation to prior inverse-EGZ
+literature have not been established to publication standard.
+
+The full classification, actual-result literature audit, independent scrutiny,
+manuscript and explicit submission authorization all remain outstanding. No
+submission, acceptance or publication occurred.
