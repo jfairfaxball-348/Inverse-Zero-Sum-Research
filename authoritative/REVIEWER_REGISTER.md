@@ -371,3 +371,12 @@ B-006 concerns target/strategy reassessment after the source-route comparison;
 it does not reinterpret reviewer silence and does not open or close the
 independent external-review gate. A later substantive reply must still be
 preserved and assessed honestly under D-030.
+
+
+## Post-S013 owner strategy resolution
+
+D-050 resolves B-006 by retaining full CAND-02. Reviewer status is unchanged:
+Xue Li's Stage-1 message is owner-reported SENT 2026-10-02 / REPLY PENDING,
+confirmed reviewers NONE, external-review gate CLOSED. S014 sends no outreach
+and must not infer willingness, endorsement, novelty certification or approval
+from silence.
