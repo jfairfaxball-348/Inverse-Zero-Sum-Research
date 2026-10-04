@@ -426,3 +426,41 @@ SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical investigation remains
 OPEN; external review remains CLOSED. Xue Li Stage-1 remains owner-reported
 SENT 2026-10-02 / REPLY PENDING absent substantive committed feedback. No
 willingness, endorsement, novelty certification or approval is inferred.
+
+## S020 ten-session audit decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-064 | 2026-10-04 | Record the S011–S020 periodic audit verdict. S014–S016 produced durable all-m ambient replacement-core/threshold-star structure and S017–S019 produced a strict 2-primary counting/incidence reduction, but no full classification, counterexample, near-full deficit exclusion, mixed-primary transfer or publication-ready theorem package has been obtained. All source/non-hit and reviewer boundaries remain conservative. | `sessions/S020/TEN_SESSION_AUDIT.md` |
+| D-065 | 2026-10-04 | **Activate B-008 and suppress S021.** No source- and hypothesis-justified route currently clears the anti-churn bar after D-063. Do not promote another D7–D10/capacity/Fano variant, progressive-block repair, S016 shifted-exchange continuation, unrestricted design/incidence refinement, or unsupported mixed-primary transfer. Owner strategy disposition is required before another numbered session. | S020 root-objective audit; D-050, D-057 and D-063 remain binding. |
+
+### B-008 — strategy/target reassessment after S020 audit
+
+**ACTIVE.**
+
+The programme has accumulated genuine internal structure but has reached a
+strategy frontier. The remaining 2-primary modulo-4/actual-zero-sum arithmetic
+has no committed theorem/mechanism that makes a non-incidence continuation
+immediately runnable, and mixed-primary counting still lacks an exact primary
+full-group prescribed-length theorem. Promoting a session merely to keep the
+sequence moving would violate the anti-churn rules.
+
+**Required owner action:** choose one disposition:
+
+1. retain full CAND-02 and authorize a genuinely new theorem/mechanism or
+   tightly focused source-acquisition direction outside all stopped routes;
+2. deliberately narrow/reframe to a source-justified partial contribution,
+   followed by a fresh prior-art/novelty/significance audit of that exact
+   contribution before further proof work; or
+3. reassess/switch the selected target.
+
+While B-008 is active, `next_session` and `next_brief` are null,
+`next_prompt_status=SUPPRESSED_OWNER_BLOCKER`, and
+`authoritative/NEXT_SESSION_PROMPT.md` is absent.
+
+CAND-02 itself remains selected at full all-m scope and SOURCE-DEFINED /
+CURRENT STATUS UNKNOWN. Target, publication and mathematical-investigation
+gates remain OPEN; external review remains CLOSED and parallel. Xue Li Stage-1
+remains owner-reported SENT 2026-10-02 / REPLY PENDING absent substantive
+committed feedback. No willingness, endorsement, novelty certification or
+approval is inferred.
