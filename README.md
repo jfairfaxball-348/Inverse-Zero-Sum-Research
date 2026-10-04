@@ -5,10 +5,10 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation, with parallel external review.
-S013 is complete. Its source-based comparison found no route meeting the
-promotion bar after the S010--S012 recovery stops. CAND-02 remains selected and
-SOURCE-DEFINED / CURRENT STATUS UNKNOWN, but B-006 now requires owner
-target/strategy reassessment before another numbered session is scheduled.**
+S013 is complete. Owner decision D-050 retains the full CAND-02 target and
+resolves B-006. S014 is READY as a bounded assessment of a materially new
+global extension-saturation/support-cloning mechanism; the stopped
+D7/capacity/local-hole and progressive-block routes remain stopped.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -19,8 +19,8 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 is currently active; no live next-session
-prompt exists.
+and no next-session prompt.** B-006 is resolved by D-050; the S014 prompt is
+live.
 
 ## Current readiness dimensions
 
@@ -62,3 +62,15 @@ direction and reassess it.
 Validate the records with `python3 scripts/check_authority.py`. This checks
 documentation consistency, not mathematical truth. Existing code is licensed
 under Apache-2.0; external papers retain their own licences.
+
+
+## Post-S013 owner strategy resolution
+
+The owner chose B-006 option 1: retain full CAND-02 and authorize a materially
+new strategy. S014 will test global one-term extension saturation. The proposed
+mechanism starts from the sharp threshold `s(G_m)=8m+1`: append one term to an
+extremal length-`8m` sequence and analyze the forced `2m`-term zero sum,
+with special attention to appending a duplicate support value and the resulting
+swap rigidity. This is a new route-selection decision, not a mathematical
+claim. S014 must stop if the mechanism reduces to a tautology or merely
+repackages the stopped local routes.
