@@ -4,14 +4,12 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: P3 mathematical investigation with parallel external review.
-S020 is complete. The periodic S011–S020 audit confirms durable S014–S016
-all-m ambient replacement-core/threshold-star structure and S017–S019
-2-primary counting/incidence progress, but no full classification, near-full
-deficit exclusion, mixed-primary transfer or publication-ready theorem package.
-No source- and hypothesis-justified S021 route clears the anti-churn bar.
-B-008 is ACTIVE for owner strategy/target disposition and the live next-session
-prompt is suppressed.**
+**Current stage: target reassessment with parallel external review.
+S020 is complete and B-008 has been resolved by owner decision D-066:
+reassess/switch target rather than authorize another generic full-CAND-02
+strategy. CAND-02 proof work is paused. S021 is READY for a fresh source-first
+comparison of CAND-01, CAND-03 and at most two genuinely new replacement
+candidates.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -22,8 +20,8 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 and B-007 remain resolved; B-008 is active
-after S020, so no S021 prompt is live.
+and no next-session prompt.** B-006, B-007 and B-008 are resolved. S021 is the live target-reassessment
+session; it may recommend but not silently select a replacement target.
 
 ## Current readiness dimensions
 
@@ -193,4 +191,12 @@ required exact full-group fixed-length theorem. B-008 therefore asks the owner
 to choose between a genuinely new full-target strategy/source direction,
 a deliberate source-audited partial-contribution reframing, or target
 reassessment.
+
+## Post-S020 owner target-reassessment checkpoint
+
+The owner chose B-008 option 3. Full CAND-02 remains part of the programme
+record but is no longer the automatic proof target. S021 will re-audit the
+surviving alternatives CAND-01 and CAND-03 and may add at most two new
+source-defined candidates after current due diligence. It will return one
+explicit recommendation for owner selection and will not begin proof work.
 
