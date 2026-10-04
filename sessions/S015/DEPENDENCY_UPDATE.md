@@ -30,13 +30,13 @@ not use the stopped quotient/capacity/progressive architecture.
 
 Let `a` be a support value with a genuinely nontrivial safe source class and
 put
-[
+\[
 \delta_a=n-1-|K_a(S)|.
-]
+\]
 Determine whether an actual CAND-02 extremal can realize such an incidence with
-[
+\[
 \delta_a\le 2.
-]
+\]
 
 Use only the new ambient machinery:
 
