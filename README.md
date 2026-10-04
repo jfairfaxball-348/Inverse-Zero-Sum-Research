@@ -5,10 +5,10 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation, with parallel external review.
-S012 is complete. Its short-zero-sum splice is valid, but below the published
-m-1 threshold the GS maximal-zero-sum argument leaves an exact cardinality gap
-rather than a universal eta-core. Universal D6-08 remains unresolved; S013 is a
-source-based comparison before any new proof route is chosen.**
+S013 is complete. Its source-based comparison found no route meeting the
+promotion bar after the S010--S012 recovery stops. CAND-02 remains selected and
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN, but B-006 now requires owner
+target/strategy reassessment before another numbered session is scheduled.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -19,7 +19,8 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** There is currently no active owner blocker.
+and no next-session prompt.** B-006 is currently active; no live next-session
+prompt exists.
 
 ## Current readiness dimensions
 
@@ -29,18 +30,15 @@ and no next-session prompt.** There is currently no active owner blocker.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
-intact, and S011's two-pair route remains stopped at its original-position
-lifting defect. S012 returns to the weaker progressive-block bridge. It proves
-that a complement zero sum of length at most |C|+1 would enlarge a maximum
-progressive block, then shows that the maximal-short-zero-sum argument from GS
-Lemma 4.4(2) forces only longer witnesses when the bridge threshold is missed.
+intact, S011's local-hole/capacity exchange route remains stopped, and S012's
+progressive-block repair isolates a strict sub-exponent cardinality gap.
 
-The resulting cardinality gap does not prove a bridge failure, and an
-eta(G)-1-length remainder is not automatically eta-free. A local mechanism
-counterexample and an arbitrary-length order-2m power sequence only falsify
-overbroad splice/length-only shortcuts; neither is CAND-extremal. No computation
-ran in S012. S013 will compare source-backed routes before another mathematical
-variant is attempted. See [the S012 assessment](sessions/S012/PROGRESSIVE_BLOCK_REPAIR.md).
+S013 checked three genuinely different source routes. Current restricted-length
+theorems operate at exponent-scale cutoffs rather than S012's required
+`<=m-1` range; current homocyclic near-extremal results either reproduce the
+already-recorded Property-D scope or concern different invariants; and no
+checked equal-factor ordinary-eta equality theorem bypasses D6-08. No route was
+promoted. See [the S013 comparison](sessions/S013/SOURCE_ROUTE_COMPARISON.md).
 
 Beginning proof work does not certify that the target is open or novel. If
 later external feedback reveals prior art, a known solution, material overlap,
@@ -59,7 +57,6 @@ direction and reassess it.
 - [Decisions and blockers](authoritative/DECISIONS_AND_BLOCKERS.md)
 - [Failure and lesson ledger](authoritative/FAILURE_AND_LESSON_LEDGER.md)
 - [Session ledger](authoritative/SESSION_LEDGER.md)
-- [Live next-session prompt](authoritative/NEXT_SESSION_PROMPT.md)
 - [Autonomous session protocol](docs/SESSION_PROTOCOL.md)
 
 Validate the records with `python3 scripts/check_authority.py`. This checks
