@@ -564,3 +564,38 @@ not an automatic S015 variant.
 
 External review remains parallel and CLOSED; Xue Li's reply remains pending.
 S020 remains the next ten-session audit.
+
+## Frontier after S014 — global extension/replacement mechanism survives
+
+S014 returned to the exact ambient EGZ threshold rather than to D6-08 or the
+stopped kernel-capacity architecture. Put `n=2m`. Since
+`s(G_m)=4n+1`, adjoining any value to a length-`4n` extremal forces an
+`n`-zero-sum using the new position. Hence
+`Sigma_{n-1}(S)=G_m` and, by complementation,
+`Sigma_{3n+1}(S)=G_m`.
+
+The support-clone swap supplies genuine additional structure. Every
+`(n-1)`-term representation of `-a` contains every old occurrence of
+support value `a`. The positional intersection of all representations of
+`-x`, denoted `K_x(S)`, exactly classifies one-position replacements:
+`S_{p->x}` remains extremal iff `p in K_x(S)`. Thus each insertion value
+has at most `n-1` safe old positions and at least `3n+1=6m+1`
+destructive replacements.
+
+The same clone-deficit equation rules out multiplicity `n-2`; multiplicity
+`n-3` forces a centered non-`a` pair, while multiplicity `n-1` gives
+a unique target representation. For general `r<=n-3`, deleting all
+`a` copies and translating by `-a` yields an exact zero sum of length
+`n-r-1`.
+
+This is a genuinely different global mechanism and meets D-050's promotion
+bar. D14-01 is prepared for S015: test whether `K_a(S)` can contain a
+position whose value is not `a`, using the simultaneous ambient core
+system. S015 must not translate the question into the stopped S008--S011
+kernel one-change/local-hole/capacity architecture; if that happens, stop the
+route rather than schedule a renamed variant.
+
+Universal D6-08/D6-09 and the full classification remain unresolved. CAND-02
+stays SOURCE-DEFINED / CURRENT STATUS UNKNOWN. External review remains CLOSED,
+Xue Li reply pending, owner blockers NONE. S020 remains the next ten-session
+audit.
