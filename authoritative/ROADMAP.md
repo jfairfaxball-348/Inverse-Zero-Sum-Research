@@ -716,3 +716,32 @@ D17-01 is therefore the next bounded dependency. S018 will attempt to close the 
 On n a power of two, S018 replaces the S017 uncontrolled A_2n/A_3n pair by separated singleton parities and an n-wise combined parity law whose right side is the exact S016 residual hypergraph plus an explicit top-layer correction. The strict Gao--Geroldinger hypothesis permits kappa=2 only through one deletion; deeper information is mod 2 and kappa=3 is unavailable. No deficit stratum is excluded.
 
 D18-01 is therefore a genuinely new layer-separator problem: use binary inclusion matrices/design p-ranks, fixed block sizes or another independent theorem to distinguish the 2n and 3n layers beyond their combined shadow. S019 is one bounded assessment, not another recurrence sweep. Mixed-primary transfer remains source-blocked. S020 remains the next periodic audit.
+
+
+## Frontier after S019 — binary inclusion/design route stopped
+
+S019 tested D18-01 on the verified class n=2^a, n>=4. Frankl's primary
+1990 proof of Wilson's p-rank formula gives the exact characteristic-two
+ranks of the relevant inclusion matrices on v=4n+1 positions:
+W_{n,3n} has full row rank, while W_{n,2n} has row corank one. The
+missing 2n component is exactly the aggregate even n-codegree relation and
+does not separate the actual 2n/3n zero-sum layers.
+
+A direct all-codegree construction is stronger. The n-to-3n upper-star lift,
+the 4n-to-2n down-lift, and an odd 2n null family supported on a 3n-set show
+that arbitrary n- and 4n-layer binary shadows can be realized by separate
+3n and 2n block families while preserving every nonempty codegree through n
+and the global parities inherited from S018. Applying this to the exact S016
+n-layer and explicit 4n layer admits every delta=0,1,2 signature.
+
+Thus the unrestricted F2 inclusion/design space supplies no independent layer
+separator. This is not an actual zero-sum realization and does not settle the
+remaining modulo-4 bit. Mixed-primary transfer remains source-blocked exactly
+as in S017/S018. Under D-050/D-057 and the S019 stop rule, do not schedule
+another renamed incidence session.
+
+S020 is now the required periodic ten-session audit. It must audit S011–S020,
+reassess the mathematical route and publication credibility, and either prepare
+a genuinely distinct S021 unit with an exact new dependency/source basis or
+activate an owner strategy blocker. It must not execute a fresh proof route
+inside the audit merely to avoid that decision.

@@ -315,3 +315,25 @@ computation remain CLOSED.
 - Active owner blockers: NONE. External review remains CLOSED; Xue Li reply pending.
 - Next numbered session: S019, D18-01 binary incidence separator/design realization.
 - S020 remains the next periodic audit.
+
+
+## S019 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S019 | COMPLETED BOUNDED INVESTIGATION; BINARY DESIGN-ONLY SEPARATOR RULED OUT; NO STRATUM EXCLUDED | 763a6daf5919268b6dea4fb8c0472822e849f658 | Wilson--Frankl exact mod-2 ranks; explicit n-to-3n and 4n-to-2n all-codegree lifts; odd 2n null family; proof every S016 near-full signature survives the unrestricted binary design system | [S019 closeout](../sessions/S019/CLOSEOUT.md) |
+
+- The supplied checkpoint matched live `main`; S019 was unique and main was
+  unprotected at entry.
+- D18-01 is resolved negatively only for the pure binary inclusion/design
+  mechanism: the current F2 constraints admit every delta=0,1,2 S016
+  signature and supply no independent layer separator.
+- No actual 2n/3n zero-sum family, near-full extremal, deficit exclusion or
+  mixed-primary transfer is claimed; the modulo-4 split remains.
+- One finite parity sanity check was run only after the exact incidence system
+  was proved; its code, parameters and results are preserved in S019 and have
+  no proof weight.
+- Active owner blockers: NONE. External review remains CLOSED; Xue Li reply
+  remains pending.
+- Next numbered session: S020, the required periodic S011--S020 audit and
+  strategy reassessment. No S021 mathematical route is pre-promoted.

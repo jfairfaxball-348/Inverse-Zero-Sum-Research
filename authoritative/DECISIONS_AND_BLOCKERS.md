@@ -412,3 +412,17 @@ Active owner blockers remain **NONE**. CAND-02 remains the unchanged full all-`m
 | D-061 | 2026-10-04 | Promote D18-01 and schedule S019 on the new **binary incidence separator/design-realization** dependency. The promotion bar is met because S018 changes the dependency from uncontrolled higher counts to an n-wise binary shadow recovering the S016 residual hypergraph. S019 must not repeat the exhausted recurrence and must stop if no independent separator exists. | S018-P2--P5 and D-057/D-059 anti-churn boundary. |
 
 Active owner blockers remain **NONE**. CAND-02 remains full all-m and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical investigation remains OPEN; external review remains CLOSED. Xue Li reply remains pending absent substantive committed feedback. No willingness, endorsement, novelty certification or approval is inferred.
+
+
+## S019 binary incidence/design decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-062 | 2026-10-04 | Record S019-P1--P3 as bounded programme mathematics/source-transfer results. On n a power of two, the Wilson--Frankl characteristic-two inclusion ranks are exact; explicit n-to-3n and 4n-to-2n lifts plus an odd 2n null family realize every S016 delta=0/1/2 binary shadow through codegree n and the known global parities. No actual zero-sum-layer realization or deficit exclusion is claimed. | `sessions/S019/BINARY_INCIDENCE_SEPARATOR.md` and `SOURCE_AUDIT.md`; Frankl 1990 equation (7), with direct Lucas-parity proofs for the specialized lifts. |
+| D-063 | 2026-10-04 | Close D18-01 as a **pure binary inclusion/design route no-go** and do not promote another renamed incidence session. The remaining modulo-4 2n/3n split and actual zero-sum arithmetic are outside what unrestricted F2 design realization can decide. Schedule S020 as the required periodic ten-session audit and strategy reassessment. | S019-P2/P3 meet the S019 brief's design-realization stopping criterion; D-050/D-057 anti-churn boundaries remain in force. |
+
+Active owner blockers remain **NONE**. CAND-02 remains full all-m and
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical investigation remains
+OPEN; external review remains CLOSED. Xue Li Stage-1 remains owner-reported
+SENT 2026-10-02 / REPLY PENDING absent substantive committed feedback. No
+willingness, endorsement, novelty certification or approval is inferred.

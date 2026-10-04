@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S018",
-  "next_session": "S019",
-  "next_brief": "authoritative/S019_CANDIDATE_2_BINARY_INCIDENCE_SEPARATOR_BRIEF.md",
+  "last_completed_session": "S019",
+  "next_session": "S020",
+  "next_brief": "authoritative/S020_TEN_SESSION_AUDIT_BRIEF.md",
   "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
-  "programme_status": "S019_READY_BINARY_INCIDENCE_SEPARATOR",
+  "programme_status": "S020_READY_PERIODIC_TEN_SESSION_AUDIT_AFTER_BINARY_DESIGN_STOP",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — CAND-02 remains selected at full all-m scope. S018 strictly reduces the verified 2-primary higher-length dependency to an n-wise binary incidence shadow and a remaining 2n/3n layer separator; no delta<=2 stratum is excluded and no mixed-primary prescribed-length transfer is claimed.",
+  "candidate_under_due_diligence": "CAND-02 remains the full all-m inverse EGZ target. S019 proves that, on the verified 2-primary class, unrestricted binary inclusion/design constraints through codegree n admit every S016 delta=0/1/2 signature; no near-full stratum, actual 2n/3n zero-sum layer, modulo-4 split or mixed-primary case is resolved.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -53,7 +53,10 @@
     "S018-P1 PROGRAMME LEMMA: exact complement/deletion/double-deletion identities express higher-length incidence as prescribed-sum counts on deletions; the 4n layer is explicit from sigma(U).",
     "S018-P2 PROGRAMME RESULT: on n a power of two, every position x satisfies A_3n(x)=A_n(x) mod 2 and A_2n(x)=A_4n(x) mod 2, while the universal mod-4 point relation leaves one binary 2n/3n split bit.",
     "S018-P3 PROGRAMME THEOREM: every nonempty D with |D|<=n satisfies A_n(D)+A_2n(D)+A_3n(D)+A_4n(D)=0 mod 2; codegree n recovers the S016 reservoir/edge residual hypergraph after the explicit top-layer correction.",
-    "S018-P4/P5 PROGRAMME RESULT/BOUNDARY: double deletions obey only kappa=1 parity, all-length multi-incidence has exact divisibility, a sigma(U)-valued deletion has a mod-4 N_2n residue, and the present source cannot separate the remaining 2n/3n bit. No actual freedom or deficit exclusion is claimed."
+    "S018-P4/P5 PROGRAMME RESULT/BOUNDARY: double deletions obey only kappa=1 parity, all-length multi-incidence has exact divisibility, a sigma(U)-valued deletion has a mod-4 N_2n residue, and the present source cannot separate the remaining 2n/3n bit. No actual freedom or deficit exclusion is claimed.",
+    "S019-P1: Frankl/Wilson mod-2 inclusion ranks specialize to rank W_{n,3n}=C(4n+1,n) and rank W_{n,2n}=C(4n+1,n)-1 for n a power of two; the 2n defect is only the aggregate even n-codegree relation.",
+    "S019-P2: explicit upper-star and down-lift constructions reproduce all nonempty codegrees through n from arbitrary n- and 4n-block families, while an odd 2n null family on a 3n-set adjusts total parity without changing those codegrees.",
+    "S019-P3: applying the lifts to the exact S016 n-layer and explicit 4n layer realizes every S018 binary constraint and global layer parity for delta=0,1,2. This is an abstract design realization only; the actual zero-sum layers and modulo-4 split remain unresolved."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -163,6 +166,11 @@
       "id": "S018",
       "status": "COMPLETED",
       "record": "sessions/S018/CLOSEOUT.md"
+    },
+    {
+      "id": "S019",
+      "status": "COMPLETED",
+      "record": "sessions/S019/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -188,9 +196,9 @@
   "s009_mathematical_investigation_date": "2026-10-03",
   "s010_mathematical_investigation_date": "2026-10-03",
   "last_ten_session_audit": "sessions/S010/TEN_SESSION_AUDIT.md",
-  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; S018 PROVES SEPARATED SINGLETON PARITIES AND AN n-WISE BINARY INCIDENCE SHADOW ON THE 2-PRIMARY CLASS; NO DELTA<=2 STRATUM EXCLUDED; S019 READY ON THE NEW LAYER-SEPARATOR/DESIGN DEPENDENCY",
+  "audit_verdict": "S020 periodic audit due. S019 stops the pure binary inclusion/design separator route after an explicit realization theorem; no deficit stratum is excluded and no S021 proof route is promoted before the audit.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S018 strictly reduces D17-01 on m=2^s to an n-wise binary 2n/3n incidence shadow plus a remaining layer-separator bit. The Gao--Geroldinger p-adic depth is exhausted at threshold; D18-01 is the new binary design/inclusion-matrix dependency. Mixed-primary continuation still requires an exact full-group prescribed-length theorem.",
+  "current_route_disposition": "S019 closes the unrestricted F2 inclusion/design route as non-separating on n a power of two. The remaining actual 2n/3n zero-sum arithmetic and modulo-4 split are not resolved; mixed-primary transfer still requires an exact full-group prescribed-length theorem. S020 is the next periodic ten-session audit and strategy reassessment.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-04",
@@ -202,5 +210,7 @@
   "s017_source_refresh_date": "2026-10-04",
   "s017_mathematical_investigation_date": "2026-10-04",
   "s018_mathematical_investigation_date": "2026-10-04",
-  "s018_source_refresh_date": "2026-10-04"
+  "s018_source_refresh_date": "2026-10-04",
+  "s019_mathematical_investigation_date": "2026-10-04",
+  "s019_source_refresh_date": "2026-10-04"
 }

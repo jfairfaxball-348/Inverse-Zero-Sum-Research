@@ -494,3 +494,26 @@ novelty, openness, completeness, significance or publishability.
 | ID | Source | Exact boundary |
 | --- | --- | --- |
 | ZS-49 | G. J. Chang, S.-H. Chen, Y. Qu, G. Wang and H. Zhang, *On the Number of Subsequences with a Given Sum in a Finite Abelian Group*, EJC 18(1) (2011), P133, DOI 10.37236/620 | Arbitrary finite abelian group, but total prescribed-sum count over all lengths rather than fixed n,2n,3n,4n. Not a mixed-primary transfer. |
+
+
+## S019 binary inclusion-matrix source and programme claims
+
+Proof / source-check date: **2026-10-04**. Programme deductions are internal,
+not independently reviewed, formally verified or novelty-certified.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-93 | SOURCE_RESULT / PROGRAMME_SPECIALIZATION | Frankl's 1990 primary paper states and proves Wilson's mod-p rank formula for inclusion matrices. For v=4n+1, p=2 and n a power of two, the n-versus-3n inclusion matrix has rank C(v,n), while the n-versus-2n matrix has rank C(v,n)-1. | ZS-50 plus Lucas parity. The corank-one 2n defect is the aggregate even n-codegree condition, not an actual zero-sum layer separator. |
+| C-94 | PROGRAMME_PROVED | S019-P2: for every n-block N, the 3n-block upper star {B: N subset B} has mod-2 codegree 1 exactly on nonempty D subset N with |D|<=n. Symmetric difference therefore lifts any binary n-family to a 3n-family with identical nonempty codegrees through n and identical total parity. | Direct binomial-parity proof in `sessions/S019/BINARY_INCIDENCE_SEPARATOR.md`; n>=4 is a power of two. |
+| C-95 | PROGRAMME_PROVED | S019-P2: all 2n-subsets of a 4n-block H reproduce H's nonempty codegrees through n and have even cardinality; all 2n-subsets of a fixed 3n-set have zero nonempty codegrees through n and odd cardinality. Together these realize any 4n shadow with either required total 2n parity. | Direct Lucas-parity proof; abstract simple block families only. |
+| C-96 | PROGRAMME_BOUNDARY / ROUTE NO-GO | Applying C-94/C-95 to the S016 n-layer and explicit 4n layer realizes every S018 binary codegree law and global 2n/3n parity for delta=0,1,2. Therefore unrestricted F2 inclusion/design constraints alone cannot exclude a near-full stratum or determine the actual zero-sum layers. | No claim that the constructed blocks are zero-sum, no resolution of the mod-4 split, no actual CAND extremal, and no mixed-primary transfer. |
+
+### S019 source addition
+
+| ID | Source | Exact boundary |
+| --- | --- | --- |
+| ZS-50 | Peter Frankl, *Intersection theorems and mod p rank of inclusion matrices*, J. Combin. Theory Ser. A 54 (1990), 85--94, DOI 10.1016/0097-3165(90)90007-J | Full primary PDF inspected. Equation (7) states Wilson's mod-p inclusion-rank formula for v>=a+b, and Section 4 gives Frankl's short proof. Wilson's original diagonal-form paper is R. M. Wilson, European J. Combin. 11 (1990), 609--615, DOI 10.1016/S0195-6698(13)80046-7. S019 uses only the exact rank formula plus elementary Lucas parity. |
+
+No S019 source non-hit is used as evidence of openness, novelty, completeness,
+significance or publishability. The mixed-primary source boundary from
+S017/S018 remains unchanged.

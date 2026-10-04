@@ -132,3 +132,12 @@ arguments. Retired routes are not silently revived without new information.
 | FL-061 | 2026-10-04 | Mod-4 recurrence appears temptingly reusable after two deletions, but length 4n-1 is exactly equality in a source hypothesis requiring >4n-1. | Use only kappa=1 after double deletion; claim no mod-4 pair incidence or mod-8 pair total incidence. | S018 source audit |
 | FL-062 | 2026-10-04 | Even an n-wise combined 2n/3n parity shadow does not identify which layer carries the parity; one singleton mod-4 split bit remains. | Require an independent layer separator; neither call the layers determined nor claim arbitrary realizability. | S018-P2/P3 |
 | FL-063 | 2026-10-04 | An arbitrary finite-abelian theorem can still be the wrong observable if it counts all lengths rather than prescribed lengths. | Match the fixed-length count exactly; ZS-49 is adjacent only. | S018 mixed-primary check |
+
+
+## S019 binary-design lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-064 | 2026-10-04 | A nontrivial p-rank difference between the 2n and 3n inclusion matrices can look like a layer separator even when its missing component is only an aggregate parity already known from the counting recurrence. | Identify the actual image/cokernel component before promoting a rank computation. Here W_{n,2n} has only the trivial one-dimensional defect and W_{n,3n} is surjective. | S019-P1 / ZS-50 |
+| FL-065 | 2026-10-04 | Higher codegrees can recover the S016 residual hypergraph yet still fail to distinguish which fixed-size layer carries it. Abstract block families may realize the entire binary shadow. | Test design realizability directly. S019's upper-star/down-lift/null-family construction shows every delta=0/1/2 signature survives all current F2 inclusion constraints. | S019-P2/P3 |
+| FL-066 | 2026-10-04 | An abstract binary design realization is not an actual zero-sum realization and says nothing by itself about the remaining modulo-4 split. | Do not infer existence of a CAND extremal, actual freedom of A_2n/A_3n, or mixed-primary transfer. Any successor must add arithmetic or genuinely non-binary information; S020 must reassess before S021. | S019 boundary / D-063 |

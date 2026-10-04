@@ -10,19 +10,21 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S015 records before later target-specific work, with
+7. The completed S002–S019 records before later target-specific work, with
    particular attention to the S010 audit, S011 exchange obstruction, S012
-   progressive-block repair and S013 source-route comparison.
+   progressive-block repair, S013 source-route comparison, and S016–S019
+   threshold-star/counting/incidence chain.
 
 ## Current state
 
-**S018 is completed. On the verified 2-primary class, singleton 2n/3n
-incidence parities are separated and every codegree through order n obeys an
-explicit binary higher-layer law recovering the S016 residual hypergraph after
-the top-layer correction. No near-full stratum is excluded. D18-01 is promoted
-and S019 is READY on the remaining binary layer-separator/design dependency.
-The stopped D7--D10/capacity/Fano and progressive-block architectures remain
-stopped.**
+**S019 is completed. On the verified 2-primary class, the exact
+Wilson--Frankl mod-2 inclusion ranks and explicit fixed-block-size lifts prove
+that the unrestricted binary design/inclusion system through codegree n admits
+every S016 delta=0/1/2 signature. No near-full stratum is excluded, no actual
+2n/3n zero-sum layer is realized by that construction, and the modulo-4 split
+remains unresolved. The binary-design separator route is stopped. S020 is READY
+as the required periodic ten-session audit; the stopped D7--D10/capacity/Fano,
+progressive-block, and S016 shifted-exchange routes remain stopped.**
 
 CAND-02 remains selected at full all-`m` scope and
 **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
@@ -231,3 +233,34 @@ theorem. S020 remains the next periodic audit.
 ## Frontier after S018 — n-wise binary incidence shadow
 
 S018 proves `A_3n(x)=A_n(x) mod 2`, `A_2n(x)=A_4n(x) mod 2`, and for every nonempty `D` with `|D|<=n`, `A_n(D)+A_2n(D)+A_3n(D)+A_4n(D)=0 mod 2`. The n-layer is the exact S016 residual family and the 4n layer is explicit, so the combined 2n/3n codegrees recover the reservoir/edge graph. The strict source length bound blocks mod-4 double deletion and all kappa=3 use. S019 is READY on the genuinely narrower binary layer-separator/design problem and must stop if it only renames the remaining bit. Mixed-primary status is unchanged. S020 remains the next periodic audit.
+
+
+## Frontier after S019 — binary design realization is non-separating
+
+Let X be the 4n+1 positions of the S016 threshold sequence, with n a power of
+two. The Frankl/Wilson mod-2 rank formula gives
+
+- rank W_{n,3n} = C(4n+1,n);
+- rank W_{n,2n} = C(4n+1,n)-1.
+
+The one missing 2n row component is only the even total n-codegree condition.
+It does not isolate the 2n layer from the 3n layer.
+
+S019 proves a stronger direct realization statement. For every n-block N,
+the family of all 3n-blocks containing N has, modulo two, exactly the same
+nonempty codegrees through order n as N itself. For every 4n-block H, all
+2n-subblocks of H have the same nonempty codegrees through order n as H, while
+their total number is even. Finally, all 2n-subsets of any fixed 3n-set form
+an odd family whose nonempty codegrees through order n are all even.
+
+Taking symmetric differences therefore builds abstract 3n and 2n block
+families with A_3n(D)=A_n(D) and A_2n(D)=A_4n(D) for every nonempty
+|D|<=n, while also matching the known global layer parities. Hence every S016
+delta=0/1/2 n-layer signature satisfies the complete binary inclusion/design
+constraints currently available.
+
+This does not show that the abstract blocks are zero-sum blocks, does not
+resolve the modulo-4 singleton split, and supplies no mixed-primary theorem.
+Accordingly D18-01 is closed only as a **pure binary-design route no-go**.
+Per D-063, no equivalent incidence continuation is scheduled. S020 is the
+periodic S011–S020 audit and strategy reassessment.

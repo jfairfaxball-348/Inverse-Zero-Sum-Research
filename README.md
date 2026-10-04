@@ -5,12 +5,12 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation with parallel external review.
-S018 is complete. On the infinite 2-primary class, singleton 2n/3n incidence
-parities are separated and every codegree through order n obeys an explicit
-binary higher-layer law recovering the S016 residual hypergraph after the
-top-layer correction. No near-full stratum is excluded. S019 is READY on the
-binary layer-separator/design dependency; the stopped D7--D10/capacity/Fano
-and progressive-block routes remain stopped.**
+S019 is complete. On the verified 2-primary class, the exact Wilson--Frankl
+mod-2 inclusion ranks and explicit fixed-block-size lifts show that the full
+binary design/inclusion system through codegree n admits every S016
+delta=0/1/2 signature. No near-full stratum is excluded and the actual
+modulo-4 2n/3n split remains unresolved. The pure binary separator route is
+stopped; S020 is READY as the required periodic ten-session audit.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -21,7 +21,7 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-007 is resolved by D-057; S018 is complete and the S019 prompt is live.
+and no next-session prompt.** B-007 remains resolved by D-057; S019 is complete and the S020 audit prompt is live.
 
 ## Current readiness dimensions
 
@@ -150,3 +150,28 @@ remains the full selected target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 ## S018 binary-incidence checkpoint
 
 S018 proves separated singleton 2n/3n parities and an n-wise four-layer parity law on the verified 2-primary class. Since the n-layer is the exact S016 residual family and the 4n layer is explicit, higher-layer codegrees recover the reservoir/edge graph as a binary shadow. The strict source length bound blocks mod-4 double deletion and all kappa=3 use. S019 is one bounded inclusion-matrix/design assessment of the remaining layer-separation dependency.
+
+
+## S019 binary-design realization checkpoint
+
+S019 audited the exact binary inclusion-matrix route on the verified
+2-primary class. Frankl's 1990 proof of Wilson's mod-p rank formula gives,
+for the n-versus-k inclusion matrices on 4n+1 positions,
+full row rank at k=3n and row corank one at k=2n when n is a power of two.
+That rank difference does not separate the actual zero-sum layers: the sole
+2n defect is the aggregate parity already visible in S018.
+
+More decisively, S019 gives explicit binary fixed-block-size lifts. Any
+n-block family has a 3n-block family with exactly the same nonempty codegrees
+through order n; any 4n-block family has a 2n-block family with the same
+nonempty codegrees through order n; and an odd 2n-block null design adjusts
+the global 2n parity without changing those codegrees. Applied to the S016
+n-layer and the explicit 4n layer, these lifts realize every S018 binary
+constraint for delta=0,1,2.
+
+This is a design-realization no-go, not an actual zero-sum realization. It
+does not determine the remaining modulo-4 layer-split bit, does not construct
+a CAND extremal, and does not transfer to mixed-primary n. Per the S019 stop
+rule, no renamed binary-incidence continuation is promoted. S020 is the next
+periodic ten-session audit and must reassess strategy before any S021 proof
+route is scheduled.
