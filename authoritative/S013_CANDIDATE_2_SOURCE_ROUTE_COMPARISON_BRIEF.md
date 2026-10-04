@@ -1,6 +1,6 @@
 # S013 CAND-02 source-based route comparison brief
 
-Status: PREPARED ONLY. Do not execute inside S012.
+Status: EXECUTED IN S013; retained as the historical session brief.
 
 ## Purpose
 
