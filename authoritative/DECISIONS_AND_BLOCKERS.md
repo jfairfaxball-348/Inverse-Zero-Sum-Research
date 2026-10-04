@@ -321,3 +321,16 @@ Mathematical investigation remains OPEN; external review remains CLOSED and
 parallel. Xue Li's reply remains pending absent substantive committed feedback.
 No outreach was sent and no willingness, endorsement, novelty certification or
 approval is inferred.
+
+## S015 replacement-core incidence decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-053 | 2026-10-04 | Record S015-P1--P4 as programme-proved bounded mathematics. Safe replacements transport representation families and cores exactly; each core is a union of complete support value classes; nontrivial incidence isolates additional high-multiplicity strata and forces exact deficit descent; the common deletion star and residual factorization add ambient reconstruction data. Full ambient one-term isolation remains unresolved. These are not novelty or publication claims. | `sessions/S015/REPLACEMENT_CORE_INCIDENCE.md`; uses S014-P1--P4 and the already-rechecked exact threshold only. |
+| D-054 | 2026-10-04 | Promote D15-01 and schedule S016 on **near-full ambient cores** with nontrivial support incidence and `delta_a=n-1-|K_a|<=2`. This is permitted because S015 produced a genuinely new simultaneous ambient transport/factorization theorem. S016 must stop if it only restates S015 or re-enters the stopped kernel-capacity/progressive architectures. | S015-P1--P4 and D-050/D-052 stop rules. |
+
+Active owner blockers remain **NONE**. CAND-02 remains the full all-`m`
+target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical investigation
+remains OPEN; external review remains CLOSED and parallel. Xue Li's reply
+remains pending absent substantive committed feedback. No outreach was sent and
+no willingness, endorsement, novelty certification or approval is inferred.
