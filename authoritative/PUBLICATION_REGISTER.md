@@ -309,3 +309,12 @@ it is not a submission blocker in the narrow sense because the programme is far
 earlier than submission readiness. Universal classification, actual-result
 novelty/significance, independent scrutiny and manuscript preparation all
 remain outstanding. No submission, acceptance or publication occurred.
+
+
+## Post-S013 owner strategy resolution
+
+D-050 retains full CAND-02 and resolves B-006. This changes no publication
+claim or venue gate: E-JC remains the leading eligible route, the publication
+gate remains OPEN as an eligibility/readiness dimension only, and no
+acceptance prediction or submission authorization is created. S014 is a
+mathematical mechanism assessment, not a publication-readiness event.
