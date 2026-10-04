@@ -380,3 +380,14 @@ Xue Li's Stage-1 message is owner-reported SENT 2026-10-02 / REPLY PENDING,
 confirmed reviewers NONE, external-review gate CLOSED. S014 sends no outreach
 and must not infer willingness, endorsement, novelty certification or approval
 from silence.
+
+## S014 external-review boundary
+
+No newer committed record contains substantive Xue Li feedback. Status remains
+owner-reported SENT 2026-10-02 / REPLY PENDING, confirmed reviewers NONE and
+external-review gate CLOSED. S014 sent no outreach and inferred no willingness,
+endorsement, novelty certification or approval.
+
+The new S014 deductions do not convert the pending Stage-1 request into review
+of an actual result. If these deductions later survive into a contribution,
+appropriate independent result/manuscript scrutiny remains separately required.
