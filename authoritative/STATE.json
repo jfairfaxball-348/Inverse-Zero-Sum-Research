@@ -5,10 +5,10 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S020",
-  "next_session": null,
-  "next_brief": null,
+  "next_session": "S021",
+  "next_brief": "authoritative/S021_TARGET_REASSESSMENT_BRIEF.md",
   "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
-  "programme_status": "S020_COMPLETED_OWNER_STRATEGY_BLOCKER_AFTER_TEN_SESSION_AUDIT",
+  "programme_status": "S021_READY_POST_CAND02_TARGET_REASSESSMENT",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
   "candidate_under_due_diligence": "CAND-02 remains the full all-m inverse EGZ target. S019 proves that, on the verified 2-primary class, unrestricted binary inclusion/design constraints through codegree n admit every S016 delta=0/1/2 signature; no near-full stratum, actual 2n/3n zero-sum layer, modulo-4 split or mixed-primary case is resolved.",
   "mathematical_results": [
@@ -63,16 +63,14 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [
-    "B-008"
-  ],
+  "active_owner_blockers": [],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; if it identifies prior art, a known solution, material overlap, a mistaken premise, or a serious scope/significance concern, pause the affected mathematical direction and reassess it.",
     "Continue external independent review in parallel and obtain appropriate independent scrutiny of the mathematical contribution/manuscript before journal submission, subject to actual reviewer willingness and availability.",
     "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
+  "next_prompt_status": "READY",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -220,5 +218,6 @@
   "s018_source_refresh_date": "2026-10-04",
   "s019_mathematical_investigation_date": "2026-10-04",
   "s019_source_refresh_date": "2026-10-04",
-  "s020_audit_date": "2026-10-04"
+  "s020_audit_date": "2026-10-04",
+  "b008_resolution_date": "2026-10-04"
 }
