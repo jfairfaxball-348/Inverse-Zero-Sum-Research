@@ -361,3 +361,21 @@ The full classification, actual-result literature audit, independent scrutiny,
 manuscript and explicit submission authorization remain outstanding. B-007 is
 a research-strategy blocker, not evidence of publication readiness. No
 submission, acceptance or publication occurred.
+
+## S020 publication credibility audit
+
+No venue decision or policy claim changes in S020. E-JC remains the leading
+eligible route and JNT the recorded backup under the latest dated policy checks.
+This is workflow and subject eligibility only.
+
+The programme is not submission-ready. The S014–S019 internal results have not
+been established as a novel/significant standalone contribution, have not
+received independent mathematical scrutiny, and have not been assembled into a
+manuscript. Full CAND-02 is not solved. No submission authorization,
+submission, acceptance or publication occurred.
+
+B-008 is a research-strategy blocker, not evidence for or against journal
+acceptance. If the owner chooses to narrow/reframe around the strongest
+S014–S016 structural results, the exact resulting theorem package requires a
+fresh prior-art/novelty/significance audit before it is treated as a paper
+contribution.
