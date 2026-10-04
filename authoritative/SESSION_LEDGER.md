@@ -197,3 +197,18 @@ computation remain CLOSED.
 - B-006 is active. No next numbered session or live prompt is scheduled until
   the owner resolves the target/strategy reassessment.
 - S020 remains the next periodic audit if the programme later reaches S020.
+
+## Post-S013 owner strategy checkpoint
+
+- Incoming authority: `0f64fb3a39f4d8d3da4625bbabb15650f53ed4cb`.
+- The owner selected B-006 option 1: retain full CAND-02.
+- D-050 resolves B-006 and authorizes a materially new mechanism rather than a
+  narrower target or target switch.
+- This checkpoint is not a numbered research session and adds no mathematical
+  theorem.
+- S014 is READY on global one-term extension saturation / support-cloning.
+- The stopped D7--D10 local-hole/capacity and progressive-block routes remain
+  stopped.
+- External review remains CLOSED; Xue Li reply pending; no reviewer is
+  confirmed.
+- S020 remains the next periodic ten-session audit.
