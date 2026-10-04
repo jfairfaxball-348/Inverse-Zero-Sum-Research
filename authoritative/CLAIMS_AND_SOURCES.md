@@ -412,3 +412,25 @@ replacement and inverse-EGZ formulations produced no additional checked theorem
 statement directly matching C-72--C-74. This is only a bounded source non-hit
 and **does not** certify novelty, openness, completeness of the literature,
 significance or publishability.
+
+## S015 ambient core-transport claims
+
+Proof / focused-check date: **2026-10-04**. These are internal programme
+deductions, not independently reviewed, formally verified or novelty-certified.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-75 | PROGRAMME_PROVED | S015-P1: if a position `p` of value `b` lies in `K_x(S)`, safe replacement `p->x` transports `R_x(S)` bijectively to `R_b(S_{p->x})` and transports the core exactly. Hence every `K_x(S)` is a union of complete support value classes; the augmented core multiset is exchange-invariant. | `sessions/S015/REPLACEMENT_CORE_INCIDENCE.md`; ambient S014 inputs only. |
+| C-76 | PROGRAMME_PROVED | S015-P2: a nontrivial support incidence `b->a` forces `v_a<=n-4`, `v_b<=n-3`, `v_a+v_b<=n-1`; therefore multiplicity `n-3` is isolated. After deleting each source occurrence, an exact support-deleted translated zero sum occurs one length below the S014 deficit witness. | S015 proof; no quotient/capacity input. For `m=2`, this already forces `K_a=P_a` for every support value. |
+| C-77 | PROGRAMME_PROVED | S015-P3: from any safe move at `p` of value `b`, the common deletion star contains an `(n-2)`-term representation of `-(x+b)`; every such representation contains `K_x(S)\setminus\{p\}`. | S015 proof using the exact ambient threshold at length `4n+1` and C-75. |
+| C-78 | PROGRAMME_PROVED | S015-P4: every `-x` representation factors as the positional core plus a fixed-cardinality residual family with empty intersection. Deficit zero is unique; deficit one is exactly an equal-valued reservoir of at least two positions outside the core; deficit two remains unresolved. | S015 proof; this is structural factorization, not a classification of all extremals. |
+
+### S015 focused source boundary
+
+ZS-10 (Girard--Schmid 2019) remains the published exact-threshold input inherited
+through S014. ZS-42 (Gao--Hong--Peng 2022) was rechecked as nearby general
+inverse fixed-length literature. Focused searches for replacement, safe
+replacement, one-position/one-term exchange and inverse-EGZ formulations did
+not surface an additional primary theorem statement directly matching
+C-75--C-78. This is a bounded search non-hit and **does not** certify novelty,
+openness, completeness, significance or publishability.
