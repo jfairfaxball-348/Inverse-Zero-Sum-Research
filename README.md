@@ -5,10 +5,11 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation, with parallel external review.
-S014 is complete. Its global extension-saturation/support-cloning argument
-proved an exact ambient deletion/replacement-core theorem and excluded
-multiplicity 2m-2. S015 is READY on the resulting simultaneous replacement-core
-incidence problem; the stopped D7/capacity/local-hole and progressive-block
+S015 is complete. Safe ambient replacements now transport representation cores
+exactly; every core is a union of complete support value classes, with new
+multiplicity/deficit constraints and near-full residual factorization. Full
+one-term isolation remains unresolved. S016 is READY on near-full nontrivial
+replacement cores; the stopped D7/capacity/local-hole and progressive-block
 routes remain stopped.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
@@ -20,7 +21,7 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 is resolved by D-050; S014 is complete and the S015 prompt is
+and no next-session prompt.** B-006 is resolved by D-050; S015 is complete and the S016 prompt is
 live.
 
 ## Current readiness dimensions
@@ -91,3 +92,19 @@ D14-01 is the next bounded obligation: test whether `K_a` can contain
 different-valued positions without reducing the problem to the stopped kernel
 one-change/capacity architecture. These programme results are not a novelty or
 publication-readiness claim.
+
+## S015 replacement-core checkpoint
+
+S015 proves that a safe one-position replacement transports the entire ambient
+representation family and core exactly. Consequently every `K_x(S)` is a
+union of complete support value classes. A nontrivial support incidence
+`b -> a` can occur only with `v_a<=n-4`, `v_b<=n-3`, and it
+forces an exact one-step deficit witness after deleting each source occurrence.
+The common deletion star also has an ambient `(n-2)` witness containing the
+transported core.
+
+Representation freedom outside a core now has an exact residual
+factorization. Deficit zero is unique; deficit one is a forced equal-valued
+reservoir; deficit two is the first unresolved near-full case. S016 attacks
+that near-full ambient stratum only. These programme deductions are not
+novelty or publication-readiness claims.
