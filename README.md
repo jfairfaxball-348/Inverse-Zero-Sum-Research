@@ -5,12 +5,13 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation with parallel external review.
-S019 is complete. On the verified 2-primary class, the exact Wilson--Frankl
-mod-2 inclusion ranks and explicit fixed-block-size lifts show that the full
-binary design/inclusion system through codegree n admits every S016
-delta=0/1/2 signature. No near-full stratum is excluded and the actual
-modulo-4 2n/3n split remains unresolved. The pure binary separator route is
-stopped; S020 is READY as the required periodic ten-session audit.**
+S020 is complete. The periodic S011–S020 audit confirms durable S014–S016
+all-m ambient replacement-core/threshold-star structure and S017–S019
+2-primary counting/incidence progress, but no full classification, near-full
+deficit exclusion, mixed-primary transfer or publication-ready theorem package.
+No source- and hypothesis-justified S021 route clears the anti-churn bar.
+B-008 is ACTIVE for owner strategy/target disposition and the live next-session
+prompt is suppressed.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -21,7 +22,8 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-007 remains resolved by D-057; S019 is complete and the S020 audit prompt is live.
+and no next-session prompt.** B-006 and B-007 remain resolved; B-008 is active
+after S020, so no S021 prompt is live.
 
 ## Current readiness dimensions
 
@@ -175,3 +177,20 @@ a CAND extremal, and does not transfer to mixed-primary n. Per the S019 stop
 rule, no renamed binary-incidence continuation is promoted. S020 is the next
 periodic ten-session audit and must reassess strategy before any S021 proof
 route is scheduled.
+
+## S020 periodic-audit checkpoint
+
+S020 assessed S011–S019 against the root publication objective. The audit
+retains the S014–S016 ambient structural theorems and the S017–S019 strict
+2-primary reductions, while preserving every route and source boundary.
+S019 remains only a design-space no-go: its abstract 2n/3n families need not
+be zero-sum and do not settle the modulo-4 split.
+
+No immediately runnable S021 is promoted. Another local/capacity,
+progressive-block, shifted-exchange or unrestricted incidence session would
+violate existing stop rules, while mixed-primary counting still lacks the
+required exact full-group fixed-length theorem. B-008 therefore asks the owner
+to choose between a genuinely new full-target strategy/source direction,
+a deliberate source-audited partial-contribution reframing, or target
+reassessment.
+
