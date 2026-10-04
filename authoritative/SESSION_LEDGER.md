@@ -354,3 +354,17 @@ computation remain CLOSED.
   reviewer is confirmed.
 - No S021 route clears the anti-churn bar. B-008 is active, so the live
   next-session prompt is suppressed pending owner strategy disposition.
+
+## Post-S020 owner target-reassessment checkpoint
+
+- Incoming authority: `4fc1a484a01ccd87aa60d9585c8f360c2d6c3dc8`.
+- Owner chose B-008 option 3: reassess/switch target.
+- B-008 is resolved by D-066; this checkpoint is not a numbered research
+  session and adds no mathematical result.
+- CAND-02 remains the historical incumbent until explicit replacement
+  selection, but further proof work on it is paused.
+- S021 is READY for fresh source-first reassessment of CAND-01, CAND-03 and at
+  most two new replacement candidates.
+- S021 must recommend a target and then return final target selection to the
+  owner; it may not silently switch or start proof work.
+
