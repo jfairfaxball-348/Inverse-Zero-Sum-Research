@@ -387,3 +387,28 @@ no source-backed openness claim. The proposed S014 extension-saturation /
 support-cloning argument is not authoritative until proved and recorded in
 S014. Existing S007--S012 programme results and S013 source boundaries remain
 unchanged.
+
+## S014 extension-saturation and replacement-core claims
+
+Retrieval / proof date: **2026-10-04**. Programme deductions are internal,
+not independently reviewed, formally verified or novelty-certified.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-70 | SOURCE_RESULT / RECHECKED | Girard--Schmid 2019 Theorem 3.2 gives `s(C_2+C_{2m}+C_{2m})=8m+1` in the equal-factor case. | ZS-10; equal-factor proof statement rechecked in S014. |
+| C-71 | PROGRAMME_PROVED | S014-P1: with `n=2m`, every CAND-02 extremal satisfies `Sigma_{n-1}(S)=G_m`; complementation gives `Sigma_{3n+1}(S)=G_m`. | `sessions/S014/EXTENSION_SATURATION.md`; fixed-length coverage only, not eta-freeness. |
+| C-72 | PROGRAMME_PROVED | S014-P2: for support value `a`, every `(n-1)`-term representation of `-a` contains all old occurrences of `a`; the remaining block has exact length `n-v_a(S)-1` and sum that length times `a`. | S014 positional clone-swap; no quotient/capacity input. |
+| C-73 | PROGRAMME_PROVED | S014-P3: if `K_x(S)` is the positional intersection of all `(n-1)`-term representations of `-x`, then replacing old position `p` by `x` preserves `n`-zero-sum-freeness iff `p in K_x(S)`. Each `K_x` has at most `n-1` positions. | Exact two-direction proof in S014; ambient group, not the stopped kernel one-change route. |
+| C-74 | PROGRAMME_PROVED | S014-P4: `v_a(S) != n-2` for every support value. At `v_a=n-3`, every target representation uses a non-`a` pair summing to `2a`; at `v_a=n-1`, the representation is unique. General `r<=n-3` forces a translated support-deleted zero sum of exact length `n-r-1`. | S014 algebra using only C-72 and `na=0`; no division or Property D. |
+
+### S014 added/refreshed source
+
+| ID | Source | S014 inspection level | Purpose / limit |
+| --- | --- | --- | --- |
+| ZS-42 | Weidong Gao, Siao Hong and Jiangtao Peng, *On zero-sum subsequences of length k exp(G) II*, J. Combin. Theory Ser. A 187 (2022), 105563, DOI 10.1016/j.jcta.2021.105563 | Publisher abstract/introduction and surfaced main theorem statements inspected | Confirms a general inverse fixed-length `s_{k exp(G)}` literature. No inspected statement was used as, or identified with, S014's positional support-clone/deletion-core theorem. |
+
+Focused searches for saturated-sequence, critical-extension, one-term
+replacement and inverse-EGZ formulations produced no additional checked theorem
+statement directly matching C-72--C-74. This is only a bounded source non-hit
+and **does not** certify novelty, openness, completeness of the literature,
+significance or publishability.
