@@ -263,7 +263,7 @@ no willingness, endorsement, novelty certification or approval is inferred.
 
 ### B-006 — target/strategy reassessment after S013
 
-**ACTIVE.**
+**RESOLVED by D-050.**
 
 S010--S012 exhausted and then stopped the current local-hole/capacity and
 progressive-block proof architecture. S013 then checked three genuinely
@@ -289,3 +289,22 @@ While B-006 is active, `authoritative/NEXT_SESSION_PROMPT.md` is absent,
 parallel and CLOSED; Xue Li's reply remains pending absent substantive committed
 feedback. No willingness, endorsement, novelty certification or approval is
 inferred from silence.
+
+
+## Post-S013 owner strategy decision
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-050 | 2026-10-04 | **Resolve B-006 by retaining full CAND-02 and authorizing a materially new mathematical strategy.** Schedule S014 as one bounded assessment of global one-term extension saturation / support-cloning at the exact EGZ threshold. This authorization does not reopen the stopped D7--D10 local-hole/capacity route or another progressive-block repair. If the new mechanism is only tautological, source-equivalent to a stopped route, or yields no substantive new dependency, stop and reassess rather than scheduling a cosmetic variant. | Explicit owner choice of B-006 option 1: “1” |
+
+B-006 is resolved. CAND-02 remains selected with unchanged exact scope and
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN status. Target, publication and
+mathematical-investigation gates remain OPEN; external review remains CLOSED
+and parallel. Xue Li's reply remains pending absent substantive committed
+feedback. No reviewer willingness, endorsement, novelty certification or
+approval is inferred.
+
+The S014 mechanism is a planning authorization, not a proved mathematical
+claim. Its starting observation must be established inside S014 from the
+published threshold and original-position swap logic before any derived
+consequence is recorded.
