@@ -285,3 +285,18 @@ computation remain CLOSED.
 - External review remains CLOSED; Xue Li reply pending; no reviewer is
   confirmed.
 - S020 remains the next periodic ten-session audit.
+
+## S017 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S017 | COMPLETED BOUNDED SOURCE-FIRST INVESTIGATION; NEW 2-PRIMARY COUNTING DEPENDENCY; NO STRATUM EXCLUDED | 1d5090b19cbea2536a35dfeb96f1bd995449b288 | Gao--Geroldinger modulo-4 threshold/deletion recurrence; pointwise and aggregate common-core incidence congruences; modulo-8 all-length token incidence; exact mixed-primary transfer boundary | [S017 closeout](../sessions/S017/CLOSEOUT.md) |
+
+- The supplied checkpoint matched live `main`; S017 was unique at entry.
+- D16-01 is partially resolved by a genuinely new counting dependency on the infinite class `m=2^s`; no `delta<=2` stratum is excluded.
+- Chevalley--Warning/Kemnitz and Olson/Gao counting sources were audited at exact group/length hypotheses. No p-group result is extrapolated to mixed-primary `n`.
+- No mathematical computation, formalisation or outreach ran.
+- Active owner blockers: NONE.
+- External review remains CLOSED; Xue Li reply remains pending.
+- Next numbered session: S018, D17-01 2-primary higher-length threshold-star incidence.
+- S020 remains the next periodic ten-session audit.

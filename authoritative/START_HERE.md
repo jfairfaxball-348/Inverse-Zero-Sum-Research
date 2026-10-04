@@ -16,17 +16,15 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S015 is completed. The ambient replacement-core route now has exact core
-transport, value-class saturation, new support-incidence multiplicity/deficit
-constraints and near-full residual factorization. Full ambient one-term
-isolation remains unresolved. D15-01 is promoted; S016 is READY on near-full
-nontrivial replacement cores. Universal D6-08 remains unresolved and the
-stopped D7/capacity/local-hole and progressive-block architectures remain
-stopped.**
+**S017 is completed. A verified Gao--Geroldinger p-group recurrence now gives
+a new modulo-4/modulo-8 counting dependency on the infinite 2-primary class
+`m=2^s`, linking S016's exact `N_n(U)` to `2n/3n/4n` common-core incidence.
+No near-full stratum is excluded. D17-01 is promoted and S018 is READY on the
+new higher-length incidence terms. The stopped D7--D10/capacity/Fano and
+progressive-block architectures remain stopped.**
 
-CAND-02 remains selected: for every integer m>=2, classify every length-8m
-sequence in `G_m=C_2+C_{2m}+C_{2m}` with no 2m-term zero sum.
-Status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
+CAND-02 remains selected at full all-`m` scope and
+**SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
 
 - Target, publication-eligibility and mathematical-investigation gates: OPEN.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
@@ -199,3 +197,31 @@ CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical
 investigation remains OPEN and external review CLOSED. Xue Li's reply remains
 pending absent substantive committed feedback. S020 remains the next periodic
 audit.
+
+## Frontier after S017
+
+S017's source-first count audit found one exact transfer. When `n=2m` is a
+power of two, Gao--Geroldinger 2007 applies to `G=C_2+C_n+C_n` at both
+`|U|=4n+1` and every length-`4n` deletion-star extremal. Its proof recurrence
+with source parameter `kappa=2` yields
+
+`1+N_n(U)+N_{2n}(U)+N_{3n}(U)+N_{4n}(U)=0 (mod 4)`.
+
+Subtracting the congruence for a deletion `U tau^{-1}` gives
+
+`N_n(U)+A_{2n}(tau)+A_{3n}(tau)+A_{4n}(tau)=0 (mod 4)`
+
+for every `tau` in the common core, and summing gives
+
+`I_{2n}+I_{3n}+I_{4n}=delta N_n(U) (mod 4)`.
+
+The same source also makes all-length zero-sum incidence through each core
+token divisible by eight. This is a genuine new counting dependency but not
+yet an exclusion: the `2n`/`3n` incidences remain uncontrolled.
+
+For mixed-primary `n`, no p-group theorem is imported. A Sylow projection
+forgets the complementary-primary sum and therefore does not preserve `N_n`.
+S018 is prepared on D17-01: close the higher-length incidence terms on the
+verified 2-primary class, or rigorously stop if they remain free. A mixed-
+primary transfer is admissible only from an exact full-group prescribed-sum
+theorem. S020 remains the next periodic audit.

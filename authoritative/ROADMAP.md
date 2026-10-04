@@ -687,3 +687,25 @@ search non-hit is not evidence of novelty or openness.
 
 The old D7--D10 local-hole/capacity/Fano machinery and progressive-block route
 remain stopped. S020 remains the next periodic ten-session audit.
+
+## Frontier after S017 — 2-primary counting recurrence
+
+S017 audited prescribed-length counting congruences at the exact S016 threshold. Prime-cyclic Chevalley--Warning/Sury and `C_p^2` Kemnitz/Reiher identities do not match the CAND group, and Gao 2003 does not furnish an applicable exponent-length theorem at this threshold. The source that transfers exactly is Gao--Geroldinger 2007 on finite abelian p-groups.
+
+When `n=2m` is a power of two, `G=C_2+C_n+C_n` is a 2-group with `d*(G)=2n-1`. The Gao--Geroldinger recurrence at source parameter `kappa=2` applies simultaneously to `U` of length `4n+1` and every deletion-star extremal of length `4n`. It gives modulo four
+
+`1+N_n(U)+N_{2n}(U)+N_{3n}(U)+N_{4n}(U)=0`
+
+and, after subtracting the deletion congruence,
+
+`N_n(U)+A_{2n}(tau)+A_{3n}(tau)+A_{4n}(tau)=0`
+
+for every common-core token `tau`. Summing over the core yields
+
+`I_{2n}+I_{3n}+I_{4n}=delta N_n(U) (mod 4)`,
+
+so the exact S016 unique/reservoir/edge count now enters a genuinely different algebraic invariant. The same source gives modulo-eight divisibility of all-length zero-sum incidence through each core token.
+
+No near-full stratum is yet excluded because the `2n` and `3n` incidences are uncontrolled. If `n` has an odd factor, the group is mixed-primary; a Sylow projection zero-sum count aggregates nonzero complementary sums and cannot be substituted for the full-group count. No inspected source supplies the required mixed-primary recurrence.
+
+D17-01 is therefore the next bounded dependency. S018 will attempt to close the higher-length incidence terms on the verified 2-primary class and will admit a mixed-primary route only through an exact source theorem. The stopped D7--D10 local-hole/capacity/Fano and progressive routes remain stopped. S020 remains the next periodic audit.

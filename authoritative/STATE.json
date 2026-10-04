@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S016",
-  "next_session": "S017",
-  "next_brief": "authoritative/S017_CANDIDATE_2_ZERO_SUM_COUNTING_CONGRUENCE_BRIEF.md",
+  "last_completed_session": "S017",
+  "next_session": "S018",
+  "next_brief": "authoritative/S018_CANDIDATE_2_2PRIMARY_HIGHER_LENGTH_INCIDENCE_BRIEF.md",
   "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
-  "programme_status": "S017_READY_NEW_COUNTING_CONGRUENCE_ROUTE",
+  "programme_status": "S018_READY_2PRIMARY_HIGHER_LENGTH_INCIDENCE",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — CAND-02 remains selected at full all-m scope. Owner choice resolves B-007 by authorizing a materially new zero-sum counting/congruence source-acquisition route. S017 is READY to test algebraic counting congruences against the S016 threshold-star delta 0/1/2 normal forms; stopped D7–D10/capacity/Fano/progressive routes remain stopped.",
+  "candidate_under_due_diligence": "NONE — CAND-02 remains selected at full all-m scope. S017 found a verified Gao--Geroldinger modulo-4/modulo-8 counting dependency on the infinite 2-primary class m=2^s. No near-full stratum is excluded; S018 is READY on the new 2n/3n higher-length incidence terms. No p-group theorem is transferred to mixed-primary n without a rigorous full-group prescribed-sum theorem.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -45,7 +45,11 @@
     "S016-P1 PROGRAMME THEOREM: for a support core K_a of deficit delta, adjoining a fresh a gives U=MO with M=K_a a_*; every deletion of a token of M is extremal, its corresponding replacement core is M minus that token, all target representations share one residual family on O, and M is exactly the intersection of all n-term zero sums in U.",
     "S016-P2 PROGRAMME COROLLARY: near-full deficits have exact threshold-star normal forms. Delta zero gives a unique n-zero-sum M; delta one gives M plus one term from a single equal-valued outside reservoir; delta two gives M plus an edge of a fixed-sum positional graph whose value-class components and empty-intersection cases are classified.",
     "S016-P3 PROGRAMME LEMMA: in the deletion-star normalization, every S015-P3 common-deletion witness is exactly the forced two-token core deletion plus a member of the same residual family; it provides no independent near-full residual constraint.",
-    "S016-P4 PROGRAMME THEOREM/OBSTRUCTION: deficit descent yields |Y|=delta+|X| and sigma(Y)-sigma(X)=q+u-t. Thus a near-full nontrivial star must realize either a shifted outside residual or a cross-boundary exchange; the current ambient theorems exclude neither, so existence/nonexistence of delta<=2 remains unresolved."
+    "S016-P4 PROGRAMME THEOREM/OBSTRUCTION: deficit descent yields |Y|=delta+|X| and sigma(Y)-sigma(X)=q+u-t. Thus a near-full nontrivial star must realize either a shifted outside residual or a cross-boundary exchange; the current ambient theorems exclude neither, so existence/nonexistence of delta<=2 remains unresolved.",
+    "S017-P1 PROGRAMME RESULT: when n=2m is a power of two, Gao--Geroldinger 2007 with kappa=2 gives 1+N_n(U)+N_2n(U)+N_3n(U)+N_4n(U)=0 mod 4 and the corresponding deletion congruence with N_n(U tau^{-1})=0 for every common-core token tau.",
+    "S017-P2 PROGRAMME COROLLARY: on the same 2-primary class, every tau in M satisfies N_n(U)+A_2n(tau)+A_3n(tau)+A_4n(tau)=0 mod 4; summing gives I_2n+I_3n+I_4n=delta N_n(U) mod 4, tying the exact S016 delta 0/1/2 counts to higher-length common-core incidence.",
+    "S017-P3 PROGRAMME COROLLARY: Gao--Geroldinger p=2 total-count divisibility implies that the number of all zero-sum subsequences of U containing any fixed tau in M is divisible by 8.",
+    "S017-P4 PROGRAMME BOUNDARY: no S017 source transfers these p-group recurrences to arbitrary mixed-primary n, and the uncontrolled 2n/3n incidences prevent exclusion of delta 0/1/2. The new dependency is exact but incomplete."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -145,6 +149,11 @@
       "id": "S016",
       "status": "COMPLETED",
       "record": "sessions/S016/CLOSEOUT.md"
+    },
+    {
+      "id": "S017",
+      "status": "COMPLETED",
+      "record": "sessions/S017/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -170,9 +179,9 @@
   "s009_mathematical_investigation_date": "2026-10-03",
   "s010_mathematical_investigation_date": "2026-10-03",
   "last_ten_session_audit": "sessions/S010/TEN_SESSION_AUDIT.md",
-  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; S016 THRESHOLD-STAR NORMAL FORM RETAINED; B-007 RESOLVED BY OWNER OPTION 1; S017 READY ON A MATERIALLY NEW ZERO-SUM COUNTING/CONGRUENCE ROUTE; OLD D7/CAPACITY/FANO/PROGRESSIVE ROUTES REMAIN STOPPED",
+  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; S017 ADDS A VERIFIED 2-PRIMARY MOD-4/MOD-8 COUNTING DEPENDENCY; NO DELTA<=2 STRATUM EXCLUDED; S018 READY ON HIGHER-LENGTH INCIDENCE; OLD D7/CAPACITY/FANO/PROGRESSIVE ROUTES REMAIN STOPPED",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "Owner decision D-057 resolves B-007 without narrowing CAND-02. S017 is a source-first assessment of zero-sum counting and congruence methods at the exact threshold: count all n-term zero sums in the S016 threshold sequence and compare any verified algebraic congruences/divisibility laws with the exact delta=0/1/2 family sizes. This must not be a renamed replacement-core argument and must stop if no applicable theorem or genuinely new counting dependency is obtained.",
+  "current_route_disposition": "S017 partially resolves D16-01 on the infinite 2-primary class m=2^s: the Gao--Geroldinger p-group recurrence links the exact S016 N_n(U) count to 2n/3n/4n common-core incidences modulo 4, and all-length token incidence is divisible by 8. S018 attacks D17-01, the new higher-length incidence closure problem. Mixed-primary continuation requires an exact full-group prescribed-sum theorem; Sylow projection is insufficient.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-04",
@@ -180,5 +189,7 @@
   "s015_mathematical_investigation_date": "2026-10-04",
   "s016_mathematical_investigation_date": "2026-10-04",
   "s016_focused_source_check_date": "2026-10-04",
-  "b007_resolution_date": "2026-10-04"
+  "b007_resolution_date": "2026-10-04",
+  "s017_source_refresh_date": "2026-10-04",
+  "s017_mathematical_investigation_date": "2026-10-04"
 }

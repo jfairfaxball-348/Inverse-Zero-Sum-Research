@@ -393,3 +393,12 @@ congruences/divisibility identities at the exact threshold constrain or exclude
 the S016 delta=0,1,2 normal forms. This is a source-acquisition and theorem-
 transfer route; applicability must be checked exactly, especially for composite
 n=2m and the mixed-primary group C_2 + C_n + C_n.
+
+## S017 zero-sum counting decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-058 | 2026-10-04 | Record S017-P1--P4 as bounded programme mathematics/source-transfer results. Gao--Geroldinger 2007 applies directly only when `n=2m` is a power of two and yields the exact modulo-4 threshold/deletion-star incidence relations plus modulo-8 all-length token incidence. No `delta<=2` stratum is excluded, and no mixed-primary transfer is claimed. | `sessions/S017/ZERO_SUM_COUNTING_CONGRUENCES.md` and `SOURCE_AUDIT.md`; exact theorem/proof hypotheses checked. |
+| D-059 | 2026-10-04 | Promote D17-01 and schedule S018 on the new **2-primary higher-length incidence closure** problem. This promotion is allowed because S017 introduced a genuinely different algebraic counting dependency on an infinite modulus class. S018 must stop if `A_{2n}`/`A_{3n}` remain uncontrolled and no exact mixed-primary counting theorem is found; it must not re-enter D7--D10/Fano/capacity or progressive routes. | S017-P1--P4 and D-057 promotion rule. |
+
+Active owner blockers remain **NONE**. CAND-02 remains the unchanged full all-`m` target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Mathematical investigation remains OPEN; external review remains CLOSED and parallel. Xue Li's reply remains pending absent substantive committed feedback. No reviewer willingness, endorsement, novelty certification or approval is inferred.

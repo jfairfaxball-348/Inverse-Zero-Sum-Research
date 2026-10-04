@@ -456,3 +456,23 @@ already-recorded Gao--Hong--Peng 2022 line (ZS-42), but no checked primary
 statement directly resolving the S016 threshold-star common-intersection
 problem. No new source is promoted. This search non-hit is not evidence of
 novelty, openness, completeness, significance or publishability.
+
+## S017 zero-sum counting/congruence source audit
+
+| ID | Source | S017 inspection / exact boundary |
+| --- | --- | --- |
+| ZS-43 | B. Sury, *The Chevalley-Warning theorem and a combinatorial question on finite groups*, Proc. AMS 127 (1999), 951--953, DOI 10.1090/S0002-9939-99-04704-8 | Prime-cyclic `C_p`, length `2p-1`, prescribed `p`-term count congruence. Wrong group for CAND; no rank-three/mixed-primary transfer. |
+| ZS-44 | C. Reiher, *On Kemnitz' conjecture concerning lattice points in the plane*, Ramanujan J. 13 (2007), 333--337 | Inspected polynomial-method congruences for `C_p^2`, odd prime `p`, at `p,2p,3p` lengths. Wrong group/hypothesis for CAND. |
+| ZS-45 | W. D. Gao, *On zero-sum subsequences of restricted size II*, Discrete Math. 271 (2003), 51--59, DOI 10.1016/S0012-365X(03)00038-4 | Section 4 p-group counting theorem checked. Accessible rendering has a definition/proof counted-length ambiguity when the auxiliary `p^a` exceeds `exp(G)`; under the conservative exponent-length specialization its size hypothesis fails for `C_2+C_n+C_n`. Not used as a CAND theorem. |
+| ZS-46 | W. D. Gao and A. Geroldinger, *On the number of subsequences with given sum of sequences in finite abelian p-groups*, Rocky Mountain J. Math. 37 (2007), 1541--1550, DOI 10.1216/RMJM/1194275933 | Full theorem and proof recurrence inspected. Directly applicable to CAND exactly when `n` is a power of two; source parameter `kappa=2` applies at lengths `4n,4n+1` and gives mod-4 fixed-length plus mod-8 total-count information. |
+| ZS-47 | Xiaoyu He / Han--Zhang prescribed-length finite abelian p-group results | Later p-group existence/threshold refinements checked at statement level; no exact `N_n` congruence at the S016 threshold used. |
+| ZS-48 | Geroldinger--Grynkiewicz--Schmid, *Zero-sum problems with congruence conditions* | Adjacent length-congruence existence theory; not a full-group prescribed-length count theorem for the mixed-primary CAND group. |
+
+### S017 programme claims
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-83 | PROGRAMME_PROVED_FROM_SOURCE | S017-P1: for `n` a power of two, Gao--Geroldinger gives `1+N_n(U)+N_2n(U)+N_3n(U)+N_4n(U)=0 mod 4` and the deletion-star congruence with the `N_n` term zero. | ZS-46 plus S016-P1; exact `d*`, strict length bound and recurrence coefficients checked. |
+| C-84 | PROGRAMME_PROVED | S017-P2: every common-core token satisfies `N_n(U)+A_2n+A_3n+A_4n=0 mod 4`, and summing gives `I_2n+I_3n+I_4n=delta N_n(U) mod 4`. | Algebraic subtraction of C-83 across the S016 deletion star; `A_4n` is explicitly determined by `sigma(U)`. |
+| C-85 | PROGRAMME_PROVED_FROM_SOURCE | S017-P3: on the same 2-primary class, the total number of zero-sum subsequences of `U` containing any fixed common-core token is divisible by 8. | ZS-46 Theorem 1.1(2) applied to `U` and its deletion. |
+| C-86 | PROGRAMME_BOUNDARY | S017 excludes none of `delta=0,1,2`: `A_2n/A_3n` remain uncontrolled. No checked source transfers the p-group recurrence to arbitrary mixed-primary `n`; Sylow projection does not preserve the full-group zero-sum count. | D16-01 partially resolved; D17-01 promoted. Search non-hits are not openness/novelty evidence. |

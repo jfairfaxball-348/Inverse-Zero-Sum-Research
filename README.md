@@ -4,13 +4,13 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: P3 mathematical investigation, with parallel external review.
-S015 is complete. Safe ambient replacements now transport representation cores
-exactly; every core is a union of complete support value classes, with new
-multiplicity/deficit constraints and near-full residual factorization. Full
-one-term isolation remains unresolved. S016 is READY on near-full nontrivial
-replacement cores; the stopped D7/capacity/local-hole and progressive-block
-routes remain stopped.**
+**Current stage: P3 mathematical investigation with parallel external review.
+S017 is complete. On the infinite 2-primary class `m=2^s`, a verified
+Gao--Geroldinger recurrence links the exact S016 threshold zero-sum count to
+`2n/3n/4n` common-core incidence modulo four and gives an all-length
+modulo-eight incidence law. No near-full stratum is excluded. S018 is READY
+on the new higher-length incidence dependency; the stopped D7--D10/capacity/
+Fano and progressive-block routes remain stopped.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -21,8 +21,8 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 is resolved by D-050; S015 is complete and the S016 prompt is
-live.
+and no next-session prompt.** B-007 is resolved by D-057; S017 is complete and
+the S018 prompt is live.
 
 ## Current readiness dimensions
 
@@ -128,3 +128,21 @@ A direct S017 restatement would be cosmetic. B-007 is active for owner strategy
 reassessment, so no live next-session prompt is present. The old
 kernel/capacity and progressive routes remain stopped; CAND-02 remains the full
 selected target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+
+## S017 counting/congruence checkpoint
+
+S017 found a directly applicable algebraic counting theorem on one infinite
+subfamily. If `n=2m` is a power of two, Gao--Geroldinger 2007 applies to the
+S016 threshold sequence and each deletion-star extremal. It yields a modulo-4
+relation among zero-sum counts of lengths `n,2n,3n,4n`; subtracting a deletion
+gives a pointwise common-core incidence congruence and summing it gives
+
+`I_{2n}+I_{3n}+I_{4n}=delta N_n(U) (mod 4)`.
+
+The same source supplies modulo-eight total zero-sum token incidence. These
+relations do not yet rule out `delta=0,1,2` because the `2n` and `3n`
+incidences are uncontrolled. They are valid only on the verified 2-primary
+class; no p-group theorem is extrapolated to mixed-primary `n`.
+
+S018 attacks exactly that new higher-length incidence dependency. CAND-02
+remains the full selected target and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
