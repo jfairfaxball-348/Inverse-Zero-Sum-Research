@@ -330,3 +330,19 @@ ZS-10's pertinent hypotheses and Lemma 4.4(2) proof were rechecked in S011;
 see sessions/S011/SOURCE_CHECK.md. No new source, effective modulus range or
 current-openness conclusion is added. D10-01 is unresolved; the examined
 mechanism is stopped and a weaker D6-08 repair is prepared, not executed.
+
+## S012 progressive-block repair claims
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-64 | PROGRAMME_PROVED | S012-P1: after translating a maximum progressive block C to zero, any disjoint complement zero sum of length at most |C|+1 splices onto C and produces a strictly larger progressive block. Hence a putative D6-08 failure has no complement zero sum in that range. | `sessions/S012/PROGRESSIVE_BLOCK_REPAIR.md`; actual positions are disjoint and no reflection-pair hypothesis is used |
+| C-65 | PROGRAMME_PROVED | S012-P2: under a putative bridge failure with c=|C|<=m-2, a maximum complement short zero sum has m+1<=t<=2m-c-1. With d=2m-t, c+1<=d<=m-1 and the remaining complement has no zero sum of length at most d. | S012 proof; uses only CAND extremality, progressivity and the source value eta(G)=6m+2 |
+| C-66 | PROGRAMME_PROVED / OBSTRUCTION | S012-P3: if d-c=1, the remainder has eta(G)-1 terms but is not proved eta-free; if d-c>=2, eta forces only zero sums of length at least d+1>=c+2, outside S012-P1's splice range. A local c+2 example falsifies the overbroad splice mechanism only. | S012 proof/falsification; preserves S010-P4/S011-P2 and is not an actual D6-08 counterexample |
+
+ZS-10 (Girard--Schmid 2019, arXiv:1806.07636v2) Lemma 4.4(2) and its proof
+were rechecked in S012. The published m-1 progressive threshold is used to
+supply an exact complementary zero-sum cardinality in the long-short-zero-sum
+case; no Property-D or homocyclic Lemma 4.3 input is imported. This focused
+source recheck does not change the target's current-status label or certify
+novelty.
+

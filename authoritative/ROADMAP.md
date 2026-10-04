@@ -471,3 +471,39 @@ test a precise enlargement/replacement with all length witnesses and must not
 require reflection-pair form. D11-01 is prepared only. D6-10/D6-12 and the
 full classification remain untouched. The all-m target and current-status
 label remain unchanged. S020 remains the next ten-session audit.
+
+## S012 current mathematical boundary
+
+S012 returns directly to D6-08 without reopening the stopped local-hole/capacity
+route. For a maximum progressive block of size c, translated to center zero,
+any disjoint complement zero sum of length at most c+1 would strictly enlarge
+the block. Hence a putative bridge failure has no complement zero sum in that
+range.
+
+Running the maximal-short-zero-sum step of GS Lemma 4.4(2) below its published
+m-1 threshold gives a maximum complement short zero sum of length
+m+1<=t<=2m-c-1. With d=2m-t, the remainder contains no zero sum of length at
+most d and c+1<=d<=m-1. If d-c>=2, eta forces only a longer zero sum at length
+at least d+1>=c+2; if d=c+1, the remainder has eta(G)-1 terms but is not shown
+eta-free. This preserves S010-P4 and S011-P2.
+
+The universal progressive bridge and universal eta-core reduction remain
+unresolved. A local c+2 mechanism example is not a CAND counterexample, and
+sequence length alone cannot force the missing small zero sum. S013 is a
+source-based comparison of distinct routes before another mathematical
+direction is selected; it is not another proof variant.
+
+## S012 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S012 | COMPLETED BOUNDED REPAIR ASSESSMENT; UNIVERSAL D6-08 UNRESOLVED | 012c9449db2b2b8f4fa488988beecb7642b74ffe | Exact short-zero-sum splice; maximal-short-zero-sum deficit interval; source-threshold obstruction; source-route comparison prepared | [S012 closeout](../sessions/S012/CLOSEOUT.md) |
+
+- S012 was unique and the supplied checkpoint exactly matched live main.
+- No computation, formalisation or outreach ran.
+- No actual D6-08 counterexample, universal eta-core or classification is
+  claimed.
+- External review remains CLOSED, Xue Li reply pending, owner blockers NONE.
+- S013 is prepared as a source-based comparison; S020 remains the next
+  ten-session audit.
+

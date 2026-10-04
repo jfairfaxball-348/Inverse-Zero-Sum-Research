@@ -75,3 +75,12 @@ arguments. Retired routes are not silently revived without new information.
 | --- | --- | --- | --- |
 | FL-042 | 2026-10-03 | Appending a crossed edge to two disjoint original pairs reaches s(H), but every forced kernel zero sum uses overlapping endpoints. Its actual lift lacks one or two terms. The old unused-looking opposite edge can also meet the lift. | Track positions, not just group sums. S011-P2 gives the exact missing completion and uses the retained residual to make genuinely disjoint common pairs. A completing term/pair is not forced; preserve S010-P4 and do not declare the complement eta-free. |
 | FL-043 | 2026-10-03 | Length, odd-fiber parity and all low M_z bounds have explicit false positives: S011-P3's parabola family has a displayed 2p-zero sum. Also, choosing pairings never changes the invariant M_z(S). | Preserve the full extremality/residual restrictions. This falsifies only the relaxed shortcut, not D7. The assessed mechanism has no surviving forcing step; apply D-045 and return to the weaker progressive-block route instead of adding more equivalent hole labels. |
+
+## S012 progressive-block repair lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-044 | 2026-10-04 | A complement block with total sum zero does not automatically enlarge a progressive block. The exact splice proof needs its length r to satisfy r<=c+1; a local c=1 three-term minimal zero sum fails at r=c+2. | Track every required intermediate cardinality witness, not only total sum and disjointness. Treat the local example as a mechanism counterexample, not a CAND failure. | S012-P1 |
+| FL-045 | 2026-10-04 | Below the published m-1 threshold, the maximal-short-zero-sum mechanism of GS Lemma 4.4(2) lands outside the splice range. An eta(G)-1-length remainder is still not automatically eta-free. | Preserve the exact deficit d=2m-t and S010-P4/S011-P2; do not turn the right length into an eta-core without proving all short zero sums absent. | S012-P2/P3 |
+| FL-046 | 2026-10-04 | Sequence length by itself cannot force a zero sum below the exponent: arbitrarily long powers of an element of order 2m avoid every nonempty zero sum of smaller length. | Any continuation of the splice route must use genuinely CAND-specific structure or a different theorem. Compare source-backed routes before scheduling another minor progressive/capacity variant. | S012 route assessment |
+

@@ -476,3 +476,26 @@ capacity/parity relaxation; it supplies no actual D7 or Property-D failure.
 No universal eta-core, full classification or new arithmetic scope is claimed.
 S012 is prepared as one repair toward the weaker D6-08 progressive-block
 condition, not another local-hole reformulation or a change of research target.
+
+## S012 current mathematical boundary
+
+CAND-02 remains the selected all-m target and **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**. S012 does not narrow the target or certify openness.
+
+For a maximum progressive block C of size c, translated to center zero,
+S012-P1 proves that any disjoint complement zero sum of length at most c+1
+would enlarge C. Thus a putative bridge failure has no complement zero sum in
+that range.
+
+S012-P2/P3 re-run the maximal-short-zero-sum step of GS Lemma 4.4(2) below the
+published threshold. A maximum complement short zero sum has
+m+1<=t<=2m-c-1; writing d=2m-t, the remainder has no zero sum of length at most
+d, with c+1<=d<=m-1. Eta either leaves an eta(G)-1-length remainder that is not
+proved eta-free or forces only a zero sum longer than the splice range.
+
+This is an exact obstruction to the assessed repair, not a D6-08
+counterexample. D6-08/D6-09 remain unresolved universally, the earlier
+D7--D10 chain remains unresolved, and the stopped capacity route stays stopped.
+S013 will compare distinct source-backed routes before any new mathematics is
+chosen.
+

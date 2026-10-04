@@ -286,3 +286,13 @@ checks remain the latest recorded refresh. S011's failed exchange and relaxed
 counterexample do not establish a publication-ready contribution. Actual-result
 novelty, significance, independent scrutiny and manuscript work remain pending.
 No submission, acceptance or publication occurred.
+
+## S012 publication boundary
+
+No venue decision or eligibility claim changes in S012. The latest E-JC
+eligibility refresh remains the S010 check. S012's splice lemma and cardinality-
+gap obstruction are internal bounded mathematics, not a publication-ready
+contribution. Universal bridge/classification, actual-result novelty and
+significance, independent scrutiny and a manuscript remain outstanding. No
+submission, acceptance or publication occurred.
+

@@ -241,3 +241,16 @@ established by this audit.
 Active owner blockers remain NONE. Mathematical investigation remains OPEN;
 external review CLOSED; Xue Li reply pending; reviewers NONE. No outreach was
 sent. Venue eligibility is unchanged, and no publication readiness is inferred.
+
+## S012 progressive-block repair decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-046 | 2026-10-04 | Record S012-P1--P3: the exact short-zero-sum splice, the maximal-short-zero-sum deficit interval, and the resulting obstruction below the GS Lemma 4.4(2) threshold. D11-01 is assessed; universal D6-08 remains unresolved and no actual counterexample or universal eta-core is claimed. | Direct programme proofs and mechanism falsification in `sessions/S012/PROGRESSIVE_BLOCK_REPAIR.md`; GS Lemma 4.4(2) proof rechecked |
+| D-047 | 2026-10-04 | Do not schedule another minor progressive/capacity variant. Prepare S013 as one source-based comparison of genuinely distinct routes; reopen the stopped homocyclic/capacity direction only if a new unconditional source input justifies it. If no route clears that bar, S013 should create an owner strategy/target reassessment blocker. | S010 audit recovery rule, S011 stop, and S012's exact cardinality-gap obstruction |
+
+Active owner blockers remain **NONE** at S012 closeout. Mathematical
+investigation remains OPEN; external review remains CLOSED; Xue Li's reply
+remains pending and confirmed reviewers remain NONE. No outreach was sent and
+no willingness, endorsement, novelty certification or approval is inferred.
+

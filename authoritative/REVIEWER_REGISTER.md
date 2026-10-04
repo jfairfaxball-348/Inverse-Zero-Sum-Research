@@ -350,3 +350,13 @@ review CLOSED. S011 sent no outreach and inferred no willingness, endorsement,
 novelty certification or approval. This creates no owner-action blocker for
 the authorized mathematical repair; later adverse substantive feedback still
 requires reassessment of the affected direction.
+
+## S012 external-review boundary
+
+No newer committed record contains substantive Xue Li feedback. Status remains
+owner-reported SENT 2026-10-02 / REPLY PENDING, confirmed reviewers NONE and
+external-review gate CLOSED. S012 sent no outreach and inferred no willingness,
+endorsement, novelty certification or approval. This creates no owner-action
+blocker for the prepared S013 source comparison; later adverse substantive
+feedback still requires reassessment of the affected direction.
+

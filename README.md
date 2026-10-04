@@ -5,9 +5,10 @@ original mathematical contribution and genuine peer-reviewed journal
 publication.
 
 **Current stage: P3 mathematical investigation, with parallel external review.
-S011 is complete and D10-01 remains unresolved. The assessed two-pair exchange
-stops at an original-position lifting defect. S012 will assess a repair toward
-the weaker progressive-block bridge.**
+S012 is complete. Its short-zero-sum splice is valid, but below the published
+m-1 threshold the GS maximal-zero-sum argument leaves an exact cardinality gap
+rather than a universal eta-core. Universal D6-08 remains unresolved; S013 is a
+source-based comparison before any new proof route is chosen.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -28,16 +29,18 @@ and no next-session prompt.** There is currently no active owner blocker.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
-intact. S011 checks a concrete exchange: its threshold witness reuses original
-positions and needs a completing term or pair that the argument does not force.
-An explicit parabola family shows that length, parity and low capacity alone
-admit false positives; it is not an actual extremal counterexample. See
-[the S011 assessment](sessions/S011/ALL_PAIRINGS_CAPACITY.md).
+intact, and S011's two-pair route remains stopped at its original-position
+lifting defect. S012 returns to the weaker progressive-block bridge. It proves
+that a complement zero sum of length at most |C|+1 would enlarge a maximum
+progressive block, then shows that the maximal-short-zero-sum argument from GS
+Lemma 4.4(2) forces only longer witnesses when the bridge threshold is missed.
 
-The [ten-session audit](sessions/S010/TEN_SESSION_AUDIT.md) required a repair
-if no new forcing mechanism survived. S011 applies that stop. There is still no
-universal eta-core reduction, actual counterexample, full classification or
-publication-ready contribution. No mathematical computation ran in S011.
+The resulting cardinality gap does not prove a bridge failure, and an
+eta(G)-1-length remainder is not automatically eta-free. A local mechanism
+counterexample and an arbitrary-length order-2m power sequence only falsify
+overbroad splice/length-only shortcuts; neither is CAND-extremal. No computation
+ran in S012. S013 will compare source-backed routes before another mathematical
+variant is attempted. See [the S012 assessment](sessions/S012/PROGRESSIVE_BLOCK_REPAIR.md).
 
 Beginning proof work does not certify that the target is open or novel. If
 later external feedback reveals prior art, a known solution, material overlap,

@@ -10,14 +10,16 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S011 records before later target-specific work, with
-   particular attention to the S010 audit and S011 exchange obstruction.
+7. The completed S002–S012 records before later target-specific work, with
+   particular attention to the S010 audit, S011 exchange obstruction and S012
+   progressive-block repair.
 
 ## Current state
 
-**S011 is completed. D10-01 remains unresolved; the assessed two-pair
-mechanism is stopped. S012 is a bounded repair toward the weaker D6-08
-progressive-block condition.**
+**S012 is completed. D11-01 proves a bounded short-zero-sum splice and
+isolates an exact cardinality-gap obstruction, but universal D6-08 remains
+unresolved. S013 is a source-based comparison of genuinely distinct routes;
+the stopped D7/capacity mechanism remains stopped.**
 
 CAND-02 remains selected: for every integer m>=2, classify every length-8m
 sequence in `G_m=C_2+C_{2m}+C_{2m}` with no 2m-term zero sum.
@@ -34,42 +36,49 @@ its affected direction. Independent scrutiny remains required before submission.
 
 ## Current mathematical frontier
 
-Preserve S008's odd-fiber decomposition and Property-D scope, S009's exact
-labelled footprint, and all S010 deductions. S010-P3 remains exact on actual
-CAND extremals: D7-01 iff monochromatic fibers iff some maximal pair-sum
-sequence reaches multiplicity `floor((m-1)/2)`. Its failure is equivalent to
-`M_z(S)<=floor((m-1)/2)-1` for every z in H. These bounds have not been
-shown realizable by an actual extremal.
+Preserve S008's odd-fiber decomposition and Property-D scope, S009's labelled
+footprint, S010-P3/P4 and S011's original-position lifting defect. The
+local-hole/capacity exchange route remains stopped.
 
-S011 assessed a concrete two-pair exchange while retaining all residual
-restrictions. Its threshold witness necessarily uses overlapping original
-pairs. The lift therefore needs one unused completing term or pair; that
-completion is not forced. The translated complements have short even zero
-sums, preserving S010-P4's prohibition on declaring them eta-extremal.
+S012 returns to a maximum progressive block C over all centers. After translating
+its center to zero, S012-P1 proves that every disjoint complement zero sum of
+length at most |C|+1 would splice onto C and make a larger progressive block.
+Thus a putative D6-08 failure contains no complement zero sum in that small
+range.
 
-S011 also proves the complete all-pairings system exactly encodes extremality
-on the odd-fiber domain, and exhibits a symbolic parabola family satisfying
-length/parity/low-capacity bounds but with an explicit forbidden zero sum.
-The latter is a counterexample to a relaxation only, not an actual D7 failure.
+Re-running the maximal-short-zero-sum step from GS Lemma 4.4(2) below its
+published threshold gives an exact deficit instead of a contradiction. If
+c=|C|<=m-2 and T is a maximum complement short zero sum of length t, then
+m+1<=t<=2m-c-1. With d=2m-t, the remainder has no zero sum of length at most d,
+where c+1<=d<=m-1. When d-c>=2, eta forces only a longer zero sum of length
+at least d+1>=c+2, outside the proved splice range. When d=c+1, the remainder
+has eta(G)-1 terms but is not shown eta-free.
 
-D10-01, D9-01, D8-02, universal D7-01 and universal D6-08/D6-09 remain
-unresolved. No new modulus, universal eta-core, classification or publication-
-ready result is claimed. No mathematical computation ran in S011.
-See [S011 assessment](../sessions/S011/ALL_PAIRINGS_CAPACITY.md) and
-[dependency update](../sessions/S011/DEPENDENCY_UPDATE.md).
+A local c=1 minimal three-term zero sum shows the splice cannot simply be
+extended to length c+2, and powers of an element of order 2m show that length
+alone cannot force the missing small zero sum. Neither is an actual CAND or
+D6-08 counterexample. Universal D6-08/D6-09 and the earlier D7--D10 chain
+remain unresolved. No computation ran in S012.
+
+See [S012 repair](../sessions/S012/PROGRESSIVE_BLOCK_REPAIR.md) and
+[dependency update](../sessions/S012/DEPENDENCY_UPDATE.md).
 
 ## Recovery and next unit
 
-The [S010 ten-session audit](../sessions/S010/TEN_SESSION_AUDIT.md) required a
-repair if this assessment found no new forcing mechanism. That stop now applies:
-do not schedule another equivalent local-hole/capacity refinement.
+S012 does not schedule another progressive/capacity variation. The proved
+splice now needs genuinely CAND-specific information forcing a sufficiently
+small complement zero sum, or a different replacement theorem with all
+cardinality witnesses.
 
-S012 assesses D11-01: a precise maximal-progressive-block enlargement or
-replacement, using the maximal-short-zero-sum argument in published GS
-Lemma 4.4(2). It returns to D6-08 without requiring reflection-pair form or
-monochromatic fibers. This repair is prepared, not executed or proved by S011.
+S013 is therefore a source-based route comparison. It will compare
+restricted-length/local zero-sum input, genuinely new unconditional homocyclic
+kernel stability/equality input, and eta-core/equality-case reductions that do
+not presuppose D6-08. A mathematical route is promoted only if a new applicable
+source input or clearly different mechanism is found; otherwise S013 must
+surface the strategic gap and activate an owner reassessment blocker.
 
-Live brief: `authoritative/S012_CANDIDATE_2_PROGRESSIVE_BLOCK_REPAIR_BRIEF.md`.
+Live brief:
+`authoritative/S013_CANDIDATE_2_SOURCE_ROUTE_COMPARISON_BRIEF.md`.
 Live prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 S020 remains the next periodic audit, covering S011–S020.
 
