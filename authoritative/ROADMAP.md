@@ -539,3 +539,28 @@ strategy, narrowing/re-auditing a source-justified CAND-02 contribution, or
 reassessing/switching the target. Until that decision, next-session authority is
 suppressed. S020 remains the next periodic audit if the programme later
 continues through that point.
+
+## Frontier after D-050 — full target retained, new mechanism authorized
+
+The owner resolved B-006 by retaining the full CAND-02 target. No narrowing or
+target switch occurs. The previous D7--D10 local-hole/capacity architecture and
+the S012 progressive-block repair remain stopped.
+
+S014 is the next bounded mathematical unit. It assesses a genuinely different
+global route based on **one-term extension saturation** at
+`s(G_m)=8m+1`. The session must append a term to an extremal length-`8m`
+sequence, analyze the forced `2m`-term zero sum, and test whether appending a
+duplicate support value forces nontrivial positional/support rigidity through a
+swap argument. It may develop fixed-length subsum coverage, multiplicity
+constraints and support-incidence consequences only when proved from this new
+mechanism.
+
+The route is promoted beyond S014 only if it produces a substantive new
+structural dependency that is not equivalent to D6-08, reflection capacity,
+the stopped kernel one-change/local-hole route, or another short-zero-sum splice.
+A tautological saturation identity, a generic bound with no CAND-specific
+leverage, or a disguised return to the stopped architecture triggers a stop,
+not an automatic S015 variant.
+
+External review remains parallel and CLOSED; Xue Li's reply remains pending.
+S020 remains the next ten-session audit.
