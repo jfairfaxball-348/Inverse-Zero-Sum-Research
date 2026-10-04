@@ -556,3 +556,24 @@ D14-01 is the next bounded question: whether a support core can contain
 different-valued old positions and, if so, what simultaneous incidence
 constraints follow. This is not a claim that D14-01 is open in the literature
 or that its resolution alone would complete CAND-02.
+
+## S015 target boundary
+
+Date: 2026-10-04.
+
+CAND-02 remains exactly the selected all-`m` target and remains
+**SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. S015 neither narrows the target
+nor certifies that its new ambient deductions are novel.
+
+D14-01 is partially resolved. S015 does not determine whether a support value
+can have a genuinely nontrivial safe source class in an actual extremal, but it
+proves that every replacement core is a union of complete support value classes
+and that safe moves transport the entire core system exactly. It also excludes
+nontrivial incoming incidence at multiplicity `n-3` and above (with `n-2`
+already impossible), forces exact per-source deficit descent, and factors the
+remaining representation freedom outside the core.
+
+The next bounded dependency D15-01 asks only about the first unresolved
+near-full ambient strata, `delta_a<=2`, under a nontrivial support incidence.
+This is not a claim that D15-01 is open in the literature or that resolving it
+would itself complete the full classification.
