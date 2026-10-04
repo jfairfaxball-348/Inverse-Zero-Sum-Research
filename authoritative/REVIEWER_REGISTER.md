@@ -427,3 +427,14 @@ B-008 concerns mathematical target/strategy disposition only. It does not
 reinterpret the pending Stage-1 message, open the external-review gate, or
 remove the later requirement for appropriate independent scrutiny of any
 actual contribution/manuscript before submission.
+
+## Post-S020 target-reassessment reviewer boundary
+
+D-066 pauses CAND-02 proof continuation and schedules target reassessment.
+Xue Li's Stage-1 status remains attached only to CAND-02:
+owner-reported SENT 2026-10-02 / REPLY PENDING, with no reviewer confirmed.
+
+If S021 recommends a different target, reviewer expertise and independence must
+be reassessed for that target. No pending message, silence, willingness or
+reviewer status transfers automatically.
+
