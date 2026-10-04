@@ -436,7 +436,7 @@ willingness, endorsement, novelty certification or approval is inferred.
 
 ### B-008 — strategy/target reassessment after S020 audit
 
-**ACTIVE.**
+**RESOLVED by D-066.**
 
 The programme has accumulated genuine internal structure but has reached a
 strategy frontier. The remaining 2-primary modulo-4/actual-zero-sum arithmetic
@@ -464,3 +464,19 @@ gates remain OPEN; external review remains CLOSED and parallel. Xue Li Stage-1
 remains owner-reported SENT 2026-10-02 / REPLY PENDING absent substantive
 committed feedback. No willingness, endorsement, novelty certification or
 approval is inferred.
+
+## Post-S020 owner target-reassessment decision
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-066 | 2026-10-04 | **Resolve B-008 by choosing option 3: reassess/switch the selected target.** Do not authorize a third generic full-CAND-02 replacement architecture. CAND-02 remains the historical incumbent only until the owner explicitly selects a replacement; its proof programme is paused during reassessment. | Explicit owner choice: “Let's go with 3.” |
+| D-067 | 2026-10-04 | Schedule S021 as one bounded source-first target reassessment. Freshly re-audit CAND-01 and CAND-03, keep CAND-04 retired absent positive new primary evidence, and permit discovery of at most two genuinely new source-defined candidates. S021 must recommend one exact target but may not silently switch or begin proof work; final target selection returns to the owner. | S020 audit, D-066, and the programme requirement that target identity/status be source-disciplined before mathematical investigation. |
+
+B-008 is resolved. Active owner blockers are **NONE** for S021. The live S021
+brief and prompt are immediately runnable.
+
+CAND-02's accumulated mathematics and route-stop decisions remain durable
+historical programme results. Reassessment does not erase them, convert source
+non-hits into openness evidence, or transfer Xue Li's pending CAND-02 Stage-1
+status to another target.
+
