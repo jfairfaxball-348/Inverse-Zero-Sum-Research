@@ -599,3 +599,36 @@ Universal D6-08/D6-09 and the full classification remain unresolved. CAND-02
 stays SOURCE-DEFINED / CURRENT STATUS UNKNOWN. External review remains CLOSED,
 Xue Li reply pending, owner blockers NONE. S020 remains the next ten-session
 audit.
+
+## Frontier after S015 — ambient core transport and factorization
+
+S015 remained in the original group and did not invoke quotient-fiber,
+kernel one-change, local-hole/capacity or progressive-block machinery.
+
+For any safe replacement of a position of value `b` by `x`, the full
+family `R_x(S)` is transported bijectively to `R_b(S_{p->x})`, and the
+core is transported exactly. It follows that every `K_x(S)` is a union of
+complete support value classes: core membership is all-or-nothing at the level
+of repeated values. The augmented core value-multiset is invariant under the
+safe exchange.
+
+For a nontrivial support incidence `b -> a`, S015 proves
+`v_a<=n-4`, `v_b<=n-3`, and `v_a+v_b<=n-1`. Thus support
+multiplicity `n-3` is isolated as well as `n-1`, while `n-2` remains
+forbidden. Deleting each safely replaceable source occurrence forces an exact
+one-step shorter support-deleted zero sum. The common deletion star also forces
+an ambient `(n-2)`-term representation containing the transported core.
+
+Finally, every `-x` representation factors into the fixed core `K_x`
+plus a residual family with empty positional intersection. Deficit zero gives
+a unique representation; deficit one gives a single equal-valued reservoir of
+at least two positions outside the core; deficit two is the first unresolved
+near-full pair system.
+
+D14-01 is therefore only partially resolved: S015 did not prove
+`K_a=P_a` universally, but it did establish a global reconstruction/incidence
+theorem with classification leverage. D15-01 is prepared for S016: determine
+whether a nontrivial support core can have `delta_a<=2`. The stopped
+D7--D10 and progressive architectures remain stopped. External review remains
+CLOSED, Xue Li reply pending, owner blockers NONE. S020 remains the next
+periodic audit.
