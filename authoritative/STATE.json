@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S013",
-  "next_session": "S014",
-  "next_brief": "authoritative/S014_CANDIDATE_2_EXTENSION_SATURATION_BRIEF.md",
+  "last_completed_session": "S014",
+  "next_session": "S015",
+  "next_brief": "authoritative/S015_CANDIDATE_2_REPLACEMENT_CORE_INCIDENCE_BRIEF.md",
   "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
   "programme_status": "OPEN",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — CAND-02 remains selected; owner decision D-050 resolves B-006 by retaining the full target and authorizing a materially new global extension-saturation/support-cloning mechanism for S014.",
+  "candidate_under_due_diligence": "NONE — CAND-02 remains selected; S014 established a global extension-saturation/support-cloning and ambient replacement-core mechanism. D14-01 is promoted to S015; stopped D7–D10/progressive routes remain stopped.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -33,7 +33,11 @@
     "S011-P3 PROGRAMME COUNTEREXAMPLE TO RELAXATION ONLY: for primes p>=19, the eight-fiber parabola sequence has length 8p, odd fibers and every M_z<=8<=floor((p-1)/2)-1, but an explicit 2p-zero sum. It is not CAND-extremal and does not refute D7 or Property D.",
     "S012-P1 PROGRAMME LEMMA: after translating a maximum progressive block C to zero, any disjoint complement zero sum of length at most |C|+1 splices to a strictly larger progressive block; hence a putative D6-08 failure has no complement zero sum in that range.",
     "S012-P2 PROGRAMME LEMMA: if a putative D6-08 failure has maximum progressive size c<=m-2, a maximum complement short zero sum has length m+1<=t<=2m-c-1; with d=2m-t, the remainder has no zero sum of length at most d and c+1<=d<=m-1.",
-    "S012-P3 PROGRAMME OBSTRUCTION: if d-c=1 the remainder has eta(G)-1 terms but is not shown eta-free; if d-c>=2, eta forces only a zero sum of length at least d+1>=c+2, outside the proved splice range. A local c+2 example falsifies the overbroad splice claim, not D6-08."
+    "S012-P3 PROGRAMME OBSTRUCTION: if d-c=1 the remainder has eta(G)-1 terms but is not shown eta-free; if d-c>=2, eta forces only a zero sum of length at least d+1>=c+2, outside the proved splice range. A local c+2 example falsifies the overbroad splice claim, not D6-08.",
+    "S014-P1 PROGRAMME LEMMA: for every CAND-02 extremal S with n=2m, exact EGZ-threshold extension gives Sigma_{n-1}(S)=G_m and, by complementation, Sigma_{3n+1}(S)=G_m.",
+    "S014-P2 PROGRAMME LEMMA: for each support value a, every (n-1)-term representation of -a uses every old occurrence of a; after deleting all r copies, the remaining block has exact length n-r-1 and sum (n-r-1)a.",
+    "S014-P3 PROGRAMME THEOREM: the positional core K_x of all (n-1)-term representations of -x exactly classifies one-position replacements S_{p->x} that remain n-zero-sum-free. Each K_x has size at most n-1; support-a positions lie in K_a.",
+    "S014-P4 PROGRAMME COROLLARY: no support value has multiplicity n-2=2m-2; multiplicity n-3 forces a non-a pair summing to 2a, multiplicity n-1 gives a unique representation, and general r<=n-3 forces a translated support-deleted zero sum of exact length n-r-1."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -118,6 +122,11 @@
       "id": "S013",
       "status": "COMPLETED",
       "record": "sessions/S013/CLOSEOUT.md"
+    },
+    {
+      "id": "S014",
+      "status": "COMPLETED",
+      "record": "sessions/S014/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -143,10 +152,11 @@
   "s009_mathematical_investigation_date": "2026-10-03",
   "s010_mathematical_investigation_date": "2026-10-03",
   "last_ten_session_audit": "sessions/S010/TEN_SESSION_AUDIT.md",
-  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; PRIOR D7/CAPACITY/PROGRESSIVE ARCHITECTURE STOPPED; OWNER RETAINED FULL CAND-02; S014 NEW-MECHANISM ASSESSMENT READY",
+  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; S014 NEW GLOBAL EXTENSION/REPLACEMENT MECHANISM PROVED; D14-01 AMBIENT CORE INCIDENCE READY; STOPPED D7/CAPACITY/PROGRESSIVE ARCHITECTURES REMAIN STOPPED",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "B-006 resolved by owner decision D-050. S014 is ready on a global one-term extension/support-cloning saturation mechanism derived from the exact EGZ threshold, not another D7/capacity, local-hole or progressive-block variant. Universal D6-08 remains unresolved and stopped routes remain stopped.",
+  "current_route_disposition": "S014 independently proved a global one-term extension/support-cloning mechanism and exact ambient deletion/replacement-core theorem. D14-01 is promoted to S015: test simultaneous ambient core incidence and nontrivial safe replacements. Do not translate it into the stopped C_m^2 kernel one-change/local-hole/capacity or progressive-block routes.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
-  "owner_strategy_resolution_date": "2026-10-04"
+  "owner_strategy_resolution_date": "2026-10-04",
+  "s014_mathematical_investigation_date": "2026-10-04"
 }
