@@ -507,3 +507,35 @@ direction is selected; it is not another proof variant.
 - S013 is prepared as a source-based comparison; S020 remains the next
   ten-session audit.
 
+## S013 source-route comparison and strategy stop
+
+S013 completed D12-01 without promoting a new mathematical route.
+
+Route A rechecked the rank-two restricted-length line, Zhang's rank-three
+prescribed-length work, the current Zhao--Hong 2026 `s_{<=t}` result, local
+2026 variants and Li--Yin's same-ambient `disc(G)` theorem. The source-level
+obstruction is exact: general finite restricted-length forcing begins at or
+above the exponent, while S012 needs a CAND-specific zero sum of length at most
+`m-1`.
+
+Route B found no new checked unconditional all-`m` ordinary-EGZ
+`C_m^2` stability/equality input at the `4m-4/4m-5` layer. Property D for
+sufficiently large primes is already part of S008's known scope; current
+`D_k`, `eta^N` and `disc` inverse classifications have different
+hypotheses.
+
+Route C found no checked equal-factor ordinary-eta equality theorem that
+produces the required `6m+1` eta-free core without D6-08. The GS 2019 route
+remains conditional at the exact progressive hypothesis; the GS 2020 inverse
+theorem remains a different group family.
+
+Universal D6-08/D6-09 and D6-10 therefore remain unresolved. The stopped
+D7--D10 route is not reopened. No source non-hit is an openness claim.
+
+Per D-047, this triggers B-006. The next programme move is an owner
+target/strategy decision, not another automatically scheduled proof session.
+The owner must choose between retaining full CAND-02 with a materially new
+strategy, narrowing/re-auditing a source-justified CAND-02 contribution, or
+reassessing/switching the target. Until that decision, next-session authority is
+suppressed. S020 remains the next periodic audit if the programme later
+continues through that point.
