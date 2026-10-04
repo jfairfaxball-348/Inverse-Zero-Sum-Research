@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S012",
-  "next_session": "S013",
-  "next_brief": "authoritative/S013_CANDIDATE_2_SOURCE_ROUTE_COMPARISON_BRIEF.md",
+  "last_completed_session": "S013",
+  "next_session": null,
+  "next_brief": null,
   "stage": "P3_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
   "programme_status": "OPEN",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "NONE — CAND-02 selected; S012 proves a bounded short-zero-sum splice and isolates a cardinality-gap obstruction but leaves universal D6-08 unresolved; S013 is a source-based comparison of genuinely distinct routes",
+  "candidate_under_due_diligence": "NONE — CAND-02 remains selected; S013 found no source-backed route meeting the promotion bar after S010–S012; B-006 owner target/strategy reassessment is active.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -40,14 +40,16 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [],
+  "active_owner_blockers": [
+    "B-006"
+  ],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; if it identifies prior art, a known solution, material overlap, a mistaken premise, or a serious scope/significance concern, pause the affected mathematical direction and reassess it.",
     "Continue external independent review in parallel and obtain appropriate independent scrutiny of the mathematical contribution/manuscript before journal submission, subject to actual reviewer willingness and availability.",
     "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "READY",
+  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -113,6 +115,11 @@
       "id": "S012",
       "status": "COMPLETED",
       "record": "sessions/S012/CLOSEOUT.md"
+    },
+    {
+      "id": "S013",
+      "status": "COMPLETED",
+      "record": "sessions/S013/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -138,8 +145,9 @@
   "s009_mathematical_investigation_date": "2026-10-03",
   "s010_mathematical_investigation_date": "2026-10-03",
   "last_ten_session_audit": "sessions/S010/TEN_SESSION_AUDIT.md",
-  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; UNIVERSAL BRIDGE UNRESOLVED; ONE ALL-PAIRINGS CAPACITY ASSESSMENT WITH RECOVERY STOP",
+  "audit_verdict": "BOUNDED STRUCTURAL PROGRESS; CURRENT PROOF ARCHITECTURE STOPPED; S013 FOUND NO SOURCE-BACKED PROMOTED ROUTE; OWNER REASSESSMENT REQUIRED",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "D11-01 ASSESSED; short-zero-sum splice proved but universal D6-08 unresolved; stopped D7/capacity route remains stopped; S013 source-based route comparison prepared",
-  "s012_mathematical_investigation_date": "2026-10-04"
+  "current_route_disposition": "S013 completed the distinct source-route comparison with no promoted route; universal D6-08 remains unresolved; stopped D7/capacity routes remain stopped; B-006 requires owner target/strategy reassessment before another numbered session.",
+  "s012_mathematical_investigation_date": "2026-10-04",
+  "s013_source_refresh_date": "2026-10-04"
 }
