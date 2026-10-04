@@ -178,3 +178,22 @@ computation remain CLOSED.
 - S013 is ready as a source-based route comparison before another proof route
   is selected. S020 remains the next ten-session audit.
 
+## S013 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S013 | COMPLETED SOURCE COMPARISON; NO ROUTE PROMOTED; OWNER BLOCKER ACTIVE | c19ad76f0cc65bc38ae4113557dacb8e57613431 | Three-route 2026 source/applicability matrix; strict sub-exponent scale mismatch recorded; no D7/capacity reopen; B-006 activated | [S013 closeout](../sessions/S013/CLOSEOUT.md) |
+
+- S013 was unique and the supplied checkpoint exactly matched live main.
+- Route A found current restricted/local literature but no checked theorem
+  reaching S012's `<=m-1` splice range under actual CAND hypotheses.
+- Route B found no new qualifying unconditional all-`m` ordinary-EGZ kernel
+  stability/equality theorem; adjacent invariants are not imported.
+- Route C found no checked equal-factor ordinary-eta equality/core theorem that
+  bypasses D6-08.
+- No mathematics, computation, formalisation or outreach ran in S013.
+- CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN; external review
+  remains CLOSED and Xue Li reply pending.
+- B-006 is active. No next numbered session or live prompt is scheduled until
+  the owner resolves the target/strategy reassessment.
+- S020 remains the next periodic audit if the programme later reaches S020.
