@@ -10,17 +10,19 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S014 records before later target-specific work, with
+7. The completed S002–S015 records before later target-specific work, with
    particular attention to the S010 audit, S011 exchange obstruction, S012
    progressive-block repair and S013 source-route comparison.
 
 ## Current state
 
-**S014 is completed. The global extension-saturation/support-cloning route
-produced an exact ambient deletion/replacement theorem and forbidden
-multiplicity stratum. D14-01 is promoted; S015 is READY on simultaneous
-replacement-core incidence. Universal D6-08 remains unresolved and the stopped
-D7/capacity/local-hole and progressive-block architectures remain stopped.**
+**S015 is completed. The ambient replacement-core route now has exact core
+transport, value-class saturation, new support-incidence multiplicity/deficit
+constraints and near-full residual factorization. Full ambient one-term
+isolation remains unresolved. D15-01 is promoted; S016 is READY on near-full
+nontrivial replacement cores. Universal D6-08 remains unresolved and the
+stopped D7/capacity/local-hole and progressive-block architectures remain
+stopped.**
 
 CAND-02 remains selected: for every integer m>=2, classify every length-8m
 sequence in `G_m=C_2+C_{2m}+C_{2m}` with no 2m-term zero sum.
@@ -117,3 +119,35 @@ Pin live main before reading its authority. The bootstrap predecessor remains 32
 If a pasted prompt names an older revision, inspect intervening changes and reconcile session identity, scope and blockers before proceeding. Historical records may describe earlier gate rules; D-030--D-032 supersede any statement that made external-review completion a prerequisite for mathematical investigation. Do not rewrite historical facts as though the later rule applied at the time.
 
 STATE.json is the machine-readable index. Detailed linked records carry supporting evidence. Any conflict is an integrity problem to reconcile, not an invitation to choose the convenient version.
+
+## Frontier after S015
+
+S015 stayed entirely in the ambient group. If a safe replacement deletes a
+position of value `b` and inserts `x`, the full family
+`R_x(S)` transports bijectively to the reverse target family in the replaced
+extremal, and the core transports exactly. Therefore every `K_x(S)` is a
+union of complete support value classes; safe replacement is all-or-nothing on
+copies of the deleted value.
+
+For a nontrivial support incidence `b -> a`, S015 proves
+`v_a<=n-4`, `v_b<=n-3`, and `v_a+v_b<=n-1`. In particular
+multiplicity `n-3` is isolated, while `n-2` remains forbidden and
+`n-1` was already isolated. Each source occurrence forces an exact
+one-step deficit descent after deletion.
+
+The same safe move yields an ambient `(n-2)` common-deletion witness
+containing the transported core. Every representation family also factors into
+its fixed core and a residual family with empty positional intersection:
+deficit zero is unique, deficit one is an equal-valued reservoir of at least
+two outside positions, and deficit two is the first unresolved near-full
+stratum.
+
+S015 does not prove `K_a=P_a` for all support values. D14-01 is partially
+resolved by the global reconstruction theorem. S016 is prepared on D15-01:
+determine whether a nontrivial support core can have
+`delta_a=n-1-|K_a|<=2`, using only the new ambient system. It must stop
+rather than re-enter the old kernel/capacity/progressive architectures.
+
+CAND-02 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. External review is
+CLOSED and parallel; Xue Li's reply remains pending absent substantive
+committed feedback. S020 remains the next periodic audit.
