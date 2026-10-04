@@ -17,27 +17,25 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S020 is completed. The periodic S011–S020 audit confirms durable all-m
-ambient replacement-core/threshold-star structure from S014–S016 and strict
-2-primary counting/incidence progress from S017–S019, but no full CAND-02
-classification, actual counterexample, near-full deficit exclusion,
-mixed-primary transfer or publication-ready theorem package. S019 remains only
-an unrestricted F2 design-realization no-go; it does not realize actual 2n/3n
-zero-sum layers or resolve the modulo-4 split. No source- and
-hypothesis-justified S021 route clears the anti-churn bar. B-008 is ACTIVE and
-the live next-session prompt is suppressed.**
+**S020 is completed. Owner decision D-066 resolves B-008 by choosing option 3:
+reassess/switch target rather than authorize another generic CAND-02 strategy.
+CAND-02 remains the historical incumbent until an explicit replacement choice,
+but its proof programme is paused. S021 is READY as a source-first target
+reassessment.**
 
-CAND-02 remains selected at full all-`m` scope and
-**SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
+S021 must freshly re-audit CAND-01 and CAND-03, keep CAND-04 retired absent
+positive new primary evidence, and may discover at most two genuinely new
+source-defined replacement candidates. It must recommend one exact target but
+may not silently switch targets or begin proof work.
 
-- Target, publication-eligibility and mathematical-investigation gates: OPEN.
+- Publication-eligibility gate: OPEN.
+- Mathematical-investigation gate remains formally OPEN at programme level, but
+  S021 itself authorizes no proof work; target-specific proof resumes only after
+  explicit owner target selection and a suitable brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: B-008.
-- Xue Li Stage-1 status: owner-reported SENT 2026-10-02 / REPLY PENDING.
-
-No willingness, endorsement, novelty certification or approval follows from
-transmission or silence. Substantive adverse feedback must pause and reassess
-its affected direction. Independent scrutiny remains required before submission.
+- Active owner blockers: NONE.
+- Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
+  REPLY PENDING, and does not transfer to another target.
 
 ## Current mathematical frontier
 
@@ -286,4 +284,15 @@ retain full CAND-02 with a genuinely new strategy/source-acquisition direction;
 deliberately narrow/reframe to a source-justified contribution and re-audit
 that exact result; or reassess/switch target. Until that choice, there is no
 live next-session prompt.
+
+## Post-S020 owner disposition
+
+D-066 records the owner's choice of B-008 option 3. S021 is a bounded
+target-reassessment session, not another mathematical investigation of
+CAND-02. The S006–S020 CAND-02 record remains durable evidence and should be
+used to assess strategic risk, but not as a reason to manufacture a supposedly
+easier problem.
+
+The final target change remains an owner decision after S021's refreshed
+source/status comparison.
 
