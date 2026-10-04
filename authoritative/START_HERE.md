@@ -10,28 +10,29 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S019 records before later target-specific work, with
-   particular attention to the S010 audit, S011 exchange obstruction, S012
-   progressive-block repair, S013 source-route comparison, and S016–S019
-   threshold-star/counting/incidence chain.
+7. The completed S002–S020 records before later target-specific work, with
+   particular attention to the S010 and S020 audits, S011 exchange obstruction,
+   S012 progressive-block repair, S013 source-route comparison, and S014–S019
+   ambient/counting/incidence chain.
 
 ## Current state
 
-**S019 is completed. On the verified 2-primary class, the exact
-Wilson--Frankl mod-2 inclusion ranks and explicit fixed-block-size lifts prove
-that the unrestricted binary design/inclusion system through codegree n admits
-every S016 delta=0/1/2 signature. No near-full stratum is excluded, no actual
-2n/3n zero-sum layer is realized by that construction, and the modulo-4 split
-remains unresolved. The binary-design separator route is stopped. S020 is READY
-as the required periodic ten-session audit; the stopped D7--D10/capacity/Fano,
-progressive-block, and S016 shifted-exchange routes remain stopped.**
+**S020 is completed. The periodic S011–S020 audit confirms durable all-m
+ambient replacement-core/threshold-star structure from S014–S016 and strict
+2-primary counting/incidence progress from S017–S019, but no full CAND-02
+classification, actual counterexample, near-full deficit exclusion,
+mixed-primary transfer or publication-ready theorem package. S019 remains only
+an unrestricted F2 design-realization no-go; it does not realize actual 2n/3n
+zero-sum layers or resolve the modulo-4 split. No source- and
+hypothesis-justified S021 route clears the anti-churn bar. B-008 is ACTIVE and
+the live next-session prompt is suppressed.**
 
 CAND-02 remains selected at full all-`m` scope and
 **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
 
 - Target, publication-eligibility and mathematical-investigation gates: OPEN.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: NONE.
+- Active owner blockers: B-008.
 - Xue Li Stage-1 status: owner-reported SENT 2026-10-02 / REPLY PENDING.
 
 No willingness, endorsement, novelty certification or approval follows from
@@ -264,3 +265,25 @@ resolve the modulo-4 singleton split, and supplies no mixed-primary theorem.
 Accordingly D18-01 is closed only as a **pure binary-design route no-go**.
 Per D-063, no equivalent incidence continuation is scheduled. S020 is the
 periodic S011–S020 audit and strategy reassessment.
+
+## Frontier after S020 audit
+
+S020 treats the S014–S019 chain as one dependency history. The ambient
+replacement-core route generated real all-m structure, then stopped at S016's
+shifted-residual/cross-boundary escape. The distinct D-057 counting route
+generated real 2-primary congruence/incidence constraints, then S019 proved
+that every current binary shadow is realizable in unrestricted design space.
+
+The remaining modulo-4/actual-zero-sum arithmetic is not thereby solved, but it
+does not by itself justify another incidence session. A genuine successor needs
+a source- and hypothesis-justified arithmetic or otherwise non-equivalent input.
+For mixed-primary n, the exact missing source remains a theorem preserving the
+full-group prescribed sum at the required fixed lengths.
+
+No such immediately runnable dependency is present in committed authority.
+B-008 therefore suppresses S021. Required owner action is to choose one of:
+retain full CAND-02 with a genuinely new strategy/source-acquisition direction;
+deliberately narrow/reframe to a source-justified contribution and re-audit
+that exact result; or reassess/switch target. Until that choice, there is no
+live next-session prompt.
+
