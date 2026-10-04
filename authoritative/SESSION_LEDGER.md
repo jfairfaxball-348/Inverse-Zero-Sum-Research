@@ -229,3 +229,21 @@ computation remain CLOSED.
 - External-review gate remains CLOSED; Xue Li reply remains pending.
 - Next numbered session: S015, D14-01 ambient replacement-core incidence.
 - S020 remains the next periodic ten-session audit.
+
+## S015 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S015 | COMPLETED BOUNDED INVESTIGATION; GLOBAL AMBIENT CORE THEOREM PROVED; FULL ISOLATION UNRESOLVED | 61a2bf5a7aec1e4a9f8a4c2dc5560d60e57d6eb5 | Exact safe-move core transport; value-class saturation; new multiplicity isolation and deficit descent; ambient two-extension witness; near-full residual factorization | [S015 closeout](../sessions/S015/CLOSEOUT.md) |
+
+- The supplied checkpoint matched live `main`; S015 was unique at entry.
+- D14-01 is partially resolved by a genuinely global ambient
+  reconstruction/incidence theorem; universal `K_a=P_a` remains unresolved.
+- No quotient/capacity/progressive mechanism, mathematical computation,
+  formalisation or outreach was used.
+- Focused exchange/replacement source searches produced no directly matching
+  checked theorem statement; non-hits are not novelty evidence.
+- Active owner blockers: NONE.
+- External-review gate remains CLOSED; Xue Li reply remains pending.
+- Next numbered session: S016, D15-01 near-full ambient replacement cores.
+- S020 remains the next periodic ten-session audit.
