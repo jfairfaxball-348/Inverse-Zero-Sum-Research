@@ -296,3 +296,16 @@ contribution. Universal bridge/classification, actual-result novelty and
 significance, independent scrutiny and a manuscript remain outstanding. No
 submission, acceptance or publication occurred.
 
+## S013 publication boundary
+
+No venue decision or eligibility claim changes in S013. E-JC remains the
+leading eligible route and JNT the policy-qualified backup under the latest
+recorded checks. S013 is a source/applicability comparison and produces no
+publication-ready theorem, manuscript, novelty certification or significance
+assessment.
+
+The newly active B-006 strategy blocker precedes any new mathematical session;
+it is not a submission blocker in the narrow sense because the programme is far
+earlier than submission readiness. Universal classification, actual-result
+novelty/significance, independent scrutiny and manuscript preparation all
+remain outstanding. No submission, acceptance or publication occurred.
