@@ -10,17 +10,17 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S013 records before later target-specific work, with
+7. The completed S002–S014 records before later target-specific work, with
    particular attention to the S010 audit, S011 exchange obstruction, S012
    progressive-block repair and S013 source-route comparison.
 
 ## Current state
 
-**S013 is completed. Owner decision D-050 retains full CAND-02 and resolves
-B-006. S014 is READY as one bounded assessment of a materially new global
-extension-saturation/support-cloning mechanism. Universal D6-08 remains
-unresolved; the stopped D7/capacity/local-hole and progressive-block
-architectures remain stopped.**
+**S014 is completed. The global extension-saturation/support-cloning route
+produced an exact ambient deletion/replacement theorem and forbidden
+multiplicity stratum. D14-01 is promoted; S015 is READY on simultaneous
+replacement-core incidence. Universal D6-08 remains unresolved and the stopped
+D7/capacity/local-hole and progressive-block architectures remain stopped.**
 
 CAND-02 remains selected: for every integer m>=2, classify every length-8m
 sequence in `G_m=C_2+C_{2m}+C_{2m}` with no 2m-term zero sum.
@@ -82,6 +82,33 @@ The target remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. External review is
 still CLOSED and parallel; Xue Li's reply remains pending absent substantive
 committed feedback. S020 remains the next periodic audit if the programme
 reaches it.
+
+## Frontier after S014
+
+S014 rechecked the published equal-factor threshold
+`s(G_m)=8m+1` and used it globally, before any quotient reduction. For
+`n=2m` every CAND-02 extremal satisfies
+`Sigma_{n-1}(S)=G_m=Sigma_{3n+1}(S)`.
+
+The support-clone positional swap is valid: every `(n-1)`-term
+representation of `-a` contains all old copies of the support value `a`.
+This yields the exact ambient replacement core
+`K_x(S)`: replacing old position `p` by `x` preserves extremality iff
+`p in K_x(S)`. Each core has size at most `n-1`.
+
+New all-m consequences include `v_a(S) != n-2`; at multiplicity `n-3`
+a non-`a` pair summing to `2a` is forced, and at multiplicity `n-1`
+the target representation is unique. These are internal programme deductions,
+not novelty-certified results.
+
+S015 is prepared on D14-01: determine whether a support core can contain a
+different-valued position, `K_a(S)\P_a != empty`, using the simultaneous
+ambient core system. It must not collapse into the stopped kernel
+one-change/local-hole/capacity route.
+
+The target remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. External review is
+CLOSED and parallel; Xue Li's reply remains pending absent substantive
+committed feedback. S020 remains the next periodic audit.
 
 ## Authority and reconciliation rule
 
