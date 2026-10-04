@@ -775,3 +775,25 @@ S021 brief or prompt. The owner must choose to retain full CAND-02 under a
 genuinely new strategy/source-acquisition direction, narrow/reframe to a
 source-justified contribution with fresh due diligence, or reassess/switch
 target.
+
+## Post-S020 route — S021 target reassessment
+
+D-066 resolves B-008 by choosing target reassessment rather than a third
+generic new-strategy attempt on full CAND-02.
+
+S021 returns the programme temporarily to source-first target selection. It
+will refresh CAND-01 and CAND-03 through the current date and conduct a bounded
+discovery pass for at most two genuinely new replacement candidates. CAND-04
+stays retired absent positive source evidence changing its direct-theorem
+dependency.
+
+The assessment must use the S006–S020 CAND-02 history as strategic evidence:
+a candidate should have an exact theorem identity, a credible current-status
+boundary, sufficiently settled background/direct theory, identifiable entry
+machinery, scope for a meaningful partial contribution, publication fit and a
+credible reviewer route. Search failure is never openness evidence.
+
+S021 will recommend one exact target but will not select it on the owner's
+behalf. Its closeout should activate a final target-selection blocker and
+suppress further prompts until the owner chooses.
+
