@@ -391,3 +391,14 @@ endorsement, novelty certification or approval.
 The new S014 deductions do not convert the pending Stage-1 request into review
 of an actual result. If these deductions later survive into a contribution,
 appropriate independent result/manuscript scrutiny remains separately required.
+
+## S015 external-review boundary
+
+No newer committed record contains substantive Xue Li feedback. Status remains
+owner-reported SENT 2026-10-02 / REPLY PENDING, confirmed reviewers NONE and
+external-review gate CLOSED. S015 sent no outreach and inferred no willingness,
+endorsement, novelty certification or approval.
+
+The new S015 deductions have not been independently reviewed. If they survive
+into an actual contribution, appropriate independent result/manuscript scrutiny
+remains separately required before journal submission.
