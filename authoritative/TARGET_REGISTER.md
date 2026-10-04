@@ -499,3 +499,28 @@ D7--D10 chain remains unresolved, and the stopped capacity route stays stopped.
 S013 will compare distinct source-backed routes before any new mathematics is
 chosen.
 
+## S013 target-strategy boundary
+
+Date: 2026-10-04.
+
+S013 does **not** retire, narrow or certify the selected target. CAND-02 remains
+
+> for every `m>=2`, classify all length-`8m` sequences over
+> `C_2+C_{2m}+C_{2m}` with no `2m`-term zero sum,
+
+with status **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
+
+The source-route comparison found no checked theorem that can presently be
+inserted into the programme's stopped proof architecture: current
+restricted-length forcing is on the wrong length scale, current homocyclic
+near-extremal inverse results use different hypotheses or the already-known
+Property-D scope, and no equal-factor ordinary-eta equality reduction was
+identified. These are applicability findings, not an openness certificate.
+
+B-006 is active because continuing automatically would require inventing a new
+mechanism without a source-backed entry point or renaming a stopped route. The
+owner must decide whether to retain full CAND-02 under a materially new
+strategy, narrow it to a source-justified contribution followed by a fresh
+status audit, or reassess/switch the target. Until that decision the selected
+target remains CAND-02 and the mathematical-investigation gate remains OPEN,
+but no next numbered session is scheduled.
