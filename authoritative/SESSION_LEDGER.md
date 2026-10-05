@@ -649,3 +649,17 @@ computation remain CLOSED.
 - Active owner blockers: NONE.
 - Next numbered session: S036, D35-01 fresh source-first mechanism reassessment.
 
+
+
+## S036 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S036 | COMPLETED BOUNDED SOURCE-FIRST ROUTE REASSESSMENT; NO SUCCESSOR PROMOTED; OWNER BLOCKER ACTIVE | 680e3c04bbf4e60a5bdcf3ad94649647a747afb0 | Three exact theorem/applicability tests; torsion-kernel circuit shown automatic; two inverse-theorem hypotheses fail to transfer; B-011 activated | [S036 closeout](../sessions/S036/CLOSEOUT.md) |
+
+- Live main exactly matched the supplied checkpoint and S036 was unique.
+- Exactly three genuinely different mechanisms were compared; no proof unit was run.
+- Schmid 2011 atom transfer through G_m[2] adds no invariant to the common-torsion family.
+- Hui--Zhong 2026 and Girard--Schmid 2020 do not meet the required hypotheses on the current quotient data.
+- No successor is promoted; no S037 prompt or brief exists.
+- Active owner blocker: B-011. External review remains CLOSED.

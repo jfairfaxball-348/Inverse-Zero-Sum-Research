@@ -4,11 +4,11 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S035",
-  "next_session": "S036",
-  "next_brief": "authoritative/S036_CANDIDATE_5_FRESH_MECHANISM_SOURCE_REASSESSMENT_BRIEF.md",
+  "last_completed_session": "S036",
+  "next_session": null,
+  "next_brief": null,
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S036_READY_CAND05_FRESH_MECHANISM_SOURCE_REASSESSMENT",
+  "programme_status": "S036_COMPLETED_OWNER_STRATEGY_BLOCKED_NO_FRESH_MECHANISM",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
   "candidate_under_due_diligence": "CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN after S022 due diligence and S023--S035 mathematical work. The residual-shell and aggregate D_2 block-factorisation exclusion routes are stopped. Owner resolution of B-010 retains full CAND-05 and authorizes S036 D35-01, a fresh source-first mechanism reassessment outside those routes.",
   "mathematical_results": [
@@ -87,21 +87,26 @@
     "S034-P2 PROGRAMME RESULT: choosing a positive member x_i and partner y_i in C_i, tau_i=y_i-x_i gives sigma(B_i)=tau_i even if y_i has zero kernel weight; hence sigma(S)=u+tau_1+tau_2+tau_3=zeta, identifying the S032 translation defect with the full sequence sum.",
     "S034-P3 SOURCE-BASED ROUTE INPUT: Girard--Schmid 2019 Theorem 2.1/3.4 gives D_2(C_2+C_{2m}+C_{2m})=6m+1. Thus every candidate has two disjoint nonempty zero sums, each of length at least 2m+1. This multiwise factorisation is promoted as D34-01; S034 does not prove its outcome.",
     "S035-P1 PROGRAMME RESULT / EXACT NECESSARY-CONSTRAINT FACTORISATION: in the common-torsion compatibility family, after indexing the fixed split coset as B_1, u=t and tau_1=tau_2=tau_3=t imply S=(B_1u)(B_2B_3), a partition into zero sums of lengths 2m+1 and 4m.",
-    "S035-P2 PROGRAMME ROUTE NO-GO: the exact D_2(G_m)=6m+1 input does not exclude simultaneous positivity at aggregate block level, because the S035-P1 factors are both longer than 2m. This is not an actual extremal construction; D34-01 is stopped and B-010 requires an owner strategy choice."
+    "S035-P2 PROGRAMME ROUTE NO-GO: the exact D_2(G_m)=6m+1 input does not exclude simultaneous positivity at aggregate block level, because the S035-P1 factors are both longer than 2m. This is not an actual extremal construction; D34-01 is stopped and B-010 requires an owner strategy choice.",
+    "S036-P1 SOURCE-ROUTE BOUNDARY: Schmid 2011 Theorem 3.1 Step 1 can transfer a quotient factorisation of a hypothetical common-torsion maximal atom to a minimal zero-sum sequence over E=G_m[2], but the resulting four-term C_2^3 circuit {c_2,c_2+t,c_3,c_3+t} is automatic from the committed basis/torsion data and adds no new invariant.",
+    "S036-P2 SOURCE-COMPARATOR BOUNDARY: Hui--Zhong 2026 Theorem 1.1 cannot constrain the common-torsion G_m/E quotient because the quotient already has innerly non-zero-sum-joint short zero sums; Girard--Schmid 2020 Theorem 4.1 has a quotient of the right isomorphism type but CAND-05 short-zero-sum avoidance does not transfer to its quotient hypothesis and no source-backed extremal-core extraction was identified.",
+    "S036-P3 ROUTE DECISION: D35-01 promotes no mathematical successor. Both prior stopped exclusion architectures remain stopped and B-011 is activated; no S037 prompt or brief is scheduled."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [],
+  "active_owner_blockers": [
+    "B-011"
+  ],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; if it identifies prior art, a known solution, material overlap, a mistaken premise, or a serious scope/significance concern, pause the affected mathematical direction and reassess it.",
     "Continue external independent review in parallel and obtain appropriate independent scrutiny of the mathematical contribution/manuscript before journal submission, subject to actual reviewer willingness and availability.",
     "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "READY",
+  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -282,6 +287,11 @@
       "id": "S035",
       "status": "COMPLETED",
       "record": "sessions/S035/CLOSEOUT.md"
+    },
+    {
+      "id": "S036",
+      "status": "COMPLETED",
+      "record": "sessions/S036/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -309,7 +319,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 remains selected. The S030--S033 residual-shell exclusion family and D34-01 aggregate multiwise block-factorisation exclusion route are both stopped. B-010 was resolved by owner option 1: retain full CAND-05 and authorize a fresh source-first mechanism reassessment. S036 runs D35-01 only, comparing at most three genuinely distinct source-backed mechanisms and promoting at most one mathematical successor without proving it.",
+  "current_route_disposition": "S036 found no theorem-backed mechanism clearing the stopped-route/anti-churn bar; no S037 mathematical successor is authorized while B-011 is active.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -483,5 +493,15 @@
     "strategy_blocker": "B-010"
   },
   "b010_resolution_date": "2026-10-05",
-  "post_s035_owner_strategy_choice": "B-010 option 1: retain full CAND-05 and authorize a fresh source-first mechanism reassessment"
+  "post_s035_owner_strategy_choice": "B-010 option 1: retain full CAND-05 and authorize a fresh source-first mechanism reassessment",
+  "s036_source_refresh_date": "2026-10-05",
+  "b011_activation_date": "2026-10-05",
+  "cand05_fresh_mechanism_source_reassessment": {
+    "status": "COMPLETED_NO_PROMOTION_OWNER_BLOCKED",
+    "unit": "D35-01",
+    "mechanisms_compared": 3,
+    "promoted_successor": null,
+    "boundary": "Schmid torsion-kernel atom transfer is automatic on the common-torsion family; Hui--Zhong 2026 joint-short inverse hypotheses fail on the quotient; Girard--Schmid 2020 rank-three inverse eta has no source-backed hypothesis transfer/extraction.",
+    "owner_blocker": "B-011"
+  }
 }

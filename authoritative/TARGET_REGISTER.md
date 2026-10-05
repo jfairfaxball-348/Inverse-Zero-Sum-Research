@@ -1020,3 +1020,11 @@ successor without proving it.
 No target narrowing, existence claim, odd-`m` conclusion, lift classification,
 or full classification is implied by the owner decision.
 
+
+
+## S036 target checkpoint
+
+Full all-m CAND-05 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+S036 changes no target statement and makes no existence or classification claim.
+The three fresh mechanisms tested in D35-01 do not produce a runnable successor,
+so B-011 is active before any further numbered mathematical session.

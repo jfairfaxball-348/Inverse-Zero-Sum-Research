@@ -624,3 +624,11 @@ status/proposal lead, Pingzhi Yuan as a strong alternative, with Girard/Schmid
 as controlling-source experts rather than default independent reviewers. Xue
 Li's pending Stage-1 message remains strictly CAND-02-specific.
 
+
+
+## S036 reviewer checkpoint
+
+No reviewer status changed and no outreach occurred. External-review gate
+remains CLOSED with no confirmed reviewer. B-011 option 3, if chosen by the
+owner, would authorize a bounded external-status/expert-input phase only;
+actual transmission still requires explicit send authorization.

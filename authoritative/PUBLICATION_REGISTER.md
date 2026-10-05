@@ -552,3 +552,11 @@ submission.
 E-JC remains the leading eligible route and JNT the recorded backup under the
 S022 policy refresh. Publication gate remains OPEN.
 
+
+
+## S036 publication checkpoint
+
+No publication-gate change. E-JC remains the lead candidate and JNT a natural
+backup under the previously audited policy boundaries. S036 produced a route
+reassessment, not a manuscript-ready mathematical result. Publication gate:
+OPEN.

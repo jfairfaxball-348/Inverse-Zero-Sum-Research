@@ -760,3 +760,20 @@ Proof / source-check date: **2026-10-05**. No new source ID is added; S035 reche
 | --- | --- | --- | --- |
 | C-156 | OWNER_STRATEGY_DECISION | B-010 is resolved by retaining full CAND-05 and authorizing S036 D35-01, a fresh source-first mechanism reassessment outside the stopped S030--S033 residual-shell family and stopped D34-01 aggregate multiwise block-factorisation route. | D-103--D-104. This is a programme strategy decision, not a mathematical theorem, openness claim, novelty claim, or publication-significance claim. |
 
+
+
+## S036 fresh-mechanism source and claim additions
+
+Source-check date: **2026-10-05**.
+
+| ID | Source | Exact boundary |
+| --- | --- | --- |
+| ZS-67 | Wolfgang A. Schmid, *The Inverse Problem Associated to the Davenport Constant for C_2+C_2+C_{2n}, and Applications to the Arithmetical Characterization of Class Groups*, E-JC 18(1) (2011), P33, DOI 10.37236/520 | Theorem 3.1 proof Step 1 transfers a factorisation of a minimal zero-sum sequence through a quotient to a minimal zero-sum sequence of block sums over the kernel. The source also records the complete elementary-2-group atom form and warns that this kernel class gives low rigidity. |
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-157 | SOURCE_TOOL | If A is a minimal zero-sum sequence and A=F_1...F_k lifts a factorisation of its quotient image, then the block-sum sequence product sigma(F_i) is minimal zero-sum over the kernel. | ZS-67, Theorem 3.1 proof Step 1. |
+| C-158 | PROGRAMME_ROUTE_BOUNDARY | In the common-torsion compatibility family, applying C-157 to the four m-block quotient atoms of B_2B_3 yields the circuit {c_2,c_2+t,c_3,c_3+t}, but that circuit is already automatic from h_2,h_3 being a basis and pi(t)=ell!=0. The transfer adds no new invariant. | D35-01 applicability test only; not an extremal existence claim. |
+| C-159 | SOURCE_COMPARATOR_BOUNDARY | Hui--Zhong 2026 Theorem 1.1 cannot constrain the common-torsion C_m^2 quotient because it already contains innerly non-zero-sum-joint short zero sums among repeated order-m basis elements. | ZS-61 rechecked; no canonical theorem-backed extremal subcore is produced. |
+| C-160 | SOURCE_COMPARATOR_BOUNDARY | Girard--Schmid 2020 Theorem 4.1 exactly classifies eta-extremals over C_2+C_2+C_{2m}, but CAND-05 short-zero-sum avoidance does not imply the corresponding quotient avoidance hypothesis and no checked source supplies an extremal-core extraction. | ZS-57 rechecked. |
+| C-161 | PROGRAMME_ROUTE_DECISION | D35-01 promotes no S037 mathematical dependency. B-011 is active; no next-session prompt/brief is scheduled. | S036 comparison and anti-churn rule. |

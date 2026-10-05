@@ -1126,3 +1126,10 @@ applicability boundaries, and may promote at most one bounded mathematical
 successor without proving it. If no mechanism clears the anti-churn bar, S036
 must activate a new owner strategy blocker rather than schedule S037.
 
+
+
+## S036 completed — fresh source-first mechanism reassessment
+
+D35-01 compared exactly three mechanisms: Schmid 2011 minimal-atom transfer through E=G_m[2]; Hui--Zhong 2026 rank-two inverse Narkiewicz-sense eta structure; and Girard--Schmid 2020 rank-three inverse eta on C_2+C_2+C_{2m} via a different quotient.
+
+No mechanism clears its applicability/falsification test. No S037 mathematical dependency is promoted. B-011 is active and suppresses next-session material pending an owner strategy disposition.

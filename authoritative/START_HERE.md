@@ -10,14 +10,14 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S035 records before later target-specific work, with
+7. The completed S002–S036 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S035 is completed and B-010 is resolved by the owner choosing option 1: retain full CAND-05 and authorize a fresh source-first mechanism reassessment. Both the S030--S033 residual-shell exclusion route and D34-01 multiwise block-factorisation exclusion route remain stopped. S036 is READY for D35-01, which may compare at most three genuinely different source-backed mechanisms and promote at most one bounded mathematical successor, but may not prove that successor. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.**
+**S036 is completed. D35-01 compared exactly three fresh source-backed mechanisms and none supplied a non-automatic datum with valid hypotheses at the S023--S035 frontier. No S037 mathematical successor is promoted. B-011 is ACTIVE and suppresses all next-session material pending an owner strategy choice. Full CAND-05 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.**
 
 Selected target:
 
@@ -28,10 +28,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: OPEN for S036 D35-01 source-first route reassessment only.
+- Mathematical-investigation gate: OPEN in principle, but B-011 suppresses all numbered continuation.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: NONE.
-- Next session: S036.
+- Active owner blockers: B-011.
+- Next session: NONE while B-011 is active.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -619,3 +619,10 @@ S036 may promote at most one genuinely new theorem-backed mathematical
 dependency and must not prove it. If no new mechanism clears the bar, it must
 activate a new owner blocker rather than schedule cosmetic continuation.
 
+
+
+## S036 fresh-mechanism source-reassessment frontier
+
+D35-01 compared three source-backed mechanisms and promoted none. Schmid 2011 Theorem 3.1 Step 1 transfers quotient factorisations of a minimal zero-sum sequence to a minimal zero-sum block-sum sequence over the kernel, but in the common-torsion family the resulting four-term C_2^3 circuit is already automatic from h_2,h_3 and t. Hui--Zhong 2026 Theorem 1.1 has stronger rank-two joint-short inverse structure, but the common-torsion quotient already has the forbidden joint short pairs. Girard--Schmid 2020 Theorem 4.1 exactly classifies eta-extremals over C_2+C_2+C_{2m}, but CAND-05 short-zero-sum avoidance does not transfer to that quotient and no checked source forces an extremal quotient core.
+
+Both prior stopped architectures remain stopped. B-011 is active; no S037 prompt or brief exists.

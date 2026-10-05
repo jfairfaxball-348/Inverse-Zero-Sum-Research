@@ -249,3 +249,10 @@ arguments. Retired routes are not silently revived without new information.
 | --- | --- | --- | --- | --- |
 | FL-090 | 2026-10-05 | A global theorem can be genuinely different from a stopped local shell mechanism yet still fail to distinguish the surviving compatibility family. Here the common-torsion aggregate data themselves factor as `(B_1u)(B_2B_3)`, exactly satisfying the `D_2`-forced pair with lengths above the short-zero-sum cutoff. | Stop D34-01 as an exclusion route. Do not inspect the `zeta!=0` branch merely to prolong the same mechanism, and do not fall back to another residual-depth or seven-lift classification variant. Require an explicit owner strategy choice before a new numbered session. | S035 D34-01 / D-101--D-102 |
 
+
+
+## S036 fresh-mechanism reassessment lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-091 | 2026-10-05 | A theorem can be genuinely stronger and use a genuinely different subgroup while still add no rigidity at the live frontier. Here Schmid's atom-transfer step through G_m[2] produces a C_2^3 circuit that the common-torsion basis data already force; the freshest rank-two joint-short inverse theorem has a visibly false avoidance hypothesis; and the closest rank-three inverse eta theorem lacks hypothesis transfer. | Test exact hypotheses and the surviving compatibility assignment before creating a successor. If the output is automatic or the hypotheses are not source-forced, stop rather than turn the mismatch into an invented proof dependency. | S036 D35-01 / D-105--D-106 |

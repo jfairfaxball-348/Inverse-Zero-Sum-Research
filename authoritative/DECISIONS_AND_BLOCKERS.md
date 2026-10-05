@@ -709,3 +709,25 @@ gates remain OPEN; mathematical investigation remains OPEN for the bounded S036
 D35-01 source-first reassessment; external review remains CLOSED and parallel.
 CAND-02 remains historical/paused.
 
+
+
+## S036 CAND-05 fresh-mechanism reassessment decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-105 | 2026-10-05 | Record D35-01 as a completed source-first route reassessment with no promoted mathematical successor. The Schmid 2011 torsion-kernel atom transfer is non-new on the common-torsion family; Hui--Zhong 2026 joint-short inverse hypotheses fail on the current quotient; Girard--Schmid 2020 rank-three inverse eta has no source-backed hypothesis transfer/extraction from CAND-05. | sessions/S036/FRESH_MECHANISM_SOURCE_REASSESSMENT.md and SOURCE_CHECK.md. |
+| D-106 | 2026-10-05 | **Activate B-011 and suppress all next-session material.** No S037 proof session may be manufactured from the three rejected mechanisms or from the already-stopped S030--S033 and D34-01 architectures. | D-105 and the S036 anti-churn boundary. |
+
+### B-011 — CAND-05 strategy after S036 finds no fresh runnable mechanism
+
+**ACTIVE.**
+
+The owner retained full CAND-05 after B-010 and authorized one fresh source-first mechanism reassessment. S036 has now exhausted that bounded authorization without identifying a theorem-backed datum that distinguishes the surviving common-torsion compatibility assignment from an actual extremal.
+
+**Required owner action:** choose one strategy disposition before any further numbered mathematical session:
+
+1. deliberately narrow/reframe CAND-05 to a source-justified substantial partial contribution, with a fresh significance/current-status audit before proof continuation;
+2. reassess/switch the selected target; or
+3. retain full CAND-05 but first authorize a bounded external-status/expert-input phase focused specifically on whether a theorem is known that controls lift-sum collisions or extracts an extremal quotient core. Any actual outreach still requires explicit owner send authorization.
+
+While B-011 is active, next_session and next_brief are null, next_prompt_status is SUPPRESSED_OWNER_BLOCKER, and authoritative/NEXT_SESSION_PROMPT.md is absent. Target and publication gates remain OPEN. Mathematical investigation remains OPEN in principle but no numbered continuation is runnable. External review remains CLOSED.
