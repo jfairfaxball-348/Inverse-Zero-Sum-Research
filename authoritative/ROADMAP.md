@@ -1133,3 +1133,28 @@ must activate a new owner strategy blocker rather than schedule S037.
 D35-01 compared exactly three mechanisms: Schmid 2011 minimal-atom transfer through E=G_m[2]; Hui--Zhong 2026 rank-two inverse Narkiewicz-sense eta structure; and Girard--Schmid 2020 rank-three inverse eta on C_2+C_2+C_{2m} via a different quotient.
 
 No mechanism clears its applicability/falsification test. No S037 mathematical dependency is promoted. B-011 is active and suppresses next-session material pending an owner strategy disposition.
+
+
+## Post-S036 route — S037 target reassessment
+
+D-107 resolves B-011 by choosing target reassessment rather than another
+full-CAND-05 proof architecture.
+
+S037 returns the programme temporarily to source-first target selection. It
+will refresh CAND-03 and CAND-01 from the S021 baseline, treat CAND-05 as the
+stalled incumbent comparator, and conduct one bounded discovery pass for at
+most two genuinely new replacement candidates. CAND-02 remains historical and
+paused; CAND-04 remains retired absent positive primary evidence changing its
+hidden direct-theorem dependency.
+
+The assessment must use both long proof histories as anti-churn evidence. A
+candidate should have an exact theorem identity, a credible current-status
+boundary, sufficiently settled background/direct theory, exact-hypothesis
+source access, identifiable entry machinery, scope for a meaningful partial
+contribution, publication fit, a credible reviewer route, and an early
+falsification criterion.
+
+S037 will recommend one exact replacement target if a candidate clears the bar
+but will not select it on the owner's behalf. Its closeout must activate an
+owner target-selection blocker (or a strategy blocker if none clears the bar)
+and suppress further prompts until the owner chooses.
