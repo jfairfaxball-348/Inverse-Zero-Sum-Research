@@ -1005,3 +1005,28 @@ No extremal is constructed.
 The single promoted successor is D30-01. S031 will analyze only the remaining
 four quotient-zero Fano residual lines and test whether their shell memberships
 control the two S030 relative pair-sum defects.
+
+## S031 full seven-Fano-line checkpoint
+
+S031 resolves D30-01 for even `m>=4`. The four residual quotient-zero
+Fano triples not containing `ell` obey the same exact depth-`m-1`
+completion condition as the three S030 lines through `ell`. Hence every
+one of the seven Fano residual line sums lies in the S029 shell `E(K)`.
+
+If `q_i` represent the three nonzero `L`-cosets and
+`q_1+q_2+q_3=epsilon ell`, the four new lines are exactly the parity
+class `e_1+e_2+e_3=epsilon`. Writing
+`tau_i=x_{q_i+ell}-x_{q_i}`, their lift-sums are
+`X+sum e_i tau_i`. Existing authority controls the fixed-coset
+`tau_i` but not both non-fixed member differences.
+
+The seven-line system still does not exclude simultaneous positivity. In the
+common-torsion assignment `u=t`, `tau_1=tau_2=tau_3=t`, the three
+through-`ell` sums are `h_1,h_2,h_3`, while the four remaining line
+sums collapse to one half `v` of `h_1+h_2+h_3`. The half-fibre is an
+`H[2]` torsor and always meets the shell: if `2c=1-a`, then
+`c h_1+h_2 in h_2+<h_1> subset E(K)`.
+
+The single promoted successor is D31-01. S032 will analyze only the seven
+quotient-zero four-term residual subsets complementary to the seven Fano lines,
+using line/complement coupling through the total residual sum.
