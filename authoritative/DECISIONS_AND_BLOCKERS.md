@@ -630,3 +630,14 @@ CAND-02 remains historical/paused.
 Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
+
+## S031 CAND-05 full seven-Fano-line decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-093 | 2026-10-05 | Record D30-01 as a successful complete seven-Fano-line necessary shell analysis for even `m>=4`, but not an exclusion. All seven quotient-zero residual triples land in `E(K)`; the common-torsion assignment survives because the four non-`ell` lines collapse to an `H[2]`-movable half of `h_1+h_2+h_3`, and that half-fibre always meets the shell. | `sessions/S031/EVEN_REMAINING_FANO_LINES.md`. |
+| D-094 | 2026-10-05 | Promote exactly one successor, D31-01, and schedule S032 only on the seven quotient-zero four-term residual subsets complementary to the Fano lines. Use their shell memberships to test line/complement coupling through the total residual sum; do not pass to arbitrary residual subsets or global lift/weight classification. | S031 exhausts the Fano triples without contradiction; their complements are the next bounded quotient-zero family and retain the exact `2m` lifting budget. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.
