@@ -383,3 +383,19 @@ computation remain CLOSED.
 - Xue Li Stage-1 remains CAND-02-specific and REPLY PENDING; no reviewer is
   confirmed.
 - B-009 is active. No S022 or live next-session prompt is scheduled.
+
+## Post-S021 owner CAND-05 selection checkpoint
+
+- Incoming authority: \`261b4942da0c4baa280a2805bdcfa082c0058537\`.
+- Owner selected S021 shortlist option 3: **CAND-05**.
+- D-070 resolves B-009 and explicitly replaces historical CAND-02 with the
+  ordinary inverse-\`eta\` target on \`C_2+C_{2m}+C_{2m}\`, \`m>=2\`.
+- This checkpoint is not a numbered research session and adds no mathematical
+  theorem or novelty claim.
+- D-071 temporarily closes the mathematical-investigation gate because CAND-05
+  has only discovery-level due diligence so far.
+- S022 is READY for a full target-specific source/status, structural-baseline,
+  publication and reviewer audit.
+- CAND-02 remains historical/paused; Xue Li Stage-1 remains CAND-02-specific
+  and REPLY PENDING.
+- Active owner blockers: NONE.

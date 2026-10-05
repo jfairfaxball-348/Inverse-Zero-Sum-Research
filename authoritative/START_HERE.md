@@ -17,26 +17,33 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S021 is completed. It recommends CAND-03 but does not select it. B-009 is
-ACTIVE for the owner's final target choice among CAND-03 (recommended),
-CAND-01 and CAND-05. CAND-02 remains the historical incumbent only until an
-explicit replacement decision; its proof programme remains paused.**
+**S021 is completed and the owner has selected shortlist option 3:
+CAND-05. B-009 is resolved. CAND-05 is now the programme's exact selected
+target. S022 is READY as a full CAND-05 due-diligence and proof-readiness
+session before mathematical investigation resumes.**
 
-- Publication-eligibility gate: OPEN.
-- Mathematical-investigation gate remains formally OPEN at programme level,
-  but no target-specific proof session is runnable while B-009 is active.
+Selected target:
+
+> For every \`m>=2\`, classify every sequence over
+> \`G_m=C_2\oplus C_{2m}\oplus C_{2m}\` of length
+> \`eta(G_m)-1=6m+1\` having no nonempty zero-sum subsequence of length at
+> most \`exp(G_m)=2m\`.
+
+- Target gate: OPEN — the owner selected an exact theorem identity.
+- Publication gate: OPEN — E-JC remains the leading eligible route, subject to
+  S022's CAND-05-specific significance/fit refresh.
+- Mathematical-investigation gate: **CLOSED temporarily** — CAND-05 has not yet
+  received the full target-specific due-diligence/source-baseline audit.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: B-009.
+- Active owner blockers: NONE.
+- Next session: S022.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
-  REPLY PENDING, and does not transfer to CAND-03, CAND-01 or CAND-05.
-- \`next_session\` and \`next_brief\` are null and the live next-session prompt is
-  suppressed until the owner selects the target.
+  REPLY PENDING, and does not transfer to CAND-05.
 
-S021's recommendation is the exact CAND-03 structural classification of
-length-24 \`eta^N(C_3^3)-1\` extremals over \`C_3^3\\{0}\`. CAND-01 remains a
-serious classical alternative; CAND-05 is the newly admitted ordinary inverse
-\`eta\` target on \`C_2+C_{2m}+C_{2m}\`. Search non-hits remain non-hits, not
-openness or novelty certificates.
+CAND-02 is now a historical, paused target. Its S006--S020 mathematics remains
+durable programme evidence. CAND-02-specific route-stop decisions do not
+silently become theorem-level restrictions on CAND-05; any reused statement or
+mechanism must be justified for the stronger ordinary-\`eta\` hypothesis.
 
 ## Current mathematical frontier
 
@@ -318,3 +325,23 @@ historical work but is not shortlisted after the S020 strategic audit.
 
 B-009 is active. No S022 brief or live prompt exists until the owner selects
 CAND-03, CAND-01 or CAND-05.
+
+## Post-S021 owner target selection — CAND-05
+
+The owner resolved B-009 by choosing **option 3: CAND-05**. This is an explicit
+target switch from historical CAND-02.
+
+CAND-05 is the ordinary inverse \`eta\` problem for
+\`C_2+C_{2m}+C_{2m}\`, \`m>=2\`, at length \`6m+1\`. S021 established only
+a bounded discovery-level status boundary. S022 therefore performs the
+S002/S003-style full target audit before any proof programme begins.
+
+The mathematical-investigation gate is temporarily CLOSED for that reason.
+S022 must reconstruct the exact direct theorem, search current prior art and
+small/arithmetic cases, inspect the closest genuine inverse-\`eta\` machinery,
+check for hidden Property-D/direct-constant dependencies, define meaningful
+partial-contribution standards, and refresh publication/reviewer routes. If the
+target survives with mature due diligence, S022 may reopen the gate and prepare
+one bounded S023 dependency; it may not begin S023 mathematics itself.
+
+B-009 is resolved. No reviewer status transfers from CAND-02.

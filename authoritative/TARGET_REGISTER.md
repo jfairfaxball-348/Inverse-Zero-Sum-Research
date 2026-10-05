@@ -1,19 +1,23 @@
 # Target register
 
-**Current protocol note (D-030--D-032):** historical entries below preserve the gate rules that governed their sessions. Any historical statement that external-review completion is required before proof/computation is superseded. The mathematical-investigation gate is now OPEN for CAND-02 while external review remains CLOSED and parallel. This does not change the target's status: SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+**Current protocol note (D-030--D-032):** historical entries below preserve
+the gate rules that governed their sessions. External review remains parallel
+rather than a prerequisite for mathematical investigation, but D-071
+temporarily closes the mathematical-investigation gate because newly selected
+CAND-05 still needs full target-specific due diligence.
 
+**Selected exact target: CAND-05 — ordinary inverse \`eta\` for
+\`C_2 \oplus C_{2m} \oplus C_{2m}\`, \`m>=2\`.**
 
-**Selected exact target: CAND-02 — rank-three inverse EGZ for
-`C_2 \oplus C_{2m} \oplus C_{2m}`, `m>=2`.**
+Owner decision D-070 supersedes the earlier CAND-01 and CAND-02 selections.
+The exact target is to classify every sequence \`S\` over
+\`G_m=C_2\oplus C_{2m}\oplus C_{2m}\` with
+\`|S|=eta(G_m)-1=6m+1\` and no nonempty zero-sum subsequence of length at
+most \`exp(G_m)=2m\`, for every \`m>=2\`.
 
-Owner decision D-024, made after the completed S002--S004 audits, supersedes
-the earlier CAND-01 selection. The exact target is to classify every
-length-`8m` sequence over
-`G_m=C_2 \oplus C_{2m} \oplus C_{2m}` having no zero-sum
-subsequence of length `2m`, for all `m>=2`.
-
-CAND-01 and CAND-03 remain audited alternatives but are no longer selected.
-CAND-04 remains retired as a clean standalone inverse target.
+CAND-02 is historical and paused; its mathematics is retained. CAND-01 and
+CAND-03 are audited alternatives but no longer selected. CAND-04 remains
+retired as a clean standalone inverse target.
 
 ## S001 candidate set
 
@@ -687,3 +691,25 @@ rank-three scope carries a substantial anti-churn risk.
 - The permitted second new-candidate slot was deliberately left empty because
   no second discovery candidate cleared the exact-statement, current-status,
   settled-background and hidden-prerequisite bar.
+
+## Post-S021 owner selection — CAND-05 selected
+
+Date: 2026-10-05.
+
+The owner selected S021 shortlist option 3. CAND-05 is now the live exact
+target:
+
+> For every \`m>=2\`, classify all length-\`6m+1\` sequences over
+> \`C_2\oplus C_{2m}\oplus C_{2m}\` containing no nonempty zero-sum
+> subsequence of length at most \`2m\`.
+
+The direct value \`eta(G_m)=6m+2\` is source-established, but S021's audit of
+this newly discovered candidate was deliberately bounded. Therefore the target
+gate is OPEN by explicit owner selection while the mathematical-investigation
+gate is CLOSED pending S022's full current-status, source-structure and hidden-
+prerequisite audit.
+
+No CAND-02 programme theorem is automatically reclassified as a CAND-05
+theorem merely because the ambient group is identical. CAND-05 has the
+stronger no-short-zero-sum hypothesis and a different invariant identity;
+reuse requires an exact proof or source transfer.

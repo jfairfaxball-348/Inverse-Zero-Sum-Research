@@ -809,3 +809,21 @@ next stage depends on the owner's explicit target selection, after which the
 selected target must receive a fresh bounded brief that preserves its exact
 source/status and reviewer boundaries. S021's recommendation alone is not a
 target switch.
+
+## Post-S021 selected-target transition — CAND-05
+
+Owner decision D-070 selects CAND-05. The programme remains in P1 long enough
+to give the newly discovered target a full source/status and structural
+baseline audit.
+
+S022 is READY and must determine whether CAND-05 is genuinely proof-ready:
+exact theorem identity, current overlap/status, small and arithmetic subfamilies,
+direct-proof equality structure, applicable rank-two inverse-\`eta\` machinery,
+hidden prerequisites, contribution-level partial scopes, publication fit and a
+fresh reviewer route.
+
+The mathematical-investigation gate is CLOSED during S022. If the audit
+survives cleanly, S022 may reopen it and schedule exactly one bounded S023
+mathematical unit with a concrete dependency and anti-churn stop condition.
+CAND-02 remains historical and paused; no proof/reviewer status transfers by
+ambient-group identity alone.

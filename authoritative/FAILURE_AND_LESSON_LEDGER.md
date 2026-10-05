@@ -158,3 +158,9 @@ arguments. Retired routes are not silently revived without new information.
 | FL-071 | 2026-10-05 | A natural all-parameter rank-three inverse problem can repeat CAND-02's long architecture even when its forbidden condition is stronger. | Treat CAND-05's stronger eta-freeness as useful input, not as a guarantee of tractability; impose contribution-level stop/promote tests early if selected. | S021 CAND-05 assessment |
 | FL-072 | 2026-10-05 | Filling an allowed discovery quota can manufacture weak targets whose status or prerequisites are not source-disciplined. | Leave a candidate slot empty when no additional problem clears the exact-statement, current-status, settled-background and hidden-prerequisite bar. | S021 bounded discovery |
 | FL-073 | 2026-10-05 | A fixed small group can tempt a project into finite enumeration that lacks a structural theorem. | If CAND-03 is selected, use computation only with a defined evidentiary role; the contribution target remains a necessity-and-sufficiency structural classification or a genuinely substantial structural reduction. | S021 recommendation boundary |
+
+## Post-S021 target-switch lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-074 | 2026-10-05 | Two inverse problems on the same ambient group can look interchangeable even when one forbids one exact length and the other forbids all short zero sums. Reusing the old programme wholesale would blur invariant identity and could import both false constraints and irrelevant route stops. | Treat CAND-05 as a new target. Re-audit sources and re-prove any transferred structural statement under the ordinary-\`eta\` hypothesis before using it. | D-070--D-072 |

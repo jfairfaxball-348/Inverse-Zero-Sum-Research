@@ -1,6 +1,6 @@
 # Publication register
 
-Policy observations date: **2026-10-02**. Refresh at target selection and again
+Policy observations date: **2026-10-05**. Refresh at target selection and again
 before submission. Status refers to subject/workflow eligibility, never
 acceptance likelihood.
 
@@ -40,11 +40,13 @@ accepted.
 | CAND-03 rank-three inverse `eta^N` | Combinatorial structure with factorization-theory connection | Defining paper Acta Arith. 2024; rank-two inverse completion JCTA 2026 | Determine whether final emphasis is primarily combinatorial or arithmetic/factorization-theoretic |
 | CAND-04 rank-three Property D | Within higher-rank additive/discrete combinatorics | Property-D and higher-rank EGZ literature includes JNT/JCTA | Reassess exact theorem significance and closest-current venue once scoped |
 
-CAND-02 is now the selected target by D-024 and E-JC remains the intended
-leading venue. This is a subject/workflow preference, not a submission decision
-or acceptance prediction. The **publication gate remains OPEN** because S003
-already performed a target-specific E-JC refresh for CAND-02 and retained JNT
-as a policy-qualified backup. Recheck current policies again before any actual
+CAND-05 is now the selected target by D-070. E-JC remains the leading
+workflow-eligible venue and the publication gate remains OPEN, based on the
+2026-10-05 policy refresh and the target's clear short-zero-sum/inverse
+combinatorics subject fit. This is a provisional target-specific eligibility
+position: S022 must recheck the exact contribution significance, nearest
+ordinary-\`eta\` publication comparators and backup venue fit before mathematical
+investigation reopens. Recheck current policies again before any actual
 submission.
 
 ## Eligibility record for each retained venue
@@ -397,3 +399,17 @@ eligibility only, never an acceptance prediction.
 
 No manuscript, submission authorization, submission, acceptance or publication
 exists. Target selection remains blocked by B-009.
+
+## Post-S021 CAND-05 publication transition
+
+CAND-05 is selected. E-JC remains the leading eligible route under the
+2026-10-05 official scope/AI-policy refresh, and JNT remains a plausible backup
+because it published the controlling Girard--Schmid direct rank-three theorem.
+
+The publication gate stays OPEN because an eligible substantive-AI-compatible
+route exists, but S022 must perform the deeper CAND-05-specific significance
+and comparable-paper audit. A correct isolated small-\`m\` catalogue is not
+presumed substantial enough for the programme's publication objective.
+
+No manuscript, submission authorization, submission, acceptance or publication
+exists.

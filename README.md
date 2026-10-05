@@ -4,11 +4,10 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: owner target selection after completed S021 reassessment.
-S021 recommends CAND-03, with CAND-01 and CAND-05 as viable alternatives.
-B-009 is ACTIVE. CAND-02 remains the historical incumbent only until an
-explicit replacement decision and its proof programme is paused. There is no
-live next-session prompt.**
+**Current stage: CAND-05 selected; full target-specific due diligence before
+mathematical investigation. B-009 is resolved. S022 is READY. CAND-02 is now
+historical/paused, and its pending Xue Li Stage-1 outreach remains
+CAND-02-specific.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -19,15 +18,15 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006, B-007 and B-008 are resolved. S021 is the live target-reassessment
-session; it may recommend but not silently select a replacement target.
+and no next-session prompt.** B-006 through B-009 are resolved. S022 is the
+live source-first CAND-05 due-diligence session.
 
 ## Current readiness dimensions
 
-1. Target gate — OPEN: CAND-02 remains the historical exact target pending explicit owner replacement; S021 recommends CAND-03 but has not selected it.
-2. Publication gate — OPEN: E-JC is the leading eligible route, with JNT as a policy-qualified backup.
-3. Mathematical-investigation gate — OPEN: bounded proof/counterexample search, structural derivation and scoped computation/experiments may run under session briefs.
-4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
+1. Target gate — OPEN: CAND-05 is explicitly selected at exact all-\`m\` ordinary inverse-\`eta\` scope.
+2. Publication gate — OPEN: E-JC remains the leading eligible route; S022 refreshes exact CAND-05 significance/fit.
+3. Mathematical-investigation gate — CLOSED temporarily: S022 must complete full CAND-05 due diligence before proof work.
+4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
 intact, S011's local-hole/capacity exchange route remains stopped, and S012's
@@ -211,3 +210,20 @@ historical/paused.
 B-009 requires the owner's explicit choice. No S022 or live next-session
 prompt exists until that decision. Xue Li's pending Stage-1 message remains
 CAND-02-specific and no reviewer status transfers.
+
+## Post-S021 CAND-05 selection checkpoint
+
+The owner selected **option 3: CAND-05**. The new exact target is the ordinary
+inverse \`eta\` classification for length-\`6m+1\` sequences over
+\`C_2+C_{2m}+C_{2m}\`, \`m>=2\`, with no nonempty zero sum of length at
+most \`2m\`.
+
+Because S021 only admitted CAND-05 through a bounded discovery pass, the
+mathematical-investigation gate is temporarily CLOSED. S022 performs the
+full current-status/prior-art audit, source-structure and hidden-prerequisite
+check, contribution-level anti-churn assessment, publication refresh and
+reviewer-route reassessment.
+
+CAND-02's S006--S020 mathematics remains durable historical programme evidence,
+but no lemma, route stop or reviewer status transfers automatically merely
+because CAND-05 uses the same ambient group.

@@ -1,12 +1,16 @@
 # External reviewer register
 
-**Confirmed reviewer: NONE.** Owner decision D-024 selects CAND-02. On
-2026-10-02 the owner reported sending the S005 Xue Li (R-04) Stage-1
-status/proposal message. A reply and willingness remain pending; transmission
-does not itself create reviewer status or complete external proposal review.
+**Confirmed reviewer: NONE.** Owner decision D-070 selects CAND-05.
 
-The earlier CAND-01 Pingzhi Yuan and CAND-03 David J. Grynkiewicz packages
-remain historical alternatives and are not active outreach routes.
+The 2026-10-02 Xue Li Stage-1 message remains a historical **CAND-02-specific**
+outreach item with REPLY PENDING. It does not create reviewer status for
+CAND-05 and must not be repurposed by silence or inference.
+
+S021 identified David J. Grynkiewicz only as a provisional independent
+CAND-05 lead. Girard and Schmid are exact direct-baseline experts but authored
+the controlling source and are not automatically the cleanest independent
+reviewers. S022 must perform a fresh CAND-05 reviewer-fit, independence and
+current-contact assessment before any package is prepared.
 
 Private contact observations remain owner-supplied summaries only. Do not copy
 private messages or email addresses into the public repository.
@@ -459,3 +463,23 @@ Xue Li's Stage-1 message remains **strictly CAND-02-specific**:
 owner-reported SENT 2026-10-02 / REPLY PENDING. It does not transfer to any
 replacement candidate, and silence supplies no willingness, endorsement,
 novelty certification, approval or reviewer status.
+
+## Post-S021 CAND-05 reviewer reset
+
+No CAND-05 reviewer is confirmed and no CAND-05 outreach has been sent.
+
+S022 must reassess:
+
+- David J. Grynkiewicz as the provisional independent first status/proposal
+  lead from S021;
+- Benjamin Girard and Wolfgang A. Schmid as exact baseline/status experts whose
+  source authorship requires an independence/conflict assessment;
+- Pingzhi Yuan and any stronger current ordinary-\`eta\` specialist surfaced by
+  the target-specific audit.
+
+No outreach is authorized by target selection alone. Any future Stage-1 send
+requires a reviewable package, current route verification and explicit owner
+authorization.
+
+Xue Li's pending CAND-02 message remains separate and must not be interpreted
+as CAND-05 willingness, endorsement, novelty certification or approval.

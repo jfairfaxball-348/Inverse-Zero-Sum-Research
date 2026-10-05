@@ -556,3 +556,18 @@ hidden direct-threshold dependency.
 
 No S021 search non-hit is used as evidence of openness, novelty, completeness,
 significance or publishability.
+
+## Post-S021 CAND-05 selection boundary
+
+Owner selection date: **2026-10-05**. This checkpoint adds no new mathematical
+source result.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-103 | OWNER_TARGET_DECISION | CAND-05 is now the selected exact target: classify length-\`6m+1\` ordinary-\`eta\` extremals over \`C_2+C_{2m}+C_{2m}\` for every \`m>=2\`. | D-070. Target selection is not an openness, novelty or proof claim. |
+| C-104 | PROGRAMME_GATE_BOUNDARY | Mathematical investigation is temporarily CLOSED until S022 completes the full CAND-05 due-diligence/source-baseline audit. | D-071. The direct threshold and discovery-level status from S021 do not by themselves authorize proof work under the programme's due-diligence standard. |
+| C-105 | PROGRAMME_TRANSFER_BOUNDARY | CAND-02 internal lemmas, failed routes and reviewer status do not automatically transfer to CAND-05 despite the common ambient group. | D-072. Exact hypotheses/invariant identity must be rechecked. |
+
+The controlling direct source remains previously recorded ZS-10; S022 must
+refresh and deepen the target-specific literature record before any additional
+source claim is promoted.
