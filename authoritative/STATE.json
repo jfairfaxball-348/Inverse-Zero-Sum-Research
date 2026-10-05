@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S036",
-  "next_session": null,
-  "next_brief": null,
-  "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S036_COMPLETED_OWNER_STRATEGY_BLOCKED_NO_FRESH_MECHANISM",
+  "next_session": "S037",
+  "next_brief": "authoritative/S037_TARGET_REASSESSMENT_BRIEF.md",
+  "stage": "P1_TARGET_REASSESSMENT_WITH_PARALLEL_EXTERNAL_REVIEW",
+  "programme_status": "S037_READY_POST_CAND05_TARGET_REASSESSMENT",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN after S022 due diligence and S023--S035 mathematical work. The residual-shell and aggregate D_2 block-factorisation exclusion routes are stopped. Owner resolution of B-010 retains full CAND-05 and authorizes S036 D35-01, a fresh source-first mechanism reassessment outside those routes.",
+  "candidate_under_due_diligence": "CAND-03 and CAND-01 require refreshed current-status re-audit against the S021 baseline; S037 may add at most two genuinely new source-defined replacement candidates. CAND-05 remains the historical incumbent until explicit owner replacement selection, but its proof programme is paused after S036.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -97,16 +97,14 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [
-    "B-011"
-  ],
+  "active_owner_blockers": [],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; if it identifies prior art, a known solution, material overlap, a mistaken premise, or a serious scope/significance concern, pause the affected mathematical direction and reassess it.",
     "Continue external independent review in parallel and obtain appropriate independent scrutiny of the mathematical contribution/manuscript before journal submission, subject to actual reviewer willingness and availability.",
     "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
+  "next_prompt_status": "READY",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -317,9 +315,9 @@
   "s009_mathematical_investigation_date": "2026-10-03",
   "s010_mathematical_investigation_date": "2026-10-03",
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
-  "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
+  "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S036 found no theorem-backed mechanism clearing the stopped-route/anti-churn bar; no S037 mathematical successor is authorized while B-011 is active.",
+  "current_route_disposition": "CAND-05 proof continuation is paused after S036. The S030--S033 residual-shell route, D34-01 multiwise route, and S036 rejected mechanisms remain stopped. S037 will refresh CAND-03/CAND-01, benchmark the CAND-05 experience, and discover at most two genuinely new replacement candidates before returning a recommendation for explicit owner selection.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -503,5 +501,6 @@
     "promoted_successor": null,
     "boundary": "Schmid torsion-kernel atom transfer is automatic on the common-torsion family; Hui--Zhong 2026 joint-short inverse hypotheses fail on the quotient; Girard--Schmid 2020 rank-three inverse eta has no source-backed hypothesis transfer/extraction.",
     "owner_blocker": "B-011"
-  }
+  },
+  "b011_resolution_date": "2026-10-05"
 }
