@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: S022 completed; CAND-05 survived full target-specific due diligence and the mathematical-investigation gate is OPEN. S023 is READY on the single equality-decomposition dependency D22-01. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
+**Current stage: S032 completed; the full even-modulus Fano line/complement shell system is compatible, with the exact total-residual translation defect isolated. S033 is READY on the full seven-term residual completion-depth dependency D32-01. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -15,14 +15,14 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 through B-009 are resolved. S023 is the
-live bounded CAND-05 equality-decomposition session.
+and no next-session prompt.** B-006 through B-009 are resolved. S033 is the
+live bounded CAND-05 full-residual-depth session.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-05 is selected at exact all-`m` ordinary inverse-`eta` scope.
 2. Publication gate — OPEN: E-JC remains lead; JNT is a natural comparable/backup.
-3. Mathematical-investigation gate — OPEN: S023 is authorized for D22-01 only.
+3. Mathematical-investigation gate — OPEN: S033 is authorized for D32-01 only.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
@@ -230,3 +230,19 @@ because CAND-05 uses the same ambient group.
 S022 reconstructed the primary direct proof for `eta(C_2+C_{2m}+C_{2m})=6m+2`, confirmed the canonical `C_m^2 -> G_m -> C_2^3` architecture, and confirmed that the needed rank-two inverse-`eta` theorem is unconditional. Property D is not a hidden CAND-05 prerequisite. A deep bounded current search found no checked target completion; this is not evidence of openness or novelty.
 
 S023 is limited to the equality case of the sharp inductive `eta` bound: prove or refute the exact quotient-zero-pair / seven-term-residual / kernel-extremal decomposition. At the first failed implication it must stop; it may not begin full lift classification.
+
+
+## S032 complementary-Fano-plane checkpoint
+
+S032 proves that every Fano line and every complementary four-term residual
+subset has lift-sum in the exact S029 shell. If `r` is the total residual
+sum and `w_F` a line sum, the full coupling is
+`w_F in E(K) cap (r-E(K))` for all seven Fano lines. The exact remaining
+translation is
+`zeta=r-(h_1+h_2+h_3)=u+tau_1+tau_2+tau_3 in H`.
+
+The common-torsion family has `zeta=0` and satisfies all fourteen shell
+conditions, so this bounded test does not exclude the fixed
+simultaneous-positive coset. S033 is restricted to the completion depth of the
+full seven-term residual sum; no additional proper residual-subset family is
+pre-authorized.
