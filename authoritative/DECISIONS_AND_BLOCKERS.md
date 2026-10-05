@@ -563,3 +563,14 @@ CAND-02 remains historical/paused.
 Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
+
+## S025 CAND-05 canonical-kernel-bucket decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-081 | 2026-10-05 | Record D24-01 as successful programme-proved bounded mathematics. The canonical rank-two kernel has exactly three positive-weight support values, each of multiplicity `m-1`, with the exact Theorem 2.4 basis/unit relation. | `sessions/S025/CANONICAL_KERNEL_BUCKETS.md`; ZS-56 Theorem 2.4. |
+| D-082 | 2026-10-05 | Promote exactly one successor, D25-01, and schedule S026 on the geometry of the doubling fibres relative to `Q=G_m/2G_m`. Determine only which quotient classes can coexist in one kernel bucket, with the parity split in `m`; stop before global bucket assignment or multiplicity/lift classification. | S025 zero-weight/bucket boundary and S022 anti-churn rule. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.

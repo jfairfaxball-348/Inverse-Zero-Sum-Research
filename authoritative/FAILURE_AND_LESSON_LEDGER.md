@@ -180,3 +180,9 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-079 | 2026-10-05 | A one-change rigidity theorem is useful only after the two induced extremals are synchronized on the same positional pairing core. Comparing arbitrary maximal pairings could change many kernel terms and lose the theorem's `eta(H)-2` overlap hypothesis. | On a chosen fibre, freeze all other pairs and all remaining within-fibre pairs; change only `ab` to `ac` while swapping the residual representative. Then cancel the common kernel sequence after Lemma 4.2. | S024-P1 |
+
+## S025 canonical-kernel-bucket lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-080 | 2026-10-05 | Reading the three-value kernel normal form as a statement about all seven doubled lifts would silently treat zero-weight fibres as kernel terms. Fibres with `r_q=1` have `k_q=0` and are invisible to `K`. | State bucket equations with `k_q` weights and preserve the zero-weight boundary. Analyze the doubling-fibre geometry separately before assigning quotient fibres to buckets. | S025-P2 / C-126 |

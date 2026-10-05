@@ -10,18 +10,17 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S024 records before later target-specific work, with
+7. The completed S002–S025 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S024 is completed. D23-01 succeeds: every nonzero quotient fibre of a
-CAND-05 extremal is monochromatic, so every extremal has exactly seven support
-values and pairing choice is canonical at the kernel level. CAND-05 remains
-SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S025 is READY for one bounded
-canonical-kernel bucket unit.**
+**S025 is completed. D24-01 succeeds: the canonical rank-two kernel has exactly
+three positive-weight support values, each of multiplicity `m-1`, with the exact
+Girard--Schmid basis/unit relation. CAND-05 remains SOURCE-DEFINED / CURRENT
+STATUS UNKNOWN. S026 is READY for one bounded doubling-fibre geometry unit.**
 
 Selected target:
 
@@ -32,10 +31,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S025 brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S026 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S025.
+- Next session: S026.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -44,19 +43,26 @@ programme evidence but does not automatically constrain CAND-05.
 
 ## Current mathematical frontier
 
-S023 gives the exact equality decomposition through
-`H=2G_m\cong C_m^2` and `Q\cong C_2^3`. S024 then removes the first
-lift ambiguity: every nonzero quotient fibre is monochromatic in `G_m`.
+S023 gives the exact equality decomposition through `H=2G_m\cong C_m^2` and
+`Q\cong C_2^3`; S024 proves every nonzero quotient fibre is monochromatic.
+Writing the seven support values as `x_q` with `r_q=2k_q+1`, the induced
+kernel is canonical:
 
-Thus every CAND-05 extremal has exactly seven support values `x_q`, one over
-each nonzero `q in Q`, with positive odd multiplicities `r_q` summing to
-`6m+1`. Every maximal pairing now induces the same canonical kernel sequence
-over `H`, namely one copy of `2x_q` for each paired copy in fibre `q`.
+`K=product_{q!=0}(2x_q)^{k_q}`.
 
-S025 addresses D24-01 only: specialize Girard--Schmid 2019 Theorem 2.4 to this
-canonical length-`3m-3` kernel and derive its exact three-value bucket
-equations. It must stop before classifying the seven lifts, the full
-multiplicity vector, or quotient normalizations.
+S025 specializes Girard--Schmid 2019 Theorem 2.4 to `H=C_m^2`. There are
+exactly three positive-weight kernel values `h_1,h_2,h_3`, each occurring
+`m-1` times. They can be ordered so that `(h_1,h_2)` is a basis and
+`h_3=h_2-a h_1` for a unit `a mod m`; every pair among the three is a basis.
+
+The exact bucket equations are
+`sum_{q:2x_q=h_i} k_q=m-1` for `i=1,2,3`. Fibres with `k_q=0` do not occur
+in `K`, so S025 does not assign their doubled lifts to any bucket.
+
+S026 addresses D25-01 only: compute the exact geometry of the doubling fibres
+relative to `Q`, including the parity split in `m`, and derive only which
+quotient classes can coexist in one kernel bucket. It must stop before a full
+bucket assignment, multiplicity-vector or lift classification.
 
 Search non-hits remain non-evidence of openness or novelty.
 
@@ -368,3 +374,23 @@ S025 is restricted to D24-01: apply the already-cited rank-two inverse-`eta`
 normal form to that canonical kernel and record only the induced three-value
 bucket equations. No lift, multiplicity-vector or quotient-normalization
 classification is pre-authorized.
+
+## Frontier after S025
+
+D24-01 succeeds for every `m>=2`. The canonical kernel is
+
+`K=h_1^(m-1) h_2^(m-1) h_3^(m-1)`,
+
+where the values can be ordered with `(h_1,h_2)` a basis of `C_m^2` and
+`h_3=h_2-a h_1` for a unit `a mod m`. Hence the three values are distinct,
+all have order `m`, and every pair is a basis.
+
+Equivalently, the S024 weights satisfy
+`sum_{q:2x_q=h_i} k_q=m-1` for each `i=1,2,3`, counting only positive
+weights. A fibre with `r_q=1` has `k_q=0` and is invisible to the kernel
+normal form.
+
+S026 is restricted to D25-01: determine the exact quotient geometry of a fixed
+doubling fibre and the resulting same-bucket collision restriction, split by
+the parity of `m`. No global bucket assignment, multiplicity-vector solution,
+seven-lift classification or quotient normalization is pre-authorized.

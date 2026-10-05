@@ -876,3 +876,23 @@ inverse-`eta` normal form to the now-canonical kernel and derive only the
 three kernel-value bucket equations. It must stop before resolving which
 quotient fibres occupy those buckets, before classifying the seven lifts or
 the multiplicity vector, and before any quotient automorphism normalization.
+
+## S025 canonical-kernel-bucket checkpoint
+
+S025 resolves D24-01 positively. The canonical kernel supplied by S024 is a
+length-`3m-3` ordinary-`eta` extremal over `C_m^2`. Girard--Schmid 2019
+Theorem 2.4 with source parameter `n=1` therefore gives an ordered basis
+`h_1,h_2` and a unit `a mod m` such that
+
+`K=h_1^(m-1) h_2^(m-1) (h_2-a h_1)^(m-1)`.
+
+Thus the positive-weight doubled lifts split into exactly three kernel buckets,
+each of total weight `m-1`. The three values are pairwise distinct, have order
+`m`, and every pair is a basis. This still does not assign quotient fibres to
+buckets: fibres with `k_q=0` are absent from the kernel and remain invisible.
+
+The single promoted successor is D25-01. S026 will determine the exact geometry
+of the doubling map `2:G_m->2G_m` relative to `Q=G_m/2G_m`, including the
+odd/even-`m` image of `G_m[2]`, and derive only the resulting same-bucket
+quotient-class restriction. It must stop before solving the full bucket
+assignment, multiplicity vector, seven lifts or quotient normalization.

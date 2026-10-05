@@ -441,3 +441,19 @@ computation remain CLOSED.
 - CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S025, D24-01 canonical-kernel bucket decomposition only.
+
+## S025 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S025 | COMPLETED BOUNDED INVESTIGATION; D24-01 CANONICAL KERNEL BUCKETS PROVED | 18387207805448b94704ea0f722e91b94677231e | Three positive-weight kernel values, each weight `m-1`; exact basis/unit support relation; zero-weight boundary | [S025 closeout](../sessions/S025/CLOSEOUT.md) |
+
+- Live `main` was pinned at the S024 closeout SHA and S025 was unique.
+- Girard--Schmid 2019 Theorem 2.4 was rechecked in the primary PDF and
+  specialized with source parameter `n=1`.
+- D24-01 succeeds for every `m>=2`; no computation or formalisation was used.
+- No quotient-fibre assignment, multiplicity-vector or seven-lift classification
+  is claimed in S025.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S026, D25-01 doubling-fibre quotient geometry only.

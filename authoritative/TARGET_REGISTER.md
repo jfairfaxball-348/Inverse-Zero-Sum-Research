@@ -766,3 +766,24 @@ novelty certificate. The next dependency is D24-01: specialize the
 rank-two inverse-`eta` normal form to the canonical kernel and determine only
 the resulting three-value bucket equations. S025 must not classify the seven
 lifts, the full multiplicity vector, or quotient normalizations.
+
+## S025 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+D24-01 is now programme-proved. The canonical kernel over `C_m^2` has exactly
+three positive-weight support values, each of multiplicity `m-1`. They can be
+ordered as `h_1,h_2,h_3` with `(h_1,h_2)` a basis and
+`h_3=h_2-a h_1` for a unit `a mod m`; every pair is a basis. The seven
+quotient-fibre weights satisfy the three bucket equations
+`sum_{q:2x_q=h_i} k_q=m-1`.
+
+This remains a structural reduction, not the final classification and not a
+novelty certificate. Zero-weight fibres (`r_q=1`) are invisible to the kernel
+normal form. The next dependency is D25-01: determine the exact geometry of
+the doubling fibres relative to `Q` and only the resulting same-bucket
+quotient restriction. S026 must not solve the global bucket assignment,
+multiplicity vector, seven lifts or quotient normalization.

@@ -623,3 +623,15 @@ rechecks ZS-56, specifically Girard--Schmid 2019 Lemma 4.2.
 | C-120 | PROGRAMME_PROVED_FROM_SOURCE | S024-P1: every nonzero quotient fibre of a CAND-05 extremal is monochromatic. Synchronizing two maximal pairings on three occurrences gives kernel sequences `T(a+b)` and `T(a+c)`; C-119 forces equality and cancellation gives `b=c`. | `sessions/S024/PAIRING_CHOICE_RIGIDITY.md`; S023 supplies odd fibres and eta-extremal kernels. |
 | C-121 | PROGRAMME_PROVED | S024-P2: every CAND-05 extremal has exactly seven support values, one per nonzero quotient class, with positive odd multiplicities summing to `6m+1`; the induced kernel is independent of pairing/residual choice. | Immediate from C-120 plus S023-P3/P4. No lift or multiplicity-vector classification is claimed. |
 | C-122 | PROGRAMME_BOUNDARY | S024 does not classify the seven lifts, their odd multiplicities, quotient automorphisms, or the full CAND-05 extremal family. | D24-01 alone is promoted: specialize the canonical kernel through rank-two Theorem 2.4 and stop at bucket equations. |
+
+## S025 CAND-05 canonical-kernel-bucket claims
+
+Proof / source-check date: **2026-10-05**. No new source ID is added; S025
+rechecks ZS-56, specifically Girard--Schmid 2019 Theorem 2.4.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-123 | SOURCE_TOOL | Girard--Schmid 2019 Theorem 2.4 specialized to `H=C_m^2` gives every length-`3m-3` ordinary-`eta` extremal the form `h_1^(m-1) h_2^(m-1) (h_2-a h_1)^(m-1)`, where `(h_1,h_2)` is a basis and `a` is a unit modulo `m`. | ZS-56, Theorem 2.4 with source parameter `n=1`; no Property D hypothesis. |
+| C-124 | PROGRAMME_PROVED_FROM_SOURCE | S025-P1/P2: for the canonical kernel `K=product_{q!=0}(2x_q)^{k_q}`, the positive-weight doubled lifts occupy exactly three distinct values `h_1,h_2,h_3`, each with total multiplicity `m-1`, so `sum_{q:2x_q=h_i} k_q=m-1` for `i=1,2,3`. | `sessions/S025/CANONICAL_KERNEL_BUCKETS.md`; S024 supplies the canonical eta-extremal kernel. |
+| C-125 | PROGRAMME_PROVED | The three kernel values can be ordered so that `h_3=h_2-a h_1` with `a` a unit modulo `m`; each has order `m`, they are pairwise distinct, and every pair among them is a basis of `C_m^2`. | Elementary consequences of C-123. |
+| C-126 | PROGRAMME_BOUNDARY | The rank-two theorem sees only fibres with `k_q>0`. A quotient fibre with `k_q=0` (equivalently `r_q=1`) contributes no term to `K`, so S025 does not force its doubled lift into one of the three buckets. | No quotient-fibre assignment, odd-multiplicity-vector classification, lift classification or quotient normalization is claimed. |
