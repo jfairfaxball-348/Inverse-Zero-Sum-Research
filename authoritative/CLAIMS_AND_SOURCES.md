@@ -729,3 +729,18 @@ distance formula and S032 total-translation condition.
 | --- | --- | --- | --- |
 | C-148 | PROGRAMME_PROVED | For even `m>=4`, the full canonical seven-term residual sum `r` satisfies `m-3<=lambda(r)<=m-1`. More generally, for `w=xi h_1+nu h_2`, `P=[-xi]_m`, `Q=[-nu]_m`, one has `lambda(w)>=m-3` iff `min_{0<=gamma<=Q}[P+a gamma]_m>=m-3-Q`; hence all points with `Q=m-3,m-2,m-1` are automatically deep. | `sessions/S033/EVEN_TOTAL_RESIDUAL_DEPTH.md`; a completion of `r` using at most `m-4` kernel terms would lift with all seven residual terms to a forbidden zero sum of length at most `2m-1`. |
 | C-149 | PROGRAMME_BOUNDARY / NONEXCLUSION | In the S032 common-torsion family, `zeta=0` and `r=s=h_1+h_2+h_3=(1-a)h_1+2h_2`. Here `P=a-1`, `Q=m-2`, and the S029 progression contains exactly `0,...,m-2`, so `lambda(r)=m-2`. Therefore the S032 total-translation intersection and the S033 deep layer still meet at `s`; simultaneous positivity is not excluded. | Compatibility of necessary constraints only; no actual extremal construction, global weight/lift classification, odd-`m` result or quotient normalization. |
+
+## S034 CAND-05 mechanism-reassessment source and claim additions
+
+Source-check date: **2026-10-05**.
+
+| ID | Source | Exact boundary |
+| --- | --- | --- |
+| ZS-66 | Edel--Elsholtz--Geroldinger--Kubertin--Rackham, *Zero-sum problems in finite abelian groups and affine caps*, QJM 58 (2007), Proposition 3.1 | Explicit lower-bound constructions only. Specialized to invariant factors `2,2m,2m`, Proposition 3.1(1) gives the standard seven-support ordinary-`eta` lower-bound example; it is not an inverse classification. |
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-150 | PROGRAMME_PROVED | For even `m`, each nonzero `L`-coset `C_i={q_i,q_i+ell}` satisfies `k_{q_i}+k_{q_i+ell}=m-1`, hence `r_{q_i}+r_{q_i+ell}=2m`. Thus `S=B_1B_2B_3u` with `|B_i|=2m` and `u=x_ell` singleton. | S025/S027 bucket placement plus S024 odd multiplicities. No split vector is solved. |
+| C-151 | PROGRAMME_PROVED | Choosing a positive member `x_i` of `C_i`, its partner `y_i`, and `tau_i=y_i-x_i`, the complete block satisfies `sigma(B_i)=tau_i` whether the partner has positive or zero kernel weight. Therefore `sigma(S)=u+tau_1+tau_2+tau_3=zeta`. | Elementary aggregate lift calculation in `sessions/S034/EVEN_MECHANISM_REASSESSMENT.md`; does not classify individual invisible lifts. |
+| C-152 | SOURCE_TOOL | `D_2(C_2+C_{2m}+C_{2m})=6m+1` for every `m>=1`. | ZS-56 Theorem 2.1 and Theorem 3.4 (`D_0=2m+1`, `k_D=2`); the proof also explicitly derives `D_k=(2m+1)+2mk` for `k>=2`. |
+| C-153 | PROGRAMME_ROUTE_DECISION / BOUNDARY | Every CAND-05 candidate has two disjoint nonempty zero sums, each of length at least `2m+1`. If `zeta=0` they must partition `S`; if `zeta!=0` their complement is nonempty of length at most `2m-1` and sum `zeta`. This promotes D34-01 only; S034 proves no exclusion or existence result. | C-151/C-152 plus the CAND-05 short-zero-sum prohibition. |

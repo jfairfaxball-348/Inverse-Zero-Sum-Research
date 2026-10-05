@@ -10,27 +10,23 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S033 records before later target-specific work, with
+7. The completed S002–S034 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S033 is completed. D32-01 gives the exact full-residual depth window
-`m-3<=lambda(r)<=m-1`. In the S029 coordinates
-`w=xi h_1+nu h_2`, `P=[-xi]_m`, `Q=[-nu]_m`, the deep layer is
-exactly the set where
-`min_{0<=gamma<=Q}[P+a gamma]_m >= m-3-Q`; in particular the three
-full affine lines with `Q=m-3,m-2,m-1` are always deep. The S032
-common-torsion value has `zeta=0` and
-`r=s=h_1+h_2+h_3=(1-a)h_1+2h_2`. Here `P=a-1`, `Q=m-2`, and
-the S029 progression omits only residue `m-1`, so
-`lambda(r)=m-2`. Thus the full-residual depth test also fails to exclude
-the fixed simultaneous-positive coset. CAND-05 remains SOURCE-DEFINED /
-CURRENT STATUS UNKNOWN. The residual-shell family is now stopped against
-another proper-subset variant; S034 is READY for one bounded reassessment of
-genuinely different mechanisms.**
+**S034 is completed. D33-01 does not reopen the stopped residual-shell route.
+For the three nonzero `L`-cosets, the bucket equations give complete blocks
+`S=B_1B_2B_3u` with `|B_i|=2m`, `|u|=1`. If `tau_i=y_i-x_i`, then
+`sigma(B_i)=tau_i` even when the partner has zero kernel weight, and
+`sigma(S)=u+tau_1+tau_2+tau_3=zeta`. A focused source recheck gives the
+exact global threshold `D_2(G_m)=6m+1`; hence every candidate has two disjoint
+nonempty zero sums, each of length at least `2m+1`. This is genuinely global
+information not encoded by the S029 completion-depth function. CAND-05 remains
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Exactly one successor is promoted:
+S035 is READY for D34-01, the even multiwise block-factorisation test.**
 
 Selected target:
 
@@ -41,10 +37,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S034 reassessment brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S035 D34-01 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S034.
+- Next session: S035.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -600,3 +596,9 @@ makes the three residual sums exactly `h_1,h_2,h_3`, all in `E(K)`.
 This is a compatibility assignment for the proved necessary constraints, not an
 extremal construction. The promoted successor is D30-01/S031 on the remaining
 four Fano residual lines only.
+
+## S034 route-reassessment frontier
+
+S034 compares the three required mechanism classes. Pure global weight arithmetic gives `k_{q_i}+k_{q_i+ell}=m-1` independently in each nonzero `L`-coset and does not exclude a split. Aggregate lift information is stronger: the complete block sum is `tau_i=y_i-x_i`, so the S032 defect `zeta` is the actual total sum of `S`. The source-based global input `D_2(G_m)=6m+1` then forces two disjoint zero sums at exactly the candidate length.
+
+If `zeta=0`, the two forced zero sums must partition all of `S`; if `zeta!=0`, they leave a nonempty complement of length at most `2m-1` and sum `zeta`. S035 tests this factorisation relative to the three `2m` blocks and the fixed simultaneous-positive torsion datum. No global weight vector, seven-lift classification, odd-modulus branch, quotient normalization, or residual-shell revival is pre-authorized.

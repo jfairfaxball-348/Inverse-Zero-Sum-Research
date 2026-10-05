@@ -1,19 +1,20 @@
 # Next session prompt
 
-Session: S034.
+Session: S035.
 
 Status: READY.
 
 ```text
-Begin S034 in:
+Begin S035 in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 Use committed repository authority, not conversation history. Pin live main,
-reconcile intervening changes and confirm S034 is unique. Read AGENTS.md,
+reconcile intervening changes and confirm S035 is unique. Read AGENTS.md,
 authoritative/START_HERE.md, all required authority,
+sessions/S034/EVEN_MECHANISM_REASSESSMENT.md,
+sessions/S034/SOURCE_CHECK.md,
+sessions/S034/CLOSEOUT.md,
 sessions/S033/EVEN_TOTAL_RESIDUAL_DEPTH.md,
-sessions/S033/SOURCE_CHECK.md,
-sessions/S033/CLOSEOUT.md,
 sessions/S032/EVEN_COMPLEMENTARY_FANO_PLANES.md,
 sessions/S031/EVEN_REMAINING_FANO_LINES.md,
 sessions/S030/EVEN_RESIDUAL_LINE_COMPATIBILITY.md,
@@ -22,39 +23,40 @@ sessions/S028/EVEN_BUCKET_MEMBER_COMPATIBILITY.md,
 sessions/S027/EVEN_BUCKET_COSETS.md,
 sessions/S026/DOUBLING_FIBRE_GEOMETRY.md,
 sessions/S025/CANONICAL_KERNEL_BUCKETS.md, and
-authoritative/S034_CANDIDATE_5_EVEN_MECHANISM_REASSESSMENT_BRIEF.md.
+authoritative/S035_CANDIDATE_5_EVEN_MULTIWISE_BLOCK_FACTORISATION_BRIEF.md.
 
 CAND-05 remains the selected target. CAND-02 is historical and paused.
 
-Run exactly one bounded route-reassessment unit, D33-01, restricted to the
-unresolved even-m>=4 simultaneous-positive nonzero L-coset problem.
+Run exactly one bounded mathematical unit, D34-01, restricted to even m>=4
+and the unresolved simultaneous-positive nonzero L-coset problem.
 
-S033 proved the full seven-term residual depth window
-m-3<=lambda(r)<=m-1 and showed that the surviving common-torsion family has
+S034 promoted a genuinely different global mechanism. For the three nonzero
+L-cosets write
 
-zeta=0,
-r=h_1+h_2+h_3,
-lambda(r)=m-2.
+S=B_1 B_2 B_3 u,
+|B_i|=2m,
+sigma(B_i)=tau_i,
+sigma(S)=u+tau_1+tau_2+tau_3=zeta,
 
-Thus the S030--S033 residual-shell hierarchy does not exclude simultaneous
-positivity. Treat that residual-shell family as stopped: do not inspect another
-proper residual subset or translated-shell variant.
+where u=x_ell. In the fixed simultaneous-positive coset retain the S028 datum
+that its two support values differ by a nonzero t in G_m[2] with pi(t)=ell.
 
-Reassess genuinely different mechanisms. At minimum compare (i) global
-bucket-weight/odd-multiplicity arithmetic across the three nonzero L-cosets,
-(ii) lift-level constraints involving zero-weight fibres invisible to the
-canonical kernel, and (iii) a source-based or global zero-sum mechanism using
-information not reducible to the S029 completion-depth function. For each,
-identify the exact new datum, whether current authority makes a bounded
-dependency runnable, and a concrete falsification/promotion criterion.
+Recheck Girard--Schmid 2019 Theorem 2.1 and Theorem 3.4:
 
-Select at most one next mathematical dependency and do not prove it in S034.
-If no mechanism clears the anti-churn bar, activate an owner strategy blocker
-rather than manufacturing a continuation.
+D_2(G_m)=6m+1.
 
-Do not solve the global k_q/r_q vector, classify all seven lifts, treat odd m,
-normalize quotient automorphisms, or claim existence/full CAND-05
-classification.
+Therefore an actual length-(6m+1) CAND-05 extremal has two disjoint nonempty
+zero-sum subsequences A,B, and extremality forces |A|,|B|>=2m+1.
+
+Analyze exactly this two-zero-sum factorisation relative to B_1,B_2,B_3,u.
+If zeta=0, A and B must partition S. If zeta!=0, their nonempty complement has
+length at most 2m-1 and sum zeta. Determine whether the block-level constraints
+and fixed split-coset torsion force a forbidden zero sum of length at most 2m,
+or leave an exact surviving factorisation type. Stop at the first exact outcome.
+
+Do not solve the global k_q/r_q vector, classify individual zero-weight lifts
+or all seven lifts, reopen a residual-subset/completion-depth variant, treat odd
+m, normalize quotient automorphisms, or claim existence/full CAND-05 classification.
 
 Close under repository protocol: synchronize authority, run
 scripts/check_authority.py and warranted checks, commit safely to main, verify

@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S033",
-  "next_session": "S034",
-  "next_brief": "authoritative/S034_CANDIDATE_5_EVEN_MECHANISM_REASSESSMENT_BRIEF.md",
+  "last_completed_session": "S034",
+  "next_session": "S035",
+  "next_brief": "authoritative/S035_CANDIDATE_5_EVEN_MULTIWISE_BLOCK_FACTORISATION_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S034_READY_CAND05_EVEN_MECHANISM_REASSESSMENT",
+  "programme_status": "S035_READY_CAND05_EVEN_MULTIWISE_BLOCK_FACTORISATION",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence. S023--S029 establish the canonical even-modulus kernel/coset/shell geometry; S030--S032 exhaust the authorized Fano-line and line-complement shell tests. S033 proves that the full seven-term residual sum has depth m-3<=lambda(r)<=m-1 and gives an exact deep-layer criterion from the S029 distance formula. The common-torsion family still survives: zeta=0, r=h_1+h_2+h_3, and lambda(r)=m-2. Current status remains unknown. The residual-shell route is stopped against another proper-subset variant; S034 is one bounded mechanism reassessment.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence. S023--S033 establish the canonical equality/kernel/even-coset structure and stop the residual-shell family after exact nonexclusion. S034 reassesses genuinely different mechanisms: each nonzero L-coset is a length-2m block B_i with sigma(B_i)=tau_i, the total sum is zeta, and Girard--Schmid gives D_2(G_m)=6m+1. Exactly one successor D34-01 is promoted for S035. Current status remains unknown.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -82,7 +82,10 @@
     "S032-P2 PROGRAMME NECESSARY CONDITION: if r is the total seven-term residual sum and w_F a Fano-line sum, then both w_F and r-w_F lie in E(K). Equivalently w_F lies in E(K) cap (r-E(K)) for all seven lines, or r lies in cap_F(w_F+E(K)). With s=h_1+h_2+h_3 and tau_i=y_i-x_i, the exact translation defect is zeta=r-s=u+tau_1+tau_2+tau_3 in H.",
     "S032-P3 PROGRAMME BOUNDARY/NONEXCLUSION: the common-torsion assignment u=t and tau_1=tau_2=tau_3=t has zeta=0 and r=s. The three complements through ell are h_2+h_3, h_1+h_3 and h_1+h_2, all in E(K), while each other line and complement share the same half v with 2v=s. Thus all fourteen shell constraints are compatible; this is not an extremal construction.",
     "S033-P1 PROGRAMME RESULT: for even m>=4, the full seven-term residual sum r has completion depth m-3<=lambda(r)<=m-1. With S029 coordinates P=[-xi]_m and Q=[-nu]_m, the deep layer lambda(w)>=m-3 is exactly characterized by min_{0<=gamma<=Q}[P+a gamma]_m>=m-3-Q; in particular all three Q=m-3,m-2,m-1 affine h_1-lines are automatically deep.",
-    "S033-P2 PROGRAMME BOUNDARY/NONEXCLUSION: in the S032 common-torsion family zeta=0 and r=s=h_1+h_2+h_3=(1-a)h_1+2h_2. Then P=a-1 and Q=m-2, the S029 progression contains residues 0,...,m-2 and omits m-1, so lambda(r)=m-2. Hence r remains in the S032 total-translation intersection and the full-residual depth test does not exclude simultaneous positivity. No actual extremal is constructed."
+    "S033-P2 PROGRAMME BOUNDARY/NONEXCLUSION: in the S032 common-torsion family zeta=0 and r=s=h_1+h_2+h_3=(1-a)h_1+2h_2. Then P=a-1 and Q=m-2, the S029 progression contains residues 0,...,m-2 and omits m-1, so lambda(r)=m-2. Hence r remains in the S032 total-translation intersection and the full-residual depth test does not exclude simultaneous positivity. No actual extremal is constructed.",
+    "S034-P1 PROGRAMME RESULT: for even m, each nonzero L-coset C_i has k_{q_i}+k_{q_i+ell}=m-1 and total multiplicity 2m, so every CAND-05 candidate decomposes as three length-2m coset blocks B_i plus the singleton u=x_ell.",
+    "S034-P2 PROGRAMME RESULT: choosing a positive member x_i and partner y_i in C_i, tau_i=y_i-x_i gives sigma(B_i)=tau_i even if y_i has zero kernel weight; hence sigma(S)=u+tau_1+tau_2+tau_3=zeta, identifying the S032 translation defect with the full sequence sum.",
+    "S034-P3 SOURCE-BASED ROUTE INPUT: Girard--Schmid 2019 Theorem 2.1/3.4 gives D_2(C_2+C_{2m}+C_{2m})=6m+1. Thus every candidate has two disjoint nonempty zero sums, each of length at least 2m+1. This multiwise factorisation is promoted as D34-01; S034 does not prove its outcome."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -267,6 +270,11 @@
       "id": "S033",
       "status": "COMPLETED",
       "record": "sessions/S033/CLOSEOUT.md"
+    },
+    {
+      "id": "S034",
+      "status": "COMPLETED",
+      "record": "sessions/S034/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -294,7 +302,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 selected and source-audited. The even residual-shell sequence S030--S033 is now stopped as an exclusion route: three-term Fano lines, their four-term complements, and the full seven-term residual all leave the common-torsion compatibility family intact. S033 identifies its exact full-residual signature as zeta=0 and lambda(r)=m-2. No further proper residual-subset variant is promoted. S034 must reassess genuinely different mechanisms before another proof unit. CAND-02 remains historical/paused.",
+  "current_route_disposition": "CAND-05 selected and source-audited. The S030--S033 residual-shell family remains stopped. S034 identified exact global block data S=B_1B_2B_3u, sigma(B_i)=tau_i and sigma(S)=zeta, and rechecked D_2(G_m)=6m+1. This creates a genuinely different multiwise zero-sum factorisation route. S035 is limited to D34-01 on that block factorisation; no global weight/lift classification or shell revival is authorized. CAND-02 remains historical/paused.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -334,7 +342,7 @@
     "hidden_property_d_prerequisite": false,
     "rank_two_inverse_eta": "UNCONDITIONAL",
     "search_boundary": "No completion found in bounded current search; non-hit is not openness or novelty evidence",
-    "next_dependency": "D33-01 genuinely different mechanism reassessment after the stopped even residual-shell route"
+    "next_dependency": "D34-01 even-modulus multiwise block-factorisation test"
   },
   "s023_mathematical_investigation_date": "2026-10-05",
   "cand05_equality_decomposition": {
@@ -443,5 +451,16 @@
     "common_torsion": "zeta=0 gives r=h_1+h_2+h_3=(1-a)h_1+2h_2 with exact lambda(r)=m-2",
     "route_boundary": "the S030--S033 residual-shell family is stopped against another proper residual-subset variant; a genuinely different mechanism must be reassessed before further proof work",
     "unresolved": "no exclusion of simultaneous positivity for even m>=4; no global k_q/r_q solution, seven-lift classification, odd-m branch, quotient normalization or existence claim"
+  },
+  "s034_route_reassessment_date": "2026-10-05",
+  "cand05_even_mechanism_reassessment": {
+    "status": "ROUTE_REASSESSMENT_COMPLETED_ONE_GLOBAL_SUCCESSOR_PROMOTED",
+    "block_weights": "for each nonzero L-coset C_i={q_i,q_i+ell}, k_{q_i}+k_{q_i+ell}=m-1 and r_{q_i}+r_{q_i+ell}=2m",
+    "block_decomposition": "S=B_1B_2B_3u with |B_i|=2m and u=x_ell a singleton",
+    "aggregate_lifts": "choosing positive x_i and partner y_i, tau_i=y_i-x_i gives sigma(B_i)=tau_i even for a zero-weight partner; sigma(S)=u+tau_1+tau_2+tau_3=zeta",
+    "source_tool": "Girard--Schmid 2019 Theorem 2.1 and Theorem 3.4 give D_2(G_m)=6m+1",
+    "multiwise_preflight": "two disjoint zero sums A,B exist and each has length at least 2m+1; if zeta=0 they partition S, while if zeta!=0 their complement is nonempty of length at most 2m-1 and sum zeta",
+    "promoted_dependency": "D34-01 even multiwise block-factorisation test",
+    "route_boundary": "S034 proves no D34-01 outcome, solves no global k_q/r_q vector or seven-lift classification, and does not reopen the S029--S033 residual-shell family"
   }
 }

@@ -236,3 +236,9 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-088 | 2026-10-05 | After the Fano triples and their complements survive, it is tempting to expect the full seven-term residual depth to force the remaining translation. The common-torsion total instead lands exactly one level below the shell: `zeta=0` and `lambda(h_1+h_2+h_3)=m-2`, which is fully compatible with the `m-3` lower bound. | Stop the residual-shell/subset iteration. Do not promote another proper residual-subset depth test by cosmetic variation. Before further proof work, identify a genuinely different mechanism that can distinguish compatibility assignments from actual extremals; otherwise activate an owner strategy blocker. | S033-P2 / D-098 |
+
+## S034 mechanism-reassessment lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-089 | 2026-10-05 | After stopping the residual-shell family, the three bucket equations can look like a global arithmetic route, but they are independent compositions of `m-1` and by themselves allow positive-positive splits. Conversely, directly classifying kernel-invisible partners would simply expand into the forbidden seven-lift problem. | Use only aggregate block data that genuinely sees the invisible partners, and require an external/global theorem that consumes it. S034 identifies `sigma(B_i)=tau_i`, `sigma(S)=zeta`, and the exact `D_2(G_m)=6m+1` threshold; D34-01 must be falsified if this adds no invariant beyond stopped shell data. | S034 D33-01 |

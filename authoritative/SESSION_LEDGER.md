@@ -609,3 +609,17 @@ computation remain CLOSED.
 - CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S034, D33-01 mechanism reassessment only; it is not a new residual-shell test.
+
+## S034 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S034 | COMPLETED BOUNDED ROUTE REASSESSMENT; ONE GLOBAL SUCCESSOR PROMOTED | 32254190e90f166defd5d1247d78156ce20d0066 | Three length-`2m` coset blocks; `sigma(B_i)=tau_i`; `sigma(S)=zeta`; exact `D_2(G_m)=6m+1`; D34-01 promoted | [S034 closeout](../sessions/S034/CLOSEOUT.md) |
+
+- S034 was unique and reconciled against live S033 authority.
+- The S030--S033 residual-shell family remains stopped.
+- Pure global weight arithmetic and direct zero-weight lift classification are not promoted as standalone routes.
+- The exact two-wise Davenport threshold is a genuinely different global input and clears the anti-churn bar.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S035, D34-01 even multiwise block-factorisation only.

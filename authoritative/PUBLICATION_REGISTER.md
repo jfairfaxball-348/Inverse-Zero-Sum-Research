@@ -529,3 +529,9 @@ standalone novelty/significance contribution.
 No manuscript, submission authorization, submission, acceptance or publication
 has occurred. The publication route is unchanged: E-JC remains the leading
 eligible route and JNT the recorded backup under the S022 policy refresh.
+
+## S034 publication boundary
+
+S034 adds an internal route reassessment and a source-backed multiwise Davenport input for CAND-05. It does not alter the publication gate, claim novelty, or make the programme publication-ready.
+
+No manuscript, submission authorization, submission, acceptance, or publication has occurred. E-JC remains the leading eligible route and JNT the recorded backup under the S022 policy refresh.

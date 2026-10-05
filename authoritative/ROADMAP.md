@@ -1091,3 +1091,11 @@ The residual-shell route is now stopped against another proper residual-subset
 variant. S034 is a bounded mechanism reassessment, not another shell proof:
 it must identify one genuinely different dependency with a falsifiable
 promotion criterion, or activate an owner strategy blocker if none is credible.
+
+## S034 mechanism-reassessment checkpoint
+
+S034 resolves D33-01 by identifying a genuinely different global mechanism. For each nonzero `L`-coset, `k_q+k_{q+ell}=m-1`, hence its complete block has length `2m`; with the singleton `u=x_ell`, `S=B_1B_2B_3u`. Choosing a positive member `x_i`, partner `y_i`, and `tau_i=y_i-x_i`, one has `sigma(B_i)=tau_i` even when the partner is kernel-invisible, and therefore `sigma(S)=zeta`.
+
+The focused source recheck gives `D_2(G_m)=6m+1`. Any candidate has two disjoint nonempty zero sums of lengths at least `2m+1`. If `zeta=0` they partition `S`; otherwise they leave a nonempty complement of length at most `2m-1` and sum `zeta`. This is not an S029 completion-depth condition.
+
+Pure weight arithmetic does not couple the three split equations, and direct classification of invisible lifts violates scope. Exactly one successor is promoted: D34-01. S035 will test the `D_2`-forced pair against the three `2m` blocks and fixed simultaneous-positive torsion, stopping at the first exact outcome.

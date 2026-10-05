@@ -976,3 +976,13 @@ intersection. No actual extremal is constructed.
 The S030--S033 residual-shell family is now stopped against another proper
 residual-subset variant. S034 is restricted to reassessing genuinely different
 mechanisms and must not silently turn into a global weight/lift classification.
+
+## S034 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. S034 is a route reassessment, not an openness or novelty certification.
+
+For even `m>=4`, committed authority now also gives the aggregate block decomposition `S=B_1B_2B_3u`, with `|B_i|=2m`, `sigma(B_i)=tau_i`, and `sigma(S)=zeta`. The source-based global input `D_2(G_m)=6m+1` forces two disjoint nonempty zero sums, each longer than `2m` in an extremal. These facts do not classify the full multiplicity vector or lifts and do not establish existence/nonexistence of simultaneous positivity.
+
+The S030--S033 shell route remains stopped. D34-01 is the single authorized even-modulus successor.

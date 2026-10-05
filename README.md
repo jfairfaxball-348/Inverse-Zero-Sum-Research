@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: S033 completed; the full seven-term residual has depth window `m-3<=lambda(r)<=m-1`, while the surviving common-torsion value `r=h_1+h_2+h_3` has exact depth `m-2`. The residual-shell route is stopped against cosmetic subset variants. S034 is READY for a genuinely different mechanism reassessment. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
+**Current stage: S034 completed; the stopped residual-shell route has been replaced by a genuinely global mechanism. The three nonzero `L`-cosets form length-`2m` blocks `B_i` with `sigma(B_i)=tau_i`, the total sum is the S032 defect `zeta`, and Girard--Schmid gives `D_2(G_m)=6m+1`. S035 is READY for the bounded even multiwise block-factorisation test D34-01. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -15,14 +15,14 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 through B-009 are resolved. S034 is the
-live bounded CAND-05 mechanism-reassessment session.
+and no next-session prompt.** B-006 through B-009 are resolved. S035 is the
+live bounded CAND-05 multiwise block-factorisation session.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-05 is selected at exact all-`m` ordinary inverse-`eta` scope.
 2. Publication gate — OPEN: E-JC remains lead; JNT is a natural comparable/backup.
-3. Mathematical-investigation gate — OPEN: S034 is authorized for the bounded D33-01 mechanism reassessment only.
+3. Mathematical-investigation gate — OPEN: S035 is authorized for D34-01, the bounded even multiwise block-factorisation test only.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
@@ -246,3 +246,9 @@ conditions, so this bounded test does not exclude the fixed
 simultaneous-positive coset. S033 is restricted to the completion depth of the
 full seven-term residual sum; no additional proper residual-subset family is
 pre-authorized.
+
+## S034 mechanism-reassessment checkpoint
+
+S034 closes D33-01 without reopening the S030--S033 shell family. The bucket equations imply three complete nonzero-`L`-coset blocks `B_i` of length `2m` and one singleton `u=x_ell`. If `tau_i=y_i-x_i` is the lift difference inside the `i`th coset, then `sigma(B_i)=tau_i` even when the partner has zero kernel weight, and `sigma(S)=u+tau_1+tau_2+tau_3=zeta`.
+
+A focused recheck of Girard--Schmid 2019 gives `D_2(G_m)=6m+1`, exactly the candidate length. Thus every candidate has two disjoint nonempty zero sums, each of length at least `2m+1`. This full-sequence factorisation is not reducible to S029 completion depth and clears the anti-churn bar. Exactly one successor, D34-01, is promoted for S035; S034 itself proves no exclusion or classification.

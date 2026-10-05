@@ -664,3 +664,12 @@ CAND-02 remains historical/paused.
 Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
+
+## S034 CAND-05 mechanism-reassessment decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-099 | 2026-10-05 | Record D33-01 as a successful route reassessment. The three nonzero `L`-cosets are exact length-`2m` blocks `B_i`; their aggregate sums satisfy `sigma(B_i)=tau_i`, the full sum is `sigma(S)=zeta`, and Girard--Schmid gives the genuinely global threshold `D_2(G_m)=6m+1`. Pure weight arithmetic and individual zero-weight-lift classification are not promoted alone. | `sessions/S034/EVEN_MECHANISM_REASSESSMENT.md`; ZS-56/ZS-66 source check. |
+| D-100 | 2026-10-05 | Promote exactly one successor, D34-01, and schedule S035 only on the even multiwise block-factorisation test. Analyze the two `D_2`-forced disjoint zero sums relative to `B_1,B_2,B_3,u` and the fixed split-coset torsion datum. Do not solve global weights/lifts or reopen the residual-shell family. | D33-01 anti-churn criterion and `sessions/S034/SOURCE_CHECK.md`. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain OPEN; mathematical investigation remains OPEN; external review remains CLOSED. CAND-02 remains historical/paused.
