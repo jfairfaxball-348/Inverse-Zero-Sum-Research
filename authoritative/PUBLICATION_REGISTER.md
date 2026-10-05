@@ -560,3 +560,12 @@ No publication-gate change. E-JC remains the lead candidate and JNT a natural
 backup under the previously audited policy boundaries. S036 produced a route
 reassessment, not a manuscript-ready mathematical result. Publication gate:
 OPEN.
+
+
+## Post-S036 owner target-reassessment publication boundary
+
+The owner decision to reassess/switch target changes research strategy only. It
+does not certify novelty, define a manuscript-ready contribution, authorize
+submission, or change journal eligibility. The publication gate remains OPEN;
+E-JC remains the leading eligible route and JNT the recorded backup pending
+candidate-specific fit re-evaluation in S037.
