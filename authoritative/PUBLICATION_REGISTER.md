@@ -504,3 +504,16 @@ contribution.
 No manuscript, submission authorization, submission, acceptance or publication
 has occurred. The publication route is unchanged: E-JC remains the leading
 eligible route and JNT the recorded backup under the S022 policy refresh.
+
+## S032 publication boundary
+
+S032 adds a complete Fano line/complement necessary shell analysis for the
+even-modulus CAND-05 branch and isolates an exact total-residual translation
+defect. It remains internal programme mathematics. The result has not been
+independently reviewed, formally verified, or audited as a standalone
+novelty/significance contribution.
+
+No manuscript, submission authorization, submission, acceptance or publication
+has occurred. The publication route is unchanged: E-JC remains the leading
+eligible route and JNT the recorded backup under the S022 policy refresh.
+
