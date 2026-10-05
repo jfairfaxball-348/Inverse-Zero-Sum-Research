@@ -4,7 +4,12 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: S036 is completed. D35-01 compared three fresh source-backed structural mechanisms and none clears the stopped-route/anti-churn bar. No S037 mathematical successor is promoted. B-011 is ACTIVE and suppresses all next-session material pending an owner strategy choice. Full CAND-05 remains selected; CAND-02 remains historical/paused.**
+**Current stage: target reassessment with parallel external review. S036 is
+complete and B-011 has been resolved by owner choice of option 2:
+reassess/switch target rather than continue full CAND-05 proof work. CAND-05
+proof work is paused. S037 is READY for a source-first comparison of the
+strongest prior alternatives and at most two genuinely new replacement
+candidates.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -15,14 +20,21 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 through B-010 are resolved. B-011 is active after S036 found no runnable fresh mechanism; no numbered successor is scheduled.
+and no next-session prompt.** B-006 through B-011 are resolved. S037 is the live
+target-reassessment session; it may recommend but not silently select a
+replacement target.
 
 ## Current readiness dimensions
 
-1. Target gate — OPEN: CAND-05 is selected at exact all-`m` ordinary inverse-`eta` scope.
-2. Publication gate — OPEN: E-JC remains lead; JNT is a natural comparable/backup.
-3. Mathematical-investigation gate — OPEN in principle, but B-011 suppresses any numbered continuation until the owner chooses the next strategy disposition.
-4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
+1. Target gate — OPEN: CAND-05 remains exactly specified as the historical
+   incumbent pending explicit replacement selection; its proof programme is
+   paused.
+2. Publication gate — OPEN: E-JC remains lead; JNT is a natural
+   comparable/backup.
+3. Mathematical-investigation gate — OPEN in principle; S037 is source-first
+   target reassessment only and authorizes no new proof route.
+4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue
+   Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
 intact, S011's local-hole/capacity exchange route remains stopped, and S012's
@@ -273,3 +285,13 @@ manufacture S037.
 S036 completed D35-01 without starting a new proof unit. Schmid's 2011 minimal-atom transfer through the 2-torsion kernel was the strongest apparent new route, but its induced C_2^3 circuit is automatic in the surviving common-torsion family. Hui--Zhong 2026 has stronger rank-two joint-short inverse structure, but its avoidance hypothesis is visibly violated by the current quotient. Girard--Schmid 2020 supplies an exact inverse eta theorem on a different rank-three quotient type, but no source-backed transfer of the short-zero-sum-free hypothesis or extremal-core extraction is available.
 
 No S037 dependency is promoted. B-011 is active, authoritative next-session material is suppressed, and an owner strategy choice is required.
+
+
+## Post-S036 owner target-reassessment checkpoint
+
+The owner selected B-011 option 2. CAND-05 proof work is paused after S036's
+source-first mechanism reassessment found no runnable theorem-backed
+discriminator. S037 will refresh CAND-03/CAND-01, compare the CAND-05 and
+CAND-02 anti-churn histories, and search for at most two genuinely new
+source-defined replacement candidates. It will recommend, not silently select,
+the next target.

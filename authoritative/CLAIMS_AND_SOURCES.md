@@ -777,3 +777,10 @@ Source-check date: **2026-10-05**.
 | C-159 | SOURCE_COMPARATOR_BOUNDARY | Hui--Zhong 2026 Theorem 1.1 cannot constrain the common-torsion C_m^2 quotient because it already contains innerly non-zero-sum-joint short zero sums among repeated order-m basis elements. | ZS-61 rechecked; no canonical theorem-backed extremal subcore is produced. |
 | C-160 | SOURCE_COMPARATOR_BOUNDARY | Girard--Schmid 2020 Theorem 4.1 exactly classifies eta-extremals over C_2+C_2+C_{2m}, but CAND-05 short-zero-sum avoidance does not imply the corresponding quotient avoidance hypothesis and no checked source supplies an extremal-core extraction. | ZS-57 rechecked. |
 | C-161 | PROGRAMME_ROUTE_DECISION | D35-01 promotes no S037 mathematical dependency. B-011 is active; no next-session prompt/brief is scheduled. | S036 comparison and anti-churn rule. |
+
+
+## Post-S036 owner target-reassessment claim
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-162 | OWNER_STRATEGY_DECISION | B-011 is resolved by choosing target reassessment/switching rather than another full-CAND-05 proof architecture. CAND-05 proof work is paused; S037 is authorized only for bounded source-first candidate reassessment and recommendation. | D-107--D-108. This is a programme strategy decision, not a mathematical theorem, openness claim, novelty claim, target replacement, or publication-significance claim. |

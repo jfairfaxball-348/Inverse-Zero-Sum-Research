@@ -720,7 +720,9 @@ CAND-02 remains historical/paused.
 
 ### B-011 — CAND-05 strategy after S036 finds no fresh runnable mechanism
 
-**ACTIVE.**
+**RESOLVED by D-107.**
+
+Owner selected option 2 on 2026-10-05: reassess/switch the selected target. CAND-05 proof work is paused pending explicit replacement selection.
 
 The owner retained full CAND-05 after B-010 and authorized one fresh source-first mechanism reassessment. S036 has now exhausted that bounded authorization without identifying a theorem-backed datum that distinguishes the surviving common-torsion compatibility assignment from an actual extremal.
 
@@ -730,4 +732,19 @@ The owner retained full CAND-05 after B-010 and authorized one fresh source-firs
 2. reassess/switch the selected target; or
 3. retain full CAND-05 but first authorize a bounded external-status/expert-input phase focused specifically on whether a theorem is known that controls lift-sum collisions or extracts an extremal quotient core. Any actual outreach still requires explicit owner send authorization.
 
-While B-011 is active, next_session and next_brief are null, next_prompt_status is SUPPRESSED_OWNER_BLOCKER, and authoritative/NEXT_SESSION_PROMPT.md is absent. Target and publication gates remain OPEN. Mathematical investigation remains OPEN in principle but no numbered continuation is runnable. External review remains CLOSED.
+While B-011 was active, next_session and next_brief are null, next_prompt_status is SUPPRESSED_OWNER_BLOCKER, and authoritative/NEXT_SESSION_PROMPT.md is absent. Target and publication gates remain OPEN. Mathematical investigation remains OPEN in principle but no numbered continuation is runnable. External review remains CLOSED.
+
+
+## Post-S036 owner target-reassessment decision
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-107 | 2026-10-05 | **Resolve B-011 by choosing option 2: reassess/switch the selected target.** Do not authorize another full-CAND-05 proof architecture after S036. CAND-05 remains the historical incumbent only until the owner explicitly selects a replacement; its proof programme is paused during reassessment. | Explicit owner choice: “2”. |
+| D-108 | 2026-10-05 | Schedule S037 as one bounded source-first target reassessment. Refresh CAND-03 and CAND-01 from the S021 baseline, use S022--S036 CAND-05 as anti-churn evidence, and permit discovery of at most two genuinely new source-defined candidates. S037 may recommend but may not silently switch targets or begin proof work; final target selection returns to the owner. | D-107, S021 precedent, S036 route stop, and the programme requirement that target identity/status be source-disciplined before new proof work. |
+
+B-011 is resolved. Active owner blockers are **NONE** for S037. The live S037
+brief and prompt are immediately runnable.
+
+CAND-05's S023--S035 mathematics and all stopped-route decisions remain durable
+historical programme results. Reassessment does not erase them, convert search
+non-hits into openness evidence, or authorize reuse of a stopped mechanism.
