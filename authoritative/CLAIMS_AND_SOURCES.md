@@ -705,3 +705,16 @@ S026--S030 even-modulus geometry.
 | C-142 | PROGRAMME_PROVED | The four quotient-zero Fano residual triples not containing `ell` also have lift-sums in `E(K)`. Therefore all seven Fano residual line sums lie in the exact S029 depth-`m-1` shell. | Same threshold/lifting argument as S030; a completion of size at most `m-2` would lift with the residual triple to length at most `2m-1`. |
 | C-143 | PROGRAMME_PROVED | If `q_1+q_2+q_3=epsilon ell` and `tau_i=x_{q_i+ell}-x_{q_i}`, the four non-`ell` line sums are `X+sum e_i tau_i` over the parity class `e_1+e_2+e_3=epsilon`. | Exact enumeration of the four Fano lines; no quotient-automorphism normalization. |
 | C-144 | PROGRAMME_BOUNDARY / NONEXCLUSION | The full seven-line system remains compatible. With `u=t` and one common two-torsion translation `t` in all three bucket fibres, the three through-`ell` sums are `h_1,h_2,h_3`, while the other four collapse to a half `v` of `h_1+h_2+h_3`. The half-fibre is an `H[2]` torsor and always meets `E(K)`, explicitly at `v=c h_1+h_2` with `2c=1-a`. | `sessions/S031/EVEN_REMAINING_FANO_LINES.md`; compatibility of necessary constraints only, not an extremal construction. |
+
+## S032 CAND-05 complementary-Fano-plane claims
+
+Proof date: **2026-10-05**. No new source ID is added; D31-01 uses the
+already-authoritative rank-two `eta` threshold, S025 normal form and
+S026--S031 even-modulus geometry.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-145 | PROGRAMME_PROVED | For even `m>=4`, each of the seven quotient-zero four-term residual subsets complementary to a Fano line has lift-sum in the exact S029 shell `E(K)`. | The `eta(H)` threshold gives a completion of size at most `m-1`; size at most `m-2` would lift with four residual terms to a forbidden zero sum of length at most `2m`. |
+| C-146 | PROGRAMME_PROVED NECESSARY CONDITION | If `r` is the total seven-term residual sum and `w_F` a Fano-line lift-sum, then `w_F in E(K) cap (r-E(K))` for all seven lines, equivalently `r in cap_F(w_F+E(K))`. With `s=h_1+h_2+h_3` and `tau_i=y_i-x_i`, the exact translation defect is `zeta=r-s=u+tau_1+tau_2+tau_3 in H`. | `sessions/S032/EVEN_COMPLEMENTARY_FANO_PLANES.md`; algebraic line/complement partition plus S030--S032 shell memberships. |
+| C-147 | PROGRAMME_BOUNDARY / NONEXCLUSION | The common-torsion family remains compatible: `u=t`, `tau_1=tau_2=tau_3=t` gives `zeta=0`, `r=s`; the three through-`ell` complements are `h_2+h_3,h_1+h_3,h_1+h_2 in E(K)`, while each other line and complement has the same half-sum `v in E(K)`. | Compatibility of necessary constraints only; no actual extremal construction, global weight/lift classification, odd-`m` result or quotient normalization. |
+
