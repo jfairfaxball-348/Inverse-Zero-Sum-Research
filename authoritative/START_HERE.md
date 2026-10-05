@@ -10,18 +10,20 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S026 records before later target-specific work, with
+7. The completed S002–S027 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S026 is completed. D25-01 succeeds: the image of the two-torsion under the
-quotient map is all of `Q` for odd `m` and the distinguished order-two subgroup
-`L` for even `m`; fixed doubling fibres have the exact corresponding quotient
-occupancy. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S027 is
-READY for one bounded even-modulus bucket-coset unit.**
+**S027 is completed. D26-01 succeeds for even `m`: the induced map
+`delta:Q/L -> H/2H` is an isomorphism, and the three S025 kernel values map to
+the three nonzero classes of `H/2H`. Thus the three positive-weight buckets
+occupy exactly the three nonzero `L`-cosets, while the unique nonzero quotient
+class in `L` has zero kernel weight. CAND-05 remains SOURCE-DEFINED / CURRENT
+STATUS UNKNOWN. S028 is READY for one bounded even-modulus member-occupancy
+test.**
 
 Selected target:
 
@@ -32,10 +34,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S026 brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S028 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S027.
+- Next session: S028.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -66,11 +68,17 @@ doubling fibre meets all eight quotient classes once. For even `m`, writing
 `L`, with four points over each class; therefore two distinct positive-weight
 classes in one bucket must differ by the unique nonzero element of `L`.
 
-S027 addresses D26-01 only: in the even-modulus case identify the induced map
-from `Q/L` to `H/2H` and test what the S025 basis/unit relation forces about
-the three bucket cosets. It must stop before choosing members inside those
-cosets, solving the weights, classifying lifts, treating the odd-modulus branch,
-or normalizing quotient automorphisms.
+S027 proves the even-modulus induced map `delta:Q/L -> H/2H` is an
+isomorphism. Since a unit modulo even `m` is odd, the S025 relation gives
+`h_3+2H=(h_1+2H)+(h_2+2H)`, so the three kernel values represent the
+three nonzero elements of `H/2H`. Consequently their bucket cosets are exactly
+the three nonzero cosets of `L`, and the unique nonzero quotient class in `L`
+has `k_q=0`.
+
+S028 addresses D27-01 only: still for even `m`, test whether both members of a
+single nonzero `L`-coset can carry positive kernel weight. It must stop before
+solving the global weight vector, classifying the seven lifts, treating odd
+`m`, or normalizing quotient automorphisms.
 
 Search non-hits remain non-evidence of openness or novelty.
 
@@ -427,3 +435,28 @@ S027 is restricted to D26-01: for even `m`, identify the induced quotient
 map `Q/L -> H/2H` and combine it only with the three S025 kernel values.
 No weight-vector, lift, odd-modulus or quotient-normalization classification is
 pre-authorized.
+
+## Frontier after S027
+
+D26-01 succeeds for even `m`. The homomorphism `x |-> 2x+2H` descends
+through `Q=G_m/H`; its kernel in `Q` is exactly
+`L=pi(G_m[2])`. Hence
+
+`delta:Q/L -> H/2H`,  `delta(pi(x)+L)=2x+2H`
+
+is injective, and both sides have order four, so it is an isomorphism.
+
+Because `m` is even, every unit `a mod m` is odd. Reducing the S025
+relation `h_3=h_2-a h_1` modulo `2H` gives
+`h_3+2H=(h_1+2H)+(h_2+2H)`. Since `(h_1,h_2)` is a basis of
+`H=C_m^2`, their images form a basis of `H/2H ~= C_2^2`. Thus the
+three `h_i+2H` are exactly its three nonzero elements.
+
+Under `delta^{-1}`, the three positive-weight kernel buckets occupy exactly
+the three nonzero `L`-cosets of `Q`. The coset `L` itself corresponds
+to zero in `H/2H`; hence its unique nonzero quotient class has `k_q=0`.
+
+No choice is made between the two members of any nonzero `L`-coset, and no
+weight vector, lift classification, odd-modulus analysis or quotient
+normalization is obtained. S028 is restricted to that member-level occupancy
+question.

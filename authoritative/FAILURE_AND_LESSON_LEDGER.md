@@ -192,3 +192,8 @@ arguments. Retired routes are not silently revived without new information.
 | --- | --- | --- | --- | --- |
 | FL-081 | 2026-10-05 | A doubling fibre always has eight points, but for even `m` those points do **not** represent eight quotient classes: `pi` collapses the fibre four-to-one onto a two-class coset. Treating fibre cardinality as quotient occupancy would erase the parity split and overstate bucket freedom. | Compute `pi(G_m[2])` before reasoning about collisions. Keep point multiplicity, quotient-class occupancy and positive kernel weight as separate notions; preserve the `k_q=0` boundary. | S026-P1/P2 |
 
+## S027 even-bucket-coset lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-082 | 2026-10-05 | Identifying a bucket's class in `Q/L` can be mistaken for identifying a quotient class in `Q`. The isomorphism `Q/L ~= H/2H` only fixes a two-member `L`-coset. | Keep coset placement separate from member-level occupancy. S027 may force `k_q=0` for the lone nonzero class in `L`, but it must not choose between the two members of any nonzero coset. | S027-P1/P2 |

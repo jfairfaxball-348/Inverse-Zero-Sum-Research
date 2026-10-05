@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S026",
-  "next_session": "S027",
-  "next_brief": "authoritative/S027_CANDIDATE_5_EVEN_BUCKET_COSET_BRIEF.md",
+  "last_completed_session": "S027",
+  "next_session": "S028",
+  "next_brief": "authoritative/S028_CANDIDATE_5_EVEN_BUCKET_MEMBER_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S027_READY_CAND05_EVEN_BUCKET_COSET",
+  "programme_status": "S028_READY_CAND05_EVEN_BUCKET_MEMBER_TEST",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; S023 proved equality decomposition, S024 pairing-choice rigidity, S025 the canonical three-bucket kernel normal form, and S026 the exact parity-split doubling-fibre quotient geometry. Current status remains unknown. S027 is one bounded even-modulus bucket-coset unit.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; S023 proved equality decomposition, S024 pairing-choice rigidity, S025 the canonical three-bucket kernel normal form, S026 the parity-split doubling-fibre geometry, and S027 the even-modulus bucket-coset isomorphism/placement. Current status remains unknown. S028 is one bounded even-modulus member-occupancy test.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -65,7 +65,9 @@
     "S025-P1 PROGRAMME RESULT FROM SOURCE: the canonical length-(3m-3) ordinary-eta kernel over H=C_m^2 has exactly three support values, each of multiplicity m-1; after ordering, K=h_1^(m-1) h_2^(m-1) (h_2-a h_1)^(m-1) with (h_1,h_2) a basis and a a unit modulo m.",
     "S025-P2 PROGRAMME COROLLARY: for K=product_{q!=0}(2x_q)^{k_q}, the bucket equations are sum_{q:2x_q=h_i} k_q=m-1 for i=1,2,3. The three h_i are pairwise distinct, order m, and every pair is a basis. Fibres with k_q=0 are invisible to K.",
     "S026-P1 PROGRAMME THEOREM: with G_m=C_2+C_{2m}+C_{2m}, H=2G_m and Q=G_m/H, one has G_m[2]=<e_0,m e_1,m e_2> ~= C_2^3. Its quotient image is all of Q when m is odd, while for even m it is the distinguished order-two subgroup L=<pi(e_0)>.",
-    "S026-P2 PROGRAMME THEOREM/BOUNDARY: a fixed doubling fibre D_h={x:2x=h}=x+G_m[2] meets every quotient class exactly once when m is odd; when m is even it meets exactly one coset q+L, with four points over each of its two quotient classes. Hence two distinct positive-weight quotient classes in one kernel bucket are unrestricted by quotient geometry for odd m, while for even m they must differ by the unique nonzero element of L. This constrains only k_q>0 fibres and does not assign zero-weight fibres."
+    "S026-P2 PROGRAMME THEOREM/BOUNDARY: a fixed doubling fibre D_h={x:2x=h}=x+G_m[2] meets every quotient class exactly once when m is odd; when m is even it meets exactly one coset q+L, with four points over each of its two quotient classes. Hence two distinct positive-weight quotient classes in one kernel bucket are unrestricted by quotient geometry for odd m, while for even m they must differ by the unique nonzero element of L. This constrains only k_q>0 fibres and does not assign zero-weight fibres.",
+    "S027-P1 PROGRAMME THEOREM: for even m, with L=pi(G_m[2]), the map delta:Q/L -> H/2H defined by delta(pi(x)+L)=2x+2H is a well-defined isomorphism.",
+    "S027-P2 PROGRAMME THEOREM/BOUNDARY: if the S025 kernel values are ordered by h_3=h_2-a h_1 with (h_1,h_2) a basis and a a unit modulo even m, then their classes modulo 2H are exactly the three nonzero elements of H/2H. Hence the three positive-weight kernel buckets occupy exactly the three nonzero L-cosets of Q/L, and the unique nonzero quotient class in L has k_q=0. No member-level occupancy or weight vector is determined."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -215,6 +217,11 @@
       "id": "S026",
       "status": "COMPLETED",
       "record": "sessions/S026/CLOSEOUT.md"
+    },
+    {
+      "id": "S027",
+      "status": "COMPLETED",
+      "record": "sessions/S027/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -242,7 +249,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 selected and source-audited. S023 proved equality decomposition, S024 pairing-choice rigidity, S025 the canonical three-value kernel buckets, and S026 the exact parity-split doubling-fibre quotient geometry. S027 is limited to D26-01: for even m, identify the induced Q/L to H/2H map and its consequence for the three kernel bucket cosets only. CAND-02 remains historical/paused.",
+  "current_route_disposition": "CAND-05 selected and source-audited. S023 proved equality decomposition, S024 pairing-choice rigidity, S025 the canonical three-value kernel buckets, S026 the parity-split doubling-fibre quotient geometry, and S027 the exact even-modulus bucket-coset placement. S028 is limited to D27-01: test whether both members of one nonzero L-coset can carry positive weight, without solving the global weight vector or classifying lifts. CAND-02 remains historical/paused.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -324,5 +331,14 @@
     "same_bucket_restriction": "for actual positive-weight lifts with equal doubles, q-q' lies in pi(G_m[2]); for even m distinct classes must differ by the unique nonzero element of L",
     "zero_weight_boundary": "k_q=0 fibres remain invisible to the kernel and receive no bucket-placement conclusion",
     "unresolved": "no global bucket assignment, k_q/r_q solution, seven-lift classification, quotient normalization or full CAND-05 classification"
+  },
+  "s027_mathematical_investigation_date": "2026-10-05",
+  "cand05_even_bucket_cosets": {
+    "status": "PROGRAMME_PROVED_BOUNDED_MATHEMATICS",
+    "induced_map": "delta:Q/L -> H/2H, delta(pi(x)+L)=2x+2H, is a well-defined isomorphism for even m",
+    "mod2_kernel_relation": "a is odd, so h_3+2H=(h_1+2H)+(h_2+2H); the three h_i classes are the three nonzero elements of H/2H",
+    "bucket_cosets": "under delta^{-1}, the three positive-weight buckets are exactly the three nonzero L-cosets of Q/L",
+    "zero_L_class": "the unique nonzero q in L cannot have positive kernel weight, so k_q=0",
+    "unresolved": "which member or members of each nonzero L-coset have positive weight; all k_q/r_q values; seven lifts; odd-m branch; quotient normalization; full CAND-05 classification"
   }
 }

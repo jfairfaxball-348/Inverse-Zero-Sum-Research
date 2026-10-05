@@ -646,3 +646,14 @@ finite-abelian group theory applied to the already-fixed S023--S025 setup.
 | C-128 | PROGRAMME_PROVED | Every nonempty doubling fibre is a coset of `G_m[2]`. For odd `m` it meets all eight quotient classes exactly once. For even `m` it meets exactly one coset of `L`, with four points over each of the two quotient classes. Equivalently two quotient classes admit lifts with the same double iff their difference lies in `pi(G_m[2])`. | Elementary kernel/coset argument; no source theorem beyond the committed setup. |
 | C-129 | PROGRAMME_BOUNDARY | Applied to the S025 buckets, C-128 constrains only fibres with `k_q>0`. For even `m`, distinct positive-weight classes in one bucket must differ by the unique nonzero element of `L`; for odd `m`, quotient geometry alone imposes no pairwise restriction. Zero-weight fibres remain unassigned, and no global bucket, multiplicity, lift or quotient-normalization classification is claimed. | D25-01 stop boundary. |
 
+## S027 CAND-05 even-bucket-coset claims
+
+Proof date: **2026-10-05**. No new source ID is added; D26-01 is elementary
+finite-abelian group theory plus the already-authoritative S025 basis/unit
+relation and S026 doubling-fibre geometry.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-130 | PROGRAMME_PROVED | For even `m`, with `L=pi(G_m[2])`, the rule `delta(pi(x)+L)=2x+2H` defines a well-defined isomorphism `Q/L -> H/2H`. | Kernel of `Q -> H/2H` is exactly `L`; both quotient groups have order four. |
+| C-131 | PROGRAMME_PROVED | Under the S025 ordering, `h_1+2H,h_2+2H,h_3+2H` are exactly the three nonzero elements of `H/2H`. Therefore the three positive-weight buckets occupy exactly the three nonzero `L`-cosets in `Q`. | Since `m` is even, the unit `a` is odd and `h_3+2H=(h_1+2H)+(h_2+2H)`; `h_1,h_2` reduce to a basis mod `2H`. |
+| C-132 | PROGRAMME_BOUNDARY | The unique nonzero quotient class lying in `L` has `k_q=0`. S027 does not choose which member or members of a nonzero `L`-coset have positive weight, solve any `k_q/r_q` values, classify lifts, treat odd `m`, or normalize quotient automorphisms. | D26-01 stop boundary. |
