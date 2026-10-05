@@ -854,3 +854,25 @@ classification. The precise remaining freedom is extraction choice inside the
 seven quotient fibres. S024 is therefore restricted to D23-01: test whether
 the cited rank-two one-change rigidity lemma forces each quotient fibre to be
 monochromatic. No broader lift classification is pre-authorized.
+
+
+## S024 pairing-choice-rigidity checkpoint
+
+S024 resolves D23-01 positively. For any three occurrences `a,b,c` in one
+nonzero quotient fibre, synchronize two maximal pairings so that the only
+changed pair sum is `a+b` versus `a+c`. The two induced kernel sequences are
+ordinary-`eta` extremals over `H=C_m^2` and share `eta(H)-2` terms.
+Girard--Schmid 2019 Lemma 4.2 therefore makes the two kernel sequences equal;
+cancellation gives `b=c`. Since every quotient-fibre multiplicity is odd,
+multiplicity one is trivial and every larger fibre is monochromatic.
+
+Hence every CAND-05 extremal has exactly seven support values, one over each
+nonzero element of `C_2^3`, with positive odd multiplicities summing to
+`6m+1`. This settles pairing-choice canonicity but not the lift or
+multiplicity classification.
+
+The single promoted successor is D24-01. S025 will specialize the rank-two
+inverse-`eta` normal form to the now-canonical kernel and derive only the
+three kernel-value bucket equations. It must stop before resolving which
+quotient fibres occupy those buckets, before classifying the seven lifts or
+the multiplicity vector, and before any quotient automorphism normalization.

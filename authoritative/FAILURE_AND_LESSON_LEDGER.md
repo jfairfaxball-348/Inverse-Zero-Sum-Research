@@ -173,3 +173,10 @@ arguments. Retired routes are not silently revived without new information.
 | FL-076 | 2026-10-05 | A sharp inductive direct bound can look like an inverse classification even when no equality rigidity is stated. | Treat equality decomposition as a separate dependency and prove it explicitly. | S022 |
 | FL-077 | 2026-10-05 | Stronger eta-freeness may encourage premature branching into many lift architectures. | S023 is D22-01 only; authorize at most one downstream lift bottleneck after it. | S022 |
 | FL-078 | 2026-10-05 | Quotient symmetry may be over-normalized if quotient automorphisms are not known to lift uniformly for all arithmetic regimes. | Verify liftability in `Aut(G_m)` before any later quotient normalization. | S022 |
+
+
+## S024 pairing-choice-rigidity lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-079 | 2026-10-05 | A one-change rigidity theorem is useful only after the two induced extremals are synchronized on the same positional pairing core. Comparing arbitrary maximal pairings could change many kernel terms and lose the theorem's `eta(H)-2` overlap hypothesis. | On a chosen fibre, freeze all other pairs and all remaining within-fibre pairs; change only `ab` to `ac` while swapping the residual representative. Then cancel the common kernel sequence after Lemma 4.2. | S024-P1 |

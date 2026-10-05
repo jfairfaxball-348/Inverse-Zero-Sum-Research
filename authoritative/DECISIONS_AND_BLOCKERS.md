@@ -551,3 +551,15 @@ Active owner blockers remain **NONE**.
 Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
+
+
+## S024 CAND-05 pairing-choice-rigidity decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-079 | 2026-10-05 | Record S024-P1/P2 as programme-proved bounded mathematics. D23-01 succeeds: every nonzero quotient fibre is monochromatic, every extremal has seven support values, and the induced rank-two kernel is pairing-choice canonical. | `sessions/S024/PAIRING_CHOICE_RIGIDITY.md`; ZS-56 Lemma 4.2. |
+| D-080 | 2026-10-05 | Promote exactly one successor, D24-01, and schedule S025 on the canonical kernel only. Recheck Theorem 2.4 specialized to `C_m^2` and derive its three-value bucket equations; do not classify the seven lifts, full multiplicity vector or quotient normalizations. | S024 stop boundary and S022 anti-churn rule. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.

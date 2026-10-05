@@ -425,3 +425,19 @@ computation remain CLOSED.
 - CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S024, D23-01 pairing-choice rigidity only.
+
+
+## S024 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S024 | COMPLETED BOUNDED INVESTIGATION; D23-01 PAIRING-CHOICE RIGIDITY PROVED | 474649dcb7d6c75eb595919af47623209a2c9b3c | Every nonzero quotient fibre is monochromatic; exactly seven support values; kernel pairing choice is canonical | [S024 closeout](../sessions/S024/CLOSEOUT.md) |
+
+- Live `main` was pinned at the S023 closeout SHA and S024 was unique.
+- Girard--Schmid 2019 Lemma 4.2 was rechecked at its exact rank-two
+  ordinary-`eta` hypotheses and applies with `H=C_m^2`.
+- D23-01 succeeds for every `m>=2`; no computation or formalisation was used.
+- The seven lifts and multiplicity vector are not classified in S024.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S025, D24-01 canonical-kernel bucket decomposition only.

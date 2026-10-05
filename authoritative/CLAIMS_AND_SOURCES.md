@@ -610,3 +610,16 @@ the already-audited ZS-56 and ZS-57 inputs.
 | C-116 | PROGRAMME_PROVED | S023-P3: every maximal pairing leaves exactly one term from each nonzero element of `C_2^3`; hence all seven nonzero quotient-fibre multiplicities are odd. | A residual quotient-zero pair would be the forbidden extra pair; the seven-term quotient residual is the unique `eta(C_2^3)-1` extremal. |
 | C-117 | PROGRAMME_PROVED_FROM_SOURCE | S023-P4: for every maximal pairing, the `3m-3` pair sums form an ordinary-`eta` extremal over `H ~= C_m^2`; the unconditional rank-two inverse-`eta` theorem applies. | S023 lift argument plus ZS-56 Theorem 2.4. Property D is not used. |
 | C-118 | PROGRAMME_BOUNDARY | S023 does not prove that the residual representative or induced kernel sequence is pairing-independent, or that a quotient fibre is monochromatic. | D23-01 is the single promoted lift-compatibility dependency. No downstream classification is claimed. |
+
+
+## S024 CAND-05 pairing-choice-rigidity claims
+
+Proof / source-check date: **2026-10-05**. No new source ID is added; S024
+rechecks ZS-56, specifically Girard--Schmid 2019 Lemma 4.2.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-119 | SOURCE_TOOL | Girard--Schmid 2019 Lemma 4.2: two rank-two ordinary-`eta` extremals of length `eta(H)-1` sharing at least `eta(H)-2` terms are equal. It applies to `H=C_m^2` by taking the source parameter `n=1`. | ZS-56, Lemma 4.2. No Property D hypothesis appears. |
+| C-120 | PROGRAMME_PROVED_FROM_SOURCE | S024-P1: every nonzero quotient fibre of a CAND-05 extremal is monochromatic. Synchronizing two maximal pairings on three occurrences gives kernel sequences `T(a+b)` and `T(a+c)`; C-119 forces equality and cancellation gives `b=c`. | `sessions/S024/PAIRING_CHOICE_RIGIDITY.md`; S023 supplies odd fibres and eta-extremal kernels. |
+| C-121 | PROGRAMME_PROVED | S024-P2: every CAND-05 extremal has exactly seven support values, one per nonzero quotient class, with positive odd multiplicities summing to `6m+1`; the induced kernel is independent of pairing/residual choice. | Immediate from C-120 plus S023-P3/P4. No lift or multiplicity-vector classification is claimed. |
+| C-122 | PROGRAMME_BOUNDARY | S024 does not classify the seven lifts, their odd multiplicities, quotient automorphisms, or the full CAND-05 extremal family. | D24-01 alone is promoted: specialize the canonical kernel through rank-two Theorem 2.4 and stop at bucket equations. |

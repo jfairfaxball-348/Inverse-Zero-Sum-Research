@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S023",
-  "next_session": "S024",
-  "next_brief": "authoritative/S024_CANDIDATE_5_PAIRING_CHOICE_RIGIDITY_BRIEF.md",
+  "last_completed_session": "S024",
+  "next_session": "S025",
+  "next_brief": "authoritative/S025_CANDIDATE_5_CANONICAL_KERNEL_BUCKET_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S024_READY_CAND05_PAIRING_CHOICE_RIGIDITY",
+  "programme_status": "S025_READY_CAND05_CANONICAL_KERNEL_BUCKET",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence and S023 proved the equality decomposition. Current status remains unknown. S024 is one bounded pairing-choice rigidity unit.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; S023 proved the equality decomposition and S024 proved quotient-fibre monochromaticity. Current status remains unknown. S025 is one bounded canonical-kernel bucket unit.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -59,7 +59,9 @@
     "S019-P3: applying the lifts to the exact S016 n-layer and explicit 4n layer realizes every S018 binary constraint and global layer parity for delta=0,1,2. This is an abstract design realization only; the actual zero-sum layers and modulo-4 split remain unresolved.",
     "S023-P1 PROGRAMME THEOREM: every CAND-05 extremal has no term in H=2G_m. A hypothetical H singleton plus 3m-3 quotient-zero blocks yields eta(H) kernel sums and a forbidden short lift.",
     "S023-P2/P3 PROGRAMME THEOREM: every maximal quotient-zero extraction consists of exactly 3m-3 same-fibre pairs plus a seven-term residual containing every nonzero C_2^3 quotient class once; equivalently all seven nonzero quotient-fibre multiplicities are odd.",
-    "S023-P4 PROGRAMME THEOREM: for every maximal pairing, the 3m-3 pair sums form an ordinary-eta extremal over H=C_m^2, so the unconditional rank-two inverse-eta theorem applies. Pairing-choice canonicity is not yet proved."
+    "S023-P4 PROGRAMME THEOREM: for every maximal pairing, the 3m-3 pair sums form an ordinary-eta extremal over H=C_m^2, so the unconditional rank-two inverse-eta theorem applies. Pairing-choice canonicity is not yet proved.",
+    "S024-P1 PROGRAMME THEOREM: every nonzero quotient fibre of a CAND-05 extremal is monochromatic in G_m. Two maximal pairings differing only by the residual representative give rank-two eta-extremals sharing eta(H)-2 terms, so Girard--Schmid 2019 Lemma 4.2 forces equality of the changed pair sums.",
+    "S024-P2 PROGRAMME COROLLARY: every CAND-05 extremal has exactly seven support values, one in each nonzero class of C_2^3, with positive odd multiplicities summing to 6m+1. Pairing choice is therefore canonical at the kernel level."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -194,6 +196,11 @@
       "id": "S023",
       "status": "COMPLETED",
       "record": "sessions/S023/CLOSEOUT.md"
+    },
+    {
+      "id": "S024",
+      "status": "COMPLETED",
+      "record": "sessions/S024/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -221,7 +228,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 selected and source-audited. S023 proved D22-01 equality decomposition. S024 is limited to D23-01 pairing-choice rigidity / quotient-fibre monochromaticity. CAND-02 remains historical/paused.",
+  "current_route_disposition": "CAND-05 selected and source-audited. S023 proved the equality decomposition and S024 proved pairing-choice rigidity / quotient-fibre monochromaticity. S025 is limited to D24-01: specialize the rank-two inverse-eta normal form to the canonical kernel and derive only its three-value bucket equations. CAND-02 remains historical/paused.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -261,7 +268,7 @@
     "hidden_property_d_prerequisite": false,
     "rank_two_inverse_eta": "UNCONDITIONAL",
     "search_boundary": "No completion found in bounded current search; non-hit is not openness or novelty evidence",
-    "next_dependency": "D23-01 pairing-choice rigidity only"
+    "next_dependency": "D24-01 canonical-kernel bucket decomposition only"
   },
   "s023_mathematical_investigation_date": "2026-10-05",
   "cand05_equality_decomposition": {
@@ -273,5 +280,15 @@
     "kernel_pair_sums": "every maximal pairing yields a length-(3m-3) ordinary-eta extremal over H=C_m^2",
     "rank_two_inverse_eta": "APPLIES UNCONDITIONALLY",
     "unresolved_choice_dependence": "pairing/residual choices are not yet proved canonical; fibre monochromaticity is D23-01"
+  },
+  "s024_mathematical_investigation_date": "2026-10-05",
+  "cand05_pairing_choice_rigidity": {
+    "status": "PROGRAMME_PROVED_BOUNDED_MATHEMATICS",
+    "quotient_fibres": "all seven nonzero C_2^3 fibres are monochromatic in G_m",
+    "support_size": 7,
+    "multiplicities": "positive odd multiplicities summing to 6m+1",
+    "canonical_kernel": "for fibre value x_q of multiplicity r_q, every maximal pairing contributes (2x_q)^((r_q-1)/2)",
+    "source_tool": "Girard--Schmid 2019 Lemma 4.2, applied to H=C_m^2",
+    "unresolved": "the seven lifts, multiplicity vector, quotient normalization and full classification remain open within the programme"
   }
 }

@@ -746,3 +746,23 @@ This is an all-`m` structural reduction, not the final classification and not a
 novelty certificate. The first remaining lift dependency is D23-01:
 pairing-choice rigidity / quotient-fibre monochromaticity. S024 is limited to
 that statement.
+
+
+## S024 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+D23-01 is now programme-proved. Every nonzero quotient fibre is monochromatic
+in `G_m`. Combined with S023, every CAND-05 extremal therefore has exactly
+seven support values, one in each nonzero `C_2^3` quotient fibre, with
+positive odd multiplicities summing to `6m+1`. Any maximal same-fibre pairing
+now yields the same canonical rank-two ordinary-`eta` kernel sequence.
+
+This remains a structural reduction, not the final classification and not a
+novelty certificate. The next dependency is D24-01: specialize the
+rank-two inverse-`eta` normal form to the canonical kernel and determine only
+the resulting three-value bucket equations. S025 must not classify the seven
+lifts, the full multiplicity vector, or quotient normalizations.

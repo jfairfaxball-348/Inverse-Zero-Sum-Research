@@ -10,17 +10,18 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S023 records before later target-specific work, with
+7. The completed S002–S024 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S023 is completed. D22-01 succeeds in full: every CAND-05 extremal has the
-exact quotient equality decomposition and every maximal pairing induces a
-rank-two ordinary-eta extremal. CAND-05 remains SOURCE-DEFINED / CURRENT
-STATUS UNKNOWN. S024 is READY for one bounded pairing-choice-rigidity unit.**
+**S024 is completed. D23-01 succeeds: every nonzero quotient fibre of a
+CAND-05 extremal is monochromatic, so every extremal has exactly seven support
+values and pairing choice is canonical at the kernel level. CAND-05 remains
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S025 is READY for one bounded
+canonical-kernel bucket unit.**
 
 Selected target:
 
@@ -31,10 +32,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S024 brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S025 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S024.
+- Next session: S025.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -43,21 +44,19 @@ programme evidence but does not automatically constrain CAND-05.
 
 ## Current mathematical frontier
 
-S023 proves the equality case of the sharp subgroup/quotient bound. Every
-CAND-05 extremal has no term in `H=2G_m`; every maximal quotient-zero
-extraction consists of exactly `3m-3` same-fibre pairs; the seven residual
-terms map bijectively to the nonzero elements of `C_2^3`; and every induced
-pair-sum sequence is a length-`3m-3` ordinary-`eta` extremal over
-`H\cong C_m^2`.
+S023 gives the exact equality decomposition through
+`H=2G_m\cong C_m^2` and `Q\cong C_2^3`. S024 then removes the first
+lift ambiguity: every nonzero quotient fibre is monochromatic in `G_m`.
 
-The unconditional rank-two inverse-`eta` theorem therefore applies to every
-maximal pairing. What S023 does not prove is that the induced kernel sequence
-is independent of the residual/pairing choice inside a quotient fibre.
+Thus every CAND-05 extremal has exactly seven support values `x_q`, one over
+each nonzero `q in Q`, with positive odd multiplicities `r_q` summing to
+`6m+1`. Every maximal pairing now induces the same canonical kernel sequence
+over `H`, namely one copy of `2x_q` for each paired copy in fibre `q`.
 
-S024 addresses D23-01 only: compare two such kernel extremals differing in one
-pair sum and test whether Girard--Schmid 2019 Lemma 4.2 forces every nonzero
-quotient fibre to be monochromatic. No seven-lift or multiplicity
-classification is authorized in S024.
+S025 addresses D24-01 only: specialize Girard--Schmid 2019 Theorem 2.4 to this
+canonical length-`3m-3` kernel and derive its exact three-value bucket
+equations. It must stop before classifying the seven lifts, the full
+multiplicity vector, or quotient normalizations.
 
 Search non-hits remain non-evidence of openness or novelty.
 
@@ -351,3 +350,21 @@ The unresolved issue is now extraction-choice rigidity, not existence of the
 decomposition. S024 is limited to D23-01 and may use the already-cited
 rank-two one-change rigidity lemma after rechecking its hypotheses. It must
 not proceed to a full lift classification.
+
+
+## Frontier after S024
+
+D23-01 succeeds for every `m>=2`. If a nonzero quotient fibre has at least
+three occurrences `a,b,c`, two synchronized maximal pairings give kernel
+eta-extremals `T(a+b)` and `T(a+c)` sharing `eta(H)-2` terms.
+Girard--Schmid 2019 Lemma 4.2 forces them equal, hence `b=c`. Odd fibre
+multiplicity handles the remaining cases and yields monochromaticity.
+
+Consequently the extremal support has exactly seven values, one in each
+nonzero quotient class, with positive odd multiplicities summing to `6m+1`.
+Pairing/residual choice no longer changes the kernel sequence.
+
+S025 is restricted to D24-01: apply the already-cited rank-two inverse-`eta`
+normal form to that canonical kernel and record only the induced three-value
+bucket equations. No lift, multiplicity-vector or quotient-normalization
+classification is pre-authorized.
