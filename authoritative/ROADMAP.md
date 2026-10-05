@@ -797,3 +797,15 @@ S021 will recommend one exact target but will not select it on the owner's
 behalf. Its closeout should activate a final target-selection blocker and
 suppress further prompts until the owner chooses.
 
+## S021 target-reassessment checkpoint
+
+S021 completed the post-S020 target reassessment without proof work. The
+shortlist is CAND-03 (recommended), CAND-01 and CAND-05. CAND-04 remains
+retired and full CAND-02 remains historical/paused rather than an automatic
+continuation target.
+
+The programme is now owner-blocked at **B-009**. No S022 is scheduled. The
+next stage depends on the owner's explicit target selection, after which the
+selected target must receive a fresh bounded brief that preserves its exact
+source/status and reviewer boundaries. S021's recommendation alone is not a
+target switch.

@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S020",
-  "next_session": "S021",
-  "next_brief": "authoritative/S021_TARGET_REASSESSMENT_BRIEF.md",
-  "stage": "P1_TARGET_REASSESSMENT_WITH_PARALLEL_EXTERNAL_REVIEW",
-  "programme_status": "S021_READY_POST_CAND02_TARGET_REASSESSMENT",
+  "last_completed_session": "S021",
+  "next_session": null,
+  "next_brief": null,
+  "stage": "P1_OWNER_TARGET_SELECTION_AFTER_S021_REASSESSMENT",
+  "programme_status": "S021_COMPLETED_OWNER_TARGET_SELECTION_REQUIRED",
   "exact_target": "CAND-02 selected by owner: for every m >= 2, classify all length-8m sequences over C_2 + C_{2m} + C_{2m} with no zero-sum subsequence of length 2m",
-  "candidate_under_due_diligence": "CAND-01 and CAND-03 require fresh current-status re-audit; S021 may add at most two new source-defined replacement candidates. CAND-02 remains the historical incumbent until explicit owner replacement selection, but its proof programme is paused.",
+  "candidate_under_due_diligence": "S021 completed. CAND-03 is recommended; CAND-01 and new CAND-05 are viable alternatives. CAND-02 remains the historical incumbent only until explicit owner replacement selection, with proof work paused.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -63,14 +63,16 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [],
+  "active_owner_blockers": [
+    "B-009"
+  ],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; if it identifies prior art, a known solution, material overlap, a mistaken premise, or a serious scope/significance concern, pause the affected mathematical direction and reassess it.",
     "Continue external independent review in parallel and obtain appropriate independent scrutiny of the mathematical contribution/manuscript before journal submission, subject to actual reviewer willingness and availability.",
     "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "READY",
+  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -176,6 +178,11 @@
       "id": "S020",
       "status": "COMPLETED",
       "record": "sessions/S020/CLOSEOUT.md"
+    },
+    {
+      "id": "S021",
+      "status": "COMPLETED",
+      "record": "sessions/S021/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -220,5 +227,17 @@
   "s019_source_refresh_date": "2026-10-04",
   "s020_audit_date": "2026-10-04",
   "b008_resolution_date": "2026-10-04",
-  "target_reassessment_date": "2026-10-04"
+  "target_reassessment_date": "2026-10-04",
+  "s021_reassessment": {
+    "date": "2026-10-05",
+    "recommendation": "CAND-03",
+    "shortlist": [
+      "CAND-03",
+      "CAND-01",
+      "CAND-05"
+    ],
+    "cand02_status": "historical incumbent pending explicit replacement; proof paused",
+    "cand04_status": "retired; no positive primary evidence removing direct-EGZ dependency",
+    "second_new_candidate_slot": "not filled; no second candidate cleared the source/status/prerequisite bar"
+  }
 }

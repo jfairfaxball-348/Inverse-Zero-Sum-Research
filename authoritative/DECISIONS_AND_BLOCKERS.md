@@ -480,3 +480,36 @@ historical programme results. Reassessment does not erase them, convert source
 non-hits into openness evidence, or transfer Xue Li's pending CAND-02 Stage-1
 status to another target.
 
+## S021 target-reassessment decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-068 | 2026-10-05 | Record the S021 source/status reassessment. CAND-03 is the strongest recommendation; CAND-01 remains a viable classical alternative; new CAND-05 (ordinary inverse eta on \`C_2+C_{2m}+C_{2m}\`) is admitted as a third alternative; CAND-04 remains retired; CAND-02 remains historical/paused and is not shortlisted. This is a recommendation, not a target switch. | \`sessions/S021/TARGET_REASSESSMENT.md\` |
+| D-069 | 2026-10-05 | **Activate B-009 and suppress all next-session material until the owner selects the target.** Do not infer selection from S021's recommendation. | S021 brief requirement and repository owner-decision protocol. |
+
+### B-009 — final target selection after S021 reassessment
+
+**ACTIVE.**
+
+S021 has completed the source-first comparison and recommends CAND-03, but
+target replacement is explicitly reserved to the owner. CAND-02 remains the
+historical incumbent solely until that replacement decision and its proof
+programme stays paused.
+
+**Required owner action:** select exactly one of:
+
+1. **CAND-03 (recommended):** inverse Narkiewicz-sense \`eta\` classification
+   for length-24 extremals over \`C_3^3\\{0}\`;
+2. **CAND-01:** all-modulus rank-two Property D; or
+3. **CAND-05:** ordinary inverse \`eta\` for
+   \`C_2\\oplus C_{2m}\\oplus C_{2m}\`, \`m>=2\`.
+
+While B-009 is active, \`next_session\` and \`next_brief\` are null,
+\`next_prompt_status=SUPPRESSED_OWNER_BLOCKER\`, and
+\`authoritative/NEXT_SESSION_PROMPT.md\` is absent. No proof session may be
+scheduled by assumption.
+
+External review is unchanged and separate. Xue Li Stage-1 remains
+CAND-02-specific, owner-reported SENT 2026-10-02 / REPLY PENDING; no
+willingness, endorsement, novelty certification, approval or reviewer status
+is inferred or transferred.

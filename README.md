@@ -4,12 +4,11 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: target reassessment with parallel external review.
-S020 is complete and B-008 has been resolved by owner decision D-066:
-reassess/switch target rather than authorize another generic full-CAND-02
-strategy. CAND-02 proof work is paused. S021 is READY for a fresh source-first
-comparison of CAND-01, CAND-03 and at most two genuinely new replacement
-candidates.**
+**Current stage: owner target selection after completed S021 reassessment.
+S021 recommends CAND-03, with CAND-01 and CAND-05 as viable alternatives.
+B-009 is ACTIVE. CAND-02 remains the historical incumbent only until an
+explicit replacement decision and its proof programme is paused. There is no
+live next-session prompt.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -25,7 +24,7 @@ session; it may recommend but not silently select a replacement target.
 
 ## Current readiness dimensions
 
-1. Target gate — OPEN: CAND-02 is exactly specified; novelty/open-status claims remain conservative.
+1. Target gate — OPEN: CAND-02 remains the historical exact target pending explicit owner replacement; S021 recommends CAND-03 but has not selected it.
 2. Publication gate — OPEN: E-JC is the leading eligible route, with JNT as a policy-qualified backup.
 3. Mathematical-investigation gate — OPEN: bounded proof/counterexample search, structural derivation and scoped computation/experiments may run under session briefs.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed. This does not block mathematics, but appropriate independent scrutiny remains required before journal submission.
@@ -200,3 +199,15 @@ surviving alternatives CAND-01 and CAND-03 and may add at most two new
 source-defined candidates after current due diligence. It will return one
 explicit recommendation for owner selection and will not begin proof work.
 
+## S021 target-reassessment checkpoint
+
+S021 completed the fresh source/status comparison and recommends **CAND-03**:
+the length-24 inverse Narkiewicz-sense eta classification over \`C_3^3\\{0}\`.
+The viable alternatives are **CAND-01** (all-modulus rank-two Property D) and
+new **CAND-05** (ordinary inverse eta on
+\`C_2+C_{2m}+C_{2m}\`, \`m>=2\`). CAND-04 remains retired and CAND-02 is
+historical/paused.
+
+B-009 requires the owner's explicit choice. No S022 or live next-session
+prompt exists until that decision. Xue Li's pending Stage-1 message remains
+CAND-02-specific and no reviewer status transfers.

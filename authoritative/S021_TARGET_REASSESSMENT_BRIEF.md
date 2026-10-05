@@ -1,7 +1,7 @@
 # S021 target reassessment and replacement-candidate audit brief
 
 Date prepared: 2026-10-04.
-Status: READY.
+Status: COMPLETED 2026-10-05; retained as the historical S021 brief.
 Stage: target reassessment after S020 strategy stop.
 
 ## Purpose

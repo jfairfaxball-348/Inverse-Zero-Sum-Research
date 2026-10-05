@@ -17,25 +17,26 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S020 is completed. Owner decision D-066 resolves B-008 by choosing option 3:
-reassess/switch target rather than authorize another generic CAND-02 strategy.
-CAND-02 remains the historical incumbent until an explicit replacement choice,
-but its proof programme is paused. S021 is READY as a source-first target
-reassessment.**
-
-S021 must freshly re-audit CAND-01 and CAND-03, keep CAND-04 retired absent
-positive new primary evidence, and may discover at most two genuinely new
-source-defined replacement candidates. It must recommend one exact target but
-may not silently switch targets or begin proof work.
+**S021 is completed. It recommends CAND-03 but does not select it. B-009 is
+ACTIVE for the owner's final target choice among CAND-03 (recommended),
+CAND-01 and CAND-05. CAND-02 remains the historical incumbent only until an
+explicit replacement decision; its proof programme remains paused.**
 
 - Publication-eligibility gate: OPEN.
-- Mathematical-investigation gate remains formally OPEN at programme level, but
-  S021 itself authorizes no proof work; target-specific proof resumes only after
-  explicit owner target selection and a suitable brief.
+- Mathematical-investigation gate remains formally OPEN at programme level,
+  but no target-specific proof session is runnable while B-009 is active.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: NONE.
+- Active owner blockers: B-009.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
-  REPLY PENDING, and does not transfer to another target.
+  REPLY PENDING, and does not transfer to CAND-03, CAND-01 or CAND-05.
+- \`next_session\` and \`next_brief\` are null and the live next-session prompt is
+  suppressed until the owner selects the target.
+
+S021's recommendation is the exact CAND-03 structural classification of
+length-24 \`eta^N(C_3^3)-1\` extremals over \`C_3^3\\{0}\`. CAND-01 remains a
+serious classical alternative; CAND-05 is the newly admitted ordinary inverse
+\`eta\` target on \`C_2+C_{2m}+C_{2m}\`. Search non-hits remain non-hits, not
+openness or novelty certificates.
 
 ## Current mathematical frontier
 
@@ -296,3 +297,24 @@ easier problem.
 The final target change remains an owner decision after S021's refreshed
 source/status comparison.
 
+## S021 target reassessment outcome
+
+S021 freshly re-audited CAND-01 and CAND-03, checked the CAND-04 retirement
+condition, and ran the bounded replacement discovery pass. It recommends
+CAND-03 because the exact direct threshold is settled, the rank-two inverse
+Narkiewicz-sense eta theory is now complete, the target is a fixed rank-three
+structural theorem, and its milestone/partial-contribution geometry is clearer
+than CAND-02's demonstrated long all-parameter architecture.
+
+CAND-01 remains viable but its sufficiently-large-prime theorem leaves the
+operational residual layer finite yet non-explicit. CAND-05 is admitted as a
+new viable alternative: classify ordinary eta-extremal length-\`6m+1\`
+sequences over \`C_2+C_{2m}+C_{2m}\`, \`m>=2\`. Its direct threshold is known,
+but its all-m rank-three scope still carries substantial recurrence risk.
+
+CAND-04 remains retired: no positive primary evidence was found removing the
+unresolved direct \`s(C_p^3)=9p-8\` dependency. Full CAND-02 remains durable
+historical work but is not shortlisted after the S020 strategic audit.
+
+B-009 is active. No S022 brief or live prompt exists until the owner selects
+CAND-03, CAND-01 or CAND-05.

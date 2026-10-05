@@ -438,3 +438,24 @@ If S021 recommends a different target, reviewer expertise and independence must
 be reassessed for that target. No pending message, silence, willingness or
 reviewer status transfers automatically.
 
+## S021 reviewer-route reassessment
+
+No reviewer is confirmed and S021 sent no outreach.
+
+If the owner selects CAND-03, the preferred independent first status/proposal
+lead from the existing evidence is **David J. Grynkiewicz**, with **Pingzhi
+Yuan** a strong alternative. Authors of the defining/generalized Narkiewicz
+papers and the 2025/2026 rank-two completion are especially valuable status
+experts, but their proximity to the controlling literature requires a fresh
+independence/conflict assessment before assigning any reviewer role.
+
+If CAND-01 is selected, Pingzhi Yuan and Grynkiewicz remain strong independent
+routes; Schlage-Puchta is especially close to the current progress baseline.
+If CAND-05 is selected, Girard and Schmid are exact baseline experts but are
+not automatically the cleanest independent first reviewer; a fresh
+candidate-specific comparison is required.
+
+Xue Li's Stage-1 message remains **strictly CAND-02-specific**:
+owner-reported SENT 2026-10-02 / REPLY PENDING. It does not transfer to any
+replacement candidate, and silence supplies no willingness, endorsement,
+novelty certification, approval or reviewer status.

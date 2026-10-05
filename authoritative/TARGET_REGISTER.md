@@ -637,3 +637,53 @@ S021 is target-selection work only. It must return a concrete recommendation
 and viable alternatives for owner selection; it may not silently switch target
 or begin mathematical investigation on a replacement.
 
+## S021 reassessment — recommendation pending owner selection
+
+**No target switch has occurred.** CAND-02 remains the machine-recorded
+historical incumbent only until the owner resolves B-009; its proof programme
+is paused.
+
+### CAND-03 — S021 recommendation
+
+Exact scope: classify every sequence \`S\` over \`C_3^3\\{0}\` of length
+\`24=eta^N(C_3^3)-1\` having no two innerly non-zero-sum-joint short zero-sum
+subsequences, by a structural necessity-and-sufficiency theorem with explicit
+multiplicity/support forms. No unlicensed translation normalization; a
+computational catalogue alone is insufficient.
+
+S021 disposition: **RECOMMENDED / NOT SELECTED / SOURCE-DEFINED / CURRENT
+STATUS UNKNOWN.** The 2026 rank-two inverse completion strengthens the
+baseline; no exact rank-three completion was found in the bounded refresh, but
+no explicit open declaration was located either.
+
+### CAND-01 — viable alternative
+
+Exact identity is unchanged: all-modulus Property D for \`C_n^2\`. S021 found
+no checked all-prime completion or effective cutoff beyond the 2025
+sufficiently-large-prime result. Its full completion remains highly
+significant, but narrow exceptional-prime work requires a reusable structural
+or complete-residue contribution to meet the programme bar.
+
+Disposition: **VIABLE ALTERNATIVE / NOT SELECTED.**
+
+### CAND-05 — newly admitted viable alternative
+
+Exact scope: for every \`m>=2\`, classify all length-\`6m+1\` sequences over
+\`C_2\\oplus C_{2m}\\oplus C_{2m}\` with no nonempty zero-sum subsequence of
+length at most \`2m\`. Girard--Schmid gives the direct threshold
+\`eta=6m+2\`.
+
+Disposition: **VIABLE NEW ALTERNATIVE / NOT SELECTED / SOURCE-DEFINED /
+CURRENT STATUS UNKNOWN.** A focused search found no checked all-\`m\`
+classification, which is not an openness certificate. The all-parameter
+rank-three scope carries a substantial anti-churn risk.
+
+### Other dispositions
+
+- CAND-02: historical incumbent pending owner replacement; proof paused; not
+  shortlisted after S020's demonstrated high multi-architecture risk.
+- CAND-04: remains RETIRED AS A CLEAN TARGET; no positive primary evidence was
+  found removing its hidden direct-EGZ prerequisite.
+- The permitted second new-candidate slot was deliberately left empty because
+  no second discovery candidate cleared the exact-statement, current-status,
+  settled-background and hidden-prerequisite bar.

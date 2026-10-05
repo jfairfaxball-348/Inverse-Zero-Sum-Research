@@ -379,3 +379,21 @@ acceptance. If the owner chooses to narrow/reframe around the strongest
 S014–S016 structural results, the exact resulting theorem package requires a
 fresh prior-art/novelty/significance audit before it is treated as a paper
 contribution.
+
+## S021 publication-route refresh
+
+E-JC remains the leading workflow-eligible venue. Its official pages were
+rechecked on 2026-10-05: the journal requires substantial discrete mathematics
+and explicitly permits AI assistance in researching/writing mathematics while
+placing full proof/detail/prior-art responsibility on the authors. This is
+eligibility only, never an acceptance prediction.
+
+- CAND-03: strong E-JC subject fit; JCTA is a natural comparable venue because
+  it published the nearest 2025/2026 rank-two Narkiewicz inverse papers.
+- CAND-01: strong significance if the full Property-D residue is genuinely
+  resolved; isolated finite-prime progress must not be presumed substantial.
+- CAND-05: plausible E-JC/JNT fit if an all-m or broad structural theorem is
+  obtained; small-parameter catalogues are below the intended bar.
+
+No manuscript, submission authorization, submission, acceptance or publication
+exists. Target selection remains blocked by B-009.

@@ -368,3 +368,18 @@ computation remain CLOSED.
 - S021 must recommend a target and then return final target selection to the
   owner; it may not silently switch or start proof work.
 
+## S021 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S021 | COMPLETED SOURCE-FIRST TARGET REASSESSMENT; OWNER TARGET-SELECTION BLOCKER ACTIVE | fd0bacac3285b36f361fffe157f420a369c1bc1e | Fresh CAND-01/CAND-03 status audit; CAND-04 retirement retained; new CAND-05 admitted; three-target matrix; CAND-03 recommendation | [S021 closeout](../sessions/S021/CLOSEOUT.md) |
+
+- The supplied checkpoint exactly matched live \`main\`; S021 was unique.
+- No proof search, mathematical experiment, formalisation, outreach or target
+  switch occurred.
+- CAND-03 is recommended, with CAND-01 and CAND-05 as viable alternatives.
+- CAND-02 remains historical/paused until explicit owner replacement; CAND-04
+  remains retired.
+- Xue Li Stage-1 remains CAND-02-specific and REPLY PENDING; no reviewer is
+  confirmed.
+- B-009 is active. No S022 or live next-session prompt is scheduled.
