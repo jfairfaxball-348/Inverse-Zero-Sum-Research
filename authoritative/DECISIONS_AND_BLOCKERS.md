@@ -653,3 +653,14 @@ Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
 
+
+## S033 CAND-05 full-residual-depth decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-097 | 2026-10-05 | Record D32-01 as a successful exact full-residual depth analysis for even `m>=4`, but not an exclusion. The full seven-term residual satisfies `m-3<=lambda(r)<=m-1`; the S029 distance formula gives the exact deep-layer criterion, and the common-torsion value `r=h_1+h_2+h_3` has exact depth `m-2` with `zeta=0`. | `sessions/S033/EVEN_TOTAL_RESIDUAL_DEPTH.md`. |
+| D-098 | 2026-10-05 | Stop the S030--S033 residual-shell family as an exclusion route. Do not promote another proper residual-subset/depth variant. Schedule S034 as one bounded mechanism reassessment that must identify a genuinely different source of rigidity before any new proof unit; if none clears the anti-churn bar, it must activate an owner strategy blocker rather than manufacture a continuation. | S033 common-torsion nonexclusion together with D-096 and FL-087. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.

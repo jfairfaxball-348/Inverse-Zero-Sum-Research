@@ -952,3 +952,27 @@ full canonical seven-term residual sum. S033 must not open another proper
 residual-subset family, solve global weights/lifts, treat odd `m`, normalize
 quotient automorphisms or make an existence/full-classification claim.
 
+
+## S033 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+For even `m>=4`, D32-01 is programme-proved at the full seven-term
+residual level. The total residual sum obeys
+`m-3<=lambda(r)<=m-1`. The S029 distance formula classifies the deep
+layer exactly by
+`min_{0<=gamma<=Q}[P+a gamma]_m>=m-3-Q`.
+
+This does not exclude the fixed simultaneous-positive coset. In the surviving
+common-torsion family, `zeta=0` and
+`r=h_1+h_2+h_3=(1-a)h_1+2h_2`; its exact completion depth is
+`m-2`. Thus it lies strictly below the depth-`m-1` shell but still
+inside the required full-residual deep window and the S032 translation
+intersection. No actual extremal is constructed.
+
+The S030--S033 residual-shell family is now stopped against another proper
+residual-subset variant. S034 is restricted to reassessing genuinely different
+mechanisms and must not silently turn into a global weight/lift classification.

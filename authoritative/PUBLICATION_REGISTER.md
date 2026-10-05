@@ -517,3 +517,15 @@ No manuscript, submission authorization, submission, acceptance or publication
 has occurred. The publication route is unchanged: E-JC remains the leading
 eligible route and JNT the recorded backup under the S022 policy refresh.
 
+
+## S033 publication boundary
+
+S033 adds an exact full-residual completion-depth analysis for the even-modulus
+CAND-05 branch and proves a route-level nonexclusion: the common-torsion total
+has exact depth `m-2`. It remains internal programme mathematics. The result
+has not been independently reviewed, formally verified, or audited as a
+standalone novelty/significance contribution.
+
+No manuscript, submission authorization, submission, acceptance or publication
+has occurred. The publication route is unchanged: E-JC remains the leading
+eligible route and JNT the recorded backup under the S022 policy refresh.

@@ -230,3 +230,9 @@ arguments. Retired routes are not silently revived without new information.
 | --- | --- | --- | --- | --- |
 | FL-087 | 2026-10-05 | Adding complementary four-set shell constraints can look as though line/complement pairing must finally pin the S031 half-lift. In the common-torsion family the total residual sum is exactly `h_1+h_2+h_3`: complementation fixes each half-sum `v` and sends the three through-`ell` shell points to three values already forced into the universal shell geometry. | Expose the total residual sum `r` and the translation `zeta=r-(h_1+h_2+h_3)` before claiming a contradiction. Do not promote another arbitrary proper residual-subset family; the only promoted successor is the full-residual completion-depth test. | S032-P2/P3 |
 
+
+## S033 full-residual-depth lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-088 | 2026-10-05 | After the Fano triples and their complements survive, it is tempting to expect the full seven-term residual depth to force the remaining translation. The common-torsion total instead lands exactly one level below the shell: `zeta=0` and `lambda(h_1+h_2+h_3)=m-2`, which is fully compatible with the `m-3` lower bound. | Stop the residual-shell/subset iteration. Do not promote another proper residual-subset depth test by cosmetic variation. Before further proof work, identify a genuinely different mechanism that can distinguish compatibility assignments from actual extremals; otherwise activate an owner strategy blocker. | S033-P2 / D-098 |

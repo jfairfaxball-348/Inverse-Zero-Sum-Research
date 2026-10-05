@@ -718,3 +718,14 @@ S026--S031 even-modulus geometry.
 | C-146 | PROGRAMME_PROVED NECESSARY CONDITION | If `r` is the total seven-term residual sum and `w_F` a Fano-line lift-sum, then `w_F in E(K) cap (r-E(K))` for all seven lines, equivalently `r in cap_F(w_F+E(K))`. With `s=h_1+h_2+h_3` and `tau_i=y_i-x_i`, the exact translation defect is `zeta=r-s=u+tau_1+tau_2+tau_3 in H`. | `sessions/S032/EVEN_COMPLEMENTARY_FANO_PLANES.md`; algebraic line/complement partition plus S030--S032 shell memberships. |
 | C-147 | PROGRAMME_BOUNDARY / NONEXCLUSION | The common-torsion family remains compatible: `u=t`, `tau_1=tau_2=tau_3=t` gives `zeta=0`, `r=s`; the three through-`ell` complements are `h_2+h_3,h_1+h_3,h_1+h_2 in E(K)`, while each other line and complement has the same half-sum `v in E(K)`. | Compatibility of necessary constraints only; no actual extremal construction, global weight/lift classification, odd-`m` result or quotient normalization. |
 
+
+## S033 CAND-05 full-residual-depth claims
+
+Proof date: **2026-10-05**. No new source ID is added; D32-01 uses only the
+already-authoritative ordinary-`eta` threshold, S025 canonical kernel, S029
+distance formula and S032 total-translation condition.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-148 | PROGRAMME_PROVED | For even `m>=4`, the full canonical seven-term residual sum `r` satisfies `m-3<=lambda(r)<=m-1`. More generally, for `w=xi h_1+nu h_2`, `P=[-xi]_m`, `Q=[-nu]_m`, one has `lambda(w)>=m-3` iff `min_{0<=gamma<=Q}[P+a gamma]_m>=m-3-Q`; hence all points with `Q=m-3,m-2,m-1` are automatically deep. | `sessions/S033/EVEN_TOTAL_RESIDUAL_DEPTH.md`; a completion of `r` using at most `m-4` kernel terms would lift with all seven residual terms to a forbidden zero sum of length at most `2m-1`. |
+| C-149 | PROGRAMME_BOUNDARY / NONEXCLUSION | In the S032 common-torsion family, `zeta=0` and `r=s=h_1+h_2+h_3=(1-a)h_1+2h_2`. Here `P=a-1`, `Q=m-2`, and the S029 progression contains exactly `0,...,m-2`, so `lambda(r)=m-2`. Therefore the S032 total-translation intersection and the S033 deep layer still meet at `s`; simultaneous positivity is not excluded. | Compatibility of necessary constraints only; no actual extremal construction, global weight/lift classification, odd-`m` result or quotient normalization. |

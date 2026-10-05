@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S032",
-  "next_session": "S033",
-  "next_brief": "authoritative/S033_CANDIDATE_5_EVEN_TOTAL_RESIDUAL_DEPTH_BRIEF.md",
+  "last_completed_session": "S033",
+  "next_session": "S034",
+  "next_brief": "authoritative/S034_CANDIDATE_5_EVEN_MECHANISM_REASSESSMENT_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S033_READY_CAND05_EVEN_TOTAL_RESIDUAL_DEPTH",
+  "programme_status": "S034_READY_CAND05_EVEN_MECHANISM_REASSESSMENT",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence. S023--S029 establish the canonical even-modulus kernel/coset/shell geometry; S030--S031 place all seven Fano residual line sums in E(K). S032 proves that all seven complementary quotient-zero four-term residual sums also lie in E(K), and identifies the exact line/complement coupling through the total residual sum r: every line sum w_F lies in E(K) cap (r-E(K)). Writing s=h_1+h_2+h_3, the remaining translation defect is zeta=r-s=u+tau_1+tau_2+tau_3 in H. The common-torsion family has zeta=0 and satisfies all fourteen shell constraints, so the fixed simultaneous-positive coset is still not excluded. Current status remains unknown. S033 is one bounded unit on the full seven-term residual sum only.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence. S023--S029 establish the canonical even-modulus kernel/coset/shell geometry; S030--S032 exhaust the authorized Fano-line and line-complement shell tests. S033 proves that the full seven-term residual sum has depth m-3<=lambda(r)<=m-1 and gives an exact deep-layer criterion from the S029 distance formula. The common-torsion family still survives: zeta=0, r=h_1+h_2+h_3, and lambda(r)=m-2. Current status remains unknown. The residual-shell route is stopped against another proper-subset variant; S034 is one bounded mechanism reassessment.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -80,7 +80,9 @@
     "S031-P2/P3 PROGRAMME NONEXCLUSION: the four non-ell line sums form an affine parity family X+sum e_i tau_i. In the common-torsion assignment u=t and tau_i=t they collapse to one v with 2v=h_1+h_2+h_3. The H[2]-half-fibre always meets E(K), explicitly at c h_1+h_2 with 2c=1-a, so the seven-line system does not exclude the fixed simultaneous-positive coset.",
     "S032-P1 PROGRAMME RESULT: for even m>=4, the lift-sum of each of the seven quotient-zero four-term residual subsets complementary to a Fano line has completion depth exactly m-1 in K, hence lies in E(K).",
     "S032-P2 PROGRAMME NECESSARY CONDITION: if r is the total seven-term residual sum and w_F a Fano-line sum, then both w_F and r-w_F lie in E(K). Equivalently w_F lies in E(K) cap (r-E(K)) for all seven lines, or r lies in cap_F(w_F+E(K)). With s=h_1+h_2+h_3 and tau_i=y_i-x_i, the exact translation defect is zeta=r-s=u+tau_1+tau_2+tau_3 in H.",
-    "S032-P3 PROGRAMME BOUNDARY/NONEXCLUSION: the common-torsion assignment u=t and tau_1=tau_2=tau_3=t has zeta=0 and r=s. The three complements through ell are h_2+h_3, h_1+h_3 and h_1+h_2, all in E(K), while each other line and complement share the same half v with 2v=s. Thus all fourteen shell constraints are compatible; this is not an extremal construction."
+    "S032-P3 PROGRAMME BOUNDARY/NONEXCLUSION: the common-torsion assignment u=t and tau_1=tau_2=tau_3=t has zeta=0 and r=s. The three complements through ell are h_2+h_3, h_1+h_3 and h_1+h_2, all in E(K), while each other line and complement share the same half v with 2v=s. Thus all fourteen shell constraints are compatible; this is not an extremal construction.",
+    "S033-P1 PROGRAMME RESULT: for even m>=4, the full seven-term residual sum r has completion depth m-3<=lambda(r)<=m-1. With S029 coordinates P=[-xi]_m and Q=[-nu]_m, the deep layer lambda(w)>=m-3 is exactly characterized by min_{0<=gamma<=Q}[P+a gamma]_m>=m-3-Q; in particular all three Q=m-3,m-2,m-1 affine h_1-lines are automatically deep.",
+    "S033-P2 PROGRAMME BOUNDARY/NONEXCLUSION: in the S032 common-torsion family zeta=0 and r=s=h_1+h_2+h_3=(1-a)h_1+2h_2. Then P=a-1 and Q=m-2, the S029 progression contains residues 0,...,m-2 and omits m-1, so lambda(r)=m-2. Hence r remains in the S032 total-translation intersection and the full-residual depth test does not exclude simultaneous positivity. No actual extremal is constructed."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -260,6 +262,11 @@
       "id": "S032",
       "status": "COMPLETED",
       "record": "sessions/S032/CLOSEOUT.md"
+    },
+    {
+      "id": "S033",
+      "status": "COMPLETED",
+      "record": "sessions/S033/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -287,7 +294,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 selected and source-audited. S032 completes the Fano line/complement shell system for even m>=4: all seven line sums and all seven complementary four-set sums lie in E(K). Their coupling exposes exactly one total-residual translation zeta=r-(h_1+h_2+h_3)=u+tau_1+tau_2+tau_3 in H. The common-torsion assignment has zeta=0 and remains compatible. S033 is limited to the completion-depth layer of the full seven-term residual sum; no further proper residual-subset family is pre-authorized. CAND-02 remains historical/paused.",
+  "current_route_disposition": "CAND-05 selected and source-audited. The even residual-shell sequence S030--S033 is now stopped as an exclusion route: three-term Fano lines, their four-term complements, and the full seven-term residual all leave the common-torsion compatibility family intact. S033 identifies its exact full-residual signature as zeta=0 and lambda(r)=m-2. No further proper residual-subset variant is promoted. S034 must reassess genuinely different mechanisms before another proof unit. CAND-02 remains historical/paused.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -327,7 +334,7 @@
     "hidden_property_d_prerequisite": false,
     "rank_two_inverse_eta": "UNCONDITIONAL",
     "search_boundary": "No completion found in bounded current search; non-hit is not openness or novelty evidence",
-    "next_dependency": "D30-01 even-modulus remaining four Fano residual lines only"
+    "next_dependency": "D33-01 genuinely different mechanism reassessment after the stopped even residual-shell route"
   },
   "s023_mathematical_investigation_date": "2026-10-05",
   "cand05_equality_decomposition": {
@@ -427,5 +434,14 @@
     "total_translation_defect": "with s=h_1+h_2+h_3 and tau_i=y_i-x_i, zeta=r-s=u+tau_1+tau_2+tau_3 lies in H and is not controlled by S025--S031",
     "common_torsion_reduction": "u=t and tau_1=tau_2=tau_3=t gives zeta=0, r=s, three complements h_2+h_3, h_1+h_3, h_1+h_2, and four self-complementary half-sums v, all in E(K)",
     "unresolved": "full seven-term residual completion-depth layer; no additional proper residual-subset family, global weight vector, seven-lift classification, odd-m branch or quotient normalization"
+  },
+  "s033_mathematical_investigation_date": "2026-10-05",
+  "cand05_even_total_residual_depth": {
+    "status": "PROGRAMME_PROVED_DEEP_LAYER_WITH_COMMON_TORSION_NONEXCLUSION",
+    "depth_window": "m-3<=lambda(r)<=m-1 for the full canonical seven-term residual sum",
+    "deep_layer": "for w=xi h_1+nu h_2, P=[-xi]_m and Q=[-nu]_m, lambda(w)>=m-3 iff min_{0<=gamma<=Q}[P+a gamma]_m>=m-3-Q; Q=m-3,m-2,m-1 are automatic",
+    "common_torsion": "zeta=0 gives r=h_1+h_2+h_3=(1-a)h_1+2h_2 with exact lambda(r)=m-2",
+    "route_boundary": "the S030--S033 residual-shell family is stopped against another proper residual-subset variant; a genuinely different mechanism must be reassessed before further proof work",
+    "unresolved": "no exclusion of simultaneous positivity for even m>=4; no global k_q/r_q solution, seven-lift classification, odd-m branch, quotient normalization or existence claim"
   }
 }

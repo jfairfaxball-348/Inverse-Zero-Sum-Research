@@ -1064,3 +1064,30 @@ seven-term residual sum `r`, whose extremality depth window is
 total-translation condition. No further proper residual-subset family is
 pre-authorized.
 
+
+## S033 full-residual-depth checkpoint
+
+S033 resolves D32-01 for even `m>=4`. For the canonical full seven-term
+residual sum `r`, the `eta(H)` threshold gives `lambda(r)<=m-1`,
+while any completion of size at most `m-4` would lift with the seven
+residual terms to a forbidden zero sum of length at most `2m-1`. Hence
+
+`m-3<=lambda(r)<=m-1`.
+
+Using only the S029 formula, if
+`w=xi h_1+nu h_2`, `P=[-xi]_m`, and `Q=[-nu]_m`, then
+`lambda(w)>=m-3` is equivalent to
+`min_{0<=gamma<=Q}[P+a gamma]_m >= m-3-Q`.
+
+Thus the three full affine lines with `Q=m-3,m-2,m-1` are automatically
+deep. The S032 common-torsion value
+`s=h_1+h_2+h_3=(1-a)h_1+2h_2` has `P=a-1`, `Q=m-2`;
+its progression omits only residue `m-1`, so `lambda(s)=m-2`.
+Since S032 already proves `s` satisfies the full line/complement
+translation system, the exact surviving defect is
+`zeta=0`, `lambda(r)=m-2`.
+
+The residual-shell route is now stopped against another proper residual-subset
+variant. S034 is a bounded mechanism reassessment, not another shell proof:
+it must identify one genuinely different dependency with a falsifiable
+promotion criterion, or activate an owner strategy blocker if none is credible.

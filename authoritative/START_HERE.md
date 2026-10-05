@@ -10,27 +10,27 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S032 records before later target-specific work, with
+7. The completed S002–S033 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S032 is completed. D31-01 proves that all seven quotient-zero four-term
-residual subsets complementary to the Fano lines also have lift-sums in the
-exact S029 shell `E(K)`. If `r` is the total seven-term residual sum
-and `w_F` a Fano-line lift-sum, then every line/complement pair satisfies
-`w_F in E(K) cap (r-E(K))`. Writing
-`s=h_1+h_2+h_3`, the exact remaining translation defect is
-`zeta=r-s=u+tau_1+tau_2+tau_3 in H`. The common-torsion assignment has
-`zeta=0`, so `r=s`; its three through-`ell` complements are
-`h_2+h_3,h_1+h_3,h_1+h_2`, and its other four complements equal the same
-half-sum `v` as their lines. All are in `E(K)`, so the full fourteen
-line/complement shell system still does not exclude the fixed
-simultaneous-positive coset. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS
-UNKNOWN. S033 is READY for one bounded unit on the full seven-term residual
-sum only.**
+**S033 is completed. D32-01 gives the exact full-residual depth window
+`m-3<=lambda(r)<=m-1`. In the S029 coordinates
+`w=xi h_1+nu h_2`, `P=[-xi]_m`, `Q=[-nu]_m`, the deep layer is
+exactly the set where
+`min_{0<=gamma<=Q}[P+a gamma]_m >= m-3-Q`; in particular the three
+full affine lines with `Q=m-3,m-2,m-1` are always deep. The S032
+common-torsion value has `zeta=0` and
+`r=s=h_1+h_2+h_3=(1-a)h_1+2h_2`. Here `P=a-1`, `Q=m-2`, and
+the S029 progression omits only residue `m-1`, so
+`lambda(r)=m-2`. Thus the full-residual depth test also fails to exclude
+the fixed simultaneous-positive coset. CAND-05 remains SOURCE-DEFINED /
+CURRENT STATUS UNKNOWN. The residual-shell family is now stopped against
+another proper-subset variant; S034 is READY for one bounded reassessment of
+genuinely different mechanisms.**
 
 Selected target:
 
@@ -41,10 +41,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S032 brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S034 reassessment brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S033.
+- Next session: S034.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -122,11 +122,22 @@ the total residual sum and `w_F` is a line sum, the exact coupling is
 `zeta=0` and satisfies all fourteen line/complement shell memberships, so
 the fixed simultaneous-positive coset is still not excluded.
 
-S033 addresses D32-01 only: analyze the completion depth of the full canonical
-seven-term residual sum `r`. Extremality gives
-`m-3<=lambda(r)<=m-1`; classify that deep layer using the S029 distance
-formula and intersect it with the S032 total-translation condition. No further
-proper residual-subset family is pre-authorized.
+S033 resolves D32-01 at the full-residual level. For
+`w=xi h_1+nu h_2`, `P=[-xi]_m`, `Q=[-nu]_m`, the S029 formula gives
+`lambda(w)>=m-3` exactly when
+`min_{0<=gamma<=Q}[P+a gamma]_m>=m-3-Q`. Hence all points with
+`Q in {m-3,m-2,m-1}` are automatically in the deep layer. The
+common-torsion total `s=h_1+h_2+h_3` lies in the `Q=m-2` line and
+has exact depth `m-2`, while S032 already places it in every required
+translate `w_F+E(K)`. Thus the exact surviving defect is
+`zeta=0`, `lambda(r)=m-2`.
+
+The Fano-line, complementary-four-set and full-seven-term completion-depth
+tests have therefore all left the same common-torsion compatibility family
+intact. No further proper residual-subset variant is promoted. S034 is a
+bounded mechanism reassessment: it must identify a genuinely different source
+of rigidity, or stop with an owner strategy blocker if none clears the
+anti-churn bar.
 
 Search non-hits remain non-evidence of openness or novelty.
 

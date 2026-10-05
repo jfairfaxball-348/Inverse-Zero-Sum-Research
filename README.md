@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: S032 completed; the full even-modulus Fano line/complement shell system is compatible, with the exact total-residual translation defect isolated. S033 is READY on the full seven-term residual completion-depth dependency D32-01. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
+**Current stage: S033 completed; the full seven-term residual has depth window `m-3<=lambda(r)<=m-1`, while the surviving common-torsion value `r=h_1+h_2+h_3` has exact depth `m-2`. The residual-shell route is stopped against cosmetic subset variants. S034 is READY for a genuinely different mechanism reassessment. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -15,14 +15,14 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 through B-009 are resolved. S033 is the
-live bounded CAND-05 full-residual-depth session.
+and no next-session prompt.** B-006 through B-009 are resolved. S034 is the
+live bounded CAND-05 mechanism-reassessment session.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-05 is selected at exact all-`m` ordinary inverse-`eta` scope.
 2. Publication gate — OPEN: E-JC remains lead; JNT is a natural comparable/backup.
-3. Mathematical-investigation gate — OPEN: S033 is authorized for D32-01 only.
+3. Mathematical-investigation gate — OPEN: S034 is authorized for the bounded D33-01 mechanism reassessment only.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain

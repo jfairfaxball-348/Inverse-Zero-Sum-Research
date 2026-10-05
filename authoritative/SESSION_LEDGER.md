@@ -594,3 +594,18 @@ computation remain CLOSED.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S033, D32-01 full seven-term residual depth only.
 
+
+## S033 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S033 | COMPLETED BOUNDED INVESTIGATION; D32-01 FULL-RESIDUAL DEEP LAYER / COMMON-TORSION NONEXCLUSION | 5d494b66896db9174ff44ed3d8fd675d83cbcbfa | Exact depth window and deep-layer criterion; common-torsion total has `zeta=0`, exact `lambda(r)=m-2`; residual-shell route stopped | [S033 closeout](../sessions/S033/CLOSEOUT.md) |
+
+- Live `main` was pinned at the completed S032 authority checkpoint and S033 was unique.
+- D32-01 proves `m-3<=lambda(r)<=m-1` for the full seven-term residual and gives the exact S029-coordinate deep-layer criterion.
+- The target is not excluded: the common-torsion total `r=h_1+h_2+h_3` has exact depth `m-2` and still satisfies the S032 total-translation condition.
+- A bounded enumeration covered all 172 unit cases with even `4<=m<=40` and found zero discrepancies for the exact common-torsion depth and deep-layer criterion.
+- No new proper residual-subset family, global weight solution, seven-lift classification, odd-modulus analysis, quotient normalization or existence claim is made.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S034, D33-01 mechanism reassessment only; it is not a new residual-shell test.
