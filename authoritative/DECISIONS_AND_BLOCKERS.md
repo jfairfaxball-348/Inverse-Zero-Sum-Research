@@ -641,3 +641,15 @@ CAND-02 remains historical/paused.
 Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
+
+## S032 CAND-05 complementary-Fano-plane decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-095 | 2026-10-05 | Record D31-01 as a successful complete Fano line/complement shell analysis for even `m>=4`, but not an exclusion. All seven complementary four-term residual sums lie in `E(K)`; line/complement coupling is exactly `w_F in E(K) cap (r-E(K))`, with total-residual translation defect `zeta=r-(h_1+h_2+h_3)=u+tau_1+tau_2+tau_3 in H`. The common-torsion assignment has `zeta=0` and satisfies all fourteen shell constraints. | `sessions/S032/EVEN_COMPLEMENTARY_FANO_PLANES.md`. |
+| D-096 | 2026-10-05 | Promote exactly one successor, D32-01, and schedule S033 only on the completion-depth layer of the full canonical seven-term residual sum `r`. Use the existing S029 distance formula and S032 total-translation condition; do not inspect another proper residual-subset family, solve global weights/lifts, treat odd `m`, normalize quotient automorphisms, or claim existence. | S032 isolates the total residual sum as the exact remaining translation variable; another arbitrary subset variant would be churn. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.
+
