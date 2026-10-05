@@ -17,18 +17,18 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S030 is completed. D29-01 proves that the lift-sum of each of the three
-residual quotient-zero triples through `ell` lies in the exact S029 shell
-`E(K)`. Writing `p_i=x_{q_i}+x_{q_i+ell}`, their shared lift is
-equivalent to `u in cap_i(E(K)-p_i)`, or
-`w in E(K) cap (E(K)-d_2) cap (E(K)-d_3)`. The two relative
-pair-sums `d_2,d_3` are not controlled by S025--S029 when a non-fixed
-coset may contain a zero-weight member. The constraints remain compatible:
-using the fixed torsion `t`, the boundary `u=t`, and the same
-`t`-translation in the other bucket fibres makes the three shell points
-exactly `h_1,h_2,h_3`. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS
-UNKNOWN. S031 is READY for one bounded unit on the remaining four Fano residual
-lines.**
+**S031 is completed. D30-01 proves that the four residual quotient-zero Fano
+triples not containing `ell` also have lift-sums in the exact S029 shell
+`E(K)`; together with S030, all seven Fano residual line sums lie in the
+shell. The full seven-line system still does not exclude the fixed
+simultaneous-positive coset. In the common-torsion assignment `u=t` and
+the same `t`-translation in all three bucket fibres, the three lines through
+`ell` are `h_1,h_2,h_3`, while the other four collapse to one half
+`v` of `h_1+h_2+h_3`. The surviving half-lift coordinate is an
+`H[2]` torsor, and that half-fibre always meets the shell at
+`v=c h_1+h_2` with `2c=1-a`. CAND-05 remains SOURCE-DEFINED /
+CURRENT STATUS UNKNOWN. S032 is READY for one bounded unit on the seven
+complementary quotient-zero four-term residual subsets.**
 
 Selected target:
 
@@ -39,10 +39,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S031 brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S032 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S031.
+- Next session: S032.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -104,10 +104,18 @@ equivalent to an intersection of three translated shells. The target is not
 excluded because the pair-sum translations remain uncontrolled and a common
 torsion assignment realizes the three shell points `h_1,h_2,h_3`.
 
-S031 addresses D30-01 only: apply the shell/lifting test to the remaining four
-quotient-zero Fano residual triples and combine those memberships with S030.
-It must stop before global weights/lifts, odd `m`, quotient normalization or
-an existence/full-classification claim.
+S031 resolves D30-01 completely at the Fano-triple level. The four
+non-`ell` line sums are an affine parity family
+`X+sum e_i tau_i`, and the full seven-line shell system remains compatible
+because a common two-torsion translation reduces the new four lines to an
+`H[2]`-movable half of `h_1+h_2+h_3`; an explicit half always lies on
+`h_2+<h_1> subset E(K)`.
+
+S032 addresses D31-01 only: apply the shell/lifting test to the seven
+quotient-zero four-term residual subsets complementary to the Fano lines and
+test line/complement coupling through the total seven-term residual sum. It
+must stop before arbitrary residual subsets, global weights/lifts, odd `m`,
+quotient normalization or an existence/full-classification claim.
 
 Search non-hits remain non-evidence of openness or novelty.
 
