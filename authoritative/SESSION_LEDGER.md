@@ -399,3 +399,15 @@ computation remain CLOSED.
 - CAND-02 remains historical/paused; Xue Li Stage-1 remains CAND-02-specific
   and REPLY PENDING.
 - Active owner blockers: NONE.
+
+## S022 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S022 | COMPLETED CAND-05 DUE DILIGENCE; MATHEMATICAL GATE REOPENED | 2280ac2d720729459bdc01c70b44897e09bcd930 | Exact ordinary-eta theorem boundary; deep bounded current-status audit; unconditional rank-two inverse-eta input; D22-01 equality-decomposition dependency | [S022 closeout](../sessions/S022/CLOSEOUT.md) |
+
+- No proof search, computation, formalisation or outreach ran.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN; non-hits are not openness evidence.
+- Property D is not a hidden CAND-05 prerequisite.
+- Active owner blockers: NONE.
+- S023 is READY on D22-01 only.

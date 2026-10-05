@@ -571,3 +571,29 @@ source result.
 The controlling direct source remains previously recorded ZS-10; S022 must
 refresh and deepen the target-specific literature record before any additional
 source claim is promoted.
+
+## S022 CAND-05 source and claim additions
+
+| ID | Source | Exact boundary |
+| --- | --- | --- |
+| ZS-56 | Girard--Schmid, *Direct zero-sum problems for certain groups of rank three*, JNT 197 (2019), arXiv:1806.07636 | Primary direct source: `eta(G_m)=6m+2`, equal-factor subgroup/quotient proof, and unconditional rank-two inverse `eta` theorem. |
+| ZS-57 | Girard--Schmid, *Inverse zero-sum problems for certain groups of rank three*, Acta Math. Hungar. 160 (2020), arXiv:1809.03178 | Inverse `eta` for `C_2+C_2+C_{2n}` only; records `C_2^3` eta endpoint. |
+| ZS-58 | Schmid, *Restricted inverse zero-sum problems in groups of rank 2*, QJM 63 (2012) | Historical rank-two inverse source. |
+| ZS-59 | Grynkiewicz--Liu, *A Multiplicative Property for Zero-Sums II*, E-JC 29(3) (2022), arXiv:2109.10309 | Rank-two restricted-length inverse continuum; not rank three. |
+| ZS-60 | Li--Yin, *On the existence of zero-sum subsequences of distinct lengths over certain groups of rank three*, Acta Math. Hungar. 174 (2024) | Same broad ambient family, different `disc` invariant. |
+| ZS-61 | Hui--Zhong, inverse Narkiewicz-sense eta, JCTA 224 (2026), 106238 | Different invariant and rank. |
+| ZS-62 | Zhao--Hong, restricted-length zero sums, Colloq. Math. online 2026 | Different direct cutoff regime. |
+| ZS-63 | Zeng--Yuan, *On Sequences Without Short Zero-Sum Subsequences*, E-JC 30(4) (2023), P4.21 | Height-based short cutoff under extra hypotheses, not ordinary `eta`. |
+| ZS-64 | E-JC official About/Submissions/AI material, checked 2026-10-05 | Venue scope and AI-policy boundary only. |
+| ZS-65 | Elsevier journal generative-AI policy, checked 2026-10-05 | Publisher policy boundary for JNT backup only. |
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-106 | SOURCE_RESULT | `eta(C_2+C_{2m}+C_{2m})=6m+2`; CAND-05 extremals have length `6m+1` and avoid every nonempty zero sum of length `<=2m`. | ZS-56. |
+| C-107 | TRANSFORMATION_BOUNDARY | Automorphisms preserve CAND-05; arbitrary translation is not a valid ordinary-`eta` normalization because forbidden lengths vary. | Definition-level consequence. |
+| C-108 | SOURCE_PROOF_BOUNDARY | The direct equal-factor upper bound uses `C_m^2` and quotient `C_2^3`, but the source does not state an equality-case inverse decomposition. | ZS-56; no global literature claim. |
+| C-109 | SOURCE_TOOL | Rank-two inverse `eta` is unconditional; Property D is a neighboring inverse-EGZ input, not a CAND-05 prerequisite. | ZS-56/ZS-58. |
+| C-110 | COMPARATOR_BOUNDARY | The closest checked rank-three inverse-`eta` theorem is for `C_2+C_2+C_{2n}`, not CAND-05. | ZS-57. |
+| C-111 | PROGRAMME_STATUS_BOUNDARY | No CAND-05 completion was found in the bounded S022 current search. | S022 source audit; non-hit is not openness or novelty evidence. |
+| C-112 | PROGRAMME_GATE_DECISION | Mathematical investigation is reopened for one bounded dependency D22-01. | D-074--D-075. |
+| C-113 | PROGRAMME_SIGNIFICANCE_ASSESSMENT | Full all-`m`, broad theorem-driven subfamily, or genuinely reusable reduction may meet the publication objective; isolated small-`m` catalogues do not automatically. | S022 assessment, not an acceptance prediction. |

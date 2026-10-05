@@ -483,3 +483,15 @@ authorization.
 
 Xue Li's pending CAND-02 message remains separate and must not be interpreted
 as CAND-05 willingness, endorsement, novelty certification or approval.
+
+## S022 CAND-05 independent-review route
+
+- **David J. Grynkiewicz:** provisional first independent status/proposal lead;
+  strong inverse and restricted-length zero-sum expertise.
+- **Pingzhi Yuan:** strong alternative with current short-zero-sum expertise.
+- **Benjamin Girard / Wolfgang A. Schmid:** controlling-source experts; because
+  they authored the direct and closest inverse baselines, they are not treated
+  as the default independent route.
+
+No CAND-05 outreach was prepared or sent. External-review gate remains CLOSED.
+Xue Li's pending Stage-1 message remains strictly CAND-02-specific.

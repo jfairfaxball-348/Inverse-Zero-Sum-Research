@@ -529,3 +529,14 @@ experiments or formalisation while the mathematical-investigation gate is
 CLOSED. If S022 finds a known completion, material overlap, hidden major
 prerequisite or significance problem, it must activate the appropriate blocker
 rather than forcing the gate open.
+
+## S022 CAND-05 due-diligence decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-073 | 2026-10-05 | CAND-05 survives S022 as SOURCE-DEFINED / CURRENT STATUS UNKNOWN. No checked completion was found, but the bounded non-hit is not openness or novelty evidence. No owner blocker is activated. | S022 due-diligence and source audit. |
+| D-074 | 2026-10-05 | Reopen the mathematical-investigation gate for CAND-05. | Exact direct threshold and unconditional rank-two inverse-eta input are secure; no hidden Property-D/direct-constant prerequisite or significance blocker was identified. |
+| D-075 | 2026-10-05 | Restrict S023 to D22-01, the equality-case decomposition through `H=2G_m` and `Q=C_2^3`. Stop at the first failed implication; if successful, do not begin full lift classification in S023. | Anti-churn response to S020 and FL-071. |
+| D-076 | 2026-10-05 | Provisional CAND-05 independent status/proposal route: David J. Grynkiewicz first lead, Pingzhi Yuan alternative; Girard/Schmid remain controlling-source experts. No outreach is authorized or sent. | S022 reviewer refresh. |
+
+Active owner blockers remain **NONE**.

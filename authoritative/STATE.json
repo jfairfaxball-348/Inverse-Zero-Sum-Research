@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S021",
-  "next_session": "S022",
-  "next_brief": "authoritative/S022_CANDIDATE_5_DUE_DILIGENCE_BRIEF.md",
-  "stage": "P1_CAND05_DUE_DILIGENCE_BEFORE_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S022_READY_CAND05_DUE_DILIGENCE",
+  "last_completed_session": "S022",
+  "next_session": "S023",
+  "next_brief": "authoritative/S023_CANDIDATE_5_EQUALITY_DECOMPOSITION_BRIEF.md",
+  "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
+  "programme_status": "S023_READY_CAND05_EQUALITY_DECOMPOSITION",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 is selected. S022 must perform full target-specific prior-art/current-status, structural-source, publication and reviewer due diligence before proof work.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; current status remains unknown. S023 is one bounded equality-decomposition unit.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -181,6 +181,11 @@
       "id": "S021",
       "status": "COMPLETED",
       "record": "sessions/S021/CLOSEOUT.md"
+    },
+    {
+      "id": "S022",
+      "status": "COMPLETED",
+      "record": "sessions/S022/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -189,12 +194,12 @@
   "s002_source_refresh_date": "2026-10-02",
   "s003_source_refresh_date": "2026-10-02",
   "s004_source_refresh_date": "2026-10-02",
-  "intended_first_reviewer": "CAND-05 reviewer route TBD pending S022 target-specific reassessment; David J. Grynkiewicz is a provisional independent lead from S021, while Girard/Schmid are exact baseline experts whose independence role must be assessed",
+  "intended_first_reviewer": "CAND-05 provisional independent route: David J. Grynkiewicz first status/proposal lead; Pingzhi Yuan strong alternative. Girard/Schmid are controlling-source experts; no CAND-05 outreach sent.",
   "outreach_status": "CAND-05 SELECTED; NO CAND-05 OUTREACH PREPARED OR SENT. Historical Xue Li CAND-02 Stage-1 message remains owner-reported SENT 2026-10-02 / REPLY PENDING; no reviewer confirmed.",
   "s005_source_refresh_date": "2026-10-02",
   "s006_source_refresh_date": "2026-10-02",
   "s007_mathematical_investigation_date": "2026-10-03",
-  "mathematical_investigation_gate": "CLOSED",
+  "mathematical_investigation_gate": "OPEN",
   "gate_semantics": {
     "target_gate": "OPEN means the exact mathematical target and contribution scope are owner-authorized and source-disciplined.",
     "publication_gate": "OPEN means at least one relevant substantive-AI-compatible journal route has been verified; it is not submission approval or an acceptance prediction.",
@@ -208,7 +213,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 is the selected target. S022 is source/status/proof-readiness only; mathematical investigation is CLOSED until that audit passes. CAND-02 is historical and paused. Its D-050/D-057/D-063 route stops remain authoritative for CAND-02 history but do not automatically transfer as mathematical prohibitions to CAND-05.",
+  "current_route_disposition": "CAND-05 selected and source-audited. S023 is limited to D22-01: equality-case decomposition for H=2G_m and Q=C_2^3. CAND-02 remains historical/paused.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -238,5 +243,16 @@
     "cand04_status": "retired; no positive primary evidence removing direct-EGZ dependency",
     "second_new_candidate_slot": "not filled; no second candidate cleared the source/status/prerequisite bar"
   },
-  "cand05_selection_date": "2026-10-05"
+  "cand05_selection_date": "2026-10-05",
+  "s022_source_refresh_date": "2026-10-05",
+  "cand05_due_diligence": {
+    "status": "SURVIVED_BOUNDED_S022_AUDIT_CURRENT_STATUS_UNKNOWN",
+    "direct_threshold": "eta(C_2+C_{2m}+C_{2m})=6m+2 for m>=1",
+    "kernel": "H=2G_m ~= C_m^2",
+    "quotient": "G_m/H ~= C_2^3",
+    "hidden_property_d_prerequisite": false,
+    "rank_two_inverse_eta": "UNCONDITIONAL",
+    "search_boundary": "No completion found in bounded current search; non-hit is not openness or novelty evidence",
+    "next_dependency": "D22-01 equality-case decomposition only"
+  }
 }

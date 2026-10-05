@@ -713,3 +713,18 @@ No CAND-02 programme theorem is automatically reclassified as a CAND-05
 theorem merely because the ambient group is identical. CAND-05 has the
 stronger no-short-zero-sum hypothesis and a different invariant identity;
 reuse requires an exact proof or source transfer.
+
+## S022 CAND-05 target audit
+
+Selected target unchanged: classify all length-`6m+1` ordinary-`eta`
+extremals over `C_2\oplus C_{2m}\oplus C_{2m}` for every `m>=2`.
+
+Status: **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. The direct threshold
+`eta=6m+2` is established. The equal-factor proof uses
+`H=2G_m\cong C_m^2` and `Q\cong C_2^3` but supplies no stated equality
+classification. The rank-two inverse-`eta` input on `C_m^2` is
+unconditional; Property D is not required.
+
+Small-parameter and arithmetic-subfamily searches found no target-specific
+completion in the bounded audit. Those non-hits are not openness evidence.
+Mathematical investigation is OPEN for S023 D22-01 only.

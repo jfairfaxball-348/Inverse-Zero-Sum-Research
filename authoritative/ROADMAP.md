@@ -827,3 +827,15 @@ survives cleanly, S022 may reopen it and schedule exactly one bounded S023
 mathematical unit with a concrete dependency and anti-churn stop condition.
 CAND-02 remains historical and paused; no proof/reviewer status transfers by
 ambient-group identity alone.
+
+## Post-S022 CAND-05 route
+
+S022 is completed. CAND-05 survived exact-current-status, structural-source,
+publication and reviewer due diligence without an identified completion or
+hidden major prerequisite. Mathematical investigation is reopened.
+
+S023 is READY on D22-01 only: equality-case decomposition of the sharp
+ordinary-`eta` subgroup/quotient bound through `H=2G_m\cong C_m^2` and
+`Q\cong C_2^3`. Stop at the first failed equality implication. If D22-01
+succeeds, the downstream lift-compatibility problem is not automatically
+authorized; select at most one exact next dependency.

@@ -17,10 +17,11 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S021 is completed and the owner has selected shortlist option 3:
-CAND-05. B-009 is resolved. CAND-05 is now the programme's exact selected
-target. S022 is READY as a full CAND-05 due-diligence and proof-readiness
-session before mathematical investigation resumes.**
+**S022 is completed. CAND-05 survived the full source-first due-diligence and
+proof-readiness audit without an identified completion, hidden Property-D/direct-
+constant prerequisite, or significance blocker. Its status remains
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S023 is READY for one bounded
+equality-decomposition unit.**
 
 Selected target:
 
@@ -29,44 +30,35 @@ Selected target:
 > `eta(G_m)-1=6m+1` having no nonempty zero-sum subsequence of length at
 > most `exp(G_m)=2m`.
 
-- Target gate: OPEN — the owner selected an exact theorem identity.
-- Publication gate: OPEN — E-JC remains the leading eligible route, subject to
-  S022's CAND-05-specific significance/fit refresh.
-- Mathematical-investigation gate: **CLOSED temporarily** — CAND-05 has not yet
-  received the full target-specific due-diligence/source-baseline audit.
+- Target gate: OPEN.
+- Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
+- Mathematical-investigation gate: **OPEN** for the bounded S023 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S022.
+- Next session: S023.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
-  REPLY PENDING, and does not transfer to CAND-05.
+  REPLY PENDING.
 
-CAND-02 is now a historical, paused target. Its S006--S020 mathematics remains
-durable programme evidence. CAND-02-specific route-stop decisions do not
-silently become theorem-level restrictions on CAND-05; any reused statement or
-mechanism must be justified for the stronger ordinary-`eta` hypothesis.
+CAND-02 remains historical/paused. Its S006--S020 mathematics is durable
+programme evidence but does not automatically constrain CAND-05.
 
 ## Current mathematical frontier
 
-Preserve S008's odd-fiber decomposition and Property-D scope, S009's labelled
-footprint, S010-P3/P4, S011's original-position lifting defect and S012's exact
-progressive-splice cardinality gap. The local-hole/capacity route remains
-stopped.
+S022 reconstructed the direct route through `H=2G_m\cong C_m^2` and
+`Q=G_m/H\cong C_2^3`:
+`eta(G_m)<=2(eta(H)-1)+eta(Q)=6m+2`, sharply.
 
-S013 compared three distinct source routes against those exact hypotheses:
+The direct proof supplies the value, not an equality-case inverse
+classification. The needed rank-two inverse `eta` theorem on `C_m^2` is
+unconditional; Property D is not a hidden CAND-05 prerequisite.
 
-- restricted-length/local zero-sum results: current universal cutoffs operate
-  at or above the exponent, while S012 needs a zero sum of length at most
-  `c+1<=m-1`;
-- homocyclic `C_m^2` stability/equality: no new checked all-`m`
-  ordinary-EGZ stability/equality input was identified beyond the already-used
-  Property-D route; current `D_k`, `eta^N` and `disc` results impose
-  different forbidden configurations;
-- eta-core/equality reduction: Girard--Schmid 2019 remains conditional at the
-  exact D6-08 point, while the 2020 inverse theorem covers a different family
-  and adjacent invariants do not produce an ordinary eta-free `6m+1` core.
+S023 addresses D22-01 only: whether every CAND-05 extremal decomposes into
+`3m-3` quotient-zero pairs plus a 7-term `C_2^3` eta-extremal residual and
+induces a rank-two eta-extremal sequence of pair sums. No part of that
+decomposition is authoritative until S023 proves it.
 
-No source non-hit is an openness or novelty claim. Full details:
-[S013 source-route comparison](../sessions/S013/SOURCE_ROUTE_COMPARISON.md).
+Search non-hits remain non-evidence of openness or novelty. See the S022 source
+and dependency records.
 
 ## Post-S013 owner strategy resolution
 

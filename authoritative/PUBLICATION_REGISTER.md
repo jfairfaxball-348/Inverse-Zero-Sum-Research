@@ -413,3 +413,16 @@ presumed substantial enough for the programme's publication objective.
 
 No manuscript, submission authorization, submission, acceptance or publication
 exists.
+
+## S022 CAND-05 publication refresh
+
+E-JC remains the leading eligible venue after the 2026-10-05 official
+scope/AI-policy check. JNT remains a natural comparable/backup because it
+published the controlling direct theorem and Elsevier's current policy permits
+responsible AI-assisted research with human oversight, verification and
+disclosure.
+
+A full all-`m` classification would clear the programme significance screen
+if correct and genuinely new. A broad structural subfamily or reusable reduction
+may also be meaningful. An isolated small-`m` catalogue is not presumed
+sufficient. This is eligibility/fit only, not an acceptance prediction.

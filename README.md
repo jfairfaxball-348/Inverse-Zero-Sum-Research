@@ -4,10 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-05 selected; full target-specific due diligence before
-mathematical investigation. B-009 is resolved. S022 is READY. CAND-02 is now
-historical/paused, and its pending Xue Li Stage-1 outreach remains
-CAND-02-specific.**
+**Current stage: S022 completed; CAND-05 survived full target-specific due diligence and the mathematical-investigation gate is OPEN. S023 is READY on the single equality-decomposition dependency D22-01. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -18,14 +15,14 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 through B-009 are resolved. S022 is the
-live source-first CAND-05 due-diligence session.
+and no next-session prompt.** B-006 through B-009 are resolved. S023 is the
+live bounded CAND-05 equality-decomposition session.
 
 ## Current readiness dimensions
 
-1. Target gate — OPEN: CAND-05 is explicitly selected at exact all-`m` ordinary inverse-`eta` scope.
-2. Publication gate — OPEN: E-JC remains the leading eligible route; S022 refreshes exact CAND-05 significance/fit.
-3. Mathematical-investigation gate — CLOSED temporarily: S022 must complete full CAND-05 due diligence before proof work.
+1. Target gate — OPEN: CAND-05 is selected at exact all-`m` ordinary inverse-`eta` scope.
+2. Publication gate — OPEN: E-JC remains lead; JNT is a natural comparable/backup.
+3. Mathematical-investigation gate — OPEN: S023 is authorized for D22-01 only.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
@@ -227,3 +224,9 @@ reviewer-route reassessment.
 CAND-02's S006--S020 mathematics remains durable historical programme evidence,
 but no lemma, route stop or reviewer status transfers automatically merely
 because CAND-05 uses the same ambient group.
+
+## S022 CAND-05 due-diligence checkpoint
+
+S022 reconstructed the primary direct proof for `eta(C_2+C_{2m}+C_{2m})=6m+2`, confirmed the canonical `C_m^2 -> G_m -> C_2^3` architecture, and confirmed that the needed rank-two inverse-`eta` theorem is unconditional. Property D is not a hidden CAND-05 prerequisite. A deep bounded current search found no checked target completion; this is not evidence of openness or novelty.
+
+S023 is limited to the equality case of the sharp inductive `eta` bound: prove or refute the exact quotient-zero-pair / seven-term-residual / kernel-extremal decomposition. At the first failed implication it must stop; it may not begin full lift classification.

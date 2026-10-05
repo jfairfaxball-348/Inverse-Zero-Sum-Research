@@ -164,3 +164,12 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-074 | 2026-10-05 | Two inverse problems on the same ambient group can look interchangeable even when one forbids one exact length and the other forbids all short zero sums. Reusing the old programme wholesale would blur invariant identity and could import both false constraints and irrelevant route stops. | Treat CAND-05 as a new target. Re-audit sources and re-prove any transferred structural statement under the ordinary-`eta` hypothesis before using it. | D-070--D-072 |
+
+## S022 CAND-05 proof-readiness lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-075 | 2026-10-05 | Shared ambient groups can conceal different prerequisite structure: CAND-02's inverse-EGZ kernel route raised Property D, while CAND-05's inverse-`eta` kernel theorem is unconditional. | Re-audit invariant-specific sources before transferring prerequisites. | S022 |
+| FL-076 | 2026-10-05 | A sharp inductive direct bound can look like an inverse classification even when no equality rigidity is stated. | Treat equality decomposition as a separate dependency and prove it explicitly. | S022 |
+| FL-077 | 2026-10-05 | Stronger eta-freeness may encourage premature branching into many lift architectures. | S023 is D22-01 only; authorize at most one downstream lift bottleneck after it. | S022 |
+| FL-078 | 2026-10-05 | Quotient symmetry may be over-normalized if quotient automorphisms are not known to lift uniformly for all arithmetic regimes. | Verify liftability in `Aut(G_m)` before any later quotient normalization. | S022 |
