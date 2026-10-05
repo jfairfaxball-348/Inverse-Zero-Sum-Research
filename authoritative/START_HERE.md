@@ -10,18 +10,17 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S020 records before later target-specific work, with
+7. The completed S002–S023 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S022 is completed. CAND-05 survived the full source-first due-diligence and
-proof-readiness audit without an identified completion, hidden Property-D/direct-
-constant prerequisite, or significance blocker. Its status remains
-SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S023 is READY for one bounded
-equality-decomposition unit.**
+**S023 is completed. D22-01 succeeds in full: every CAND-05 extremal has the
+exact quotient equality decomposition and every maximal pairing induces a
+rank-two ordinary-eta extremal. CAND-05 remains SOURCE-DEFINED / CURRENT
+STATUS UNKNOWN. S024 is READY for one bounded pairing-choice-rigidity unit.**
 
 Selected target:
 
@@ -32,10 +31,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S023 brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S024 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S023.
+- Next session: S024.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -44,21 +43,23 @@ programme evidence but does not automatically constrain CAND-05.
 
 ## Current mathematical frontier
 
-S022 reconstructed the direct route through `H=2G_m\cong C_m^2` and
-`Q=G_m/H\cong C_2^3`:
-`eta(G_m)<=2(eta(H)-1)+eta(Q)=6m+2`, sharply.
+S023 proves the equality case of the sharp subgroup/quotient bound. Every
+CAND-05 extremal has no term in `H=2G_m`; every maximal quotient-zero
+extraction consists of exactly `3m-3` same-fibre pairs; the seven residual
+terms map bijectively to the nonzero elements of `C_2^3`; and every induced
+pair-sum sequence is a length-`3m-3` ordinary-`eta` extremal over
+`H\cong C_m^2`.
 
-The direct proof supplies the value, not an equality-case inverse
-classification. The needed rank-two inverse `eta` theorem on `C_m^2` is
-unconditional; Property D is not a hidden CAND-05 prerequisite.
+The unconditional rank-two inverse-`eta` theorem therefore applies to every
+maximal pairing. What S023 does not prove is that the induced kernel sequence
+is independent of the residual/pairing choice inside a quotient fibre.
 
-S023 addresses D22-01 only: whether every CAND-05 extremal decomposes into
-`3m-3` quotient-zero pairs plus a 7-term `C_2^3` eta-extremal residual and
-induces a rank-two eta-extremal sequence of pair sums. No part of that
-decomposition is authoritative until S023 proves it.
+S024 addresses D23-01 only: compare two such kernel extremals differing in one
+pair sum and test whether Girard--Schmid 2019 Lemma 4.2 forces every nonzero
+quotient fibre to be monochromatic. No seven-lift or multiplicity
+classification is authorized in S024.
 
-Search non-hits remain non-evidence of openness or novelty. See the S022 source
-and dependency records.
+Search non-hits remain non-evidence of openness or novelty.
 
 ## Post-S013 owner strategy resolution
 
@@ -337,3 +338,16 @@ target survives with mature due diligence, S022 may reopen the gate and prepare
 one bounded S023 dependency; it may not begin S023 mathematics itself.
 
 B-009 is resolved. No reviewer status transfers from CAND-02.
+
+## Frontier after S023
+
+D22-01 succeeds for every `m>=2`. The equality decomposition is now durable
+programme mathematics: no `H`-term; exactly `3m-3` same-fibre quotient-zero
+pairs in a maximal extraction; residual quotient image equal to all seven
+nonzero elements of `C_2^3`; and an ordinary-`eta` extremal pair-sum
+sequence over `C_m^2` for every maximal pairing.
+
+The unresolved issue is now extraction-choice rigidity, not existence of the
+decomposition. S024 is limited to D23-01 and may use the already-cited
+rank-two one-change rigidity lemma after rechecking its hypotheses. It must
+not proceed to a full lift classification.

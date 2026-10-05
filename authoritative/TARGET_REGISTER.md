@@ -728,3 +728,21 @@ unconditional; Property D is not required.
 Small-parameter and arithmetic-subfamily searches found no target-specific
 completion in the bounded audit. Those non-hits are not openness evidence.
 Mathematical investigation is OPEN for S023 D22-01 only.
+
+## S023 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+D22-01 is now programme-proved. Every length-`6m+1` CAND-05 extremal has no
+term in `H=2G_m`; all seven nonzero `C_2^3` quotient fibres have odd
+multiplicity; a maximal same-fibre pairing has exactly `3m-3` pairs and leaves
+one residual term in each fibre; and every induced pair-sum sequence is an
+ordinary-`eta` extremal over `C_m^2`.
+
+This is an all-`m` structural reduction, not the final classification and not a
+novelty certificate. The first remaining lift dependency is D23-01:
+pairing-choice rigidity / quotient-fibre monochromaticity. S024 is limited to
+that statement.

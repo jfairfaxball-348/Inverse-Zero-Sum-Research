@@ -426,3 +426,15 @@ A full all-`m` classification would clear the programme significance screen
 if correct and genuinely new. A broad structural subfamily or reusable reduction
 may also be meaningful. An isolated small-`m` catalogue is not presumed
 sufficient. This is eligibility/fit only, not an acceptance prediction.
+
+## S023 publication boundary
+
+S023 produces a reusable all-`m` equality decomposition for the selected
+CAND-05 target. It materially narrows the inverse problem to lift compatibility
+above seven fixed nonzero quotient classes, but it is an internal programme
+result only.
+
+No actual-result novelty/significance audit, independent mathematical review,
+formal verification, manuscript, submission authorization, submission,
+acceptance, or publication has occurred. E-JC remains the leading eligible
+route and JNT the recorded backup under the S022 policy refresh.

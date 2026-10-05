@@ -540,3 +540,14 @@ rather than forcing the gate open.
 | D-076 | 2026-10-05 | Provisional CAND-05 independent status/proposal route: David J. Grynkiewicz first lead, Pingzhi Yuan alternative; Girard/Schmid remain controlling-source experts. No outreach is authorized or sent. | S022 reviewer refresh. |
 
 Active owner blockers remain **NONE**.
+
+## S023 CAND-05 equality-decomposition decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-077 | 2026-10-05 | Record S023-P1--P4 as programme-proved bounded mathematics. D22-01 succeeds: no CAND-05 extremal contains an `H`-term; every maximal quotient-zero extraction consists of exactly `3m-3` same-fibre pairs plus a seven-term residual mapping to all seven nonzero elements of `C_2^3`; every induced pair-sum sequence is a length-`3m-3` ordinary-`eta` extremal over `H=C_m^2`. | `sessions/S023/EQUALITY_DECOMPOSITION.md`; ZS-56/ZS-57 source inputs. |
+| D-078 | 2026-10-05 | Promote exactly one successor, D23-01, and schedule S024 on pairing-choice rigidity. Recheck Girard--Schmid 2019 Lemma 4.2 on two kernel eta-extremals differing in one pair sum; test only whether quotient fibres are monochromatic. Do not continue in S024 to classify the seven lifts or multiplicity vector. | S023 extraction-choice boundary and the S022 anti-churn rule. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.

@@ -839,3 +839,18 @@ ordinary-`eta` subgroup/quotient bound through `H=2G_m\cong C_m^2` and
 `Q\cong C_2^3`. Stop at the first failed equality implication. If D22-01
 succeeds, the downstream lift-compatibility problem is not automatically
 authorized; select at most one exact next dependency.
+
+## S023 equality-decomposition checkpoint
+
+S023 proves D22-01 in full for CAND-05. Equality in the standard
+subgroup/quotient `eta` bound is rigid enough to force no `H`-term, exactly
+`3m-3` quotient-zero same-fibre pairs, and a seven-term residual whose quotient
+image is all seven nonzero elements of `C_2^3`. Every maximal pairing induces
+a length-`3m-3` ordinary-`eta` extremal over `H ~= C_m^2`, so the
+unconditional rank-two inverse theorem is now genuinely available.
+
+This is a reusable all-`m` reduction, but it is not yet the requested
+classification. The precise remaining freedom is extraction choice inside the
+seven quotient fibres. S024 is therefore restricted to D23-01: test whether
+the cited rank-two one-change rigidity lemma forces each quotient fibre to be
+monochromatic. No broader lift classification is pre-authorized.

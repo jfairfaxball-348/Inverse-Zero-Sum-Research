@@ -495,3 +495,14 @@ as CAND-05 willingness, endorsement, novelty certification or approval.
 
 No CAND-05 outreach was prepared or sent. External-review gate remains CLOSED.
 Xue Li's pending Stage-1 message remains strictly CAND-02-specific.
+
+## S023 external-review boundary
+
+S023 sent no outreach. The equality-decomposition theorem is an internal
+programme result and has not received independent mathematical scrutiny.
+
+The CAND-05 reviewer route remains David J. Grynkiewicz as provisional first
+status/proposal lead, Pingzhi Yuan as a strong alternative, and
+Girard/Schmid as controlling-source experts rather than the default independent
+route. External-review gate remains CLOSED. Xue Li's pending Stage-1 message
+remains strictly CAND-02-specific.

@@ -597,3 +597,16 @@ source claim is promoted.
 | C-111 | PROGRAMME_STATUS_BOUNDARY | No CAND-05 completion was found in the bounded S022 current search. | S022 source audit; non-hit is not openness or novelty evidence. |
 | C-112 | PROGRAMME_GATE_DECISION | Mathematical investigation is reopened for one bounded dependency D22-01. | D-074--D-075. |
 | C-113 | PROGRAMME_SIGNIFICANCE_ASSESSMENT | Full all-`m`, broad theorem-driven subfamily, or genuinely reusable reduction may meet the publication objective; isolated small-`m` catalogues do not automatically. | S022 assessment, not an acceptance prediction. |
+
+## S023 CAND-05 equality-decomposition claims
+
+Proof / source-check date: **2026-10-05**. No new source ID is added; S023 uses
+the already-audited ZS-56 and ZS-57 inputs.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-114 | PROGRAMME_PROVED | S023-P1: every CAND-05 extremal has no term in `H=2G_m`. A hypothetical `H` singleton plus `3m-3` quotient-zero blocks gives `eta(H)` kernel sums and lifts a short kernel zero sum to at most `2m` original terms. | `sessions/S023/EQUALITY_DECOMPOSITION.md`; ZS-56 gives the rank-two eta value and quotient setup. |
+| C-115 | PROGRAMME_PROVED | S023-P2: the maximum number of disjoint quotient-zero blocks is exactly `3m-3`; after S023-P1 all such blocks are same-fibre pairs, leaving a residual of length seven. | S023 equality arithmetic; a `3m-2`nd pair would create `eta(H)` pair sums and a forbidden lift. |
+| C-116 | PROGRAMME_PROVED | S023-P3: every maximal pairing leaves exactly one term from each nonzero element of `C_2^3`; hence all seven nonzero quotient-fibre multiplicities are odd. | A residual quotient-zero pair would be the forbidden extra pair; the seven-term quotient residual is the unique `eta(C_2^3)-1` extremal. |
+| C-117 | PROGRAMME_PROVED_FROM_SOURCE | S023-P4: for every maximal pairing, the `3m-3` pair sums form an ordinary-`eta` extremal over `H ~= C_m^2`; the unconditional rank-two inverse-`eta` theorem applies. | S023 lift argument plus ZS-56 Theorem 2.4. Property D is not used. |
+| C-118 | PROGRAMME_BOUNDARY | S023 does not prove that the residual representative or induced kernel sequence is pairing-independent, or that a quotient fibre is monochromatic. | D23-01 is the single promoted lift-compatibility dependency. No downstream classification is claimed. |

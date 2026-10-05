@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S022",
-  "next_session": "S023",
-  "next_brief": "authoritative/S023_CANDIDATE_5_EQUALITY_DECOMPOSITION_BRIEF.md",
+  "last_completed_session": "S023",
+  "next_session": "S024",
+  "next_brief": "authoritative/S024_CANDIDATE_5_PAIRING_CHOICE_RIGIDITY_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S023_READY_CAND05_EQUALITY_DECOMPOSITION",
+  "programme_status": "S024_READY_CAND05_PAIRING_CHOICE_RIGIDITY",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; current status remains unknown. S023 is one bounded equality-decomposition unit.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence and S023 proved the equality decomposition. Current status remains unknown. S024 is one bounded pairing-choice rigidity unit.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -56,7 +56,10 @@
     "S018-P4/P5 PROGRAMME RESULT/BOUNDARY: double deletions obey only kappa=1 parity, all-length multi-incidence has exact divisibility, a sigma(U)-valued deletion has a mod-4 N_2n residue, and the present source cannot separate the remaining 2n/3n bit. No actual freedom or deficit exclusion is claimed.",
     "S019-P1: Frankl/Wilson mod-2 inclusion ranks specialize to rank W_{n,3n}=C(4n+1,n) and rank W_{n,2n}=C(4n+1,n)-1 for n a power of two; the 2n defect is only the aggregate even n-codegree relation.",
     "S019-P2: explicit upper-star and down-lift constructions reproduce all nonempty codegrees through n from arbitrary n- and 4n-block families, while an odd 2n null family on a 3n-set adjusts total parity without changing those codegrees.",
-    "S019-P3: applying the lifts to the exact S016 n-layer and explicit 4n layer realizes every S018 binary constraint and global layer parity for delta=0,1,2. This is an abstract design realization only; the actual zero-sum layers and modulo-4 split remain unresolved."
+    "S019-P3: applying the lifts to the exact S016 n-layer and explicit 4n layer realizes every S018 binary constraint and global layer parity for delta=0,1,2. This is an abstract design realization only; the actual zero-sum layers and modulo-4 split remain unresolved.",
+    "S023-P1 PROGRAMME THEOREM: every CAND-05 extremal has no term in H=2G_m. A hypothetical H singleton plus 3m-3 quotient-zero blocks yields eta(H) kernel sums and a forbidden short lift.",
+    "S023-P2/P3 PROGRAMME THEOREM: every maximal quotient-zero extraction consists of exactly 3m-3 same-fibre pairs plus a seven-term residual containing every nonzero C_2^3 quotient class once; equivalently all seven nonzero quotient-fibre multiplicities are odd.",
+    "S023-P4 PROGRAMME THEOREM: for every maximal pairing, the 3m-3 pair sums form an ordinary-eta extremal over H=C_m^2, so the unconditional rank-two inverse-eta theorem applies. Pairing-choice canonicity is not yet proved."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -186,6 +189,11 @@
       "id": "S022",
       "status": "COMPLETED",
       "record": "sessions/S022/CLOSEOUT.md"
+    },
+    {
+      "id": "S023",
+      "status": "COMPLETED",
+      "record": "sessions/S023/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -213,7 +221,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 selected and source-audited. S023 is limited to D22-01: equality-case decomposition for H=2G_m and Q=C_2^3. CAND-02 remains historical/paused.",
+  "current_route_disposition": "CAND-05 selected and source-audited. S023 proved D22-01 equality decomposition. S024 is limited to D23-01 pairing-choice rigidity / quotient-fibre monochromaticity. CAND-02 remains historical/paused.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -253,6 +261,17 @@
     "hidden_property_d_prerequisite": false,
     "rank_two_inverse_eta": "UNCONDITIONAL",
     "search_boundary": "No completion found in bounded current search; non-hit is not openness or novelty evidence",
-    "next_dependency": "D22-01 equality-case decomposition only"
+    "next_dependency": "D23-01 pairing-choice rigidity only"
+  },
+  "s023_mathematical_investigation_date": "2026-10-05",
+  "cand05_equality_decomposition": {
+    "status": "PROGRAMME_PROVED_BOUNDED_MATHEMATICS",
+    "no_H_term": true,
+    "quotient_zero_pairs": "exactly 3m-3 in every maximal same-fibre pairing",
+    "residual": "length 7, one term in each nonzero C_2^3 quotient fibre",
+    "quotient_fibre_multiplicity": "all seven nonzero fibres have odd multiplicity",
+    "kernel_pair_sums": "every maximal pairing yields a length-(3m-3) ordinary-eta extremal over H=C_m^2",
+    "rank_two_inverse_eta": "APPLIES UNCONDITIONALLY",
+    "unresolved_choice_dependence": "pairing/residual choices are not yet proved canonical; fibre monochromaticity is D23-01"
   }
 }

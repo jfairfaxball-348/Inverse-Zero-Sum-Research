@@ -411,3 +411,17 @@ computation remain CLOSED.
 - Property D is not a hidden CAND-05 prerequisite.
 - Active owner blockers: NONE.
 - S023 is READY on D22-01 only.
+
+## S023 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S023 | COMPLETED BOUNDED INVESTIGATION; D22-01 EQUALITY DECOMPOSITION PROVED | 22a7df6043a34b8f3f9615e12cd38fd5bbee4ba6 | No H-term; exact 3m-3 same-fibre pairs plus seven-class residual; every maximal pairing yields a rank-two eta-extremal | [S023 closeout](../sessions/S023/CLOSEOUT.md) |
+
+- Live `main` was pinned at the S022 closeout SHA and S023 was unique.
+- D22-01 succeeds for every `m>=2`; no computation or formalisation was used.
+- The induced kernel sequence can still depend on pairing/residual choices; no
+  lift canonicity or full classification is claimed.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S024, D23-01 pairing-choice rigidity only.
