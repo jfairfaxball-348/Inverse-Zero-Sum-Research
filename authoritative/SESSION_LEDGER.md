@@ -663,3 +663,15 @@ computation remain CLOSED.
 - Hui--Zhong 2026 and Girard--Schmid 2020 do not meet the required hypotheses on the current quotient data.
 - No successor is promoted; no S037 prompt or brief exists.
 - Active owner blocker: B-011. External review remains CLOSED.
+
+
+## Post-S036 owner strategy resolution
+
+- B-011 resolved by explicit owner choice of option 2.
+- CAND-05 remains the historical incumbent pending explicit owner replacement,
+  but its proof programme is paused.
+- The S030--S033 residual-shell route, D34-01 multiwise route and the three S036
+  rejected mechanisms remain stopped.
+- No new mathematical claim is made by the owner resolution.
+- Active owner blockers: NONE.
+- Next numbered session: S037, bounded source-first target reassessment.
