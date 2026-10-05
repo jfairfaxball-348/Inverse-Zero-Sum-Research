@@ -374,7 +374,7 @@ computation remain CLOSED.
 | --- | --- | --- | --- | --- |
 | S021 | COMPLETED SOURCE-FIRST TARGET REASSESSMENT; OWNER TARGET-SELECTION BLOCKER ACTIVE | fd0bacac3285b36f361fffe157f420a369c1bc1e | Fresh CAND-01/CAND-03 status audit; CAND-04 retirement retained; new CAND-05 admitted; three-target matrix; CAND-03 recommendation | [S021 closeout](../sessions/S021/CLOSEOUT.md) |
 
-- The supplied checkpoint exactly matched live \`main\`; S021 was unique.
+- The supplied checkpoint exactly matched live `main`; S021 was unique.
 - No proof search, mathematical experiment, formalisation, outreach or target
   switch occurred.
 - CAND-03 is recommended, with CAND-01 and CAND-05 as viable alternatives.
@@ -386,10 +386,10 @@ computation remain CLOSED.
 
 ## Post-S021 owner CAND-05 selection checkpoint
 
-- Incoming authority: \`261b4942da0c4baa280a2805bdcfa082c0058537\`.
+- Incoming authority: `261b4942da0c4baa280a2805bdcfa082c0058537`.
 - Owner selected S021 shortlist option 3: **CAND-05**.
 - D-070 resolves B-009 and explicitly replaces historical CAND-02 with the
-  ordinary inverse-\`eta\` target on \`C_2+C_{2m}+C_{2m}\`, \`m>=2\`.
+  ordinary inverse-`eta` target on `C_2+C_{2m}+C_{2m}`, `m>=2`.
 - This checkpoint is not a numbered research session and adds no mathematical
   theorem or novelty claim.
 - D-071 temporarily closes the mathematical-investigation gate because CAND-05

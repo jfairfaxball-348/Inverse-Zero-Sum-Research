@@ -23,7 +23,7 @@ live source-first CAND-05 due-diligence session.
 
 ## Current readiness dimensions
 
-1. Target gate — OPEN: CAND-05 is explicitly selected at exact all-\`m\` ordinary inverse-\`eta\` scope.
+1. Target gate — OPEN: CAND-05 is explicitly selected at exact all-`m` ordinary inverse-`eta` scope.
 2. Publication gate — OPEN: E-JC remains the leading eligible route; S022 refreshes exact CAND-05 significance/fit.
 3. Mathematical-investigation gate — CLOSED temporarily: S022 must complete full CAND-05 due diligence before proof work.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
@@ -201,10 +201,10 @@ explicit recommendation for owner selection and will not begin proof work.
 ## S021 target-reassessment checkpoint
 
 S021 completed the fresh source/status comparison and recommends **CAND-03**:
-the length-24 inverse Narkiewicz-sense eta classification over \`C_3^3\\{0}\`.
+the length-24 inverse Narkiewicz-sense eta classification over `C_3^3\\{0}`.
 The viable alternatives are **CAND-01** (all-modulus rank-two Property D) and
 new **CAND-05** (ordinary inverse eta on
-\`C_2+C_{2m}+C_{2m}\`, \`m>=2\`). CAND-04 remains retired and CAND-02 is
+`C_2+C_{2m}+C_{2m}`, `m>=2`). CAND-04 remains retired and CAND-02 is
 historical/paused.
 
 B-009 requires the owner's explicit choice. No S022 or live next-session
@@ -214,9 +214,9 @@ CAND-02-specific and no reviewer status transfers.
 ## Post-S021 CAND-05 selection checkpoint
 
 The owner selected **option 3: CAND-05**. The new exact target is the ordinary
-inverse \`eta\` classification for length-\`6m+1\` sequences over
-\`C_2+C_{2m}+C_{2m}\`, \`m>=2\`, with no nonempty zero sum of length at
-most \`2m\`.
+inverse `eta` classification for length-`6m+1` sequences over
+`C_2+C_{2m}+C_{2m}`, `m>=2`, with no nonempty zero sum of length at
+most `2m`.
 
 Because S021 only admitted CAND-05 through a bounded discovery pass, the
 mathematical-investigation gate is temporarily CLOSED. S022 performs the

@@ -6,14 +6,14 @@ rather than a prerequisite for mathematical investigation, but D-071
 temporarily closes the mathematical-investigation gate because newly selected
 CAND-05 still needs full target-specific due diligence.
 
-**Selected exact target: CAND-05 — ordinary inverse \`eta\` for
-\`C_2 \oplus C_{2m} \oplus C_{2m}\`, \`m>=2\`.**
+**Selected exact target: CAND-05 — ordinary inverse `eta` for
+`C_2 \oplus C_{2m} \oplus C_{2m}`, `m>=2`.**
 
 Owner decision D-070 supersedes the earlier CAND-01 and CAND-02 selections.
-The exact target is to classify every sequence \`S\` over
-\`G_m=C_2\oplus C_{2m}\oplus C_{2m}\` with
-\`|S|=eta(G_m)-1=6m+1\` and no nonempty zero-sum subsequence of length at
-most \`exp(G_m)=2m\`, for every \`m>=2\`.
+The exact target is to classify every sequence `S` over
+`G_m=C_2\oplus C_{2m}\oplus C_{2m}` with
+`|S|=eta(G_m)-1=6m+1` and no nonempty zero-sum subsequence of length at
+most `exp(G_m)=2m`, for every `m>=2`.
 
 CAND-02 is historical and paused; its mathematics is retained. CAND-01 and
 CAND-03 are audited alternatives but no longer selected. CAND-04 remains
@@ -649,8 +649,8 @@ is paused.
 
 ### CAND-03 — S021 recommendation
 
-Exact scope: classify every sequence \`S\` over \`C_3^3\\{0}\` of length
-\`24=eta^N(C_3^3)-1\` having no two innerly non-zero-sum-joint short zero-sum
+Exact scope: classify every sequence `S` over `C_3^3\\{0}` of length
+`24=eta^N(C_3^3)-1` having no two innerly non-zero-sum-joint short zero-sum
 subsequences, by a structural necessity-and-sufficiency theorem with explicit
 multiplicity/support forms. No unlicensed translation normalization; a
 computational catalogue alone is insufficient.
@@ -662,7 +662,7 @@ no explicit open declaration was located either.
 
 ### CAND-01 — viable alternative
 
-Exact identity is unchanged: all-modulus Property D for \`C_n^2\`. S021 found
+Exact identity is unchanged: all-modulus Property D for `C_n^2`. S021 found
 no checked all-prime completion or effective cutoff beyond the 2025
 sufficiently-large-prime result. Its full completion remains highly
 significant, but narrow exceptional-prime work requires a reusable structural
@@ -672,13 +672,13 @@ Disposition: **VIABLE ALTERNATIVE / NOT SELECTED.**
 
 ### CAND-05 — newly admitted viable alternative
 
-Exact scope: for every \`m>=2\`, classify all length-\`6m+1\` sequences over
-\`C_2\\oplus C_{2m}\\oplus C_{2m}\` with no nonempty zero-sum subsequence of
-length at most \`2m\`. Girard--Schmid gives the direct threshold
-\`eta=6m+2\`.
+Exact scope: for every `m>=2`, classify all length-`6m+1` sequences over
+`C_2\\oplus C_{2m}\\oplus C_{2m}` with no nonempty zero-sum subsequence of
+length at most `2m`. Girard--Schmid gives the direct threshold
+`eta=6m+2`.
 
 Disposition: **VIABLE NEW ALTERNATIVE / NOT SELECTED / SOURCE-DEFINED /
-CURRENT STATUS UNKNOWN.** A focused search found no checked all-\`m\`
+CURRENT STATUS UNKNOWN.** A focused search found no checked all-`m`
 classification, which is not an openness certificate. The all-parameter
 rank-three scope carries a substantial anti-churn risk.
 
@@ -699,11 +699,11 @@ Date: 2026-10-05.
 The owner selected S021 shortlist option 3. CAND-05 is now the live exact
 target:
 
-> For every \`m>=2\`, classify all length-\`6m+1\` sequences over
-> \`C_2\oplus C_{2m}\oplus C_{2m}\` containing no nonempty zero-sum
-> subsequence of length at most \`2m\`.
+> For every `m>=2`, classify all length-`6m+1` sequences over
+> `C_2\oplus C_{2m}\oplus C_{2m}` containing no nonempty zero-sum
+> subsequence of length at most `2m`.
 
-The direct value \`eta(G_m)=6m+2\` is source-established, but S021's audit of
+The direct value `eta(G_m)=6m+2` is source-established, but S021's audit of
 this newly discovered candidate was deliberately bounded. Therefore the target
 gate is OPEN by explicit owner selection while the mathematical-investigation
 gate is CLOSED pending S022's full current-status, source-structure and hidden-

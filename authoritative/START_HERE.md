@@ -24,10 +24,10 @@ session before mathematical investigation resumes.**
 
 Selected target:
 
-> For every \`m>=2\`, classify every sequence over
-> \`G_m=C_2\oplus C_{2m}\oplus C_{2m}\` of length
-> \`eta(G_m)-1=6m+1\` having no nonempty zero-sum subsequence of length at
-> most \`exp(G_m)=2m\`.
+> For every `m>=2`, classify every sequence over
+> `G_m=C_2\oplus C_{2m}\oplus C_{2m}` of length
+> `eta(G_m)-1=6m+1` having no nonempty zero-sum subsequence of length at
+> most `exp(G_m)=2m`.
 
 - Target gate: OPEN — the owner selected an exact theorem identity.
 - Publication gate: OPEN — E-JC remains the leading eligible route, subject to
@@ -43,7 +43,7 @@ Selected target:
 CAND-02 is now a historical, paused target. Its S006--S020 mathematics remains
 durable programme evidence. CAND-02-specific route-stop decisions do not
 silently become theorem-level restrictions on CAND-05; any reused statement or
-mechanism must be justified for the stronger ordinary-\`eta\` hypothesis.
+mechanism must be justified for the stronger ordinary-`eta` hypothesis.
 
 ## Current mathematical frontier
 
@@ -315,12 +315,12 @@ than CAND-02's demonstrated long all-parameter architecture.
 
 CAND-01 remains viable but its sufficiently-large-prime theorem leaves the
 operational residual layer finite yet non-explicit. CAND-05 is admitted as a
-new viable alternative: classify ordinary eta-extremal length-\`6m+1\`
-sequences over \`C_2+C_{2m}+C_{2m}\`, \`m>=2\`. Its direct threshold is known,
+new viable alternative: classify ordinary eta-extremal length-`6m+1`
+sequences over `C_2+C_{2m}+C_{2m}`, `m>=2`. Its direct threshold is known,
 but its all-m rank-three scope still carries substantial recurrence risk.
 
 CAND-04 remains retired: no positive primary evidence was found removing the
-unresolved direct \`s(C_p^3)=9p-8\` dependency. Full CAND-02 remains durable
+unresolved direct `s(C_p^3)=9p-8` dependency. Full CAND-02 remains durable
 historical work but is not shortlisted after the S020 strategic audit.
 
 B-009 is active. No S022 brief or live prompt exists until the owner selects
@@ -331,14 +331,14 @@ CAND-03, CAND-01 or CAND-05.
 The owner resolved B-009 by choosing **option 3: CAND-05**. This is an explicit
 target switch from historical CAND-02.
 
-CAND-05 is the ordinary inverse \`eta\` problem for
-\`C_2+C_{2m}+C_{2m}\`, \`m>=2\`, at length \`6m+1\`. S021 established only
+CAND-05 is the ordinary inverse `eta` problem for
+`C_2+C_{2m}+C_{2m}`, `m>=2`, at length `6m+1`. S021 established only
 a bounded discovery-level status boundary. S022 therefore performs the
 S002/S003-style full target audit before any proof programme begins.
 
 The mathematical-investigation gate is temporarily CLOSED for that reason.
 S022 must reconstruct the exact direct theorem, search current prior art and
-small/arithmetic cases, inspect the closest genuine inverse-\`eta\` machinery,
+small/arithmetic cases, inspect the closest genuine inverse-`eta` machinery,
 check for hidden Property-D/direct-constant dependencies, define meaningful
 partial-contribution standards, and refresh publication/reviewer routes. If the
 target survives with mature due diligence, S022 may reopen the gate and prepare

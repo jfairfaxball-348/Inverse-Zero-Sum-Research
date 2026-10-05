@@ -484,7 +484,7 @@ status to another target.
 
 | ID | Date | Decision | Basis |
 | --- | --- | --- | --- |
-| D-068 | 2026-10-05 | Record the S021 source/status reassessment. CAND-03 is the strongest recommendation; CAND-01 remains a viable classical alternative; new CAND-05 (ordinary inverse eta on \`C_2+C_{2m}+C_{2m}\`) is admitted as a third alternative; CAND-04 remains retired; CAND-02 remains historical/paused and is not shortlisted. This is a recommendation, not a target switch. | \`sessions/S021/TARGET_REASSESSMENT.md\` |
+| D-068 | 2026-10-05 | Record the S021 source/status reassessment. CAND-03 is the strongest recommendation; CAND-01 remains a viable classical alternative; new CAND-05 (ordinary inverse eta on `C_2+C_{2m}+C_{2m}`) is admitted as a third alternative; CAND-04 remains retired; CAND-02 remains historical/paused and is not shortlisted. This is a recommendation, not a target switch. | `sessions/S021/TARGET_REASSESSMENT.md` |
 | D-069 | 2026-10-05 | **Activate B-009 and suppress all next-session material until the owner selects the target.** Do not infer selection from S021's recommendation. | S021 brief requirement and repository owner-decision protocol. |
 
 ### B-009 — final target selection after S021 reassessment
@@ -498,15 +498,15 @@ programme stays paused.
 
 **Required owner action:** select exactly one of:
 
-1. **CAND-03 (recommended):** inverse Narkiewicz-sense \`eta\` classification
-   for length-24 extremals over \`C_3^3\\{0}\`;
+1. **CAND-03 (recommended):** inverse Narkiewicz-sense `eta` classification
+   for length-24 extremals over `C_3^3\\{0}`;
 2. **CAND-01:** all-modulus rank-two Property D; or
-3. **CAND-05:** ordinary inverse \`eta\` for
-   \`C_2\\oplus C_{2m}\\oplus C_{2m}\`, \`m>=2\`.
+3. **CAND-05:** ordinary inverse `eta` for
+   `C_2\\oplus C_{2m}\\oplus C_{2m}`, `m>=2`.
 
-While B-009 is active, \`next_session\` and \`next_brief\` are null,
-\`next_prompt_status=SUPPRESSED_OWNER_BLOCKER\`, and
-\`authoritative/NEXT_SESSION_PROMPT.md\` is absent. No proof session may be
+While B-009 is active, `next_session` and `next_brief` are null,
+`next_prompt_status=SUPPRESSED_OWNER_BLOCKER`, and
+`authoritative/NEXT_SESSION_PROMPT.md` is absent. No proof session may be
 scheduled by assumption.
 
 External review is unchanged and separate. Xue Li Stage-1 remains
@@ -518,9 +518,9 @@ is inferred or transferred.
 
 | ID | Date | Decision | Basis |
 | --- | --- | --- | --- |
-| D-070 | 2026-10-05 | **Resolve B-009 by selecting shortlist option 3: CAND-05.** The programme's exact target is now the ordinary inverse \`eta\` classification for all \`m>=2\`: length-\`6m+1\` sequences over \`C_2+C_{2m}+C_{2m}\` with no nonempty zero sum of length at most \`2m\`. CAND-02 becomes historical/paused. | Explicit owner choice: “Lets go 3”. |
+| D-070 | 2026-10-05 | **Resolve B-009 by selecting shortlist option 3: CAND-05.** The programme's exact target is now the ordinary inverse `eta` classification for all `m>=2`: length-`6m+1` sequences over `C_2+C_{2m}+C_{2m}` with no nonempty zero sum of length at most `2m`. CAND-02 becomes historical/paused. | Explicit owner choice: “Lets go 3”. |
 | D-071 | 2026-10-05 | Schedule S022 as a full CAND-05 due-diligence and proof-readiness audit before proof work. Keep target and publication gates OPEN but set the mathematical-investigation gate CLOSED until CAND-05's current-status, structural-source and hidden-prerequisite boundaries are mature enough for a bounded mathematical brief. | S021 classified CAND-05 only at bounded discovery depth and rated current-status confidence low-medium / architecture risk high. |
-| D-072 | 2026-10-05 | Preserve S006--S020 CAND-02 mathematics and route stops as historical authority, but do not automatically transfer CAND-02-specific failed-route prohibitions or internal lemmas to CAND-05. Any reuse must be re-justified under the ordinary-\`eta\` hypothesis. Xue Li's pending Stage-1 status remains CAND-02-specific. | Target identity changed while the ambient group remained the same; invariant hypotheses are materially different. |
+| D-072 | 2026-10-05 | Preserve S006--S020 CAND-02 mathematics and route stops as historical authority, but do not automatically transfer CAND-02-specific failed-route prohibitions or internal lemmas to CAND-05. Any reuse must be re-justified under the ordinary-`eta` hypothesis. Xue Li's pending Stage-1 status remains CAND-02-specific. | Target identity changed while the ambient group remained the same; invariant hypotheses are materially different. |
 
 B-009 is resolved. Active owner blockers are **NONE**.
 

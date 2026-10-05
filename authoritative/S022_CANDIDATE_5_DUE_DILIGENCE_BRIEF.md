@@ -7,15 +7,15 @@ Stage: selected-target due diligence before mathematical investigation.
 ## Purpose
 
 The owner resolved B-009 by selecting **option 3: CAND-05**, the ordinary
-inverse \`eta\` problem for the equal-factor rank-three family
+inverse `eta` problem for the equal-factor rank-three family
 
-\`G_m = C_2 \oplus C_{2m} \oplus C_{2m}\`, \`m>=2\`.
+`G_m = C_2 \oplus C_{2m} \oplus C_{2m}`, `m>=2`.
 
 The selected target is:
 
-> classify every sequence \`S\` over \`G_m\` of length
-> \`eta(G_m)-1 = 6m+1\` having no nonempty zero-sum subsequence of length at
-> most \`exp(G_m)=2m\`.
+> classify every sequence `S` over `G_m` of length
+> `eta(G_m)-1 = 6m+1` having no nonempty zero-sum subsequence of length at
+> most `exp(G_m)=2m`.
 
 S021 admitted CAND-05 only through a bounded discovery pass. S022 must now give
 it the deeper source/status treatment previously given CAND-01 and CAND-02
@@ -26,10 +26,10 @@ source/status/proof-readiness work only.
 
 ## Required authority
 
-Pin live \`main\`, reconcile intervening changes, and confirm S022 is unique.
+Pin live `main`, reconcile intervening changes, and confirm S022 is unique.
 Read:
 
-- \`AGENTS.md\` and \`authoritative/START_HERE.md\`;
+- `AGENTS.md` and `authoritative/START_HERE.md`;
 - all required authority/state/protocol records;
 - the S001 field map;
 - S003 CAND-02 due diligence, because it audits the same ambient group under a
@@ -47,14 +47,14 @@ Committed repository authority, not conversation history, controls the task.
 
 From primary sources, re-establish exactly:
 
-- the ordinary short-zero-sum constant \`eta(G)\`;
+- the ordinary short-zero-sum constant `eta(G)`;
 - sequence/multiplicity conventions;
-- \`exp(G_m)=2m\`;
-- the direct theorem \`eta(G_m)=6m+2\`;
-- the exact extremal length \`6m+1\`;
+- `exp(G_m)=2m`;
+- the direct theorem `eta(G_m)=6m+2`;
+- the exact extremal length `6m+1`;
 - what transformations preserve the short-zero-sum-free condition
   (automorphisms, translation only if genuinely valid);
-- the \`m=1\` endpoint and whether it is already classified;
+- the `m=1` endpoint and whether it is already classified;
 - any exceptional arithmetic regimes or hypotheses hidden in compressed
   restatements.
 
@@ -66,12 +66,12 @@ same.
 Search through the current date using all materially relevant terminology and
 notations, including:
 
-- inverse \`eta\`, short zero-sum extremals, \`eta(G)-1\`, \`6m+1\`;
-- \`C_2+C_{2m}+C_{2m}\`, \`C_2+C_{2m}^2\`, invariant-factor and product
+- inverse `eta`, short zero-sum extremals, `eta(G)-1`, `6m+1`;
+- `C_2+C_{2m}+C_{2m}`, `C_2+C_{2m}^2`, invariant-factor and product
   notation;
 - ordinary rank-three inverse zero-sum / inverse eta;
 - zero-sum-free up to the exponent / no short zero-sum;
-- small cases such as \`C_2+C_4+C_4\`, \`C_2+C_6+C_6\`, powers of two,
+- small cases such as `C_2+C_4+C_4`, `C_2+C_6+C_6`, powers of two,
   prime/power parameters and any arithmetic subfamilies;
 - theses, preprints, forward citations and author publication lists;
 - alternate invariant terminology that could conceal an equivalent theorem.
@@ -81,24 +81,24 @@ Distinguish full statement/proof inspection from abstract/metadata access.
 Explicitly compare against and separate:
 
 - Girard--Schmid's 2020 inverse theorem for
-  \`C_2+C_2+C_{2n}\`;
-- rank-two inverse \`eta\` classifications;
-- \`disc(G)\` and its inverse problems on the same ambient group;
-- generalized/Narkiewicz \`eta^N\`;
-- restricted-length, \`D_k\`, local/modular and other adjacent invariants.
+  `C_2+C_2+C_{2n}`;
+- rank-two inverse `eta` classifications;
+- `disc(G)` and its inverse problems on the same ambient group;
+- generalized/Narkiewicz `eta^N`;
+- restricted-length, `D_k`, local/modular and other adjacent invariants.
 
 A search non-hit is never evidence of openness or novelty.
 
 ## 3. Structural source baseline and hidden-prerequisite audit
 
-Inspect the controlling direct proof and the closest genuine inverse-\`eta\`
+Inspect the controlling direct proof and the closest genuine inverse-`eta`
 sources far enough to identify the exact structural machinery available at the
-\`6m+1\` extremal layer. Determine:
+`6m+1` extremal layer. Determine:
 
 - whether the direct proof contains equality-rigidity or decomposition
   consequences usable in an inverse theorem;
 - the subgroup/quotient architecture and exact kernel type;
-- which rank-two inverse-\`eta\` inputs are unconditional for \`C_m^2\` or
+- which rank-two inverse-`eta` inputs are unconditional for `C_m^2` or
   related kernels;
 - whether any Property D/C assumption, unresolved direct constant, or
   arithmetic restriction is secretly required;
@@ -113,13 +113,13 @@ and proof-readiness assessment.
 
 ## 4. Contribution and anti-churn test
 
-Define what would count as a meaningful result if the full all-\`m\`
+Define what would count as a meaningful result if the full all-`m`
 classification resists. Assess separately:
 
-- full all-\`m\` structural classification;
+- full all-`m` structural classification;
 - a broad infinite arithmetic subfamily with a uniform structural theorem;
 - a reusable reduction that materially narrows the full classification;
-- isolated small-\`m\` classifications or computational catalogues.
+- isolated small-`m` classifications or computational catalogues.
 
 The last category should not be promoted merely because it is tractable.
 Use S006--S020 as evidence about long-architecture risk. Any proposed first
@@ -165,8 +165,8 @@ stop rule. Do not begin S023 mathematics inside S022.
 
 Synchronize authority, claims, target/publication/reviewer registers,
 decisions/blockers, roadmap and session ledger. Run
-\`python3 scripts/check_authority.py\` and warranted checks, commit safely to
-\`main\`, verify the remote SHA/tree, and automatically give the close report.
+`python3 scripts/check_authority.py` and warranted checks, commit safely to
+`main`, verify the remote SHA/tree, and automatically give the close report.
 
 CAND-02 mathematics remains durable historical evidence, but CAND-05 is now
 the selected target. No reviewer status or proof result transfers merely from

@@ -538,21 +538,21 @@ claimed by S021.
 | ID | Source | S021 use / exact boundary |
 | --- | --- | --- |
 | ZS-51 | Jan-Christoph Schlage-Puchta, *All large primes have Property D*, arXiv:2509.02436 (2025) | Current record rechecked. Establishes Property D for sufficiently large primes, not an all-prime theorem or an effective residual list. |
-| ZS-52 | W. Gao, W. Hui, X. Li, Y. Li, Y. Qu, Q. Zhong, *On generalized Narkiewicz constants of finite abelian groups*, Acta Arith. 212 (2024), 133--172, DOI 10.4064/aa230118-1-10 | Defining generalized-Narkiewicz source; S004's direct value \`eta^N(C_3^3)=25\` remains the CAND-03 baseline. |
+| ZS-52 | W. Gao, W. Hui, X. Li, Y. Li, Y. Qu, Q. Zhong, *On generalized Narkiewicz constants of finite abelian groups*, Acta Arith. 212 (2024), 133--172, DOI 10.4064/aa230118-1-10 | Defining generalized-Narkiewicz source; S004's direct value `eta^N(C_3^3)=25` remains the CAND-03 baseline. |
 | ZS-53 | Y. Fan and Q. Zhong, *On joint short minimal zero-sum subsequences over finite abelian groups of rank two*, JCTA 212 (2025), 105984, DOI 10.1016/j.jcta.2024.105984 | Current publisher text says larger-rank results are sparse and develops the rank-two predecessor. It does not classify CAND-03. |
 | ZS-54 | W. Hui and Q. Zhong, *On the inverse problem of the Narkiewicz-sense eta-constant for finite abelian groups of rank 2*, JCTA 224 (2026), 106238, DOI 10.1016/j.jcta.2026.106238 | Complete inverse theorem for all rank-two finite abelian groups; not a rank-three theorem. |
 | ZS-55 | Electronic Journal of Combinatorics official About/Submissions pages, checked 2026-10-05 | Current scope and substantive-AI policy only; no publication prediction. |
 
 S021 also rechecked the already-recorded Girard--Schmid direct source ZS-10
-for \`eta(C_2+C_{2m}+C_{2m})=6m+2\`, which defines new CAND-05 without a
+for `eta(C_2+C_{2m}+C_{2m})=6m+2`, which defines new CAND-05 without a
 hidden direct-threshold dependency.
 
 | Claim | Classification | Bounded content | Support / limit |
 | --- | --- | --- | --- |
 | C-99 | PROGRAMME_STATUS_BOUNDARY | CAND-01 remains a viable classical target after the bounded current refresh, but S021 found no checked all-prime completion/effective cutoff beyond the sufficiently-large-prime theorem. | ZS-51 plus S002. Non-hit is not openness evidence. |
-| C-100 | PROGRAMME_STATUS_BOUNDARY | CAND-03 has an exact direct threshold and a completed rank-two inverse predecessor; no checked source in the bounded refresh classifies the exact length-24 \`C_3^3\` extremals. | ZS-52--ZS-54 plus S004. No explicit open declaration located. |
-| C-101 | SOURCE_DEFINED_CANDIDATE | CAND-05 is the ordinary inverse eta problem for length \`6m+1\` sequences over \`C_2+C_{2m}+C_{2m}\` avoiding all zero sums of length at most \`2m\`; direct \`eta=6m+2\` is established. | ZS-10. Focused completion non-hit is not an openness claim. |
-| C-102 | PROGRAMME_STRATEGY_RECOMMENDATION | S021 recommends CAND-03 over CAND-01 and CAND-05 on baseline clarity, adjacent completed theory, meaningful structural milestone space and lower demonstrated architecture risk. | \`sessions/S021/TARGET_REASSESSMENT.md\`. This is not mathematical proof, novelty certification or owner target selection. |
+| C-100 | PROGRAMME_STATUS_BOUNDARY | CAND-03 has an exact direct threshold and a completed rank-two inverse predecessor; no checked source in the bounded refresh classifies the exact length-24 `C_3^3` extremals. | ZS-52--ZS-54 plus S004. No explicit open declaration located. |
+| C-101 | SOURCE_DEFINED_CANDIDATE | CAND-05 is the ordinary inverse eta problem for length `6m+1` sequences over `C_2+C_{2m}+C_{2m}` avoiding all zero sums of length at most `2m`; direct `eta=6m+2` is established. | ZS-10. Focused completion non-hit is not an openness claim. |
+| C-102 | PROGRAMME_STRATEGY_RECOMMENDATION | S021 recommends CAND-03 over CAND-01 and CAND-05 on baseline clarity, adjacent completed theory, meaningful structural milestone space and lower demonstrated architecture risk. | `sessions/S021/TARGET_REASSESSMENT.md`. This is not mathematical proof, novelty certification or owner target selection. |
 
 No S021 search non-hit is used as evidence of openness, novelty, completeness,
 significance or publishability.
@@ -564,7 +564,7 @@ source result.
 
 | Claim | Classification | Bounded content | Support / limit |
 | --- | --- | --- | --- |
-| C-103 | OWNER_TARGET_DECISION | CAND-05 is now the selected exact target: classify length-\`6m+1\` ordinary-\`eta\` extremals over \`C_2+C_{2m}+C_{2m}\` for every \`m>=2\`. | D-070. Target selection is not an openness, novelty or proof claim. |
+| C-103 | OWNER_TARGET_DECISION | CAND-05 is now the selected exact target: classify length-`6m+1` ordinary-`eta` extremals over `C_2+C_{2m}+C_{2m}` for every `m>=2`. | D-070. Target selection is not an openness, novelty or proof claim. |
 | C-104 | PROGRAMME_GATE_BOUNDARY | Mathematical investigation is temporarily CLOSED until S022 completes the full CAND-05 due-diligence/source-baseline audit. | D-071. The direct threshold and discovery-level status from S021 do not by themselves authorize proof work under the programme's due-diligence standard. |
 | C-105 | PROGRAMME_TRANSFER_BOUNDARY | CAND-02 internal lemmas, failed routes and reviewer status do not automatically transfer to CAND-05 despite the common ambient group. | D-072. Exact hypotheses/invariant identity must be rechecked. |
 

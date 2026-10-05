@@ -818,7 +818,7 @@ baseline audit.
 
 S022 is READY and must determine whether CAND-05 is genuinely proof-ready:
 exact theorem identity, current overlap/status, small and arithmetic subfamilies,
-direct-proof equality structure, applicable rank-two inverse-\`eta\` machinery,
+direct-proof equality structure, applicable rank-two inverse-`eta` machinery,
 hidden prerequisites, contribution-level partial scopes, publication fit and a
 fresh reviewer route.
 

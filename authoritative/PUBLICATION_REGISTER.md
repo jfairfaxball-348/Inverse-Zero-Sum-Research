@@ -45,7 +45,7 @@ workflow-eligible venue and the publication gate remains OPEN, based on the
 2026-10-05 policy refresh and the target's clear short-zero-sum/inverse
 combinatorics subject fit. This is a provisional target-specific eligibility
 position: S022 must recheck the exact contribution significance, nearest
-ordinary-\`eta\` publication comparators and backup venue fit before mathematical
+ordinary-`eta` publication comparators and backup venue fit before mathematical
 investigation reopens. Recheck current policies again before any actual
 submission.
 
@@ -408,7 +408,7 @@ because it published the controlling Girard--Schmid direct rank-three theorem.
 
 The publication gate stays OPEN because an eligible substantive-AI-compatible
 route exists, but S022 must perform the deeper CAND-05-specific significance
-and comparable-paper audit. A correct isolated small-\`m\` catalogue is not
+and comparable-paper audit. A correct isolated small-`m` catalogue is not
 presumed substantial enough for the programme's publication objective.
 
 No manuscript, submission authorization, submission, acceptance or publication

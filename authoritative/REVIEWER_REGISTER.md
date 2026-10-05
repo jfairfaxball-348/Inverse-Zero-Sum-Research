@@ -474,7 +474,7 @@ S022 must reassess:
   lead from S021;
 - Benjamin Girard and Wolfgang A. Schmid as exact baseline/status experts whose
   source authorship requires an independence/conflict assessment;
-- Pingzhi Yuan and any stronger current ordinary-\`eta\` specialist surfaced by
+- Pingzhi Yuan and any stronger current ordinary-`eta` specialist surfaced by
   the target-specific audit.
 
 No outreach is authorized by target selection alone. Any future Stage-1 send

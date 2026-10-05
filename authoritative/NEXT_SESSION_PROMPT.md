@@ -4,12 +4,12 @@ Session: S022.
 
 Status: READY.
 
-\`\`\`text
+```text
 Begin S022 in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 Previous verified checkpoint:
-<POST-S021-CAND05-SELECTION-CHECKPOINT>
+bb1a41cb793f7712ebd044bf3586d8a95dcb3310
 
 Use committed repository authority, not conversation history. Pin live main,
 reconcile intervening changes and confirm S022 is unique. Read AGENTS.md,
@@ -57,4 +57,4 @@ inside S022.
 Close under repository protocol: synchronize authority, run
 scripts/check_authority.py and warranted checks, commit safely to main, verify
 remote SHA/tree, and automatically give the close report.
-\`\`\`
+```
