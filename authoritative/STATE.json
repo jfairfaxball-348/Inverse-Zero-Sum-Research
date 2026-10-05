@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S030",
-  "next_session": "S031",
-  "next_brief": "authoritative/S031_CANDIDATE_5_EVEN_REMAINING_FANO_LINES_BRIEF.md",
+  "last_completed_session": "S031",
+  "next_session": "S032",
+  "next_brief": "authoritative/S032_CANDIDATE_5_EVEN_COMPLEMENTARY_FANO_PLANES_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S031_READY_CAND05_EVEN_REMAINING_FANO_LINES",
+  "programme_status": "S032_READY_CAND05_EVEN_COMPLEMENTARY_FANO_PLANES",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence. S023--S029 reduce the even-modulus simultaneous-positive member question to exact completion-shell constraints. S030 proves that all three residual lines through ell lie in the shell and identifies the common-u condition as an intersection of three translated shells, but the two relative pair-sums remain uncontrolled and a common-torsion assignment is compatible. Current status remains unknown. S031 is one bounded unit on the remaining four Fano residual lines.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence. S023--S029 establish the canonical even-modulus kernel/coset/shell geometry; S030 proves the three Fano residual lines through ell lie in E(K), and S031 proves the remaining four do as well. The full seven-line shell system still does not exclude the fixed simultaneous-positive coset: a common-torsion assignment leaves an H[2]-valued half-lift coordinate and the relevant half-fibre always meets the shell. Current status remains unknown. S032 is one bounded unit on the seven complementary quotient-zero four-term residual subsets.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -75,7 +75,9 @@
     "S029-P3 PROGRAMME NECESSARY CONDITION/BOUNDARY: in the fixed S028 simultaneous-positive coset, z=u+t must lie in E(K)-h. This is an exact lift restriction but not an exclusion: every h_i lies in E(K), so z=0 (equivalently u=t) remains compatible. No actual simultaneous-positive extremal is constructed.",
     "S030-P1 PROGRAMME THEOREM: for even m>=4, the lift-sum w_i=x_{q_i}+x_{q_i+ell}+u of each of the three residual quotient-zero lines through ell has completion depth exactly m-1 in K, hence w_i lies in E(K).",
     "S030-P2 PROGRAMME NECESSARY CONDITION: writing p_i=x_{q_i}+x_{q_i+ell}, the common lift u is equivalent to u in cap_i(E(K)-p_i). With d_2=p_2-p_1, d_3=p_3-p_1 and w=w_1, this is w in E(K) cap (E(K)-d_2) cap (E(K)-d_3).",
-    "S030-P3 PROGRAMME BOUNDARY/NONEXCLUSION: S025--S029 do not determine the relative pair-sums d_2,d_3 when a non-fixed coset may contain a zero-weight member. The current constraints remain compatible: using the fixed S028 torsion t, u=t, and the same t-translation in each bucket fibre gives residual sums h_1,h_2,h_3 in E(K). This is not an extremal construction."
+    "S030-P3 PROGRAMME BOUNDARY/NONEXCLUSION: S025--S029 do not determine the relative pair-sums d_2,d_3 when a non-fixed coset may contain a zero-weight member. The current constraints remain compatible: using the fixed S028 torsion t, u=t, and the same t-translation in each bucket fibre gives residual sums h_1,h_2,h_3 in E(K). This is not an extremal construction.",
+    "S031-P1 PROGRAMME RESULT: for even m>=4, the four quotient-zero Fano residual triples not containing ell also have lift-sums in the exact S029 shell E(K); hence all seven Fano residual line sums lie in E(K).",
+    "S031-P2/P3 PROGRAMME NONEXCLUSION: the four non-ell line sums form an affine parity family X+sum e_i tau_i. In the common-torsion assignment u=t and tau_i=t they collapse to one v with 2v=h_1+h_2+h_3. The H[2]-half-fibre always meets E(K), explicitly at c h_1+h_2 with 2c=1-a, so the seven-line system does not exclude the fixed simultaneous-positive coset."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -245,6 +247,11 @@
       "id": "S030",
       "status": "COMPLETED",
       "record": "sessions/S030/CLOSEOUT.md"
+    },
+    {
+      "id": "S031",
+      "status": "COMPLETED",
+      "record": "sessions/S031/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -394,5 +401,14 @@
     "relative_pair_sum_defect": "d_2=p_2-p_1 and d_3=p_3-p_1 are not controlled by S025--S029 when a non-fixed coset may contain a zero-weight member",
     "compatibility_assignment": "with fixed torsion t, take u=t and the same t-translation in each bucket doubling fibre; the three residual sums become h_1,h_2,h_3, all in E(K)",
     "unresolved": "remaining four residual Fano-line shell constraints; no global weight vector, seven-lift classification, odd-m branch or quotient normalization"
+  },
+  "s031_mathematical_investigation_date": "2026-10-05",
+  "cand05_even_remaining_fano_lines": {
+    "status": "PROGRAMME_PROVED_FULL_SEVEN_FANO_LINE_SHELL_SYSTEM_WITH_NONEXCLUSION",
+    "all_seven_shells": "all seven quotient-zero Fano residual triple lift-sums lie in E(K)",
+    "new_four_line_form": "for q_1+q_2+q_3=epsilon ell and tau_i=x_{q_i+ell}-x_{q_i}, the four non-ell sums are X+sum e_i tau_i over e_1+e_2+e_3=epsilon",
+    "common_torsion_reduction": "taking u=t and tau_1=tau_2=tau_3=t makes the three ell-lines h_1,h_2,h_3 and collapses the other four to one v with 2v=h_1+h_2+h_3",
+    "residual_half_lift_defect": "the half-fibre is an H[2] torsor and always meets E(K), explicitly at v=c h_1+h_2 with 2c=1-a",
+    "unresolved": "seven complementary quotient-zero four-term residual subsets; no arbitrary residual-subset analysis, global weight vector, seven-lift classification, odd-m branch or quotient normalization"
   }
 }
