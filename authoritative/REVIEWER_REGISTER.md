@@ -632,3 +632,12 @@ No reviewer status changed and no outreach occurred. External-review gate
 remains CLOSED with no confirmed reviewer. B-011 option 3, if chosen by the
 owner, would authorize a bounded external-status/expert-input phase only;
 actual transmission still requires explicit send authorization.
+
+
+## Post-S036 owner target-reassessment reviewer boundary
+
+The owner decision resolving B-011 does not authorize outreach and confirms no
+reviewer. External-review gate remains CLOSED. S037 must reassess the reviewer
+and expertise route for whichever replacement candidates survive. Xue Li's
+pending Stage-1 status remains strictly CAND-02-specific and cannot transfer to
+another target.
