@@ -744,3 +744,13 @@ Source-check date: **2026-10-05**.
 | C-151 | PROGRAMME_PROVED | Choosing a positive member `x_i` of `C_i`, its partner `y_i`, and `tau_i=y_i-x_i`, the complete block satisfies `sigma(B_i)=tau_i` whether the partner has positive or zero kernel weight. Therefore `sigma(S)=u+tau_1+tau_2+tau_3=zeta`. | Elementary aggregate lift calculation in `sessions/S034/EVEN_MECHANISM_REASSESSMENT.md`; does not classify individual invisible lifts. |
 | C-152 | SOURCE_TOOL | `D_2(C_2+C_{2m}+C_{2m})=6m+1` for every `m>=1`. | ZS-56 Theorem 2.1 and Theorem 3.4 (`D_0=2m+1`, `k_D=2`); the proof also explicitly derives `D_k=(2m+1)+2mk` for `k>=2`. |
 | C-153 | PROGRAMME_ROUTE_DECISION / BOUNDARY | Every CAND-05 candidate has two disjoint nonempty zero sums, each of length at least `2m+1`. If `zeta=0` they must partition `S`; if `zeta!=0` their complement is nonempty of length at most `2m-1` and sum `zeta`. This promotes D34-01 only; S034 proves no exclusion or existence result. | C-151/C-152 plus the CAND-05 short-zero-sum prohibition. |
+
+## S035 CAND-05 multiwise block-factorisation claims
+
+Proof / source-check date: **2026-10-05**. No new source ID is added; S035 rechecks ZS-56 Theorems 2.1 and 3.4.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-154 | PROGRAMME_PROVED / EXACT NECESSARY-CONSTRAINT FACTORISATION | In the S031--S033 common-torsion compatibility family, after indexing the fixed simultaneous-positive coset as `B_1`, one has `u=t` and `tau_1=tau_2=tau_3=t` with `2t=0`. Hence `zeta=0` and the block partition `A_0=B_1u`, `B_0=B_2B_3` consists of two zero sums with lengths `2m+1` and `4m`. | S034 gives `|B_i|=2m` and `sigma(B_i)=tau_i`; S028 gives the fixed split torsion; S031--S033 supply the common-torsion compatibility assignment. This is compatibility of proved necessary constraints, not an actual extremal construction. |
+| C-155 | PROGRAMME_ROUTE_BOUNDARY / NO-GO | The exact source input `D_2(G_m)=6m+1` does not exclude the even simultaneous-positive target at the aggregate block level: C-154 realizes the required two disjoint nonempty zero sums, and both have length greater than `2m`. D34-01 is therefore stopped as an exclusion route at the first exact outcome. | ZS-56 Theorems 2.1/3.4 plus C-154. No claim is made about the `zeta!=0` branch, actual existence, global weights/lifts, odd `m`, or full CAND-05 classification. |
+

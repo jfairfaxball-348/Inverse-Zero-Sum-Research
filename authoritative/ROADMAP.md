@@ -1099,3 +1099,14 @@ S034 resolves D33-01 by identifying a genuinely different global mechanism. For 
 The focused source recheck gives `D_2(G_m)=6m+1`. Any candidate has two disjoint nonempty zero sums of lengths at least `2m+1`. If `zeta=0` they partition `S`; otherwise they leave a nonempty complement of length at most `2m-1` and sum `zeta`. This is not an S029 completion-depth condition.
 
 Pure weight arithmetic does not couple the three split equations, and direct classification of invisible lifts violates scope. Exactly one successor is promoted: D34-01. S035 will test the `D_2`-forced pair against the three `2m` blocks and fixed simultaneous-positive torsion, stopping at the first exact outcome.
+
+## S035 multiwise block-factorisation checkpoint
+
+S035 resolves D34-01 at the first exact outcome and stops. Re-index the three nonzero `L`-coset blocks so the fixed simultaneous-positive coset is `B_1`. Its S028 torsion difference is `tau_1=t`, where `t in G_m[2]`, `t!=0`, `pi(t)=ell`.
+
+The S031--S033 common-torsion compatibility family already takes `u=t` and `tau_1=tau_2=tau_3=t`. Since `2t=0`, the S034 total is `zeta=4t=0`. More importantly, the three block sums give the exact whole-block partition `A_0=B_1u`, `B_0=B_2B_3`. Then `sigma(A_0)=t+t=0`, `sigma(B_0)=t+t=0`, with `|A_0|=2m+1` and `|B_0|=4m`.
+
+Thus the common-torsion family realizes precisely the two disjoint nonempty zero sums required by `D_2(G_m)=6m+1`, and both lengths exceed the forbidden short threshold `2m`. This is an exact surviving factorisation type at the level of the proved aggregate constraints, not an actual extremal construction. D34-01 therefore adds no exclusion invariant against simultaneous positivity. The `zeta!=0` branch is not pursued because the brief requires stopping at the first exact outcome.
+
+The S030--S033 shell route remains stopped and D34-01 is now stopped as an exclusion route. B-010 is active; no S036 prompt or brief is scheduled pending the owner's strategy disposition.
+

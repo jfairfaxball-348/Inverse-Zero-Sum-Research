@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: S034 completed; the stopped residual-shell route has been replaced by a genuinely global mechanism. The three nonzero `L`-cosets form length-`2m` blocks `B_i` with `sigma(B_i)=tau_i`, the total sum is the S032 defect `zeta`, and Girard--Schmid gives `D_2(G_m)=6m+1`. S035 is READY for the bounded even multiwise block-factorisation test D34-01. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
+**Current stage: S035 completed. D34-01 is an exact block-level no-go for the promoted multiwise mechanism: the surviving common-torsion aggregate family factors as `S=(B_1u)(B_2B_3)` into zero sums of lengths `2m+1` and `4m`, so `D_2(G_m)=6m+1` supplies no short-zero-sum contradiction. This is not an extremal construction. The residual-shell and multiwise block-factorisation exclusion routes are stopped. B-010 is ACTIVE and no S036 is scheduled pending an owner strategy choice. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -15,14 +15,13 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 through B-009 are resolved. S035 is the
-live bounded CAND-05 multiwise block-factorisation session.
+and no next-session prompt.** B-006 through B-009 are resolved. B-010 is ACTIVE after S035; no next-session prompt is live until the owner resolves the strategy disposition.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-05 is selected at exact all-`m` ordinary inverse-`eta` scope.
 2. Publication gate — OPEN: E-JC remains lead; JNT is a natural comparable/backup.
-3. Mathematical-investigation gate — OPEN: S035 is authorized for D34-01, the bounded even multiwise block-factorisation test only.
+3. Mathematical-investigation gate — OPEN in principle, but B-010 suppresses any runnable next session.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain

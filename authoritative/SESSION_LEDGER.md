@@ -623,3 +623,19 @@ computation remain CLOSED.
 - CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S035, D34-01 even multiwise block-factorisation only.
+
+## S035 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S035 | COMPLETED BOUNDED INVESTIGATION; D34-01 EXACT WHOLE-BLOCK FACTORISATION / ROUTE NO-GO | 5a57a405ea5376c5f0362f00b6ad351206472872 | Common-torsion compatibility family has `S=(B_1u)(B_2B_3)` with zero-sum factor lengths `2m+1` and `4m`; `D_2` adds no short-zero-sum contradiction | [S035 closeout](../sessions/S035/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied S034 checkpoint and S035 was unique.
+- Girard--Schmid 2019 Theorems 2.1 and 3.4 were rechecked in the primary arXiv v2 PDF, confirming `D_2(G_m)=6m+1`.
+- D34-01 stops at the common-torsion whole-block partition and does not inspect the `zeta!=0` branch.
+- The result is a nonexclusion/no-go for the aggregate multiwise mechanism, not an extremal construction or existence theorem.
+- No global `k_q/r_q` solution, zero-weight-lift classification, residual-depth revival, odd-modulus analysis or quotient normalization is claimed.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blocker: B-010. External review remains CLOSED.
+- Next numbered session: NONE until the owner resolves B-010.
+

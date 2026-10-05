@@ -535,3 +535,10 @@ eligible route and JNT the recorded backup under the S022 policy refresh.
 S034 adds an internal route reassessment and a source-backed multiwise Davenport input for CAND-05. It does not alter the publication gate, claim novelty, or make the programme publication-ready.
 
 No manuscript, submission authorization, submission, acceptance, or publication has occurred. E-JC remains the leading eligible route and JNT the recorded backup under the S022 policy refresh.
+
+## S035 publication boundary
+
+S035 adds an exact route-level no-go for the promoted multiwise block-factorisation mechanism: the common-torsion compatibility family realizes the `D_2`-required two-zero-sum partition at block level. This is internal programme mathematics and is not an extremal construction, full classification, novelty certification, or standalone publication claim.
+
+No manuscript, submission authorization, submission, acceptance or publication has occurred. The publication gate remains OPEN; E-JC remains the leading eligible route and JNT the recorded backup under the S022 policy refresh. B-010 concerns mathematical strategy, not submission authorization.
+

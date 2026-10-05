@@ -673,3 +673,25 @@ CAND-02 remains historical/paused.
 | D-100 | 2026-10-05 | Promote exactly one successor, D34-01, and schedule S035 only on the even multiwise block-factorisation test. Analyze the two `D_2`-forced disjoint zero sums relative to `B_1,B_2,B_3,u` and the fixed split-coset torsion datum. Do not solve global weights/lifts or reopen the residual-shell family. | D33-01 anti-churn criterion and `sessions/S034/SOURCE_CHECK.md`. |
 
 Active owner blockers remain **NONE**. Target and publication gates remain OPEN; mathematical investigation remains OPEN; external review remains CLOSED. CAND-02 remains historical/paused.
+
+## S035 CAND-05 multiwise block-factorisation decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-101 | 2026-10-05 | Record D34-01 as an exact block-level nonexclusion and route no-go for even `m>=4`. In the already-authoritative common-torsion compatibility family, after indexing the fixed simultaneous-positive coset as `B_1`, one has `u=t` and `tau_1=tau_2=tau_3=t` with `2t=0`. Hence `S=(B_1u)(B_2B_3)` is a partition into zero-sum subsequences of lengths `2m+1` and `4m`. The `D_2` requirement therefore supplies no contradiction and no forbidden zero sum of length at most `2m`. | `sessions/S035/EVEN_MULTIWISE_BLOCK_FACTORISATION.md`; ZS-56 Theorems 2.1 and 3.4. |
+| D-102 | 2026-10-05 | **Activate B-010 and suppress next-session material.** D34-01 is stopped as an exclusion route; the S030--S033 residual-shell family remains stopped; no global weight/lift classification is authorized. A new numbered proof session requires an explicit owner strategy choice rather than an invented continuation. | D-101, D-098, FL-089, and the S035 anti-churn boundary. |
+
+### B-010 — CAND-05 strategy after the multiwise block-factorisation no-go
+
+**ACTIVE.**
+
+D34-01 used the one genuinely different global mechanism promoted by S034, but the already-surviving common-torsion compatibility family realizes the required two-zero-sum partition exactly at block level. This does not construct a CAND-05 extremal; it shows only that the current aggregate block constraints plus the exact `D_2` theorem cannot exclude the unresolved simultaneous-positive coset.
+
+**Required owner action:** choose exactly one strategy disposition:
+
+1. retain full CAND-05 and authorize a fresh source-first mechanism reassessment that must remain outside both the stopped S030--S033 residual-shell family and the failed D34-01 multiwise block-factorisation route;
+2. deliberately narrow/reframe CAND-05 to a source-justified substantial partial contribution, with a new due-diligence/significance check before proof continuation; or
+3. reassess/switch the selected target.
+
+While B-010 is active, `next_session` and `next_brief` are null, `next_prompt_status=SUPPRESSED_OWNER_BLOCKER`, and `authoritative/NEXT_SESSION_PROMPT.md` is absent. Target and publication gates remain OPEN; mathematical-investigation gate remains OPEN in principle but no numbered session is runnable until B-010 is resolved. External review remains CLOSED and parallel. CAND-02 remains historical/paused.
+

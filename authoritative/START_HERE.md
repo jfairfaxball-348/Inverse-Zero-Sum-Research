@@ -10,23 +10,14 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S034 records before later target-specific work, with
+7. The completed S002–S035 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S034 is completed. D33-01 does not reopen the stopped residual-shell route.
-For the three nonzero `L`-cosets, the bucket equations give complete blocks
-`S=B_1B_2B_3u` with `|B_i|=2m`, `|u|=1`. If `tau_i=y_i-x_i`, then
-`sigma(B_i)=tau_i` even when the partner has zero kernel weight, and
-`sigma(S)=u+tau_1+tau_2+tau_3=zeta`. A focused source recheck gives the
-exact global threshold `D_2(G_m)=6m+1`; hence every candidate has two disjoint
-nonempty zero sums, each of length at least `2m+1`. This is genuinely global
-information not encoded by the S029 completion-depth function. CAND-05 remains
-SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Exactly one successor is promoted:
-S035 is READY for D34-01, the even multiwise block-factorisation test.**
+**S035 is completed. D34-01 reaches an exact route-level nonexclusion at the first authorized outcome. In the already-surviving common-torsion compatibility family, index the fixed simultaneous-positive coset as `B_1`; then `u=t` and `tau_1=tau_2=tau_3=t` with `2t=0`. Thus `S=(B_1u)(B_2B_3)` is a partition into two zero sums of lengths `2m+1` and `4m`, exactly satisfying the `D_2(G_m)=6m+1` requirement without producing a forbidden zero sum of length at most `2m`. This is not an actual extremal construction. The S030--S033 residual-shell route and D34-01 multiwise block-factorisation route are both stopped as exclusion mechanisms. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Owner strategy blocker B-010 is ACTIVE; no S036 prompt or brief is scheduled.**
 
 Selected target:
 
@@ -37,10 +28,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S035 D34-01 brief.
+- Mathematical-investigation gate: OPEN in principle, but no numbered session is runnable while B-010 is active.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: NONE.
-- Next session: S035.
+- Active owner blockers: B-010.
+- Next session: NONE until B-010 is resolved.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -602,3 +593,14 @@ four Fano residual lines only.
 S034 compares the three required mechanism classes. Pure global weight arithmetic gives `k_{q_i}+k_{q_i+ell}=m-1` independently in each nonzero `L`-coset and does not exclude a split. Aggregate lift information is stronger: the complete block sum is `tau_i=y_i-x_i`, so the S032 defect `zeta` is the actual total sum of `S`. The source-based global input `D_2(G_m)=6m+1` then forces two disjoint zero sums at exactly the candidate length.
 
 If `zeta=0`, the two forced zero sums must partition all of `S`; if `zeta!=0`, they leave a nonempty complement of length at most `2m-1` and sum `zeta`. S035 tests this factorisation relative to the three `2m` blocks and the fixed simultaneous-positive torsion datum. No global weight vector, seven-lift classification, odd-modulus branch, quotient normalization, or residual-shell revival is pre-authorized.
+
+## S035 multiwise block-factorisation checkpoint
+
+S035 resolves D34-01 at the first exact outcome and stops. Re-index the three nonzero `L`-coset blocks so the fixed simultaneous-positive coset is `B_1`. Its S028 torsion difference is `tau_1=t`, where `t in G_m[2]`, `t!=0`, `pi(t)=ell`.
+
+The S031--S033 common-torsion compatibility family already takes `u=t` and `tau_1=tau_2=tau_3=t`. Since `2t=0`, the S034 total is `zeta=4t=0`. More importantly, the whole-block partition `A_0=B_1u`, `B_0=B_2B_3` has `sigma(A_0)=sigma(B_0)=0`, with lengths `2m+1` and `4m`. Thus it realizes precisely the two disjoint nonempty zero sums required by `D_2(G_m)=6m+1`, while both lengths exceed the forbidden threshold `2m`.
+
+This is an exact surviving factorisation type at the level of proved necessary constraints, not an actual extremal construction. The `zeta!=0` branch is not pursued because the brief requires stopping at the first exact outcome.
+
+The S030--S033 shell route remains stopped and D34-01 is now stopped as an exclusion route. B-010 is active; no S036 prompt or brief is scheduled pending the owner's strategy disposition.
+

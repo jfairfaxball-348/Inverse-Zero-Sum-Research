@@ -242,3 +242,10 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-089 | 2026-10-05 | After stopping the residual-shell family, the three bucket equations can look like a global arithmetic route, but they are independent compositions of `m-1` and by themselves allow positive-positive splits. Conversely, directly classifying kernel-invisible partners would simply expand into the forbidden seven-lift problem. | Use only aggregate block data that genuinely sees the invisible partners, and require an external/global theorem that consumes it. S034 identifies `sigma(B_i)=tau_i`, `sigma(S)=zeta`, and the exact `D_2(G_m)=6m+1` threshold; D34-01 must be falsified if this adds no invariant beyond stopped shell data. | S034 D33-01 |
+
+## S035 multiwise block-factorisation lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-090 | 2026-10-05 | A global theorem can be genuinely different from a stopped local shell mechanism yet still fail to distinguish the surviving compatibility family. Here the common-torsion aggregate data themselves factor as `(B_1u)(B_2B_3)`, exactly satisfying the `D_2`-forced pair with lengths above the short-zero-sum cutoff. | Stop D34-01 as an exclusion route. Do not inspect the `zeta!=0` branch merely to prolong the same mechanism, and do not fall back to another residual-depth or seven-lift classification variant. Require an explicit owner strategy choice before a new numbered session. | S035 D34-01 / D-101--D-102 |
+

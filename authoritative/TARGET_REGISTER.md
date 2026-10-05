@@ -986,3 +986,20 @@ The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS U
 For even `m>=4`, committed authority now also gives the aggregate block decomposition `S=B_1B_2B_3u`, with `|B_i|=2m`, `sigma(B_i)=tau_i`, and `sigma(S)=zeta`. The source-based global input `D_2(G_m)=6m+1` forces two disjoint nonempty zero sums, each longer than `2m` in an extremal. These facts do not classify the full multiplicity vector or lifts and do not establish existence/nonexistence of simultaneous positivity.
 
 The S030--S033 shell route remains stopped. D34-01 is the single authorized even-modulus successor.
+
+## S035 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
+
+For even `m>=4`, D34-01 reaches an exact nonexclusion at block level. In the common-torsion compatibility family already surviving S031--S033, index the fixed simultaneous-positive block as `B_1` and take `u=t`, `tau_1=tau_2=tau_3=t`, where `t` is the fixed nonzero two-torsion element with quotient image `ell`. Then `zeta=0` and
+
+`S=(B_1u)(B_2B_3)`
+
+is a partition into two zero sums of lengths `2m+1` and `4m`. Those lengths are both above the CAND-05 forbidden threshold `2m`, so the exact `D_2(G_m)=6m+1` input does not exclude the unresolved simultaneous-positive coset.
+
+This does not assert that the compatibility family is realizable by an actual CAND-05 extremal. It establishes only that the current aggregate block constraints and multiwise theorem do not distinguish it from one. D34-01 is stopped as an exclusion route; the S030--S033 residual-shell route also remains stopped.
+
+B-010 is active. No next mathematical dependency is selected until the owner chooses the strategy disposition.
+
