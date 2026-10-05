@@ -570,3 +570,27 @@ computation remain CLOSED.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S032, D31-01 complementary four-term residual subsets
   only.
+
+## S032 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S032 | COMPLETED BOUNDED INVESTIGATION; D31-01 COMPLEMENTARY FOUR-SET SHELL SYSTEM / TOTAL-RESIDUAL NONEXCLUSION | ecce9c2ac1330657278aae25310944cd791a2d8c | All seven complementary four-set sums lie in `E(K)`; exact line/complement coupling through total residual sum; translation defect `zeta` isolated; common-torsion family survives | [S032 closeout](../sessions/S032/CLOSEOUT.md) |
+
+- Live `main` was the completed S031 authority checkpoint and S032 was unique.
+- D31-01 proves shell membership for all seven Fano-line complementary
+  four-term residual subsets.
+- The fourteen line/complement shell constraints are exactly
+  `w_F in E(K) cap (r-E(K))`; the new uncontrolled variable is
+  `zeta=r-(h_1+h_2+h_3)=u+tau_1+tau_2+tau_3 in H`.
+- The target is not excluded: the common-torsion family has `zeta=0` and
+  satisfies all seven complement shell memberships explicitly.
+- A bounded enumeration covered all 172 unit cases with even `4<=m<=40`
+  and found zero discrepancies.
+- No arbitrary additional residual subset, global weight solution, seven-lift
+  classification, odd-modulus analysis, quotient normalization or existence
+  claim is made.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S033, D32-01 full seven-term residual depth only.
+
