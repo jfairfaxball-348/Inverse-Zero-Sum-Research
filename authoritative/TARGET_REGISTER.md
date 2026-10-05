@@ -1028,3 +1028,23 @@ Full all-m CAND-05 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 S036 changes no target statement and makes no existence or classification claim.
 The three fresh mechanisms tested in D35-01 do not produce a runnable successor,
 so B-011 is active before any further numbered mathematical session.
+
+
+## Post-S036 owner target-reassessment decision
+
+Date: 2026-10-05.
+
+The owner resolved B-011 with option 2: reassess/switch the selected target.
+CAND-05 remains the historical incumbent only until an explicit replacement
+selection, but its proof programme is paused. The exact CAND-05 status remains
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN; S036's failed mechanism search is not
+an openness or novelty certificate.
+
+S037 is a source-first target-selection session. It will refresh CAND-03 and
+CAND-01 from the S021 baseline, use the S022--S036 CAND-05 history as strategic
+evidence, and may discover at most two genuinely new source-defined candidates.
+CAND-04 stays retired absent positive primary evidence changing its hidden
+direct-EGZ dependency; CAND-02 remains historical/paused.
+
+No replacement target is selected by this owner strategy decision. Final target
+selection returns to the owner after S037's comparison and recommendation.
