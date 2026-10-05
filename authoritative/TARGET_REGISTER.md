@@ -1003,3 +1003,20 @@ This does not assert that the compatibility family is realizable by an actual CA
 
 B-010 is active. No next mathematical dependency is selected until the owner chooses the strategy disposition.
 
+## Post-S035 CAND-05 strategy boundary
+
+Date: 2026-10-05.
+
+The owner resolved B-010 by retaining full CAND-05. The exact selected target is
+unchanged and remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**.
+
+The resolution authorizes one fresh source-first mechanism reassessment, not a
+return to a stopped proof architecture. S036 D35-01 must stay outside the
+S030--S033 residual-shell/completion-depth family and D34-01's aggregate
+multiwise block-factorisation route. It may compare at most three genuinely
+distinct theorem-backed mechanisms and promote at most one bounded mathematical
+successor without proving it.
+
+No target narrowing, existence claim, odd-`m` conclusion, lift classification,
+or full classification is implied by the owner decision.
+

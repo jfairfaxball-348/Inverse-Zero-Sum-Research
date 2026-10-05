@@ -754,3 +754,9 @@ Proof / source-check date: **2026-10-05**. No new source ID is added; S035 reche
 | C-154 | PROGRAMME_PROVED / EXACT NECESSARY-CONSTRAINT FACTORISATION | In the S031--S033 common-torsion compatibility family, after indexing the fixed simultaneous-positive coset as `B_1`, one has `u=t` and `tau_1=tau_2=tau_3=t` with `2t=0`. Hence `zeta=0` and the block partition `A_0=B_1u`, `B_0=B_2B_3` consists of two zero sums with lengths `2m+1` and `4m`. | S034 gives `|B_i|=2m` and `sigma(B_i)=tau_i`; S028 gives the fixed split torsion; S031--S033 supply the common-torsion compatibility assignment. This is compatibility of proved necessary constraints, not an actual extremal construction. |
 | C-155 | PROGRAMME_ROUTE_BOUNDARY / NO-GO | The exact source input `D_2(G_m)=6m+1` does not exclude the even simultaneous-positive target at the aggregate block level: C-154 realizes the required two disjoint nonempty zero sums, and both have length greater than `2m`. D34-01 is therefore stopped as an exclusion route at the first exact outcome. | ZS-56 Theorems 2.1/3.4 plus C-154. No claim is made about the `zeta!=0` branch, actual existence, global weights/lifts, odd `m`, or full CAND-05 classification. |
 
+## Post-S035 owner strategy claim
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-156 | OWNER_STRATEGY_DECISION | B-010 is resolved by retaining full CAND-05 and authorizing S036 D35-01, a fresh source-first mechanism reassessment outside the stopped S030--S033 residual-shell family and stopped D34-01 aggregate multiwise block-factorisation route. | D-103--D-104. This is a programme strategy decision, not a mathematical theorem, openness claim, novelty claim, or publication-significance claim. |
+

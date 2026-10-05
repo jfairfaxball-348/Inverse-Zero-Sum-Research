@@ -639,3 +639,13 @@ computation remain CLOSED.
 - Active owner blocker: B-010. External review remains CLOSED.
 - Next numbered session: NONE until the owner resolves B-010.
 
+## Post-S035 owner strategy resolution
+
+- B-010 resolved by explicit owner choice of option 1.
+- Full CAND-05 remains selected; CAND-02 remains historical/paused.
+- The S030--S033 residual-shell route and D34-01 multiwise block-factorisation
+  route remain stopped as exclusion mechanisms.
+- No new mathematical claim is made by the owner resolution.
+- Active owner blockers: NONE.
+- Next numbered session: S036, D35-01 fresh source-first mechanism reassessment.
+

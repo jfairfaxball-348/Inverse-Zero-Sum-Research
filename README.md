@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: S035 completed. D34-01 is an exact block-level no-go for the promoted multiwise mechanism: the surviving common-torsion aggregate family factors as `S=(B_1u)(B_2B_3)` into zero sums of lengths `2m+1` and `4m`, so `D_2(G_m)=6m+1` supplies no short-zero-sum contradiction. This is not an extremal construction. The residual-shell and multiwise block-factorisation exclusion routes are stopped. B-010 is ACTIVE and no S036 is scheduled pending an owner strategy choice. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
+**Current stage: S035 is completed and B-010 is resolved by owner choice of option 1. Full CAND-05 remains selected. Both the S030--S033 residual-shell exclusion route and D34-01 multiwise block-factorisation exclusion route remain stopped. S036 is READY for D35-01, one bounded source-first search for a genuinely different structural mechanism; it may compare at most three credible source-backed routes and promote at most one mathematical successor, but it may not prove that successor. CAND-02 remains historical/paused, and Xue Li's pending Stage-1 outreach remains CAND-02-specific.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -15,13 +15,13 @@ checkpoints useful work, then automatically provides a close report.
 
 **A next-session prompt appears only when it is immediately runnable. If an
 active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 through B-009 are resolved. B-010 is ACTIVE after S035; no next-session prompt is live until the owner resolves the strategy disposition.
+and no next-session prompt.** B-006 through B-010 are resolved. S036 is the live bounded CAND-05 source-first mechanism-reassessment session.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-05 is selected at exact all-`m` ordinary inverse-`eta` scope.
 2. Publication gate — OPEN: E-JC remains lead; JNT is a natural comparable/backup.
-3. Mathematical-investigation gate — OPEN in principle, but B-010 suppresses any runnable next session.
+3. Mathematical-investigation gate — OPEN: S036 is authorized for the bounded D35-01 source-first mechanism reassessment only.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
@@ -251,3 +251,18 @@ pre-authorized.
 S034 closes D33-01 without reopening the S030--S033 shell family. The bucket equations imply three complete nonzero-`L`-coset blocks `B_i` of length `2m` and one singleton `u=x_ell`. If `tau_i=y_i-x_i` is the lift difference inside the `i`th coset, then `sigma(B_i)=tau_i` even when the partner has zero kernel weight, and `sigma(S)=u+tau_1+tau_2+tau_3=zeta`.
 
 A focused recheck of Girard--Schmid 2019 gives `D_2(G_m)=6m+1`, exactly the candidate length. Thus every candidate has two disjoint nonempty zero sums, each of length at least `2m+1`. This full-sequence factorisation is not reducible to S029 completion depth and clears the anti-churn bar. Exactly one successor, D34-01, is promoted for S035; S034 itself proves no exclusion or classification.
+
+## Post-S035 owner strategy resolution
+
+The owner chose B-010 option 1: retain full CAND-05 and authorize a fresh
+source-first mechanism reassessment. This does not revive either stopped
+exclusion architecture. The S030--S033 residual-shell family and D34-01
+multiwise block-factorisation route remain stopped.
+
+S036 will run D35-01 only. It must compare at most three genuinely distinct
+source-backed mechanisms, record exact theorem/hypothesis/applicability
+boundaries and falsification criteria, and promote at most one bounded
+mathematical successor without proving it. If no mechanism clears the
+anti-churn bar, S036 must activate a new owner strategy blocker rather than
+manufacture S037.
+

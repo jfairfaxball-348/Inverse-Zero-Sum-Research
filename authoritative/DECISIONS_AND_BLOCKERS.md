@@ -695,3 +695,17 @@ D34-01 used the one genuinely different global mechanism promoted by S034, but t
 
 While B-010 is active, `next_session` and `next_brief` are null, `next_prompt_status=SUPPRESSED_OWNER_BLOCKER`, and `authoritative/NEXT_SESSION_PROMPT.md` is absent. Target and publication gates remain OPEN; mathematical-investigation gate remains OPEN in principle but no numbered session is runnable until B-010 is resolved. External review remains CLOSED and parallel. CAND-02 remains historical/paused.
 
+## Post-S035 owner strategy decision
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-103 | 2026-10-05 | **Resolve B-010 by choosing option 1: retain full CAND-05 and authorize a fresh source-first mechanism reassessment.** Both stopped exclusion architectures remain stopped: S030--S033 residual-shell/completion-depth variants and D34-01's aggregate `D_2) block-factorisation route. | Explicit owner choice: “1”. |
+| D-104 | 2026-10-05 | Schedule S036 as D35-01 only, a bounded source-first CAND-05 mechanism reassessment. Compare at most three genuinely distinct source-backed mechanisms; record exact theorem/hypothesis/applicability and falsification boundaries; promote at most one bounded mathematical successor without proving it. If none clears the anti-churn bar, activate a new owner blocker rather than manufacture S037. | B-010 option 1 and the S035 route no-go. |
+
+B-010 is resolved. Active owner blockers are **NONE**.
+
+Full CAND-05 remains selected at the exact all-`m` scope. Target and publication
+gates remain OPEN; mathematical investigation remains OPEN for the bounded S036
+D35-01 source-first reassessment; external review remains CLOSED and parallel.
+CAND-02 remains historical/paused.
+

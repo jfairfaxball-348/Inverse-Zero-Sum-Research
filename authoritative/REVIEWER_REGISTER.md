@@ -613,3 +613,14 @@ S035 sent no outreach and received no CAND-05 independent review. The whole-bloc
 
 The provisional CAND-05 reviewer route remains David J. Grynkiewicz as first status/proposal lead, Pingzhi Yuan as a strong alternative, with Girard/Schmid as controlling-source experts rather than default independent reviewers. External-review gate remains CLOSED. Xue Li's pending Stage-1 message remains strictly CAND-02-specific. B-010 does not reinterpret reviewer silence or transfer reviewer status.
 
+## Post-S035 owner strategy reviewer boundary
+
+The owner choice resolving B-010 does not authorize outreach and does not alter
+reviewer status. No CAND-05 reviewer is confirmed; external-review gate remains
+CLOSED and parallel.
+
+The provisional CAND-05 route remains David J. Grynkiewicz as first
+status/proposal lead, Pingzhi Yuan as a strong alternative, with Girard/Schmid
+as controlling-source experts rather than default independent reviewers. Xue
+Li's pending Stage-1 message remains strictly CAND-02-specific.
+

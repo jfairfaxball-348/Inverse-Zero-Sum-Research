@@ -542,3 +542,13 @@ S035 adds an exact route-level no-go for the promoted multiwise block-factorisat
 
 No manuscript, submission authorization, submission, acceptance or publication has occurred. The publication gate remains OPEN; E-JC remains the leading eligible route and JNT the recorded backup under the S022 policy refresh. B-010 concerns mathematical strategy, not submission authorization.
 
+## Post-S035 owner strategy publication boundary
+
+The owner choice to retain full CAND-05 and authorize S036 changes mathematical
+strategy only. It does not alter the publication gate, certify novelty, define a
+standalone contribution, authorize manuscript preparation, or authorize
+submission.
+
+E-JC remains the leading eligible route and JNT the recorded backup under the
+S022 policy refresh. Publication gate remains OPEN.
+

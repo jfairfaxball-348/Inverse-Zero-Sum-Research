@@ -1110,3 +1110,19 @@ Thus the common-torsion family realizes precisely the two disjoint nonempty zero
 
 The S030--S033 shell route remains stopped and D34-01 is now stopped as an exclusion route. B-010 is active; no S036 prompt or brief is scheduled pending the owner's strategy disposition.
 
+## Post-S035 owner strategy checkpoint
+
+The owner resolved B-010 with option 1: retain full CAND-05 and authorize a
+fresh source-first mechanism reassessment.
+
+This resolution does not reopen a failed route. The S030--S033
+residual-shell/proper-subset/completion-depth family remains stopped, and
+D34-01's aggregate `D_2) two-zero-sum block-factorisation route remains
+stopped, including cosmetic continuation through another total-sum branch.
+
+S036 runs D35-01 only. It will freshly inspect primary/current sources for at
+most three genuinely different mechanisms, require exact theorem/hypothesis and
+applicability boundaries, and may promote at most one bounded mathematical
+successor without proving it. If no mechanism clears the anti-churn bar, S036
+must activate a new owner strategy blocker rather than schedule S037.
+

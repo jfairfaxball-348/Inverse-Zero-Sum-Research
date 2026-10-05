@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S035",
-  "next_session": null,
-  "next_brief": null,
+  "next_session": "S036",
+  "next_brief": "authoritative/S036_CANDIDATE_5_FRESH_MECHANISM_SOURCE_REASSESSMENT_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S035_COMPLETED_D34_01_BLOCK_FACTORISATION_NO_GO_OWNER_STRATEGY_BLOCKER",
+  "programme_status": "S036_READY_CAND05_FRESH_MECHANISM_SOURCE_REASSESSMENT",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence. S023--S033 establish the canonical equality/kernel/even-coset structure and stop the residual-shell family. S034 promoted the global D_2 mechanism; S035 shows the already-surviving common-torsion compatibility family exactly satisfies it via a whole-block zero-sum partition, so D34-01 is stopped as an exclusion route. B-010 is active. Current target status remains unknown.",
+  "candidate_under_due_diligence": "CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN after S022 due diligence and S023--S035 mathematical work. The residual-shell and aggregate D_2 block-factorisation exclusion routes are stopped. Owner resolution of B-010 retains full CAND-05 and authorizes S036 D35-01, a fresh source-first mechanism reassessment outside those routes.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -94,17 +94,14 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [
-    "B-010"
-  ],
+  "active_owner_blockers": [],
   "future_owner_requirements": [
-    "Resolve B-010 by choosing: retain full CAND-05 with a fresh source-first mechanism reassessment outside the stopped routes; deliberately narrow/reframe CAND-05 with new due diligence; or reassess/switch the selected target.",
     "Preserve and assess any substantive Xue Li reply honestly; if it identifies prior art, a known solution, material overlap, a mistaken premise, or a serious scope/significance concern, pause the affected mathematical direction and reassess it.",
     "Continue external independent review in parallel and obtain appropriate independent scrutiny of the mathematical contribution/manuscript before journal submission, subject to actual reviewer willingness and availability.",
     "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
+  "next_prompt_status": "READY",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -312,7 +309,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 remains selected and source-audited. The S030--S033 residual-shell family is stopped, and S035 now stops D34-01 as an aggregate multiwise exclusion route: the common-torsion compatibility family realizes the exact whole-block zero-sum partition (B_1u)(B_2B_3) with lengths 2m+1 and 4m. This is not an extremal construction. B-010 requires an owner strategy choice before any S036; no global weight/lift classification or shell revival is authorized. CAND-02 remains historical/paused.",
+  "current_route_disposition": "CAND-05 remains selected. The S030--S033 residual-shell exclusion family and D34-01 aggregate multiwise block-factorisation exclusion route are both stopped. B-010 was resolved by owner option 1: retain full CAND-05 and authorize a fresh source-first mechanism reassessment. S036 runs D35-01 only, comparing at most three genuinely distinct source-backed mechanisms and promoting at most one mathematical successor without proving it.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -352,7 +349,7 @@
     "hidden_property_d_prerequisite": false,
     "rank_two_inverse_eta": "UNCONDITIONAL",
     "search_boundary": "No completion found in bounded current search; non-hit is not openness or novelty evidence",
-    "next_dependency": "OWNER STRATEGY DECISION REQUIRED under B-010 after D34-01 block-factorisation no-go"
+    "next_dependency": "D35-01 fresh source-first CAND-05 mechanism reassessment outside the stopped residual-shell and D_2 block-factorisation routes"
   },
   "s023_mathematical_investigation_date": "2026-10-05",
   "cand05_equality_decomposition": {
@@ -484,5 +481,7 @@
     "verdict": "D_2(G_m)=6m+1 adds no exclusion invariant against the common-torsion compatibility family at aggregate block level",
     "boundary": "not an actual CAND-05 extremal construction; zeta!=0 branch not pursued after the first exact outcome; no global k_q/r_q solution, lift classification, residual-depth revival, odd-m analysis or quotient normalization",
     "strategy_blocker": "B-010"
-  }
+  },
+  "b010_resolution_date": "2026-10-05",
+  "post_s035_owner_strategy_choice": "B-010 option 1: retain full CAND-05 and authorize a fresh source-first mechanism reassessment"
 }

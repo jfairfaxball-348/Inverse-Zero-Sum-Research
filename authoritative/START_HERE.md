@@ -17,7 +17,7 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S035 is completed. D34-01 reaches an exact route-level nonexclusion at the first authorized outcome. In the already-surviving common-torsion compatibility family, index the fixed simultaneous-positive coset as `B_1`; then `u=t` and `tau_1=tau_2=tau_3=t` with `2t=0`. Thus `S=(B_1u)(B_2B_3)` is a partition into two zero sums of lengths `2m+1` and `4m`, exactly satisfying the `D_2(G_m)=6m+1` requirement without producing a forbidden zero sum of length at most `2m`. This is not an actual extremal construction. The S030--S033 residual-shell route and D34-01 multiwise block-factorisation route are both stopped as exclusion mechanisms. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. Owner strategy blocker B-010 is ACTIVE; no S036 prompt or brief is scheduled.**
+**S035 is completed and B-010 is resolved by the owner choosing option 1: retain full CAND-05 and authorize a fresh source-first mechanism reassessment. Both the S030--S033 residual-shell exclusion route and D34-01 multiwise block-factorisation exclusion route remain stopped. S036 is READY for D35-01, which may compare at most three genuinely different source-backed mechanisms and promote at most one bounded mathematical successor, but may not prove that successor. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.**
 
 Selected target:
 
@@ -28,10 +28,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: OPEN in principle, but no numbered session is runnable while B-010 is active.
+- Mathematical-investigation gate: OPEN for S036 D35-01 source-first route reassessment only.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: B-010.
-- Next session: NONE until B-010 is resolved.
+- Active owner blockers: NONE.
+- Next session: S036.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -603,4 +603,19 @@ The S031--S033 common-torsion compatibility family already takes `u=t` and `tau_
 This is an exact surviving factorisation type at the level of proved necessary constraints, not an actual extremal construction. The `zeta!=0` branch is not pursued because the brief requires stopping at the first exact outcome.
 
 The S030--S033 shell route remains stopped and D34-01 is now stopped as an exclusion route. B-010 is active; no S036 prompt or brief is scheduled pending the owner's strategy disposition.
+
+## Post-S035 owner strategy resolution
+
+B-010 is resolved by explicit owner choice of option 1. Full CAND-05 remains
+selected. S036 is one bounded source-first mechanism reassessment, D35-01.
+
+The following remain hard route stops: the S030--S033
+residual-shell/proper-subset/completion-depth family; D34-01's `D_2)
+two-zero-sum block factorisation, including merely continuing its other
+total-sum branch; pure uncoupled weight bookkeeping; and direct seven-lift or
+kernel-invisible-partner classification.
+
+S036 may promote at most one genuinely new theorem-backed mathematical
+dependency and must not prove it. If no new mechanism clears the bar, it must
+activate a new owner blocker rather than schedule cosmetic continuation.
 
