@@ -217,3 +217,9 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-085 | 2026-10-05 | The fact that the three quotient-zero residual triples share the same `u=x_ell` can look like an immediate cross-coset rigidity statement. In fact it only creates an intersection of three translated shells, and the relative translations are not fixed when zero-weight members are invisible to the kernel. | Expose the pair-sums `p_i` and differences `d_2,d_3` explicitly before seeking a contradiction. The common-torsion assignment shows the three through-`ell` constraints alone are compatible; any further exclusion needs genuinely new residual-line coupling. | S030-P2/P3 |
+
+## S031 full seven-Fano-line lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-086 | 2026-10-05 | Adding all four remaining Fano-line shell memberships can look as though it must determine the S030 pair-sum translations. In the common-torsion subfamily, however, the four new line sums collapse to one half of `h_1+h_2+h_3`, and an `H[2]` shift of a base lift moves among all four halves without changing quotient classes, doubles, or the three through-`ell` sums. | Before claiming cross-line rigidity, expose the half-fibre and test whether it intersects the exact shell. Here it always does on `h_2+<h_1>`. Any further exclusion must use residual subsets that couple a Fano line to additional total-residual data. | S031-P2/P3 |
