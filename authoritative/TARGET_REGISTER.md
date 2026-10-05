@@ -877,3 +877,25 @@ The next dependency is D29-01, restricted to the simultaneous shell constraints
 on the three residual quotient-zero triples through `ell`. S030 must not
 solve global weights/lifts, inspect the other Fano lines, treat odd `m`, or
 normalize quotient automorphisms.
+
+
+## S030 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+For even `m>=4`, D29-01 is programme-proved as an exact necessary
+three-line compatibility statement. Every residual quotient-zero triple through
+`ell` has its lift-sum in `E(K)`. Their common lift is equivalent to
+an intersection of three translated copies of the S029 shell.
+
+This does not exclude the fixed simultaneous-positive coset. The relative
+pair-sums of the other two cosets are not determined by S025--S029 when a
+zero-weight member is present, and a common-torsion assignment realizes all
+three shell points simultaneously. This is not an actual extremal construction.
+
+The next dependency is D30-01, restricted to the remaining four Fano residual
+lines. S031 must stop before global weights/lifts, odd `m`, quotient
+normalization or any existence/full-classification claim.

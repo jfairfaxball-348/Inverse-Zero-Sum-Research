@@ -680,3 +680,16 @@ finite modular arithmetic inside the S025 canonical kernel.
 | C-136 | PROGRAMME_PROVED | For `K=h_1^(m-1)h_2^(m-1)h_3^(m-1)`, `h_3=h_2-a h_1`, and `w=xi h_1+nu h_2`, put `P=[-xi]_m`, `Q=[-nu]_m`. Then the minimum completion length is `lambda(w)=Q+min_{0<=gamma<=Q}[P+a gamma]_m`. | Direct count of `h_1,h_2,h_3` terms; `gamma>Q` already costs at least `m`. |
 | C-137 | PROGRAMME_PROVED | The exact depth-`m-1` shell is `(h_2+<h_1>) union (h_1+<h_3>)` for `a=1`; `(h_2+<h_1>) union (h_1+<h_2>)` for `a=-1`; and `(h_2+<h_1>) union {h_1,h_2+h_3}` for every other unit. | Equality requires a modular progression segment to be a terminal interval. Proper interval overlap forces `a=+-1` for all intermediate lengths. |
 | C-138 | PROGRAMME_PROVED NECESSARY CONDITION / BOUNDARY | In the fixed S028 simultaneous-positive coset, `z=u+t` must lie in `E(K)-h`, with the translated sets stated explicitly in S029. This does not exclude the target because each `h_i` lies in `E(K)`, so `z=0` remains allowed. | `sessions/S029/EVEN_COMPLETION_SHELL.md`; no other residual quotient-zero subset is used and no existence claim is made. |
+
+
+## S030 CAND-05 even residual-line compatibility claims
+
+Proof date: **2026-10-05**. No new source ID is added; D29-01 uses the
+already-authoritative rank-two `eta` threshold, S025 normal form and
+S026--S029 even-modulus geometry.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-139 | PROGRAMME_PROVED | For each of the three nonzero `L`-cosets `C_i={q_i,q_i+ell}`, the canonical residual triple `x_{q_i}x_{q_i+ell}u` has lift-sum `w_i in E(K)`. | `eta(H)` gives a completion of size at most `m-1`; size at most `m-2` would lift to a forbidden zero sum of length at most `2m-1`. |
+| C-140 | PROGRAMME_PROVED NECESSARY CONDITION | With `p_i=x_{q_i}+x_{q_i+ell}`, the shared lift is exactly `u in cap_i(E(K)-p_i)`. Equivalently, `w_1 in E(K) cap (E(K)-d_2) cap (E(K)-d_3)` for `d_j=p_j-p_1`. | Algebraic reformulation of the three S030-P1 shell memberships; no global lift classification. |
+| C-141 | PROGRAMME_BOUNDARY / NONEXCLUSION | S025--S029 do not control `d_2,d_3` when a non-fixed coset may contain a zero-weight member. The current constraints remain compatible: with fixed torsion `t`, `u=t`, and the same `t`-translation in each bucket fibre, the three residual sums are `h_1,h_2,h_3 in E(K)`. | `sessions/S030/EVEN_RESIDUAL_LINE_COMPATIBILITY.md`; compatibility of necessary constraints only, not an extremal construction. |

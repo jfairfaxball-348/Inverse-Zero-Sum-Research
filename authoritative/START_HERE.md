@@ -10,22 +10,25 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S029 records before later target-specific work, with
+7. The completed S002–S030 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S029 is completed. D28-01 classifies the depth-`m-1` completion shell
-of the S025 canonical kernel exactly for even `m>=4`. If
-`h_3=h_2-a h_1`, then `a=1` and `a=-1` give two-affine-line
-shells, while every other unit gives one affine line plus the two points
-`h_1` and `h_2+h_3`. For the fixed S028 target, the offset
-`z=u+t` must lie in the exact translate `E(K)-h`; this restricts but
-does not exclude simultaneous positivity because `z=0` remains allowed for
-every bucket. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S030 is
-READY for one bounded even-modulus residual-line compatibility unit.**
+**S030 is completed. D29-01 proves that the lift-sum of each of the three
+residual quotient-zero triples through `ell` lies in the exact S029 shell
+`E(K)`. Writing `p_i=x_{q_i}+x_{q_i+ell}`, their shared lift is
+equivalent to `u in cap_i(E(K)-p_i)`, or
+`w in E(K) cap (E(K)-d_2) cap (E(K)-d_3)`. The two relative
+pair-sums `d_2,d_3` are not controlled by S025--S029 when a non-fixed
+coset may contain a zero-weight member. The constraints remain compatible:
+using the fixed torsion `t`, the boundary `u=t`, and the same
+`t`-translation in the other bucket fibres makes the three shell points
+exactly `h_1,h_2,h_3`. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN. S031 is READY for one bounded unit on the remaining four Fano residual
+lines.**
 
 Selected target:
 
@@ -36,10 +39,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S030 brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S031 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S030.
+- Next session: S031.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -95,11 +98,16 @@ S029 resolves D28-01 exactly. In the S025 basis/unit normal form the shell is
 offset satisfies `z=u+t in E(K)-h`. Since every `h_i` lies in the shell,
 `z=0` survives and there is no local exclusion.
 
-S030 addresses D29-01 only: apply the same shell to the three residual
-quotient-zero lines through the common class `ell` and test whether their
-shared lift `u=x_ell` creates a cross-coset incompatibility. It must not
-solve global weights/lifts, inspect the other Fano lines, treat odd `m`, or
-normalize quotient automorphisms.
+S030 resolves D29-01 as an exact three-line shell coupling. All three
+through-`ell` residual sums lie in `E(K)`, and their common lift is
+equivalent to an intersection of three translated shells. The target is not
+excluded because the pair-sum translations remain uncontrolled and a common
+torsion assignment realizes the three shell points `h_1,h_2,h_3`.
+
+S031 addresses D30-01 only: apply the shell/lifting test to the remaining four
+quotient-zero Fano residual triples and combine those memberships with S030.
+It must stop before global weights/lifts, odd `m`, quotient normalization or
+an existence/full-classification claim.
 
 Search non-hits remain non-evidence of openness or novelty.
 
@@ -537,3 +545,28 @@ S030 is restricted to D29-01: test only the three residual quotient-zero
 triples through `ell` against the exact S029 shell and the common
 `u=x_ell`. No global multiplicity/lift classification, other Fano lines,
 odd-modulus branch or quotient normalization is authorized.
+
+
+## Frontier after S030
+
+D29-01 is programme-proved for even `m>=4`. For the three nonzero
+`L`-cosets `C_i={q_i,q_i+ell}`, put
+`p_i=x_{q_i}+x_{q_i+ell}` and `w_i=p_i+u`.
+Each `w_i` lies in the exact S029 shell `E(K)`: the `eta(H)`
+threshold supplies a completion using at most `m-1` kernel terms, while a
+completion using at most `m-2` would lift with the residual triple to a
+forbidden zero sum of length at most `2m-1`.
+
+The shared `u=x_ell` gives exactly
+`u in (E(K)-p_1) cap (E(K)-p_2) cap (E(K)-p_3)`.
+Equivalently, with `d_2=p_2-p_1`, `d_3=p_3-p_1`, and `w=w_1`,
+`w in E(K) cap (E(K)-d_2) cap (E(K)-d_3)`.
+
+This does not exclude the fixed simultaneous-positive coset. S025--S029 do not
+control `d_2,d_3` when the other member of a non-fixed coset may have zero
+kernel weight. Moreover the fixed S028 torsion `t`, together with
+`u=t` and the same `t`-translation in each bucket doubling fibre,
+makes the three residual sums exactly `h_1,h_2,h_3`, all in `E(K)`.
+This is a compatibility assignment for the proved necessary constraints, not an
+extremal construction. The promoted successor is D30-01/S031 on the remaining
+four Fano residual lines only.

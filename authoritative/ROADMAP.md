@@ -983,3 +983,25 @@ shell only to the three quotient-zero residual triples through `ell` and
 test whether their common lift `u=x_ell` creates a cross-coset
 compatibility obstruction. It must stop before global weights/lifts, the other
 Fano lines, odd `m`, quotient normalization or an existence claim.
+
+
+## S030 residual-line compatibility checkpoint
+
+S030 resolves D29-01 as an exact necessary three-line coupling for even
+`m>=4`. Each of the three residual quotient-zero triples through `ell`
+has lift-sum in the S029 shell `E(K)`. If
+`p_i=x_{q_i}+x_{q_i+ell}`, their common lift satisfies
+`u in cap_i(E(K)-p_i)`.
+Equivalently, relative to the first line, the problem is
+`E(K) cap (E(K)-d_2) cap (E(K)-d_3)`.
+
+The present authority does not determine `d_2,d_3`: a zero-weight member in
+a non-fixed coset is invisible to the S025 bucket normal form. Taking the fixed
+torsion difference `t`, the surviving boundary `u=t`, and the same
+`t`-translation in each other bucket doubling fibre makes the three
+residual sums `h_1,h_2,h_3`, all in `E(K)`.
+No extremal is constructed.
+
+The single promoted successor is D30-01. S031 will analyze only the remaining
+four quotient-zero Fano residual lines and test whether their shell memberships
+control the two S030 relative pair-sum defects.

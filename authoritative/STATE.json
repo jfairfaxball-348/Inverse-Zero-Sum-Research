@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S029",
-  "next_session": "S030",
-  "next_brief": "authoritative/S030_CANDIDATE_5_EVEN_RESIDUAL_LINE_COMPATIBILITY_BRIEF.md",
+  "last_completed_session": "S030",
+  "next_session": "S031",
+  "next_brief": "authoritative/S031_CANDIDATE_5_EVEN_REMAINING_FANO_LINES_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S030_READY_CAND05_EVEN_RESIDUAL_LINE_COMPATIBILITY",
+  "programme_status": "S031_READY_CAND05_EVEN_REMAINING_FANO_LINES",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; S023--S028 reduced the even-modulus branch to an exact fixed-coset completion condition. S029 classifies the canonical depth-(m-1) completion shell exactly. The fixed simultaneous-positive target is restricted to a translated shell but not excluded because z=u+t=0 remains compatible. Current status remains unknown. S030 is one bounded even-modulus residual-line compatibility unit.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence. S023--S029 reduce the even-modulus simultaneous-positive member question to exact completion-shell constraints. S030 proves that all three residual lines through ell lie in the shell and identifies the common-u condition as an intersection of three translated shells, but the two relative pair-sums remain uncontrolled and a common-torsion assignment is compatible. Current status remains unknown. S031 is one bounded unit on the remaining four Fano residual lines.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -72,7 +72,10 @@
     "S028-P2 PROGRAMME THEOREM/BOUNDARY: under simultaneous positivity for even m>=4, writing x=x_q, y=x_{q+ell}, t=y-x in G_m[2] with pi(t)=ell, and u=x_ell, the full two-fibre length-2m block sums to the nonzero element t. The quotient-zero triple x y u has sum w=h+t+u in H. Since K is an eta(H)-1 extremal, actual CAND-05 extremality forces the minimum length of a subsequence V|K with sigma(V)=-w to be exactly m-1. Existing authority does not control z=u+t in H; the boundary case u=t gives w=h and satisfies the depth-(m-1) condition, so simultaneous positivity is not excluded for even m>=4 and no existence claim is made.",
     "S029-P1 PROGRAMME THEOREM: for K=h_1^(m-1) h_2^(m-1) h_3^(m-1), h_3=h_2-a h_1, and w=xi h_1+nu h_2, if P=[-xi]_m and Q=[-nu]_m then the completion depth is lambda(w)=Q+min_{0<=gamma<=Q}[P+a gamma]_m.",
     "S029-P2 PROGRAMME THEOREM: the exact depth-(m-1) shell is (h_2+<h_1>) union (h_1+<h_3>) when a=1; (h_2+<h_1>) union (h_1+<h_2>) when a=-1; and (h_2+<h_1>) union {h_1,h_2+h_3} for every other unit a modulo m. The shell sizes are respectively 2m-1, 2m-1 and m+2.",
-    "S029-P3 PROGRAMME NECESSARY CONDITION/BOUNDARY: in the fixed S028 simultaneous-positive coset, z=u+t must lie in E(K)-h. This is an exact lift restriction but not an exclusion: every h_i lies in E(K), so z=0 (equivalently u=t) remains compatible. No actual simultaneous-positive extremal is constructed."
+    "S029-P3 PROGRAMME NECESSARY CONDITION/BOUNDARY: in the fixed S028 simultaneous-positive coset, z=u+t must lie in E(K)-h. This is an exact lift restriction but not an exclusion: every h_i lies in E(K), so z=0 (equivalently u=t) remains compatible. No actual simultaneous-positive extremal is constructed.",
+    "S030-P1 PROGRAMME THEOREM: for even m>=4, the lift-sum w_i=x_{q_i}+x_{q_i+ell}+u of each of the three residual quotient-zero lines through ell has completion depth exactly m-1 in K, hence w_i lies in E(K).",
+    "S030-P2 PROGRAMME NECESSARY CONDITION: writing p_i=x_{q_i}+x_{q_i+ell}, the common lift u is equivalent to u in cap_i(E(K)-p_i). With d_2=p_2-p_1, d_3=p_3-p_1 and w=w_1, this is w in E(K) cap (E(K)-d_2) cap (E(K)-d_3).",
+    "S030-P3 PROGRAMME BOUNDARY/NONEXCLUSION: S025--S029 do not determine the relative pair-sums d_2,d_3 when a non-fixed coset may contain a zero-weight member. The current constraints remain compatible: using the fixed S028 torsion t, u=t, and the same t-translation in each bucket fibre gives residual sums h_1,h_2,h_3 in E(K). This is not an extremal construction."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -237,6 +240,11 @@
       "id": "S029",
       "status": "COMPLETED",
       "record": "sessions/S029/CLOSEOUT.md"
+    },
+    {
+      "id": "S030",
+      "status": "COMPLETED",
+      "record": "sessions/S030/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -264,7 +272,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 selected and source-audited. S023--S028 reduce the even-modulus simultaneous-positive member question to one exact completion-shell target. S029 classifies that shell: exceptional units a=+-1 give two affine lines, while every other unit gives one affine line plus two points. The fixed target now requires z=u+t in E(K)-h, but z=0 survives for every bucket. S030 is limited to coupling the three residual quotient-zero lines through ell via their common lift u. CAND-02 remains historical/paused.",
+  "current_route_disposition": "CAND-05 selected and source-audited. S029 classifies the exact depth-(m-1) shell. S030 couples the three residual quotient-zero lines through ell: all three sums lie in E(K), but the shared u only yields an intersection of translated shells whose relative translations d_2,d_3 remain uncontrolled. A common-torsion assignment is compatible, so the fixed simultaneous-positive case is not excluded. S031 is limited to the remaining four Fano residual lines. CAND-02 remains historical/paused.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -304,7 +312,7 @@
     "hidden_property_d_prerequisite": false,
     "rank_two_inverse_eta": "UNCONDITIONAL",
     "search_boundary": "No completion found in bounded current search; non-hit is not openness or novelty evidence",
-    "next_dependency": "D29-01 even-modulus residual-line compatibility through ell only"
+    "next_dependency": "D30-01 even-modulus remaining four Fano residual lines only"
   },
   "s023_mathematical_investigation_date": "2026-10-05",
   "cand05_equality_decomposition": {
@@ -377,5 +385,14 @@
     "fixed_target": "with z=u+t and w=h+z, actual simultaneous positivity requires z in E(K)-h",
     "compatibility_boundary": "z=0 remains allowed for every bucket because each h_i lies in E(K)",
     "unresolved": "simultaneous shell compatibility of the other residual quotient-zero triples through ell; no global weights, seven-lift classification, odd-m branch or quotient normalization"
+  },
+  "s030_mathematical_investigation_date": "2026-10-05",
+  "cand05_even_residual_line_compatibility": {
+    "status": "PROGRAMME_PROVED_EXACT_THREE_LINE_INTERSECTION_WITH_NONEXCLUSION",
+    "all_three_shells": "for i=1,2,3, w_i=x_{q_i}+x_{q_i+ell}+u lies in E(K)",
+    "common_lift_intersection": "with p_i=x_{q_i}+x_{q_i+ell}, u lies in the intersection of E(K)-p_i; equivalently w_1 lies in E(K) cap (E(K)-d_2) cap (E(K)-d_3)",
+    "relative_pair_sum_defect": "d_2=p_2-p_1 and d_3=p_3-p_1 are not controlled by S025--S029 when a non-fixed coset may contain a zero-weight member",
+    "compatibility_assignment": "with fixed torsion t, take u=t and the same t-translation in each bucket doubling fibre; the three residual sums become h_1,h_2,h_3, all in E(K)",
+    "unresolved": "remaining four residual Fano-line shell constraints; no global weight vector, seven-lift classification, odd-m branch or quotient normalization"
   }
 }

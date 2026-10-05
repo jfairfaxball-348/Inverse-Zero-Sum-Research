@@ -527,3 +527,25 @@ computation remain CLOSED.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S030, D29-01 residual-line compatibility through
   `ell` only.
+
+
+## S030 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S030 | COMPLETED BOUNDED INVESTIGATION; D29-01 EXACT THREE-LINE SHELL COUPLING / NONEXCLUSION | 41ca38cd5c0df3cd6dc85afc9666ac715155b119 | All three through-`ell` residual sums lie in `E(K)`; shared lift becomes exact translated-shell intersection; relative pair-sum defect isolated; common-torsion compatibility assignment | [S030 closeout](../sessions/S030/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied S029 checkpoint and S030 was unique.
+- D29-01 proves all three through-`ell` shell memberships and the exact
+  common-`u` intersection condition.
+- The target is not excluded: the two relative pair-sums remain uncontrolled,
+  and a common torsion translation makes the three shell points
+  `h_1,h_2,h_3`.
+- A bounded enumeration for every even `4<=m<=40` and every unit `a`
+  revalidated the S029 shell facts used by the compatibility assignment with
+  zero discrepancies.
+- No global weight solution, seven-lift classification, remaining-Fano-line
+  analysis, odd-modulus analysis or quotient normalization is claimed.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S031, D30-01 remaining four Fano residual lines only.

@@ -210,3 +210,10 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-084 | 2026-10-05 | Treating the S025 unit `a` as generic would miss the exceptional `a=1` and `a=-1` cases, where every intermediate prefix length can realize the shell and the boundary expands from one affine line plus two points to two full affine lines. | Classify the modular interval equality before simplifying the shell. Keep the `+-1` unit cases separate from the generic unit case, and do not turn the surviving point `z=0` into an exclusion. | S029-P1/P2/P3 |
+
+
+## S030 residual-line compatibility lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-085 | 2026-10-05 | The fact that the three quotient-zero residual triples share the same `u=x_ell` can look like an immediate cross-coset rigidity statement. In fact it only creates an intersection of three translated shells, and the relative translations are not fixed when zero-weight members are invisible to the kernel. | Expose the pair-sums `p_i` and differences `d_2,d_3` explicitly before seeking a contradiction. The common-torsion assignment shows the three through-`ell` constraints alone are compatible; any further exclusion needs genuinely new residual-line coupling. | S030-P2/P3 |

@@ -480,3 +480,15 @@ or audited as a standalone novelty/significance contribution.
 No manuscript, submission authorization, submission, acceptance or publication
 has occurred. The publication route is unchanged: E-JC remains the leading
 eligible route and JNT the recorded backup under the S022 policy refresh.
+
+
+## S030 publication boundary
+
+S030 adds an exact even-modulus residual-line compatibility reduction for
+CAND-05, but it remains internal programme mathematics. The three-line
+intersection and nonexclusion result has not been independently reviewed,
+formally verified, or audited as a standalone novelty/significance contribution.
+
+No manuscript, submission authorization, submission, acceptance or publication
+has occurred. The publication route is unchanged: E-JC remains the leading
+eligible route and JNT the recorded backup under the S022 policy refresh.

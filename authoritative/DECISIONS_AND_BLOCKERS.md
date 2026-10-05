@@ -618,3 +618,15 @@ CAND-02 remains historical/paused.
 Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
+
+
+## S030 CAND-05 even residual-line compatibility decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-091 | 2026-10-05 | Record D29-01 as a successful exact three-line shell coupling for even `m>=4`, but not an exclusion. All three residual lines through `ell` land in `E(K)`; the shared lift gives an intersection of translated shells, while the relative pair-sums remain uncontrolled and a common-torsion assignment is compatible. | `sessions/S030/EVEN_RESIDUAL_LINE_COMPATIBILITY.md`. |
+| D-092 | 2026-10-05 | Promote exactly one successor, D30-01, and schedule S031 only on the remaining four quotient-zero Fano residual lines. Combine their shell memberships with S030, but do not solve global weights/lifts, treat odd `m`, normalize quotient automorphisms, or claim existence. | S030 isolates the exact missing cross-coset translations; the four untested residual lines are the next bounded source of coupling. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.
