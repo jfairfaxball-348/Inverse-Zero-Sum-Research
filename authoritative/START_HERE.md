@@ -10,7 +10,7 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S030 records before later target-specific work, with
+7. The completed S002–S031 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
