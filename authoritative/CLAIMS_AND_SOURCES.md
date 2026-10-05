@@ -668,3 +668,15 @@ already-authoritative CAND-05 structure and the definition of `eta(H)`.
 | C-133 | PROGRAMME_PROVED | In a fixed nonzero `L`-coset `{q,q+ell}` with bucket value `h`, simultaneous positivity implies `k_q+k_{q+ell}=m-1`. Therefore it is impossible for `m=2`; for even `m>=4` the two fibre multiplicities total `2m`. | S025 bucket total plus S027 exact coset placement. |
 | C-134 | PROGRAMME_PROVED NECESSARY CONDITION | Under simultaneous positivity for even `m>=4`, with `t=x_{q+ell}-x_q`, one has `t in G_m[2]`, `pi(t)=ell`, and the full two-fibre block sums to `t!=0`. If `u=x_ell` and `w=x_q+x_{q+ell}+u=h+t+u`, then the minimum length of `V|K` with `sigma(V)=-w` is exactly `m-1`. | A shorter completion would lift with the residual triple to a forbidden zero sum of length at most `2m-1`; `eta(H)` guarantees a completion of length at most `m-1`. |
 | C-135 | PROGRAMME_BOUNDARY | S023--S027 do not control `z=u+t in H`. The compatible boundary case `u=t` gives `w=h`, whose exact minimum completion length is `m-1`. Thus simultaneous positivity is not excluded for even `m>=4`, but no actual extremal with it is constructed or claimed. | D27-01 stop boundary; global weights, other lift relations, odd `m` and quotient normalization remain outside scope. |
+
+
+## S029 CAND-05 even completion-shell claims
+
+Proof date: **2026-10-05**. No new source ID is added; D28-01 is elementary
+finite modular arithmetic inside the S025 canonical kernel.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-136 | PROGRAMME_PROVED | For `K=h_1^(m-1)h_2^(m-1)h_3^(m-1)`, `h_3=h_2-a h_1`, and `w=xi h_1+nu h_2`, put `P=[-xi]_m`, `Q=[-nu]_m`. Then the minimum completion length is `lambda(w)=Q+min_{0<=gamma<=Q}[P+a gamma]_m`. | Direct count of `h_1,h_2,h_3` terms; `gamma>Q` already costs at least `m`. |
+| C-137 | PROGRAMME_PROVED | The exact depth-`m-1` shell is `(h_2+<h_1>) union (h_1+<h_3>)` for `a=1`; `(h_2+<h_1>) union (h_1+<h_2>)` for `a=-1`; and `(h_2+<h_1>) union {h_1,h_2+h_3}` for every other unit. | Equality requires a modular progression segment to be a terminal interval. Proper interval overlap forces `a=+-1` for all intermediate lengths. |
+| C-138 | PROGRAMME_PROVED NECESSARY CONDITION / BOUNDARY | In the fixed S028 simultaneous-positive coset, `z=u+t` must lie in `E(K)-h`, with the translated sets stated explicitly in S029. This does not exclude the target because each `h_i` lies in `E(K)`, so `z=0` remains allowed. | `sessions/S029/EVEN_COMPLETION_SHELL.md`; no other residual quotient-zero subset is used and no existence claim is made. |

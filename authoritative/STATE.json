@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S028",
-  "next_session": "S029",
-  "next_brief": "authoritative/S029_CANDIDATE_5_EVEN_COMPLETION_SHELL_BRIEF.md",
+  "last_completed_session": "S029",
+  "next_session": "S030",
+  "next_brief": "authoritative/S030_CANDIDATE_5_EVEN_RESIDUAL_LINE_COMPATIBILITY_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S029_READY_CAND05_EVEN_COMPLETION_SHELL",
+  "programme_status": "S030_READY_CAND05_EVEN_RESIDUAL_LINE_COMPATIBILITY",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; S023 proved equality decomposition, S024 pairing-choice rigidity, S025 the canonical three-bucket kernel normal form, S026 the parity-split doubling-fibre geometry, S027 the even-modulus bucket-coset placement, and S028 the exact local member-compatibility boundary. Current status remains unknown. S029 is one bounded even-modulus completion-shell unit.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; S023--S028 reduced the even-modulus branch to an exact fixed-coset completion condition. S029 classifies the canonical depth-(m-1) completion shell exactly. The fixed simultaneous-positive target is restricted to a translated shell but not excluded because z=u+t=0 remains compatible. Current status remains unknown. S030 is one bounded even-modulus residual-line compatibility unit.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -69,7 +69,10 @@
     "S027-P1 PROGRAMME THEOREM: for even m, with L=pi(G_m[2]), the map delta:Q/L -> H/2H defined by delta(pi(x)+L)=2x+2H is a well-defined isomorphism.",
     "S027-P2 PROGRAMME THEOREM/BOUNDARY: if the S025 kernel values are ordered by h_3=h_2-a h_1 with (h_1,h_2) a basis and a a unit modulo even m, then their classes modulo 2H are exactly the three nonzero elements of H/2H. Hence the three positive-weight kernel buckets occupy exactly the three nonzero L-cosets of Q/L, and the unique nonzero quotient class in L has k_q=0. No member-level occupancy or weight vector is determined.",
     "S028-P1 PROGRAMME THEOREM/EXCLUSION: for even m, if both members q,q+ell of one nonzero L-coset have positive weights in the same bucket h, then k_q+k_{q+ell}=m-1. Hence simultaneous positivity is impossible for m=2; for even m>=4 the two fibre multiplicities sum to 2m.",
-    "S028-P2 PROGRAMME THEOREM/BOUNDARY: under simultaneous positivity for even m>=4, writing x=x_q, y=x_{q+ell}, t=y-x in G_m[2] with pi(t)=ell, and u=x_ell, the full two-fibre length-2m block sums to the nonzero element t. The quotient-zero triple x y u has sum w=h+t+u in H. Since K is an eta(H)-1 extremal, actual CAND-05 extremality forces the minimum length of a subsequence V|K with sigma(V)=-w to be exactly m-1. Existing authority does not control z=u+t in H; the boundary case u=t gives w=h and satisfies the depth-(m-1) condition, so simultaneous positivity is not excluded for even m>=4 and no existence claim is made."
+    "S028-P2 PROGRAMME THEOREM/BOUNDARY: under simultaneous positivity for even m>=4, writing x=x_q, y=x_{q+ell}, t=y-x in G_m[2] with pi(t)=ell, and u=x_ell, the full two-fibre length-2m block sums to the nonzero element t. The quotient-zero triple x y u has sum w=h+t+u in H. Since K is an eta(H)-1 extremal, actual CAND-05 extremality forces the minimum length of a subsequence V|K with sigma(V)=-w to be exactly m-1. Existing authority does not control z=u+t in H; the boundary case u=t gives w=h and satisfies the depth-(m-1) condition, so simultaneous positivity is not excluded for even m>=4 and no existence claim is made.",
+    "S029-P1 PROGRAMME THEOREM: for K=h_1^(m-1) h_2^(m-1) h_3^(m-1), h_3=h_2-a h_1, and w=xi h_1+nu h_2, if P=[-xi]_m and Q=[-nu]_m then the completion depth is lambda(w)=Q+min_{0<=gamma<=Q}[P+a gamma]_m.",
+    "S029-P2 PROGRAMME THEOREM: the exact depth-(m-1) shell is (h_2+<h_1>) union (h_1+<h_3>) when a=1; (h_2+<h_1>) union (h_1+<h_2>) when a=-1; and (h_2+<h_1>) union {h_1,h_2+h_3} for every other unit a modulo m. The shell sizes are respectively 2m-1, 2m-1 and m+2.",
+    "S029-P3 PROGRAMME NECESSARY CONDITION/BOUNDARY: in the fixed S028 simultaneous-positive coset, z=u+t must lie in E(K)-h. This is an exact lift restriction but not an exclusion: every h_i lies in E(K), so z=0 (equivalently u=t) remains compatible. No actual simultaneous-positive extremal is constructed."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -229,6 +232,11 @@
       "id": "S028",
       "status": "COMPLETED",
       "record": "sessions/S028/CLOSEOUT.md"
+    },
+    {
+      "id": "S029",
+      "status": "COMPLETED",
+      "record": "sessions/S029/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -256,7 +264,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 selected and source-audited. S023--S027 reduce the even-modulus branch to three nonzero L-cosets. S028 proves simultaneous positivity is impossible for m=2, but for even m>=4 the existing local structure does not exclude it: an actual such case must satisfy an exact depth-(m-1) kernel-completion condition for the residual quotient-zero triple. S029 is limited to classifying that completion shell and applying it only to the fixed-coset target. CAND-02 remains historical/paused.",
+  "current_route_disposition": "CAND-05 selected and source-audited. S023--S028 reduce the even-modulus simultaneous-positive member question to one exact completion-shell target. S029 classifies that shell: exceptional units a=+-1 give two affine lines, while every other unit gives one affine line plus two points. The fixed target now requires z=u+t in E(K)-h, but z=0 survives for every bucket. S030 is limited to coupling the three residual quotient-zero lines through ell via their common lift u. CAND-02 remains historical/paused.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -296,7 +304,7 @@
     "hidden_property_d_prerequisite": false,
     "rank_two_inverse_eta": "UNCONDITIONAL",
     "search_boundary": "No completion found in bounded current search; non-hit is not openness or novelty evidence",
-    "next_dependency": "D28-01 even-modulus canonical-kernel completion shell only"
+    "next_dependency": "D29-01 even-modulus residual-line compatibility through ell only"
   },
   "s023_mathematical_investigation_date": "2026-10-05",
   "cand05_equality_decomposition": {
@@ -358,5 +366,16 @@
     "residual_completion": "with u=x_ell and w=x_q+x_{q+ell}+u=h+t+u in H, the shortest V|K with sigma(V)=-w must have length exactly m-1",
     "compatibility_witness": "the current structure permits u=t, giving w=h; then (m-1) copies of h complete w and no shorter completion exists because K is eta-free",
     "unresolved": "classify the depth-(m-1) completion shell for the canonical kernel and test the fixed-coset target; no global weight vector, seven-lift classification, odd-m analysis or quotient normalization"
+  },
+  "s029_mathematical_investigation_date": "2026-10-05",
+  "cand05_even_completion_shell": {
+    "status": "PROGRAMME_PROVED_EXACT_SHELL_WITH_NONEXCLUSION",
+    "depth_formula": "for w=xi h_1+nu h_2, P=[-xi]_m and Q=[-nu]_m, lambda(w)=Q+min_{0<=gamma<=Q}[P+a gamma]_m",
+    "shell_a_1": "(h_2+<h_1>) union (h_1+<h_3>)",
+    "shell_a_minus_1": "(h_2+<h_1>) union (h_1+<h_2>)",
+    "shell_generic": "(h_2+<h_1>) union {h_1,h_2+h_3}",
+    "fixed_target": "with z=u+t and w=h+z, actual simultaneous positivity requires z in E(K)-h",
+    "compatibility_boundary": "z=0 remains allowed for every bucket because each h_i lies in E(K)",
+    "unresolved": "simultaneous shell compatibility of the other residual quotient-zero triples through ell; no global weights, seven-lift classification, odd-m branch or quotient normalization"
   }
 }

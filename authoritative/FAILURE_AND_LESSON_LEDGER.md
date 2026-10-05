@@ -203,3 +203,10 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-083 | 2026-10-05 | Equal doubles across the two members of an `L`-coset can look as though two-torsion immediately creates a forbidden `2m`-term zero sum. In fact the complete two-fibre block sums to the nonzero torsion difference `t`, not to zero. | Track the unique zero-weight `ell`-lift separately. The exact next obstruction is the depth-`m-1` completion condition for `w=h+t+x_ell`; do not infer an exclusion until that lift-level offset is controlled. | S028-P1/P2 |
+
+
+## S029 completion-shell lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-084 | 2026-10-05 | Treating the S025 unit `a` as generic would miss the exceptional `a=1` and `a=-1` cases, where every intermediate prefix length can realize the shell and the boundary expands from one affine line plus two points to two full affine lines. | Classify the modular interval equality before simplifying the shell. Keep the `+-1` unit cases separate from the generic unit case, and do not turn the surviving point `z=0` into an exclusion. | S029-P1/P2/P3 |

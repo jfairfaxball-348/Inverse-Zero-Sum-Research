@@ -468,3 +468,15 @@ publication has occurred.
 
 The publication route is unchanged: E-JC remains the leading eligible route and
 JNT the recorded backup under the S022 policy refresh.
+
+
+## S029 publication boundary
+
+S029 adds an exact all-even-`m>=4` structural calculation for the selected
+CAND-05 target, but it remains internal programme mathematics. The completion
+shell classification has not been independently reviewed, formally verified,
+or audited as a standalone novelty/significance contribution.
+
+No manuscript, submission authorization, submission, acceptance or publication
+has occurred. The publication route is unchanged: E-JC remains the leading
+eligible route and JNT the recorded backup under the S022 policy refresh.

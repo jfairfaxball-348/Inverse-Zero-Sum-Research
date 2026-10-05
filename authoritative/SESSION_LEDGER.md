@@ -506,3 +506,24 @@ computation remain CLOSED.
 - CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S029, D28-01 canonical-kernel completion shell only.
+
+
+## S029 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S029 | COMPLETED BOUNDED INVESTIGATION; D28-01 EXACT COMPLETION SHELL PROVED | 538399fba38ae5ef424a59520fc6b19a31e6faa8 | Exact depth-`m-1` shell; fixed offset restricted to `E(K)-h`; `z=0` survives | [S029 closeout](../sessions/S029/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied S028 checkpoint and S029 was unique.
+- The shell is two affine lines for `a=1` or `a=-1`, and one affine line
+  plus `h_1,h_2+h_3` for every other unit.
+- A bounded enumeration for every even `4<=m<=40` and every unit `a`
+  found zero discrepancies with the proved formula.
+- The fixed simultaneous-positive target is restricted but not excluded because
+  `u=t` remains compatible.
+- No global weight solution, other residual-subset analysis, seven-lift
+  classification, odd-modulus analysis or quotient normalization is claimed.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S030, D29-01 residual-line compatibility through
+  `ell` only.

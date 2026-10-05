@@ -957,3 +957,29 @@ depth-`m-1` completion shell of the canonical rank-two kernel and apply it
 to this fixed-coset target. It must stop before global weights, seven-lift
 classification, the odd-modulus branch, quotient normalization, or any
 existence claim.
+
+
+## S029 exact completion-shell checkpoint
+
+S029 resolves D28-01 exactly for even `m>=4`. In the S025 basis write
+`h_3=h_2-a h_1`. For
+`w=xi h_1+nu h_2`, `P=[-xi]_m`, `Q=[-nu]_m`, the shortest
+kernel completion has length
+
+`Q+min_{0<=gamma<=Q}[P+a gamma]_m`.
+
+Depth `m-1` is equivalent to the `Q+1` modular progression residues
+being exactly the terminal interval of the same size. The interval-overlap
+rigidity forces the only intermediate-length cases to have `a=+-1`.
+Consequently the exact shell is two affine lines for the exceptional units and
+one affine line plus two points for every other unit.
+
+Applied to the fixed S028 target, this gives the exact condition
+`z=u+t in E(K)-h`. It does not exclude simultaneous positivity because
+`z=0` survives for every bucket.
+
+The single promoted successor is D29-01. S030 will apply the already-classified
+shell only to the three quotient-zero residual triples through `ell` and
+test whether their common lift `u=x_ell` creates a cross-coset
+compatibility obstruction. It must stop before global weights/lifts, the other
+Fano lines, odd `m`, quotient normalization or an existence claim.

@@ -606,3 +606,15 @@ CAND-02 remains historical/paused.
 Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
+
+
+## S029 CAND-05 even completion-shell decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-089 | 2026-10-05 | Record D28-01 as a successful exact shell classification for even `m>=4`. The depth-`m-1` shell is two affine lines when the S025 unit is `a=1` or `a=-1`, and otherwise one affine line plus the two exceptional points `h_1` and `h_2+h_3`. The fixed S028 offset must lie in `E(K)-h`, but `z=0` survives for every bucket, so the target is not excluded. | `sessions/S029/EVEN_COMPLETION_SHELL.md`. |
+| D-090 | 2026-10-05 | Promote exactly one successor, D29-01, and schedule S030 only on the simultaneous completion-shell constraints for the three residual quotient-zero triples through `ell`, using their common lift `u=x_ell`. Do not solve global weights/lifts, analyze the other Fano lines, treat odd `m`, normalize quotient automorphisms, or claim existence. | S029 replaces the local offset gap by an exact shell but leaves the cross-coset coupling through the same zero-weight lift untouched. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.

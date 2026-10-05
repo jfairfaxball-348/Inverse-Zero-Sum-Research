@@ -10,24 +10,22 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S027 records before later target-specific work, with
+7. The completed S002–S029 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S028 is completed. D27-01 excludes simultaneous positivity for `m=2`,
-but for even `m>=4` the current structure does not exclude both members of a
-nonzero `L`-coset carrying positive weight. In any actual such case the two
-weights sum to `m-1`; the full two-fibre block has length `2m` and sums to
-a nonzero two-torsion element `t`. If `u=x_ell` is the unique zero-weight
-`L`-class lift and `w=x_q+x_{q+ell}+u`, then actual extremality forces the
-shortest completion of `-w` inside the canonical kernel to use exactly
-`m-1` terms. The current authority does not control `u+t`; the boundary
-case `u=t` is compatible with all proved constraints. CAND-05 remains
-SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S029 is READY for one bounded
-even-modulus completion-shell unit.**
+**S029 is completed. D28-01 classifies the depth-`m-1` completion shell
+of the S025 canonical kernel exactly for even `m>=4`. If
+`h_3=h_2-a h_1`, then `a=1` and `a=-1` give two-affine-line
+shells, while every other unit gives one affine line plus the two points
+`h_1` and `h_2+h_3`. For the fixed S028 target, the offset
+`z=u+t` must lie in the exact translate `E(K)-h`; this restricts but
+does not exclude simultaneous positivity because `z=0` remains allowed for
+every bucket. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S030 is
+READY for one bounded even-modulus residual-line compatibility unit.**
 
 Selected target:
 
@@ -38,10 +36,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S029 brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S030 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S029.
+- Next session: S030.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -90,10 +88,18 @@ S025--S027 do not control the offset `u+t`. The boundary case `u=t`
 gives `w=h` and satisfies that exact pair budget, so simultaneous positivity
 is not excluded for even `m>=4`.
 
-S029 addresses D28-01 only: classify the depth-`m-1` completion shell of
-the canonical kernel and apply it to this single fixed-coset target. It must
-not solve the global weight vector, classify the seven lifts, treat odd `m`,
-or normalize quotient automorphisms.
+S029 resolves D28-01 exactly. In the S025 basis/unit normal form the shell is
+`(h_2+<h_1>) union (h_1+<h_3>)` for `a=1`,
+`(h_2+<h_1>) union (h_1+<h_2>)` for `a=-1`, and
+`(h_2+<h_1>) union {h_1,h_2+h_3}` otherwise. Thus the fixed S028
+offset satisfies `z=u+t in E(K)-h`. Since every `h_i` lies in the shell,
+`z=0` survives and there is no local exclusion.
+
+S030 addresses D29-01 only: apply the same shell to the three residual
+quotient-zero lines through the common class `ell` and test whether their
+shared lift `u=x_ell` creates a cross-coset incompatibility. It must not
+solve global weights/lifts, inspect the other Fano lines, treat odd `m`, or
+normalize quotient automorphisms.
 
 Search non-hits remain non-evidence of openness or novelty.
 
@@ -503,3 +509,31 @@ The currently proved structure does not determine `u+t`. In particular
 exist without creating a short zero sum inside `K`. Therefore S028 does not
 exclude simultaneous positivity for even `m>=4` and makes no existence
 claim. S029 is restricted to the completion-shell classification just exposed.
+
+
+## Frontier after S029
+
+D28-01 is now programme-proved for even `m>=4`. If
+`K=h_1^(m-1) h_2^(m-1) h_3^(m-1)` with
+`h_3=h_2-a h_1`, then the completion depth of
+`w=xi h_1+nu h_2` is
+
+`lambda(w)=Q+min_{0<=gamma<=Q}[P+a gamma]_m`,
+
+where `P=[-xi]_m` and `Q=[-nu]_m`. Equality
+`lambda(w)=m-1` is equivalent to the corresponding modular arithmetic
+progression being exactly the terminal interval
+`{m-Q-1,...,m-1}`.
+
+This yields the exact shell:
+two affine lines for `a=1`, two affine lines for `a=-1`, and otherwise
+the line `h_2+<h_1>` plus `h_1` and `h_2+h_3`.
+
+For the fixed simultaneous-positive S028 coset, `z=u+t` must lie in
+`E(K)-h`. The condition is nontrivial but not contradictory: `z=0`
+remains allowed for every bucket. No existence claim is made.
+
+S030 is restricted to D29-01: test only the three residual quotient-zero
+triples through `ell` against the exact S029 shell and the common
+`u=x_ell`. No global multiplicity/lift classification, other Fano lines,
+odd-modulus branch or quotient normalization is authorized.

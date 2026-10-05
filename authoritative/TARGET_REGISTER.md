@@ -853,3 +853,27 @@ simultaneous-positive extremal is constructed or asserted.
 
 The next dependency is D28-01, restricted to classifying that canonical-kernel
 completion shell and applying it only to the fixed-coset target.
+
+
+## S029 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+For even `m>=4`, D28-01 is now programme-proved. The canonical kernel's
+depth-`m-1` completion shell is classified exactly in the S025 normal form:
+two affine lines for `a=1`, two affine lines for `a=-1`, and otherwise
+one affine line plus `h_1` and `h_2+h_3`.
+
+For the one fixed simultaneous-positive S028 coset, the offset
+`z=u+t` must lie in the corresponding translate `E(K)-h`. This is an
+exact necessary lift condition, not an exclusion: `z=0` remains compatible
+for all three bucket values, so no actual extremal is constructed or ruled out
+by this local test alone.
+
+The next dependency is D29-01, restricted to the simultaneous shell constraints
+on the three residual quotient-zero triples through `ell`. S030 must not
+solve global weights/lifts, inspect the other Fano lines, treat odd `m`, or
+normalize quotient automorphisms.
