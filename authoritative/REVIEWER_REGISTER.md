@@ -516,3 +516,12 @@ experts rather than the default independent route.
 External-review gate remains CLOSED. Xue Li's pending Stage-1 message remains
 strictly CAND-02-specific.
 
+## S027 external-review boundary
+
+S027 sent no outreach and received no CAND-05 independent review. The reviewer
+route remains David J. Grynkiewicz as provisional first status/proposal lead,
+Pingzhi Yuan as a strong alternative, and Girard/Schmid as controlling-source
+experts rather than the default independent route.
+
+External-review gate remains CLOSED. Xue Li's pending Stage-1 message remains
+strictly CAND-02-specific.

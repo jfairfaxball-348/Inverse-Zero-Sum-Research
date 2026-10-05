@@ -922,3 +922,17 @@ branch and identify the induced map `Q/L -> H/2H`, then combine it only with
 the S025 three-value basis/unit relation. It must stop before choosing which
 member or members of each nonzero `L`-coset have positive weight.
 
+## S027 even-bucket-coset checkpoint
+
+S027 resolves D26-01 positively for even `m`. The map
+`delta:Q/L -> H/2H`, `delta(pi(x)+L)=2x+2H`, is a well-defined
+isomorphism. The S025 basis/unit relation reduces modulo `2H` to the three
+nonzero classes of `H/2H`, so the three positive-weight buckets occupy
+exactly the three nonzero `L`-cosets. The unique nonzero quotient class in
+`L` has zero kernel weight.
+
+No member-level bucket choice or weight vector is determined. The single
+promoted successor is D27-01: test, for even `m`, whether both members of a
+nonzero `L`-coset can carry positive weight. S028 must not continue into a
+global multiplicity solution, seven-lift classification, odd-modulus branch or
+quotient normalization.

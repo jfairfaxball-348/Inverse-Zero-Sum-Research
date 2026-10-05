@@ -585,3 +585,13 @@ Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
 
+## S027 CAND-05 even-bucket-coset decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-085 | 2026-10-05 | Record D26-01 as successful programme-proved bounded mathematics for even `m`: `delta:Q/L -> H/2H` is an isomorphism, the three kernel buckets are exactly the three nonzero `L`-cosets, and the unique nonzero class in `L` has `k_q=0`. | `sessions/S027/EVEN_BUCKET_COSETS.md`. |
+| D-086 | 2026-10-05 | Promote exactly one successor, D27-01, and schedule S028 only on the even-modulus question whether both members of one nonzero `L`-coset can carry positive weight. Do not solve the global weight vector, classify lifts, treat odd `m`, or normalize quotient automorphisms. | S027 fixes bucket cosets but deliberately leaves member-level occupancy unresolved. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.

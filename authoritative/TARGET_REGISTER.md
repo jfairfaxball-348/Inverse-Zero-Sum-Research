@@ -811,3 +811,22 @@ The next dependency is D26-01, restricted to the even-modulus induced map
 the member-level bucket assignment, weights, seven lifts, odd-modulus branch or
 quotient normalization.
 
+## S027 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+For even `m`, D26-01 is now programme-proved. The induced map
+`delta:Q/L -> H/2H` is an isomorphism. Combining this only with the S025
+basis/unit relation shows that the three positive-weight kernel buckets are
+exactly the three nonzero `L`-cosets, while the unique nonzero quotient class
+inside `L` has `k_q=0`.
+
+The result is coset-level only. It does not choose which member or members of a
+nonzero `L`-coset have positive weight, solve any `k_q/r_q` values,
+classify lifts, analyze odd `m`, or normalize quotient automorphisms.
+
+The next dependency is D27-01, restricted to the even-modulus two-member
+occupancy question within one nonzero `L`-coset.

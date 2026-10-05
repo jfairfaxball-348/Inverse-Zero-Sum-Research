@@ -475,3 +475,18 @@ computation remain CLOSED.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S027, D26-01 even-modulus bucket-coset placement only.
 
+## S027 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S027 | COMPLETED BOUNDED INVESTIGATION; D26-01 EVEN-BUCKET COSET PLACEMENT PROVED | 73ad29d6a52e93c280efeeacfad733e1fe6ccc80 | Isomorphism `Q/L ~= H/2H`; three kernel buckets are the three nonzero `L`-cosets; unique nonzero class in `L` has zero weight | [S027 closeout](../sessions/S027/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied S026 checkpoint and S027 was unique.
+- D26-01 succeeds for even `m`; no external source, computation or
+  formalisation was needed.
+- No member-level bucket choice, weight vector, lift classification, odd-modulus
+  analysis or quotient normalization is claimed.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S028, D27-01 even-modulus two-member bucket occupancy
+  test only.
