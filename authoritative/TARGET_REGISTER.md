@@ -899,3 +899,27 @@ three shell points simultaneously. This is not an actual extremal construction.
 The next dependency is D30-01, restricted to the remaining four Fano residual
 lines. S031 must stop before global weights/lifts, odd `m`, quotient
 normalization or any existence/full-classification claim.
+
+## S031 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+For even `m>=4`, D30-01 is programme-proved as a complete necessary
+seven-Fano-line shell analysis. The four non-`ell` residual lines also land
+in `E(K)`, so all seven quotient-zero residual triples satisfy the exact
+depth-`m-1` completion condition.
+
+This still does not exclude the fixed simultaneous-positive coset. A common
+two-torsion translation makes the three lines through `ell` equal
+`h_1,h_2,h_3` and collapses the other four to one half of
+`h_1+h_2+h_3`. The surviving half-lift coordinate is an `H[2]` torsor,
+and the half-fibre always meets the universal shell line
+`h_2+<h_1>`. No actual extremal is constructed.
+
+The next dependency is D31-01, restricted to the seven four-term residual
+subsets complementary to the Fano lines. S032 must stop before arbitrary
+residual subsets, global weights/lifts, odd `m`, quotient normalization or
+any existence/full-classification claim.
