@@ -923,3 +923,32 @@ The next dependency is D31-01, restricted to the seven four-term residual
 subsets complementary to the Fano lines. S032 must stop before arbitrary
 residual subsets, global weights/lifts, odd `m`, quotient normalization or
 any existence/full-classification claim.
+
+## S032 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+For even `m>=4`, D31-01 is programme-proved as a complete Fano
+line/complement necessary shell analysis. Every one of the seven four-term
+residual subsets complementary to a Fano line has lift-sum in `E(K)`.
+Writing `r` for the total residual sum and `w_F` for a line sum, the
+combined system is exactly
+
+`w_F in E(K) cap (r-E(K))`
+
+for all seven Fano lines.
+
+Relative to `s=h_1+h_2+h_3`, the exact remaining translation defect is
+`zeta=r-s=u+tau_1+tau_2+tau_3 in H`. This still does not exclude the
+fixed simultaneous-positive coset: the common-torsion family has
+`zeta=0`, hence `r=s`, and all seven complementary shell tests hold.
+No actual extremal is constructed.
+
+The next dependency is D32-01, restricted to the completion-depth layer of the
+full canonical seven-term residual sum. S033 must not open another proper
+residual-subset family, solve global weights/lifts, treat odd `m`, normalize
+quotient automorphisms or make an existence/full-classification claim.
+
