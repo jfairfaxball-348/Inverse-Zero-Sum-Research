@@ -223,3 +223,10 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-086 | 2026-10-05 | Adding all four remaining Fano-line shell memberships can look as though it must determine the S030 pair-sum translations. In the common-torsion subfamily, however, the four new line sums collapse to one half of `h_1+h_2+h_3`, and an `H[2]` shift of a base lift moves among all four halves without changing quotient classes, doubles, or the three through-`ell` sums. | Before claiming cross-line rigidity, expose the half-fibre and test whether it intersects the exact shell. Here it always does on `h_2+<h_1>`. Any further exclusion must use residual subsets that couple a Fano line to additional total-residual data. | S031-P2/P3 |
+
+## S032 line/complement coupling lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-087 | 2026-10-05 | Adding complementary four-set shell constraints can look as though line/complement pairing must finally pin the S031 half-lift. In the common-torsion family the total residual sum is exactly `h_1+h_2+h_3`: complementation fixes each half-sum `v` and sends the three through-`ell` shell points to three values already forced into the universal shell geometry. | Expose the total residual sum `r` and the translation `zeta=r-(h_1+h_2+h_3)` before claiming a contradiction. Do not promote another arbitrary proper residual-subset family; the only promoted successor is the full-residual completion-depth test. | S032-P2/P3 |
+
