@@ -1030,3 +1030,37 @@ sums collapse to one half `v` of `h_1+h_2+h_3`. The half-fibre is an
 The single promoted successor is D31-01. S032 will analyze only the seven
 quotient-zero four-term residual subsets complementary to the seven Fano lines,
 using line/complement coupling through the total residual sum.
+
+## S032 complementary-Fano-plane checkpoint
+
+S032 resolves D31-01 for even `m>=4`. The complement of every Fano line
+inside the seven nonzero classes of `C_2^3` is a quotient-zero four-set.
+The same threshold/lifting argument gives exact depth `m-1` for every
+complementary lift-sum, because a completion using at most `m-2` kernel
+terms would lift to a forbidden zero sum of length at most `2m`.
+
+If `r` is the total seven-term residual sum and `w_F` is a Fano-line
+sum, the line/complement partition gives `r-w_F` for the complement.
+Consequently the complete fourteen-membership system is exactly
+
+`w_F in E(K) cap (r-E(K))`
+
+for all seven lines.
+
+With `s=h_1+h_2+h_3`, one positive representative in each nonzero
+`L`-coset, `tau_i=y_i-x_i`, and `u=x_ell`, the exact remaining
+translation is
+
+`zeta=r-s=u+tau_1+tau_2+tau_3 in H`.
+
+The common-torsion family survives with `zeta=0`. Its three complements of
+the through-`ell` lines are `h_2+h_3`, `h_1+h_3`,
+`h_1+h_2`, all in `E(K)`; the other four complements equal the same
+half-sum `v` as their lines.
+
+The single promoted successor is D32-01. S033 will analyze only the full
+seven-term residual sum `r`, whose extremality depth window is
+`m-3<=lambda(r)<=m-1`, and intersect that deep layer with the S032
+total-translation condition. No further proper residual-subset family is
+pre-authorized.
+
