@@ -492,3 +492,15 @@ formally verified, or audited as a standalone novelty/significance contribution.
 No manuscript, submission authorization, submission, acceptance or publication
 has occurred. The publication route is unchanged: E-JC remains the leading
 eligible route and JNT the recorded backup under the S022 policy refresh.
+
+## S031 publication boundary
+
+S031 adds a complete seven-Fano-line necessary shell analysis for the
+even-modulus CAND-05 branch, but it remains internal programme mathematics.
+The nonexclusion and `H[2]` half-fibre mechanism have not been independently
+reviewed, formally verified, or audited as a standalone novelty/significance
+contribution.
+
+No manuscript, submission authorization, submission, acceptance or publication
+has occurred. The publication route is unchanged: E-JC remains the leading
+eligible route and JNT the recorded backup under the S022 policy refresh.
