@@ -10,25 +10,27 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S031 records before later target-specific work, with
+7. The completed S002–S032 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S031 is completed. D30-01 proves that the four residual quotient-zero Fano
-triples not containing `ell` also have lift-sums in the exact S029 shell
-`E(K)`; together with S030, all seven Fano residual line sums lie in the
-shell. The full seven-line system still does not exclude the fixed
-simultaneous-positive coset. In the common-torsion assignment `u=t` and
-the same `t`-translation in all three bucket fibres, the three lines through
-`ell` are `h_1,h_2,h_3`, while the other four collapse to one half
-`v` of `h_1+h_2+h_3`. The surviving half-lift coordinate is an
-`H[2]` torsor, and that half-fibre always meets the shell at
-`v=c h_1+h_2` with `2c=1-a`. CAND-05 remains SOURCE-DEFINED /
-CURRENT STATUS UNKNOWN. S032 is READY for one bounded unit on the seven
-complementary quotient-zero four-term residual subsets.**
+**S032 is completed. D31-01 proves that all seven quotient-zero four-term
+residual subsets complementary to the Fano lines also have lift-sums in the
+exact S029 shell `E(K)`. If `r` is the total seven-term residual sum
+and `w_F` a Fano-line lift-sum, then every line/complement pair satisfies
+`w_F in E(K) cap (r-E(K))`. Writing
+`s=h_1+h_2+h_3`, the exact remaining translation defect is
+`zeta=r-s=u+tau_1+tau_2+tau_3 in H`. The common-torsion assignment has
+`zeta=0`, so `r=s`; its three through-`ell` complements are
+`h_2+h_3,h_1+h_3,h_1+h_2`, and its other four complements equal the same
+half-sum `v` as their lines. All are in `E(K)`, so the full fourteen
+line/complement shell system still does not exclude the fixed
+simultaneous-positive coset. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN. S033 is READY for one bounded unit on the full seven-term residual
+sum only.**
 
 Selected target:
 
@@ -42,7 +44,7 @@ Selected target:
 - Mathematical-investigation gate: **OPEN** for the bounded S032 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S032.
+- Next session: S033.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -111,11 +113,20 @@ because a common two-torsion translation reduces the new four lines to an
 `H[2]`-movable half of `h_1+h_2+h_3`; an explicit half always lies on
 `h_2+<h_1> subset E(K)`.
 
-S032 addresses D31-01 only: apply the shell/lifting test to the seven
-quotient-zero four-term residual subsets complementary to the Fano lines and
-test line/complement coupling through the total seven-term residual sum. It
-must stop before arbitrary residual subsets, global weights/lifts, odd `m`,
-quotient normalization or an existence/full-classification claim.
+S032 resolves D31-01 completely at the Fano line/complement level. All
+seven complementary four-term residual sums lie in `E(K)`. If `r` is
+the total residual sum and `w_F` is a line sum, the exact coupling is
+`w_F in E(K) cap (r-E(K))` for all seven lines. Relative to
+`s=h_1+h_2+h_3`, the remaining translation is
+`zeta=r-s=u+tau_1+tau_2+tau_3 in H`. The common-torsion family has
+`zeta=0` and satisfies all fourteen line/complement shell memberships, so
+the fixed simultaneous-positive coset is still not excluded.
+
+S033 addresses D32-01 only: analyze the completion depth of the full canonical
+seven-term residual sum `r`. Extremality gives
+`m-3<=lambda(r)<=m-1`; classify that deep layer using the S029 distance
+formula and intersect it with the S032 total-translation condition. No further
+proper residual-subset family is pre-authorized.
 
 Search non-hits remain non-evidence of openness or novelty.
 
