@@ -186,3 +186,9 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-080 | 2026-10-05 | Reading the three-value kernel normal form as a statement about all seven doubled lifts would silently treat zero-weight fibres as kernel terms. Fibres with `r_q=1` have `k_q=0` and are invisible to `K`. | State bucket equations with `k_q` weights and preserve the zero-weight boundary. Analyze the doubling-fibre geometry separately before assigning quotient fibres to buckets. | S025-P2 / C-126 |
+## S026 doubling-fibre-geometry lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-081 | 2026-10-05 | A doubling fibre always has eight points, but for even `m` those points do **not** represent eight quotient classes: `pi` collapses the fibre four-to-one onto a two-class coset. Treating fibre cardinality as quotient occupancy would erase the parity split and overstate bucket freedom. | Compute `pi(G_m[2])` before reasoning about collisions. Keep point multiplicity, quotient-class occupancy and positive kernel weight as separate notions; preserve the `k_q=0` boundary. | S026-P1/P2 |
+

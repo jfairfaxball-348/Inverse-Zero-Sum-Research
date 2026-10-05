@@ -457,3 +457,21 @@ computation remain CLOSED.
 - CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S026, D25-01 doubling-fibre quotient geometry only.
+## S026 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S026 | COMPLETED BOUNDED INVESTIGATION; D25-01 DOUBLING-FIBRE GEOMETRY PROVED | cc344ba3429389eac3eaf3440d237f29022d6d18 | Exact parity split for `pi(G_m[2])`; fixed doubling-fibre quotient occupancy; same-bucket collision restriction with zero-weight boundary preserved | [S026 closeout](../sessions/S026/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied S025 checkpoint and S026 was unique.
+- D25-01 succeeds for every `m>=2`; no external source, computation or
+  formalisation was needed.
+- Odd `m`: a fixed doubling fibre meets all eight quotient classes once.
+- Even `m`: it meets one coset of the canonical order-two subgroup
+  `L=pi(G_m[2])`, with four points over each of the two classes.
+- No global bucket assignment, weight vector, seven-lift classification or
+  quotient normalization is claimed.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S027, D26-01 even-modulus bucket-coset placement only.
+

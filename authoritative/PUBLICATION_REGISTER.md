@@ -438,3 +438,13 @@ No actual-result novelty/significance audit, independent mathematical review,
 formal verification, manuscript, submission authorization, submission,
 acceptance, or publication has occurred. E-JC remains the leading eligible
 route and JNT the recorded backup under the S022 policy refresh.
+## S026 publication boundary
+
+S026 adds an elementary all-`m` structural reduction for CAND-05, but it is
+still internal programme mathematics. No actual-result novelty/significance
+audit, independent review, formal verification, manuscript, submission
+authorization, submission, acceptance or publication has occurred.
+
+The publication route is unchanged: E-JC remains the leading eligible route and
+JNT the recorded backup under the S022 policy refresh.
+

@@ -574,3 +574,14 @@ CAND-02 remains historical/paused.
 Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
+## S026 CAND-05 doubling-fibre-geometry decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-083 | 2026-10-05 | Record D25-01 as successful programme-proved bounded mathematics. The exact image of `G_m[2]` in `Q=G_m/2G_m` is `Q` for odd `m` and the distinguished order-two subgroup `L=<pi(e_0)>` for even `m`. A fixed doubling fibre meets respectively all eight quotient classes once, or one two-class `L`-coset with four points over each class. | `sessions/S026/DOUBLING_FIBRE_GEOMETRY.md`. |
+| D-084 | 2026-10-05 | Promote exactly one successor, D26-01, and schedule S027 only on the even-modulus bucket-coset map `Q/L -> H/2H`. Test the consequence of the S025 basis/unit relation and stop before member-level bucket assignment, weights, lifts, the odd-modulus branch or quotient normalization. | S026 parity split gives a genuinely sharper even-modulus quotient geometry while leaving the odd case unrestricted at this level. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.
+

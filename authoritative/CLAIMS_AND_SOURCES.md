@@ -635,3 +635,14 @@ rechecks ZS-56, specifically Girard--Schmid 2019 Theorem 2.4.
 | C-124 | PROGRAMME_PROVED_FROM_SOURCE | S025-P1/P2: for the canonical kernel `K=product_{q!=0}(2x_q)^{k_q}`, the positive-weight doubled lifts occupy exactly three distinct values `h_1,h_2,h_3`, each with total multiplicity `m-1`, so `sum_{q:2x_q=h_i} k_q=m-1` for `i=1,2,3`. | `sessions/S025/CANONICAL_KERNEL_BUCKETS.md`; S024 supplies the canonical eta-extremal kernel. |
 | C-125 | PROGRAMME_PROVED | The three kernel values can be ordered so that `h_3=h_2-a h_1` with `a` a unit modulo `m`; each has order `m`, they are pairwise distinct, and every pair among them is a basis of `C_m^2`. | Elementary consequences of C-123. |
 | C-126 | PROGRAMME_BOUNDARY | The rank-two theorem sees only fibres with `k_q>0`. A quotient fibre with `k_q=0` (equivalently `r_q=1`) contributes no term to `K`, so S025 does not force its doubled lift into one of the three buckets. | No quotient-fibre assignment, odd-multiplicity-vector classification, lift classification or quotient normalization is claimed. |
+## S026 CAND-05 doubling-fibre-geometry claims
+
+Proof date: **2026-10-05**. No new source ID is added; D25-01 is elementary
+finite-abelian group theory applied to the already-fixed S023--S025 setup.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-127 | PROGRAMME_PROVED | For `G_m=C_2+C_{2m}+C_{2m}`, `G_m[2]=<e_0,m e_1,m e_2> ~= C_2^3`. Under `pi:G_m->G_m/2G_m`, its image is all of `Q` if `m` is odd and `L=<pi(e_0)>` of order two if `m` is even. | Direct coordinate computation in `sessions/S026/DOUBLING_FIBRE_GEOMETRY.md`. |
+| C-128 | PROGRAMME_PROVED | Every nonempty doubling fibre is a coset of `G_m[2]`. For odd `m` it meets all eight quotient classes exactly once. For even `m` it meets exactly one coset of `L`, with four points over each of the two quotient classes. Equivalently two quotient classes admit lifts with the same double iff their difference lies in `pi(G_m[2])`. | Elementary kernel/coset argument; no source theorem beyond the committed setup. |
+| C-129 | PROGRAMME_BOUNDARY | Applied to the S025 buckets, C-128 constrains only fibres with `k_q>0`. For even `m`, distinct positive-weight classes in one bucket must differ by the unique nonzero element of `L`; for odd `m`, quotient geometry alone imposes no pairwise restriction. Zero-weight fibres remain unassigned, and no global bucket, multiplicity, lift or quotient-normalization classification is claimed. | D25-01 stop boundary. |
+

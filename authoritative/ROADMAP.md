@@ -896,3 +896,29 @@ of the doubling map `2:G_m->2G_m` relative to `Q=G_m/2G_m`, including the
 odd/even-`m` image of `G_m[2]`, and derive only the resulting same-bucket
 quotient-class restriction. It must stop before solving the full bucket
 assignment, multiplicity vector, seven lifts or quotient normalization.
+## S026 doubling-fibre-geometry checkpoint
+
+S026 resolves D25-01 positively without using any CAND-02 architecture. Write
+`G_m=C_2 e_0 + C_{2m}e_1 + C_{2m}e_2`. Then
+
+`G_m[2]=<e_0,m e_1,m e_2>`.
+
+The quotient map to `Q=G_m/2G_m` sends the last two generators to their
+parities. Consequently `pi(G_m[2])=Q` when `m` is odd, whereas for even
+`m` it is the order-two subgroup `L=<pi(e_0)>`.
+
+Every fibre of doubling is a coset of `G_m[2]`. For odd `m` its quotient
+image is all of `Q`, one point per quotient class. For even `m` its
+quotient image is one `L`-coset, with four fibre points over each of the two
+classes. Thus the quotient geometry alone places no same-bucket restriction
+for odd `m`; for even `m`, two distinct positive-weight quotient classes
+in one bucket must differ by the unique nonzero element of `L`.
+
+No zero-weight fibre is assigned to a bucket, and no global three-bucket,
+multiplicity-vector or lift classification is made.
+
+The single promoted successor is D26-01. S027 will stay in the even-modulus
+branch and identify the induced map `Q/L -> H/2H`, then combine it only with
+the S025 three-value basis/unit relation. It must stop before choosing which
+member or members of each nonzero `L`-coset have positive weight.
+

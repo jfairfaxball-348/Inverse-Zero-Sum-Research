@@ -10,17 +10,18 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S025 records before later target-specific work, with
+7. The completed S002–S026 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S025 is completed. D24-01 succeeds: the canonical rank-two kernel has exactly
-three positive-weight support values, each of multiplicity `m-1`, with the exact
-Girard--Schmid basis/unit relation. CAND-05 remains SOURCE-DEFINED / CURRENT
-STATUS UNKNOWN. S026 is READY for one bounded doubling-fibre geometry unit.**
+**S026 is completed. D25-01 succeeds: the image of the two-torsion under the
+quotient map is all of `Q` for odd `m` and the distinguished order-two subgroup
+`L` for even `m`; fixed doubling fibres have the exact corresponding quotient
+occupancy. CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S027 is
+READY for one bounded even-modulus bucket-coset unit.**
 
 Selected target:
 
@@ -34,7 +35,7 @@ Selected target:
 - Mathematical-investigation gate: **OPEN** for the bounded S026 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S026.
+- Next session: S027.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -59,10 +60,17 @@ The exact bucket equations are
 `sum_{q:2x_q=h_i} k_q=m-1` for `i=1,2,3`. Fibres with `k_q=0` do not occur
 in `K`, so S025 does not assign their doubled lifts to any bucket.
 
-S026 addresses D25-01 only: compute the exact geometry of the doubling fibres
-relative to `Q`, including the parity split in `m`, and derive only which
-quotient classes can coexist in one kernel bucket. It must stop before a full
-bucket assignment, multiplicity-vector or lift classification.
+S026 proved the exact doubling-fibre geometry. For odd `m`, every fixed
+doubling fibre meets all eight quotient classes once. For even `m`, writing
+`L=pi(G_m[2])`, every fixed doubling fibre meets exactly one two-class coset of
+`L`, with four points over each class; therefore two distinct positive-weight
+classes in one bucket must differ by the unique nonzero element of `L`.
+
+S027 addresses D26-01 only: in the even-modulus case identify the induced map
+from `Q/L` to `H/2H` and test what the S025 basis/unit relation forces about
+the three bucket cosets. It must stop before choosing members inside those
+cosets, solving the weights, classifying lifts, treating the odd-modulus branch,
+or normalizing quotient automorphisms.
 
 Search non-hits remain non-evidence of openness or novelty.
 
@@ -394,3 +402,28 @@ S026 is restricted to D25-01: determine the exact quotient geometry of a fixed
 doubling fibre and the resulting same-bucket collision restriction, split by
 the parity of `m`. No global bucket assignment, multiplicity-vector solution,
 seven-lift classification or quotient normalization is pre-authorized.
+
+
+## Frontier after S026
+
+D25-01 succeeds for every `m>=2`. In coordinates
+`G_m=<e_0>_2 + <e_1>_{2m} + <e_2>_{2m}`,
+
+`G_m[2]=<e_0,m e_1,m e_2>`.
+
+Modulo `H=2G_m`, the last two generators survive exactly when `m` is
+odd. Hence `pi(G_m[2])=Q` for odd `m`; for even `m` it is the
+canonical order-two subgroup `L=<pi(e_0)>`.
+
+A fixed nonempty doubling fibre is a coset of `G_m[2]`. Its quotient image
+is therefore a coset of `pi(G_m[2])`: all eight quotient classes, once each,
+when `m` is odd; exactly two classes forming one `L`-coset, with four
+preimages over each, when `m` is even. Thus even-modulus same-bucket
+collisions of distinct positive-weight fibres can occur only across the two
+members of one `L`-coset. The statement is deliberately silent about
+`k_q=0` fibres.
+
+S027 is restricted to D26-01: for even `m`, identify the induced quotient
+map `Q/L -> H/2H` and combine it only with the three S025 kernel values.
+No weight-vector, lift, odd-modulus or quotient-normalization classification is
+pre-authorized.

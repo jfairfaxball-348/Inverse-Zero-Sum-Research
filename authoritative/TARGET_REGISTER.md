@@ -787,3 +787,27 @@ normal form. The next dependency is D25-01: determine the exact geometry of
 the doubling fibres relative to `Q` and only the resulting same-bucket
 quotient restriction. S026 must not solve the global bucket assignment,
 multiplicity vector, seven lifts or quotient normalization.
+## S026 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+D25-01 is now programme-proved. The exact two-torsion image under
+`pi:G_m->Q` is all of `Q` when `m` is odd and the distinguished
+order-two subgroup `L=<pi(e_0)>` when `m` is even. Accordingly a fixed
+doubling fibre meets all eight quotient classes once in the odd case, while in
+the even case it meets exactly one two-class `L`-coset, four points over each
+class.
+
+This yields only a positive-weight same-bucket restriction. For even `m`,
+two distinct quotient classes represented in one kernel bucket must differ by
+the unique nonzero element of `L`; for odd `m`, quotient geometry alone
+imposes no such restriction. Fibres with `k_q=0` remain unassigned.
+
+The next dependency is D26-01, restricted to the even-modulus induced map
+`Q/L -> H/2H` and the resulting bucket-coset placement. S027 must not solve
+the member-level bucket assignment, weights, seven lifts, odd-modulus branch or
+quotient normalization.
+
