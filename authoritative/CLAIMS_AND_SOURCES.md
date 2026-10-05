@@ -693,3 +693,15 @@ S026--S029 even-modulus geometry.
 | C-139 | PROGRAMME_PROVED | For each of the three nonzero `L`-cosets `C_i={q_i,q_i+ell}`, the canonical residual triple `x_{q_i}x_{q_i+ell}u` has lift-sum `w_i in E(K)`. | `eta(H)` gives a completion of size at most `m-1`; size at most `m-2` would lift to a forbidden zero sum of length at most `2m-1`. |
 | C-140 | PROGRAMME_PROVED NECESSARY CONDITION | With `p_i=x_{q_i}+x_{q_i+ell}`, the shared lift is exactly `u in cap_i(E(K)-p_i)`. Equivalently, `w_1 in E(K) cap (E(K)-d_2) cap (E(K)-d_3)` for `d_j=p_j-p_1`. | Algebraic reformulation of the three S030-P1 shell memberships; no global lift classification. |
 | C-141 | PROGRAMME_BOUNDARY / NONEXCLUSION | S025--S029 do not control `d_2,d_3` when a non-fixed coset may contain a zero-weight member. The current constraints remain compatible: with fixed torsion `t`, `u=t`, and the same `t`-translation in each bucket fibre, the three residual sums are `h_1,h_2,h_3 in E(K)`. | `sessions/S030/EVEN_RESIDUAL_LINE_COMPATIBILITY.md`; compatibility of necessary constraints only, not an extremal construction. |
+
+## S031 CAND-05 even remaining-Fano-line claims
+
+Proof date: **2026-10-05**. No new source ID is added; D30-01 uses the
+already-authoritative rank-two `eta` threshold, S025 normal form and
+S026--S030 even-modulus geometry.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-142 | PROGRAMME_PROVED | The four quotient-zero Fano residual triples not containing `ell` also have lift-sums in `E(K)`. Therefore all seven Fano residual line sums lie in the exact S029 depth-`m-1` shell. | Same threshold/lifting argument as S030; a completion of size at most `m-2` would lift with the residual triple to length at most `2m-1`. |
+| C-143 | PROGRAMME_PROVED | If `q_1+q_2+q_3=epsilon ell` and `tau_i=x_{q_i+ell}-x_{q_i}`, the four non-`ell` line sums are `X+sum e_i tau_i` over the parity class `e_1+e_2+e_3=epsilon`. | Exact enumeration of the four Fano lines; no quotient-automorphism normalization. |
+| C-144 | PROGRAMME_BOUNDARY / NONEXCLUSION | The full seven-line system remains compatible. With `u=t` and one common two-torsion translation `t` in all three bucket fibres, the three through-`ell` sums are `h_1,h_2,h_3`, while the other four collapse to a half `v` of `h_1+h_2+h_3`. The half-fibre is an `H[2]` torsor and always meets `E(K)`, explicitly at `v=c h_1+h_2` with `2c=1-a`. | `sessions/S031/EVEN_REMAINING_FANO_LINES.md`; compatibility of necessary constraints only, not an extremal construction. |
