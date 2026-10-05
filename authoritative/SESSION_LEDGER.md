@@ -549,3 +549,24 @@ computation remain CLOSED.
 - CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S031, D30-01 remaining four Fano residual lines only.
+
+## S031 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S031 | COMPLETED BOUNDED INVESTIGATION; D30-01 FULL SEVEN-FANO-LINE SHELL SYSTEM / NONEXCLUSION | f93946f1b117c90d474b5da69279d22b0bcb04e5 | Remaining four Fano lines also lie in `E(K)`; full seven-line system survives via common-torsion half-fibre compatibility | [S031 closeout](../sessions/S031/CLOSEOUT.md) |
+
+- Live `main` was the committed S030 close checkpoint and S031 was unique.
+- D30-01 proves shell membership for the four non-`ell` Fano residual lines,
+  hence for all seven Fano residual triples.
+- The target is not excluded: the common-torsion family reduces the four new
+  lines to one half-sum variable in an `H[2]` torsor, and an explicit half
+  always lies on the shell line `h_2+<h_1>`.
+- A bounded enumeration covered all 172 unit cases with even `4<=m<=40`
+  and found zero discrepancies.
+- No global weight solution, seven-lift classification, odd-modulus analysis,
+  quotient normalization or existence claim is made.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S032, D31-01 complementary four-term residual subsets
+  only.
