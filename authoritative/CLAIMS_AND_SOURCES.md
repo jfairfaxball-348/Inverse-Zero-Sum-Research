@@ -657,3 +657,14 @@ relation and S026 doubling-fibre geometry.
 | C-130 | PROGRAMME_PROVED | For even `m`, with `L=pi(G_m[2])`, the rule `delta(pi(x)+L)=2x+2H` defines a well-defined isomorphism `Q/L -> H/2H`. | Kernel of `Q -> H/2H` is exactly `L`; both quotient groups have order four. |
 | C-131 | PROGRAMME_PROVED | Under the S025 ordering, `h_1+2H,h_2+2H,h_3+2H` are exactly the three nonzero elements of `H/2H`. Therefore the three positive-weight buckets occupy exactly the three nonzero `L`-cosets in `Q`. | Since `m` is even, the unit `a` is odd and `h_3+2H=(h_1+2H)+(h_2+2H)`; `h_1,h_2` reduce to a basis mod `2H`. |
 | C-132 | PROGRAMME_BOUNDARY | The unique nonzero quotient class lying in `L` has `k_q=0`. S027 does not choose which member or members of a nonzero `L`-coset have positive weight, solve any `k_q/r_q` values, classify lifts, treat odd `m`, or normalize quotient automorphisms. | D26-01 stop boundary. |
+
+## S028 CAND-05 even-bucket-member claims
+
+Proof date: **2026-10-05**. No new source ID is added; D27-01 uses only the
+already-authoritative CAND-05 structure and the definition of `eta(H)`.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-133 | PROGRAMME_PROVED | In a fixed nonzero `L`-coset `{q,q+ell}` with bucket value `h`, simultaneous positivity implies `k_q+k_{q+ell}=m-1`. Therefore it is impossible for `m=2`; for even `m>=4` the two fibre multiplicities total `2m`. | S025 bucket total plus S027 exact coset placement. |
+| C-134 | PROGRAMME_PROVED NECESSARY CONDITION | Under simultaneous positivity for even `m>=4`, with `t=x_{q+ell}-x_q`, one has `t in G_m[2]`, `pi(t)=ell`, and the full two-fibre block sums to `t!=0`. If `u=x_ell` and `w=x_q+x_{q+ell}+u=h+t+u`, then the minimum length of `V|K` with `sigma(V)=-w` is exactly `m-1`. | A shorter completion would lift with the residual triple to a forbidden zero sum of length at most `2m-1`; `eta(H)` guarantees a completion of length at most `m-1`. |
+| C-135 | PROGRAMME_BOUNDARY | S023--S027 do not control `z=u+t in H`. The compatible boundary case `u=t` gives `w=h`, whose exact minimum completion length is `m-1`. Thus simultaneous positivity is not excluded for even `m>=4`, but no actual extremal with it is constructed or claimed. | D27-01 stop boundary; global weights, other lift relations, odd `m` and quotient normalization remain outside scope. |

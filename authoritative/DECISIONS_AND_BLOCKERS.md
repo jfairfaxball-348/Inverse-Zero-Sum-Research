@@ -595,3 +595,14 @@ CAND-02 remains historical/paused.
 Active owner blockers remain **NONE**. Target and publication gates remain
 OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
 CAND-02 remains historical/paused.
+
+## S028 CAND-05 even-bucket-member decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-087 | 2026-10-05 | Record D27-01 as a partial structural resolution: simultaneous positivity inside one nonzero `L`-coset is impossible for `m=2`, but for even `m>=4` current structure does not exclude it. Any actual such case must satisfy the exact depth-`m-1` kernel-completion condition for the residual quotient-zero triple. | `sessions/S028/EVEN_BUCKET_MEMBER_COMPATIBILITY.md`. |
+| D-088 | 2026-10-05 | Promote exactly one successor, D28-01, and schedule S029 only on the canonical-kernel completion shell exposed by S028. Apply it to the one fixed-coset target `w=h+x_ell+t`; do not solve global weights, classify seven lifts, analyze odd `m`, normalize quotient automorphisms, or claim existence. | S028 identifies the first exact compatibility defect rather than a local exclusion. |
+
+Active owner blockers remain **NONE**. Target and publication gates remain
+OPEN; mathematical investigation remains OPEN; external review remains CLOSED.
+CAND-02 remains historical/paused.

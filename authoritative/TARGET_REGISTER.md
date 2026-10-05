@@ -830,3 +830,26 @@ classify lifts, analyze odd `m`, or normalize quotient automorphisms.
 
 The next dependency is D27-01, restricted to the even-modulus two-member
 occupancy question within one nonzero `L`-coset.
+
+## S028 CAND-05 mathematical boundary
+
+Date: 2026-10-05.
+
+The selected target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+For even `m`, D27-01 is only partially resolving. If both members of a
+nonzero `L`-coset are positive in its bucket, their weights sum to
+`m-1`. Hence simultaneous positivity is impossible for `m=2`. For even
+`m>=4`, the two-fibre `2m`-term block sums to the nonzero two-torsion
+difference `t`, so the existing member-level geometry alone does not exclude
+it.
+
+Writing `u=x_ell` and `w=x_q+x_{q+ell}+u`, actual extremality forces
+`-w` to have minimum completion length exactly `m-1` inside the
+canonical kernel. The zero-weight lift `u` is not fixed by S025--S027, and
+the boundary case `u=t` satisfies the condition with `w=h`. No actual
+simultaneous-positive extremal is constructed or asserted.
+
+The next dependency is D28-01, restricted to classifying that canonical-kernel
+completion shell and applying it only to the fixed-coset target.

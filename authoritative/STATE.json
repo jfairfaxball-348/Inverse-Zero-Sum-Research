@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S027",
-  "next_session": "S028",
-  "next_brief": "authoritative/S028_CANDIDATE_5_EVEN_BUCKET_MEMBER_BRIEF.md",
+  "last_completed_session": "S028",
+  "next_session": "S029",
+  "next_brief": "authoritative/S029_CANDIDATE_5_EVEN_COMPLETION_SHELL_BRIEF.md",
   "stage": "P2_CAND05_MATHEMATICAL_INVESTIGATION",
-  "programme_status": "S028_READY_CAND05_EVEN_BUCKET_MEMBER_TEST",
+  "programme_status": "S029_READY_CAND05_EVEN_COMPLETION_SHELL",
   "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; S023 proved equality decomposition, S024 pairing-choice rigidity, S025 the canonical three-bucket kernel normal form, S026 the parity-split doubling-fibre geometry, and S027 the even-modulus bucket-coset isomorphism/placement. Current status remains unknown. S028 is one bounded even-modulus member-occupancy test.",
+  "candidate_under_due_diligence": "CAND-05 survived S022 due diligence; S023 proved equality decomposition, S024 pairing-choice rigidity, S025 the canonical three-bucket kernel normal form, S026 the parity-split doubling-fibre geometry, S027 the even-modulus bucket-coset placement, and S028 the exact local member-compatibility boundary. Current status remains unknown. S029 is one bounded even-modulus completion-shell unit.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -67,7 +67,9 @@
     "S026-P1 PROGRAMME THEOREM: with G_m=C_2+C_{2m}+C_{2m}, H=2G_m and Q=G_m/H, one has G_m[2]=<e_0,m e_1,m e_2> ~= C_2^3. Its quotient image is all of Q when m is odd, while for even m it is the distinguished order-two subgroup L=<pi(e_0)>.",
     "S026-P2 PROGRAMME THEOREM/BOUNDARY: a fixed doubling fibre D_h={x:2x=h}=x+G_m[2] meets every quotient class exactly once when m is odd; when m is even it meets exactly one coset q+L, with four points over each of its two quotient classes. Hence two distinct positive-weight quotient classes in one kernel bucket are unrestricted by quotient geometry for odd m, while for even m they must differ by the unique nonzero element of L. This constrains only k_q>0 fibres and does not assign zero-weight fibres.",
     "S027-P1 PROGRAMME THEOREM: for even m, with L=pi(G_m[2]), the map delta:Q/L -> H/2H defined by delta(pi(x)+L)=2x+2H is a well-defined isomorphism.",
-    "S027-P2 PROGRAMME THEOREM/BOUNDARY: if the S025 kernel values are ordered by h_3=h_2-a h_1 with (h_1,h_2) a basis and a a unit modulo even m, then their classes modulo 2H are exactly the three nonzero elements of H/2H. Hence the three positive-weight kernel buckets occupy exactly the three nonzero L-cosets of Q/L, and the unique nonzero quotient class in L has k_q=0. No member-level occupancy or weight vector is determined."
+    "S027-P2 PROGRAMME THEOREM/BOUNDARY: if the S025 kernel values are ordered by h_3=h_2-a h_1 with (h_1,h_2) a basis and a a unit modulo even m, then their classes modulo 2H are exactly the three nonzero elements of H/2H. Hence the three positive-weight kernel buckets occupy exactly the three nonzero L-cosets of Q/L, and the unique nonzero quotient class in L has k_q=0. No member-level occupancy or weight vector is determined.",
+    "S028-P1 PROGRAMME THEOREM/EXCLUSION: for even m, if both members q,q+ell of one nonzero L-coset have positive weights in the same bucket h, then k_q+k_{q+ell}=m-1. Hence simultaneous positivity is impossible for m=2; for even m>=4 the two fibre multiplicities sum to 2m.",
+    "S028-P2 PROGRAMME THEOREM/BOUNDARY: under simultaneous positivity for even m>=4, writing x=x_q, y=x_{q+ell}, t=y-x in G_m[2] with pi(t)=ell, and u=x_ell, the full two-fibre length-2m block sums to the nonzero element t. The quotient-zero triple x y u has sum w=h+t+u in H. Since K is an eta(H)-1 extremal, actual CAND-05 extremality forces the minimum length of a subsequence V|K with sigma(V)=-w to be exactly m-1. Existing authority does not control z=u+t in H; the boundary case u=t gives w=h and satisfies the depth-(m-1) condition, so simultaneous positivity is not excluded for even m>=4 and no existence claim is made."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -222,6 +224,11 @@
       "id": "S027",
       "status": "COMPLETED",
       "record": "sessions/S027/CLOSEOUT.md"
+    },
+    {
+      "id": "S028",
+      "status": "COMPLETED",
+      "record": "sessions/S028/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -249,7 +256,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S020 strategy blocker resolved by owner choice of B-008 option 3: reassess/switch target. CAND-02 proof work is paused; S021 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 selected and source-audited. S023 proved equality decomposition, S024 pairing-choice rigidity, S025 the canonical three-value kernel buckets, S026 the parity-split doubling-fibre quotient geometry, and S027 the exact even-modulus bucket-coset placement. S028 is limited to D27-01: test whether both members of one nonzero L-coset can carry positive weight, without solving the global weight vector or classifying lifts. CAND-02 remains historical/paused.",
+  "current_route_disposition": "CAND-05 selected and source-audited. S023--S027 reduce the even-modulus branch to three nonzero L-cosets. S028 proves simultaneous positivity is impossible for m=2, but for even m>=4 the existing local structure does not exclude it: an actual such case must satisfy an exact depth-(m-1) kernel-completion condition for the residual quotient-zero triple. S029 is limited to classifying that completion shell and applying it only to the fixed-coset target. CAND-02 remains historical/paused.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -289,7 +296,7 @@
     "hidden_property_d_prerequisite": false,
     "rank_two_inverse_eta": "UNCONDITIONAL",
     "search_boundary": "No completion found in bounded current search; non-hit is not openness or novelty evidence",
-    "next_dependency": "D26-01 even-modulus bucket-coset placement only"
+    "next_dependency": "D28-01 even-modulus canonical-kernel completion shell only"
   },
   "s023_mathematical_investigation_date": "2026-10-05",
   "cand05_equality_decomposition": {
@@ -340,5 +347,16 @@
     "bucket_cosets": "under delta^{-1}, the three positive-weight buckets are exactly the three nonzero L-cosets of Q/L",
     "zero_L_class": "the unique nonzero q in L cannot have positive kernel weight, so k_q=0",
     "unresolved": "which member or members of each nonzero L-coset have positive weight; all k_q/r_q values; seven lifts; odd-m branch; quotient normalization; full CAND-05 classification"
+  },
+  "s028_mathematical_investigation_date": "2026-10-05",
+  "cand05_even_bucket_members": {
+    "status": "PROGRAMME_PROVED_PARTIAL_RESOLUTION_WITH_EXACT_COMPATIBILITY_DEFECT",
+    "m2": "simultaneous positivity is impossible because two positive integer weights cannot sum to m-1=1",
+    "even_m_ge_4": "not excluded by the current S023--S027 structure",
+    "local_weight_equation": "if both members are positive, k_q+k_{q+ell}=m-1 and the two fibre multiplicities total 2m",
+    "torsion_defect": "with t=x_{q+ell}-x_q in G_m[2] and pi(t)=ell, the full two-fibre block has sum t!=0",
+    "residual_completion": "with u=x_ell and w=x_q+x_{q+ell}+u=h+t+u in H, the shortest V|K with sigma(V)=-w must have length exactly m-1",
+    "compatibility_witness": "the current structure permits u=t, giving w=h; then (m-1) copies of h complete w and no shorter completion exists because K is eta-free",
+    "unresolved": "classify the depth-(m-1) completion shell for the canonical kernel and test the fixed-coset target; no global weight vector, seven-lift classification, odd-m analysis or quotient normalization"
   }
 }

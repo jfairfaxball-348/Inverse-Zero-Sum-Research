@@ -1,41 +1,46 @@
 # Next session prompt
 
-Session: S028.
+Session: S029.
 
 Status: READY.
 
 ```text
-Begin S028 in:
+Begin S029 in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 Use committed repository authority, not conversation history. Pin live main,
-reconcile intervening changes and confirm S028 is unique. Read AGENTS.md,
+reconcile intervening changes and confirm S029 is unique. Read AGENTS.md,
 authoritative/START_HERE.md, all required authority,
+sessions/S028/EVEN_BUCKET_MEMBER_COMPATIBILITY.md,
+sessions/S028/SOURCE_CHECK.md,
+sessions/S028/CLOSEOUT.md,
 sessions/S027/EVEN_BUCKET_COSETS.md,
-sessions/S027/SOURCE_CHECK.md,
-sessions/S027/CLOSEOUT.md,
 sessions/S026/DOUBLING_FIBRE_GEOMETRY.md,
 sessions/S025/CANONICAL_KERNEL_BUCKETS.md, and
-authoritative/S028_CANDIDATE_5_EVEN_BUCKET_MEMBER_BRIEF.md.
+authoritative/S029_CANDIDATE_5_EVEN_COMPLETION_SHELL_BRIEF.md.
 
 CAND-05 remains the selected target. CAND-02 is historical and paused.
 
-Run exactly one bounded mathematical unit, D27-01, and restrict it to even m.
-S027 proved that delta:Q/L -> H/2H is an isomorphism and that the three
-positive-weight kernel buckets occupy exactly the three nonzero L-cosets.
-The unique nonzero quotient class in L has k_q=0.
+Run exactly one bounded mathematical unit, D28-01, and restrict it to even
+m>=4. Condition on one fixed nonzero L-coset C={q,q+ell} whose two members
+both have positive weight. Let h be its bucket value,
+t=x_{q+ell}-x_q, u=x_ell, and
+w=x_q+x_{q+ell}+u=h+t+u in H.
 
-Fix one nonzero L-coset C={q,q+ell}, where ell is the unique nonzero element
-of L, and its corresponding kernel bucket h. Test only whether both members
-of C can have positive kernel weight in an actual CAND-05 extremal. Use the
-already-proved facts that any positive-weight member of C must double exactly
-to h and that equal doubles differ by two-torsion. If simultaneous positivity
-is impossible, prove the exclusion; if it is not excluded, record the exact
-remaining compatibility defect and stop.
+S028 proved that any actual extremal with this local configuration must satisfy
+min{|V|: V|K, sigma(V)=-w}=m-1 for the canonical kernel
+K=h_1^(m-1) h_2^(m-1) h_3^(m-1).
 
-Do not solve the global k_q or r_q vector, classify the seven lifts, analyze
-odd m, normalize quotient automorphisms, or claim the full CAND-05
-classification. Do not reopen CAND-02 architectures.
+Classify exactly the depth-(m-1) completion shell
+E(K)={w in H: min{|V|:V|K, sigma(V)=-w}=m-1}
+using the S025 basis/unit normal form. Apply the result only to the fixed-coset
+target w=h+t+u. If this excludes the target, prove the exclusion; if it only
+restricts u+t, record the exact remaining lift-compatibility defect and stop.
+
+Do not solve the global k_q or r_q vector, analyze other residual quotient-zero
+subsets, classify the seven lifts, treat odd m, normalize quotient
+automorphisms, or claim existence/full CAND-05 classification. Do not reopen
+CAND-02 architectures.
 
 Close under repository protocol: synchronize authority, run
 scripts/check_authority.py and warranted checks, commit safely to main, verify

@@ -936,3 +936,24 @@ promoted successor is D27-01: test, for even `m`, whether both members of a
 nonzero `L`-coset can carry positive weight. S028 must not continue into a
 global multiplicity solution, seven-lift classification, odd-modulus branch or
 quotient normalization.
+
+## S028 even-bucket-member checkpoint
+
+S028 completes D27-01 as a partial structural resolution. In a fixed nonzero
+`L`-coset, two positive weights must sum to `m-1`; this immediately
+excludes simultaneous positivity at `m=2`. For even `m>=4`, equal
+doubles give a nonzero two-torsion difference `t` over `ell`, and the
+entire two-fibre block has length `2m` but sum `t`, so there is no local
+eta contradiction.
+
+Including the unique zero-weight `ell`-class lift `u=x_ell` produces the
+quotient-zero residual triple with sum `w=h+t+u in H`. Actual extremality
+forces the shortest completion of `-w` by the canonical kernel to have
+length exactly `m-1`. The current structure does not control `u+t`; the
+case `u=t` realizes the exact boundary `w=h` without contradiction.
+
+The single promoted successor is D28-01. S029 will classify only the
+depth-`m-1` completion shell of the canonical rank-two kernel and apply it
+to this fixed-coset target. It must stop before global weights, seven-lift
+classification, the odd-modulus branch, quotient normalization, or any
+existence claim.

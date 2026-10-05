@@ -17,13 +17,17 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S027 is completed. D26-01 succeeds for even `m`: the induced map
-`delta:Q/L -> H/2H` is an isomorphism, and the three S025 kernel values map to
-the three nonzero classes of `H/2H`. Thus the three positive-weight buckets
-occupy exactly the three nonzero `L`-cosets, while the unique nonzero quotient
-class in `L` has zero kernel weight. CAND-05 remains SOURCE-DEFINED / CURRENT
-STATUS UNKNOWN. S028 is READY for one bounded even-modulus member-occupancy
-test.**
+**S028 is completed. D27-01 excludes simultaneous positivity for `m=2`,
+but for even `m>=4` the current structure does not exclude both members of a
+nonzero `L`-coset carrying positive weight. In any actual such case the two
+weights sum to `m-1`; the full two-fibre block has length `2m` and sums to
+a nonzero two-torsion element `t`. If `u=x_ell` is the unique zero-weight
+`L`-class lift and `w=x_q+x_{q+ell}+u`, then actual extremality forces the
+shortest completion of `-w` inside the canonical kernel to use exactly
+`m-1` terms. The current authority does not control `u+t`; the boundary
+case `u=t` is compatible with all proved constraints. CAND-05 remains
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S029 is READY for one bounded
+even-modulus completion-shell unit.**
 
 Selected target:
 
@@ -34,10 +38,10 @@ Selected target:
 
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: **OPEN** for the bounded S028 brief.
+- Mathematical-investigation gate: **OPEN** for the bounded S029 brief.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S028.
+- Next session: S029.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
@@ -75,10 +79,21 @@ three nonzero elements of `H/2H`. Consequently their bucket cosets are exactly
 the three nonzero cosets of `L`, and the unique nonzero quotient class in `L`
 has `k_q=0`.
 
-S028 addresses D27-01 only: still for even `m`, test whether both members of a
-single nonzero `L`-coset can carry positive kernel weight. It must stop before
-solving the global weight vector, classifying the seven lifts, treating odd
-`m`, or normalizing quotient automorphisms.
+S028 resolves the first member-level test only partially. If both members
+`q,q+ell` of one nonzero `L`-coset are positive in bucket `h`, then
+`k_q+k_{q+ell}=m-1`. This excludes `m=2`. For even `m>=4`, let
+`t=x_{q+ell}-x_q`; then `t in G_m[2]`, `pi(t)=ell`, and the full
+two-fibre block has length `2m` but sum `t!=0`. Writing `u=x_ell`,
+the quotient-zero triple has sum `w=h+t+u in H`. Extremality forces the
+minimum kernel-completion length of `-w` to be exactly `m-1`, but
+S025--S027 do not control the offset `u+t`. The boundary case `u=t`
+gives `w=h` and satisfies that exact pair budget, so simultaneous positivity
+is not excluded for even `m>=4`.
+
+S029 addresses D28-01 only: classify the depth-`m-1` completion shell of
+the canonical kernel and apply it to this single fixed-coset target. It must
+not solve the global weight vector, classify the seven lifts, treat odd `m`,
+or normalize quotient automorphisms.
 
 Search non-hits remain non-evidence of openness or novelty.
 
@@ -460,3 +475,31 @@ No choice is made between the two members of any nonzero `L`-coset, and no
 weight vector, lift classification, odd-modulus analysis or quotient
 normalization is obtained. S028 is restricted to that member-level occupancy
 question.
+
+## Frontier after S028
+
+D27-01 gives a sharp local boundary rather than a full exclusion. For a fixed
+nonzero `L`-coset `C={q,q+ell}` with bucket value `h`, simultaneous
+positivity forces `k_q+k_{q+ell}=m-1`. Thus it is impossible when `m=2`.
+
+For even `m>=4`, put `x=x_q`, `y=x_{q+ell}` and
+`t=y-x`. Equal doubles give `t in G_m[2]`, while
+`pi(t)=ell`, so `t!=0`. The complete two-fibre block has length
+`2m` and sum exactly `t`, not zero.
+
+Let `u=x_ell`; S027 gives `k_ell=0`, hence this is the unique term in
+the `ell`-fibre. The residual triple `xyu` is quotient-zero and has sum
+`w=h+t+u in H`. Since the canonical kernel `K` has length
+`eta(H)-1`, `Kw` has a zero sum of length at most `m`; because
+`K` itself is eta-free, this supplies a kernel completion of `-w` using
+at most `m-1` terms. Any completion using at most `m-2` terms would lift,
+together with the three residual terms, to a forbidden zero sum in `S` of
+length at most `2m-1`. Hence an actual simultaneous-positive case must place
+`w` exactly in the depth-`m-1` completion shell of `K`.
+
+The currently proved structure does not determine `u+t`. In particular
+`u=t` is compatible with all S023--S027 constraints; then `w=h`, and
+`m-1` copies of `h` are an exact completion while no shorter one can
+exist without creating a short zero sum inside `K`. Therefore S028 does not
+exclude simultaneous positivity for even `m>=4` and makes no existence
+claim. S029 is restricted to the completion-shell classification just exposed.

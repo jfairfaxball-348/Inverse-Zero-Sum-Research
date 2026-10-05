@@ -490,3 +490,19 @@ computation remain CLOSED.
 - Active owner blockers: NONE. External review remains CLOSED.
 - Next numbered session: S028, D27-01 even-modulus two-member bucket occupancy
   test only.
+
+## S028 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S028 | COMPLETED BOUNDED INVESTIGATION; D27-01 PARTIAL STRUCTURAL RESOLUTION | b00613e1ae59904a65a65706728e6de5bd0176b6 | `m=2` simultaneous positivity excluded; for even `m>=4` exact nonzero torsion defect and depth-`m-1` kernel-completion condition isolated | [S028 closeout](../sessions/S028/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied S027 checkpoint and S028 was unique.
+- D27-01 excludes simultaneous positivity for `m=2`, but not for even
+  `m>=4` from the currently proved local structure.
+- No actual simultaneous-positive extremal is constructed or claimed.
+- No global weight solution, seven-lift classification, odd-modulus analysis or
+  quotient normalization is claimed.
+- CAND-05 remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blockers: NONE. External review remains CLOSED.
+- Next numbered session: S029, D28-01 canonical-kernel completion shell only.

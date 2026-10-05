@@ -457,3 +457,14 @@ authorization, submission, acceptance or publication has occurred.
 
 The publication route is unchanged: E-JC remains the leading eligible route and
 JNT the recorded backup under the S022 policy refresh.
+
+## S028 publication boundary
+
+S028 adds a bounded even-modulus compatibility reduction for CAND-05 but does
+not produce the full classification or an independently audited paper-level
+result. No actual-result novelty/significance audit, independent review, formal
+verification, manuscript, submission authorization, submission, acceptance or
+publication has occurred.
+
+The publication route is unchanged: E-JC remains the leading eligible route and
+JNT the recorded backup under the S022 policy refresh.

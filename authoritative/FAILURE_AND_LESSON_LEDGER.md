@@ -197,3 +197,9 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-082 | 2026-10-05 | Identifying a bucket's class in `Q/L` can be mistaken for identifying a quotient class in `Q`. The isomorphism `Q/L ~= H/2H` only fixes a two-member `L`-coset. | Keep coset placement separate from member-level occupancy. S027 may force `k_q=0` for the lone nonzero class in `L`, but it must not choose between the two members of any nonzero coset. | S027-P1/P2 |
+
+## S028 even-bucket-member lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-083 | 2026-10-05 | Equal doubles across the two members of an `L`-coset can look as though two-torsion immediately creates a forbidden `2m`-term zero sum. In fact the complete two-fibre block sums to the nonzero torsion difference `t`, not to zero. | Track the unique zero-weight `ell`-lift separately. The exact next obstruction is the depth-`m-1` completion condition for `w=h+t+x_ell`; do not infer an exclusion until that lift-level offset is controlled. | S028-P1/P2 |
