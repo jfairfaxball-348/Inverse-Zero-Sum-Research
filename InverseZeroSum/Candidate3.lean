@@ -78,6 +78,13 @@ def Length16SumZeroInput : Prop :=
   ∀ R : PosSeq 16, ShortFree R → totalSum R = 0
 
 /--
+Formal statement of the exact `s(C_3^3)=19` consequence used in S039:
+every length-19 nonzero sequence has a three-term zero sum.
+-/
+def ThreeTerm19Input : Prop :=
+  ∀ R : PosSeq 19, ∃ I : Finset (Fin 19), I.card = 3 ∧ posSum R I = 0
+
+/--
 Formal statement of the ordinary `eta(C_3^3)=17` consequence used in the
 length-15 residual argument. This is a proof obligation, not an assumed theorem.
 -/
@@ -164,5 +171,16 @@ theorem singleton_not_shortZero {n : ℕ} (S : PosSeq n) (i : Fin n) :
   have hz : (S i : G) = 0 := by
     simpa [ShortZero, posSum] using h.2.2
   exact (S i).property hz
+
+theorem shortZero_card_two_or_three {n : ℕ} {S : PosSeq n}
+    {I : Finset (Fin n)} (h : ShortZero S I) :
+    I.card = 2 ∨ I.card = 3 := by
+  have hpos : 0 < I.card := Finset.card_pos.mpr h.1
+  have hle : I.card ≤ 3 := h.2.1
+  have hne : I.card ≠ 1 := by
+    intro hone
+    obtain ⟨i, rfl⟩ := Finset.card_eq_one.mp hone
+    exact singleton_not_shortZero S i h
+  omega
 
 end InverseZeroSum.Candidate3
