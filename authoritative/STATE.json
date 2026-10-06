@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S038",
-  "next_session": "S039",
-  "next_brief": "authoritative/S039_CANDIDATE_3_FRESH_STRATEGY_SOURCE_REASSESSMENT_BRIEF.md",
-  "stage": "P2_CAND03_SOURCE_FIRST_STRATEGY_REASSESSMENT",
-  "programme_status": "S039_READY_CAND03_FRESH_TARGET_WIDE_MECHANISM_REASSESSMENT",
+  "last_completed_session": "S039",
+  "next_session": "S040",
+  "next_brief": "authoritative/S040_CANDIDATE_3_DIRECT_PROOF_RESIDUAL_STRUCTURE_BRIEF.md",
+  "stage": "P2_CAND03_DIRECT_PROOF_RESIDUAL_STRUCTURE",
+  "programme_status": "S039_COMPLETED_D38_01_DIRECT_PROOF_NEAR_EQUALITY_PROMOTES_S040",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. After S038 stopped the exact rank-two restriction/projection/extraction transfer, the owner chose B-013 option 1: retain CAND-03 and authorize one fresh source-first strategy reassessment for genuinely target-wide mechanisms outside that stopped architecture.",
+  "candidate_under_due_diligence": "CAND-03 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S039 D38-01 extracted a full-rank four-signature near-equality constraint from the defining 2024 proof; S040 is limited to exact length-16/15 short-free residual structure.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -93,7 +93,9 @@
     "S036-P3 ROUTE DECISION: D35-01 promotes no mathematical successor. Both prior stopped exclusion architectures remain stopped and B-011 is activated; no S037 prompt or brief is scheduled.",
     "S038-P1 PROGRAMME LEMMA: for every CAND-03 extremal S over C_3^3, restriction to any rank-two subgroup H inherits the nonzero alphabet and indexed innerly non-zero-sum-joint short-zero-sum avoidance. Since eta^N(C_3^2)=10, |S|_H<=9. The 13 rank-two subgroups each contain any fixed nonzero group element in exactly four of them, so sum_H |S|_H=4|S|=96 and some H has |S|_H>=8. Hence the maximum subgroup-restriction length is exactly 8 or 9.",
     "S038-P2 SOURCE-BACKED COUNTERINTERFACE: Gao--Hui--Li--Li--Qu--Zhong Theorem 3.6 supplies a length-24 C_3^3 extremal S0=U^3. Every value multiplicity of S0 is divisible by 3, hence every subgroup restriction has length divisible by 3. Combining S038-P1 gives maximum subgroup-restriction length 9 and no rank-two subgroup restriction of length 8. Therefore Hui--Zhong 2026 Theorem 1.1, whose C_3^2 input length is 3*3-1=8, is not forced on a subgroup restriction of every CAND-03 extremal.",
-    "S038-P3 PROGRAMME TRANSFER BOUNDARY: quotient projection does not inherit the original zero-sum avoidance because projected zero sums may lift to nonzero kernel sums and kernel terms project to 0; an affine slice is not a subgroup and translation to a rank-two subgroup can change 2-term zero-sum status (and may introduce 0); deleting one position from a 9-term subgroup restriction gives an 8-term extraction but no canonical deletion is forced. D37-01 therefore stops with no canonical exact-hypothesis Hui--Zhong interface."
+    "S038-P3 PROGRAMME TRANSFER BOUNDARY: quotient projection does not inherit the original zero-sum avoidance because projected zero sums may lift to nonzero kernel sums and kernel terms project to 0; an affine slice is not a subgroup and translation to a rank-two subgroup can change 2-term zero-sum status (and may introduce 0); deleting one position from a 9-term subgroup restriction gives an 8-term extraction but no canonical deletion is forced. D37-01 therefore stops with no canonical exact-hypothesis Hui--Zhong interface.",
+    "S039 D38-01 PROGRAMME LEMMA: every maximal packing of position-disjoint short minimal zero sums in a CAND-03 extremal has signature (l,s,r) in {(6,8,2),(7,8,1),(8,8,0),(6,9,0)}.",
+    "S039 D38-01 PROGRAMME LEMMA: deleting one arbitrary representative from every packed short atom leaves a short-free residual of length 16 when s=8 and length 15 when s=9."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -303,6 +305,11 @@
       "id": "S038",
       "status": "COMPLETED",
       "record": "sessions/S038/CLOSEOUT.md"
+    },
+    {
+      "id": "S039",
+      "status": "COMPLETED",
+      "record": "sessions/S039/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -330,7 +337,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-03 remains selected. The S038 rank-two restriction/projection/extraction transfer is stopped. S039 may compare at most three genuinely different source-backed target-wide mechanisms and may promote at most one bounded mathematical successor if exact hypotheses apply.",
+  "current_route_disposition": "S038 rank-two restriction/projection/extraction remains stopped. S039 promoted one distinct full-rank route: apply exact C_3^3 short-free residual structure to the four direct-proof packing signatures in S040 D39-01.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -536,5 +543,8 @@
   "s038_mathematical_investigation_date": "2026-10-06",
   "cand03_rank_two_slice_preflight": "D37-01 completed. Honest rank-two subgroup restriction yields a target-wide max-size 8-or-9 constraint, but the exact Hui--Zhong 2026 Theorem 1.1 length-8 hypothesis is not target-wide: the published lower-bound extremal has only restriction lengths divisible by 3 and therefore a densest restriction of length 9. Projection, affine translation and arbitrary one-position extraction do not repair this canonically. No S039 successor is promoted; B-013 requires owner strategy disposition.",
   "b013_resolution_date": "2026-10-06",
-  "post_s038_owner_strategy_choice": "B-013 option 1: retain CAND-03 and authorize one fresh source-first strategy reassessment outside the failed rank-two restriction/projection/extraction transfer."
+  "post_s038_owner_strategy_choice": "B-013 option 1: retain CAND-03 and authorize one fresh source-first strategy reassessment outside the failed rank-two restriction/projection/extraction transfer.",
+  "s039_source_refresh_date": "2026-10-06",
+  "s039_mathematical_investigation_date": "2026-10-06",
+  "cand03_direct_proof_near_equality": "D38-01 completed. The defining 2024 proof yields l>=6 and s>=8 for every maximal short-atom packing of a length-24 extremal, hence exactly four packing signatures. The eta* type route adds no independent structure and Lemma 3.13 has stronger hypotheses. S040 D39-01 is the sole promoted successor."
 }

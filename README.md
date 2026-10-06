@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-03 source-first strategy reassessment. S038 stopped the exact Hui--Zhong rank-two transfer; the owner retained CAND-03 under B-013 option 1. S039 is READY to compare at most three genuinely different target-wide source-backed mechanisms outside that stopped route.**
+**Current stage: CAND-03 direct-proof residual structure. S039 completed D38-01 and extracted a full-rank four-signature near-equality constraint from the defining 2024 proof. S040 is READY to test the resulting length-16/15 short-free residuals against exact C_3^3 structure.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -13,13 +13,13 @@ authority; conversation history is not the project state.
 A numbered session runs one bounded task autonomously, validates and
 checkpoints useful work, then automatically provides a close report.
 
-**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S039 is the live bounded source-first strategy reassessment.
+**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S040 is the live bounded mathematical continuation.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-03 is selected at the exact length-24 structural inverse Narkiewicz-sense eta scope.
 2. Publication gate — OPEN: E-JC remains the leading eligible route; JCTA is a natural comparable venue for CAND-03.
-3. Mathematical-investigation gate — OPEN for S039's bounded source-first strategy reassessment; no mathematical successor exists unless S039 promotes one.
+3. Mathematical-investigation gate — OPEN for S040 D39-01, the bounded full-rank residual-structure test promoted by S039.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
@@ -296,3 +296,23 @@ repair.
 The rank-two transfer route is therefore stopped. CAND-03 remains selected and
 SOURCE-DEFINED / CURRENT STATUS UNKNOWN. The owner resolved B-013 with option 1;
 S039 is ready for a fresh source-first target-wide mechanism reassessment.
+
+
+## S039 fresh-mechanism checkpoint
+
+S039 completed D38-01 with exactly three source-backed mechanism tests. The
+defining/direct Gao--Hui--Li--Li--Qu--Zhong proof retains a useful
+near-equality layer one term below the generalized-Narkiewicz threshold:
+every maximal packing of position-disjoint short minimal zero sums in a
+CAND-03 extremal has
+`(l,s,r)` in `{(6,8,2),(7,8,1),(8,8,0),(6,9,0)}`.
+
+Deleting one arbitrary representative from every packed block leaves a
+short-free residual of length 16 when `s=8` and length 15 when `s=9`.
+The factorization `eta*` route is an exact positional re-encoding but adds no
+independent structure, while the elementary-p-group atom-parity lemma requires
+strictly stronger unrestricted minimal-zero-sum hypotheses.
+
+Exactly one successor is promoted. S040 will test only the full-rank
+`C_3^3` residual consequences from the S039 four signatures. CAND-03 remains
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN; S038 remains stopped.

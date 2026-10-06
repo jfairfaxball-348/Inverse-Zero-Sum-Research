@@ -17,10 +17,10 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**B-013 is RESOLVED by owner choice of option 1. CAND-03 remains the selected
-programme target. S039 is READY for one bounded source-first reassessment of
-genuinely target-wide mechanisms outside the stopped S038 rank-two
-restriction/projection/extraction architecture.**
+**S039 is COMPLETED. CAND-03 remains the selected programme target. D38-01
+found a genuinely target-wide near-equality constraint in the defining 2024
+proof and promoted exactly one bounded successor. S040 is READY for the
+full-rank length-16/15 residual-structure test.**
 
 Selected target:
 
@@ -32,10 +32,10 @@ Selected target:
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains the leading eligible workflow route,
   with JCTA a natural comparable venue for CAND-03.
-- Mathematical-investigation gate: OPEN for the bounded S039 source-first strategy reassessment.
+- Mathematical-investigation gate: OPEN for S040 D39-01, the bounded full-rank residual-structure test.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S039, D38-01 fresh target-wide mechanism source reassessment.
+- Next session: S040, D39-01 direct-proof residual-structure test.
 - CAND-03 current status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**;
   no bounded search non-hit is an openness or novelty certificate.
 - David J. Grynkiewicz remains the provisional first independent status/proposal
@@ -730,3 +730,30 @@ rather than schedule cosmetic proof work.
 CAND-03 remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. No openness,
 novelty, reviewer or publication inference is authorized. External review
 remains CLOSED; Xue Li Stage-1 remains CAND-02-specific and reply pending.
+
+
+## S039 completed — direct-proof near-equality structure
+
+D38-01 compared exactly three source-backed mechanism classes. The full-rank
+direct generalized-Narkiewicz proof survives as a useful near-equality
+mechanism at length 24.
+
+For every CAND-03 extremal, any maximal packing of position-disjoint short
+minimal zero sums has signature
+
+`(l,s,r) in {(6,8,2),(7,8,1),(8,8,0),(6,9,0)}`,
+
+where `l` is the number of 3-term atoms, `s-l` the number of 2-term atoms,
+and `r` the short-free remainder length. Deleting one arbitrary
+representative from every packed atom leaves a short-free residual of length
+16 for `s=8` and 15 for `s=9`.
+
+The `eta*` type formulation is exact but contributes no new structural
+normal form, and Gao et al. Lemma 3.13 has stronger whole-product and
+unrestricted-inner-joint hypotheses not forced by CAND-03.
+
+S040/D39-01 is the sole promoted successor. It may apply the exact full-rank
+`C_3^3` short-free results checked in Fan--Gao--Wang--Zhong--Zhuang 2012
+to these residuals, but may not reopen the S038 rank-two architecture.
+CAND-03 remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. External review
+remains CLOSED and no outreach is authorized.

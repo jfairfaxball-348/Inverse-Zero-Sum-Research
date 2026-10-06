@@ -619,3 +619,10 @@ It does not certify novelty, define a manuscript-ready contribution, authorize
 submission, or change journal eligibility. Publication gate remains OPEN;
 E-JC remains the leading eligible workflow route and JCTA a natural comparable
 venue for a future structural CAND-03 result.
+
+
+## S039 publication boundary
+
+S039 adds an internal target-wide near-equality lemma and a source-backed residual route. It is not a complete inverse classification, novelty certification, independent review or manuscript-ready contribution.
+
+No manuscript, submission authorization, submission, acceptance, publication or outreach occurred. Publication gate remains OPEN as workflow eligibility; E-JC remains the leading eligible route and JCTA a natural comparable venue for a future structural CAND-03 result.

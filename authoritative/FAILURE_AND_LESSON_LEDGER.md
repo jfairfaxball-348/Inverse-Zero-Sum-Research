@@ -272,3 +272,11 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-095 | 2026-10-06 | A nearby complete inverse theory can look transferable merely because every rank-three extremal has a dense rank-two slice. Here density forces only 8 or 9 terms, while Hui--Zhong Theorem 1.1 needs exactly 8; the published (U^3) extremal realizes the 9 branch and therefore defeats universal exact transfer. Arbitrary deletion, quotient projection or affine translation would silently change canonicity or hypotheses. | Check alphabet, exact length, indexed avoidance inheritance and canonicity separately before importing an inverse theorem. Once one published extremal falsifies the universal interface, stop that architecture rather than repairing it by an arbitrary extraction or a second unrelated proof route. | S038 D37-01 / D-113--D-114 |
+
+
+## S039 fresh-mechanism lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-096 | 2026-10-06 | A direct threshold proof can look useful only for its terminal contradiction or lower-bound construction. Here the inequality chain in Lemma 3.3(3) remains informative one term below threshold and yields a rigid four-signature packing constraint before any classification is known. | Inspect equality and near-equality bookkeeping in a direct proof before discarding it as non-inverse machinery; distinguish source implications from the new programme deduction. | S039 D38-01 / C-176--C-177 |
+| FL-097 | 2026-10-06 | Exact notation equivalence can tempt an invalid structural transfer. Although `eta*=eta^N`, the same source assigns unique factorization to `N_1/D^N`, not to `eta*`; treating a tagged-type encoding as an inverse normal form would conflate invariants. | Track which factorization invariant each theorem controls and require an exact implication to the target, not shared terminology. Stronger unrestricted-inner-joint atom lemmas likewise cannot be weakened to the short condition without proof. | S039 D38-01 / C-178--C-179 |

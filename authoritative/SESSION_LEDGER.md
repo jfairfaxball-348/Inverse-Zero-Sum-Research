@@ -742,3 +742,18 @@ computation remain CLOSED.
 - Active owner blockers: NONE.
 - Next numbered session: S039, D38-01 fresh source-first target-wide mechanism
   reassessment.
+
+
+## S039 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S039 | COMPLETED D38-01 FRESH SOURCE-FIRST MECHANISM REASSESSMENT; ONE TARGET-WIDE CONSTRAINT; S040 PROMOTED | af25391f08e1c846cf5b62f2a657d898050d6569 | Four maximal short-atom packing signatures; length-16/15 short-free representative-deletion residual; factorization and unrestricted atom-parity boundaries | [S039 closeout](../sessions/S039/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied checkpoint and S039 was unique.
+- Exactly three mechanism classes were compared; S038 was not reopened.
+- The 2024 direct proof gives the target-wide signature set
+  `{(6,8,2),(7,8,1),(8,8,0),(6,9,0)}`.
+- The `eta*` route is exact encoding only; Lemma 3.13 has stronger hypotheses.
+- Exactly one successor is promoted: S040/D39-01 full-rank residual structure.
+- Active owner blockers: NONE. External review remains CLOSED.

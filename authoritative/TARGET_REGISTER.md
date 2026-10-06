@@ -1147,3 +1147,18 @@ hypothesis to a structural datum; the S038 restriction/projection/extraction
 route remains stopped. A raw finite orbit catalogue, cap-set replacement,
 arbitrary translation/deletion normalization, or transfer from CAND-02/CAND-05
 does not satisfy the contribution or mechanism bar.
+
+
+## S039 CAND-03 direct-proof near-equality boundary
+
+Date: 2026-10-06.
+
+CAND-03 remains selected and **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. S039 does not classify the extremals, but it establishes a new target-wide necessary structure from the defining 2024 direct proof.
+
+For every maximal packing of position-disjoint short minimal zero sums in a length-24 extremal, the triple `(l,s,r)` of 3-atom count, total atom count and short-free remainder length is one of
+
+`(6,8,2), (7,8,1), (8,8,0), (6,9,0)`.
+
+Deleting one arbitrary representative from every packed atom leaves a short-free full-rank residual of length 16 or 15. This is sequence/position structure, not a set/cap reformulation and not a rank-two transfer.
+
+S040 may test only the exact full-rank residual consequences. S038 remains a hard route stop.

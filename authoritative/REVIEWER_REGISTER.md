@@ -701,3 +701,10 @@ reviewer. External-review gate remains CLOSED. David J. Grynkiewicz remains
 the provisional first independent CAND-03 status/proposal lead, with Pingzhi
 Yuan a strong alternative. Xue Li's Stage-1 message remains CAND-02-specific
 and reply pending.
+
+
+## S039 external-review boundary
+
+S039 sent no outreach and received no independent CAND-03 review. External review remains CLOSED and no reviewer is confirmed.
+
+David J. Grynkiewicz remains the provisional first independent CAND-03 status/proposal lead, with Pingzhi Yuan a strong alternative. Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 / REPLY PENDING; nothing in S039 transfers that status.

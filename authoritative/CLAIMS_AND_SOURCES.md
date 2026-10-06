@@ -837,3 +837,20 @@ Source-check date: **2026-10-06**.
 | Claim | Classification | Bounded content | Support / limit |
 | --- | --- | --- | --- |
 | C-175 | OWNER_STRATEGY_DECISION | B-013 is resolved by retaining CAND-03 and authorizing S039 D38-01, one bounded source-first comparison of at most three genuinely different target-wide mechanisms outside the stopped S038 rank-two transfer. At most one bounded mathematical successor may be promoted and S039 must not prove it. | D-115--D-116. This changes strategy only; it is not a mathematical theorem, openness/novelty claim, reviewer endorsement or publication claim. |
+
+
+## S039 fresh-mechanism source and claim additions
+
+Source-check date: **2026-10-06**.
+
+| ID | Source | Exact boundary |
+| --- | --- | --- |
+| ZS-74 | Yushuang Fan, Weidong Gao, Guoqing Wang, Qinghai Zhong, Jujuan Zhuang, *On short zero-sum subsequences of zero-sum sequences*, E-JC 19(3) (2012), #P31 | Statement-checked for the S040 successor only. Lemma 28: every short-free length-16 sequence over `C_3^3` has sum zero, with proof form `T^2`; Lemma 29(1): `{14,15} subset C_0(C_3^3)`. The paper also records `eta(C_3^3)=17` and Property C for `C_3^r`. |
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-176 | SOURCE_TOOL | In Gao--Hui--Li--Li--Qu--Zhong 2024 Lemma 3.3(3), an avoiding sequence decomposed into disjoint short minimal zero sums `B_i` plus a short-free remainder has the following property for arbitrary representatives `g_i|B_i`: deleting representatives from all 3-atoms leaves no 3-term zero sum, and deleting representatives from all packed short atoms leaves a short-free sequence. | ZS-72 rechecked at the full proof. The implication uses the indexed avoidance hypothesis and is not restricted to the threshold length. |
+| C-177 | PROGRAMME_PROVED / TARGET-WIDE NEAR-EQUALITY | For every CAND-03 extremal and every maximal short-atom packing, if `l` atoms have length 3, `s-l` have length 2 and the short-free remainder has length `r`, then `(l,s,r)` is exactly one of `(6,8,2),(7,8,1),(8,8,0),(6,9,0)`. Deleting one arbitrary representative from every atom leaves a short-free residual of length 16 for `s=8` and 15 for `s=9`. | C-176 plus `eta(C_3^3)=17`, `s(C_3^3)=19`, and `24=l+2s+r`. Internal deduction, not source-stated inverse classification or novelty claim. |
+| C-178 | SOURCE_COMPARATOR_BOUNDARY | The `eta*` type formulation applies exactly to CAND-03 and preserves position labels, but it is only a re-encoding here. The checked source identifies unique factorization with the distinct `N_1/D^N` invariant, so no `N_1` normal form transfers to `eta^N` merely from `eta*=eta^N`. | ZS-72 Definition 2.3 and Lemma 2.4. |
+| C-179 | SOURCE_COMPARATOR_BOUNDARY | Gao et al. 2024 Lemma 3.13 is not applicable target-wide: it assumes the entire sequence is a product of minimal zero-sum sequences and forbids innerly joint minimal zero sums without the short-length restriction. CAND-03 forces neither stronger hypothesis. | Exact statement rechecked; no weakening is inferred. |
+| C-180 | PROGRAMME_ROUTE_DECISION | Promote S040/D39-01 only: test C-177 residuals against the exact full-rank `C_3^3` short-free statements in ZS-74. | D-117--D-118. S039 itself does not apply ZS-74 to prove further structure. |

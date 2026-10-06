@@ -849,3 +849,13 @@ rank-two restriction/projection/extraction route remains stopped and is not
 reopened by this decision. S039 is source-first reassessment only; it is not
 authorization for brute-force enumeration, a second unvetted proof
 architecture, outreach, manuscript preparation or submission.
+
+
+## S039 D38-01 decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-117 | 2026-10-06 | Record the defining/direct 2024 proof as the only S039 mechanism that clears the target-wide bar. It forces `l>=6`, `s>=8` and hence exactly four maximal short-atom packing signatures at length 24. Record the `eta*` route as exact re-encoding only and Lemma 3.13 as inapplicable because its hypotheses are stronger. | `sessions/S039/FRESH_STRATEGY_SOURCE_REASSESSMENT.md` and `SOURCE_CHECK.md`; ZS-72. |
+| D-118 | 2026-10-06 | Promote exactly one successor, S040/D39-01. Apply only exact full-rank `C_3^3` short-free residual structure to the length-16/15 residuals produced by D38-01. Preserve the arbitrary-representative quantifier and all S038 hard stops. | C-177 and statement-checked ZS-74; S039 anti-churn rule. |
+
+Active owner blockers: **NONE**. CAND-03 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. External review remains CLOSED; no outreach or submission action is authorized.

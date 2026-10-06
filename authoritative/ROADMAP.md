@@ -1247,3 +1247,14 @@ cap-set substitution or imported CAND-02/CAND-05 machinery is admissible.
 S039 may promote at most one bounded mathematical successor and must not prove
 it. If all checked mechanisms are automatic, inapplicable, noncanonical or
 catalogue-only, stop with a new owner strategy blocker.
+
+
+## S039 completed — fresh CAND-03 mechanism reassessment
+
+D38-01 found one target-wide route outside S038. Reusing the exact representative-deletion implications in Gao et al. 2024 Lemma 3.3(3) at length 24 gives `l>=6`, `s>=8` and exactly four maximal short-atom packing signatures. The associated all-block representative-deletion residual is short-free of length 16 or 15.
+
+The factorization-type route adds no structural theorem beyond exact `eta*=eta^N` encoding, and the elementary-p-group atom-parity lemma requires stronger unrestricted-minimality hypotheses.
+
+### S040 — D39-01 full-rank residual structure
+
+Apply only the exact `C_3^3` short-free structure to the S039 residuals, beginning with Fan--Gao--Wang--Zhong--Zhuang 2012 Lemmas 28--29 and Property C. Decide whether the four signatures collapse or force a canonical support/multiplicity datum. Stop at the first exact reduction or no-go; do not iterate residual variants or reopen S038.
