@@ -41,6 +41,15 @@ Lean validates only encoded proved declarations under this toolchain. It does
 not establish literature novelty, previous openness, significance, the human
 semantic-correspondence judgement or journal review.
 
+## Changed repository surface
+
+The checkpoint adds the pinned Lean project (`lean-toolchain`,
+`lakefile.toml`, `lake-manifest.json`, `InverseZeroSum.lean`,
+`InverseZeroSum/Candidate3.lean`), a clean-run GitHub Actions formalization
+workflow, the S043 input/correspondence/progress/validation/closeout records,
+the S044 blocker brief/live prompt, and synchronized state, roadmap, registers,
+claims, decisions, session ledger, README and formalization lesson.
+
 ## Scope compliance
 
 No S038 route was reopened, no new mathematical theorem was searched for, no
