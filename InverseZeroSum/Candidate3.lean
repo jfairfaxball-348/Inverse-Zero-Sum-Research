@@ -436,15 +436,6 @@ theorem planePointT_sum_zero_of_coord :
   set_option maxHeartbeats 500000 in
     decide
 
-/-- Every tuple-model point lies on exactly 13 explicit affine planes. -/
-theorem point_plane_countT :
-    ∀ x : F3T,
-      ((Finset.univ : Finset PlaneIdx).filter
-        (fun p => onPlaneTB p x = true)).card = 13 := by
-  set_option maxRecDepth 10000 in
-  set_option maxHeartbeats 500000 in
-    decide
-
 /-- Every two distinct tuple-model points lie on exactly four affine planes. -/
 theorem pair_plane_countT :
     ∀ x y : F3T, x ≠ y →
@@ -454,15 +445,17 @@ theorem pair_plane_countT :
   set_option maxHeartbeats 1000000 in
     decide
 
-/-- Every three distinct non-collinear tuple-model points lie on exactly one affine plane. -/
-theorem triple_plane_countT :
-    ∀ x y z : F3T,
-      x ≠ y → x ≠ z → y ≠ z → x + y + z ≠ 0 →
-      ((Finset.univ : Finset PlaneIdx).filter
-        (fun p =>
-          onPlaneTB p x = true ∧ onPlaneTB p y = true ∧ onPlaneTB p z = true)).card = 1 := by
+/--
+The four affine planes through a line cover the whole three-dimensional affine
+space.  This is the second and final finite incidence check used by the
+structural cap proof.
+-/
+theorem pair_planes_coverT :
+    ∀ x y z : F3T, x ≠ y →
+      ∃ p : PlaneIdx,
+        onPlaneTB p x = true ∧ onPlaneTB p y = true ∧ onPlaneTB p z = true := by
   set_option maxRecDepth 10000 in
-  set_option maxHeartbeats 2000000 in
+  set_option maxHeartbeats 1500000 in
     decide
 
 
