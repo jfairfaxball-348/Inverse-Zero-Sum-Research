@@ -881,3 +881,16 @@ Active owner blockers: **NONE**. CAND-03 remains selected. The mathematical clas
 
 Active owner blockers: **NONE**. No outreach, manuscript, submission or reviewer action is authorized by these decisions.
 
+
+
+## Post-S041 owner prior-art/publication-route decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-125 | 2026-10-06 | **Schedule S042/D41-01 as a deep systematic CAND-03 prior-art/status audit.** S041's focused bounded non-hit is not sufficient for publication positioning, and mathematical proof work remains closed. | Explicit owner instruction after S041. |
+| D-126 | 2026-10-06 | If S042 locates no exact/equivalent/stronger-implying prior art and leaves no unresolved high-risk lead, use this ordered downstream roadmap: **Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC submission**. A deep search non-hit remains a status boundary rather than a logical novelty proof. | Explicit owner roadmap. |
+| D-127 | 2026-10-06 | **Skip independent pre-submission external review/consultation for CAND-03.** Keep the external-review gate CLOSED and remove it as a CAND-03 publication-pipeline prerequisite. No CAND-03 reviewer outreach is planned; ordinary E-JC editorial/referee review remains the journal review mechanism. | Explicit owner decision. |
+
+Active owner blockers: **NONE**. S042 is READY. These decisions do not claim
+novelty, prior openness, journal acceptance, or that a literature search can
+prove absence of prior art.

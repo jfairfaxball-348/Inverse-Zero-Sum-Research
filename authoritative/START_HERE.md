@@ -17,13 +17,12 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S041 is COMPLETED. CAND-03 remains the selected programme target. D40-01
-independently reverified the complete S040 proof chain and found no proof defect.
-A focused primary/current-literature audit located substantial antecedent/source
-ingredients and later rank-two inverse work, but no checked source-stated theorem
-supplying the exact rank-three `C_3^3` length-24 `U^3` iff classification.
-This is a bounded non-hit, not a novelty or openness certificate. No S042
-successor is promoted.**
+**S041 is COMPLETED and S042 is READY. CAND-03 remains the selected target.
+The exact classification is internally proved and independently reverified:
+a target sequence is exactly `S=U^3` with `U` squarefree short-free of
+length 8. S041's literature work was deliberately focused and bounded, so the
+next dependency is a deep systematic prior-art/status audit, not more proof
+search.**
 
 Selected target:
 
@@ -33,27 +32,28 @@ Selected target:
 > theorem.
 
 - Target gate: OPEN.
-- Publication gate: OPEN as workflow eligibility only; E-JC remains the leading
-  eligible route, with JCTA a natural comparator. No submission action is
-  authorized or implied.
-- Mathematical-investigation gate: CLOSED after D40-01; no numbered proof or
-  status successor is currently authorized.
-- External-review gate: CLOSED; confirmed reviewers: NONE.
+- Publication gate: OPEN as workflow eligibility; E-JC is the intended journal
+  if the prior-art audit clears.
+- Mathematical-investigation gate: CLOSED. S042 is literature/status work only.
+- External-review gate: CLOSED and **not a CAND-03 pre-submission blocker**.
+  The owner explicitly elected to skip independent reviewer/consultation and
+  rely on Lean/Palomar verification followed by E-JC's ordinary peer review.
 - Active owner blockers: NONE.
-- Next session: NONE. No live next-session prompt is retained.
-- CAND-03 classification is **PROGRAMME-PROVED AND INTERNALLY REVERIFIED FROM
-  CHECKED SOURCE INPUTS**: exactly `S=U^3` with `U` squarefree short-free
-  of length `8`.
-- Exact literature novelty, previous openness, publication significance and
-  independent validation remain unresolved. A bounded search non-hit does not
-  answer any of those questions.
-- David J. Grynkiewicz remains a provisional future independent status/proposal
-  lead, with Pingzhi Yuan a strong alternative; S041 authorizes no outreach.
+- Next session: S042 / D41-01 deep systematic prior-art audit.
+- Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
+- A search non-hit must be reported as a documented non-hit, not as a logical
+  novelty or openness proof.
+- If S042 finds no exact/equivalent/stronger-implying prior art and no
+  unresolved high-risk lead, the owner-authorized downstream sequence is:
+  **Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC
+  submission**.
+- If S042 finds a collision or serious unresolved lead, that downstream route
+  pauses for reassessment.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
-  REPLY PENDING, with no reviewer/status transfer to CAND-03.
+  REPLY PENDING, with no status transfer to CAND-03.
 
-CAND-05 is historical/paused. CAND-02 remains historical/paused; CAND-04 remains
-retired; CAND-06 and CAND-01 remain unselected alternatives.
+CAND-05 and CAND-02 remain historical/paused; CAND-04 remains retired;
+CAND-06 and CAND-01 remain unselected alternatives.
 
 ## Historical CAND-05 mathematical frontier (proof paused)
 

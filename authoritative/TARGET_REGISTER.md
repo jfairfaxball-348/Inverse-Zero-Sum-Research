@@ -1200,3 +1200,21 @@ independent external validation therefore remain unresolved. The bounded
 non-location of an exact theorem is not a novelty or openness certificate.
 No further proof/status session is scheduled.
 
+
+
+## Post-S041 CAND-03 status dependency
+
+The exact CAND-03 theorem is internally proved and independently reverified
+within the programme. The remaining pre-formalization dependency is literature
+status, not proof completion.
+
+S042/D41-01 is a deep systematic prior-art audit. It must search not only for
+the exact wording but also for equivalent reformulations and stronger theorems
+that immediately specialize to the CAND-03 classification. Alternate finite-
+geometric or factorization language counts as prior art only after the
+equivalence and source statement are checked exactly.
+
+A clean S042 result means only that no exact/equivalent/stronger-implying prior
+art was located within the documented deep audit and no unresolved high-risk
+lead remains. It does not logically prove novelty or prior openness. Under that
+boundary the target proceeds to Lean formalization.

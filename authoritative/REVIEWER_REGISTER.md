@@ -730,3 +730,26 @@ Xue Li Stage-1 remains strictly CAND-02-specific, owner-reported SENT
 2026-10-02 / REPLY PENDING. Its transmission, silence or any future reply does
 not transfer reviewer status or validation to CAND-03.
 
+
+
+## Post-S041 owner review-policy decision for CAND-03
+
+Date: 2026-10-06.
+
+The owner has explicitly elected to **skip independent pre-submission external
+review/consultation for CAND-03**. David J. Grynkiewicz and Pingzhi Yuan are no
+longer planned pre-submission reviewer/status contacts for this target under
+the current route. No willingness or endorsement is inferred from their prior
+provisional listing.
+
+The external-review gate remains **CLOSED**, but it is not a blocking gate for
+the owner-authorized CAND-03 pipeline. Planned verification/review is instead:
+deep prior-art audit; Lean formal verification; Palomar registration if the
+formalization meets current requirements; then the normal editorial/referee
+process of E-JC.
+
+S042 must not contact reviewers, authors, or other experts for status
+consultation. A future owner instruction may change this policy.
+
+Xue Li Stage-1 remains strictly CAND-02-specific, owner-reported SENT
+2026-10-02 / REPLY PENDING, and has no CAND-03 reviewer or status role.

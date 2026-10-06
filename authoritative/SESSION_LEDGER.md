@@ -796,3 +796,20 @@ computation remain CLOSED.
 - Xue Li Stage-1 remains CAND-02-specific and reply pending.
 - Active owner blockers: NONE. Next numbered session: NONE.
 
+
+
+## Post-S041 owner roadmap checkpoint
+
+- S041 remains the last completed numbered session.
+- The owner authorizes S042/D41-01 as a deep systematic prior-art/status audit;
+  no new mathematical proof unit is opened.
+- S042 must verify exact primary statements for any serious overlap candidate
+  and distinguish exact/equivalent/stronger-implying prior art from ingredient
+  overlap and search non-hits.
+- If no exact/equivalent/stronger-implying prior art and no unresolved high-risk
+  lead remains, the downstream order is Lean -> Palomar -> paper -> arXiv ->
+  E-JC.
+- Independent pre-submission external reviewer/consultation is skipped by
+  owner decision; E-JC's ordinary journal peer review remains planned.
+- Active owner blockers: NONE.
+- Next numbered session: S042 / D41-01.

@@ -1296,3 +1296,43 @@ exact owner-authorized dependency. External independent review remains a future
 programme requirement, but S041 sends no outreach and transfers no CAND-02
 reviewer status.
 
+
+
+## Post-S041 owner route — S042 deep prior-art audit and conditional publication pipeline
+
+The owner determined that S041's focused overlap check is not sufficient for
+publication positioning. S042 therefore runs one literature/status unit,
+D41-01, with the mathematical-investigation gate remaining CLOSED.
+
+D41-01 must conduct a deep systematic prior-art audit for the exact CAND-03
+classification and for any equivalent or stronger theorem that would
+immediately imply it. The search must include backward and forward citation
+tracking from the defining 2024 generalized-Narkiewicz paper and the 2012
+full-rank short-zero-sum source; alternate terminology for revised/generalized/
+Narkiewicz-sense eta constants and joint short zero sums; rank-three and
+`C_3^3` inverse/extremal literature; factorization-theoretic formulations;
+finite-geometric/cap-set formulations only when an exact equivalence is
+verified rather than assumed; current preprints; theses/dissertations;
+conference proceedings and institutional repositories; and non-English
+literature where discoverable. Candidate overlap counts only after the exact
+primary statement and hypotheses are checked.
+
+S042 must classify serious hits as exact same theorem, equivalent
+reformulation, stronger theorem with immediate specialization, partial/
+ingredient overlap, informal/unverified mention, or non-hit. A search non-hit
+remains a search non-hit, not a proof of novelty or prior openness.
+
+Stop rules:
+- exact/equivalent/stronger-implying prior art -> stop the downstream pipeline
+  and reassess contribution/status;
+- unresolved high-probability primary-source lead -> promote at most one
+  source-resolution successor;
+- no such hit or unresolved lead after the documented audit -> promote Lean
+  formalization as the next stage.
+
+Under the owner's explicit roadmap, a clean S042 outcome authorizes this order:
+Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC
+submission. Independent pre-submission external reviewer/consultation is
+deliberately skipped for CAND-03. The external-review gate stays CLOSED but is
+not a blocker for this route. E-JC's ordinary editorial/referee process is the
+planned journal peer-review mechanism.

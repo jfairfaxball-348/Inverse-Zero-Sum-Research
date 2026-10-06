@@ -651,3 +651,30 @@ There is no manuscript, no submission authorization, no novelty certification,
 and no claim of publication readiness. Independent external mathematical/status
 review remains outstanding.
 
+
+
+## Post-S041 owner publication roadmap
+
+Date: 2026-10-06.
+
+Before manuscript preparation, CAND-03 now requires one deep systematic
+prior-art/status audit (S042). S041's focused non-hit is insufficient by itself
+for publication positioning.
+
+If S042 finds no exact/equivalent/stronger-implying prior art and no unresolved
+high-risk source lead, the owner-authorized sequence is:
+
+1. Lean formalization of the exact theorem/proof;
+2. Palomar registration of the pinned Lean-verified result, after rechecking
+   Palomar's current submission requirements;
+3. manuscript drafting;
+4. arXiv preprint;
+5. submission to the Electronic Journal of Combinatorics (E-JC).
+
+Independent pre-submission external consultation is explicitly skipped. This
+does not convert an internal or machine check into journal peer review; E-JC's
+ordinary editorial/referee process remains the planned peer-review stage.
+
+No claim of novelty, previous openness, significance, acceptance probability,
+or publication readiness is made by this roadmap. An exact prior-art collision
+or serious unresolved lead found in S042 pauses the downstream sequence.
