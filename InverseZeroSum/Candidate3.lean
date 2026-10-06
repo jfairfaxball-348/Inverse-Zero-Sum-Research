@@ -1482,19 +1482,44 @@ def normalizedCandidateVal : NormalizedCandidateT ↪ F3T where
 def normalizedCapT (B : Finset NormalizedCandidateT) : Finset F3T :=
   basisSeedT ∪ B.map normalizedCandidateVal
 
+/-- The 6,188 five-element subsets of the 17 normalized candidates. -/
+def normalizedFiveSetsT : Finset (Finset NormalizedCandidateT) :=
+  normalizedCandidateSetT.attach.powersetCard 5
+
 /--
-The normalized completion search has only 17 candidate points; only five are
-chosen. The premise is the explicit finite violation test, so ordinary kernel
-reduction checks the normalized completion space without an opaque catalogue.
+A normalized five-set is bad when it completes the seed to a cap but the
+resulting nine-point cap has nonzero total sum.
 -/
-theorem normalized_capT_sum_zero :
-    ∀ B : Finset NormalizedCandidateT,
-      B.card = 5 →
-      capViolationsT (normalizedCapT B) = ∅ →
-      (∑ x ∈ normalizedCapT B, x) = 0 := by
+def normalizedBadCompletionsT : Finset (Finset NormalizedCandidateT) :=
+  normalizedFiveSetsT.filter (fun B =>
+    capViolationsT (normalizedCapT B) = ∅ ∧
+      (∑ x ∈ normalizedCapT B, x) ≠ 0)
+
+/--
+The explicit normalized bad-completion set is empty.  This ordinary kernel
+reduction ranges only over the 6,188 five-subsets of the 17 candidate points.
+-/
+@[simp] theorem normalizedBadCompletionsT_empty :
+    normalizedBadCompletionsT = ∅ := by
   set_option maxRecDepth 10000 in
-  set_option maxHeartbeats 10000000 in
+  set_option maxHeartbeats 50000000 in
     decide
+
+theorem normalized_capT_sum_zero
+    (B : Finset NormalizedCandidateT)
+    (hcard : B.card = 5)
+    (hcap : capViolationsT (normalizedCapT B) = ∅) :
+    (∑ x ∈ normalizedCapT B, x) = 0 := by
+  by_contra hsum
+  have hsub : B ⊆ normalizedCandidateSetT.attach := by
+    intro x hx
+    simp
+  have hfive : B ∈ normalizedFiveSetsT := by
+    exact Finset.mem_powersetCard.mpr ⟨hsub, hcard⟩
+  have hbad : B ∈ normalizedBadCompletionsT :=
+    Finset.mem_filter.mpr ⟨hfive, hcap, hsum⟩
+  rw [normalizedBadCompletionsT_empty] at hbad
+  simpa using hbad
 
 def basisBuildT (a b c u : F3T) : F3T :=
   (u.1 * a.1 + u.2.1 * b.1 + u.2.2 * c.1,
@@ -1531,20 +1556,33 @@ def basisBuildHomT (a b c : F3T) : F3T →+ F3T where
   simp [basisBuildT, e3T]
 
 /--
-Finite injectivity certificate over the 39 explicit planes and 27 tuple
-points. Bijectivity then follows from finiteness of the endomorphism.
+Finite pointwise injectivity certificate.  The expensive point-pair quantifier
+comes only after the plane/basis hypotheses, so kernel reduction short-circuits
+outside the admissible basis configurations.
 -/
-theorem basisBuildT_injective_of_plane :
+theorem basisBuildT_eq_imp_eq_of_plane :
     ∀ a b c : F3T, ∀ p : PlaneIdx,
       a ≠ 0 → b ≠ 0 → a ≠ b → a + b ≠ 0 →
       onPlaneTB p 0 = true →
       onPlaneTB p a = true →
       onPlaneTB p b = true →
       onPlaneTB p c = false →
-      Function.Injective (basisBuildT a b c) := by
+      ∀ x y : F3T, basisBuildT a b c x = basisBuildT a b c y → x = y := by
   set_option maxRecDepth 10000 in
-  set_option maxHeartbeats 10000000 in
+  set_option maxHeartbeats 20000000 in
     decide
+
+theorem basisBuildT_injective_of_plane
+    (a b c : F3T) (p : PlaneIdx)
+    (ha0 : a ≠ 0) (hb0 : b ≠ 0) (hab : a ≠ b) (habSum : a + b ≠ 0)
+    (hp0 : onPlaneTB p 0 = true)
+    (hpa : onPlaneTB p a = true)
+    (hpb : onPlaneTB p b = true)
+    (hpc : onPlaneTB p c = false) :
+    Function.Injective (basisBuildT a b c) := by
+  intro x y hxy
+  exact basisBuildT_eq_imp_eq_of_plane a b c p ha0 hb0 hab habSum
+    hp0 hpa hpb hpc x y hxy
 
 theorem isCapT_map_addEquiv (e : F3T ≃+ F3T) {A : Finset F3T}
     (hA : IsCapT A) :
