@@ -1162,3 +1162,16 @@ For every maximal packing of position-disjoint short minimal zero sums in a leng
 Deleting one arbitrary representative from every packed atom leaves a short-free full-rank residual of length 16 or 15. This is sequence/position structure, not a set/cap reformulation and not a rank-two transfer.
 
 S040 may test only the exact full-rank residual consequences. S038 remains a hard route stop.
+
+
+## S040 CAND-03 internal classification boundary
+
+Date: 2026-10-06.
+
+CAND-03 remains the selected target. Its **mathematical classification is now PROGRAMME-PROVED FROM CHECKED SOURCE INPUTS**:
+
+> A length-24 sequence `S` over `C_3^3\{0}` has no two innerly non-zero-sum-joint short zero-sum subsequences if and only if `S=U^3` for a squarefree short-free length-8 sequence `U`.
+
+The necessity is the S040 programme proof from the S039 maximal-packing residuals and Fan--Gao--Wang--Zhong--Zhuang 2012. The converse is the checked Gao--Hui--Li--Li--Qu--Zhong 2024 Lemma 3.3(2) construction, invoked only after necessity.
+
+This does **not** establish that the classification is new in the literature, that the problem was previously open, that the theorem is publication-significant, or that the proof has independent external validation. S041 is dedicated to independent proof-chain verification and a focused exact-overlap/current-status audit. A bounded search non-hit will not be treated as an openness or novelty certificate.
