@@ -687,3 +687,19 @@ Date checked: 2026-10-06.
 D41-01 cleared the owner-defined pre-formalization literature dependency only in this precise sense: **no exact/equivalent/stronger-implying prior art located in the documented deep audit**, with no unresolved high-probability lead. This is not a novelty/open/significance certificate and does not make a manuscript publication-ready.
 
 Publication gate remains OPEN as workflow eligibility. No manuscript, Palomar registration, arXiv preprint, submission or acceptance exists. The owner-authorized order is Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC. S043 performs only the first step. E-JC's ordinary editorial/referee process remains the planned journal peer review.
+
+
+## S043 publication boundary
+
+Date: 2026-10-06.
+
+S043 is a partial formalization checkpoint, not publication readiness. The
+exact theorem is encoded in Lean and the current source clean-builds in a
+pinned environment, but `FrozenClassification` has no proof term. Therefore
+the first owner-ordered downstream step has **not** completed.
+
+No Palomar registration, manuscript, arXiv preprint, E-JC submission,
+acceptance or publication exists. The publication gate remains OPEN only as
+workflow eligibility. The order Lean -> Palomar -> paper -> arXiv -> E-JC is
+unchanged, and Palomar remains blocked until the complete pinned Lean proof
+passes.
