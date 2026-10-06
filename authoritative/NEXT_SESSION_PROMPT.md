@@ -8,9 +8,6 @@ Status: READY.
 Begin S044 in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
-Previous verified checkpoint:
-<S043-OUTGOING-CHECKPOINT>
-
 Use committed repository authority, not conversation history. Pin live main,
 reconcile intervening changes and confirm S044 is unique. Read AGENTS.md,
 authoritative/START_HERE.md, all required authority,
