@@ -1691,4 +1691,149 @@ theorem tupleSupportT_card_le_eight {n : ℕ} (R : PosSeq n)
   rw [hCard] at hCap0Card
   omega
 
+
+theorem eight_support_sum_zero {A : Finset F3T}
+    (hAcard : A.card = 8) (hZeroNot : (0 : F3T) ∉ A)
+    (hCap0 : IsCapT (insert 0 A)) :
+    (∑ x ∈ A, x) = 0 := by
+  classical
+  have hCap : IsCapT A :=
+    isCapT_of_subset hCap0 (Finset.subset_insert 0 A)
+  obtain ⟨a, b, haA, hbA, hab⟩ :=
+    Finset.one_lt_card_iff.mp (show 1 < A.card by omega)
+  have ha0 : a ≠ 0 := by
+    intro ha
+    subst a
+    exact hZeroNot haA
+  have hb0 : b ≠ 0 := by
+    intro hb
+    subst b
+    exact hZeroNot hbA
+  have habSum : a + b ≠ 0 := by
+    intro hsum
+    exact (hCap0 0 (by simp) a (by simp [haA]) b (by simp [hbA])
+      (Ne.symm ha0) (Ne.symm hb0) hab) (by simpa using hsum)
+  obtain ⟨p, hp0, hpa, hpb⟩ :=
+    pair_planes_coverT 0 a b (Ne.symm ha0)
+  have hInterLe : (A ∩ planeSetT p).card ≤ 4 :=
+    cap_inter_plane_le_four hCap p
+  have hcExists : ∃ c ∈ A, c ∉ planeSetT p := by
+    by_contra h
+    push_neg at h
+    have hsub : A ⊆ planeSetT p := by
+      intro x hx
+      exact h x hx
+    have heq : A ∩ planeSetT p = A := Finset.inter_eq_left.mpr hsub
+    rw [heq, hAcard] at hInterLe
+    omega
+  obtain ⟨c, hcA, hcOut⟩ := hcExists
+  have hpc : onPlaneTB p c = false := by
+    by_cases htrue : onPlaneTB p c = true
+    · exact False.elim
+        (hcOut (Finset.mem_filter.mpr ⟨Finset.mem_univ c, htrue⟩))
+    · exact Bool.eq_false_of_not_eq_true htrue
+  have hbij : Function.Bijective (basisBuildT a b c) :=
+    basisBuildT_bijective_of_plane a b c p ha0 hb0 hab habSum
+      hp0 hpa hpb hpc
+  let e : F3T ≃+ F3T :=
+    AddEquiv.ofBijective (basisBuildHomT a b c) hbij
+  let N : Finset F3T := A.map e.symm.toEmbedding
+  have hNCard : N.card = 8 := by
+    simp [N, hAcard]
+  have he1 : e e1T = a := by
+    simp [e, basisBuildHomT]
+  have he2 : e e2T = b := by
+    simp [e, basisBuildHomT]
+  have he3 : e e3T = c := by
+    simp [e, basisBuildHomT]
+  have he1inv : e.symm a = e1T := by
+    rw [← he1, e.symm_apply_apply]
+  have he2inv : e.symm b = e2T := by
+    rw [← he2, e.symm_apply_apply]
+  have he3inv : e.symm c = e3T := by
+    rw [← he3, e.symm_apply_apply]
+  have he1N : e1T ∈ N :=
+    Finset.mem_map.mpr ⟨a, haA, he1inv⟩
+  have he2N : e2T ∈ N :=
+    Finset.mem_map.mpr ⟨b, hbA, he2inv⟩
+  have he3N : e3T ∈ N :=
+    Finset.mem_map.mpr ⟨c, hcA, he3inv⟩
+  have hBaseSubN : basisSupportT ⊆ N := by
+    intro x hx
+    simp only [basisSupportT, Finset.mem_insert, Finset.mem_singleton] at hx
+    rcases hx with rfl | rfl | rfl
+    · exact he1N
+    · exact he2N
+    · exact he3N
+  have hNZeroNot : (0 : F3T) ∉ N := by
+    intro h0
+    obtain ⟨x, hxA, hx⟩ := Finset.mem_map.mp h0
+    have hx0 : x = 0 := by
+      apply e.symm.injective
+      simpa using hx
+    exact hZeroNot (hx0 ▸ hxA)
+  have hCapMapped :
+      IsCapT ((insert 0 A).map e.symm.toEmbedding) :=
+    isCapT_map_addEquiv e.symm hCap0
+  have hCapN0 : IsCapT (insert 0 N) := by
+    simpa [N] using hCapMapped
+  let rest : Finset F3T := N \ basisSupportT
+  have hRestCard : rest.card = 5 := by
+    dsimp [rest]
+    rw [Finset.card_sdiff hBaseSubN, hNCard]
+    norm_num [basisSupportT, e1T, e2T, e3T]
+  have hSeedSub : basisSeedT ⊆ insert 0 N := by
+    intro x hx
+    have hx' : x = 0 ∨ x ∈ basisSupportT := by
+      simpa [basisSeedT] using hx
+    rcases hx' with rfl | hx'
+    · simp
+    · exact Finset.mem_insert_of_mem (hBaseSubN hx')
+  have hRestCandidate : ∀ x ∈ rest, x ∈ normalizedCandidateSetT := by
+    intro x hx
+    have hxN : x ∈ N := (Finset.mem_sdiff.mp hx).1
+    have hxNotBase : x ∉ basisSupportT := (Finset.mem_sdiff.mp hx).2
+    have hx0 : x ≠ 0 := by
+      intro h0
+      subst x
+      exact hNZeroNot hxN
+    have hxNotSeed : x ∉ basisSeedT := by
+      simp [basisSeedT, hx0, hxNotBase]
+    have hxBig : x ∈ insert 0 N := Finset.mem_insert_of_mem hxN
+    have hSmallSub : insert x basisSeedT ⊆ insert 0 N :=
+      Finset.insert_subset hxBig hSeedSub
+    have hSmallCap : IsCapT (insert x basisSeedT) :=
+      isCapT_of_subset hCapN0 hSmallSub
+    exact Finset.mem_filter.mpr
+      ⟨Finset.mem_univ x, hxNotSeed, hSmallCap⟩
+  let lift : {x : F3T // x ∈ rest} ↪ NormalizedCandidateT where
+    toFun x := ⟨x.1, hRestCandidate x.1 x.2⟩
+    inj' := by
+      intro x y hxy
+      apply Subtype.ext
+      exact congrArg Subtype.val hxy
+  let B : Finset NormalizedCandidateT := rest.attach.map lift
+  have hBCard : B.card = 5 := by
+    simp [B, hRestCard]
+  have hBMap : B.map normalizedCandidateVal = rest := by
+    ext x
+    simp [B, lift, normalizedCandidateVal]
+  have hBaseRest : basisSupportT ∪ rest = N := by
+    simpa [rest] using Finset.union_sdiff_of_subset hBaseSubN
+  have hSeedRest : basisSeedT ∪ rest = insert 0 N := by
+    rw [basisSeedT, Finset.insert_union, hBaseRest]
+  have hNormalizedEq : normalizedCapT B = insert 0 N := by
+    simp [normalizedCapT, hBMap, hSeedRest]
+  have hNormalizedSum :=
+    normalized_capT_sum_zero B hBCard
+      (by simpa [hNormalizedEq] using hCapN0)
+  have hNSum : (∑ x ∈ N, x) = 0 := by
+    rw [hNormalizedEq] at hNormalizedSum
+    simpa [hNZeroNot] using hNormalizedSum
+  have hMapSum :
+      (∑ x ∈ N, x) = e.symm (∑ x ∈ A, x) := by
+    simp [N]
+  apply e.symm.injective
+  simpa [hMapSum] using hNSum
+
 end InverseZeroSum.Candidate3
