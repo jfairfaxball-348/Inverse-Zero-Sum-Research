@@ -497,6 +497,11 @@ def thirdCoordT (x : F3T) : Fin 3 := x.2.2
 def horizontalPlaneT (c : Fin 3) : PlaneIdx :=
   (⟨12, by omega⟩, c)
 
+/-- Membership in the fixed horizontal plane is exactly third-coordinate equality. -/
+theorem on_horizontalPlaneT_iff (c : Fin 3) (x : F3T) :
+    onPlaneTB (horizontalPlaneT c) x = true ↔ thirdCoordT x = c := by
+  decide
+
 /-- One fiber of the fixed horizontal three-plane partition. -/
 def horizontalSliceT (A : Finset F3T) (c : Fin 3) : Finset F3T :=
   A.filter (fun x => thirdCoordT x = c)
@@ -505,7 +510,7 @@ theorem horizontalSliceT_eq_inter (A : Finset F3T) (c : Fin 3) :
     horizontalSliceT A c = A ∩ planeSetT (horizontalPlaneT c) := by
   classical
   ext x
-  simp [horizontalSliceT, thirdCoordT, horizontalPlaneT, planeSetT, onPlaneTB, planeValueT]
+  simp [horizontalSliceT, planeSetT, on_horizontalPlaneT_iff]
 
 theorem horizontalSliceT_card_le_four {A : Finset F3T} (hA : IsCapT A) (c : Fin 3) :
     (horizontalSliceT A c).card ≤ 4 := by
@@ -638,7 +643,6 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
   have hRcard : Rset.card = 8 := by
     dsimp [Rset]
     rw [Finset.card_sdiff hPsubA, hcard, hPcard]
-    norm_num
   let T : Finset PlaneIdx :=
     Finset.univ.filter
       (fun p => onPlaneTB p a = true ∧ onPlaneTB p b = true)
