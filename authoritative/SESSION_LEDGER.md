@@ -757,3 +757,19 @@ computation remain CLOSED.
 - The `eta*` route is exact encoding only; Lemma 3.13 has stronger hypotheses.
 - Exactly one successor is promoted: S040/D39-01 full-rank residual structure.
 - Active owner blockers: NONE. External review remains CLOSED.
+
+
+## S040 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S040 | COMPLETED D39-01 FULL-RANK RESIDUAL STRUCTURE; EXACT INTERNAL CAND-03 CLASSIFICATION | 5434c9b2add8762d45c03712948ad3ca75b4a773 | Three S039 signatures excluded; length-15 `2^7 1` residual lemma; exact iff normal form `S=U^3` with `U` squarefree short-free length 8 | [S040 closeout](../sessions/S040/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied checkpoint and S040 was unique.
+- ZS-74 was rechecked at Property C, `eta(C_3^3)=17`, Lemma 28 and Lemma 29(1).
+- The `s=8` representative-swap argument eliminates `(6,8,2)` and `(7,8,1)`.
+- Every short-free length-15 residual has multiplicity profile `2^7 1` and singleton `-sigma(R)`.
+- The arbitrary-transversal singleton comparison eliminates `(6,9,0)`.
+- Necessity plus the rechecked 2024 sufficiency lemma gives the exact internal classification `S=U^3`.
+- No orbit enumeration, S038 repair, cap-set reformulation, imported CAND-02/CAND-05 machinery, outreach or submission action occurred.
+- Active owner blockers: NONE. Next numbered session: S041/D40-01 verification and focused overlap/status audit.
