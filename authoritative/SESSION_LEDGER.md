@@ -835,6 +835,7 @@ computation remain CLOSED.
 | Session | Status | Incoming checkpoint | Useful output | Closeout |
 | --- | --- | --- | --- | --- |
 | S043 | PARTIAL D42-01 EXACT LEAN STATEMENT/POSITIONAL FOUNDATION; FIRST FORMAL BLOCKER IS S039 PACKING | 6a608c12ac25321dacf217989233ea7273a9bbeb | Pinned Lean/mathlib project; exact positional theorem proposition; S039 certificate interface; clean build; semantic correspondence/trust boundary | [S043 closeout](../sessions/S043/CLOSEOUT.md) |
+| S044 | PARTIAL | c6fbe94627bafcf73dc04eda7a799e645481f4d7 | Kernel-checked S039 packing construction conditional on ThreeTerm19Input and Eta17Input; exact four signatures and universal representative residual proved; ThreeTerm19Input is the single earliest formal blocker | [S044 closeout](../sessions/S044/CLOSEOUT.md) |
 
 - Live `main` exactly matched the supplied S042 checkpoint and S043 was unique.
 - No prior Lean infrastructure existed, so the brief's minimal-project fallback was used.
@@ -846,3 +847,14 @@ computation remain CLOSED.
 - Palomar was not entered.
 - Active owner blockers: NONE. Next session: S044/D43-01 formalize
   `S039PackingInput` only.
+
+
+## S044 partial Lean packing checkpoint
+
+D43-01 proves `s039PackingInput_of_thresholds` in the pinned Lean project.
+The finite all-short-zero-sum-block packing is pairwise disjoint under target
+avoidance, the source arithmetic yields the exact four signatures once the
+recorded thresholds are supplied, and every representative transversal leaves
+a short-free residual. The source thresholds themselves are not inserted as
+assumptions. The first missing closed proof term is `ThreeTerm19Input`.
+S045/D44-01 is restricted to that proposition; `Eta17Input` is downstream.
