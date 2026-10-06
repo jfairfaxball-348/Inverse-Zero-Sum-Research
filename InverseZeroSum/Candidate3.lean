@@ -1415,4 +1415,127 @@ conditional packing theorem and its two closed threshold inputs.
 theorem s039PackingInput : S039PackingInput :=
   s039PackingInput_of_thresholds threeTerm19Input eta17Input
 
+
+/-! ### S048: the length-16 short-free total-sum interface -/
+
+def e1T : F3T := (1, 0, 0)
+def e2T : F3T := (0, 1, 0)
+def e3T : F3T := (0, 0, 1)
+
+def basisSupportT : Finset F3T := {e1T, e2T, e3T}
+def basisSeedT : Finset F3T := insert 0 basisSupportT
+
+theorem isCapT_of_subset {A B : Finset F3T} (hB : IsCapT B) (hAB : A ⊆ B) :
+    IsCapT A := by
+  intro a ha b hb c hc hab hac hbc
+  exact hB a (hAB ha) b (hAB hb) c (hAB hc) hab hac hbc
+
+/--
+Candidates that can extend the normalized origin-plus-basis seed while
+preserving the cap condition.
+-/
+def normalizedCandidateSetT : Finset F3T :=
+  Finset.univ.filter
+    (fun x => x ∉ basisSeedT ∧ IsCapT (insert x basisSeedT))
+
+@[simp] theorem normalizedCandidateSetT_card :
+    normalizedCandidateSetT.card = 17 := by
+  decide
+
+abbrev NormalizedCandidateT := {x : F3T // x ∈ normalizedCandidateSetT}
+
+def normalizedCandidateVal : NormalizedCandidateT ↪ F3T where
+  toFun := Subtype.val
+  inj' := Subtype.val_injective
+
+def normalizedCapT (B : Finset NormalizedCandidateT) : Finset F3T :=
+  basisSeedT ∪ B.map normalizedCandidateVal
+
+/--
+The normalized completion search has only 17 candidate points; only five are
+chosen. This is a bounded kernel reduction after a proved basis normalization,
+not an extremal-orbit catalogue.
+-/
+theorem normalized_capT_sum_zero :
+    ∀ B : Finset NormalizedCandidateT,
+      B.card = 5 →
+      IsCapT (normalizedCapT B) →
+      (∑ x ∈ normalizedCapT B, x) = 0 := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 10000000 in
+    decide
+
+def basisBuildT (a b c u : F3T) : F3T :=
+  (u.1 * a.1 + u.2.1 * b.1 + u.2.2 * c.1,
+   u.1 * a.2.1 + u.2.1 * b.2.1 + u.2.2 * c.2.1,
+   u.1 * a.2.2 + u.2.1 * b.2.2 + u.2.2 * c.2.2)
+
+def basisBuildHomT (a b c : F3T) : F3T →+ F3T where
+  toFun := basisBuildT a b c
+  map_zero' := by
+    simp [basisBuildT]
+  map_add' x y := by
+    apply Prod.ext
+    · simp [basisBuildT]
+      ring
+    · apply Prod.ext
+      · simp [basisBuildT]
+        ring
+      · simp [basisBuildT]
+        ring
+
+@[simp] theorem basisBuildT_e1 (a b c : F3T) :
+    basisBuildT a b c e1T = a := by
+  rcases a with ⟨a0, a1, a2⟩
+  simp [basisBuildT, e1T]
+
+@[simp] theorem basisBuildT_e2 (a b c : F3T) :
+    basisBuildT a b c e2T = b := by
+  rcases b with ⟨b0, b1, b2⟩
+  simp [basisBuildT, e2T]
+
+@[simp] theorem basisBuildT_e3 (a b c : F3T) :
+    basisBuildT a b c e3T = c := by
+  rcases c with ⟨c0, c1, c2⟩
+  simp [basisBuildT, e3T]
+
+/--
+Finite basis certificate over the 39 explicit planes and 27 tuple points.
+-/
+theorem basisBuildT_bijective_of_plane :
+    ∀ a b c : F3T, ∀ p : PlaneIdx,
+      a ≠ 0 → b ≠ 0 → a ≠ b → a + b ≠ 0 →
+      onPlaneTB p 0 = true →
+      onPlaneTB p a = true →
+      onPlaneTB p b = true →
+      onPlaneTB p c = false →
+      Function.Bijective (basisBuildT a b c) := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 10000000 in
+    decide
+
+theorem isCapT_map_addEquiv (e : F3T ≃+ F3T) {A : Finset F3T}
+    (hA : IsCapT A) :
+    IsCapT (A.map e.toEmbedding) := by
+  classical
+  intro x hx y hy z hz hxy hxz hyz hsum
+  obtain ⟨a, ha, rfl⟩ := Finset.mem_map.mp hx
+  obtain ⟨b, hb, rfl⟩ := Finset.mem_map.mp hy
+  obtain ⟨c, hc, rfl⟩ := Finset.mem_map.mp hz
+  have hab : a ≠ b := by
+    intro h
+    apply hxy
+    simpa [h]
+  have hac : a ≠ c := by
+    intro h
+    apply hxz
+    simpa [h]
+  have hbc : b ≠ c := by
+    intro h
+    apply hyz
+    simpa [h]
+  apply hA a ha b hb c hc hab hac hbc
+  apply e.injective
+  simpa using hsum
+
 end InverseZeroSum.Candidate3
