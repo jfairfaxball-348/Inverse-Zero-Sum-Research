@@ -875,3 +875,16 @@ restricted to `Eta17Input`. Palomar remains blocked on the full
 | S046 | COMPLETED D45-01 ETA17 FORMALIZATION | a9d8834dbae96901b42da20b743a25d67f0bce9e | Kernel-checked `eta17Input : Eta17Input` via support-plus-origin cap geometry and multiplicity counting; `S039PackingInput` is next | [S046 closeout](../sessions/S046/CLOSEOUT.md) |
 
 D45-01 closes the second threshold interface without importing `eta(C_3^3)=17` as an axiom. S047/D46-01 is restricted to closing the already conditionalized S039 packing proposition. Active owner blockers: NONE.
+
+
+## S047 completed S039 packing-closure checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S047 | COMPLETED D46-01 S039 PACKING CLOSURE | 6390ed51d2b268555a90076844c8ba5e5cf5d31d | Kernel-checked `s039PackingInput : S039PackingInput` by direct composition; `Length16SumZeroInput` is next | [S047 closeout](../sessions/S047/CLOSEOUT.md) |
+
+- Live `main` was pinned at the incoming checkpoint and S047 was unique.
+- The proof is exactly `s039PackingInput_of_thresholds threeTerm19Input eta17Input`.
+- No packing architecture was reproved and no S040 representative-swap work was entered.
+- Proof-head clean validation passed `lake build`, the forbidden-placeholder scan and `scripts/check_authority.py`.
+- Active owner blockers: NONE. Next session: S048/D47-01 on `Length16SumZeroInput` only.
