@@ -29,3 +29,12 @@ The primary 2012 journal PDF was rechecked at Property C, `eta(C_3^3)=17`, Lemma
 `scripts/check_authority.py` is run against a reconstructed local authority harness containing the proposed S040/S041 machine state, session ledger entries, live prompt/brief relationship and the unchanged repository licence. The harness validates schema, session uniqueness, gate semantics, blocker/prompt consistency and licence identity. As in S039, it does not reconstruct the complete remote repository tree, so the full Markdown link scan is separately bounded by remote path checks of the changed authority/session surface.
 
 The staging branch is re-read before publication. Live `main` is rechecked against the incoming lease immediately before the fast-forward. The outgoing remote commit and changed records are then re-fetched after publication.
+
+
+### Checker result
+
+The reconstructed authority harness returned:
+
+`PASS: authority state, session uniqueness, independent gate semantics, blocker/prompt consistency, 0 local links, and original licence`.
+
+The zero-link count is an explicit harness limitation, not a claim that the remote repository contains no links. The changed remote link surface is checked separately by confirming the S040 closeout, S041 brief and live prompt paths on the staging branch before publication.
