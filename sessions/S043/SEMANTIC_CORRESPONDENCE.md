@@ -17,13 +17,14 @@ Lean namespace: `InverseZeroSum.Candidate3`.
 | squarefree | `Squarefree S := Function.Injective S` |
 | indexed intersection sum | `innerJointSum S I J := posSum S (I ∩ J)` |
 | no two innerly non-zero-sum-joint short zero sums | `AvoidsInnerJointPair S` |
-| `U^3` | `tripleRep U`, positions reduced modulo 8 |
+| canonical representative of `U^3` | `tripleRep U`, positions reduced modulo 8 |
+| sequence equality `S=U^3` | `IsTriplePower S U`: equality after a permutation of the 24 positions |
 | frozen iff theorem | `FrozenClassification` |
 
 The avoidance definition is deliberately positional. It quantifies over two
 finite position sets and requires the sum on their position-set intersection
 to be zero whenever both are short zero-sum witnesses. Thus it does not replace
-a sequence by its support.
+a sequence by its support. The structural conclusion is nevertheless a commutative-sequence statement: `IsTriplePower` permits a position permutation rather than imposing an artificial fixed ordering on the original 24 positions.
 
 ## S040/S041 proof correspondence
 
