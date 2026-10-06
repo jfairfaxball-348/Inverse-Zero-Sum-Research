@@ -322,3 +322,22 @@ statement formalization and proof formalization. Record the earliest missing
 proof-spine obligation explicitly, prohibit unchecked assumptions, and do not
 advance downstream verification/registration stages until the frozen theorem
 itself has a kernel-checked proof term.
+
+
+## S043 formalization lesson
+
+### FL-102 — Positional hypotheses do not make sequence equality ordered
+
+The CAND-03 avoidance relation is genuinely positional: witnesses are index
+sets and their intersection sum is computed on shared positions.  The
+classification conclusion `S=U^3`, however, is equality of zero-sum
+sequences as commutative multisets, not equality to one fixed ordering of 24
+positions.
+
+The first Lean encoding used a canonical positional `tripleRep U`; S043
+caught that literal function equality would be too strong.  The corrected
+`IsTriplePower S U` requires an equivalence/permutation of the 24 positions
+before comparison with the canonical triple repetition.  Future formalization
+must preserve this separation: positional indexing for the forbidden
+two-witness relation, permutation-invariant equality for the structural
+normal form.
