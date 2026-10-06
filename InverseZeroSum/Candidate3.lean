@@ -310,6 +310,81 @@ theorem representativeSet_card_of_pairwise {s : ℕ}
   simpa [representativeSet] using
     Finset.card_image_of_injective (Finset.univ : Finset (Fin s)) hInj
 
+
+/-! ### S045: the three-term length-19 threshold -/
+
+/-- Coordinates on a nine-point affine plane. -/
+abbrev PlaneCoord := Fin 3 × Fin 3
+
+/-- The 39 affine planes of \`F_3^3\`: 13 directions and three cosets each. -/
+abbrev PlaneIdx := Fin 13 × Fin 3
+
+/--
+An explicit parametrisation of every affine plane in \`F_3^3\`.
+For directions 0--8 the normal is \`(1,a,b)\`; for 9--11 it is
+\`(0,1,b)\`; direction 12 has normal \`(0,0,1)\`.
+-/
+def planePoint (p : PlaneIdx) (q : PlaneCoord) : G :=
+  let d := p.1.val
+  let c : ZMod 3 := p.2.val
+  let y : ZMod 3 := q.1.val
+  let z : ZMod 3 := q.2.val
+  if d < 9 then
+    let a : ZMod 3 := d / 3
+    let b : ZMod 3 := d % 3
+    ![c - a * y - b * z, y, z]
+  else if d < 12 then
+    let b : ZMod 3 := d - 9
+    ![y, c - b * z, z]
+  else
+    ![y, z, c]
+
+/-- The point set of an explicitly parametrised affine plane. -/
+def planeSet (p : PlaneIdx) : Finset G :=
+  Finset.univ.image (planePoint p)
+
+theorem planePoint_injective :
+    ∀ p : PlaneIdx, Function.Injective (planePoint p) := by
+  decide
+
+@[simp] theorem planeSet_card (p : PlaneIdx) :
+    (planeSet p).card = 9 := by
+  classical
+  simp [planeSet, planePoint_injective p]
+
+/--
+Transparent nine-point check: five points in any one of the 39 affine planes
+contain a three-point zero sum.  This is the only finite geometry check needed
+for the planar cap bound; it is reduced by the kernel through \`decide\`.
+-/
+theorem plane_five_has_zero_sum :
+    ∀ (p : PlaneIdx) (A : Finset PlaneCoord), 5 ≤ A.card →
+      ∃ I : Finset PlaneCoord,
+        I ⊆ A ∧ I.card = 3 ∧ (∑ q ∈ I, planePoint p q) = 0 := by
+  decide
+
+/-- Every point of \`F_3^3\` lies on exactly 13 of the explicit affine planes. -/
+theorem point_plane_count :
+    ∀ x : G,
+      ((Finset.univ : Finset PlaneIdx).filter (fun p => x ∈ planeSet p)).card = 13 := by
+  decide
+
+/-- Every two distinct points lie on exactly four affine planes. -/
+theorem pair_plane_count :
+    ∀ x y : G, x ≠ y →
+      ((Finset.univ : Finset PlaneIdx).filter
+        (fun p => x ∈ planeSet p ∧ y ∈ planeSet p)).card = 4 := by
+  decide
+
+/-- Every three distinct non-collinear points lie on exactly one affine plane. -/
+theorem triple_plane_count :
+    ∀ x y z : G,
+      x ≠ y → x ≠ z → y ≠ z → x + y + z ≠ 0 →
+      ((Finset.univ : Finset PlaneIdx).filter
+        (fun p => x ∈ planeSet p ∧ y ∈ planeSet p ∧ z ∈ planeSet p)).card = 1 := by
+  decide
+
+
 /--
 The published eta(C_3^3)=17 source interface bounds any short-free set of
 positions in a length-24 positional sequence by 16.
