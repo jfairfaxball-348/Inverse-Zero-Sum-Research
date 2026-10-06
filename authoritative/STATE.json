@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S045",
-  "next_session": "S046",
-  "next_brief": "authoritative/S046_CANDIDATE_3_ETA17_FORMALIZATION_BRIEF.md",
+  "last_completed_session": "S046",
+  "next_session": "S047",
+  "next_brief": "authoritative/S047_CANDIDATE_3_S039_PACKING_CLOSURE_BRIEF.md",
   "stage": "P5_CAND03_LEAN_FORMALIZATION_PARTIAL",
-  "programme_status": "S045_COMPLETED_D44_01_S046_READY_ETA17_FORMALIZATION",
+  "programme_status": "S046_COMPLETED_D45_01_S047_READY_S039_PACKING_CLOSURE",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S044 kernel-checks the complete S039 packing construction conditional on the two published threshold propositions. S045 now kernel-checks the exact positional ThreeTerm19Input consequence by an explicit finite affine-geometry/cap argument, without assuming Property D or s(C_3^3)=19 as an axiom. The single earliest formal blocker is now Eta17Input. FrozenClassification still has no proof term, so Palomar remains blocked.",
+  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S044 kernel-checks the complete S039 packing construction conditional on ThreeTerm19Input and Eta17Input; S045 and S046 now kernel-check both exact threshold interfaces by transparent finite affine geometry. The single earliest formal obligation is now the closed proposition S039PackingInput itself. FrozenClassification still has no proof term, so Palomar remains blocked.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -345,6 +345,11 @@
       "id": "S045",
       "status": "COMPLETED",
       "record": "sessions/S045/CLOSEOUT.md"
+    },
+    {
+      "id": "S046",
+      "status": "COMPLETED",
+      "record": "sessions/S046/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -609,12 +614,14 @@
     "status": "PARTIAL",
     "toolchain": "Lean 4.19.0 (release commit 6caaee842e94)",
     "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
-    "compiled_scope": "Exact positional definitions and FrozenClassification proposition; S039 certificate/signature arithmetic; positional transport and short-block minimality/disjointness; transparent all-short-zero-sum maximal packing; threshold-to-cardinality transport; s039PackingInput_of_thresholds; and a closed kernel-checked proof threeTerm19Input : ThreeTerm19Input via an explicit finite F_3^3 affine-plane cap bound and multiplicity argument.",
-    "earliest_formal_blocker": "Eta17Input: prove the exact ordinary eta(C_3^3)=17 positional consequence that every length-17 PosSeq has a ShortZero witness.",
+    "compiled_scope": "Exact positional definitions and FrozenClassification proposition; S039 certificate/signature arithmetic; positional transport and short-block minimality/disjointness; transparent all-short-zero-sum maximal packing; threshold-to-cardinality transport; s039PackingInput_of_thresholds; closed kernel-checked proofs threeTerm19Input : ThreeTerm19Input and eta17Input : Eta17Input via transparent finite F_3^3 cap geometry and multiplicity arguments.",
+    "earliest_formal_blocker": "S039PackingInput: close the existing packed-certificate proposition from s039PackingInput_of_thresholds, threeTerm19Input and eta17Input; do not enter S040 in the same unit.",
     "palomar_status": "BLOCKED_UNTIL_FULL_FROZEN_CLASSIFICATION_PROOF"
   },
   "s044_formalization_date": "2026-10-06",
-  "cand03_s039_packing_formalization": "PARTIAL: s039PackingInput_of_thresholds is kernel-checked and proves ThreeTerm19Input -> Eta17Input -> S039PackingInput, including the exact four signatures and universal arbitrary-representative residual. The first missing closed proof term is ThreeTerm19Input; no unchecked threshold assumption is introduced.",
+  "cand03_s039_packing_formalization": "PARTIAL: s039PackingInput_of_thresholds is kernel-checked and proves ThreeTerm19Input -> Eta17Input -> S039PackingInput, including the exact four signatures and universal arbitrary-representative residual. Both source interfaces now have closed proof terms; the next exact obligation is to close S039PackingInput itself.",
   "s045_formalization_date": "2026-10-06",
-  "cand03_three_term_19_formalization": "COMPLETED: threeTerm19Input : ThreeTerm19Input is kernel-checked in Lean 4.19.0 + pinned mathlib. The proof derives a 9-point cap upper bound in F_3^3 from explicit affine-plane geometry and uses fiber multiplicity at most two to force a three-position zero sum in length 19. No threshold axiom, Property D axiom, native_decide, sorry, admit, postulate or opaque orbit catalogue is used."
+  "cand03_three_term_19_formalization": "COMPLETED: threeTerm19Input : ThreeTerm19Input is kernel-checked in Lean 4.19.0 + pinned mathlib. The proof derives a 9-point cap upper bound in F_3^3 from explicit affine-plane geometry and uses fiber multiplicity at most two to force a three-position zero sum in length 19. No threshold axiom, Property D axiom, native_decide, sorry, admit, postulate or opaque orbit catalogue is used.",
+  "s046_formalization_date": "2026-10-06",
+  "cand03_eta17_formalization": "COMPLETED: eta17Input : Eta17Input is kernel-checked in Lean 4.19.0 + pinned mathlib. A short-free length-17 support plus zero is a cap; the S045 cap bound gives support size at most eight and exponent-three multiplicity at most two contradicts length 17. No numerical eta axiom, native_decide, sorry, admit, postulate or opaque orbit catalogue is used."
 }
