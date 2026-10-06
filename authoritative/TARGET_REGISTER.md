@@ -1256,3 +1256,23 @@ authorized.
 
 Formalization status: **PARTIAL**. Palomar status:
 **BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
+
+
+## S044 CAND-03 packing-formalization boundary
+
+Date: 2026-10-06.
+
+The selected target and frozen iff statement are unchanged. D43-01 proves the
+complete S039 packing construction in Lean conditional on the two published
+threshold interfaces:
+
+`s039PackingInput_of_thresholds : ThreeTerm19Input -> Eta17Input -> S039PackingInput`.
+
+This includes the exact four signatures and universal arbitrary-representative
+short-free residual property. Therefore the current first formal blocker is no
+longer the packing architecture itself; it is the missing closed proof term for
+`ThreeTerm19Input`, the exact positional `s(C_3^3)=19` consequence used for
+`l>=6`. `Eta17Input` remains downstream.
+
+Formalization status: **PARTIAL**. Palomar status:
+**BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
