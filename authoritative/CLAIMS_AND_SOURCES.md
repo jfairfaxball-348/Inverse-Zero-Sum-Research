@@ -966,3 +966,13 @@ Date: **2026-10-06**.
 | C-202 | FORMAL_VERIFICATION / SOURCE INTERFACE | In the pinned Lean project, `eta17Input : Eta17Input` is proved without unchecked placeholders. | `InverseZeroSum/Candidate3.lean`; S046 validation. This verifies the exact positional interface, not the published general proof or literature novelty. |
 | C-203 | FORMAL_GEOMETRY BOUNDARY | A short-free length-17 support together with the origin is a cap; S045's cap bound gives support size at most eight, while each support value has multiplicity at most two. | Transparent reuse of S045 cap geometry plus ordinary bounded `decide` for the no-nonzero-2-torsion fact. No `native_decide` or orbit catalogue. |
 | C-204 | PROGRAMME_ROUTE_DECISION | With both threshold proof terms closed, `S039PackingInput` is the single earliest exact formal obligation. Promote S047/D46-01 only; Palomar remains blocked on `FrozenClassification`. | S046 stop/successor rule and owner Lean-first order. |
+
+
+## S047 formalization claim additions
+
+Date: **2026-10-06**.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-205 | FORMAL_VERIFICATION / PACKING INTERFACE | In the pinned Lean project, `s039PackingInput : S039PackingInput` is proved by direct composition of `s039PackingInput_of_thresholds`, `threeTerm19Input` and `eta17Input`. | `InverseZeroSum/Candidate3.lean`; S047 validation. No packing reproof, new source theorem or novelty claim is introduced. |
+| C-206 | PROGRAMME_ROUTE_DECISION | With the S039 packing proposition closed, `Length16SumZeroInput` is the single earliest exact formal obligation on the recorded S040 proof spine. Promote S048/D47-01 only; Palomar remains blocked on `FrozenClassification`. | S043 semantic correspondence; S047 stop/successor rule; owner Lean-first order. |
