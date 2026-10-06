@@ -505,7 +505,7 @@ theorem horizontalSliceT_eq_inter (A : Finset F3T) (c : Fin 3) :
     horizontalSliceT A c = A ∩ planeSetT (horizontalPlaneT c) := by
   classical
   ext x
-  simp [horizontalSliceT, thirdCoordT, horizontalPlaneT, planeSetT, onPlaneTB]
+  simp [horizontalSliceT, thirdCoordT, horizontalPlaneT, planeSetT, onPlaneTB, planeValueT]
 
 theorem horizontalSliceT_card_le_four {A : Finset F3T} (hA : IsCapT A) (c : Fin 3) :
     (horizontalSliceT A c).card ≤ 4 := by
@@ -518,7 +518,7 @@ theorem card_eq_sum_horizontalSliceT (A : Finset F3T) :
   simpa [horizontalSliceT, thirdCoordT] using
     (Finset.card_eq_sum_card_fiberwise
       (f := thirdCoordT) (s := A) (t := (Finset.univ : Finset (Fin 3)))
-      (by simp))
+      (fun x _hx => Finset.mem_univ (thirdCoordT x)))
 
 /-- Every two distinct tuple-model points lie on exactly four affine planes. -/
 theorem pair_plane_countT :
@@ -637,7 +637,7 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
   let Rset : Finset F3T := A \ P
   have hRcard : Rset.card = 8 := by
     dsimp [Rset]
-    rw [Finset.card_sdiff_of_subset hPsubA, hcard, hPcard]
+    rw [Finset.card_sdiff hPsubA, hcard, hPcard]
     norm_num
   let T : Finset PlaneIdx :=
     Finset.univ.filter
@@ -667,7 +667,7 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
       ext x
       simp [Rset, P, and_assoc, and_left_comm, and_comm]
     have h4p := cap_inter_plane_le_four hA p
-    rw [heq, Finset.card_sdiff_of_subset hPsub, hPcard]
+    rw [heq, Finset.card_sdiff hPsub, hPcard]
     omega
   have hRH : (Rset ∩ planeSetT H).card ≤ 1 := by
     have hPsubH : P ⊆ A ∩ planeSetT H := by
@@ -684,7 +684,7 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
       have h := hc_le3
       rw [horizontalSliceT_eq_inter A c] at h
       simpa [H] using h
-    rw [heqH, Finset.card_sdiff_of_subset hPsubH, hPcard]
+    rw [heqH, Finset.card_sdiff hPsubH, hPcard]
     omega
   have hRsubset :
       Rset ⊆ T.biUnion (fun p => Rset ∩ planeSetT p) := by
@@ -700,7 +700,6 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
     (Finset.card_le_card hRsubset).trans Finset.card_biUnion_le
   have hTEraseCard : (T.erase H).card = 3 := by
     rw [Finset.card_erase_of_mem hHT, hTcard]
-    norm_num
   have hOther :
       (∑ p ∈ T.erase H, (Rset ∩ planeSetT p).card) ≤ 6 := by
     calc
