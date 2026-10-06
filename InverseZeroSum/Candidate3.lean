@@ -79,7 +79,7 @@ def Eta17Input : Prop :=
 
 /--
 Formal statement of the 2012 length-15 nonzero-total-sum input used by S040.
-This is a proposition to be proved, not an assumed axiom.
+This is a proposition to be proved, not an assumed theorem.
 -/
 def Length15NonzeroInput : Prop :=
   ∀ R : PosSeq 15, ShortFree R → totalSum R ≠ 0
