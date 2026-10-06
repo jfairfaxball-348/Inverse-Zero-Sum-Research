@@ -833,3 +833,19 @@ remains CAND-02-specific and reply pending.
 While B-013 is active, `next_session` and `next_brief` are null,
 `next_prompt_status=SUPPRESSED_OWNER_BLOCKER`, and
 `authoritative/NEXT_SESSION_PROMPT.md` is absent.
+
+
+## Post-S038 owner strategy resolution
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-115 | 2026-10-06 | **Resolve B-013 by choosing option 1: retain CAND-03 and authorize one fresh source-first strategy reassessment outside the failed rank-two restriction/projection/extraction transfer.** | Explicit owner choice: “1”. |
+| D-116 | 2026-10-06 | Schedule S039 as D38-01 only. Compare at most three genuinely different primary-source-backed mechanisms that could constrain every CAND-03 extremal; require exact theorem/hypothesis and applicability boundaries; promote at most one bounded mathematical successor without proving it. If no mechanism clears the bar, activate a new owner strategy blocker. | D-115; S038 failed-transfer certificate; FL-073/FL-092/FL-095 anti-churn discipline. |
+
+B-013 is **RESOLVED**. Active owner blockers: **NONE**.
+
+CAND-03 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. The S038
+rank-two restriction/projection/extraction route remains stopped and is not
+reopened by this decision. S039 is source-first reassessment only; it is not
+authorization for brute-force enumeration, a second unvetted proof
+architecture, outreach, manuscript preparation or submission.

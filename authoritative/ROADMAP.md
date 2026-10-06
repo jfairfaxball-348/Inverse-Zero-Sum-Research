@@ -1223,3 +1223,27 @@ translation changes 2-term zero-sum status; and one-position deletion from a
 The rank-two transfer architecture is stopped at this exact mismatch. No
 enumeration or second architecture is promoted. B-013 requires owner strategy
 disposition before any S039.
+
+
+## Post-S038 route — S039 fresh CAND-03 mechanism reassessment
+
+D-115 resolves B-013 by retaining CAND-03. S039 runs D38-01 only and is
+source-first rather than a new proof attempt.
+
+The reassessment may inspect at most three genuinely different mechanism
+classes. Priority is given to mechanisms whose published statements operate
+directly on the full rank-three sequence or an invariant canonically attached
+to it. Natural classes to audit include: equality/near-equality consequences
+inside the defining/direct generalized-Narkiewicz proof line; exact
+factorization-theoretic reformulations of the Narkiewicz constants with
+extremal structural content; and exponent-three short/minimal-zero-sum
+structure that explicitly controls the indexed innerly-joint relation. These
+are search classes, not assumed valid routes.
+
+The S038 rank-two restriction/projection/extraction architecture is a hard
+route stop. No arbitrary deletion, affine normalization, quotient repair,
+cap-set substitution or imported CAND-02/CAND-05 machinery is admissible.
+
+S039 may promote at most one bounded mathematical successor and must not prove
+it. If all checked mechanisms are automatic, inapplicable, noncanonical or
+catalogue-only, stop with a new owner strategy blocker.

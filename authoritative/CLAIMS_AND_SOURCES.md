@@ -830,3 +830,10 @@ Source-check date: **2026-10-06**.
 | C-172 | SOURCE_BACKED_COUNTERINTERFACE | The ZS-72 lower-bound extremal at (n=3) is (S_0=U^3). Every value multiplicity, hence every subgroup-restriction length, is divisible by 3. By C-171 its densest subgroup restriction has length 9 and no rank-two subgroup restriction has length 8. | Counterexample to the **universal exact interface**, not to CAND-03 and not a new extremal construction. |
 | C-173 | PROGRAMME_TRANSFER_BOUNDARY | ZS-73 Theorem 1.1 cannot be applied target-wide through the tested interfaces: subgroup restriction may have length 9; projection need not preserve upstairs zero-sum avoidance and may introduce zero; translating an affine slice can change 2-term zero-sum status; deleting one position from a 9-term restriction is not canonically forced. | D37-01 only. No claim that every conceivable future rank-two argument is impossible. |
 | C-174 | PROGRAMME_ROUTE_DECISION | Stop the S038 rank-two slice/hyperplane transfer architecture at C-173. No S039 successor is promoted; B-013 is active for owner strategy disposition. | D-113--D-114 and S038 hard-stop brief. |
+
+
+## Post-S038 owner strategy claim
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-175 | OWNER_STRATEGY_DECISION | B-013 is resolved by retaining CAND-03 and authorizing S039 D38-01, one bounded source-first comparison of at most three genuinely different target-wide mechanisms outside the stopped S038 rank-two transfer. At most one bounded mathematical successor may be promoted and S039 must not prove it. | D-115--D-116. This changes strategy only; it is not a mathematical theorem, openness/novelty claim, reviewer endorsement or publication claim. |

@@ -692,3 +692,12 @@ status experts subject to independence/conflict assessment.
 Xue Li's Stage-1 message remains CAND-02-specific, owner-reported SENT
 2026-10-02 / REPLY PENDING. Nothing in S038 transfers that status to CAND-03.
 B-013 authorizes no outreach.
+
+
+## Post-S038 owner strategy reviewer boundary
+
+The B-013 option-1 resolution does not authorize outreach and confirms no
+reviewer. External-review gate remains CLOSED. David J. Grynkiewicz remains
+the provisional first independent CAND-03 status/proposal lead, with Pingzhi
+Yuan a strong alternative. Xue Li's Stage-1 message remains CAND-02-specific
+and reply pending.

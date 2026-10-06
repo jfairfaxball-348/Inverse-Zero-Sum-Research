@@ -610,3 +610,12 @@ or outreach occurred. The publication gate remains OPEN as workflow
 eligibility. E-JC remains the leading eligible route and JCTA a natural
 comparable venue if a genuinely structural CAND-03 result is later obtained.
 B-013 concerns mathematical strategy, not submission authorization.
+
+
+## Post-S038 owner strategy publication boundary
+
+Retaining CAND-03 and authorizing S039 changes mathematical strategy only.
+It does not certify novelty, define a manuscript-ready contribution, authorize
+submission, or change journal eligibility. Publication gate remains OPEN;
+E-JC remains the leading eligible workflow route and JCTA a natural comparable
+venue for a future structural CAND-03 result.

@@ -17,10 +17,10 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S038 is COMPLETED. CAND-03 remains the selected programme target, but D37-01
-found no canonical rank-two object satisfying the exact Hui--Zhong 2026
-Theorem 1.1 hypotheses for every extremal. B-013 is ACTIVE for owner strategy
-disposition; no S039 session or live next prompt exists.**
+**B-013 is RESOLVED by owner choice of option 1. CAND-03 remains the selected
+programme target. S039 is READY for one bounded source-first reassessment of
+genuinely target-wide mechanisms outside the stopped S038 rank-two
+restriction/projection/extraction architecture.**
 
 Selected target:
 
@@ -32,10 +32,10 @@ Selected target:
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains the leading eligible workflow route,
   with JCTA a natural comparable venue for CAND-03.
-- Mathematical-investigation gate: OPEN in principle, but B-013 suppresses any numbered continuation.
+- Mathematical-investigation gate: OPEN for the bounded S039 source-first strategy reassessment.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: **B-013**.
-- Next session: NONE pending B-013.
+- Active owner blockers: NONE.
+- Next session: S039, D38-01 fresh target-wide mechanism source reassessment.
 - CAND-03 current status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**;
   no bounded search non-hit is an openness or novelty certificate.
 - David J. Grynkiewicz remains the provisional first independent status/proposal
@@ -706,3 +706,27 @@ architecture was launched.
 CAND-03 remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. B-013 is active
 for owner strategy disposition. External review remains CLOSED; Xue Li
 Stage-1 remains CAND-02-specific and reply pending.
+
+
+## Post-S038 owner strategy resolution
+
+The owner chose B-013 option 1: retain CAND-03 and authorize exactly one fresh
+source-first strategy reassessment outside the failed S038 rank-two
+restriction/projection/extraction transfer.
+
+S039 is D38-01 only. It may compare at most three genuinely different
+source-backed mechanism classes capable in principle of constraining **every**
+length-24 CAND-03 extremal. It must recheck exact theorem statements and
+hypotheses before promoting anything. The stopped S038 architecture may be
+used only as negative evidence: no repair by arbitrary deletion, projection,
+affine translation or another disguised rank-two slice is allowed.
+
+A route clears S039 only if a checked primary theorem or source-defined
+mechanism has a plausible exact-hypothesis path to a target-wide structural
+datum. At most one bounded mathematical successor may be promoted, and S039
+must not prove it. If none clears the bar, activate a new owner strategy blocker
+rather than schedule cosmetic proof work.
+
+CAND-03 remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. No openness,
+novelty, reviewer or publication inference is authorized. External review
+remains CLOSED; Xue Li Stage-1 remains CAND-02-specific and reply pending.

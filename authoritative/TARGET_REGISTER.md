@@ -1131,3 +1131,19 @@ canonically realize the exact theorem hypotheses.
 Accordingly the S038 rank-two slice/hyperplane transfer route is stopped.
 No classification, nonexistence theorem, novelty claim or openness claim is
 made. B-013 is active before another numbered session.
+
+
+## Post-S038 CAND-03 strategy boundary
+
+Date: 2026-10-06.
+
+The owner retained CAND-03 after the failed S038 rank-two transfer preflight.
+The exact target is unchanged and remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**.
+
+S039 is permitted to reassess source-backed mechanisms only. Any candidate
+mechanism must have a target-wide path from the actual indexed length-24
+hypothesis to a structural datum; the S038 restriction/projection/extraction
+route remains stopped. A raw finite orbit catalogue, cap-set replacement,
+arbitrary translation/deletion normalization, or transfer from CAND-02/CAND-05
+does not satisfy the contribution or mechanism bar.

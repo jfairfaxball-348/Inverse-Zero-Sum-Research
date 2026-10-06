@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-03 mathematical investigation paused for owner strategy disposition. S038 completed D37-01 and proved a rank-two subgroup density bound, but the exact Hui--Zhong 2026 eight-term interface is not forced target-wide. B-013 is ACTIVE; no S039 or live next-session prompt exists.**
+**Current stage: CAND-03 source-first strategy reassessment. S038 stopped the exact Hui--Zhong rank-two transfer; the owner retained CAND-03 under B-013 option 1. S039 is READY to compare at most three genuinely different target-wide source-backed mechanisms outside that stopped route.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -13,13 +13,13 @@ authority; conversation history is not the project state.
 A numbered session runs one bounded task autonomously, validates and
 checkpoints useful work, then automatically provides a close report.
 
-**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-012 are resolved. B-013 is active after S038's failed exact rank-two transfer preflight.
+**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S039 is the live bounded source-first strategy reassessment.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-03 is selected at the exact length-24 structural inverse Narkiewicz-sense eta scope.
 2. Publication gate — OPEN: E-JC remains the leading eligible route; JCTA is a natural comparable venue for CAND-03.
-3. Mathematical-investigation gate — OPEN in principle, but B-013 suppresses any numbered continuation until the owner chooses the next strategy disposition.
+3. Mathematical-investigation gate — OPEN for S039's bounded source-first strategy reassessment; no mathematical successor exists unless S039 promotes one.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
@@ -294,4 +294,5 @@ arbitrary one-position deletion do not supply a canonical exact-hypothesis
 repair.
 
 The rank-two transfer route is therefore stopped. CAND-03 remains selected and
-SOURCE-DEFINED / CURRENT STATUS UNKNOWN. B-013 is active; no S039 is scheduled.
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. The owner resolved B-013 with option 1;
+S039 is ready for a fresh source-first target-wide mechanism reassessment.

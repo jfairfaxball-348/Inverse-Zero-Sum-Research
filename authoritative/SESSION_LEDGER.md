@@ -730,3 +730,15 @@ computation remain CLOSED.
   occurred.
 - CAND-03 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
 - Active owner blocker: **B-013**. Next numbered session: NONE.
+
+
+## Post-S038 owner strategy resolution
+
+- B-013 resolved by explicit owner choice of option 1.
+- CAND-03 remains the selected target and SOURCE-DEFINED / CURRENT STATUS
+  UNKNOWN.
+- The S038 rank-two restriction/projection/extraction transfer remains stopped.
+- No new mathematical claim is made by the owner resolution.
+- Active owner blockers: NONE.
+- Next numbered session: S039, D38-01 fresh source-first target-wide mechanism
+  reassessment.

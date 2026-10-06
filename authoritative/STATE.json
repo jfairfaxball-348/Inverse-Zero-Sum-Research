@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S038",
-  "next_session": null,
-  "next_brief": null,
-  "stage": "P2_CAND03_STRATEGY_REASSESSMENT_AFTER_FAILED_RANK_TWO_PREFLIGHT",
-  "programme_status": "S038_COMPLETED_D37_01_NO_CANONICAL_RANK_TWO_INTERFACE_OWNER_STRATEGY_REQUIRED",
+  "next_session": "S039",
+  "next_brief": "authoritative/S039_CANDIDATE_3_FRESH_STRATEGY_SOURCE_REASSESSMENT_BRIEF.md",
+  "stage": "P2_CAND03_SOURCE_FIRST_STRATEGY_REASSESSMENT",
+  "programme_status": "S039_READY_CAND03_FRESH_TARGET_WIDE_MECHANISM_REASSESSMENT",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. S038 D37-01 proved a target-wide rank-two subgroup density bound but falsified the proposed exact Hui--Zhong 2026 transfer as a universal entry: the source lower-bound extremal realizes only a 9-term densest subgroup restriction, while Theorem 1.1 requires 8 terms for C_3^2.",
+  "candidate_under_due_diligence": "CAND-03 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. After S038 stopped the exact rank-two restriction/projection/extraction transfer, the owner chose B-013 option 1: retain CAND-03 and authorize one fresh source-first strategy reassessment for genuinely target-wide mechanisms outside that stopped architecture.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -100,16 +100,14 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [
-    "B-013"
-  ],
+  "active_owner_blockers": [],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; if it identifies prior art, a known solution, material overlap, a mistaken premise, or a serious scope/significance concern, pause the affected mathematical direction and reassess it.",
     "Continue external independent review in parallel and obtain appropriate independent scrutiny of the mathematical contribution/manuscript before journal submission, subject to actual reviewer willingness and availability.",
     "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
+  "next_prompt_status": "READY",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -332,7 +330,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-03 remains selected, but the S038 rank-two slice/hyperplane transfer architecture is stopped. No numbered successor is runnable until B-013 is resolved.",
+  "current_route_disposition": "CAND-03 remains selected. The S038 rank-two restriction/projection/extraction transfer is stopped. S039 may compare at most three genuinely different source-backed target-wide mechanisms and may promote at most one bounded mathematical successor if exact hypotheses apply.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -536,5 +534,7 @@
   "post_s037_owner_target_choice": "B-012 option 1: select CAND-03, the recommended inverse Narkiewicz-sense eta target on C_3^3.",
   "s038_source_refresh_date": "2026-10-06",
   "s038_mathematical_investigation_date": "2026-10-06",
-  "cand03_rank_two_slice_preflight": "D37-01 completed. Honest rank-two subgroup restriction yields a target-wide max-size 8-or-9 constraint, but the exact Hui--Zhong 2026 Theorem 1.1 length-8 hypothesis is not target-wide: the published lower-bound extremal has only restriction lengths divisible by 3 and therefore a densest restriction of length 9. Projection, affine translation and arbitrary one-position extraction do not repair this canonically. No S039 successor is promoted; B-013 requires owner strategy disposition."
+  "cand03_rank_two_slice_preflight": "D37-01 completed. Honest rank-two subgroup restriction yields a target-wide max-size 8-or-9 constraint, but the exact Hui--Zhong 2026 Theorem 1.1 length-8 hypothesis is not target-wide: the published lower-bound extremal has only restriction lengths divisible by 3 and therefore a densest restriction of length 9. Projection, affine translation and arbitrary one-position extraction do not repair this canonically. No S039 successor is promoted; B-013 requires owner strategy disposition.",
+  "b013_resolution_date": "2026-10-06",
+  "post_s038_owner_strategy_choice": "B-013 option 1: retain CAND-03 and authorize one fresh source-first strategy reassessment outside the failed rank-two restriction/projection/extraction transfer."
 }
