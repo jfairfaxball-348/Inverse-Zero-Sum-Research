@@ -17,12 +17,13 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S042 is COMPLETED and S043 is READY. CAND-03 remains selected. The exact
-classification is internally proved and independently reverified. D41-01 found
-no exact/equivalent/stronger-implying prior art in the documented deep audit
-and left no unresolved high-risk lead. This is a search-status non-hit, not a
-logical novelty/open-problem proof. The next authorized stage is exact Lean
-formalization.**
+**S043 is PARTIAL and S044 is READY. CAND-03 remains selected. The exact
+classification is internally proved and independently reverified. S042 found
+no exact/equivalent/stronger-implying prior art in the documented deep audit.
+S043 encoded the exact positional theorem in a pinned Lean 4.19.0 + mathlib
+project and clean-built the current formal source, but the final classification
+still has no proof term. The earliest exact formal blocker is
+`S039PackingInput`. Palomar remains blocked.**
 
 Selected target:
 
@@ -37,10 +38,10 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S043/D42-01 formalization only.
+- Mathematical-investigation gate: OPEN for S044/D43-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S043 / D42-01 exact Lean formalization.
+- Next session: S044 / D43-01 S039 packing formalization.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
@@ -794,3 +795,25 @@ proved internally; it is not treated as an inverse theorem.
 S041/D40-01 is the sole promoted successor. It must independently verify this
 proof chain and audit exact literature overlap/current status before any
 publication or outreach decision. No further residual variant is authorized.
+
+
+## S043 partial Lean checkpoint
+
+D42-01 created a minimal reproducible Lean project pinned to Lean 4.19.0
+(release commit `6caaee842e94`) and mathlib commit
+`c44e0c8ee63ca166450922a373c7409c5d26b00b`. The exact positional target
+statement is encoded as `FrozenClassification`, together with the nonzero
+alphabet, positional subsequences, short zero sums, short-freeness,
+squarefreeness, indexed intersection-sum avoidance and positional triple
+repetition.
+
+The current source clean-builds, and no unchecked proof placeholder is used.
+However `FrozenClassification` is only a proposition, not yet a proved
+theorem. The earliest exact proof-spine blocker is `S039PackingInput`: prove
+the S039 packed short-zero-sum certificate with one of the four verified
+signatures and retain the universal arbitrary-representative short-free
+residual property.
+
+S044/D43-01 is restricted to that blocker. Palomar registration, paper
+drafting, arXiv and E-JC remain downstream and unavailable until the complete
+Lean theorem is proved and the pinned checks pass.
