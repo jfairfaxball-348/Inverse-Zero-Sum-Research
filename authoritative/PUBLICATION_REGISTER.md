@@ -569,3 +569,20 @@ does not certify novelty, define a manuscript-ready contribution, authorize
 submission, or change journal eligibility. The publication gate remains OPEN;
 E-JC remains the leading eligible route and JNT the recorded backup pending
 candidate-specific fit re-evaluation in S037.
+
+
+## S037 publication boundary
+
+S037 is target selection, not a publication-readiness event. No manuscript,
+submission authorization, submission, acceptance, or publication occurred.
+
+- CAND-03: E-JC remains a strong plausible leading fit; JCTA is a natural
+  comparable venue because it published the adjacent rank-two inverse theory.
+- CAND-06: E-JC/JCTA/Combinatorica-level subject fit is plausible only if the
+  outcome is structural rather than a brute-force catalogue; the fresh direct
+  preprint requires verification before any significance claim.
+- CAND-01: a true all-modulus completion would be highly significant, while
+  isolated exceptional-prime checks may not clear the programme bar.
+
+Publication gate remains OPEN as workflow eligibility only. B-012 concerns
+target identity, not submission authorization.

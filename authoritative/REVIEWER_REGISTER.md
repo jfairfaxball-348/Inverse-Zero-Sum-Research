@@ -641,3 +641,23 @@ reviewer. External-review gate remains CLOSED. S037 must reassess the reviewer
 and expertise route for whichever replacement candidates survive. Xue Li's
 pending Stage-1 status remains strictly CAND-02-specific and cannot transfer to
 another target.
+
+
+## S037 reviewer boundary
+
+No outreach occurred and no reviewer is confirmed. External-review gate
+remains CLOSED.
+
+For CAND-03, David J. Grynkiewicz remains the preferred provisional independent
+first status/proposal lead from the existing audit, with Pingzhi Yuan a strong
+alternative. Hui, Zhong, and the defining-source authors are exact status
+experts but are not automatically independent reviewer choices.
+
+For CAND-06, Grynkiewicz or Yuan are plausible independent status leads;
+Sze Chun Yiu and directly adjacent source authors are not automatically
+independent reviewers. For CAND-01, Yuan or Grynkiewicz remain plausible
+routes subject to a fresh conflict/current-contact check after selection.
+
+Xue Li's Stage-1 message remains strictly CAND-02-specific,
+owner-reported SENT 2026-10-02 / REPLY PENDING. S037 infers no willingness,
+endorsement, novelty certification, or reviewer-status transfer.

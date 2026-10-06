@@ -1158,3 +1158,23 @@ S037 will recommend one exact replacement target if a candidate clears the bar
 but will not select it on the owner's behalf. Its closeout must activate an
 owner target-selection blocker (or a strategy blocker if none clears the bar)
 and suppress further prompts until the owner chooses.
+
+
+## S037 completed — replacement-target reassessment
+
+S037 applies the CAND-02 and CAND-05 histories as anti-churn evidence rather
+than proof inputs. CAND-03 remains the strongest replacement: an exact fixed
+rank-three object immediately beyond the now-complete rank-two inverse
+Narkiewicz-sense eta theory, with a meaningful structural partial-result path
+and an early catalogue/overlap falsification test.
+
+The bounded discovery pass admits CAND-06, the standard inverse problem for
+`D_4(C_5^3)=30`, after Yiu's September 2026 direct determination and
+Zhong's rank-two inverse-`D_k` framework. Its extreme freshness creates high
+status/collision risk, so any owner selection must begin with verification and
+current-status preflight. CAND-01 remains viable but its large-prime theorem
+still leaves an operationally unspecified exceptional layer.
+
+No fresh positive source changed CAND-05's S036 route assessment, so it is not
+shortlisted. B-012 is active; no S038 session is scheduled until the owner
+selects CAND-03, CAND-06, or CAND-01.

@@ -748,3 +748,41 @@ brief and prompt are immediately runnable.
 CAND-05's S023--S035 mathematics and all stopped-route decisions remain durable
 historical programme results. Reassessment does not erase them, convert search
 non-hits into openness evidence, or authorize reuse of a stopped mechanism.
+
+
+## S037 target-reassessment decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-109 | 2026-10-06 | Record S037 as a completed source-first replacement reassessment. Recommend CAND-03 at the exact length-24 `C_3^3` inverse Narkiewicz-sense eta scope; admit new CAND-06 (inverse `D_4(C_5^3)` at length 30) as a viable but provisional alternative; retain CAND-01 as viable. CAND-05 is not shortlisted because no fresh positive primary evidence materially changed S036. No target is switched and no proof work is authorized. | `sessions/S037/TARGET_REASSESSMENT.md` and `SOURCE_CHECK.md`; D-107--D-108; CAND-02/CAND-05 anti-churn histories. |
+| D-110 | 2026-10-06 | **Activate B-012 and suppress all next-session material.** Final replacement selection returns to the owner. | S037 recommendation plus owner-selection protocol. |
+
+### B-012 — replacement target selection after S037
+
+**ACTIVE.**
+
+S037 identifies three targets that clear the comparison bar at different
+confidence levels:
+
+1. **CAND-03 (recommended):** structural classification of all length-24
+   `C_3^3\{0}` sequences avoiding two innerly non-zero-sum-joint short zero
+   sums.
+2. **CAND-06 (provisional):** structural inverse `D_4(C_5^3)`
+   classification of length-30 zero-sum sequences not partitionable into five
+   nontrivial zero sums, with a mandatory pre-proof verification/status
+   checkpoint because the direct theorem is a September 2026 preprint.
+3. **CAND-01:** full all-modulus rank-two Property D, with the exceptional
+   prime layer attacked structurally/effectively rather than by isolated cases.
+
+CAND-05 remains the historical incumbent solely until explicit replacement;
+its proof programme remains paused. CAND-02 is historical/paused and CAND-04
+retired.
+
+**Required owner action:** select one of CAND-03, CAND-06, or CAND-01 as the
+replacement target.
+
+While B-012 is active, `next_session` and `next_brief` are null,
+`next_prompt_status=SUPPRESSED_OWNER_BLOCKER`, and
+`authoritative/NEXT_SESSION_PROMPT.md` is absent. No S038 prompt or
+target-specific continuation is authorized. External review remains CLOSED and
+parallel; no reviewer status changes.

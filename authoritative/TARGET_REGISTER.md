@@ -1048,3 +1048,37 @@ direct-EGZ dependency; CAND-02 remains historical/paused.
 
 No replacement target is selected by this owner strategy decision. Final target
 selection returns to the owner after S037's comparison and recommendation.
+
+
+## S037 replacement-target checkpoint
+
+Date: 2026-10-06.
+
+S037 recommends **CAND-03**, without selecting it:
+
+> Classify all length-24 sequences over `C_3^3\{0}` having no two innerly
+> non-zero-sum-joint short zero-sum subsequences (short means length at most
+> 3), by a structural necessity-and-sufficiency theorem.
+
+The current adjacent baseline is strong: `eta^N(C_3^3)=25` is source-defined
+and the inverse Narkiewicz-sense eta problem is now completely solved in rank
+two. Exact rank-three current status remains **SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN**; no search non-hit is an openness claim.
+
+S037 also registers **CAND-06**:
+
+> For `G=C_5^3`, classify all zero-sum sequences `U` of length
+> `D_4(G)=30` that cannot be partitioned into five nontrivial zero-sum
+> subsequences.
+
+Yiu 2026 supplies the fresh direct value; Zhong 2025 supplies the standard
+inverse-`D_k` formulation. CAND-06 is viable but provisional because the
+direct theorem is an extremely fresh preprint and inverse-status collision risk
+is high.
+
+CAND-01 remains viable at full all-modulus Property D scope. CAND-05 is not
+shortlisted because no positive primary evidence changed S036; its proof
+programme remains paused. CAND-02 remains historical/paused and CAND-04
+retired.
+
+No replacement is selected until B-012 is resolved by the owner.

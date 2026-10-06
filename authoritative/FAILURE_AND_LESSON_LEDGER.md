@@ -256,3 +256,12 @@ arguments. Retired routes are not silently revived without new information.
 | ID | Date | Failed route / risk | Required response | Origin |
 | --- | --- | --- | --- | --- |
 | FL-091 | 2026-10-05 | A theorem can be genuinely stronger and use a genuinely different subgroup while still add no rigidity at the live frontier. Here Schmid's atom-transfer step through G_m[2] produces a C_2^3 circuit that the common-torsion basis data already force; the freshest rank-two joint-short inverse theorem has a visibly false avoidance hypothesis; and the closest rank-three inverse eta theorem lacks hypothesis transfer. | Test exact hypotheses and the surviving compatibility assignment before creating a successor. If the output is automatic or the hypotheses are not source-forced, stop rather than turn the mismatch into an invented proof dependency. | S036 D35-01 / D-105--D-106 |
+
+
+## S037 target-reassessment lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-092 | 2026-10-06 | The CAND-02 and CAND-05 histories show that a parameterized inverse family can accumulate correct structural layers while repeatedly preserving a compatibility family and never reaching a paper-level theorem package. | Prefer candidates with fixed exact scope, theorem-level partial-result space, and an early falsification condition; do not reward sunk familiarity. | S037 anti-churn comparison |
+| FL-093 | 2026-10-06 | An extremely fresh direct preprint can make a clean inverse target look open simply because there has been little time for follow-up work. | For CAND-06, require direct-result reproduction/verification and a focused parallel-work/status check before proof; never convert the present search non-hit into novelty evidence. | S037 bounded discovery |
+| FL-094 | 2026-10-06 | A stalled historical incumbent can remain psychologically attractive because the programme already owns substantial internal lemmas. | CAND-05 re-enters a shortlist only on fresh positive evidence that materially changes the S036 route/status assessment, not on familiarity or sunk work. | D-107--D-110 |

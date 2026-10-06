@@ -784,3 +784,23 @@ Source-check date: **2026-10-05**.
 | Claim | Classification | Bounded content | Support / limit |
 | --- | --- | --- | --- |
 | C-162 | OWNER_STRATEGY_DECISION | B-011 is resolved by choosing target reassessment/switching rather than another full-CAND-05 proof architecture. CAND-05 proof work is paused; S037 is authorized only for bounded source-first candidate reassessment and recommendation. | D-107--D-108. This is a programme strategy decision, not a mathematical theorem, openness claim, novelty claim, target replacement, or publication-significance claim. |
+
+
+## S037 source and strategy additions
+
+Source-check date: **2026-10-06**.
+
+| ID | Source | Exact boundary |
+| --- | --- | --- |
+| ZS-68 | Sze Chun Yiu, *The fourth generalized Davenport constant of C_5^3*, arXiv:2609.04950v1 (2026) | Proves `D_4(C_5^3)=30` and hence `D_k(C_5^3)=5k+10` for all `k>=2`; finite computer-assisted direct theorem with ancillary verification. It is not an inverse classification. |
+| ZS-69 | Qinghai Zhong, *On the Inverse Problem of the k-th Davenport Constants for Groups of Rank 2*, Combinatorica 45 (2025), Article 31, DOI 10.1007/s00493-025-00153-3 | Defines the standard inverse `D_k` problem via maximal-length zero-sum sequences not partitionable into `k+1` nontrivial zero sums and solves it for rank two. |
+| ZS-70 | Jan-Christoph Schlage-Puchta, *All large primes have Property D*, arXiv:2509.02436 (2025) | Proves Property D for every sufficiently large prime; does not supply an all-prime completion in the checked source record. |
+| ZS-71 | Hui--Zhong, *On the inverse problem of the Narkiewicz-sense eta-constant for finite abelian groups of rank 2*, JCTA 224 (2026), 106238 | Refreshed current publisher record: complete rank-two inverse theorem; no checked statement subsumes the exact CAND-03 rank-three case. |
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-163 | SOURCE_STATUS_BOUNDARY | CAND-03 retains exact direct baseline `eta^N(C_3^3)=25`; the current inverse line is complete in rank two, while no checked source in S037 supplies the exact `C_3^3` length-24 classification. | Bounded non-hit is not openness/novelty evidence. |
+| C-164 | SOURCE_STATUS_BOUNDARY | CAND-01's strongest refreshed primary advance remains sufficiently-large-prime Property D; S037 located no checked all-prime completion/effective cutoff/residual-prime catalogue. | ZS-70; non-hit is not openness evidence. |
+| C-165 | SOURCE_DEFINED_CANDIDATE | CAND-06 is the standard inverse `D_4` problem for `C_5^3`: classify length-30 zero-sum sequences not partitionable into five nontrivial zero sums. | ZS-68 gives the direct value; ZS-69 gives the inverse genre. Current inverse status remains unknown. |
+| C-166 | PROGRAMME_STRATEGY_DECISION | S037 recommends CAND-03, shortlists CAND-06 provisionally and CAND-01, and does not shortlist CAND-05 because no fresh positive source materially changed S036. | Target reassessment only; no target switch, theorem, openness or novelty claim. |
+| C-167 | OWNER_BLOCKER | B-012 is active; no S038 session or next prompt exists until the owner selects CAND-03, CAND-06, or CAND-01. | D-109--D-110 and session protocol. |

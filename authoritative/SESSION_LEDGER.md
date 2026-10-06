@@ -675,3 +675,24 @@ computation remain CLOSED.
 - No new mathematical claim is made by the owner resolution.
 - Active owner blockers: NONE.
 - Next numbered session: S037, bounded source-first target reassessment.
+
+
+## S037 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S037 | COMPLETED SOURCE-FIRST TARGET REASSESSMENT; OWNER TARGET-SELECTION BLOCKER ACTIVE | 11ab4972e749492d9da918dada5dda402ad67f37 | CAND-03 recommendation refreshed; new CAND-06 admitted provisionally; CAND-01 retained; CAND-05 excluded from shortlist; B-012 active | [S037 closeout](../sessions/S037/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied checkpoint and S037 was unique.
+- No proof search, experiment, formalisation, outreach, target switch, or
+  submission action occurred.
+- CAND-03 is recommended at the exact length-24 `C_3^3` inverse
+  Narkiewicz-sense eta scope.
+- CAND-06 is a viable but provisional new candidate at inverse
+  `D_4(C_5^3)`, length 30; its September 2026 direct preprint requires
+  pre-proof verification/status checking.
+- CAND-01 remains viable. CAND-05 proof remains paused and is not shortlisted;
+  CAND-02 is historical/paused and CAND-04 retired.
+- External review remains CLOSED; Xue Li Stage-1 is still CAND-02-specific and
+  reply pending.
+- Active owner blocker: **B-012**. No S038 or live next-session prompt exists.

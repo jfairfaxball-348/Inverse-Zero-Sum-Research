@@ -10,18 +10,17 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
 6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
-7. The completed S002–S036 records before later target-specific work, with
+7. The completed S002–S037 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
 ## Current state
 
-**S036 is completed and B-011 is RESOLVED by owner choice of option 2:
-reassess/switch target rather than authorize further full-CAND-05 proof work.
-CAND-05 proof work is paused. S037 is READY for one bounded source-first target
-reassessment; it may recommend but may not silently select a replacement
-target.**
+**S037 is completed. CAND-03 is the recommended replacement, with CAND-06
+(provisional) and CAND-01 as viable alternatives. B-012 is ACTIVE and requires
+the owner to select the replacement target. No S038 session or live next prompt
+exists.**
 
 Historical incumbent pending replacement selection:
 
@@ -30,22 +29,22 @@ Historical incumbent pending replacement selection:
 > `eta(G_m)-1=6m+1` having no nonempty zero-sum subsequence of length at
 > most `exp(G_m)=2m`.
 
-- Target gate: OPEN; CAND-05 remains exactly specified until an explicit owner
-  replacement selection, but its proof programme is paused.
-- Publication gate: OPEN; E-JC remains lead and JNT a natural backup.
-- Mathematical-investigation gate: OPEN in principle; S037 itself is
-  source-first target reassessment and authorizes no new proof route.
+- Target gate: OPEN; CAND-05 remains formally specified until explicit owner
+  replacement, but its proof programme is paused and it is not shortlisted.
+- Publication gate: OPEN; E-JC remains the leading eligible workflow route.
+- Mathematical-investigation gate: OPEN in principle, but B-012 suppresses any
+  numbered continuation until owner target selection.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: NONE.
-- Next session: S037 target reassessment.
+- Active owner blocker: **B-012**.
+- Next session: NONE.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
-CAND-02 remains historical/paused. CAND-05's S023--S036 mathematics and route
-stops remain durable strategic evidence but do not force the replacement
-choice.
+S037 shortlist: **CAND-03 (recommended), CAND-06 (provisional), CAND-01**.
+CAND-02 remains historical/paused; CAND-04 remains retired; CAND-05 remains a
+stalled historical comparator rather than a live proof route.
 
-## Current mathematical frontier
+## Historical CAND-05 mathematical frontier (proof paused)
 
 S023 gives the exact equality decomposition through `H=2G_m\cong C_m^2` and
 `Q\cong C_2^3`; S024 proves every nonzero quotient fibre is monochromatic.
@@ -643,3 +642,14 @@ target selection using CAND-03 and CAND-01 as refreshed prior alternatives,
 CAND-05 as the stalled-incumbent comparator, and at most two genuinely new
 source-defined candidates. S037 must return a recommendation to the owner and
 must not silently select the replacement or begin proof work.
+
+
+## S037 target-reassessment checkpoint
+
+S037 refreshed CAND-03 and CAND-01, found no positive source change reviving
+CAND-04 or materially changing CAND-05's S036 route status, and admitted one
+new source-defined candidate: inverse `D_4(C_5^3)` at length 30, based on
+Yiu's September 2026 direct preprint plus the standard inverse `D_k` framework.
+
+The recommendation is CAND-03. B-012 is active and next-session material is
+suppressed until the owner explicitly chooses CAND-03, CAND-06, or CAND-01.
