@@ -526,18 +526,23 @@ theorem pair_plane_countT :
   set_option maxHeartbeats 1000000 in
     decide
 
-/--
-The four affine planes through a line cover the whole three-dimensional affine
-space.  This is the second and final finite incidence check used by the
-structural cap proof.
+/-
+For cap triples we only need the unique-plane incidence count.  The hypotheses
+are Boolean so the finite check reduces without a large proof-valued
+Decidable instance.
 -/
-theorem pair_planes_coverT :
-    ∀ x y z : F3T, x ≠ y →
-      ∃ p : PlaneIdx,
-        onPlaneTB p x = true ∧ onPlaneTB p y = true ∧ onPlaneTB p z = true := by
-  set_option maxRecDepth 10000 in
-  set_option maxHeartbeats 1500000 in
-    decide
+set_option maxRecDepth 20000 in
+set_option maxHeartbeats 6000000 in
+theorem triple_plane_countTB :
+    ∀ x y z : F3T,
+      (x == y) = false →
+      (x == z) = false →
+      (y == z) = false →
+      (x + y + z == 0) = false →
+      ((Finset.univ : Finset PlaneIdx).filter
+        (fun p =>
+          onPlaneTB p x = true ∧ onPlaneTB p y = true ∧ onPlaneTB p z = true)).card = 1 := by
+  decide
 
 
 /--
