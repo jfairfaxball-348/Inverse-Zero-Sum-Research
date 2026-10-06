@@ -17,14 +17,14 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S046 is COMPLETED and S047 is READY. CAND-03 remains selected. The exact
+**S047 is COMPLETED and S048 is READY. CAND-03 remains selected. The exact
 classification is internally proved and independently reverified. S042 found
 no exact/equivalent/stronger-implying prior art in the documented deep audit.
 S044 kernel-checks the complete S039 packing construction conditional on its
-two threshold interfaces; S045 and S046 now kernel-check those interfaces as
-`threeTerm19Input : ThreeTerm19Input` and
-`eta17Input : Eta17Input` by transparent finite affine geometry.
-The single earliest formal obligation is now `S039PackingInput` itself.
+two threshold interfaces; S045 and S046 kernel-check those interfaces, and
+S047 now kernel-checks the closed proposition
+`s039PackingInput : S039PackingInput` by direct composition.
+The single earliest formal obligation is now `Length16SumZeroInput`.
 `FrozenClassification` still has no proof term, so Palomar remains blocked.**
 
 Selected target:
@@ -40,10 +40,10 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S047/D46-01 formalization only.
+- Mathematical-investigation gate: OPEN for S048/D47-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S047 / D46-01 S039PackingInput closure.
+- Next session: S048 / D47-01 Length16SumZeroInput formalization.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
@@ -859,3 +859,16 @@ Both threshold inputs to `s039PackingInput_of_thresholds` are now closed.
 S047/D46-01 is restricted to closing `S039PackingInput` and must stop before
 the S040 proof spine. Palomar and publication stages remain blocked on the full
 `FrozenClassification` proof.
+
+
+## S047 completed — S039PackingInput closure
+
+S047/D46-01 proves `s039PackingInput : S039PackingInput` in the pinned Lean
+4.19.0 + mathlib environment by direct application of
+`s039PackingInput_of_thresholds threeTerm19Input eta17Input`. No packing
+architecture is reproved and no S040 representative-swap argument is entered.
+
+The next exact formal obligation is `Length16SumZeroInput`, the recorded
+length-16 short-free residual sum-zero interface used first by S040. S048/D47-01
+is restricted to that proposition. `FrozenClassification` remains unproved,
+so Palomar and all publication stages remain blocked.
