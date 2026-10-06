@@ -1451,14 +1451,17 @@ theorem capViolationsT_eq_empty_iff (A : Finset F3T) :
     rw [hempty] at hmem
     simpa using hmem
   · intro hCap
-    apply Finset.eq_empty_iff_forall_notMem.mpr
-    intro q hq
-    rcases q with ⟨⟨a, b⟩, c⟩
-    have hf := Finset.mem_filter.mp hq
-    have hprod := Finset.mem_product.mp hf.1
-    have habmem := Finset.mem_product.mp hprod.1
-    exact (hCap a habmem.1 b habmem.2 c hprod.2
-      hf.2.1 hf.2.2.1 hf.2.2.2.1) hf.2.2.2.2
+    ext q
+    constructor
+    · intro hq
+      rcases q with ⟨⟨a, b⟩, c⟩
+      have hf := Finset.mem_filter.mp hq
+      have hprod := Finset.mem_product.mp hf.1
+      have habmem := Finset.mem_product.mp hprod.1
+      exact False.elim ((hCap a habmem.1 b habmem.2 c hprod.2
+        hf.2.1 hf.2.2.1 hf.2.2.2.1) hf.2.2.2.2)
+    · intro hq
+      simpa using hq
 
 /--
 Candidates that can extend the normalized origin-plus-basis seed while
@@ -1499,11 +1502,11 @@ def normalizedBadCompletionsT : Finset (Finset NormalizedCandidateT) :=
 The explicit normalized bad-completion set is empty.  This ordinary kernel
 reduction ranges only over the 6,188 five-subsets of the 17 candidate points.
 -/
+set_option maxRecDepth 10000 in
+set_option maxHeartbeats 50000000 in
 @[simp] theorem normalizedBadCompletionsT_empty :
     normalizedBadCompletionsT = ∅ := by
-  set_option maxRecDepth 10000 in
-  set_option maxHeartbeats 50000000 in
-    decide
+  decide
 
 theorem normalized_capT_sum_zero
     (B : Finset NormalizedCandidateT)
@@ -1555,22 +1558,26 @@ def basisBuildHomT (a b c : F3T) : F3T →+ F3T where
   rcases c with ⟨c0, c1, c2⟩
   simp [basisBuildT, e3T]
 
+/-- Explicit collision pairs for one proposed basis map. -/
+def basisCollisionsT (a b c : F3T) : Finset (F3T × F3T) :=
+  ((Finset.univ : Finset F3T).product Finset.univ).filter (fun q =>
+    q.1 ≠ q.2 ∧ basisBuildT a b c q.1 = basisBuildT a b c q.2)
+
 /--
-Finite pointwise injectivity certificate.  The expensive point-pair quantifier
-comes only after the plane/basis hypotheses, so kernel reduction short-circuits
-outside the admissible basis configurations.
+For every admissible plane/basis configuration the concrete collision set is
+empty.  The point-pair search is therefore finite and explicit.
 -/
-theorem basisBuildT_eq_imp_eq_of_plane :
+set_option maxRecDepth 10000 in
+set_option maxHeartbeats 30000000 in
+theorem basisCollisionsT_empty_of_plane :
     ∀ a b c : F3T, ∀ p : PlaneIdx,
       a ≠ 0 → b ≠ 0 → a ≠ b → a + b ≠ 0 →
       onPlaneTB p 0 = true →
       onPlaneTB p a = true →
       onPlaneTB p b = true →
       onPlaneTB p c = false →
-      ∀ x y : F3T, basisBuildT a b c x = basisBuildT a b c y → x = y := by
-  set_option maxRecDepth 10000 in
-  set_option maxHeartbeats 20000000 in
-    decide
+      basisCollisionsT a b c = ∅ := by
+  decide
 
 theorem basisBuildT_injective_of_plane
     (a b c : F3T) (p : PlaneIdx)
@@ -1581,8 +1588,16 @@ theorem basisBuildT_injective_of_plane
     (hpc : onPlaneTB p c = false) :
     Function.Injective (basisBuildT a b c) := by
   intro x y hxy
-  exact basisBuildT_eq_imp_eq_of_plane a b c p ha0 hb0 hab habSum
-    hp0 hpa hpb hpc x y hxy
+  by_contra hne
+  have hmem : (x, y) ∈ basisCollisionsT a b c := by
+    exact Finset.mem_filter.mpr
+      ⟨Finset.mem_product.mpr ⟨Finset.mem_univ x, Finset.mem_univ y⟩,
+        hne, hxy⟩
+  have hempty :=
+    basisCollisionsT_empty_of_plane a b c p ha0 hb0 hab habSum
+      hp0 hpa hpb hpc
+  rw [hempty] at hmem
+  simpa using hmem
 
 theorem isCapT_map_addEquiv (e : F3T ≃+ F3T) {A : Finset F3T}
     (hA : IsCapT A) :
