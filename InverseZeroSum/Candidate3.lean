@@ -1466,8 +1466,9 @@ theorem capViolationsT_eq_empty_iff (A : Finset F3T) :
 
 /--
 A faster finite cap certificate: a pair is violating when its forced third
-point `-(a+b)` is a distinct member of the same set.  This reduces each cap
-check from ordered triples to ordered pairs.
+point `-(a+b)` is a distinct member of the same set.  On each nine-point
+completion this reduces the finite search from 729 ordered triples to 81
+ordered pairs.
 -/
 def capPairViolationsT (A : Finset F3T) : Finset (F3T × F3T) :=
   (A.product A).filter (fun q =>
