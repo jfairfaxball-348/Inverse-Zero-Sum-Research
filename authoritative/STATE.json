@@ -362,7 +362,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S042/D41-01 closed cleanly under its search taxonomy: no exact/equivalent/stronger-implying prior art was located in the documented deep audit and no unresolved high-risk lead remains. This is a search-status boundary, not a novelty proof. S043/D42-01 is the sole next stage: exact Lean formalization of the frozen CAND-03 theorem. Only after a pinned successful formalization may the programme recheck Palomar requirements and proceed with registration, then paper, arXiv and E-JC.",
+  "current_route_disposition": "S043/D42-01 closed PARTIAL after creating the pinned Lean 4.19.0 + mathlib project and compiling the exact positional FrozenClassification statement. The first unproved proof-spine interface is S039PackingInput; S044/D43-01 is restricted to formalizing that interface. Palomar remains blocked until FrozenClassification itself has a proof term and the full pinned check suite passes.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -599,7 +599,7 @@
     "status": "PARTIAL",
     "toolchain": "Lean 4.19.0 (release commit 6caaee842e94)",
     "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
-    "compiled_scope": "Exact positional definitions, FrozenClassification proposition, S040/S041 source obligations, S039 certificate interface, and elementary proved declarations.",
+    "compiled_scope": "Exact positional definitions; commutative S=U^3 equality up to position permutation; FrozenClassification proposition; explicit ThreeTerm19/Eta17/length-16/length-15 source obligations; S039 certificate interface; proved S039 signature arithmetic; singleton and short-zero cardinality lemmas.",
     "earliest_formal_blocker": "S039PackingInput: prove the S039 packed short-zero-sum certificate with exactly the four signatures and the universal arbitrary-representative short-free residual property.",
     "palomar_status": "BLOCKED_UNTIL_FULL_FROZEN_CLASSIFICATION_PROOF"
   }
