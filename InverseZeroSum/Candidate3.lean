@@ -1431,12 +1431,43 @@ theorem isCapT_of_subset {A B : Finset F3T} (hB : IsCapT B) (hAB : A ⊆ B) :
   exact hB a (hAB ha) b (hAB hb) c (hAB hc) hab hac hbc
 
 /--
+The finite set of forbidden ordered triples in a proposed tuple-model cap.
+Unlike `IsCapT`, this is an explicitly computable finite object.
+-/
+def capViolationsT (A : Finset F3T) : Finset ((F3T × F3T) × F3T) :=
+  ((A.product A).product A).filter (fun q =>
+    q.1.1 ≠ q.1.2 ∧ q.1.1 ≠ q.2 ∧ q.1.2 ≠ q.2 ∧
+      q.1.1 + q.1.2 + q.2 = 0)
+
+theorem capViolationsT_eq_empty_iff (A : Finset F3T) :
+    capViolationsT A = ∅ ↔ IsCapT A := by
+  constructor
+  · intro hempty a ha b hb c hc hab hac hbc hsum
+    have hmem : ((a, b), c) ∈ capViolationsT A := by
+      apply Finset.mem_filter.mpr
+      refine ⟨Finset.mem_product.mpr
+        ⟨Finset.mem_product.mpr ⟨ha, hb⟩, hc⟩, ?_⟩
+      exact ⟨hab, hac, hbc, hsum⟩
+    rw [hempty] at hmem
+    simpa using hmem
+  · intro hCap
+    apply Finset.eq_empty_iff_forall_notMem.mpr
+    intro q hq
+    rcases q with ⟨⟨a, b⟩, c⟩
+    have hf := Finset.mem_filter.mp hq
+    have hprod := Finset.mem_product.mp hf.1
+    have habmem := Finset.mem_product.mp hprod.1
+    exact (hCap a habmem.1 b habmem.2 c hprod.2
+      hf.2.1 hf.2.2.1 hf.2.2.2.1) hf.2.2.2.2
+
+/--
 Candidates that can extend the normalized origin-plus-basis seed while
-preserving the cap condition.
+preserving the cap condition. The predicate is phrased through the finite
+violation set so kernel reduction has an explicit computable trust boundary.
 -/
 def normalizedCandidateSetT : Finset F3T :=
   Finset.univ.filter
-    (fun x => x ∉ basisSeedT ∧ IsCapT (insert x basisSeedT))
+    (fun x => x ∉ basisSeedT ∧ capViolationsT (insert x basisSeedT) = ∅)
 
 @[simp] theorem normalizedCandidateSetT_card :
     normalizedCandidateSetT.card = 17 := by
@@ -1453,13 +1484,13 @@ def normalizedCapT (B : Finset NormalizedCandidateT) : Finset F3T :=
 
 /--
 The normalized completion search has only 17 candidate points; only five are
-chosen. This is a bounded kernel reduction after a proved basis normalization,
-not an extremal-orbit catalogue.
+chosen. The premise is the explicit finite violation test, so ordinary kernel
+reduction checks the normalized completion space without an opaque catalogue.
 -/
 theorem normalized_capT_sum_zero :
     ∀ B : Finset NormalizedCandidateT,
       B.card = 5 →
-      IsCapT (normalizedCapT B) →
+      capViolationsT (normalizedCapT B) = ∅ →
       (∑ x ∈ normalizedCapT B, x) = 0 := by
   set_option maxRecDepth 10000 in
   set_option maxHeartbeats 10000000 in
@@ -1500,16 +1531,17 @@ def basisBuildHomT (a b c : F3T) : F3T →+ F3T where
   simp [basisBuildT, e3T]
 
 /--
-Finite basis certificate over the 39 explicit planes and 27 tuple points.
+Finite injectivity certificate over the 39 explicit planes and 27 tuple
+points. Bijectivity then follows from finiteness of the endomorphism.
 -/
-theorem basisBuildT_bijective_of_plane :
+theorem basisBuildT_injective_of_plane :
     ∀ a b c : F3T, ∀ p : PlaneIdx,
       a ≠ 0 → b ≠ 0 → a ≠ b → a + b ≠ 0 →
       onPlaneTB p 0 = true →
       onPlaneTB p a = true →
       onPlaneTB p b = true →
       onPlaneTB p c = false →
-      Function.Bijective (basisBuildT a b c) := by
+      Function.Injective (basisBuildT a b c) := by
   set_option maxRecDepth 10000 in
   set_option maxHeartbeats 10000000 in
     decide
@@ -1718,11 +1750,10 @@ theorem eight_support_sum_zero {A : Finset F3T}
   have hInterLe : (A ∩ planeSetT p).card ≤ 4 :=
     cap_inter_plane_le_four hCap p
   have hcExists : ∃ c ∈ A, c ∉ planeSetT p := by
-    by_contra h
-    push_neg at h
+    by_contra! hAll
     have hsub : A ⊆ planeSetT p := by
       intro x hx
-      exact h x hx
+      exact hAll x hx
     have heq : A ∩ planeSetT p = A := Finset.inter_eq_left.mpr hsub
     rw [heq, hAcard] at hInterLe
     omega
@@ -1732,9 +1763,11 @@ theorem eight_support_sum_zero {A : Finset F3T}
     · exact False.elim
         (hcOut (Finset.mem_filter.mpr ⟨Finset.mem_univ c, htrue⟩))
     · exact Bool.eq_false_of_not_eq_true htrue
-  have hbij : Function.Bijective (basisBuildT a b c) :=
-    basisBuildT_bijective_of_plane a b c p ha0 hb0 hab habSum
+  have hinj : Function.Injective (basisBuildT a b c) :=
+    basisBuildT_injective_of_plane a b c p ha0 hb0 hab habSum
       hp0 hpa hpb hpc
+  have hbij : Function.Bijective (basisBuildT a b c) :=
+    Finite.injective_iff_bijective.mp hinj
   let e : F3T ≃+ F3T :=
     AddEquiv.ofBijective (basisBuildHomT a b c) hbij
   let N : Finset F3T := A.map e.symm.toEmbedding
@@ -1805,28 +1838,39 @@ theorem eight_support_sum_zero {A : Finset F3T}
     have hSmallCap : IsCapT (insert x basisSeedT) :=
       isCapT_of_subset hCapN0 hSmallSub
     exact Finset.mem_filter.mpr
-      ⟨Finset.mem_univ x, hxNotSeed, hSmallCap⟩
-  let lift : {x : F3T // x ∈ rest} ↪ NormalizedCandidateT where
-    toFun x := ⟨x.1, hRestCandidate x.1 x.2⟩
-    inj' := by
-      intro x y hxy
-      apply Subtype.ext
-      exact congrArg Subtype.val hxy
-  let B : Finset NormalizedCandidateT := rest.attach.map lift
-  have hBCard : B.card = 5 := by
-    simp [B, hRestCard]
+      ⟨Finset.mem_univ x, hxNotSeed,
+        (capViolationsT_eq_empty_iff (insert x basisSeedT)).2 hSmallCap⟩
+  let B : Finset NormalizedCandidateT :=
+    normalizedCandidateSetT.attach.filter (fun y => y.1 ∈ rest)
   have hBMap : B.map normalizedCandidateVal = rest := by
     ext x
-    simp [B, lift, normalizedCandidateVal]
+    constructor
+    · intro hx
+      obtain ⟨y, hyB, hyx⟩ := Finset.mem_map.mp hx
+      have hyRest := (Finset.mem_filter.mp hyB).2
+      simpa [normalizedCandidateVal] using hyx ▸ hyRest
+    · intro hx
+      let y : NormalizedCandidateT := ⟨x, hRestCandidate x hx⟩
+      have hyAttach : y ∈ normalizedCandidateSetT.attach := by simp
+      have hyB : y ∈ B := by
+        exact Finset.mem_filter.mpr ⟨hyAttach, hx⟩
+      exact Finset.mem_map.mpr ⟨y, hyB, rfl⟩
+  have hBCard : B.card = 5 := by
+    have hc := congrArg Finset.card hBMap
+    simp at hc
+    omega
   have hBaseRest : basisSupportT ∪ rest = N := by
     simpa [rest] using Finset.union_sdiff_of_subset hBaseSubN
   have hSeedRest : basisSeedT ∪ rest = insert 0 N := by
     rw [basisSeedT, Finset.insert_union, hBaseRest]
   have hNormalizedEq : normalizedCapT B = insert 0 N := by
     simp [normalizedCapT, hBMap, hSeedRest]
+  have hNormCap : IsCapT (normalizedCapT B) := by
+    simpa [hNormalizedEq] using hCapN0
+  have hNormNoViol : capViolationsT (normalizedCapT B) = ∅ :=
+    (capViolationsT_eq_empty_iff (normalizedCapT B)).2 hNormCap
   have hNormalizedSum :=
-    normalized_capT_sum_zero B hBCard
-      (by simpa [hNormalizedEq] using hCapN0)
+    normalized_capT_sum_zero B hBCard hNormNoViol
   have hNSum : (∑ x ∈ N, x) = 0 := by
     rw [hNormalizedEq] at hNormalizedSum
     simpa [hNZeroNot] using hNormalizedSum
