@@ -1369,3 +1369,23 @@ interface and must stop before the S040 representative-swap elimination.
 Palomar registration remains blocked until the complete
 `FrozenClassification` theorem has a proof term and all pinned checks pass.
 The owner order Lean -> Palomar -> paper -> arXiv -> E-JC is unchanged.
+
+
+## S044 partial — S039 packing formalization
+
+D43-01 formalized the full S039 packed-short-zero-sum construction up to the
+published threshold interfaces. The kernel-checked theorem
+`s039PackingInput_of_thresholds` proves
+`ThreeTerm19Input -> Eta17Input -> S039PackingInput`, including exactly the
+four signatures `(6,8,2)`, `(7,8,1)`, `(8,8,0)`, `(6,9,0)` and the
+universal arbitrary-representative short-free residual property.
+
+The packing itself is transparent: under the frozen avoidance relation,
+distinct short zero-sum positional blocks are proved disjoint, so the family of
+all such blocks supplies the maximal packing without an orbit catalogue.
+
+The single earliest exact blocker is now `ThreeTerm19Input`, the positional
+`s(C_3^3)=19` consequence used for `l>=6`. `Eta17Input` remains a later
+formal source obligation. S045/D44-01 is the sole promoted successor and may
+formalize only `ThreeTerm19Input`. Palomar remains blocked until the complete
+`FrozenClassification` theorem has a proof term and all pinned checks pass.
