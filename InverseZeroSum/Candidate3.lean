@@ -313,12 +313,31 @@ theorem representativeSet_card_of_pairwise {s : ℕ}
 
 /-! ### S045: the three-term length-19 threshold -/
 
-/-- A definitionally finite model of \`C_3^3\`, used only for transparent finite checks. -/
+/-- A coordinatewise finite model of the frozen ambient group. -/
 abbrev F3G := Fin 3 → Fin 3
 
-/-- The coordinatewise additive equivalence from the finite model to the frozen ambient group. -/
+/-- A tuple representation of the same finite model; unlike function equality it reduces cheaply. -/
+abbrev F3T := Fin 3 × Fin 3 × Fin 3
+
+/-- The coordinatewise additive equivalence from \`Fin 3\` coordinates to the frozen group. -/
 def f3ToG : F3G ≃+ G :=
   AddEquiv.piCongrRight (fun _ => (ZMod.finEquiv 3).toAddEquiv)
+
+/-- Evaluation at the three coordinates as an additive equivalence. -/
+def f3TupleEquiv : F3G ≃+ F3T where
+  toFun x := (x 0, x 1, x 2)
+  invFun x := ![x.1, x.2.1, x.2.2]
+  left_inv x := by
+    funext i
+    fin_cases i <;> rfl
+  right_inv x := by
+    rcases x with ⟨x0, x1, x2⟩
+    rfl
+  map_add' x y := rfl
+
+/-- The finite tuple model of the frozen ambient group. -/
+def finiteModelEquiv : G ≃+ F3T :=
+  f3ToG.symm.trans f3TupleEquiv
 
 /-- Coordinates on a nine-point affine plane. -/
 abbrev PlaneCoord := Fin 3 × Fin 3
@@ -327,25 +346,21 @@ abbrev PlaneCoord := Fin 3 × Fin 3
 abbrev PlaneIdx := Fin 13 × Fin 3
 
 /-- A computable Boolean form of the explicit affine-plane equation. -/
-def onPlaneFB (p : PlaneIdx) (x : F3G) : Bool :=
+def onPlaneTB (p : PlaneIdx) (x : F3T) : Bool :=
   let d := p.1.val
   let c : Fin 3 := p.2
   if h9 : d < 9 then
     let a : Fin 3 := ⟨d / 3, by omega⟩
     let b : Fin 3 := ⟨d % 3, Nat.mod_lt _ (by omega)⟩
-    x 0 + a * x 1 + b * x 2 == c
+    x.1 + a * x.2.1 + b * x.2.2 == c
   else if h12 : d < 12 then
     let b : Fin 3 := ⟨d - 9, by omega⟩
-    x 1 + b * x 2 == c
+    x.2.1 + b * x.2.2 == c
   else
-    x 2 == c
+    x.2.2 == c
 
-/--
-An explicit parametrisation of every affine plane in the finite model.
-For directions 0--8 the normal is \`(1,a,b)\`; for 9--11 it is
-\`(0,1,b)\`; direction 12 has normal \`(0,0,1)\`.
--/
-def planePointF (p : PlaneIdx) (q : PlaneCoord) : F3G :=
+/-- Explicit parametrisation of each nine-point affine plane in the tuple model. -/
+def planePointT (p : PlaneIdx) (q : PlaneCoord) : F3T :=
   let d := p.1.val
   let c : Fin 3 := p.2
   let y : Fin 3 := q.1
@@ -353,63 +368,55 @@ def planePointF (p : PlaneIdx) (q : PlaneCoord) : F3G :=
   if h9 : d < 9 then
     let a : Fin 3 := ⟨d / 3, by omega⟩
     let b : Fin 3 := ⟨d % 3, Nat.mod_lt _ (by omega)⟩
-    ![c - a * y - b * z, y, z]
+    (c - a * y - b * z, y, z)
   else if h12 : d < 12 then
     let b : Fin 3 := ⟨d - 9, by omega⟩
-    ![y, c - b * z, z]
+    (y, c - b * z, z)
   else
-    ![y, z, c]
+    (y, z, c)
 
 /-- The point set of an explicitly indexed affine plane. -/
-def planeSetF (p : PlaneIdx) : Finset F3G :=
-  Finset.univ.filter (fun x => onPlaneFB p x = true)
+def planeSetT (p : PlaneIdx) : Finset F3T :=
+  Finset.univ.filter (fun x => onPlaneTB p x = true)
 
-/-- The plane parametrisation is injective. -/
-theorem planePointF_injective :
-    ∀ p : PlaneIdx, Function.Injective (planePointF p) := by
-  set_option maxRecDepth 10000 in
-    decide
+theorem planePointT_injective :
+    ∀ p : PlaneIdx, Function.Injective (planePointT p) := by
+  decide
 
-/-- Every parametrised point satisfies its plane equation. -/
-theorem planePointF_onPlane :
+theorem planePointT_onPlane :
     ∀ p : PlaneIdx, ∀ q : PlaneCoord,
-      onPlaneFB p (planePointF p q) = true := by
-  set_option maxRecDepth 10000 in
-    decide
+      onPlaneTB p (planePointT p q) = true := by
+  decide
 
-/-- Every point satisfying the plane equation occurs in the parametrisation. -/
-theorem planePointF_surjective_on :
-    ∀ p : PlaneIdx, ∀ x : F3G,
-      onPlaneFB p x = true → ∃ q : PlaneCoord, planePointF p q = x := by
-  set_option maxRecDepth 10000 in
-  set_option maxHeartbeats 500000 in
-    decide
+theorem planePointT_surjective_on :
+    ∀ p : PlaneIdx, ∀ x : F3T,
+      onPlaneTB p x = true → ∃ q : PlaneCoord, planePointT p q = x := by
+  decide
 
-theorem planeSetF_eq_image (p : PlaneIdx) :
-    planeSetF p = Finset.univ.image (planePointF p) := by
+theorem planeSetT_eq_image (p : PlaneIdx) :
+    planeSetT p = Finset.univ.image (planePointT p) := by
   classical
   ext x
   constructor
   · intro hx
-    have hon : onPlaneFB p x = true := (Finset.mem_filter.mp hx).2
-    obtain ⟨q, hq⟩ := planePointF_surjective_on p x hon
+    have hon : onPlaneTB p x = true := (Finset.mem_filter.mp hx).2
+    obtain ⟨q, hq⟩ := planePointT_surjective_on p x hon
     exact Finset.mem_image.mpr ⟨q, Finset.mem_univ q, hq⟩
   · intro hx
     obtain ⟨q, _hq, rfl⟩ := Finset.mem_image.mp hx
-    exact Finset.mem_filter.mpr ⟨Finset.mem_univ _, planePointF_onPlane p q⟩
+    exact Finset.mem_filter.mpr ⟨Finset.mem_univ _, planePointT_onPlane p q⟩
 
-@[simp] theorem planeSetF_card (p : PlaneIdx) :
-    (planeSetF p).card = 9 := by
+@[simp] theorem planeSetT_card (p : PlaneIdx) :
+    (planeSetT p).card = 9 := by
   classical
-  rw [planeSetF_eq_image p]
+  rw [planeSetT_eq_image p]
   simpa using
     Finset.card_image_of_injective (Finset.univ : Finset PlaneCoord)
-      (planePointF_injective p)
+      (planePointT_injective p)
 
 /--
 The small affine-plane fact needed by S045: a subset of \`F_3^2\` with no
-three distinct elements summing to zero has at most four elements.  This is a
-single 9-point transparent finite check, not an orbit catalogue.
+three distinct elements summing to zero has at most four elements.
 -/
 theorem planeCoord_cap_le_four :
     ∀ A : Finset PlaneCoord,
@@ -420,43 +427,40 @@ theorem planeCoord_cap_le_four :
   set_option maxHeartbeats 500000 in
     decide
 
-/--
-The affine parametrisation preserves zero sums of three coordinate points.
-The translation term disappears because the characteristic is three.
--/
-theorem planePointF_sum_zero_of_coord :
+/-- The affine parametrisation preserves three-term zero sums. -/
+theorem planePointT_sum_zero_of_coord :
     ∀ p : PlaneIdx, ∀ a b c : PlaneCoord,
       a + b + c = 0 →
-      planePointF p a + planePointF p b + planePointF p c = 0 := by
+      planePointT p a + planePointT p b + planePointT p c = 0 := by
   set_option maxRecDepth 10000 in
   set_option maxHeartbeats 500000 in
     decide
 
-/-- Every point of the finite model lies on exactly 13 explicit affine planes. -/
-theorem point_plane_countF :
-    ∀ x : F3G,
+/-- Every tuple-model point lies on exactly 13 explicit affine planes. -/
+theorem point_plane_countT :
+    ∀ x : F3T,
       ((Finset.univ : Finset PlaneIdx).filter
-        (fun p => onPlaneFB p x = true)).card = 13 := by
+        (fun p => onPlaneTB p x = true)).card = 13 := by
   set_option maxRecDepth 10000 in
   set_option maxHeartbeats 500000 in
     decide
 
-/-- Every two distinct finite-model points lie on exactly four affine planes. -/
-theorem pair_plane_countF :
-    ∀ x y : F3G, x ≠ y →
+/-- Every two distinct tuple-model points lie on exactly four affine planes. -/
+theorem pair_plane_countT :
+    ∀ x y : F3T, x ≠ y →
       ((Finset.univ : Finset PlaneIdx).filter
-        (fun p => onPlaneFB p x = true ∧ onPlaneFB p y = true)).card = 4 := by
+        (fun p => onPlaneTB p x = true ∧ onPlaneTB p y = true)).card = 4 := by
   set_option maxRecDepth 10000 in
   set_option maxHeartbeats 1000000 in
     decide
 
-/-- Every three distinct non-collinear finite-model points lie on exactly one affine plane. -/
-theorem triple_plane_countF :
-    ∀ x y z : F3G,
+/-- Every three distinct non-collinear tuple-model points lie on exactly one affine plane. -/
+theorem triple_plane_countT :
+    ∀ x y z : F3T,
       x ≠ y → x ≠ z → y ≠ z → x + y + z ≠ 0 →
       ((Finset.univ : Finset PlaneIdx).filter
         (fun p =>
-          onPlaneFB p x = true ∧ onPlaneFB p y = true ∧ onPlaneFB p z = true)).card = 1 := by
+          onPlaneTB p x = true ∧ onPlaneTB p y = true ∧ onPlaneTB p z = true)).card = 1 := by
   set_option maxRecDepth 10000 in
   set_option maxHeartbeats 2000000 in
     decide
