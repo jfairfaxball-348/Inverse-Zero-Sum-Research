@@ -956,3 +956,13 @@ Date: **2026-10-06**.
 | C-199 | FORMAL_VERIFICATION / SOURCE INTERFACE | In the pinned Lean project, `threeTerm19Input : ThreeTerm19Input` is proved without unchecked placeholders. The proof establishes the exact positional length-19 three-term-zero-sum consequence needed by S039 through explicit finite affine-plane geometry and multiplicity counting. | `InverseZeroSum/Candidate3.lean`; S045 validation. This verifies the formal interface, not Property D as a general theorem and not literature novelty. |
 | C-200 | FORMAL_GEOMETRY_BOUNDARY | The supporting finite argument proves a cap in the tuple model of `F_3^3` has cardinality at most 9. It uses small `decide` checks for explicit finite incidence facts and ordinary Lean counting for the ten-cap contradiction; no `native_decide`, opaque orbit catalogue or external oracle is used. | S045 formal source. The cap result is used only to discharge `ThreeTerm19Input` under the recorded trust boundary. |
 | C-201 | PROGRAMME_ROUTE_DECISION | With `ThreeTerm19Input` closed, `Eta17Input` is the single earliest remaining formal source interface. Promote S046/D45-01 only; Palomar remains blocked until `FrozenClassification` has a proof term and the pinned full checks pass. | S045 stop/successor rule; owner order Lean -> Palomar -> paper -> arXiv -> E-JC. |
+
+## S046 formalization claim additions
+
+Date: **2026-10-06**.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-202 | FORMAL_VERIFICATION / SOURCE INTERFACE | In the pinned Lean project, `eta17Input : Eta17Input` is proved without unchecked placeholders. | `InverseZeroSum/Candidate3.lean`; S046 validation. This verifies the exact positional interface, not the published general proof or literature novelty. |
+| C-203 | FORMAL_GEOMETRY BOUNDARY | A short-free length-17 support together with the origin is a cap; S045's cap bound gives support size at most eight, while each support value has multiplicity at most two. | Transparent reuse of S045 cap geometry plus ordinary bounded `decide` for the no-nonzero-2-torsion fact. No `native_decide` or orbit catalogue. |
+| C-204 | PROGRAMME_ROUTE_DECISION | With both threshold proof terms closed, `S039PackingInput` is the single earliest exact formal obligation. Promote S047/D46-01 only; Palomar remains blocked on `FrozenClassification`. | S046 stop/successor rule and owner Lean-first order. |
