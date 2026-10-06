@@ -867,3 +867,11 @@ D44-01 closes `ThreeTerm19Input` without importing the published numerical
 threshold as an axiom. S046/D45-01 is the sole promoted successor and is
 restricted to `Eta17Input`. Palomar remains blocked on the full
 `FrozenClassification` proof term.
+
+## S046 completed Eta17Input checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S046 | COMPLETED D45-01 ETA17 FORMALIZATION | a9d8834dbae96901b42da20b743a25d67f0bce9e | Kernel-checked `eta17Input : Eta17Input` via support-plus-origin cap geometry and multiplicity counting; `S039PackingInput` is next | [S046 closeout](../sessions/S046/CLOSEOUT.md) |
+
+D45-01 closes the second threshold interface without importing `eta(C_3^3)=17` as an axiom. S047/D46-01 is restricted to closing the already conditionalized S039 packing proposition. Active owner blockers: NONE.
