@@ -812,3 +812,21 @@ Source-check date: **2026-10-06**.
 | --- | --- | --- | --- |
 | C-168 | OWNER_TARGET_SELECTION | The owner selected CAND-03 after S037. The live target is the structural inverse Narkiewicz-sense eta classification for length-24 sequences over `C_3^3\{0}`. | D-111. This is a target identity decision, not a theorem, openness/novelty certificate, reviewer endorsement, or publication claim. |
 | C-169 | PROGRAMME_ROUTE_DECISION | S038 may run D37-01 only: test exact transfer of the published rank-two inverse hypotheses to a canonical rank-two slice/hyperplane object forced by a CAND-03 extremal; if no such transfer exists, stop before a broader proof architecture. | D-112; anti-churn evidence from S020/S036/S037. |
+
+
+## S038 source and mathematical additions
+
+Source-check date: **2026-10-06**.
+
+| ID | Source | Exact boundary |
+| --- | --- | --- |
+| ZS-72 | Weidong Gao, Wanzhen Hui, Xue Li, Yuanlin Li, Yongke Qu, Qinghai Zhong, *On generalized Narkiewicz constants of finite abelian groups*, Acta Arith. 212 (2024), 133--172, DOI 10.4064/aa230118-1-10 | Definition 1.1 gives the indexed `eta^N` condition over (G\setminus\{0\}); Theorem 3.6(4) gives (eta^N(C_3^3)=25). Its lower-bound proof constructs (S_0=(0^{-1}(-g+T))^3=U^3) of length 24 with no forbidden pair. |
+| ZS-73 | Wanzhen Hui, Qinghai Zhong, *On the inverse problem of the Narkiewicz-sense eta-constant for finite abelian groups of rank 2*, JCTA 224 (2026), 106238, DOI 10.1016/j.jcta.2026.106238 | Theorem 1.1 treats (C_n^2) sequences over the nonzero alphabet of exact length (3n-1=eta^N(C_n^2)-2) with no innerly non-zero-sum-joint short zero-sum subsequences. Thus the (C_3^2) input length is exactly 8. |
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-170 | SOURCE_DEFINITION_BOUNDARY | The forbidden relation is positional: two distinct index sets for short zero sums must have nonempty intersection whose indexed intersection sum is nonzero. Restricting a ground sequence to selected positions preserves any such witness. | ZS-72 Definition 1.1 and preceding inner-common-divisor definitions. |
+| C-171 | PROGRAMME_LEMMA | For every CAND-03 extremal (S), every rank-two subgroup restriction (S_H) has length at most 9, while some rank-two subgroup has length at least 8. Hence (max_H |S_H|\in\{8,9\}). | Restriction inherits C-170; (eta^N(C_3^2)=10). There are 13 rank-two subgroups of (C_3^3), each nonzero element lies in 4, so (sum_H|S_H|=96). |
+| C-172 | SOURCE_BACKED_COUNTERINTERFACE | The ZS-72 lower-bound extremal at (n=3) is (S_0=U^3). Every value multiplicity, hence every subgroup-restriction length, is divisible by 3. By C-171 its densest subgroup restriction has length 9 and no rank-two subgroup restriction has length 8. | Counterexample to the **universal exact interface**, not to CAND-03 and not a new extremal construction. |
+| C-173 | PROGRAMME_TRANSFER_BOUNDARY | ZS-73 Theorem 1.1 cannot be applied target-wide through the tested interfaces: subgroup restriction may have length 9; projection need not preserve upstairs zero-sum avoidance and may introduce zero; translating an affine slice can change 2-term zero-sum status; deleting one position from a 9-term restriction is not canonically forced. | D37-01 only. No claim that every conceivable future rank-two argument is impossible. |
+| C-174 | PROGRAMME_ROUTE_DECISION | Stop the S038 rank-two slice/hyperplane transfer architecture at C-173. No S039 successor is promoted; B-013 is active for owner strategy disposition. | D-113--D-114 and S038 hard-stop brief. |

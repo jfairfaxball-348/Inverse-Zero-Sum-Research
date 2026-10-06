@@ -1202,3 +1202,24 @@ second unrelated architecture.
 
 This fixed-group/hard-stop design is the first anti-churn safeguard imported
 from CAND-02 and CAND-05.
+
+
+## S038 completed — rank-two slice/hyperplane preflight stops
+
+D37-01 rechecked the indexed CAND-03 definition and Hui--Zhong 2026 Theorem
+1.1 before attempting transfer. Honest restriction to a rank-two subgroup
+inherits the exact avoidance condition and gives the target-wide bound
+(8le max_H |S|_Hle 9). This is useful structure, but not the requested
+exact interface.
+
+The theorem to be imported requires an 8-term sequence over (C_3^2\setminus
+\{0\}). The source lower-bound extremal (S_0=U^3) has all multiplicities
+divisible by three, so every subgroup restriction has length divisible by
+three; its densest restriction is therefore 9, not 8. Projection can create
+quotient-zero configurations that are not zero-sums upstairs; affine
+translation changes 2-term zero-sum status; and one-position deletion from a
+9-term restriction is not canonically forced.
+
+The rank-two transfer architecture is stopped at this exact mismatch. No
+enumeration or second architecture is promoted. B-013 requires owner strategy
+disposition before any S039.

@@ -800,3 +800,36 @@ B-012 is **RESOLVED**. Active owner blockers: **NONE**.
 Target and publication gates remain OPEN. Mathematical investigation is OPEN
 for S038 D37-01 only; external review remains CLOSED and parallel. No outreach
 is authorized by this target-selection decision.
+
+
+## S038 D37-01 decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-113 | 2026-10-06 | Record D37-01 as a decisive failed-transfer preflight. Every CAND-03 extremal has a rank-two subgroup restriction of size 8 or 9, but the exact Hui--Zhong 2026 Theorem 1.1 input is length 8 for `C_3^2`, and the published Gao--Hui--Li--Li--Qu--Zhong length-24 extremal has all subgroup-restriction lengths divisible by 3, hence a densest restriction of length 9 and no length-8 subgroup restriction. Projection, affine translation and arbitrary deletion do not provide a canonical exact-hypothesis replacement. Stop this architecture. | `sessions/S038/RANK_TWO_SLICE_PREFLIGHT.md` and `SOURCE_CHECK.md`; exact source definitions and theorem statements rechecked. |
+| D-114 | 2026-10-06 | **Activate B-013 and suppress all S039 material.** D37-01 yields a useful density lemma but no target-wide theorem interface, so the brief's hard stop applies. No second proof architecture is authorized automatically. | D-113; S038 brief anti-churn rule; FL-073/FL-095. |
+
+### B-013 — CAND-03 strategy after failed rank-two transfer preflight
+
+**ACTIVE.**
+
+CAND-03 remains the selected target and remains SOURCE-DEFINED / CURRENT STATUS
+UNKNOWN. S038 did not disprove the target or certify novelty/open status; it
+falsified only the proposed exact Hui--Zhong rank-two transfer as a universal
+entry mechanism.
+
+**Required owner action:** choose one strategy disposition before any further
+numbered session:
+
+1. retain CAND-03 and authorize one fresh source-first strategy reassessment
+   aimed at a genuinely target-wide mechanism outside the failed rank-two
+   restriction/projection/extraction transfer; or
+2. return to the S037 replacement shortlist and select CAND-06 or CAND-01
+   instead.
+
+No outreach or submission action is implied by either option. Xue Li Stage-1
+remains CAND-02-specific and reply pending.
+
+While B-013 is active, `next_session` and `next_brief` are null,
+`next_prompt_status=SUPPRESSED_OWNER_BLOCKER`, and
+`authoritative/NEXT_SESSION_PROMPT.md` is absent.

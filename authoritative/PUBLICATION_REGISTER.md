@@ -597,3 +597,16 @@ significance, acceptance, or venue choice after a result exists.
 
 No manuscript, submission authorization, submission, acceptance, or
 publication exists. The publication gate remains OPEN.
+
+
+## S038 publication boundary
+
+S038 produces a target-wide density lemma and a failed-transfer certificate,
+not a manuscript-ready classification or novelty/significance result. CAND-03
+remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+
+No manuscript, submission authorization, submission, acceptance, publication,
+or outreach occurred. The publication gate remains OPEN as workflow
+eligibility. E-JC remains the leading eligible route and JCTA a natural
+comparable venue if a genuinely structural CAND-03 result is later obtained.
+B-013 concerns mathematical strategy, not submission authorization.

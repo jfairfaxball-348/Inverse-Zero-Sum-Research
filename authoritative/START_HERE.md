@@ -17,9 +17,10 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**B-012 is RESOLVED by explicit owner selection of CAND-03. CAND-03 is now the
-selected programme target. S038 is READY for one bounded target-entry
-rank-two-slice/hyperplane preflight; no broad proof architecture is authorized.**
+**S038 is COMPLETED. CAND-03 remains the selected programme target, but D37-01
+found no canonical rank-two object satisfying the exact Hui--Zhong 2026
+Theorem 1.1 hypotheses for every extremal. B-013 is ACTIVE for owner strategy
+disposition; no S039 session or live next prompt exists.**
 
 Selected target:
 
@@ -31,10 +32,10 @@ Selected target:
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains the leading eligible workflow route,
   with JCTA a natural comparable venue for CAND-03.
-- Mathematical-investigation gate: OPEN for the bounded S038 D37-01 preflight.
+- Mathematical-investigation gate: OPEN in principle, but B-013 suppresses any numbered continuation.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blockers: NONE.
-- Next session: S038, D37-01 rank-two-slice/hyperplane transfer preflight.
+- Active owner blockers: **B-013**.
+- Next session: NONE pending B-013.
 - CAND-03 current status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**;
   no bounded search non-hit is an openness or novelty certificate.
 - David J. Grynkiewicz remains the provisional first independent status/proposal
@@ -673,3 +674,35 @@ asks whether the exact rank-two Hui--Zhong inverse hypotheses arise on any
 canonical rank-two slice/hyperplane object forced by a CAND-03 extremal. If no
 such canonical transfer exists, stop and reassess before creating another
 proof architecture.
+
+
+## Frontier after S038 — D37-01 rank-two transfer preflight
+
+For a CAND-03 extremal (S), restriction to a rank-two subgroup (Hcong
+C_3^2) is the one tested interface that honestly inherits both the nonzero
+alphabet and the positional innerly non-zero-sum-joint avoidance condition.
+Since (eta^N(C_3^2)=10), every such restriction has length at most (9).
+There are (13) rank-two subgroups of (C_3^3), every nonzero element lies
+in exactly (4) of them, and therefore the restriction lengths sum to
+(4|S|=96). Hence some restriction has length at least (8), so the maximum
+rank-two subgroup-restriction length is (8) or (9).
+
+Hui--Zhong 2026 Theorem 1.1 requires length (3n-1), hence exactly (8)
+when (n=3). The published Gao--Hui--Li--Li--Qu--Zhong lower-bound
+construction at (n=3) gives an actual length-24 extremal (S_0=U^3).
+Every value multiplicity in (S_0) is divisible by (3), so every subgroup
+restriction has length divisible by (3). The preceding target-wide bound then
+forces its densest rank-two restriction to have length (9), and it has no
+rank-two restriction of length (8).
+
+Projection does not inherit the original zero-sum avoidance, affine translation
+does not preserve the mixed length-(2/3) condition, and deleting one position
+from a (9)-term restriction is an arbitrary extraction rather than a
+target-forced canonical object. D37-01 therefore stops: the proposed exact
+Hui--Zhong interface is not target-wide. No enumeration, cap-set replacement,
+translation normalization, CAND-02/CAND-05 machinery, or second proof
+architecture was launched.
+
+CAND-03 remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. B-013 is active
+for owner strategy disposition. External review remains CLOSED; Xue Li
+Stage-1 remains CAND-02-specific and reply pending.

@@ -265,3 +265,10 @@ arguments. Retired routes are not silently revived without new information.
 | FL-092 | 2026-10-06 | The CAND-02 and CAND-05 histories show that a parameterized inverse family can accumulate correct structural layers while repeatedly preserving a compatibility family and never reaching a paper-level theorem package. | Prefer candidates with fixed exact scope, theorem-level partial-result space, and an early falsification condition; do not reward sunk familiarity. | S037 anti-churn comparison |
 | FL-093 | 2026-10-06 | An extremely fresh direct preprint can make a clean inverse target look open simply because there has been little time for follow-up work. | For CAND-06, require direct-result reproduction/verification and a focused parallel-work/status check before proof; never convert the present search non-hit into novelty evidence. | S037 bounded discovery |
 | FL-094 | 2026-10-06 | A stalled historical incumbent can remain psychologically attractive because the programme already owns substantial internal lemmas. | CAND-05 re-enters a shortlist only on fresh positive evidence that materially changes the S036 route/status assessment, not on familiarity or sunk work. | D-107--D-110 |
+
+
+## S038 rank-two transfer lesson
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-095 | 2026-10-06 | A nearby complete inverse theory can look transferable merely because every rank-three extremal has a dense rank-two slice. Here density forces only 8 or 9 terms, while Hui--Zhong Theorem 1.1 needs exactly 8; the published (U^3) extremal realizes the 9 branch and therefore defeats universal exact transfer. Arbitrary deletion, quotient projection or affine translation would silently change canonicity or hypotheses. | Check alphabet, exact length, indexed avoidance inheritance and canonicity separately before importing an inverse theorem. Once one published extremal falsifies the universal interface, stop that architecture rather than repairing it by an arbitrary extraction or a second unrelated proof route. | S038 D37-01 / D-113--D-114 |

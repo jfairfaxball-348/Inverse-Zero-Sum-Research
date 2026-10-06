@@ -4,12 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: target reassessment with parallel external review. S036 is
-complete and B-011 has been resolved by owner choice of option 2:
-reassess/switch target rather than continue full CAND-05 proof work. CAND-05
-proof work is paused. S037 is READY for a source-first comparison of the
-strongest prior alternatives and at most two genuinely new replacement
-candidates.**
+**Current stage: CAND-03 mathematical investigation paused for owner strategy disposition. S038 completed D37-01 and proved a rank-two subgroup density bound, but the exact Hui--Zhong 2026 eight-term interface is not forced target-wide. B-013 is ACTIVE; no S039 or live next-session prompt exists.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -18,23 +13,14 @@ authority; conversation history is not the project state.
 A numbered session runs one bounded task autonomously, validates and
 checkpoints useful work, then automatically provides a close report.
 
-**A next-session prompt appears only when it is immediately runnable. If an
-active blocker requires the owner, the session ends with the specific request
-and no next-session prompt.** B-006 through B-011 are resolved. S037 is the live
-target-reassessment session; it may recommend but not silently select a
-replacement target.
+**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-012 are resolved. B-013 is active after S038's failed exact rank-two transfer preflight.
 
 ## Current readiness dimensions
 
-1. Target gate — OPEN: CAND-05 remains exactly specified as the historical
-   incumbent pending explicit replacement selection; its proof programme is
-   paused.
-2. Publication gate — OPEN: E-JC remains lead; JNT is a natural
-   comparable/backup.
-3. Mathematical-investigation gate — OPEN in principle; S037 is source-first
-   target reassessment only and authorizes no new proof route.
-4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue
-   Li's pending message is CAND-02-specific.
+1. Target gate — OPEN: CAND-03 is selected at the exact length-24 structural inverse Narkiewicz-sense eta scope.
+2. Publication gate — OPEN: E-JC remains the leading eligible route; JCTA is a natural comparable venue for CAND-03.
+3. Mathematical-investigation gate — OPEN in principle, but B-013 suppresses any numbered continuation until the owner chooses the next strategy disposition.
+4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
 intact, S011's local-hole/capacity exchange route remains stopped, and S012's
@@ -295,3 +281,17 @@ discriminator. S037 will refresh CAND-03/CAND-01, compare the CAND-05 and
 CAND-02 anti-churn histories, and search for at most two genuinely new
 source-defined replacement candidates. It will recommend, not silently select,
 the next target.
+
+
+## S038 rank-two transfer preflight
+
+S038 proves that every CAND-03 extremal has a rank-two subgroup restriction of
+size 8 or 9. Hui--Zhong 2026 Theorem 1.1 requires exactly 8 terms over
+`C_3^2\setminus\{0\}`. The published direct lower-bound extremal is
+(U^3), so all subgroup restriction lengths are divisible by 3; its densest
+restriction has size 9 and none has size 8. Projection, affine translation and
+arbitrary one-position deletion do not supply a canonical exact-hypothesis
+repair.
+
+The rank-two transfer route is therefore stopped. CAND-03 remains selected and
+SOURCE-DEFINED / CURRENT STATUS UNKNOWN. B-013 is active; no S039 is scheduled.

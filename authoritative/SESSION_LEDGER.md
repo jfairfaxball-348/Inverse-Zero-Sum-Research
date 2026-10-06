@@ -710,3 +710,23 @@ computation remain CLOSED.
 - Target/publication/mathematical-investigation gates are OPEN; external review
   remains CLOSED with no confirmed reviewer.
 - S038 is READY for D37-01 only: rank-two-slice/hyperplane transfer preflight.
+
+
+## S038 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S038 | COMPLETED D37-01 RANK-TWO TRANSFER PREFLIGHT; EXACT INTERFACE FAILS; OWNER STRATEGY BLOCKER ACTIVE | 369c4f2eec7a61ebf8398ad7a4d833e9b36cd286 | Rank-two subgroup maximum is 8 or 9; published (U^3) extremal forces the 9 branch and has no length-8 subgroup restriction; projection/affine/extraction repairs rejected; B-013 active | [S038 closeout](../sessions/S038/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied checkpoint and S038 was unique.
+- The exact indexed definition and Hui--Zhong 2026 Theorem 1.1 hypotheses were rechecked.
+- Every extremal has a rank-two subgroup restriction of size 8 or 9.
+- The published direct lower-bound extremal has all multiplicities divisible by
+  three, hence no 8-term subgroup restriction and a densest 9-term restriction.
+- Projection, affine translation and arbitrary deletion do not supply a
+  canonical exact-hypothesis interface.
+- No enumeration, cap-set reformulation, translation normalization, CAND-02/
+  CAND-05 import, outreach, submission action or second proof architecture
+  occurred.
+- CAND-03 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN.
+- Active owner blocker: **B-013**. Next numbered session: NONE.

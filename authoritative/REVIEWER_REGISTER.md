@@ -677,3 +677,18 @@ any reviewer role.
 
 Xue Li's Stage-1 message remains CAND-02-specific and reply pending. It does
 not transfer to CAND-03.
+
+
+## S038 external-review boundary
+
+S038 sent no outreach and received no independent CAND-03 review. External
+review remains CLOSED and no reviewer is confirmed.
+
+David J. Grynkiewicz remains the provisional first independent
+status/proposal-review lead from the S004/S021/S037 evidence, with Pingzhi Yuan
+a strong alternative. Hui, Zhong and the defining-source authors remain exact
+status experts subject to independence/conflict assessment.
+
+Xue Li's Stage-1 message remains CAND-02-specific, owner-reported SENT
+2026-10-02 / REPLY PENDING. Nothing in S038 transfers that status to CAND-03.
+B-013 authorizes no outreach.

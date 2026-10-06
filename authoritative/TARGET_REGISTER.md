@@ -1109,3 +1109,25 @@ Source baseline retained from S004/S021/S037:
 CAND-05 is superseded as the selected target and becomes historical/paused.
 Its mathematics remains durable programme evidence and its stopped routes must
 not be imported as CAND-03 obligations.
+
+
+## S038 CAND-03 mathematical boundary
+
+Date: 2026-10-06.
+
+CAND-03 remains the selected target and remains **SOURCE-DEFINED / CURRENT
+STATUS UNKNOWN**. D37-01 establishes one target-wide structural fact:
+for every length-24 extremal (S), the largest restriction to a rank-two
+subgroup of (C_3^3) has length either (8) or (9).
+
+This does **not** yield a universal Hui--Zhong 2026 Theorem 1.1 interface.
+That theorem requires length (8) over (C_3^2\setminus\{0\}), while the
+published direct lower-bound extremal (S_0=U^3) has every subgroup
+restriction length divisible by (3), so its largest restriction is (9)
+and no subgroup restriction has length (8). Quotient projection, affine
+translation and arbitrary one-position extraction do not preserve or
+canonically realize the exact theorem hypotheses.
+
+Accordingly the S038 rank-two slice/hyperplane transfer route is stopped.
+No classification, nonexistence theorem, novelty claim or openness claim is
+made. B-013 is active before another numbered session.
