@@ -696,3 +696,17 @@ computation remain CLOSED.
 - External review remains CLOSED; Xue Li Stage-1 is still CAND-02-specific and
   reply pending.
 - Active owner blocker: **B-012**. No S038 or live next-session prompt exists.
+
+
+## Post-S037 owner CAND-03 selection checkpoint
+
+- Incoming authority: `7b7d4520f4120bc34f51660a1f26dab33304db12`.
+- Owner selected S037 shortlist option 1: **CAND-03**.
+- B-012 is resolved and CAND-03 replaces CAND-05 as the live selected target.
+- This checkpoint is not a numbered research session and adds no mathematical
+  theorem or novelty claim.
+- CAND-05 becomes historical/paused; CAND-02 remains historical/paused;
+  CAND-04 remains retired; CAND-06 and CAND-01 remain unselected alternatives.
+- Target/publication/mathematical-investigation gates are OPEN; external review
+  remains CLOSED with no confirmed reviewer.
+- S038 is READY for D37-01 only: rank-two-slice/hyperplane transfer preflight.

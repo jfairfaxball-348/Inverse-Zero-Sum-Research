@@ -786,3 +786,17 @@ While B-012 is active, `next_session` and `next_brief` are null,
 `authoritative/NEXT_SESSION_PROMPT.md` is absent. No S038 prompt or
 target-specific continuation is authorized. External review remains CLOSED and
 parallel; no reviewer status changes.
+
+
+## Post-S037 owner CAND-03 selection
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-111 | 2026-10-06 | **Resolve B-012 by selecting CAND-03**, the S037 recommended target: structurally classify all length-24 sequences over `C_3^3\{0}` with no two innerly non-zero-sum-joint short zero-sum subsequences. CAND-05 becomes historical/paused; CAND-02 remains historical/paused; CAND-04 remains retired; CAND-06 and CAND-01 remain unselected alternatives. | Explicit owner choice: “1”. |
+| D-112 | 2026-10-06 | Open CAND-03 target-specific mathematical continuation without another broad due-diligence session because S004 supplied full target-specific due diligence and S021/S037 freshly rechecked status. Schedule exactly one S038 unit, D37-01: test whether a canonical rank-two slice/hyperplane object forced by a CAND-03 extremal satisfies the exact Hui--Zhong 2026 inverse hypotheses. If not, stop rather than invent a transfer or launch enumeration. | S004/S021/S037 source record; FL-073/FL-092 anti-churn discipline. |
+
+B-012 is **RESOLVED**. Active owner blockers: **NONE**.
+
+Target and publication gates remain OPEN. Mathematical investigation is OPEN
+for S038 D37-01 only; external review remains CLOSED and parallel. No outreach
+is authorized by this target-selection decision.

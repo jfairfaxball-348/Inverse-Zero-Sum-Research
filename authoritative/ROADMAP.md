@@ -1178,3 +1178,27 @@ still leaves an operationally unspecified exceptional layer.
 No fresh positive source changed CAND-05's S036 route assessment, so it is not
 shortlisted. B-012 is active; no S038 session is scheduled until the owner
 selects CAND-03, CAND-06, or CAND-01.
+
+
+## Post-S037 route — CAND-03 selected; S038 D37-01
+
+The owner selected CAND-03. The next bounded unit is not a full classification
+attempt. S038 will normalize the exact length-24 rank-three extremal condition
+against the published rank-two inverse Narkiewicz-sense eta theorem and test
+one question only:
+
+> Does every CAND-03 extremal force a canonical rank-two subgroup, affine
+> hyperplane/slice, quotient fibre, or other source-justified rank-two object
+> whose induced sequence lies at the exact rank-two inverse threshold and
+> satisfies the published avoidance hypothesis?
+
+The preflight must distinguish restrictions, quotient projections, and
+subsequence extractions; none may be called canonical without proof. It must
+track indexed overlap in the definition of innerly non-zero-sum-joint zero
+sums. If the rank-two theorem's hypotheses fail to transfer, D37-01 stops with
+that exact obstruction. It may promote at most one structural successor and
+must not replace the failed transfer with brute-force orbit enumeration or a
+second unrelated architecture.
+
+This fixed-group/hard-stop design is the first anti-churn safeguard imported
+from CAND-02 and CAND-05.

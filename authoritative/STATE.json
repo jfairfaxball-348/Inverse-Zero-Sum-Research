@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S037",
-  "next_session": null,
-  "next_brief": null,
-  "stage": "P1_OWNER_TARGET_SELECTION_AFTER_S037_REASSESSMENT",
-  "programme_status": "S037_COMPLETED_OWNER_REPLACEMENT_SELECTION_REQUIRED",
-  "exact_target": "CAND-05 selected by owner: for every m >= 2, classify all length-(6m+1) sequences over C_2 + C_{2m} + C_{2m} with no nonempty zero-sum subsequence of length at most 2m (ordinary inverse eta at eta(G)-1)",
-  "candidate_under_due_diligence": "S037 completed. CAND-03 is recommended; CAND-06 is a viable but provisional fresh alternative; CAND-01 remains viable. CAND-05 is historical incumbent with proof paused and is not shortlisted because no fresh positive primary evidence changed S036.",
+  "next_session": "S038",
+  "next_brief": "authoritative/S038_CANDIDATE_3_RANK_THREE_SLICE_PREFLIGHT_BRIEF.md",
+  "stage": "P2_CAND03_MATHEMATICAL_INVESTIGATION_WITH_PARALLEL_EXTERNAL_REVIEW",
+  "programme_status": "S038_READY_CAND03_RANK_THREE_SLICE_PREFLIGHT",
+  "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
+  "candidate_under_due_diligence": "CAND-03 selected after S037. Full target-specific due diligence was completed in S004 and refreshed in S021/S037. Current status remains SOURCE-DEFINED / CURRENT STATUS UNKNOWN; no openness or novelty certification. S038 is the first bounded target-entry preflight.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -97,17 +97,14 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [
-    "B-012"
-  ],
+  "active_owner_blockers": [],
   "future_owner_requirements": [
-    "Select a replacement target after S037 before any target-specific continuation.",
     "Preserve and assess any substantive Xue Li reply honestly; if it identifies prior art, a known solution, material overlap, a mistaken premise, or a serious scope/significance concern, pause the affected mathematical direction and reassess it.",
     "Continue external independent review in parallel and obtain appropriate independent scrutiny of the mathematical contribution/manuscript before journal submission, subject to actual reviewer willingness and availability.",
     "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
+  "next_prompt_status": "READY",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -302,12 +299,12 @@
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
   "s001_source_refresh_date": "2026-10-02",
-  "selected_target_date": "2026-10-05",
+  "selected_target_date": "2026-10-06",
   "s002_source_refresh_date": "2026-10-02",
   "s003_source_refresh_date": "2026-10-02",
   "s004_source_refresh_date": "2026-10-02",
-  "intended_first_reviewer": "CAND-05 provisional independent route: David J. Grynkiewicz first status/proposal lead; Pingzhi Yuan strong alternative. Girard/Schmid are controlling-source experts; no CAND-05 outreach sent.",
-  "outreach_status": "NO S037 OUTREACH. Historical Xue Li CAND-02 Stage-1 message remains owner-reported SENT 2026-10-02 / REPLY PENDING; no reviewer confirmed and no status transfers.",
+  "intended_first_reviewer": "David J. Grynkiewicz remains the provisional first independent CAND-03 status/proposal lead, with Pingzhi Yuan a strong alternative; no reviewer confirmed.",
+  "outreach_status": "CAND-03 SELECTED; NO CAND-03 OUTREACH SENT. Historical Xue Li CAND-02 Stage-1 message remains owner-reported SENT 2026-10-02 / REPLY PENDING and does not transfer.",
   "s005_source_refresh_date": "2026-10-02",
   "s006_source_refresh_date": "2026-10-02",
   "s007_mathematical_investigation_date": "2026-10-03",
@@ -325,7 +322,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "CAND-05 proof continuation is paused after S036. The S030--S033 residual-shell route, D34-01 multiwise route, and S036 rejected mechanisms remain stopped. S037 will refresh CAND-03/CAND-01, benchmark the CAND-05 experience, and discover at most two genuinely new replacement candidates before returning a recommendation for explicit owner selection.",
+  "current_route_disposition": "CAND-03 selected. S038 may run only D37-01: a bounded rank-two-slice/hyperplane transfer preflight. Stop if no canonical object satisfies the exact published rank-two inverse hypotheses; do not broaden into enumeration or a multi-architecture proof programme.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -522,6 +519,9 @@
     ],
     "cand05_disposition": "Not shortlisted; historical incumbent only until explicit replacement; proof paused; no fresh positive primary evidence materially changed S036.",
     "discovery": "Admitted CAND-06 from Yiu 2026 D_4(C_5^3)=30 plus Zhong 2025 inverse D_k framework; second slot left empty.",
-    "owner_blocker": "B-012"
-  }
+    "owner_blocker": "B-012 RESOLVED by owner selection of CAND-03",
+    "owner_selection": "CAND-03"
+  },
+  "cand03_selection_date": "2026-10-06",
+  "post_s037_owner_target_choice": "B-012 option 1: select CAND-03, the recommended inverse Narkiewicz-sense eta target on C_3^3."
 }

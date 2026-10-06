@@ -17,32 +17,36 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S037 is completed. CAND-03 is the recommended replacement, with CAND-06
-(provisional) and CAND-01 as viable alternatives. B-012 is ACTIVE and requires
-the owner to select the replacement target. No S038 session or live next prompt
-exists.**
+**B-012 is RESOLVED by explicit owner selection of CAND-03. CAND-03 is now the
+selected programme target. S038 is READY for one bounded target-entry
+rank-two-slice/hyperplane preflight; no broad proof architecture is authorized.**
 
-Historical incumbent pending replacement selection:
+Selected target:
 
-> For every `m>=2`, classify every sequence over
-> `G_m=C_2\oplus C_{2m}\oplus C_{2m}` of length
-> `eta(G_m)-1=6m+1` having no nonempty zero-sum subsequence of length at
-> most `exp(G_m)=2m`.
+> Classify all sequences `S` over `C_3^3\{0}` with `|S|=24` that
+> contain no two innerly non-zero-sum-joint short zero-sum subsequences, where
+> short means length at most `3`, by a structural necessity-and-sufficiency
+> theorem.
 
-- Target gate: OPEN; CAND-05 remains formally specified until explicit owner
-  replacement, but its proof programme is paused and it is not shortlisted.
-- Publication gate: OPEN; E-JC remains the leading eligible workflow route.
-- Mathematical-investigation gate: OPEN in principle, but B-012 suppresses any
-  numbered continuation until owner target selection.
+- Target gate: OPEN.
+- Publication gate: OPEN; E-JC remains the leading eligible workflow route,
+  with JCTA a natural comparable venue for CAND-03.
+- Mathematical-investigation gate: OPEN for the bounded S038 D37-01 preflight.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
-- Active owner blocker: **B-012**.
-- Next session: NONE.
+- Active owner blockers: NONE.
+- Next session: S038, D37-01 rank-two-slice/hyperplane transfer preflight.
+- CAND-03 current status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**;
+  no bounded search non-hit is an openness or novelty certificate.
+- David J. Grynkiewicz remains the provisional first independent status/proposal
+  lead, with Pingzhi Yuan a strong alternative; no outreach is authorized by
+  target selection.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
   REPLY PENDING.
 
-S037 shortlist: **CAND-03 (recommended), CAND-06 (provisional), CAND-01**.
-CAND-02 remains historical/paused; CAND-04 remains retired; CAND-05 remains a
-stalled historical comparator rather than a live proof route.
+CAND-05 is now historical/paused rather than incumbent. Its S023--S036
+mathematics and route stops remain durable anti-churn evidence. CAND-02 remains
+historical/paused; CAND-04 remains retired; CAND-06 and CAND-01 remain
+unselected alternatives.
 
 ## Historical CAND-05 mathematical frontier (proof paused)
 
@@ -653,3 +657,19 @@ Yiu's September 2026 direct preprint plus the standard inverse `D_k` framework.
 
 The recommendation is CAND-03. B-012 is active and next-session material is
 suppressed until the owner explicitly chooses CAND-03, CAND-06, or CAND-01.
+
+
+## Post-S037 owner CAND-03 selection checkpoint
+
+On 2026-10-06 the owner chose S037 shortlist option 1, CAND-03. This resolves
+B-012 and supersedes CAND-05 as the live selected target. The choice changes
+target identity only; it does not certify openness, novelty, proof feasibility,
+reviewer willingness, or publication significance.
+
+Because CAND-03 already received full target-specific due diligence in S004 and
+fresh status reassessments in S021 and S037, S038 may begin one bounded
+mathematical/source preflight rather than repeating broad discovery. D37-01
+asks whether the exact rank-two Hui--Zhong inverse hypotheses arise on any
+canonical rank-two slice/hyperplane object forced by a CAND-03 extremal. If no
+such canonical transfer exists, stop and reassess before creating another
+proof architecture.

@@ -661,3 +661,19 @@ routes subject to a fresh conflict/current-contact check after selection.
 Xue Li's Stage-1 message remains strictly CAND-02-specific,
 owner-reported SENT 2026-10-02 / REPLY PENDING. S037 infers no willingness,
 endorsement, novelty certification, or reviewer-status transfer.
+
+
+## Post-S037 CAND-03 selection reviewer boundary
+
+CAND-03 target selection does not authorize outreach and does not confirm a
+reviewer. External-review gate remains CLOSED.
+
+David J. Grynkiewicz remains the provisional first independent
+status/proposal-review lead from the S004/S021/S037 evidence, with Pingzhi Yuan
+a strong alternative. Hui, Zhong, and authors of the defining/generalized
+Narkiewicz papers remain valuable exact-domain status experts, but their
+proximity to the baseline requires an independence/conflict assessment before
+any reviewer role.
+
+Xue Li's Stage-1 message remains CAND-02-specific and reply pending. It does
+not transfer to CAND-03.

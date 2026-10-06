@@ -586,3 +586,14 @@ submission authorization, submission, acceptance, or publication occurred.
 
 Publication gate remains OPEN as workflow eligibility only. B-012 concerns
 target identity, not submission authorization.
+
+
+## Post-S037 CAND-03 selection publication boundary
+
+CAND-03 is now selected. E-JC remains the leading eligible workflow route and
+JCTA is a natural comparable venue because it published the nearest rank-two
+Narkiewicz-sense inverse papers. This is subject fit only, not a prediction of
+significance, acceptance, or venue choice after a result exists.
+
+No manuscript, submission authorization, submission, acceptance, or
+publication exists. The publication gate remains OPEN.

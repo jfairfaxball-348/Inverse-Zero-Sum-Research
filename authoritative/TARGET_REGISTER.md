@@ -1082,3 +1082,30 @@ programme remains paused. CAND-02 remains historical/paused and CAND-04
 retired.
 
 No replacement is selected until B-012 is resolved by the owner.
+
+
+## Post-S037 selected target — CAND-03
+
+Date selected: 2026-10-06.
+
+The owner selected **CAND-03**:
+
+> Classify all sequences `S` over `C_3^3\{0}` with `|S|=24` having no
+> two innerly non-zero-sum-joint short zero-sum subsequences, where short means
+> length at most `3`.
+
+The desired contribution remains a structural necessity-and-sufficiency theorem
+with explicit support/multiplicity forms. A raw finite orbit catalogue is not
+the selected contribution. Automorphisms may be used when justified; arbitrary
+translation is not assumed because the mixed short-length condition is not
+translation invariant.
+
+Source baseline retained from S004/S021/S037:
+- `eta^N(C_3^3)=25` is established;
+- the inverse Narkiewicz-sense eta problem is completely solved in rank two;
+- exact CAND-03 current status remains **SOURCE-DEFINED / CURRENT STATUS
+  UNKNOWN**; no explicit openness certification is claimed.
+
+CAND-05 is superseded as the selected target and becomes historical/paused.
+Its mathematics remains durable programme evidence and its stopped routes must
+not be imported as CAND-03 obligations.

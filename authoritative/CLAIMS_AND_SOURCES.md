@@ -804,3 +804,11 @@ Source-check date: **2026-10-06**.
 | C-165 | SOURCE_DEFINED_CANDIDATE | CAND-06 is the standard inverse `D_4` problem for `C_5^3`: classify length-30 zero-sum sequences not partitionable into five nontrivial zero sums. | ZS-68 gives the direct value; ZS-69 gives the inverse genre. Current inverse status remains unknown. |
 | C-166 | PROGRAMME_STRATEGY_DECISION | S037 recommends CAND-03, shortlists CAND-06 provisionally and CAND-01, and does not shortlist CAND-05 because no fresh positive source materially changed S036. | Target reassessment only; no target switch, theorem, openness or novelty claim. |
 | C-167 | OWNER_BLOCKER | B-012 is active; no S038 session or next prompt exists until the owner selects CAND-03, CAND-06, or CAND-01. | D-109--D-110 and session protocol. |
+
+
+## Post-S037 owner target-selection claim
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-168 | OWNER_TARGET_SELECTION | The owner selected CAND-03 after S037. The live target is the structural inverse Narkiewicz-sense eta classification for length-24 sequences over `C_3^3\{0}`. | D-111. This is a target identity decision, not a theorem, openness/novelty certificate, reviewer endorsement, or publication claim. |
+| C-169 | PROGRAMME_ROUTE_DECISION | S038 may run D37-01 only: test exact transfer of the published rank-two inverse hypotheses to a canonical rank-two slice/hyperplane object forced by a CAND-03 extremal; if no such transfer exists, stop before a broader proof architecture. | D-112; anti-churn evidence from S020/S036/S037. |
