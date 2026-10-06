@@ -776,3 +776,17 @@ The partial Lean build is not external mathematical review. No CAND-03
 pre-submission consultation is planned. Xue Li Stage-1 remains strictly
 CAND-02-specific, owner-reported SENT 2026-10-02 / REPLY PENDING, with no
 reviewer/status transfer.
+
+
+## S047 reviewer boundary
+
+Date: 2026-10-06.
+
+No reviewer, author or status expert was contacted in S047. Confirmed CAND-03
+reviewers remain NONE and the external-review gate remains CLOSED. Under the
+owner's post-S041 decision this is not a pre-submission pipeline blocker.
+
+The S047 Lean check is not external mathematical review. Independent
+pre-submission consultation remains skipped for CAND-03. Xue Li Stage-1 remains
+strictly CAND-02-specific, owner-reported SENT 2026-10-02 / REPLY PENDING, with
+no reviewer/status transfer.
