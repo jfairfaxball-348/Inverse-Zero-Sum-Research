@@ -1554,31 +1554,26 @@ def normalizedCandidateSetT : Finset F3T :=
     normalizedCandidateSetT.card = 17 := by
   decide
 
-abbrev NormalizedCandidateT := {x : F3T // x ∈ normalizedCandidateSetT}
+def normalizedCapT (B : Finset F3T) : Finset F3T :=
+  basisSeedT ∪ B
 
-def normalizedCandidateVal : NormalizedCandidateT ↪ F3T where
-  toFun := Subtype.val
-  inj' := Subtype.val_injective
-
-def normalizedCapT (B : Finset NormalizedCandidateT) : Finset F3T :=
-  basisSeedT ∪ B.map normalizedCandidateVal
-
-/-- The 6,188 five-element subsets of the 17 normalized candidates. -/
-def normalizedFiveSetsT : Finset (Finset NormalizedCandidateT) :=
-  normalizedCandidateSetT.attach.powersetCard 5
+/-- The 6,188 raw five-element subsets of the 17 normalized candidates. -/
+def normalizedFiveSetsT : Finset (Finset F3T) :=
+  normalizedCandidateSetT.powersetCard 5
 
 /--
-A normalized five-set is bad when it completes the seed to a cap but the
+A normalized raw five-set is bad when it completes the seed to a cap but the
 resulting nine-point cap has nonzero total sum.
 -/
-def normalizedBadCompletionsT : Finset (Finset NormalizedCandidateT) :=
+def normalizedBadCompletionsT : Finset (Finset F3T) :=
   normalizedFiveSetsT.filter (fun B =>
     capPairViolationsT (normalizedCapT B) = ∅ ∧
       (∑ x ∈ normalizedCapT B, x) ≠ 0)
 
 /--
-The explicit normalized bad-completion set is empty.  This ordinary kernel
-reduction ranges only over the 6,188 five-subsets of the 17 candidate points.
+The explicit normalized bad-completion set is empty. This kernel reduction
+ranges only over the 6,188 raw five-subsets of the 17 candidate points, avoiding
+proof-carrying subtype enumeration.
 -/
 set_option maxRecDepth 10000 in
 set_option maxHeartbeats 50000000 in
@@ -1587,14 +1582,12 @@ set_option maxHeartbeats 50000000 in
   decide
 
 theorem normalized_capT_sum_zero
-    (B : Finset NormalizedCandidateT)
+    (B : Finset F3T)
+    (hsub : B ⊆ normalizedCandidateSetT)
     (hcard : B.card = 5)
     (hcap : capPairViolationsT (normalizedCapT B) = ∅) :
     (∑ x ∈ normalizedCapT B, x) = 0 := by
   by_contra hsum
-  have hsub : B ⊆ normalizedCandidateSetT.attach := by
-    intro x hx
-    simp
   have hfive : B ∈ normalizedFiveSetsT := by
     exact Finset.mem_powersetCard.mpr ⟨hsub, hcard⟩
   have hbad : B ∈ normalizedBadCompletionsT :=
@@ -2042,37 +2035,21 @@ theorem eight_support_sum_zero {A : Finset F3T}
     exact Finset.mem_filter.mpr
       ⟨Finset.mem_univ x, hxNotSeed,
         (pairCapBoolT_eq_true_iff (insert x basisSeedT)).2 hSmallCap⟩
-  let B : Finset NormalizedCandidateT :=
-    normalizedCandidateSetT.attach.filter (fun y => y.1 ∈ rest)
-  have hBMap : B.map normalizedCandidateVal = rest := by
-    ext x
-    constructor
-    · intro hx
-      obtain ⟨y, hyB, hyx⟩ := Finset.mem_map.mp hx
-      have hyRest := (Finset.mem_filter.mp hyB).2
-      simpa [normalizedCandidateVal] using hyx ▸ hyRest
-    · intro hx
-      let y : NormalizedCandidateT := ⟨x, hRestCandidate x hx⟩
-      have hyAttach : y ∈ normalizedCandidateSetT.attach := by simp
-      have hyB : y ∈ B := by
-        exact Finset.mem_filter.mpr ⟨hyAttach, hx⟩
-      exact Finset.mem_map.mpr ⟨y, hyB, rfl⟩
-  have hBCard : B.card = 5 := by
-    have hc := congrArg Finset.card hBMap
-    simp at hc
-    omega
+  have hRestSubCandidates : rest ⊆ normalizedCandidateSetT := by
+    intro x hx
+    exact hRestCandidate x hx
   have hBaseRest : basisSupportT ∪ rest = N := by
     simpa [rest] using Finset.union_sdiff_of_subset hBaseSubN
   have hSeedRest : basisSeedT ∪ rest = insert 0 N := by
     rw [basisSeedT, Finset.insert_union, hBaseRest]
-  have hNormalizedEq : normalizedCapT B = insert 0 N := by
-    simp [normalizedCapT, hBMap, hSeedRest]
-  have hNormCap : IsCapT (normalizedCapT B) := by
+  have hNormalizedEq : normalizedCapT rest = insert 0 N := by
+    simpa [normalizedCapT] using hSeedRest
+  have hNormCap : IsCapT (normalizedCapT rest) := by
     simpa [hNormalizedEq] using hCapN0
-  have hNormNoPairViol : capPairViolationsT (normalizedCapT B) = ∅ :=
-    (capPairViolationsT_eq_empty_iff (normalizedCapT B)).2 hNormCap
+  have hNormNoPairViol : capPairViolationsT (normalizedCapT rest) = ∅ :=
+    (capPairViolationsT_eq_empty_iff (normalizedCapT rest)).2 hNormCap
   have hNormalizedSum :=
-    normalized_capT_sum_zero B hBCard hNormNoPairViol
+    normalized_capT_sum_zero rest hRestSubCandidates hRestCard hNormNoPairViol
   have hNSum : (∑ x ∈ N, x) = 0 := by
     rw [hNormalizedEq] at hNormalizedSum
     simpa [hNZeroNot] using hNormalizedSum
