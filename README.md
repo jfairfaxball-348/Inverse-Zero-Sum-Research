@@ -405,3 +405,17 @@ The overall formalization remains partial. S047 is restricted to closing
 closed threshold proofs. Palomar and all publication stages remain blocked
 until `FrozenClassification` itself has a proof term and the full pinned
 checks pass.
+
+
+## S047 S039 packing-closure checkpoint
+
+S047 closes the S039 formal interface. The pinned Lean source now proves
+`s039PackingInput : S039PackingInput` by direct application of the already
+kernel-checked conditional packing theorem to the S045 and S046 threshold
+proofs. No packing architecture was reproved and no S040 representative-swap
+argument was entered.
+
+The overall formalization remains partial. The next exact obligation is
+`Length16SumZeroInput`, so S048 is restricted to that proposition.
+`FrozenClassification` still has no proof term; Palomar and all downstream
+publication stages remain blocked until the full pinned Lean proof succeeds.
