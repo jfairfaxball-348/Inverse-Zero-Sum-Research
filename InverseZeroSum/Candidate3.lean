@@ -226,11 +226,11 @@ theorem shortZero_subset_eq {n : ℕ} {S : PosSeq n}
     rcases shortZero_card_two_or_three hJ with hj | hj
   · exact Finset.eq_of_subset_of_card_le hsub (by omega)
   · have hcard : (J \ I).card = 1 := by
-      rw [Finset.card_sdiff_of_subset hsub]
+      rw [Finset.card_sdiff hsub]
       omega
     obtain ⟨k, hk⟩ := Finset.card_eq_one.mp hcard
     have hsum : posSum S I + posSum S (J \ I) = posSum S J := by
-      simp [posSum, ← Finset.sum_sdiff hsub]
+      simpa [posSum, add_comm] using (Finset.sum_sdiff hsub (f := fun i => (S i : G))).symm
     have hz : posSum S (J \ I) = 0 := by
       rw [hI.2.2, hJ.2.2] at hsum
       simpa using hsum
