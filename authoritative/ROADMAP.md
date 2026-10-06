@@ -1404,3 +1404,9 @@ This closes the first source-threshold dependency exposed by S044. The only
 promoted successor is S046/D45-01, which must prove `Eta17Input` and nothing
 further. The overall formalization stage remains PARTIAL: `FrozenClassification`
 still has no proof term, so Palomar, paper, arXiv and E-JC remain downstream.
+
+## S046 completed — positional ordinary eta-17 interface
+
+D45-01 proves `eta17Input : Eta17Input` in the pinned Lean 4.19.0 + mathlib environment. A hypothetical short-free length-17 sequence has support which, after adjoining the origin, is a cap: short-freeness excludes both opposite pairs and three-distinct-point zero sums. S045's cap theorem bounds this enlarged cap by nine points, hence the nonzero support by eight; multiplicity at most two then contradicts length 17.
+
+Both threshold inputs used by the S044 conditional packing theorem are now closed. S047/D46-01 is the sole promoted successor and is restricted to closing `S039PackingInput` from `s039PackingInput_of_thresholds`, `threeTerm19Input` and `eta17Input`. It must stop before the S040 proof spine. Palomar and all publication stages remain blocked until `FrozenClassification` itself has a proof term and the full pinned checks pass.
