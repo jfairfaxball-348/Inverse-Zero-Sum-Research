@@ -118,7 +118,25 @@ theorem s039_signature_of_arithmetic {l s r : ℕ}
     (hl : 6 ≤ l) (hs : 8 ≤ s) (hls : l ≤ s)
     (hlen : l + 2 * s + r = 24) :
     S039Signature l s r := by
-  omega
+  have hs' : s = 8 ∨ s = 9 := by omega
+  rcases hs' with hs8 | hs9
+  · subst s
+    have hl' : l = 6 ∨ l = 7 ∨ l = 8 := by omega
+    rcases hl' with hl6 | hl7 | hl8
+    · left
+      omega
+    · right
+      left
+      omega
+    · right
+      right
+      left
+      omega
+  · subst s
+    right
+    right
+    right
+    omega
 
 theorem s039_signature_s_eq_eight_or_nine {l s r : ℕ}
     (h : S039Signature l s r) : s = 8 ∨ s = 9 := by
