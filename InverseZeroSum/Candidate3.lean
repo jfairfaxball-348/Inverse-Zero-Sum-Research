@@ -313,6 +313,13 @@ theorem representativeSet_card_of_pairwise {s : ℕ}
 
 /-! ### S045: the three-term length-19 threshold -/
 
+/-- A definitionally finite model of \`C_3^3\`, used only for transparent finite checks. -/
+abbrev F3G := Fin 3 → Fin 3
+
+/-- The coordinatewise additive equivalence from the finite model to the frozen ambient group. -/
+def f3ToG : F3G ≃+ G :=
+  AddEquiv.piCongrRight (fun _ => (ZMod.finEquiv 3).toAddEquiv)
+
 /-- Coordinates on a nine-point affine plane. -/
 abbrev PlaneCoord := Fin 3 × Fin 3
 
@@ -320,68 +327,69 @@ abbrev PlaneCoord := Fin 3 × Fin 3
 abbrev PlaneIdx := Fin 13 × Fin 3
 
 /--
-An explicit parametrisation of every affine plane in \`F_3^3\`.
+An explicit parametrisation of every affine plane in the finite model.
 For directions 0--8 the normal is \`(1,a,b)\`; for 9--11 it is
 \`(0,1,b)\`; direction 12 has normal \`(0,0,1)\`.
 -/
-def planePoint (p : PlaneIdx) (q : PlaneCoord) : G :=
+def planePointF (p : PlaneIdx) (q : PlaneCoord) : F3G :=
   let d := p.1.val
-  let c : ZMod 3 := p.2.val
-  let y : ZMod 3 := q.1.val
-  let z : ZMod 3 := q.2.val
-  if d < 9 then
-    let a : ZMod 3 := d / 3
-    let b : ZMod 3 := d % 3
+  let c : Fin 3 := p.2
+  let y : Fin 3 := q.1
+  let z : Fin 3 := q.2
+  if h9 : d < 9 then
+    let a : Fin 3 := ⟨d / 3, by omega⟩
+    let b : Fin 3 := ⟨d % 3, Nat.mod_lt _ (by omega)⟩
     ![c - a * y - b * z, y, z]
-  else if d < 12 then
-    let b : ZMod 3 := d - 9
+  else if h12 : d < 12 then
+    let b : Fin 3 := ⟨d - 9, by omega⟩
     ![y, c - b * z, z]
   else
     ![y, z, c]
 
 /-- The point set of an explicitly parametrised affine plane. -/
-def planeSet (p : PlaneIdx) : Finset G :=
-  Finset.univ.image (planePoint p)
+def planeSetF (p : PlaneIdx) : Finset F3G :=
+  Finset.univ.image (planePointF p)
 
-theorem planePoint_injective :
-    ∀ p : PlaneIdx, Function.Injective (planePoint p) := by
+theorem planePointF_injective :
+    ∀ p : PlaneIdx, Function.Injective (planePointF p) := by
   decide
 
-@[simp] theorem planeSet_card (p : PlaneIdx) :
-    (planeSet p).card = 9 := by
+@[simp] theorem planeSetF_card (p : PlaneIdx) :
+    (planeSetF p).card = 9 := by
   classical
-  simp [planeSet, planePoint_injective p]
+  simpa [planeSetF] using
+    Finset.card_image_of_injective (Finset.univ : Finset PlaneCoord)
+      (planePointF_injective p)
 
 /--
-Transparent nine-point check: five points in any one of the 39 affine planes
-contain a three-point zero sum.  This is the only finite geometry check needed
-for the planar cap bound; it is reduced by the kernel through \`decide\`.
+Transparent nine-point check: five points in any one affine plane contain a
+three-point zero sum in the finite model.
 -/
-theorem plane_five_has_zero_sum :
+theorem plane_five_has_zero_sumF :
     ∀ (p : PlaneIdx) (A : Finset PlaneCoord), 5 ≤ A.card →
       ∃ I : Finset PlaneCoord,
-        I ⊆ A ∧ I.card = 3 ∧ (∑ q ∈ I, planePoint p q) = 0 := by
+        I ⊆ A ∧ I.card = 3 ∧ (∑ q ∈ I, planePointF p q) = 0 := by
   decide
 
-/-- Every point of \`F_3^3\` lies on exactly 13 of the explicit affine planes. -/
-theorem point_plane_count :
-    ∀ x : G,
-      ((Finset.univ : Finset PlaneIdx).filter (fun p => x ∈ planeSet p)).card = 13 := by
+/-- Every point of the finite model lies on exactly 13 explicit affine planes. -/
+theorem point_plane_countF :
+    ∀ x : F3G,
+      ((Finset.univ : Finset PlaneIdx).filter (fun p => x ∈ planeSetF p)).card = 13 := by
   decide
 
-/-- Every two distinct points lie on exactly four affine planes. -/
-theorem pair_plane_count :
-    ∀ x y : G, x ≠ y →
+/-- Every two distinct finite-model points lie on exactly four affine planes. -/
+theorem pair_plane_countF :
+    ∀ x y : F3G, x ≠ y →
       ((Finset.univ : Finset PlaneIdx).filter
-        (fun p => x ∈ planeSet p ∧ y ∈ planeSet p)).card = 4 := by
+        (fun p => x ∈ planeSetF p ∧ y ∈ planeSetF p)).card = 4 := by
   decide
 
-/-- Every three distinct non-collinear points lie on exactly one affine plane. -/
-theorem triple_plane_count :
-    ∀ x y z : G,
+/-- Every three distinct non-collinear finite-model points lie on exactly one affine plane. -/
+theorem triple_plane_countF :
+    ∀ x y z : F3G,
       x ≠ y → x ≠ z → y ≠ z → x + y + z ≠ 0 →
       ((Finset.univ : Finset PlaneIdx).filter
-        (fun p => x ∈ planeSet p ∧ y ∈ planeSet p ∧ z ∈ planeSet p)).card = 1 := by
+        (fun p => x ∈ planeSetF p ∧ y ∈ planeSetF p ∧ z ∈ planeSetF p)).card = 1 := by
   decide
 
 
