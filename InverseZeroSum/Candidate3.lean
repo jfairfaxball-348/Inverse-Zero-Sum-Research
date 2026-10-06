@@ -287,4 +287,76 @@ theorem s039AllBlocks_pairwiseDisjoint {S : PosSeq 24}
   exact shortZero_disjoint_of_ne hAvoid
     (mem_s039AllBlocks.mp hI) (mem_s039AllBlocks.mp hJ) hne
 
+
+/--
+One chosen representative from each pairwise-disjoint block gives exactly as
+many deleted positions as there are blocks.
+-/
+theorem representativeSet_card_of_pairwise {s : ℕ}
+    {blocks : Fin s → Finset (Fin 24)} {rep : Fin s → Fin 24}
+    (hBlocks : ∀ i j, i ≠ j → Disjoint (blocks i) (blocks j))
+    (hRep : ∀ j, rep j ∈ blocks j) :
+    (representativeSet rep).card = s := by
+  classical
+  have hInj : Function.Injective rep := by
+    intro i j hij
+    by_contra hne
+    have hDisj := hBlocks i j hne
+    have hmemj : rep i ∈ blocks j := by
+      rw [hij]
+      exact hRep j
+    exact (Finset.disjoint_left.mp hDisj) (hRep i) hmemj
+  simpa [representativeSet] using
+    Finset.card_image_of_injective (Finset.univ : Finset (Fin s)) hInj
+
+/--
+The published eta(C_3^3)=17 source interface bounds any short-free set of
+positions in a length-24 positional sequence by 16.
+-/
+theorem card_le_sixteen_of_eta17 (hEta : Eta17Input)
+    (S : PosSeq 24) {A : Finset (Fin 24)} (hFree : ShortFreeOn S A) :
+    A.card ≤ 16 := by
+  classical
+  by_contra h
+  have h17 : 17 ≤ A.card := by omega
+  let eOrder : Fin 17 ↪o Fin 24 := A.orderEmbOfCardLe h17
+  let e : Fin 17 ↪ Fin 24 := eOrder.toEmbedding
+  let R : PosSeq 17 := pullSeq S e
+  obtain ⟨I, hI⟩ := hEta R
+  have hMap : ShortZero S (I.map e) :=
+    shortZero_map_pullSeq S e hI
+  have hSub : I.map e ⊆ A := by
+    intro x hx
+    obtain ⟨i, hi, rfl⟩ := Finset.mem_map.mp hx
+    simpa [e, eOrder] using Finset.orderEmbOfCardLe_mem A h17 i
+  exact (hFree (I.map e) hSub) hMap
+
+/--
+The published three-term length-19 source interface bounds a set of positions
+with no three-term zero sum by 18.
+-/
+theorem card_le_eighteen_of_threeTerm19 (h19 : ThreeTerm19Input)
+    (S : PosSeq 24) {A : Finset (Fin 24)}
+    (hNoThree :
+      ∀ I : Finset (Fin 24), I ⊆ A → I.card = 3 → posSum S I ≠ 0) :
+    A.card ≤ 18 := by
+  classical
+  by_contra h
+  have h19le : 19 ≤ A.card := by omega
+  let eOrder : Fin 19 ↪o Fin 24 := A.orderEmbOfCardLe h19le
+  let e : Fin 19 ↪ Fin 24 := eOrder.toEmbedding
+  let R : PosSeq 19 := pullSeq S e
+  obtain ⟨I, hCard, hZero⟩ := h19 R
+  have hShort : ShortZero R I := by
+    refine ⟨Finset.card_pos.mp (by omega), by omega, hZero⟩
+  have hMap : ShortZero S (I.map e) :=
+    shortZero_map_pullSeq S e hShort
+  have hSub : I.map e ⊆ A := by
+    intro x hx
+    obtain ⟨i, hi, rfl⟩ := Finset.mem_map.mp hx
+    simpa [e, eOrder] using Finset.orderEmbOfCardLe_mem A h19le i
+  have hMapCard : (I.map e).card = 3 := by
+    simpa using hCard
+  exact (hNoThree (I.map e) hSub hMapCard) hMap.2.2
+
 end InverseZeroSum.Candidate3
