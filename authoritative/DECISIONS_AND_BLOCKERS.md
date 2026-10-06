@@ -954,3 +954,16 @@ manuscript, preprint, submission or Palomar action is authorized by S045.
 | D-138 | 2026-10-06 | Promote exactly S047/D46-01 to close `S039PackingInput` from the already checked conditional packing theorem and the two closed source interfaces. Do not enter S040, Palomar or publication stages in S046. | S046 brief success rule and owner Lean-first order. |
 
 Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical investigation is OPEN for S047/D46-01 formalization only. External review remains CLOSED and is not a CAND-03 pre-submission blocker. No outreach, manuscript, preprint, submission or Palomar action is authorized by S046.
+
+
+## S047 D46-01 formalization decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-139 | 2026-10-06 | Record D46-01 as COMPLETED: the pinned Lean project proves `s039PackingInput : S039PackingInput` by direct composition of the S044 conditional theorem with the S045/S046 closed threshold inputs. | S047 formal source and green pinned workflow validation. |
+| D-140 | 2026-10-06 | Promote exactly S048/D47-01 on `Length16SumZeroInput`, the first recorded S040 source interface after packing. Do not enter the representative-swap elimination, `Length15NonzeroInput`, `FrozenClassification`, Palomar or publication stages in S047. | S043 semantic correspondence; S047 brief success rule; owner Lean-first order. |
+
+Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical
+investigation is OPEN for S048/D47-01 formalization only. External review
+remains CLOSED and is not a CAND-03 pre-submission blocker. No outreach,
+manuscript, preprint, submission or Palomar action is authorized by S047.
