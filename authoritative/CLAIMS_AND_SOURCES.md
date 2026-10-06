@@ -854,3 +854,19 @@ Source-check date: **2026-10-06**.
 | C-178 | SOURCE_COMPARATOR_BOUNDARY | The `eta*` type formulation applies exactly to CAND-03 and preserves position labels, but it is only a re-encoding here. The checked source identifies unique factorization with the distinct `N_1/D^N` invariant, so no `N_1` normal form transfers to `eta^N` merely from `eta*=eta^N`. | ZS-72 Definition 2.3 and Lemma 2.4. |
 | C-179 | SOURCE_COMPARATOR_BOUNDARY | Gao et al. 2024 Lemma 3.13 is not applicable target-wide: it assumes the entire sequence is a product of minimal zero-sum sequences and forbids innerly joint minimal zero sums without the short-length restriction. CAND-03 forces neither stronger hypothesis. | Exact statement rechecked; no weakening is inferred. |
 | C-180 | PROGRAMME_ROUTE_DECISION | Promote S040/D39-01 only: test C-177 residuals against the exact full-rank `C_3^3` short-free statements in ZS-74. | D-117--D-118. S039 itself does not apply ZS-74 to prove further structure. |
+
+
+## S040 residual-structure source and claim additions
+
+Source-check date: **2026-10-06**.
+
+ZS-74 (Fan--Gao--Wang--Zhong--Zhuang 2012) was rechecked and applied at Property C, `eta(C_3^3)=17`, Lemma 28 and Lemma 29(1). ZS-72 (Gao--Hui--Li--Li--Qu--Zhong 2024) was rechecked at Lemma 3.3(2) for sufficiency only after the inverse necessity was established.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-181 | PROGRAMME_PROVED / LENGTH-15 RESIDUAL LEMMA | Every short-free length-15 sequence `R` over `C_3^3` has exactly eight support values with multiplicity profile `2^7 1`. If `u` is the unique singleton, then `u=-sigma(R)`. | ZS-74: multiplicity at most 2; support at most 8 follows from `eta(C_3^3)=17` by the `T^2` contradiction; duplicating the singleton gives a length-16 short-free sequence and Lemma 28. Lemma 29 gives `sigma(R)!=0`. |
+| C-182 | PROGRAMME_PROVED / SIGNATURE EXCLUSION | In every S039 `s=8` branch, the universal length-16 residual sum equation forces every packed block to be constant. Therefore the signatures `(6,8,2)` and `(7,8,1)` are impossible and the only `s=8` signature is `(8,8,0)`. | C-177 plus ZS-74 Lemma 28; comparison of two arbitrary representative choices in one packed block. |
+| C-183 | PROGRAMME_PROVED / NORMAL FORM | On the surviving `(8,8,0)` branch, `S=U^3` with `U` squarefree of length 8 and `U^2` short-free. | C-182 plus Property C; no orbit enumeration or set/cap reformulation. |
+| C-184 | PROGRAMME_PROVED / SIGNATURE EXCLUSION | The S039 signature `(6,9,0)` is impossible. A representative swap in any nonconstant packed block preserves the `2^7 1` residual profile only in two count-transition cases; one forces equality of the two selected values and the other forces every complementary representative sum to be zero. A second nonconstant 2-block contradicts the latter. | C-181 plus the S039 arbitrary-representative quantifier. The branch has three nonconstant 2-blocks. |
+| C-185 | PROGRAMME_PROVED / TARGET CLASSIFICATION | A length-24 sequence over `C_3^3\{0}` has no two innerly non-zero-sum-joint short zero-sum subsequences iff `S=U^3` for a squarefree short-free length-8 sequence `U`. | Necessity: C-182--C-184. Sufficiency: ZS-72 Lemma 3.3(2) with Property C. Internal mathematical classification only; no claim of novelty, previous openness, publication significance or independent review. |
+| C-186 | PROGRAMME_ROUTE_DECISION | Close the residual route and promote S041/D40-01 only: independently verify C-181--C-185 and run a focused primary-source/current-status overlap audit. | D39-01 closes the selected mathematical classification. No further residual variant is warranted. |
