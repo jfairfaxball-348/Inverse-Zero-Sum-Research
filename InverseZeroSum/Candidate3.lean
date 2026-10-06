@@ -500,7 +500,7 @@ def horizontalPlaneT (c : Fin 3) : PlaneIdx :=
 /-- Membership in the fixed horizontal plane is exactly third-coordinate equality. -/
 theorem on_horizontalPlaneT_iff (c : Fin 3) (x : F3T) :
     onPlaneTB (horizontalPlaneT c) x = true ↔ thirdCoordT x = c := by
-  simp [onPlaneTB, horizontalPlaneT, thirdCoordT, planeValueT]
+  norm_num [onPlaneTB, horizontalPlaneT, thirdCoordT, planeValueT]
 
 /-- One fiber of the fixed horizontal three-plane partition. -/
 def horizontalSliceT (A : Finset F3T) (c : Fin 3) : Finset F3T :=
