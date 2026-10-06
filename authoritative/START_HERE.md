@@ -40,10 +40,10 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S046/D45-01 formalization only.
+- Mathematical-investigation gate: OPEN for S047/D46-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S046 / D45-01 Eta17Input formalization.
+- Next session: S047 / D46-01 S039PackingInput closure.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
