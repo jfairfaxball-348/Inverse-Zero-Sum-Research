@@ -919,3 +919,29 @@ Date: **2026-10-06**.
 | C-196 | FORMAL_STATEMENT / SEMANTIC_ENCODING | `FrozenClassification` encodes the frozen length-24 iff theorem with explicit positional subsequences and positional intersection-sum avoidance. Commutative sequence equality `S=U^3` is represented by `IsTriplePower`: a permutation of the 24 positions identifies `S` with canonical `tripleRep U`. | `InverseZeroSum/Candidate3.lean` and S043 semantic correspondence. The proposition currently has no proof term. |
 | C-197 | FORMAL_BLOCKER | The earliest exact formal proof-spine blocker is `S039PackingInput`: construct the four-signature S039 packed short-zero-sum certificate and prove the arbitrary-representative residual is short-free for every representative choice. | S039 programme proof plus S043 certificate interface. This is a formalization gap, not a mathematical refutation. |
 | C-198 | PROGRAMME_ROUTE_DECISION | S043 closes PARTIAL and promotes only S044/D43-01 on `S039PackingInput`. Palomar remains blocked until `FrozenClassification` itself is proved and the complete pinned checks pass. | D42-01 stop rule and owner order Lean -> Palomar -> paper -> arXiv -> E-JC. |
+
+
+### S044-F1 — kernel-checked conditional S039 packing theorem
+
+**Claim.** In the pinned Lean project,
+`s039PackingInput_of_thresholds : ThreeTerm19Input -> Eta17Input -> S039PackingInput`
+is proved without unchecked placeholders. It constructs the exact four S039
+signatures and proves the universal arbitrary-representative short-free
+residual property.
+
+**Source/status.** This is a formalization of the already-checked S039 use of
+Gao--Hui--Li--Li--Qu--Zhong 2024 Lemma 3.3(3) and its recorded threshold
+inputs. It is a programme formalization result, not a new literature-status or
+novelty claim. The closed threshold propositions are not thereby proved.
+
+### S044-F2 — earliest remaining formal source interface
+
+**Claim.** The first missing closed proof term on the S039 formal spine is
+`ThreeTerm19Input`, expressing that every length-19 nonzero positional
+sequence over `C_3^3` contains a three-term zero sum. The checked S039 source
+record attributes this to the exponent-three `s(C_3^3)=19` architecture;
+there is no proved declaration for this interface in the current repository or
+pinned mathlib dependency.
+
+**Status.** Formalization blocker only. This does not question the checked
+published mathematical statement and does not establish novelty/open status.
