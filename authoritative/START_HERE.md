@@ -17,13 +17,15 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S043 is PARTIAL and S044 is READY. CAND-03 remains selected. The exact
+**S044 is PARTIAL and S045 is READY. CAND-03 remains selected. The exact
 classification is internally proved and independently reverified. S042 found
 no exact/equivalent/stronger-implying prior art in the documented deep audit.
-S043 encoded the exact positional theorem in a pinned Lean 4.19.0 + mathlib
-project and clean-built the current formal source, but the final classification
-still has no proof term. The earliest exact formal blocker is
-`S039PackingInput`. Palomar remains blocked.**
+S044 kernel-checks the complete S039 packing construction conditional on the
+recorded source thresholds, including the exact four signatures and universal
+arbitrary-representative residual property. The single earliest exact formal
+blocker is now `ThreeTerm19Input`; `Eta17Input` is downstream.
+`FrozenClassification` still has no proof term, so Palomar remains
+blocked.**
 
 Selected target:
 
@@ -38,7 +40,7 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S044/D43-01 formalization only.
+- Mathematical-investigation gate: OPEN for S045/D44-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
 - Next session: S044 / D43-01 S039 packing formalization.
@@ -817,3 +819,13 @@ residual property.
 S044/D43-01 is restricted to that blocker. Palomar registration, paper
 drafting, arXiv and E-JC remain downstream and unavailable until the complete
 Lean theorem is proved and the pinned checks pass.
+
+
+## S044 partial Lean packing checkpoint
+
+S044/D43-01 kernel-checks the S039 packing architecture through
+`s039PackingInput_of_thresholds : ThreeTerm19Input -> Eta17Input -> S039PackingInput`.
+The proof constructs exactly the four S039 signatures and proves the universal
+arbitrary-representative residual property. The first closed proof term still
+missing is `ThreeTerm19Input`; S045 is restricted to that source threshold.
+No Palomar or publication-stage action is authorized.
