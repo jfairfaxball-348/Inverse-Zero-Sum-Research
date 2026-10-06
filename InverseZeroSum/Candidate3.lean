@@ -1836,4 +1836,94 @@ theorem eight_support_sum_zero {A : Finset F3T}
   apply e.symm.injective
   simpa [hMapSum] using hNSum
 
+
+theorem length16SumZeroInput : Length16SumZeroInput := by
+  classical
+  intro R hFree
+  let f : Fin 16 → F3T := tupleValueT R
+  let support : Finset F3T := tupleSupportT R
+  have hSupportLe : support.card ≤ 8 := by
+    simpa [support] using tupleSupportT_card_le_eight R hFree
+  have hFiber :
+      ∀ x ∈ support,
+        ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = x)).card ≤ 2 := by
+    simpa [support, f] using tupleFiberT_card_le_two R hFree
+  have hMaps :
+      ∀ i ∈ (Finset.univ : Finset (Fin 16)), f i ∈ support := by
+    intro i hi
+    change f i ∈ (Finset.univ : Finset (Fin 16)).image f
+    exact Finset.mem_image.mpr ⟨i, hi, rfl⟩
+  have hBound :=
+    Finset.card_le_mul_card_image_of_maps_to hMaps 2 hFiber
+  have hBound' : 16 ≤ 2 * support.card := by
+    simpa [support, f] using hBound
+  have hSupportCard : support.card = 8 := by
+    omega
+  have hFiberEq :
+      ∀ x ∈ support,
+        ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = x)).card = 2 := by
+    intro x hx
+    have hxle := hFiber x hx
+    have hCount :
+        16 =
+          ∑ y ∈ support,
+            ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = y)).card := by
+      simpa using
+        (Finset.card_eq_sum_card_fiberwise
+          (f := f) (s := (Finset.univ : Finset (Fin 16)))
+          (t := support) hMaps)
+    have hEraseCard : (support.erase x).card = 7 := by
+      rw [Finset.card_erase_of_mem hx, hSupportCard]
+    have hOther :
+        (∑ y ∈ support.erase x,
+          ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = y)).card) ≤ 14 := by
+      calc
+        (∑ y ∈ support.erase x,
+          ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = y)).card)
+            ≤ ∑ _y ∈ support.erase x, 2 := by
+              exact Finset.sum_le_sum
+                (fun y hy => hFiber y (Finset.mem_of_mem_erase hy))
+        _ = 14 := by simp [hEraseCard]
+    have hSplit :
+        (∑ y ∈ support,
+          ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = y)).card) =
+          (∑ y ∈ support.erase x,
+            ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = y)).card) +
+          ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = x)).card := by
+      exact (Finset.sum_erase_add support
+        (fun y =>
+          ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = y)).card)
+        hx).symm
+    by_contra hne
+    have hxone :
+        ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = x)).card ≤ 1 := by
+      omega
+    rw [hSplit] at hCount
+    omega
+  have hZeroNot : (0 : F3T) ∉ support := by
+    simpa [support] using zero_not_mem_tupleSupportT R
+  have hCap0 : IsCapT (insert 0 support) := by
+    simpa [support] using insert_zero_tupleSupportT_isCap R hFree
+  have hSupportSum : (∑ x ∈ support, x) = 0 :=
+    eight_support_sum_zero hSupportCard hZeroNot hCap0
+  have hTupleSum : (∑ i : Fin 16, f i) = 0 := by
+    calc
+      (∑ i : Fin 16, f i) =
+          ∑ x ∈ support,
+            ((Finset.univ : Finset (Fin 16)).filter (fun i => f i = x)).card • x := by
+              simpa [support] using
+                (Finset.sum_comp
+                  (s := (Finset.univ : Finset (Fin 16)))
+                  (f := fun x : F3T => x) (g := f))
+      _ = ∑ x ∈ support, 2 • x := by
+        apply Finset.sum_congr rfl
+        intro x hx
+        rw [hFiberEq x hx]
+      _ = 2 • (∑ x ∈ support, x) := by
+        rw [Finset.sum_nsmul]
+      _ = 0 := by rw [hSupportSum]; simp
+  have hMappedTotal : finiteModelEquiv (totalSum R) = 0 := by
+    simpa [totalSum, posSum, f, tupleValueT] using hTupleSum
+  exact finiteModelEquiv.injective (by simpa using hMappedTotal)
+
 end InverseZeroSum.Candidate3
