@@ -84,6 +84,51 @@ This is a proposition to be proved, not an assumed axiom.
 def Length15NonzeroInput : Prop :=
   ∀ R : PosSeq 15, ShortFree R → totalSum R ≠ 0
 
+/-- Short-freeness restricted to an explicit set of surviving positions. -/
+def ShortFreeOn {n : ℕ} (S : PosSeq n) (A : Finset (Fin n)) : Prop :=
+  ∀ I : Finset (Fin n), I ⊆ A → ¬ ShortZero S I
+
+/-- The four packing signatures proved in S039. -/
+def S039Signature (l s r : ℕ) : Prop :=
+  (l = 6 ∧ s = 8 ∧ r = 2) ∨
+  (l = 7 ∧ s = 8 ∧ r = 1) ∨
+  (l = 8 ∧ s = 8 ∧ r = 0) ∨
+  (l = 6 ∧ s = 9 ∧ r = 0)
+
+/-- Union of all packed position blocks. -/
+def blockUnion {s : ℕ} (blocks : Fin s → Finset (Fin 24)) : Finset (Fin 24) :=
+  Finset.univ.biUnion blocks
+
+/-- The set of one selected representative position from each packed block. -/
+def representativeSet {s : ℕ} (rep : Fin s → Fin 24) : Finset (Fin 24) :=
+  Finset.univ.image rep
+
+/--
+Data-level form of the S039 packed-atom output used by S040.  It keeps the
+arbitrary-representative quantifier explicit and positional.
+-/
+structure S039PackingCertificate (S : PosSeq 24) where
+  s : ℕ
+  l : ℕ
+  r : ℕ
+  signature : S039Signature l s r
+  blocks : Fin s → Finset (Fin 24)
+  block_shortZero : ∀ j, ShortZero S (blocks j)
+  pairwise_disjoint : ∀ i j, i ≠ j → Disjoint (blocks i) (blocks j)
+  block_card : ∀ j, (blocks j).card = (if j.val < l then 3 else 2)
+  remainder_card : (Finset.univ \ blockUnion blocks).card = r
+  every_representative_residual_shortFree :
+    ∀ rep : Fin s → Fin 24,
+      (∀ j, rep j ∈ blocks j) →
+      ShortFreeOn S (Finset.univ \ representativeSet rep)
+
+/--
+Exact first unresolved programme-proof interface: formalize the S039 packing
+certificate for every target-avoiding length-24 sequence.
+-/
+def S039PackingInput : Prop :=
+  ∀ S : PosSeq 24, AvoidsInnerJointPair S → Nonempty (S039PackingCertificate S)
+
 @[simp] theorem baseIndex_val (i : Fin 24) :
     (baseIndex i).val = i.val % 8 := rfl
 
