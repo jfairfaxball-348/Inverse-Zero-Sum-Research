@@ -703,3 +703,17 @@ acceptance or publication exists. The publication gate remains OPEN only as
 workflow eligibility. The order Lean -> Palomar -> paper -> arXiv -> E-JC is
 unchanged, and Palomar remains blocked until the complete pinned Lean proof
 passes.
+
+
+## S047 publication boundary
+
+Date: 2026-10-06.
+
+S047 closes the formal S039 packing interface only. The overall Lean stage
+remains **PARTIAL** because `FrozenClassification` has no proof term; the next
+formal obligation is `Length16SumZeroInput`.
+
+No Palomar registration, manuscript, arXiv preprint, E-JC submission,
+acceptance or publication exists. The publication gate remains OPEN only as
+workflow eligibility. The owner-authorized order Lean -> Palomar -> paper ->
+arXiv -> E-JC is unchanged.
