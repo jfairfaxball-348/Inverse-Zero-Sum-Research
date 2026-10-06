@@ -614,6 +614,7 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
   have hRcard : Rset.card = 8 := by
     dsimp [Rset]
     rw [Finset.card_sdiff_of_subset hPsubA, hcard, hPcard]
+    norm_num
   let T : Finset PlaneIdx :=
     Finset.univ.filter
       (fun p => onPlaneTB p a = true ∧ onPlaneTB p b = true)
@@ -656,10 +657,9 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
       ext x
       simp [Rset, P, and_assoc, and_left_comm, and_comm]
     have hAH3 : (A ∩ planeSetT H).card ≤ 3 := by
-      simpa [H] using hc_le3
-        |> fun h => (by
-          rw [horizontalSliceT_eq_inter A c] at h
-          exact h)
+      have h := hc_le3
+      rw [horizontalSliceT_eq_inter A c] at h
+      simpa [H] using h
     rw [heqH, Finset.card_sdiff_of_subset hPsubH, hPcard]
     omega
   have hRsubset :
@@ -676,6 +676,7 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
     (Finset.card_le_card hRsubset).trans Finset.card_biUnion_le
   have hTEraseCard : (T.erase H).card = 3 := by
     rw [Finset.card_erase_of_mem hHT, hTcard]
+    norm_num
   have hOther :
       (∑ p ∈ T.erase H, (Rset ∩ planeSetT p).card) ≤ 6 := by
     calc
