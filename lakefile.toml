@@ -1,0 +1,11 @@
+name = "InverseZeroSum"
+version = "0.1.0"
+defaultTargets = ["InverseZeroSum"]
+
+[[lean_lib]]
+name = "InverseZeroSum"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.19.0"
