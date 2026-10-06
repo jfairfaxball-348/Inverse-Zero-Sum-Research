@@ -2069,10 +2069,10 @@ theorem eight_support_sum_zero {A : Finset F3T}
     simp [normalizedCapT, hBMap, hSeedRest]
   have hNormCap : IsCapT (normalizedCapT B) := by
     simpa [hNormalizedEq] using hCapN0
-  have hNormNoViol : pairCapBoolT (normalizedCapT B) = true :=
-    (capViolationsT_eq_empty_iff (normalizedCapT B)).2 hNormCap
+  have hNormNoPairViol : capPairViolationsT (normalizedCapT B) = ∅ :=
+    (capPairViolationsT_eq_empty_iff (normalizedCapT B)).2 hNormCap
   have hNormalizedSum :=
-    normalized_capT_sum_zero B hBCard hNormNoViol
+    normalized_capT_sum_zero B hBCard hNormNoPairViol
   have hNSum : (∑ x ∈ N, x) = 0 := by
     rw [hNormalizedEq] at hNormalizedSum
     simpa [hNZeroNot] using hNormalizedSum
