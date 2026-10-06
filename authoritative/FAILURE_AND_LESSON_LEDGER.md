@@ -280,3 +280,11 @@ arguments. Retired routes are not silently revived without new information.
 | --- | --- | --- | --- | --- |
 | FL-096 | 2026-10-06 | A direct threshold proof can look useful only for its terminal contradiction or lower-bound construction. Here the inequality chain in Lemma 3.3(3) remains informative one term below threshold and yields a rigid four-signature packing constraint before any classification is known. | Inspect equality and near-equality bookkeeping in a direct proof before discarding it as non-inverse machinery; distinguish source implications from the new programme deduction. | S039 D38-01 / C-176--C-177 |
 | FL-097 | 2026-10-06 | Exact notation equivalence can tempt an invalid structural transfer. Although `eta*=eta^N`, the same source assigns unique factorization to `N_1/D^N`, not to `eta*`; treating a tagged-type encoding as an inverse normal form would conflate invariants. | Track which factorization invariant each theorem controls and require an exact implication to the target, not shared terminology. Stronger unrestricted-inner-joint atom lemmas likewise cannot be weakened to the short condition without proof. | S039 D38-01 / C-178--C-179 |
+
+
+## S040 residual-structure lessons
+
+| ID | Date | Failed route / risk | Required response | Origin |
+| --- | --- | --- | --- | --- |
+| FL-098 | 2026-10-06 | Applying a residual theorem to one arbitrary representative choice can miss the decisive rigidity. Here the theorem becomes much stronger when its conclusion is required for **every** representative transversal: one-position swaps force equality of packed values or exact singleton motion. | Preserve universal-choice quantifiers before normalizing or selecting convenient representatives. Compare adjacent transversals at the sequence-multiplicity level. | S040 C-182/C-184 |
+| FL-099 | 2026-10-06 | A published lower-bound construction can become the correct sufficiency half of a classification after necessity is proved, but using it earlier as if it were inverse structure would reverse the logical direction. | Prove necessity independently; only then invoke the checked construction for the converse. Keep novelty/status separate from the internal iff theorem. | S040 C-185 / D-120 |
