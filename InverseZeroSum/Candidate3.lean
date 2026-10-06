@@ -1573,8 +1573,8 @@ resulting nine-point cap has nonzero total sum.
 -/
 def normalizedBadCompletionsT : Finset (Finset NormalizedCandidateT) :=
   normalizedFiveSetsT.filter (fun B =>
-    (∑ x ∈ normalizedCapT B, x) ≠ 0 ∧
-      pairCapBoolT (normalizedCapT B) = true)
+    capPairViolationsT (normalizedCapT B) = ∅ ∧
+      (∑ x ∈ normalizedCapT B, x) ≠ 0)
 
 /--
 The explicit normalized bad-completion set is empty.  This ordinary kernel
@@ -1589,7 +1589,7 @@ set_option maxHeartbeats 50000000 in
 theorem normalized_capT_sum_zero
     (B : Finset NormalizedCandidateT)
     (hcard : B.card = 5)
-    (hcap : pairCapBoolT (normalizedCapT B) = true) :
+    (hcap : capPairViolationsT (normalizedCapT B) = ∅) :
     (∑ x ∈ normalizedCapT B, x) = 0 := by
   by_contra hsum
   have hsub : B ⊆ normalizedCandidateSetT.attach := by
@@ -1598,7 +1598,7 @@ theorem normalized_capT_sum_zero
   have hfive : B ∈ normalizedFiveSetsT := by
     exact Finset.mem_powersetCard.mpr ⟨hsub, hcard⟩
   have hbad : B ∈ normalizedBadCompletionsT :=
-    Finset.mem_filter.mpr ⟨hfive, hsum, hcap⟩
+    Finset.mem_filter.mpr ⟨hfive, hcap, hsum⟩
   rw [normalizedBadCompletionsT_empty] at hbad
   simpa using hbad
 
