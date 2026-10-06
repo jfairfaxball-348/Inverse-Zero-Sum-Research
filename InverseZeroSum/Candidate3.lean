@@ -390,9 +390,10 @@ theorem s039PackingInput_of_thresholds
     simpa [P] using hB
 
   have hPCardSplit : l + t = P.card := by
-    simpa [l, t, P3, P2] using
-      (Finset.card_filter_add_card_filter_not
-        (s := P) (p := fun B : Finset (Fin 24) => B.card = 3))
+    have h :=
+      Finset.sum_filter_add_sum_filter_not P
+        (fun B : Finset (Fin 24) => B.card = 3) (fun _ => (1 : ℕ))
+    simpa [l, t, P3, P2] using h
 
   have hPCard : P.card = s := by
     dsimp [s]
@@ -457,10 +458,11 @@ theorem s039PackingInput_of_thresholds
     omega
 
   -- The three-block residual used for the source bound l ≥ 6.
-  let b3 : Fin l → Finset (Fin 24) := P3.orderEmbOfFin rfl
+  let b3 : Fin l → Finset (Fin 24) :=
+    fun i => (P3.equivFin.symm i).1
   have hb3Mem : ∀ i, b3 i ∈ P3 := by
     intro i
-    exact P3.orderEmbOfFin_mem rfl i
+    exact (P3.equivFin.symm i).2
   have hb3Short : ∀ i, ShortZero S (b3 i) := by
     intro i
     exact hP3Short (b3 i) (hb3Mem i)
@@ -472,7 +474,10 @@ theorem s039PackingInput_of_thresholds
     intro i j hij
     apply shortZero_disjoint_of_ne hAvoid (hb3Short i) (hb3Short j)
     intro hBlocksEq
-    exact hij ((P3.orderEmbOfFin rfl).injective hBlocksEq)
+    apply hij
+    apply (P3.equivFin.symm).injective
+    apply Subtype.ext
+    exact hBlocksEq
 
   let rep3 : Fin l → Fin 24 :=
     fun i => Classical.choose (hb3Short i).1
@@ -484,7 +489,8 @@ theorem s039PackingInput_of_thresholds
 
   let A3 : Finset (Fin 24) := Finset.univ \ representativeSet rep3
   have hA3Card : A3.card = 24 - l := by
-    rw [A3, Finset.card_sdiff (Finset.subset_univ _), hrep3Card]
+    dsimp [A3]
+    rw [Finset.card_sdiff (Finset.subset_univ _), hrep3Card]
     simp
 
   have hNoThreeA3 :
@@ -495,9 +501,9 @@ theorem s039PackingInput_of_thresholds
       refine ⟨Finset.card_pos.mp (by omega), by omega, hJZero⟩
     have hJP3 : J ∈ P3 := by
       simp [P3, P, hJShort, hJCard]
-    have hRange : J ∈ Set.range (P3.orderEmbOfFin rfl) := by
-      simpa using hJP3
-    obtain ⟨i, hi⟩ := hRange
+    let i : Fin l := P3.equivFin ⟨J, hJP3⟩
+    have hi : b3 i = J := by
+      simp [b3, i]
     have hrepInJ : rep3 i ∈ J := by
       rw [← hi]
       exact hrep3 i
@@ -512,10 +518,11 @@ theorem s039PackingInput_of_thresholds
     omega
 
   -- The all-block residual used for the source bound s ≥ 8.
-  let bAll : Fin P.card → Finset (Fin 24) := P.orderEmbOfFin rfl
+  let bAll : Fin P.card → Finset (Fin 24) :=
+    fun i => (P.equivFin.symm i).1
   have hbAllMem : ∀ i, bAll i ∈ P := by
     intro i
-    exact P.orderEmbOfFin_mem rfl i
+    exact (P.equivFin.symm i).2
   have hbAllShort : ∀ i, ShortZero S (bAll i) := by
     intro i
     exact hPShort (bAll i) (hbAllMem i)
@@ -524,7 +531,10 @@ theorem s039PackingInput_of_thresholds
     intro i j hij
     apply shortZero_disjoint_of_ne hAvoid (hbAllShort i) (hbAllShort j)
     intro hBlocksEq
-    exact hij ((P.orderEmbOfFin rfl).injective hBlocksEq)
+    apply hij
+    apply (P.equivFin.symm).injective
+    apply Subtype.ext
+    exact hBlocksEq
 
   let repAll : Fin P.card → Fin 24 :=
     fun i => Classical.choose (hbAllShort i).1
@@ -536,16 +546,17 @@ theorem s039PackingInput_of_thresholds
 
   let AAll : Finset (Fin 24) := Finset.univ \ representativeSet repAll
   have hAAllCard : AAll.card = 24 - P.card := by
-    rw [AAll, Finset.card_sdiff (Finset.subset_univ _), hrepAllCard]
+    dsimp [AAll]
+    rw [Finset.card_sdiff (Finset.subset_univ _), hrepAllCard]
     simp
 
   have hAAllFree : ShortFreeOn S AAll := by
     intro J hJA hJShort
     have hJP : J ∈ P := by
       simpa [P] using hJShort
-    have hRange : J ∈ Set.range (P.orderEmbOfFin rfl) := by
-      simpa using hJP
-    obtain ⟨i, hi⟩ := hRange
+    let i : Fin P.card := P.equivFin ⟨J, hJP⟩
+    have hi : bAll i = J := by
+      simp [bAll, i]
     have hrepInJ : repAll i ∈ J := by
       rw [← hi]
       exact hrepAll i
@@ -565,10 +576,11 @@ theorem s039PackingInput_of_thresholds
 
   -- Enumerate three-blocks first and two-blocks second for the exact S039
   -- certificate interface.
-  let b2 : Fin t → Finset (Fin 24) := P2.orderEmbOfFin rfl
+  let b2 : Fin t → Finset (Fin 24) :=
+    fun i => (P2.equivFin.symm i).1
   have hb2Mem : ∀ i, b2 i ∈ P2 := by
     intro i
-    exact P2.orderEmbOfFin_mem rfl i
+    exact (P2.equivFin.symm i).2
   have hb2Short : ∀ i, ShortZero S (b2 i) := by
     intro i
     exact hP2Short (b2 i) (hb2Mem i)
@@ -604,7 +616,10 @@ theorem s039PackingInput_of_thresholds
     · obtain ⟨j' | j', rfl⟩ := finSumFinEquiv.surjective j
       · have hEq : b3 i' = b3 j' := by
           simpa [blocks] using hij
-        have hij' := (P3.orderEmbOfFin rfl).injective hEq
+        have hij' : i' = j' := by
+          apply (P3.equivFin.symm).injective
+          apply Subtype.ext
+          exact hEq
         subst j'
         rfl
       · have hCardEq := congrArg Finset.card hij
@@ -618,7 +633,10 @@ theorem s039PackingInput_of_thresholds
         simp [blocks, hi2, hj3] at hCardEq
       · have hEq : b2 i' = b2 j' := by
           simpa [blocks] using hij
-        have hij' := (P2.orderEmbOfFin rfl).injective hEq
+        have hij' : i' = j' := by
+          apply (P2.equivFin.symm).injective
+          apply Subtype.ext
+          exact hEq
         subst j'
         rfl
 
@@ -644,18 +662,14 @@ theorem s039PackingInput_of_thresholds
     by_cases hThree : B.card = 3
     · have hBP3 : B ∈ P3 := by
         simp [P3, hBP, hThree]
-      have hRange : B ∈ Set.range (P3.orderEmbOfFin rfl) := by
-        simpa using hBP3
-      obtain ⟨i, hi⟩ := hRange
+      let i : Fin l := P3.equivFin ⟨B, hBP3⟩
       refine ⟨Fin.castAdd t i, ?_⟩
-      simpa [blocks, s, b3] using hi
+      simp [blocks, s, b3, i]
     · have hBP2 : B ∈ P2 := by
         simp [P2, hBP, hThree]
-      have hRange : B ∈ Set.range (P2.orderEmbOfFin rfl) := by
-        simpa using hBP2
-      obtain ⟨i, hi⟩ := hRange
+      let i : Fin t := P2.equivFin ⟨B, hBP2⟩
       refine ⟨Fin.natAdd l i, ?_⟩
-      simpa [blocks, s, b2] using hi
+      simp [blocks, s, b2, i]
 
   have hBlockUnion : blockUnion blocks = U := by
     ext x
