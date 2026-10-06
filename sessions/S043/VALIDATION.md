@@ -5,7 +5,7 @@ Date: 2026-10-06.
 ## Formal checks
 
 The project is checked on a clean GitHub Actions Ubuntu runner using the pinned
-`lean-toolchain` and exact mathlib commit.
+`lean-toolchain` and exact mathlib commit; the generated `lake-manifest.json` is committed to pin the resolved dependency graph.
 
 Observed clean-run facts during S043:
 
@@ -14,7 +14,9 @@ Observed clean-run facts during S043:
   `c44e0c8ee63ca166450922a373c7409c5d26b00b`, which is now pinned directly.
 - `lake exe cache get` completed.
 - `lake build` built `InverseZeroSum.Candidate3` and `InverseZeroSum`
-  successfully after the S039 interface was added.
+  successfully after the S039 interface, corrected `S=U^3` permutation semantics,
+  signature arithmetic theorem, direct-threshold proposition and short-zero
+  cardinality lemma were added.
 - The placeholder scan is configured to fail on `sorry`, `admit` or
   `axiom` in Lean source. Early failures were comment-only false positives;
   those words were removed from explanatory Lean comments without changing any
