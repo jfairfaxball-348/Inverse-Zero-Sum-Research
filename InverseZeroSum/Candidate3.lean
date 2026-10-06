@@ -326,6 +326,20 @@ abbrev PlaneCoord := Fin 3 × Fin 3
 /-- The 39 affine planes of \`F_3^3\`: 13 directions and three cosets each. -/
 abbrev PlaneIdx := Fin 13 × Fin 3
 
+/-- The explicit affine-plane equation for one of the 39 planes. -/
+def onPlaneF (p : PlaneIdx) (x : F3G) : Prop :=
+  let d := p.1.val
+  let c : Fin 3 := p.2
+  if h9 : d < 9 then
+    let a : Fin 3 := ⟨d / 3, by omega⟩
+    let b : Fin 3 := ⟨d % 3, Nat.mod_lt _ (by omega)⟩
+    x 0 + a * x 1 + b * x 2 = c
+  else if h12 : d < 12 then
+    let b : Fin 3 := ⟨d - 9, by omega⟩
+    x 1 + b * x 2 = c
+  else
+    x 2 = c
+
 /--
 An explicit parametrisation of every affine plane in the finite model.
 For directions 0--8 the normal is \`(1,a,b)\`; for 9--11 it is
@@ -346,18 +360,27 @@ def planePointF (p : PlaneIdx) (q : PlaneCoord) : F3G :=
   else
     ![y, z, c]
 
-/-- The point set of an explicitly parametrised affine plane. -/
+/-- The point set of an explicitly indexed affine plane. -/
 def planeSetF (p : PlaneIdx) : Finset F3G :=
-  Finset.univ.image (planePointF p)
+  Finset.univ.filter (onPlaneF p)
 
+set_option maxRecDepth 10000 in
 theorem planePointF_injective :
     ∀ p : PlaneIdx, Function.Injective (planePointF p) := by
+  decide
+
+set_option maxRecDepth 10000 in
+set_option maxHeartbeats 1000000 in
+theorem planeSetF_eq_image :
+    ∀ p : PlaneIdx,
+      planeSetF p = Finset.univ.image (planePointF p) := by
   decide
 
 @[simp] theorem planeSetF_card (p : PlaneIdx) :
     (planeSetF p).card = 9 := by
   classical
-  simpa [planeSetF] using
+  rw [planeSetF_eq_image p]
+  simpa using
     Finset.card_image_of_injective (Finset.univ : Finset PlaneCoord)
       (planePointF_injective p)
 
@@ -365,6 +388,8 @@ theorem planePointF_injective :
 Transparent nine-point check: five points in any one affine plane contain a
 three-point zero sum in the finite model.
 -/
+set_option maxRecDepth 20000 in
+set_option maxHeartbeats 3000000 in
 theorem plane_five_has_zero_sumF :
     ∀ (p : PlaneIdx) (A : Finset PlaneCoord), 5 ≤ A.card →
       ∃ I : Finset PlaneCoord,
@@ -372,24 +397,30 @@ theorem plane_five_has_zero_sumF :
   decide
 
 /-- Every point of the finite model lies on exactly 13 explicit affine planes. -/
+set_option maxRecDepth 10000 in
+set_option maxHeartbeats 1000000 in
 theorem point_plane_countF :
     ∀ x : F3G,
-      ((Finset.univ : Finset PlaneIdx).filter (fun p => x ∈ planeSetF p)).card = 13 := by
+      ((Finset.univ : Finset PlaneIdx).filter (fun p => onPlaneF p x)).card = 13 := by
   decide
 
 /-- Every two distinct finite-model points lie on exactly four affine planes. -/
+set_option maxRecDepth 10000 in
+set_option maxHeartbeats 3000000 in
 theorem pair_plane_countF :
     ∀ x y : F3G, x ≠ y →
       ((Finset.univ : Finset PlaneIdx).filter
-        (fun p => x ∈ planeSetF p ∧ y ∈ planeSetF p)).card = 4 := by
+        (fun p => onPlaneF p x ∧ onPlaneF p y)).card = 4 := by
   decide
 
 /-- Every three distinct non-collinear finite-model points lie on exactly one affine plane. -/
+set_option maxRecDepth 10000 in
+set_option maxHeartbeats 5000000 in
 theorem triple_plane_countF :
     ∀ x y z : F3G,
       x ≠ y → x ≠ z → y ≠ z → x + y + z ≠ 0 →
       ((Finset.univ : Finset PlaneIdx).filter
-        (fun p => x ∈ planeSetF p ∧ y ∈ planeSetF p ∧ z ∈ planeSetF p)).card = 1 := by
+        (fun p => onPlaneF p x ∧ onPlaneF p y ∧ onPlaneF p z)).card = 1 := by
   decide
 
 
