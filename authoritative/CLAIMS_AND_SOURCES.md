@@ -891,3 +891,19 @@ Source-check date: **2026-10-06**.
 | C-190 | SOURCE_STATUS_BOUNDARY | The bounded S041 audit located substantial exact source overlap in ingredients but no checked source-stated or later theorem supplying the exact C_3^3 length-24 iff classification. The defining 2024 U^3 construction supplies sufficiency; ZS-74 supplies residual structure; ZS-75--ZS-79 and ZS-73 do not subsume the rank-three target at their checked interfaces. | Search/current-source non-hit is explicitly non-certifying: no claim of novelty, prior openness, significance, exhaustiveness or publication readiness. |
 | C-191 | PROGRAMME_ROUTE_DECISION | D40-01 closes with no S042 successor. The classification remains internally verified; mathematical investigation is CLOSED until an exact owner-authorized dependency exists. | D-122--D-124. External review remains CLOSED and separate; no outreach/manuscript/submission action. |
 
+
+
+## S042 deep prior-art source and claim additions
+
+Source-check date: **2026-10-06**.
+
+| ID | Source | Exact boundary |
+| --- | --- | --- |
+| ZS-80 | W. D. Gao, R. Thangadurai, *On the structure of sequences with forbidden zero-sum subsequences*, Colloq. Math. 98 (2003), 213--222, DOI 10.4064/cm98-2-7 | Ordinary short-zero-sum-free longest-sequence structure for `n=3^a,d=3`; PA-INGREDIENT for CAND-03 because invariant and extremal length differ. |
+| ZS-81 | Y. Edel, C. Elsholtz, A. Geroldinger, S. Kubertin, L. Rackham, *Zero-sum problems in finite abelian groups and affine caps*, Q. J. Math. 58 (2007), 159--186, DOI 10.1093/qmath/ham003 | Lemma 5.4 includes affine-cap uniqueness for `AG(3,3)`; zero-sum/cap correspondence identifies the squarefree core geometry, but not length-24 multiplicity rigidity. PA-INGREDIENT only. |
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-192 | SOURCE_STATUS_BOUNDARY / DEEP_AUDIT | **No exact/equivalent/stronger-implying prior art located in the documented deep audit.** No PA-EXACT, PA-EQUIV or PA-STRONGER candidate survived primary-statement checking and no unresolved high-probability target-specific lead remains. | S042 search/audit/source records. Finite search non-hit, not a logical novelty/open/significance proof. |
+| C-193 | SOURCE_EQUIVALENCE_BOUNDARY | A squarefree short-free length-8 core `U\subset C_3^3\setminus{0}` corresponds to a 9-cap `U\cup{0}` in `AG(3,3)`, but affine-cap classification does not imply the target sequence-level necessity `S=U^3`. | ZS-81 plus characteristic-3 line/zero-sum correspondence. Used only to reject PA-EQUIV/PA-STRONGER status for the geometric route. |
+| C-194 | PROGRAMME_ROUTE_DECISION | Clean D41-01 status promotes S043/D42-01 exact Lean formalization as the sole successor. | D-128--D-131. Lean verification validates the encoded theorem only and does not establish literature novelty. |

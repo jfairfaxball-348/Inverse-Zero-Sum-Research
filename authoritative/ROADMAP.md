@@ -1336,3 +1336,12 @@ submission. Independent pre-submission external reviewer/consultation is
 deliberately skipped for CAND-03. The external-review gate stays CLOSED but is
 not a blocker for this route. E-JC's ordinary editorial/referee process is the
 planned journal peer-review mechanism.
+
+
+## S042 completed — deep prior-art/status audit
+
+D41-01 closes with: **no exact/equivalent/stronger-implying prior art located in the documented deep audit**. No PA-EXACT, PA-EQUIV or PA-STRONGER theorem was verified and no unresolved high-probability target-specific lead remains.
+
+The defining/direct 2024 paper, 2012 full-rank source, older Narkiewicz line, 2024--2026 rank-two inverse line, Gao--Thangadurai ordinary rank-three structure and affine-cap literature are proper ingredients at the checked interfaces. Factorization, adjacent-invariant, current-preprint, thesis/institutional and non-English routes produced no checked stronger overlap. This is a documented search non-hit, not a proof of novelty, previous openness or significance.
+
+S043/D42-01 is the sole promoted stage: formalize the frozen iff theorem exactly in Lean with a pinned reproducible toolchain and explicit semantic correspondence. If formalization succeeds, only then recheck Palomar requirements. Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.

@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S041",
-  "next_session": "S042",
-  "next_brief": "authoritative/S042_CANDIDATE_3_DEEP_PRIOR_ART_AUDIT_BRIEF.md",
-  "stage": "P2_CAND03_DEEP_PRIOR_ART_AUDIT_READY",
-  "programme_status": "S042_READY_D41_01_DEEP_SYSTEMATIC_PRIOR_ART_STATUS_AUDIT",
+  "last_completed_session": "S042",
+  "next_session": "S043",
+  "next_brief": "authoritative/S043_CANDIDATE_3_LEAN_FORMALIZATION_BRIEF.md",
+  "stage": "P3_CAND03_LEAN_FORMALIZATION_READY",
+  "programme_status": "S043_READY_D42_01_EXACT_LEAN_FORMALIZATION",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 is internally classified and independently reverified within the programme: every target sequence is exactly U^3 with U squarefree short-free of length 8. S041 supplied only a focused bounded overlap audit. S042 is authorized as a deep systematic prior-art/status audit before formalization or publication positioning. Failure to locate prior art remains a documented non-hit, not a logical proof of novelty.",
+  "candidate_under_due_diligence": "CAND-03 is internally proved and independently reverified. S042 completed a deep systematic prior-art audit with no exact/equivalent/stronger-implying prior art located in the documented deep audit and no unresolved high-risk lead. This is not a logical novelty/open-problem proof. The owner-authorized next stage is exact Lean formalization before Palomar, paper, arXiv or E-JC.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -108,11 +108,11 @@
   "confirmed_reviewers": [],
   "active_owner_blockers": [],
   "future_owner_requirements": [
-    "Preserve and assess any substantive Xue Li reply honestly; if it identifies prior art, a known solution, material overlap, a mistaken premise, or a serious scope/significance concern, pause the affected mathematical direction and reassess it.",
-    "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
-    "Treat S042 non-hits conservatively: report no exact/equivalent/stronger-implying prior art located after the documented deep audit, not an absolute proof of novelty or prior openness.",
-    "If S042 finds exact/equivalent/stronger-implying prior art or an unresolved high-risk primary-source lead, stop the publication pipeline and reassess.",
-    "If S042 clears the defined audit, proceed in order: Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC submission, rechecking each external service's current requirements at execution."
+    "Preserve and assess any substantive Xue Li reply honestly; it remains CAND-02-specific and does not transfer reviewer or status authority to CAND-03.",
+    "Treat the S042 deep non-hit conservatively: it supports the authorized workflow transition but is not an absolute proof of novelty or prior openness.",
+    "Complete and pin the exact CAND-03 Lean formalization before Palomar registration. If formalization exposes a semantic/proof defect, stop downstream progression and reconcile it.",
+    "After Lean succeeds, recheck then-current Palomar requirements before registering the pinned verified result.",
+    "Proceed only in the owner-authorized order: Lean formalization -> Palomar registration -> paper drafting -> arXiv preprint -> E-JC submission."
   ],
   "next_prompt_status": "READY",
   "session_checkpoints": [
@@ -325,6 +325,11 @@
       "id": "S041",
       "status": "COMPLETED",
       "record": "sessions/S041/CLOSEOUT.md"
+    },
+    {
+      "id": "S042",
+      "status": "COMPLETED",
+      "record": "sessions/S042/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -338,7 +343,7 @@
   "s005_source_refresh_date": "2026-10-02",
   "s006_source_refresh_date": "2026-10-02",
   "s007_mathematical_investigation_date": "2026-10-03",
-  "mathematical_investigation_gate": "CLOSED",
+  "mathematical_investigation_gate": "OPEN",
   "gate_semantics": {
     "target_gate": "OPEN means the exact mathematical target and contribution scope are owner-authorized and source-disciplined.",
     "publication_gate": "OPEN means at least one relevant substantive-AI-compatible journal route has been verified; it is not submission approval or an acceptance prediction.",
@@ -352,7 +357,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S042/D41-01 is the sole next stage: a deep primary-source prior-art audit for exact, equivalent, stronger-implying and alternate-formulation overlap. If no such prior art and no unresolved high-risk lead remains, proceed in owner-authorized order: Lean formalization, Palomar registration, paper, arXiv, E-JC submission. Independent pre-submission external reviewer/consultation is explicitly skipped for CAND-03; E-JC's ordinary editorial/referee process is the planned journal review.",
+  "current_route_disposition": "S042/D41-01 closed cleanly under its search taxonomy: no exact/equivalent/stronger-implying prior art was located in the documented deep audit and no unresolved high-risk lead remains. This is a search-status boundary, not a novelty proof. S043/D42-01 is the sole next stage: exact Lean formalization of the frozen CAND-03 theorem. Only after a pinned successful formalization may the programme recheck Palomar requirements and proceed with registration, then paper, arXiv and E-JC.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -581,5 +586,7 @@
     "external_pre_submission_review": "SKIPPED_BY_OWNER",
     "journal_peer_review": "E-JC ordinary editorial/referee process",
     "status_boundary": "A deep search non-hit supports workflow progression but is not itself a proof of novelty."
-  }
+  },
+  "s042_source_refresh_date": "2026-10-06",
+  "cand03_deep_prior_art_status": "NO EXACT/EQUIVALENT/STRONGER-IMPLYING PRIOR ART LOCATED IN THE DOCUMENTED DEEP AUDIT. This is a documented search non-hit, not a logical proof of novelty, previous openness, significance or exhaustive absence."
 }

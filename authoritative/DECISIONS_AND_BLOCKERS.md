@@ -894,3 +894,15 @@ Active owner blockers: **NONE**. No outreach, manuscript, submission or reviewer
 Active owner blockers: **NONE**. S042 is READY. These decisions do not claim
 novelty, prior openness, journal acceptance, or that a literature search can
 prove absence of prior art.
+
+
+## S042 D41-01 deep prior-art decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-128 | 2026-10-06 | Record D41-01 with the exact status **no exact/equivalent/stronger-implying prior art located in the documented deep audit**. | S042 systematic primary-source audit; no PA-EXACT, PA-EQUIV or PA-STRONGER candidate survived checking. |
+| D-129 | 2026-10-06 | Treat the defining/direct, ordinary short-zero-sum, rank-two inverse and affine-cap sources as PA-INGREDIENT only at their checked interfaces. | The cap equivalence reaches the squarefree core, not the length-24 multiplicity-three necessity. |
+| D-130 | 2026-10-06 | No high-probability unresolved target-specific primary-source lead remains; grey-literature metadata stays PA-MENTION. | Thesis/institutional/author searches plus current 2026 same-line status literature. |
+| D-131 | 2026-10-06 | Promote S043/D42-01 only: exact Lean formalization of the frozen theorem, with the mathematical-investigation gate OPEN for that formalization. | D-126 owner roadmap plus clean S042 stop rule. |
+
+Active owner blockers: **NONE**. No manuscript, preprint, submission or CAND-03 outreach is authorized by S042.

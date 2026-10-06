@@ -1218,3 +1218,18 @@ A clean S042 result means only that no exact/equivalent/stronger-implying prior
 art was located within the documented deep audit and no unresolved high-risk
 lead remains. It does not logically prove novelty or prior openness. Under that
 boundary the target proceeds to Lean formalization.
+
+
+## S042 CAND-03 deep prior-art boundary
+
+Date: 2026-10-06.
+
+CAND-03 remains selected and its theorem remains **PROGRAMME-PROVED AND INTERNALLY REVERIFIED FROM CHECKED SOURCE INPUTS**. D41-01 adds only this literature-status boundary:
+
+> **no exact/equivalent/stronger-implying prior art located in the documented deep audit.**
+
+No PA-EXACT, PA-EQUIV or PA-STRONGER source was verified and no unresolved high-probability target-specific source lead remains. This does not logically prove novelty, previous openness, publication significance or exhaustive absence.
+
+The closest finite-geometric equivalence is only at the core level: squarefree short-free length-8 `U` corresponds after adjoining 0 to a 9-cap in `AG(3,3)`. Cap classification does not force an arbitrary target length-24 sequence to have multiplicity three on such a core, so it is not an equivalent or stronger CAND-03 theorem.
+
+S043 is exact Lean formalization. The theorem itself stays frozen; no new mathematical architecture is authorized.

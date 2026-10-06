@@ -753,3 +753,12 @@ consultation. A future owner instruction may change this policy.
 
 Xue Li Stage-1 remains strictly CAND-02-specific, owner-reported SENT
 2026-10-02 / REPLY PENDING, and has no CAND-03 reviewer or status role.
+
+
+## S042 reviewer boundary
+
+Date: 2026-10-06.
+
+No reviewer, author or status expert was contacted in S042. The audit used public literature and bibliographic/institutional sources only. Confirmed CAND-03 reviewers remain NONE and external-review gate remains CLOSED, but under the owner's post-S041 decision this is not a blocker for the ordered CAND-03 pipeline.
+
+No CAND-03 pre-submission external consultation is planned. Xue Li Stage-1 remains strictly CAND-02-specific, owner-reported SENT 2026-10-02 / REPLY PENDING, with no reviewer/status transfer.

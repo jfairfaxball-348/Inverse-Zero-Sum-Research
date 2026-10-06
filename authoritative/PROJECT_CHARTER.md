@@ -73,3 +73,10 @@ the owner reports that the Xue Li Stage-1 message was sent; reply, willingness
 and substantive external assessment remain pending. Under D-030 this does not
 block mathematical investigation. Adverse substantive feedback must be
 incorporated honestly and may pause the affected direction.
+
+
+## CAND-03-specific post-S041 review-route supersession
+
+Date: 2026-10-06.
+
+For CAND-03 only, the owner explicitly supersedes the charter's generic preference for separate independent pre-submission review: no such reviewer/consultation stage is required or planned. The ordered route after a clean S042 prior-art audit is Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC submission. This does not weaken the distinction between machine/formal verification and journal peer review: E-JC's ordinary editorial/referee process remains the planned genuine journal-review stage. Xue Li's pending CAND-02 message has no CAND-03 role.

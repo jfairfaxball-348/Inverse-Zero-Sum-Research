@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-03 deep prior-art/status audit. S041 independently reverified the exact internal classification `S=U^3`, with `U` squarefree short-free of length 8. S042 is READY for a deep systematic prior-art audit before formalization or publication positioning.**
+**Current stage: CAND-03 Lean formalization. S042 completed the deep systematic prior-art audit with no exact/equivalent/stronger-implying prior art located in the documented audit; this is a search non-hit, not a novelty proof. S043 is READY to formalize the frozen `S=U^3` classification in Lean.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -13,15 +13,15 @@ authority; conversation history is not the project state.
 A numbered session runs one bounded task autonomously, validates and
 checkpoints useful work, then automatically provides a close report.
 
-**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S042 is the live literature/status continuation.
+**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S043 is the live Lean-formalization continuation.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-03 is selected at the exact length-24 structural inverse Narkiewicz-sense eta scope.
-2. Publication gate — OPEN: E-JC is the intended journal if S042 clears the prior-art dependency.
-3. Mathematical-investigation gate — CLOSED: no further proof search is authorized; S042 is literature/status work only.
+2. Publication gate — OPEN: S042 cleared the defined prior-art dependency only in the documented-search sense; E-JC remains the intended journal after the ordered verification/preprint stages.
+3. Mathematical-investigation gate — OPEN for S043/D42-01 exact Lean formalization only; the mathematical theorem itself remains frozen and no new proof architecture is authorized.
 4. External-review gate — CLOSED and not a CAND-03 pre-submission blocker: the owner explicitly skips independent reviewer/consultation. Lean/Palomar verification and E-JC's ordinary editorial/referee process are the planned verification/review path.
-5. Conditional roadmap after a clean S042 audit — Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC submission.
+5. Ordered roadmap — Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC submission.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
 intact, S011's local-hole/capacity exchange route remains stopped, and S012's
@@ -345,3 +345,8 @@ No S042 successor is scheduled. Mathematical investigation is closed at this
 verified boundary; external review remains closed and no outreach, manuscript
 or submission action was taken.
 
+
+
+## S042 deep prior-art checkpoint
+
+S042 completed D41-01. The exact status is: **no exact/equivalent/stronger-implying prior art located in the documented deep audit.** Serious overlaps were ingredients only, and no unresolved high-probability lead remains. This is not a logical novelty/open-problem/significance certificate. Per the owner roadmap, S043 is the exact Lean formalization stage. No manuscript, preprint, submission or outreach occurred in S042.

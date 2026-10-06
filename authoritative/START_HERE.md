@@ -17,12 +17,12 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S041 is COMPLETED and S042 is READY. CAND-03 remains the selected target.
-The exact classification is internally proved and independently reverified:
-a target sequence is exactly `S=U^3` with `U` squarefree short-free of
-length 8. S041's literature work was deliberately focused and bounded, so the
-next dependency is a deep systematic prior-art/status audit, not more proof
-search.**
+**S042 is COMPLETED and S043 is READY. CAND-03 remains selected. The exact
+classification is internally proved and independently reverified. D41-01 found
+no exact/equivalent/stronger-implying prior art in the documented deep audit
+and left no unresolved high-risk lead. This is a search-status non-hit, not a
+logical novelty/open-problem proof. The next authorized stage is exact Lean
+formalization.**
 
 Selected target:
 
@@ -31,26 +31,22 @@ Selected target:
 > short means length at most `3`, by a structural necessity-and-sufficiency
 > theorem.
 
+Frozen classification: exactly `S=U^3` with `U` squarefree short-free of
+length 8.
+
 - Target gate: OPEN.
-- Publication gate: OPEN as workflow eligibility; E-JC is the intended journal
-  if the prior-art audit clears.
-- Mathematical-investigation gate: CLOSED. S042 is literature/status work only.
-- External-review gate: CLOSED and **not a CAND-03 pre-submission blocker**.
-  The owner explicitly elected to skip independent reviewer/consultation and
-  rely on Lean/Palomar verification followed by E-JC's ordinary peer review.
+- Publication gate: OPEN as workflow eligibility; E-JC remains intended after
+  the ordered verification/preprint stages.
+- Mathematical-investigation gate: OPEN for S043/D42-01 formalization only.
+- External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S042 / D41-01 deep systematic prior-art audit.
+- Next session: S043 / D42-01 exact Lean formalization.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
-- A search non-hit must be reported as a documented non-hit, not as a logical
-  novelty or openness proof.
-- If S042 finds no exact/equivalent/stronger-implying prior art and no
-  unresolved high-risk lead, the owner-authorized downstream sequence is:
-  **Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC
-  submission**.
-- If S042 finds a collision or serious unresolved lead, that downstream route
-  pauses for reassessment.
-- Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
-  REPLY PENDING, with no status transfer to CAND-03.
+- S042 status: **no exact/equivalent/stronger-implying prior art located in the
+  documented deep audit**; this is not a proof of novelty or prior openness.
+- Ordered route: **Lean formalization -> Palomar registration -> paper ->
+  arXiv -> E-JC submission**.
+- Xue Li Stage-1 remains CAND-02-specific, reply pending, with no transfer.
 
 CAND-05 and CAND-02 remain historical/paused; CAND-04 remains retired;
 CAND-06 and CAND-01 remain unselected alternatives.
