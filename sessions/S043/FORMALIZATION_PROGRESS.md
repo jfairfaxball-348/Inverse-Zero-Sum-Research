@@ -21,9 +21,11 @@ A minimal Lean 4 + mathlib project now exists with the environment pinned to:
 - the positional intersection sum and exact two-witness avoidance relation;
 - positional triple repetition `U^3`;
 - the exact frozen iff proposition `FrozenClassification`;
-- the three exact 2012 residual/source obligations used by S040/S041;
+- the exact direct/source obligations used by S039--S041: `ThreeTerm19Input`, `Eta17Input`, `Length16SumZeroInput`, and `Length15NonzeroInput`;
 - the four S039 signatures and a positional `S039PackingCertificate` retaining
   the arbitrary-representative residual quantifier;
+- a kernel-checked `s039_signature_of_arithmetic` theorem proving the four-signature list from `l≥6`, `s≥8`, `l≤s` and `l+2s+r=24`;
+- `shortZero_card_two_or_three`, excluding singleton witnesses from the nonzero alphabet;
 - the exact outstanding proposition `S039PackingInput`;
 - the elementary theorem `singleton_not_shortZero`.
 
