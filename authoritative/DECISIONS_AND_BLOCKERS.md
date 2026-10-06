@@ -906,3 +906,15 @@ prove absence of prior art.
 | D-131 | 2026-10-06 | Promote S043/D42-01 only: exact Lean formalization of the frozen theorem, with the mathematical-investigation gate OPEN for that formalization. | D-126 owner roadmap plus clean S042 stop rule. |
 
 Active owner blockers: **NONE**. No manuscript, preprint, submission or CAND-03 outreach is authorized by S042.
+
+
+## S043 D42-01 formalization decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-132 | 2026-10-06 | Close S043/D42-01 **PARTIAL**. Preserve the clean-building exact positional Lean foundation rather than bypass the missing proof spine with an assumption or opaque catalogue. | S043 formal source, semantic correspondence and validation. |
+| D-133 | 2026-10-06 | Record `S039PackingInput` as the single earliest exact formal blocker. Palomar is not authorized while `FrozenClassification` lacks a proof term. | S043 proof-dependency correspondence; owner Lean-first order. |
+| D-134 | 2026-10-06 | Promote S044/D43-01 only: formalize the S039 four-signature packed-atom certificate and universal arbitrary-representative short-free residual property, stopping before S040 elimination. | D42-01 partial stop rule and anti-scope-creep boundary. |
+
+Active owner blockers: **NONE**. No manuscript, Palomar registration, preprint,
+submission or outreach is authorized by S043.
