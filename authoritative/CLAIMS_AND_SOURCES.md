@@ -907,3 +907,15 @@ Source-check date: **2026-10-06**.
 | C-192 | SOURCE_STATUS_BOUNDARY / DEEP_AUDIT | **No exact/equivalent/stronger-implying prior art located in the documented deep audit.** No PA-EXACT, PA-EQUIV or PA-STRONGER candidate survived primary-statement checking and no unresolved high-probability target-specific lead remains. | S042 search/audit/source records. Finite search non-hit, not a logical novelty/open/significance proof. |
 | C-193 | SOURCE_EQUIVALENCE_BOUNDARY | A squarefree short-free length-8 core `U\subset C_3^3\setminus{0}` corresponds to a 9-cap `U\cup{0}` in `AG(3,3)`, but affine-cap classification does not imply the target sequence-level necessity `S=U^3`. | ZS-81 plus characteristic-3 line/zero-sum correspondence. Used only to reject PA-EQUIV/PA-STRONGER status for the geometric route. |
 | C-194 | PROGRAMME_ROUTE_DECISION | Clean D41-01 status promotes S043/D42-01 exact Lean formalization as the sole successor. | D-128--D-131. Lean verification validates the encoded theorem only and does not establish literature novelty. |
+
+
+## S043 formalization claim additions
+
+Date: **2026-10-06**.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-195 | FORMAL_ENVIRONMENT | The CAND-03 Lean environment is pinned to Lean 4.19.0 (release commit `6caaee842e94`) and mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`; the current formal source clean-builds. | S043 workflow/build logs and project files. This validates elaborated proved declarations only. |
+| C-196 | FORMAL_STATEMENT / SEMANTIC_ENCODING | `FrozenClassification` encodes the frozen length-24 iff theorem with explicit positional subsequences and positional intersection-sum avoidance; `U^3` is encoded by positional triple repetition. | `InverseZeroSum/Candidate3.lean` and S043 semantic correspondence. The proposition currently has no proof term. |
+| C-197 | FORMAL_BLOCKER | The earliest exact formal proof-spine blocker is `S039PackingInput`: construct the four-signature S039 packed short-zero-sum certificate and prove the arbitrary-representative residual is short-free for every representative choice. | S039 programme proof plus S043 certificate interface. This is a formalization gap, not a mathematical refutation. |
+| C-198 | PROGRAMME_ROUTE_DECISION | S043 closes PARTIAL and promotes only S044/D43-01 on `S039PackingInput`. Palomar remains blocked until `FrozenClassification` itself is proved and the complete pinned checks pass. | D42-01 stop rule and owner order Lean -> Palomar -> paper -> arXiv -> E-JC. |
