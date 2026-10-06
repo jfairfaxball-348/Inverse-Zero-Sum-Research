@@ -201,4 +201,44 @@ theorem shortZero_card_two_or_three {n : ℕ} {S : PosSeq n}
     exact singleton_not_shortZero S i h
   omega
 
+
+/-- Pull a positional sequence back along an injective map of positions. -/
+def pullSeq {m n : ℕ} (S : PosSeq n) (e : Fin m ↪ Fin n) : PosSeq m :=
+  fun i => S (e i)
+
+/-- A short zero sum survives transport along an injective map of positions. -/
+theorem shortZero_map_pullSeq {m n : ℕ} (S : PosSeq n) (e : Fin m ↪ Fin n)
+    {I : Finset (Fin m)} (h : ShortZero (pullSeq S e) I) :
+    ShortZero S (I.map e) := by
+  classical
+  simpa [ShortZero, posSum, pullSeq] using h
+
+/--
+Over the nonzero alphabet in exponent three, a short zero-sum positional block
+has no proper nonempty zero-sum subblock.  This is the minimality fact used by
+the packed-atom source proof.
+-/
+theorem shortZero_subset_eq {n : ℕ} {S : PosSeq n}
+    {I J : Finset (Fin n)} (hI : ShortZero S I) (hJ : ShortZero S J)
+    (hsub : I ⊆ J) : I = J := by
+  classical
+  rcases shortZero_card_two_or_three hI with hi | hi <;>
+    rcases shortZero_card_two_or_three hJ with hj | hj
+  · exact Finset.eq_of_subset_of_card_le hsub (by omega)
+  · have hcard : (J \ I).card = 1 := by
+      rw [Finset.card_sdiff_of_subset hsub]
+      omega
+    obtain ⟨k, hk⟩ := Finset.card_eq_one.mp hcard
+    have hsum : posSum S I + posSum S (J \ I) = posSum S J := by
+      simp [posSum, ← Finset.sum_sdiff hsub]
+    have hz : posSum S (J \ I) = 0 := by
+      rw [hI.2.2, hJ.2.2] at hsum
+      simpa using hsum
+    apply False.elim
+    apply singleton_not_shortZero S k
+    refine ⟨by simp, by simp, ?_⟩
+    simpa [hk] using hz
+  · exact Finset.eq_of_subset_of_card_le hsub (by omega)
+  · exact Finset.eq_of_subset_of_card_le hsub (by omega)
+
 end InverseZeroSum.Candidate3
