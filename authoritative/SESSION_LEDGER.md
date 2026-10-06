@@ -836,6 +836,7 @@ computation remain CLOSED.
 | --- | --- | --- | --- | --- |
 | S043 | PARTIAL D42-01 EXACT LEAN STATEMENT/POSITIONAL FOUNDATION; FIRST FORMAL BLOCKER IS S039 PACKING | 6a608c12ac25321dacf217989233ea7273a9bbeb | Pinned Lean/mathlib project; exact positional theorem proposition; S039 certificate interface; clean build; semantic correspondence/trust boundary | [S043 closeout](../sessions/S043/CLOSEOUT.md) |
 | S044 | PARTIAL | c6fbe94627bafcf73dc04eda7a799e645481f4d7 | Kernel-checked S039 packing construction conditional on ThreeTerm19Input and Eta17Input; exact four signatures and universal representative residual proved; ThreeTerm19Input is the single earliest formal blocker | [S044 closeout](../sessions/S044/CLOSEOUT.md) |
+| S045 | COMPLETED D44-01 THREE-TERM-19 FORMALIZATION | 446ac0d1830691cd0ea27d8fd39c48a35bb789fa | Kernel-checked `threeTerm19Input : ThreeTerm19Input` via explicit affine-plane cap geometry and multiplicity counting; `Eta17Input` is the next exact formal blocker | [S045 closeout](../sessions/S045/CLOSEOUT.md) |
 
 - Live `main` exactly matched the supplied S042 checkpoint and S043 was unique.
 - No prior Lean infrastructure existed, so the brief's minimal-project fallback was used.
@@ -858,3 +859,11 @@ recorded thresholds are supplied, and every representative transversal leaves
 a short-free residual. The source thresholds themselves are not inserted as
 assumptions. The first missing closed proof term is `ThreeTerm19Input`.
 S045/D44-01 is restricted to that proposition; `Eta17Input` is downstream.
+
+
+## S045 completed formal threshold checkpoint
+
+D44-01 closes `ThreeTerm19Input` without importing the published numerical
+threshold as an axiom. S046/D45-01 is the sole promoted successor and is
+restricted to `Eta17Input`. Palomar remains blocked on the full
+`FrozenClassification` proof term.

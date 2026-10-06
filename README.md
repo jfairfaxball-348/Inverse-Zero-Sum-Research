@@ -376,3 +376,17 @@ opaque catalogue or unchecked source theorem is used. The single earliest
 formal blocker is now `ThreeTerm19Input`, so S045 targets only that published
 length-19 threshold interface. Palomar and all publication stages remain
 blocked until the complete frozen classification has a proof term.
+
+
+## S045 ThreeTerm19 formalization checkpoint
+
+S045 closes the first source-threshold proof obligation exposed by S044. The
+pinned Lean source now proves `threeTerm19Input : ThreeTerm19Input`: every
+length-19 positional sequence over `C_3^3` has a three-position zero sum.
+The proof uses explicit finite affine-plane geometry and multiplicity counting,
+not an assumed numerical threshold or opaque catalogue.
+
+The overall formalization remains partial. `Eta17Input` is now the single
+earliest blocker, so S046 is restricted to that proposition. Palomar and all
+publication stages remain blocked until `FrozenClassification` itself has a
+proof term and the full pinned checks pass.

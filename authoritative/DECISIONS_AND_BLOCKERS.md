@@ -932,3 +932,16 @@ or imported assumption.
 Decision: promote exactly S045/D44-01 to formalize `ThreeTerm19Input` in the
 pinned project. `Eta17Input` remains downstream and is not co-promoted.
 Palomar and publication stages remain blocked on the complete Lean theorem.
+
+
+## S045 D44-01 formalization decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-135 | 2026-10-06 | Record D44-01 as COMPLETED: the pinned Lean project proves `threeTerm19Input : ThreeTerm19Input` without assuming Property D, the numerical `s(C_3^3)=19` threshold, an unchecked postulate or an opaque orbit catalogue. | S045 formal source and green pinned workflow validation. |
+| D-136 | 2026-10-06 | Promote exactly S046/D45-01 on `Eta17Input`. Do not resume the S039 packing proof, enter S040, recheck/register Palomar, or begin publication stages in S045. | S045 brief success rule and owner Lean-first order. |
+
+Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical
+investigation is OPEN for S046/D45-01 formalization only. External review
+remains CLOSED and is not a CAND-03 pre-submission blocker. No outreach,
+manuscript, preprint, submission or Palomar action is authorized by S045.

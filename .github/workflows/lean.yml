@@ -15,6 +15,7 @@ on:
       - "authoritative/**"
       - "sessions/S044/**"
       - "sessions/S045/**"
+      - "sessions/S046/**"
       - ".github/workflows/lean.yml"
   push:
     branches: [main]
@@ -27,6 +28,7 @@ on:
       - "authoritative/**"
       - "sessions/S044/**"
       - "sessions/S045/**"
+      - "sessions/S046/**"
       - ".github/workflows/lean.yml"
 
 jobs:

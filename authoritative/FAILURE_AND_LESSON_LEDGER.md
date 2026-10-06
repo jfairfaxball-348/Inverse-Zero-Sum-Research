@@ -356,3 +356,19 @@ Do not hide a published threshold inside a larger assumed theorem, and do not
 mistake the absence of its proof term for a defect in the downstream packing
 logic. After S044 the earliest exact gap is `ThreeTerm19Input`; the later
 `Eta17Input` must remain downstream until that first gap is discharged.
+
+
+## S045 formalization lesson
+
+### FL-103 — Prefer a small structural finite certificate to a global finite search
+
+The first attempts to kernel-reduce the full affine-incidence statement in one
+large `decide` call exceeded practical reduction limits. Splitting the proof
+into a nine-point plane cap check, explicit line/plane incidence facts and an
+ordinary cover/counting argument made the same finite mathematics both
+transparent and buildable.
+
+**Lesson:** when formalizing a published small-group threshold, finite
+computation is acceptable only with a sharply bounded evidentiary role. Factor
+the argument into structural lemmas and small kernel-reduced checks rather than
+replacing the theorem by a global catalogue or hidden native oracle.

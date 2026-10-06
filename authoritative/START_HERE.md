@@ -17,13 +17,14 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S044 is PARTIAL and S045 is READY. CAND-03 remains selected. The exact
+**S045 is COMPLETED and S046 is READY. CAND-03 remains selected. The exact
 classification is internally proved and independently reverified. S042 found
 no exact/equivalent/stronger-implying prior art in the documented deep audit.
 S044 kernel-checks the complete S039 packing construction conditional on the
-recorded source thresholds, including the exact four signatures and universal
-arbitrary-representative residual property. The single earliest exact formal
-blocker is now `ThreeTerm19Input`; `Eta17Input` is downstream.
+recorded source thresholds. S045 now kernel-checks
+`threeTerm19Input : ThreeTerm19Input`, the exact positional
+`s(C_3^3)=19` consequence, by a transparent finite affine-geometry proof.
+The single earliest formal blocker is now `Eta17Input`.
 `FrozenClassification` still has no proof term, so Palomar remains
 blocked.**
 
@@ -40,10 +41,10 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S045/D44-01 formalization only.
+- Mathematical-investigation gate: OPEN for S046/D45-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S045 / D44-01 ThreeTerm19Input formalization.
+- Next session: S046 / D45-01 Eta17Input formalization.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
@@ -829,3 +830,19 @@ The proof constructs exactly the four S039 signatures and proves the universal
 arbitrary-representative residual property. The first closed proof term still
 missing is `ThreeTerm19Input`; S045 is restricted to that source threshold.
 No Palomar or publication-stage action is authorized.
+
+
+## S045 completed — ThreeTerm19Input formalization
+
+S045/D44-01 proves the existing closed proposition
+`threeTerm19Input : ThreeTerm19Input` in the pinned Lean project. The proof
+uses an explicit finite tuple model of `C_3^3`, transparent affine-plane
+checks, a structural proof that every cap has at most nine points, and the
+fact that a three-term-zero-sum-free length-19 sequence would have every value
+with multiplicity at most two. Hence its support would have at least ten
+points, contradicting the cap bound.
+
+No `s(C_3^3)=19` axiom, Property-D axiom, `native_decide`, opaque orbit
+catalogue or unchecked theorem is introduced. The next and only promoted
+formal unit is S046/D45-01 on `Eta17Input`. Palomar and all publication stages
+remain blocked until the complete frozen classification has a proof term.

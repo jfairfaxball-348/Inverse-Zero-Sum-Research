@@ -1276,3 +1276,23 @@ longer the packing architecture itself; it is the missing closed proof term for
 
 Formalization status: **PARTIAL**. Palomar status:
 **BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
+
+
+## S045 CAND-03 ThreeTerm19 formalization boundary
+
+Date: 2026-10-06.
+
+The selected target and frozen iff statement are unchanged. D44-01 proves
+`threeTerm19Input : ThreeTerm19Input`, the exact positional consequence used
+by the S039 packing proof: every length-19 positional sequence has a
+three-position zero-sum set.
+
+The Lean proof does not assume Property D or `s(C_3^3)=19`. It proves the
+required interface directly through explicit finite affine-plane geometry: a
+cap in `F_3^3` has at most nine points, while absence of a three-position zero
+sum bounds each value multiplicity by two, forcing at least ten support values
+at length 19.
+
+Formalization status remains **PARTIAL**. The next exact blocker is
+`Eta17Input`. Palomar status remains **BLOCKED UNTIL THE FULL FROZEN
+CLASSIFICATION HAS A LEAN PROOF TERM**.

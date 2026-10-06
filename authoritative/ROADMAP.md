@@ -1389,3 +1389,18 @@ The single earliest exact blocker is now `ThreeTerm19Input`, the positional
 formal source obligation. S045/D44-01 is the sole promoted successor and may
 formalize only `ThreeTerm19Input`. Palomar remains blocked until the complete
 `FrozenClassification` theorem has a proof term and all pinned checks pass.
+
+
+## S045 completed — positional three-term length-19 threshold
+
+D44-01 proves `threeTerm19Input : ThreeTerm19Input` in the pinned Lean
+4.19.0 + mathlib environment. The formal proof models `C_3^3` by finite
+coordinates, proves the needed affine-plane cap bounds with small transparent
+kernel-reduced checks plus explicit counting, and concludes that a length-19
+sequence with no three-position zero sum would need at least ten support values
+while every cap has size at most nine.
+
+This closes the first source-threshold dependency exposed by S044. The only
+promoted successor is S046/D45-01, which must prove `Eta17Input` and nothing
+further. The overall formalization stage remains PARTIAL: `FrozenClassification`
+still has no proof term, so Palomar, paper, arXiv and E-JC remain downstream.

@@ -945,3 +945,14 @@ pinned mathlib dependency.
 
 **Status.** Formalization blocker only. This does not question the checked
 published mathematical statement and does not establish novelty/open status.
+
+
+## S045 formalization claim additions
+
+Date: **2026-10-06**.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-199 | FORMAL_VERIFICATION / SOURCE INTERFACE | In the pinned Lean project, `threeTerm19Input : ThreeTerm19Input` is proved without unchecked placeholders. The proof establishes the exact positional length-19 three-term-zero-sum consequence needed by S039 through explicit finite affine-plane geometry and multiplicity counting. | `InverseZeroSum/Candidate3.lean`; S045 validation. This verifies the formal interface, not Property D as a general theorem and not literature novelty. |
+| C-200 | FORMAL_GEOMETRY_BOUNDARY | The supporting finite argument proves a cap in the tuple model of `F_3^3` has cardinality at most 9. It uses small `decide` checks for explicit finite incidence facts and ordinary Lean counting for the ten-cap contradiction; no `native_decide`, opaque orbit catalogue or external oracle is used. | S045 formal source. The cap result is used only to discharge `ThreeTerm19Input` under the recorded trust boundary. |
+| C-201 | PROGRAMME_ROUTE_DECISION | With `ThreeTerm19Input` closed, `Eta17Input` is the single earliest remaining formal source interface. Promote S046/D45-01 only; Palomar remains blocked until `FrozenClassification` has a proof term and the pinned full checks pass. | S045 stop/successor rule; owner order Lean -> Palomar -> paper -> arXiv -> E-JC. |
