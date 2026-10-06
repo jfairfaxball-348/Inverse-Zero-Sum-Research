@@ -859,3 +859,14 @@ architecture, outreach, manuscript preparation or submission.
 | D-118 | 2026-10-06 | Promote exactly one successor, S040/D39-01. Apply only exact full-rank `C_3^3` short-free residual structure to the length-16/15 residuals produced by D38-01. Preserve the arbitrary-representative quantifier and all S038 hard stops. | C-177 and statement-checked ZS-74; S039 anti-churn rule. |
 
 Active owner blockers: **NONE**. CAND-03 remains selected and SOURCE-DEFINED / CURRENT STATUS UNKNOWN. External review remains CLOSED; no outreach or submission action is authorized.
+
+
+## S040 D39-01 decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-119 | 2026-10-06 | Record D39-01 as collapsing all four S039 signatures to the sole signature `(8,8,0)`. The `s=8` universal residual-sum comparison eliminates every 2-block branch; the exact length-15 `2^7 1` singleton structure eliminates `(6,9,0)`. | `sessions/S040/DIRECT_PROOF_RESIDUAL_STRUCTURE.md`; ZS-74; C-181--C-184. |
+| D-120 | 2026-10-06 | Record the exact internal CAND-03 classification: `S` satisfies the target avoidance condition iff `S=U^3` for a squarefree short-free length-8 sequence `U`. Use the 2024 construction only for sufficiency after independent necessity. | C-185; ZS-72 Lemma 3.3(2). This is not a novelty/open-status or publication claim. |
+| D-121 | 2026-10-06 | Promote exactly one successor, S041/D40-01: independent proof-chain verification plus focused exact-overlap/current-literature status audit. Do not iterate residual variants or start another proof architecture. | D-119--D-120 and the S040 anti-churn rule. |
+
+Active owner blockers: **NONE**. CAND-03 remains selected. The mathematical classification is programme-proved from checked source inputs; external novelty/overlap/current status remains unverified. External review remains CLOSED; no outreach or submission action is authorized.
