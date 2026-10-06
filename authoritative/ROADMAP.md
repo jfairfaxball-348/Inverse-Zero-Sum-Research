@@ -1410,3 +1410,18 @@ still has no proof term, so Palomar, paper, arXiv and E-JC remain downstream.
 D45-01 proves `eta17Input : Eta17Input` in the pinned Lean 4.19.0 + mathlib environment. A hypothetical short-free length-17 sequence has support which, after adjoining the origin, is a cap: short-freeness excludes both opposite pairs and three-distinct-point zero sums. S045's cap theorem bounds this enlarged cap by nine points, hence the nonzero support by eight; multiplicity at most two then contradicts length 17.
 
 Both threshold inputs used by the S044 conditional packing theorem are now closed. S047/D46-01 is the sole promoted successor and is restricted to closing `S039PackingInput` from `s039PackingInput_of_thresholds`, `threeTerm19Input` and `eta17Input`. It must stop before the S040 proof spine. Palomar and all publication stages remain blocked until `FrozenClassification` itself has a proof term and the full pinned checks pass.
+
+
+## S047 completed — S039 packing closure
+
+D46-01 closes the existing proposition `S039PackingInput` with the
+kernel-checked proof term `s039PackingInput`, obtained transparently from
+`s039PackingInput_of_thresholds threeTerm19Input eta17Input`.
+
+No S040 representative-swap/residual proof is included in S047. The first exact
+remaining interface on that proof spine is `Length16SumZeroInput`.
+S048/D47-01 is the sole promoted successor and may prove only that interface.
+
+Palomar remains blocked until `FrozenClassification` itself has a proof term
+and the full pinned checks pass. Owner order remains Lean -> Palomar -> paper ->
+arXiv -> E-JC.
