@@ -1,0 +1,45 @@
+name: Lean formalization
+
+on:
+  pull_request:
+    paths:
+      - "lean-toolchain"
+      - "lakefile.toml"
+      - "InverseZeroSum.lean"
+      - "InverseZeroSum/**"
+      - "scripts/check_authority.py"
+      - "authoritative/**"
+      - "sessions/S043/**"
+      - ".github/workflows/lean.yml"
+  push:
+    branches: [main]
+    paths:
+      - "lean-toolchain"
+      - "lakefile.toml"
+      - "InverseZeroSum.lean"
+      - "InverseZeroSum/**"
+      - "scripts/check_authority.py"
+      - "authoritative/**"
+      - "sessions/S043/**"
+      - ".github/workflows/lean.yml"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          use-github-cache: true
+      - name: lake build
+        run: lake build
+      - name: forbidden Lean placeholders
+        shell: bash
+        run: |
+          if grep -R -nE '(^|[^A-Za-z])(sorry|admit|axiom)([^A-Za-z]|$)' \
+              --include='*.lean' InverseZeroSum.lean InverseZeroSum; then
+            echo "Forbidden Lean placeholder found."
+            exit 1
+          fi
+      - name: authority checker
+        run: python scripts/check_authority.py
