@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-03 direct-proof residual structure. S039 completed D38-01 and extracted a full-rank four-signature near-equality constraint from the defining 2024 proof. S040 is READY to test the resulting length-16/15 short-free residuals against exact C_3^3 structure.**
+**Current stage: CAND-03 classification verification/status. S040 completed D39-01 and collapsed all four S039 signatures to the exact internal normal form `S=U^3`, with `U` squarefree short-free of length 8. S041 is READY to independently verify that proof chain and audit exact literature overlap/status.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -13,13 +13,13 @@ authority; conversation history is not the project state.
 A numbered session runs one bounded task autonomously, validates and
 checkpoints useful work, then automatically provides a close report.
 
-**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S040 is the live bounded mathematical continuation.
+**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S041 is the live bounded verification/status continuation.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-03 is selected at the exact length-24 structural inverse Narkiewicz-sense eta scope.
 2. Publication gate — OPEN: E-JC remains the leading eligible route; JCTA is a natural comparable venue for CAND-03.
-3. Mathematical-investigation gate — OPEN for S040 D39-01, the bounded full-rank residual-structure test promoted by S039.
+3. Mathematical-investigation gate — OPEN for S041 D40-01, independent proof-chain verification plus a focused exact-overlap/current-status audit.
 4. External-review gate — CLOSED and parallel: no reviewer is confirmed; Xue Li's pending message is CAND-02-specific.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
@@ -316,3 +316,16 @@ strictly stronger unrestricted minimal-zero-sum hypotheses.
 Exactly one successor is promoted. S040 will test only the full-rank
 `C_3^3` residual consequences from the S039 four signatures. CAND-03 remains
 SOURCE-DEFINED / CURRENT STATUS UNKNOWN; S038 remains stopped.
+
+
+## S040 exact internal classification checkpoint
+
+S040 completed D39-01 without reopening S038. For every length-16 representative-deletion residual, Lemma 28 forces zero total sum; comparing arbitrary representative choices makes every packed block constant and eliminates the mixed `s=8` signatures. A separate length-15 argument gives the exact residual multiplicity profile `2^7 1` and identifies the singleton as `-sigma(R)`; applying that identity to arbitrary transversals eliminates the `s=9` signature.
+
+The sole surviving maximal-packing signature is `(8,8,0)`, and every target sequence has the exact form
+
+`S=U^3`
+
+with `U` squarefree short-free of length 8. The checked 2024 Lemma 3.3(2) supplies the converse, so this is an internal necessity-and-sufficiency classification.
+
+This is **PROGRAMME-PROVED FROM CHECKED SOURCE INPUTS**, not a claim that the classification is new in the literature, was previously open, is publication-significant, or has passed independent review. S041 is limited to independent verification and a focused primary-source/current-status overlap audit. No further residual variant is promoted.
