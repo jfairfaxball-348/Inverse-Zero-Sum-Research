@@ -1296,3 +1296,21 @@ at length 19.
 Formalization status remains **PARTIAL**. The next exact blocker is
 `Eta17Input`. Palomar status remains **BLOCKED UNTIL THE FULL FROZEN
 CLASSIFICATION HAS A LEAN PROOF TERM**.
+
+## S046 CAND-03 Eta17 formalization boundary
+
+Date: 2026-10-06.
+
+The selected target and frozen iff statement are unchanged. D45-01 proves
+`eta17Input : Eta17Input`, the exact ordinary-eta positional interface needed
+by the S039 packing proof.
+
+The proof does not assume the numerical threshold. Short-freeness makes the
+nonzero support together with the origin a cap in the existing finite
+`F_3^3` model; the S045 nine-point cap theorem limits the support to eight,
+and multiplicity at most two contradicts length 17.
+
+Formalization status remains **PARTIAL**. The next exact obligation is the
+closed proposition `S039PackingInput`, derivable from the already checked
+conditional theorem and the two now-proved threshold inputs. Palomar remains
+**BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
