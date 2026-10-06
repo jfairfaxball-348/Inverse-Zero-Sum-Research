@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S040",
-  "next_session": "S041",
-  "next_brief": "authoritative/S041_CANDIDATE_3_CLASSIFICATION_VERIFICATION_AND_STATUS_BRIEF.md",
-  "stage": "P2_CAND03_CLASSIFICATION_VERIFICATION_STATUS",
-  "programme_status": "S040_COMPLETED_D39_01_EXACT_INTERNAL_CLASSIFICATION_PROMOTES_S041_VERIFICATION_STATUS",
+  "last_completed_session": "S041",
+  "next_session": null,
+  "next_brief": null,
+  "stage": "P2_CAND03_CLASSIFICATION_VERIFIED_STATUS_BOUNDARY",
+  "programme_status": "S041_COMPLETED_D40_01_CLASSIFICATION_REVERIFIED_BOUNDED_NO_LOCATED_EXACT_OVERLAP_NO_SUCCESSOR",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 is internally classified by S040: every target sequence is exactly U^3 with U squarefree short-free of length 8, and the checked 2024 construction supplies sufficiency. This is PROGRAMME-PROVED FROM CHECKED SOURCE INPUTS, not novelty-certified or independently reviewed; exact literature/overlap status remains for S041.",
+  "candidate_under_due_diligence": "CAND-03 is internally classified and independently reverified within the programme: every target sequence is exactly U^3 with U squarefree short-free of length 8. A focused primary/current literature audit located substantial source ingredients and later rank-two inverse work but no checked source-stated theorem supplying this exact C_3^3 length-24 iff classification. That bounded non-hit is not an openness, novelty, significance or publication certificate.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -98,7 +98,8 @@
     "S039 D38-01 PROGRAMME LEMMA: deleting one arbitrary representative from every packed short atom leaves a short-free residual of length 16 when s=8 and length 15 when s=9.",
     "S040 D39-01 PROGRAMME LEMMA: every short-free length-15 sequence over C_3^3 has exactly eight support values with multiplicity profile 2^7 1; its unique singleton u equals -sigma(R).",
     "S040 D39-01 PROGRAMME THEOREM: the S039 signatures (6,8,2), (7,8,1), and (6,9,0) are impossible; every maximal packing has signature (8,8,0).",
-    "S040 D39-01 PROGRAMME CLASSIFICATION: a length-24 CAND-03 sequence is exactly U^3 for a squarefree short-free length-8 sequence U; necessity is proved internally and sufficiency is supplied by the checked 2024 Lemma 3.3(2). Literature novelty/status remains unverified."
+    "S040 D39-01 PROGRAMME CLASSIFICATION: a length-24 CAND-03 sequence is exactly U^3 for a squarefree short-free length-8 sequence U; necessity is proved internally and sufficiency is supplied by the checked 2024 Lemma 3.3(2). Literature novelty/status remains unverified.",
+    "S041 D40-01 PROGRAMME VERIFICATION/STATUS: independent recheck found no defect in C-181--C-185. The bounded primary/current literature audit located the 2024 U^3 sufficiency construction, the 2012 short-free residual ingredients, the defining paper's Narkiewicz antecedents, and later rank-two inverse work, but no checked source-stated or later theorem giving the exact C_3^3 length-24 U^3 iff classification. This non-hit does not certify novelty, previous openness, significance, or publication readiness."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -112,7 +113,7 @@
     "Do not infer reviewer willingness, endorsement, novelty certification, target approval, or later manuscript-review agreement from transmission, silence, or elapsed time.",
     "Later: explicitly authorize journal submission or other external author actions."
   ],
-  "next_prompt_status": "READY",
+  "next_prompt_status": "NONE",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -318,6 +319,11 @@
       "id": "S040",
       "status": "COMPLETED",
       "record": "sessions/S040/CLOSEOUT.md"
+    },
+    {
+      "id": "S041",
+      "status": "COMPLETED",
+      "record": "sessions/S041/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -331,7 +337,7 @@
   "s005_source_refresh_date": "2026-10-02",
   "s006_source_refresh_date": "2026-10-02",
   "s007_mathematical_investigation_date": "2026-10-03",
-  "mathematical_investigation_gate": "OPEN",
+  "mathematical_investigation_gate": "CLOSED",
   "gate_semantics": {
     "target_gate": "OPEN means the exact mathematical target and contribution scope are owner-authorized and source-disciplined.",
     "publication_gate": "OPEN means at least one relevant substantive-AI-compatible journal route has been verified; it is not submission approval or an acceptance prediction.",
@@ -345,7 +351,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S040 closes the full-rank residual route with the exact internal classification S=U^3 for squarefree short-free |U|=8. No further residual variant is promoted. S041 is limited to independent proof-chain verification and focused primary-source/current-status overlap audit.",
+  "current_route_disposition": "S041 independently reverified the complete S040 necessity-and-sufficiency chain and closed the focused overlap/status audit. No proof defect or exact prior-art theorem was located in the bounded audit. No S042 proof/status successor is promoted; mathematical investigation is closed until an exact owner-authorized dependency exists. External independent review remains a separate future requirement and no outreach is authorized here.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -557,5 +563,8 @@
   "cand03_direct_proof_near_equality": "D38-01 completed. The defining 2024 proof yields l>=6 and s>=8 for every maximal short-atom packing of a length-24 extremal, hence exactly four packing signatures. The eta* type route adds no independent structure and Lemma 3.13 has stronger hypotheses. S040 D39-01 is the sole promoted successor.",
   "s040_source_refresh_date": "2026-10-06",
   "s040_mathematical_investigation_date": "2026-10-06",
-  "cand03_internal_classification": "D39-01 completed. Exact internal iff classification: S=U^3 with U squarefree short-free of length 8. The proof uses the universal representative-deletion residuals, Fan--Gao--Wang--Zhong--Zhuang 2012 Property C/Lemmas 28--29, and Gao--Hui--Li--Li--Qu--Zhong 2024 Lemma 3.3(2) for sufficiency only. Novelty/open-status and independent verification remain for S041."
+  "cand03_internal_classification": "D39-01 completed. Exact internal iff classification: S=U^3 with U squarefree short-free of length 8. The proof uses the universal representative-deletion residuals, Fan--Gao--Wang--Zhong--Zhuang 2012 Property C/Lemmas 28--29, and Gao--Hui--Li--Li--Qu--Zhong 2024 Lemma 3.3(2) for sufficiency only. Novelty/open-status and independent verification remain for S041.",
+  "s041_source_refresh_date": "2026-10-06",
+  "s041_verification_date": "2026-10-06",
+  "cand03_verified_classification_status": "PROGRAMME-PROVED AND INTERNALLY REVERIFIED FROM CHECKED SOURCE INPUTS. Exact literature novelty/open status remains unresolved; bounded search non-hits are non-certifying; independent external review has not occurred."
 }

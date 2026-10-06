@@ -288,3 +288,17 @@ arguments. Retired routes are not silently revived without new information.
 | --- | --- | --- | --- | --- |
 | FL-098 | 2026-10-06 | Applying a residual theorem to one arbitrary representative choice can miss the decisive rigidity. Here the theorem becomes much stronger when its conclusion is required for **every** representative transversal: one-position swaps force equality of packed values or exact singleton motion. | Preserve universal-choice quantifiers before normalizing or selecting convenient representatives. Compare adjacent transversals at the sequence-multiplicity level. | S040 C-182/C-184 |
 | FL-099 | 2026-10-06 | A published lower-bound construction can become the correct sufficiency half of a classification after necessity is proved, but using it earlier as if it were inverse structure would reverse the logical direction. | Prove necessity independently; only then invoke the checked construction for the converse. Keep novelty/status separate from the internal iff theorem. | S040 C-185 / D-120 |
+
+## S041 lesson addition
+
+### FL-100 — Separate exact source overlap from exact theorem overlap
+
+A source can contain nearly all ingredients of a later programme proof without
+stating or directly implying the same inverse classification. For CAND-03 the
+2024 paper already supplies the `U^3` construction and arbitrary
+representative-deletion implications, and the 2012 paper supplies the
+length-16/15 short-free inputs. The S041 audit therefore records substantial
+ingredient overlap while separately asking whether an exact rank-three
+length-24 iff theorem is present. A bounded failure to locate that theorem is
+not converted into novelty or openness.
+

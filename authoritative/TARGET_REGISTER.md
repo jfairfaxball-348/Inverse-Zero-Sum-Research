@@ -1175,3 +1175,28 @@ CAND-03 remains the selected target. Its **mathematical classification is now PR
 The necessity is the S040 programme proof from the S039 maximal-packing residuals and Fan--Gao--Wang--Zhong--Zhuang 2012. The converse is the checked Gao--Hui--Li--Li--Qu--Zhong 2024 Lemma 3.3(2) construction, invoked only after necessity.
 
 This does **not** establish that the classification is new in the literature, that the problem was previously open, that the theorem is publication-significant, or that the proof has independent external validation. S041 is dedicated to independent proof-chain verification and a focused exact-overlap/current-status audit. A bounded search non-hit will not be treated as an openness or novelty certificate.
+
+## S041 CAND-03 verified classification/status boundary
+
+Date: 2026-10-06.
+
+CAND-03 remains selected. Its mathematical classification is now
+**PROGRAMME-PROVED AND INTERNALLY REVERIFIED FROM CHECKED SOURCE INPUTS**:
+
+> A length-24 sequence `S` over `C_3^3\{0}` has no two innerly
+> non-zero-sum-joint short zero-sum subsequences if and only if
+> `S=U^3` for a squarefree short-free length-8 sequence `U`.
+
+D40-01 found no defect in the S040 necessity proof or in the converse use of
+the checked 2024 construction. The focused overlap audit confirms substantial
+prior source ingredients: the 2024 paper already gives the `U^3` lower-bound
+construction and arbitrary representative-deletion implications, while the
+2012 paper supplies the length-16 sum-zero and `C_0(C_3^3)` facts. The
+checked antecedents/later inverse line do not state the exact rank-three
+length-24 iff theorem at the inspected interfaces.
+
+The exact literature novelty/open status, publication significance and
+independent external validation therefore remain unresolved. The bounded
+non-location of an exact theorem is not a novelty or openness certificate.
+No further proof/status session is scheduled.
+

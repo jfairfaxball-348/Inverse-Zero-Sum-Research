@@ -715,3 +715,18 @@ David J. Grynkiewicz remains the provisional first independent CAND-03 status/pr
 S040 sent no outreach and received no independent CAND-03 review. External-review gate remains CLOSED and confirmed reviewers remain NONE.
 
 David J. Grynkiewicz remains the provisional first independent CAND-03 status/proposal lead, with Pingzhi Yuan a strong alternative, but S040 does not authorize contact. Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 / REPLY PENDING; nothing in S040 transfers that status.
+
+## S041 reviewer boundary
+
+Date: 2026-10-06.
+
+No reviewer was contacted and no independent external review occurred in S041.
+Confirmed reviewers remain **NONE** and the external-review gate remains
+**CLOSED**. David J. Grynkiewicz remains only a provisional future CAND-03
+status/proposal lead, with Pingzhi Yuan a strong alternative; no willingness,
+endorsement or availability is inferred.
+
+Xue Li Stage-1 remains strictly CAND-02-specific, owner-reported SENT
+2026-10-02 / REPLY PENDING. Its transmission, silence or any future reply does
+not transfer reviewer status or validation to CAND-03.
+

@@ -633,3 +633,21 @@ No manuscript, submission authorization, submission, acceptance, publication or 
 S040 produces an internal necessity-and-sufficiency classification for CAND-03, which is materially stronger than the S039 near-equality lemma. It is not yet a publication-ready contribution because exact prior-art overlap, novelty/significance and independent verification have not been established.
 
 No manuscript was prepared, no submission was authorized or made, and no journal status changed. Publication gate remains OPEN as a workflow gate. E-JC remains the leading plausible route and JCTA a natural comparator pending S041's verification/status audit.
+
+## S041 publication-status boundary
+
+Date checked: 2026-10-06.
+
+S041 strengthens the internal mathematical-confidence state only: the CAND-03
+classification was independently rechecked within the programme and no proof
+defect was found. The literature audit did not locate an exact prior-art theorem
+for the rank-three `C_3^3` length-24 iff classification, but the result uses
+substantial published ingredients and the non-hit does not establish novelty,
+previous openness or publication significance.
+
+The publication gate remains **OPEN** only in its established workflow-eligibility
+sense. E-JC remains a leading eligible route and JCTA a natural comparator.
+There is no manuscript, no submission authorization, no novelty certification,
+and no claim of publication readiness. Independent external mathematical/status
+review remains outstanding.
+

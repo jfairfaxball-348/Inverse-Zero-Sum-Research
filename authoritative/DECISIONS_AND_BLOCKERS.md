@@ -870,3 +870,14 @@ Active owner blockers: **NONE**. CAND-03 remains selected and SOURCE-DEFINED / C
 | D-121 | 2026-10-06 | Promote exactly one successor, S041/D40-01: independent proof-chain verification plus focused exact-overlap/current-literature status audit. Do not iterate residual variants or start another proof architecture. | D-119--D-120 and the S040 anti-churn rule. |
 
 Active owner blockers: **NONE**. CAND-03 remains selected. The mathematical classification is programme-proved from checked source inputs; external novelty/overlap/current status remains unverified. External review remains CLOSED; no outreach or submission action is authorized.
+
+## S041 D40-01 verification/status decisions
+
+| ID | Date | Decision | Reason / boundary |
+| --- | --- | --- | --- |
+| D-122 | 2026-10-06 | Record the S040 CAND-03 classification as independently reverified inside the programme. | D40-01 rechecked the arbitrary-representative quantifier, the length-16 and length-15 residual arguments, the exact two singleton-transition cases in the s=9 branch, and the converse use of the proof of ZS-72 Lemma 3.3(2). No proof defect was found. This is internal verification, not independent external review. |
+| D-123 | 2026-10-06 | Record the focused overlap audit as a bounded non-hit for an exact published C_3^3 length-24 U^3 iff theorem. | The checked 2024 source already contains the U^3 construction and representative-deletion ingredients; ZS-74 supplies the full-rank short-free lemmas. Checked antecedents and later inverse papers are rank-two or direct/value results at the relevant interfaces. No exact prior-art theorem was located, but this does not certify novelty, previous openness or significance. |
+| D-124 | 2026-10-06 | Close S041 with no S042 successor and set the mathematical-investigation gate CLOSED. | D40-01 exposes no new exact proof defect, prior-art collision or other actionable mathematical dependency. The programme stops at the verified status boundary rather than inventing proof work. Target/publication workflow eligibility remains open; external review remains closed and separate. |
+
+Active owner blockers: **NONE**. No outreach, manuscript, submission or reviewer action is authorized by these decisions.
+

@@ -1273,3 +1273,26 @@ The checked 2024 Lemma 3.3(2) supplies sufficiency, so CAND-03 is internally cla
 ### S041 — D40-01 verification and exact-overlap/status audit
 
 Independently verify every step in the S040 necessity/sufficiency chain and then run a focused primary-source/current-literature audit for exact or implicit prior-art overlap. No new proof architecture, residual variant, orbit enumeration, outreach or manuscript action is authorized. Promote at most one successor only if the verification/status result exposes an exact actionable dependency.
+
+## S041 completed — classification verification and bounded status boundary
+
+D40-01 independently rechecked all four S040 links. The arbitrary
+representative choice in the 2024 proof is genuinely universal at the required
+support-value level. The s=8 sum-zero swap forces constant packed blocks; the
+length-15 short-free residual has profile `2^7 1` and singleton
+`-sigma(R)`; the s=9 swap has exactly two possible count transitions and both
+lead to contradiction; and the proof of 2024 Lemma 3.3(2) supplies the converse
+once `U^2` is checked short-free.
+
+The focused overlap audit rechecked the defining 2024 paper, its named
+Narkiewicz antecedents, the 2012 full-rank short-free source, and later
+2024--2026 inverse work. Substantial ingredients are prior art, and the later
+inverse line is explicitly rank two. No checked source stated or directly
+supplied the exact CAND-03 rank-three length-24 iff classification. This is only
+a bounded non-hit and carries no novelty/open-problem/significance inference.
+
+No S042 successor is promoted. Mathematical investigation is CLOSED pending an
+exact owner-authorized dependency. External independent review remains a future
+programme requirement, but S041 sends no outreach and transfers no CAND-02
+reviewer status.
+

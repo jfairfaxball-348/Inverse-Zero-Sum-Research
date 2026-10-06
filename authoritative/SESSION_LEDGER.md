@@ -773,3 +773,26 @@ computation remain CLOSED.
 - Necessity plus the rechecked 2024 sufficiency lemma gives the exact internal classification `S=U^3`.
 - No orbit enumeration, S038 repair, cap-set reformulation, imported CAND-02/CAND-05 machinery, outreach or submission action occurred.
 - Active owner blockers: NONE. Next numbered session: S041/D40-01 verification and focused overlap/status audit.
+
+## S041 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S041 | COMPLETED D40-01 INDEPENDENT INTERNAL VERIFICATION + FOCUSED OVERLAP/STATUS AUDIT; NO SUCCESSOR | 4ef91cc1b01870b51af01de50b230780cc0bf190 | C-181--C-185 reverified with no defect; bounded audit found substantial source ingredients but no checked exact C_3^3 U^3 iff prior-art theorem; novelty/open/significance unresolved | sessions/S041/CLOSEOUT.md |
+
+- Live `main` exactly matched the supplied checkpoint and S041 was unique.
+- The 2024 arbitrary-representative quantifier and positional avoidance
+  implication were rechecked before the swap arguments.
+- The `s=8`, length-15 `2^7 1`, singleton identity, and `s=9`
+  contradiction all pass independent internal verification.
+- Sufficiency is taken from the proof of ZS-72 Lemma 3.3(2), after independently
+  checking that `U^2` is short-free for every squarefree short-free
+  length-8 core `U`.
+- The bounded source/current-literature audit located no exact rank-three
+  CAND-03 inverse theorem. This is not a novelty or openness certificate.
+- No automorphism-orbit enumeration, set/cap replacement, S038 repair,
+  residual variant, unrelated proof mechanism, manuscript, submission or
+  outreach occurred.
+- Xue Li Stage-1 remains CAND-02-specific and reply pending.
+- Active owner blockers: NONE. Next numbered session: NONE.
+

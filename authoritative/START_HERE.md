@@ -17,11 +17,13 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S040 is COMPLETED. CAND-03 remains the selected programme target. D39-01
-collapses all four S039 packing signatures and proves the exact internal
-classification `S=U^3` with `U` squarefree short-free of length 8.
-S041 is READY for independent proof-chain verification and focused
-literature/status overlap audit.**
+**S041 is COMPLETED. CAND-03 remains the selected programme target. D40-01
+independently reverified the complete S040 proof chain and found no proof defect.
+A focused primary/current-literature audit located substantial antecedent/source
+ingredients and later rank-two inverse work, but no checked source-stated theorem
+supplying the exact rank-three `C_3^3` length-24 `U^3` iff classification.
+This is a bounded non-hit, not a novelty or openness certificate. No S042
+successor is promoted.**
 
 Selected target:
 
@@ -31,23 +33,27 @@ Selected target:
 > theorem.
 
 - Target gate: OPEN.
-- Publication gate: OPEN; E-JC remains the leading eligible workflow route,
-  with JCTA a natural comparable venue for CAND-03.
-- Mathematical-investigation gate: OPEN for S041 D40-01, bounded independent proof verification plus focused exact-overlap/current-status audit.
+- Publication gate: OPEN as workflow eligibility only; E-JC remains the leading
+  eligible route, with JCTA a natural comparator. No submission action is
+  authorized or implied.
+- Mathematical-investigation gate: CLOSED after D40-01; no numbered proof or
+  status successor is currently authorized.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S041, D40-01 classification verification and status audit.
-- CAND-03 mathematical classification is **PROGRAMME-PROVED FROM CHECKED SOURCE INPUTS**; exact literature novelty/overlap/current status remains unverified, and no bounded search non-hit is an openness or novelty certificate.
-- David J. Grynkiewicz remains the provisional first independent status/proposal
-  lead, with Pingzhi Yuan a strong alternative; no outreach is authorized by
-  target selection.
+- Next session: NONE. No live next-session prompt is retained.
+- CAND-03 classification is **PROGRAMME-PROVED AND INTERNALLY REVERIFIED FROM
+  CHECKED SOURCE INPUTS**: exactly `S=U^3` with `U` squarefree short-free
+  of length `8`.
+- Exact literature novelty, previous openness, publication significance and
+  independent validation remain unresolved. A bounded search non-hit does not
+  answer any of those questions.
+- David J. Grynkiewicz remains a provisional future independent status/proposal
+  lead, with Pingzhi Yuan a strong alternative; S041 authorizes no outreach.
 - Xue Li Stage-1 remains CAND-02-specific, owner-reported SENT 2026-10-02 /
-  REPLY PENDING.
+  REPLY PENDING, with no reviewer/status transfer to CAND-03.
 
-CAND-05 is now historical/paused rather than incumbent. Its S023--S036
-mathematics and route stops remain durable anti-churn evidence. CAND-02 remains
-historical/paused; CAND-04 remains retired; CAND-06 and CAND-01 remain
-unselected alternatives.
+CAND-05 is historical/paused. CAND-02 remains historical/paused; CAND-04 remains
+retired; CAND-06 and CAND-01 remain unselected alternatives.
 
 ## Historical CAND-05 mathematical frontier (proof paused)
 

@@ -329,3 +329,18 @@ The sole surviving maximal-packing signature is `(8,8,0)`, and every target sequ
 with `U` squarefree short-free of length 8. The checked 2024 Lemma 3.3(2) supplies the converse, so this is an internal necessity-and-sufficiency classification.
 
 This is **PROGRAMME-PROVED FROM CHECKED SOURCE INPUTS**, not a claim that the classification is new in the literature, was previously open, is publication-significant, or has passed independent review. S041 is limited to independent verification and a focused primary-source/current-status overlap audit. No further residual variant is promoted.
+
+## S041 checkpoint — verified CAND-03 classification/status boundary
+
+S041 independently reverified the S040 CAND-03 classification
+`S=U^3` with `U` squarefree short-free of length 8 and found no proof
+defect. A focused audit of the defining 2024 paper, its cited Narkiewicz
+antecedents, the 2012 residual source and later 2024--2026 inverse work found
+substantial prior ingredients but no checked exact rank-three length-24 iff
+theorem. That bounded non-hit is not a novelty, openness or significance
+certificate.
+
+No S042 successor is scheduled. Mathematical investigation is closed at this
+verified boundary; external review remains closed and no outreach, manuscript
+or submission action was taken.
+
