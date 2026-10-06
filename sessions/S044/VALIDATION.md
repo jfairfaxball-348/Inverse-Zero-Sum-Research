@@ -7,8 +7,9 @@ Date: 2026-10-06.
 The pinned environment remains Lean 4.19.0 plus mathlib commit
 `c44e0c8ee63ca166450922a373c7409c5d26b00b`.
 
-On staging commit `59b5559b338645a0d0e8d7614832dec7e3d5e782`, GitHub
-Actions run `37475923913` completed successfully:
+On the synchronized staging tree at commit
+`36370629eb0da51e7b89e1cd3e8444f2fb39b905`, GitHub Actions run
+`37477654305` completed successfully:
 
 - pinned dependency resolution: success;
 - mathlib cache: success;
@@ -17,8 +18,8 @@ Actions run `37475923913` completed successfully:
 - `scripts/check_authority.py`: success.
 
 This run kernel-checks `s039PackingInput_of_thresholds` and all supporting
-lemmas. A terminal post-authority synchronization run is required before
-`main` is advanced; its result will supersede this staging checkpoint.
+lemmas on the synchronized authority tree. The validation-record commit itself
+is workflow-covered and must pass the same suite before `main` is advanced.
 
 ## Trust boundary
 
