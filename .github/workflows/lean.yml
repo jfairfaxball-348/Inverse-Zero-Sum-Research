@@ -13,6 +13,7 @@ on:
       - "InverseZeroSum/**"
       - "scripts/check_authority.py"
       - "authoritative/**"
+      - "sessions/S044/**"
       - "sessions/S045/**"
       - ".github/workflows/lean.yml"
   push:
@@ -24,6 +25,7 @@ on:
       - "InverseZeroSum/**"
       - "scripts/check_authority.py"
       - "authoritative/**"
+      - "sessions/S044/**"
       - "sessions/S045/**"
       - ".github/workflows/lean.yml"
 
