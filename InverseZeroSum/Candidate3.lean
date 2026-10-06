@@ -385,15 +385,29 @@ theorem planeSetF_eq_image :
       (planePointF_injective p)
 
 /--
-Transparent nine-point check: five points in any one affine plane contain a
-three-point zero sum in the finite model.
+The small affine-plane fact needed by S045: a subset of \`F_3^2\` with no
+three distinct elements summing to zero has at most four elements.  This is a
+single 9-point transparent finite check, not an orbit catalogue.
 -/
-set_option maxRecDepth 20000 in
-set_option maxHeartbeats 3000000 in
-theorem plane_five_has_zero_sumF :
-    ∀ (p : PlaneIdx) (A : Finset PlaneCoord), 5 ≤ A.card →
-      ∃ I : Finset PlaneCoord,
-        I ⊆ A ∧ I.card = 3 ∧ (∑ q ∈ I, planePointF p q) = 0 := by
+set_option maxRecDepth 10000 in
+set_option maxHeartbeats 500000 in
+theorem planeCoord_cap_le_four :
+    ∀ A : Finset PlaneCoord,
+      (∀ a ∈ A, ∀ b ∈ A, ∀ c ∈ A,
+        a ≠ b → a ≠ c → b ≠ c → a + b + c ≠ 0) →
+      A.card ≤ 4 := by
+  decide
+
+/--
+The affine parametrisation preserves zero sums of three coordinate points.
+The translation term disappears because the characteristic is three.
+-/
+set_option maxRecDepth 10000 in
+set_option maxHeartbeats 500000 in
+theorem planePointF_sum_zero_of_coord :
+    ∀ p : PlaneIdx, ∀ a b c : PlaneCoord,
+      a + b + c = 0 →
+      planePointF p a + planePointF p b + planePointF p c = 0 := by
   decide
 
 /-- Every point of the finite model lies on exactly 13 explicit affine planes. -/
