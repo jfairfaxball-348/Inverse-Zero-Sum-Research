@@ -38,3 +38,21 @@ does **not** verify the final classification yet.
 No external oracle, target enumeration, hidden postulate or proof placeholder
 is used. Formalization does not establish novelty, prior openness,
 significance, semantic correspondence by itself or journal review.
+
+
+## Recorded terminal staging check
+
+GitHub Actions run `37468692643` on staging commit
+`3ab14165e60059a236e47525fa06e520eeddfd34` completed successfully.
+
+The clean runner recorded:
+- mathlib checkout at exactly
+  `c44e0c8ee63ca166450922a373c7409c5d26b00b`;
+- `lake build`: **Build completed successfully**;
+- forbidden-placeholder search: **success**;
+- `scripts/check_authority.py`:
+  `PASS: authority state, session uniqueness, independent gate semantics, blocker/prompt consistency, 92 local links, and original licence`.
+
+This recorded run validates the pre-publication staging tree. The subsequent
+validation-only commit must itself pass the same workflow before `main` is
+advanced.
