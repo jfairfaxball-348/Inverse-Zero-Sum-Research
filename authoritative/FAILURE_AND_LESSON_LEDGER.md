@@ -341,3 +341,18 @@ before comparison with the canonical triple repetition.  Future formalization
 must preserve this separation: positional indexing for the forbidden
 two-witness relation, permutation-invariant equality for the structural
 normal form.
+
+
+## S044 — separate source thresholds from the packing proof
+
+The apparent monolithic blocker `S039PackingInput` decomposes cleanly. Target
+avoidance itself forces distinct short zero-sum blocks to be disjoint, so the
+all-block family provides a transparent maximal packing. Once the two published
+threshold interfaces are parameterized, Lean checks the complete signature and
+arbitrary-representative argument.
+
+**Lesson:** formalize source interfaces at their actual dependency boundary.
+Do not hide a published threshold inside a larger assumed theorem, and do not
+mistake the absence of its proof term for a defect in the downstream packing
+logic. After S044 the earliest exact gap is `ThreeTerm19Input`; the later
+`Eta17Input` must remain downstream until that first gap is discharged.
