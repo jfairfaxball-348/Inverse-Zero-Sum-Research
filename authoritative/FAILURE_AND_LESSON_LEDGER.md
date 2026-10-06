@@ -372,3 +372,11 @@ transparent and buildable.
 computation is acceptable only with a sharply bounded evidentiary role. Factor
 the argument into structural lemmas and small kernel-reduced checks rather than
 replacing the theorem by a global catalogue or hidden native oracle.
+
+## S046 formalization lesson
+
+### FL-104 — adjoining zero converts ordinary short-freeness into the existing cap interface
+
+In exponent three, a nonzero short-free support has neither an opposite pair nor three distinct points summing to zero. Therefore adjoining the origin yields exactly the cap condition already formalized in S045. This lets the eta-17 source interface reuse the same transparent geometry rather than introduce a second finite classification.
+
+**Lesson:** before formalizing a second small-group threshold, check whether its forbidden configurations embed into an already kernel-checked finite certificate by a simple structural transformation. Reuse the certificate transparently instead of adding a new catalogue or threshold axiom.
