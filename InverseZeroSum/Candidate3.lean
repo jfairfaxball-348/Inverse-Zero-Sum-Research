@@ -1463,6 +1463,50 @@ theorem capViolationsT_eq_empty_iff (A : Finset F3T) :
     · intro hq
       simpa using hq
 
+
+/--
+A faster finite cap certificate: a pair is violating when its forced third
+point `-(a+b)` is a distinct member of the same set.  This reduces each cap
+check from ordered triples to ordered pairs.
+-/
+def capPairViolationsT (A : Finset F3T) : Finset (F3T × F3T) :=
+  (A.product A).filter (fun q =>
+    q.1 ≠ q.2 ∧
+      (-(q.1 + q.2) ∈ A) ∧
+      (-(q.1 + q.2) ≠ q.1) ∧
+      (-(q.1 + q.2) ≠ q.2))
+
+theorem capPairViolationsT_eq_empty_iff (A : Finset F3T) :
+    capPairViolationsT A = ∅ ↔ IsCapT A := by
+  constructor
+  · intro hempty a ha b hb c hc hab hac hbc hsum
+    have hz : -(a + b) = c := by
+      rw [neg_eq_iff_add_eq_zero]
+      simpa [add_assoc] using hsum
+    have hmem : (a, b) ∈ capPairViolationsT A := by
+      apply Finset.mem_filter.mpr
+      refine ⟨Finset.mem_product.mpr ⟨ha, hb⟩, hab, ?_⟩
+      refine ⟨?_, ?_, ?_⟩
+      · simpa [hz] using hc
+      · simpa [hz] using hac.symm
+      · simpa [hz] using hbc.symm
+    rw [hempty] at hmem
+    simpa using hmem
+  · intro hCap
+    ext q
+    constructor
+    · intro hq
+      rcases q with ⟨a, b⟩
+      have hf := Finset.mem_filter.mp hq
+      have hprod := Finset.mem_product.mp hf.1
+      have hsum : a + b + (-(a + b)) = 0 := by
+        simp
+      exact False.elim
+        ((hCap a hprod.1 b hprod.2 (-(a + b)) hf.2.2.1
+          hf.2.1 hf.2.2.2.1.symm hf.2.2.2.2.symm) hsum)
+    · intro hq
+      simpa using hq
+
 /--
 Candidates that can extend the normalized origin-plus-basis seed while
 preserving the cap condition. The predicate is phrased through the finite
@@ -1470,7 +1514,7 @@ violation set so kernel reduction has an explicit computable trust boundary.
 -/
 def normalizedCandidateSetT : Finset F3T :=
   Finset.univ.filter
-    (fun x => x ∉ basisSeedT ∧ capViolationsT (insert x basisSeedT) = ∅)
+    (fun x => x ∉ basisSeedT ∧ capPairViolationsT (insert x basisSeedT) = ∅)
 
 @[simp] theorem normalizedCandidateSetT_card :
     normalizedCandidateSetT.card = 17 := by
@@ -1495,7 +1539,7 @@ resulting nine-point cap has nonzero total sum.
 -/
 def normalizedBadCompletionsT : Finset (Finset NormalizedCandidateT) :=
   normalizedFiveSetsT.filter (fun B =>
-    capViolationsT (normalizedCapT B) = ∅ ∧
+    capPairViolationsT (normalizedCapT B) = ∅ ∧
       (∑ x ∈ normalizedCapT B, x) ≠ 0)
 
 /--
@@ -1511,7 +1555,7 @@ set_option maxHeartbeats 50000000 in
 theorem normalized_capT_sum_zero
     (B : Finset NormalizedCandidateT)
     (hcard : B.card = 5)
-    (hcap : capViolationsT (normalizedCapT B) = ∅) :
+    (hcap : capPairViolationsT (normalizedCapT B) = ∅) :
     (∑ x ∈ normalizedCapT B, x) = 0 := by
   by_contra hsum
   have hsub : B ⊆ normalizedCandidateSetT.attach := by
@@ -1892,7 +1936,7 @@ theorem eight_support_sum_zero {A : Finset F3T}
       isCapT_of_subset hCapN0 hSmallSub
     exact Finset.mem_filter.mpr
       ⟨Finset.mem_univ x, hxNotSeed,
-        (capViolationsT_eq_empty_iff (insert x basisSeedT)).2 hSmallCap⟩
+        (capPairViolationsT_eq_empty_iff (insert x basisSeedT)).2 hSmallCap⟩
   let B : Finset NormalizedCandidateT :=
     normalizedCandidateSetT.attach.filter (fun y => y.1 ∈ rest)
   have hBMap : B.map normalizedCandidateVal = rest := by
@@ -1920,7 +1964,7 @@ theorem eight_support_sum_zero {A : Finset F3T}
     simp [normalizedCapT, hBMap, hSeedRest]
   have hNormCap : IsCapT (normalizedCapT B) := by
     simpa [hNormalizedEq] using hCapN0
-  have hNormNoViol : capViolationsT (normalizedCapT B) = ∅ :=
+  have hNormNoViol : capPairViolationsT (normalizedCapT B) = ∅ :=
     (capViolationsT_eq_empty_iff (normalizedCapT B)).2 hNormCap
   have hNormalizedSum :=
     normalized_capT_sum_zero B hBCard hNormNoViol
