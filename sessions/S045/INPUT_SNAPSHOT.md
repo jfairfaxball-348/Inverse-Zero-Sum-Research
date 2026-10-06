@@ -18,3 +18,7 @@ S045 read `AGENTS.md`, `authoritative/START_HERE.md`, the current project author
 D44-01 is restricted to proving the existing closed proposition `ThreeTerm19Input` in the pinned Lean 4.19.0 + mathlib project. The proof must not assume `ThreeTerm19Input`, `S039PackingInput`, Property D, or the numerical threshold as an unchecked proposition. Transparent finite supporting checks are permitted only inside the same kernel-checked trust boundary.
 
 `Eta17Input`, the S039 packing resumption, S040, Palomar, manuscript, arXiv, E-JC submission and outreach remain outside this unit.
+
+## Validation staging
+
+A dedicated `s045-d44-01` branch and draft PR are used to obtain the repository's pinned clean-run validation before any fast-forward publication to `main`.
