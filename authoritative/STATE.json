@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S042",
-  "next_session": "S044",
-  "next_brief": "authoritative/S044_CANDIDATE_3_S039_PACKING_FORMALIZATION_BRIEF.md",
+  "next_session": "S045",
+  "next_brief": "authoritative/S045_CANDIDATE_3_THREE_TERM_19_FORMALIZATION_BRIEF.md",
   "stage": "P5_CAND03_LEAN_FORMALIZATION_PARTIAL",
-  "programme_status": "S043_PARTIAL_D42_01_S044_READY_S039_PACKING_FORMALIZATION",
+  "programme_status": "S044_PARTIAL_D43_01_S045_READY_THREE_TERM_19_FORMALIZATION",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S043 partially formalized the exact theorem in a pinned Lean 4.19.0 + mathlib environment: positional semantics and the exact FrozenClassification proposition compile, but the final theorem has no proof term. The earliest exact formal blocker is S039PackingInput, the packed-atom/four-signature/arbitrary-representative residual theorem. Palomar remains blocked until the complete Lean theorem is proved.",
+  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S044 kernel-checks the complete S039 packing construction conditional on the two recorded published threshold propositions. The single earliest exact formal blocker is now ThreeTerm19Input, the positional s(C_3^3)=19 consequence needed for l>=6. Eta17Input remains downstream. FrozenClassification still has no proof term, so Palomar remains blocked.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -335,6 +335,11 @@
       "id": "S043",
       "status": "PARTIAL",
       "record": "sessions/S043/CLOSEOUT.md"
+    },
+    {
+      "id": "S044",
+      "status": "PARTIAL",
+      "record": "sessions/S044/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -602,5 +607,7 @@
     "compiled_scope": "Exact positional definitions; commutative S=U^3 equality up to position permutation; FrozenClassification proposition; explicit ThreeTerm19/Eta17/length-16/length-15 source obligations; S039 certificate interface; proved S039 signature arithmetic; singleton and short-zero cardinality lemmas.",
     "earliest_formal_blocker": "S039PackingInput: prove the S039 packed short-zero-sum certificate with exactly the four signatures and the universal arbitrary-representative short-free residual property.",
     "palomar_status": "BLOCKED_UNTIL_FULL_FROZEN_CLASSIFICATION_PROOF"
-  }
+  },
+  "s044_formalization_date": "2026-10-06",
+  "cand03_s039_packing_formalization": "PARTIAL: s039PackingInput_of_thresholds is kernel-checked and proves ThreeTerm19Input -> Eta17Input -> S039PackingInput, including the exact four signatures and universal arbitrary-representative residual. The first missing closed proof term is ThreeTerm19Input; no unchecked threshold assumption is introduced."
 }
