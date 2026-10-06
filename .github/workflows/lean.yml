@@ -1,5 +1,9 @@
 name: Lean formalization
 
+concurrency:
+  group: lean-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 on:
   pull_request:
     paths:
@@ -44,7 +48,7 @@ jobs:
       - name: forbidden Lean placeholders
         shell: bash
         run: |
-          if grep -R -nE '(^|[^A-Za-z])(sorry|admit|axiom)([^A-Za-z]|$)' \
+          if grep -R -nE '(^|[^A-Za-z])(sorry|admit)([^A-Za-z]|$)|^[[:space:]]*(axiom|constant)[[:space:]]' \
               --include='*.lean' InverseZeroSum.lean InverseZeroSum; then
             echo "Forbidden Lean placeholder found."
             exit 1
