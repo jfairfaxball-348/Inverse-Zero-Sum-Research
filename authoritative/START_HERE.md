@@ -43,7 +43,7 @@ length 8.
 - Mathematical-investigation gate: OPEN for S045/D44-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S044 / D43-01 S039 packing formalization.
+- Next session: S045 / D44-01 ThreeTerm19Input formalization.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
