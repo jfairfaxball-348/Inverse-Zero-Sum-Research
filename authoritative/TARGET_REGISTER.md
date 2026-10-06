@@ -1314,3 +1314,21 @@ Formalization status remains **PARTIAL**. The next exact obligation is the
 closed proposition `S039PackingInput`, derivable from the already checked
 conditional theorem and the two now-proved threshold inputs. Palomar remains
 **BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
+
+
+## S047 CAND-03 S039 packing-closure boundary
+
+Date: 2026-10-06.
+
+The selected target and frozen iff statement are unchanged. D46-01 proves
+
+`s039PackingInput : S039PackingInput`
+
+by applying the already kernel-checked conditional theorem to
+`threeTerm19Input` and `eta17Input`. This closes the S039 formal interface
+without changing the packing certificate or positional semantics.
+
+Formalization status remains **PARTIAL**. The next exact obligation is
+`Length16SumZeroInput`, the first source interface used on the recorded S040
+proof spine. Palomar remains **BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS
+A LEAN PROOF TERM**.
