@@ -1508,6 +1508,39 @@ theorem capPairViolationsT_eq_empty_iff (A : Finset F3T) :
     · intro hq
       simpa using hq
 
+
+/--
+Short-circuiting Boolean form of the cap condition.  The quantified proposition
+is written inline so Lean can synthesize its finite decision procedure over the
+27-point tuple model without constructing a complete violation finset.
+-/
+def pairCapBoolT (A : Finset F3T) : Bool :=
+  decide (∀ a : F3T, a ∈ A → ∀ b : F3T, b ∈ A → a ≠ b →
+    (-(a + b) ∈ A → (-(a + b) = a ∨ -(a + b) = b)))
+
+theorem pairCapBoolT_eq_true_iff (A : Finset F3T) :
+    pairCapBoolT A = true ↔ IsCapT A := by
+  rw [pairCapBoolT, decide_eq_true_eq]
+  constructor
+  · intro h a ha b hb c hc hab hac hbc hsum
+    have hz : -(a + b) = c := by
+      rw [neg_eq_iff_add_eq_zero]
+      simpa [add_assoc] using hsum
+    have hcases := h a ha b hb hab (by simpa [hz] using hc)
+    rcases hcases with hza | hzb
+    · have hca : c = a := hz.symm.trans hza
+      exact hac hca.symm
+    · have hcb : c = b := hz.symm.trans hzb
+      exact hbc hcb.symm
+  · intro hCap a ha b hb hab hzmem
+    by_cases hza : -(a + b) = a
+    · exact Or.inl hza
+    by_cases hzb : -(a + b) = b
+    · exact Or.inr hzb
+    exfalso
+    exact (hCap a ha b hb (-(a + b)) hzmem hab
+      (Ne.symm hza) (Ne.symm hzb)) (by simp)
+
 /--
 Candidates that can extend the normalized origin-plus-basis seed while
 preserving the cap condition. The predicate is phrased through the finite
@@ -1515,7 +1548,7 @@ violation set so kernel reduction has an explicit computable trust boundary.
 -/
 def normalizedCandidateSetT : Finset F3T :=
   Finset.univ.filter
-    (fun x => x ∉ basisSeedT ∧ capPairViolationsT (insert x basisSeedT) = ∅)
+    (fun x => x ∉ basisSeedT ∧ pairCapBoolT (insert x basisSeedT) = true)
 
 @[simp] theorem normalizedCandidateSetT_card :
     normalizedCandidateSetT.card = 17 := by
@@ -1540,8 +1573,8 @@ resulting nine-point cap has nonzero total sum.
 -/
 def normalizedBadCompletionsT : Finset (Finset NormalizedCandidateT) :=
   normalizedFiveSetsT.filter (fun B =>
-    capPairViolationsT (normalizedCapT B) = ∅ ∧
-      (∑ x ∈ normalizedCapT B, x) ≠ 0)
+    (∑ x ∈ normalizedCapT B, x) ≠ 0 ∧
+      pairCapBoolT (normalizedCapT B) = true)
 
 /--
 The explicit normalized bad-completion set is empty.  This ordinary kernel
@@ -1556,7 +1589,7 @@ set_option maxHeartbeats 50000000 in
 theorem normalized_capT_sum_zero
     (B : Finset NormalizedCandidateT)
     (hcard : B.card = 5)
-    (hcap : capPairViolationsT (normalizedCapT B) = ∅) :
+    (hcap : pairCapBoolT (normalizedCapT B) = true) :
     (∑ x ∈ normalizedCapT B, x) = 0 := by
   by_contra hsum
   have hsub : B ⊆ normalizedCandidateSetT.attach := by
@@ -1565,7 +1598,7 @@ theorem normalized_capT_sum_zero
   have hfive : B ∈ normalizedFiveSetsT := by
     exact Finset.mem_powersetCard.mpr ⟨hsub, hcard⟩
   have hbad : B ∈ normalizedBadCompletionsT :=
-    Finset.mem_filter.mpr ⟨hfive, hcap, hsum⟩
+    Finset.mem_filter.mpr ⟨hfive, hsum, hcap⟩
   rw [normalizedBadCompletionsT_empty] at hbad
   simpa using hbad
 
@@ -1937,7 +1970,7 @@ theorem eight_support_sum_zero {A : Finset F3T}
       isCapT_of_subset hCapN0 hSmallSub
     exact Finset.mem_filter.mpr
       ⟨Finset.mem_univ x, hxNotSeed,
-        (capPairViolationsT_eq_empty_iff (insert x basisSeedT)).2 hSmallCap⟩
+        (pairCapBoolT_eq_true_iff (insert x basisSeedT)).2 hSmallCap⟩
   let B : Finset NormalizedCandidateT :=
     normalizedCandidateSetT.attach.filter (fun y => y.1 ∈ rest)
   have hBMap : B.map normalizedCandidateVal = rest := by
@@ -1965,7 +1998,7 @@ theorem eight_support_sum_zero {A : Finset F3T}
     simp [normalizedCapT, hBMap, hSeedRest]
   have hNormCap : IsCapT (normalizedCapT B) := by
     simpa [hNormalizedEq] using hCapN0
-  have hNormNoViol : capPairViolationsT (normalizedCapT B) = ∅ :=
+  have hNormNoViol : pairCapBoolT (normalizedCapT B) = true :=
     (capViolationsT_eq_empty_iff (normalizedCapT B)).2 hNormCap
   have hNormalizedSum :=
     normalized_capT_sum_zero B hBCard hNormNoViol
