@@ -1408,4 +1408,11 @@ theorem s039PackingInput_of_thresholds
   }⟩
   simpa [r, hBlockUnion]
 
+/--
+S047/D46-01 closes the S039 packing input from the already kernel-checked
+conditional packing theorem and its two closed threshold inputs.
+-/
+theorem s039PackingInput : S039PackingInput :=
+  s039PackingInput_of_thresholds threeTerm19Input eta17Input
+
 end InverseZeroSum.Candidate3
