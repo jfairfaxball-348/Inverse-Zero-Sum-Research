@@ -486,6 +486,37 @@ theorem cap_inter_plane_le_four {A : Finset F3T} (hA : IsCapT A) (p : PlaneIdx) 
     _ = Q.card := Finset.card_image_of_injective Q (planePointT_injective p)
     _ ≤ 4 := planeCoord_cap_le_four Q hQcap
 
+
+/-- The third coordinate used for the fixed three-plane partition of affine space. -/
+def thirdCoordT (x : F3T) : Fin 3 := x.2.2
+
+/-- The horizontal plane whose third coordinate is \`c\`. -/
+def horizontalPlaneT (c : Fin 3) : PlaneIdx :=
+  (⟨12, by omega⟩, c)
+
+/-- One fiber of the fixed horizontal three-plane partition. -/
+def horizontalSliceT (A : Finset F3T) (c : Fin 3) : Finset F3T :=
+  A.filter (fun x => thirdCoordT x = c)
+
+theorem horizontalSliceT_eq_inter (A : Finset F3T) (c : Fin 3) :
+    horizontalSliceT A c = A ∩ planeSetT (horizontalPlaneT c) := by
+  classical
+  ext x
+  simp [horizontalSliceT, thirdCoordT, horizontalPlaneT, planeSetT, onPlaneTB]
+
+theorem horizontalSliceT_card_le_four {A : Finset F3T} (hA : IsCapT A) (c : Fin 3) :
+    (horizontalSliceT A c).card ≤ 4 := by
+  rw [horizontalSliceT_eq_inter]
+  exact cap_inter_plane_le_four hA (horizontalPlaneT c)
+
+theorem card_eq_sum_horizontalSliceT (A : Finset F3T) :
+    A.card = ∑ c : Fin 3, (horizontalSliceT A c).card := by
+  classical
+  simpa [horizontalSliceT, thirdCoordT] using
+    (Finset.card_eq_sum_card_fiberwise
+      (f := thirdCoordT) (s := A) (t := (Finset.univ : Finset (Fin 3)))
+      (by simp))
+
 /-- Every two distinct tuple-model points lie on exactly four affine planes. -/
 theorem pair_plane_countT :
     ∀ x y : F3T, x ≠ y →
