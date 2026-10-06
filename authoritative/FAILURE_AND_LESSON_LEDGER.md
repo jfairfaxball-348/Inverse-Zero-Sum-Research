@@ -380,3 +380,17 @@ replacing the theorem by a global catalogue or hidden native oracle.
 In exponent three, a nonzero short-free support has neither an opposite pair nor three distinct points summing to zero. Therefore adjoining the origin yields exactly the cap condition already formalized in S045. This lets the eta-17 source interface reuse the same transparent geometry rather than introduce a second finite classification.
 
 **Lesson:** before formalizing a second small-group threshold, check whether its forbidden configurations embed into an already kernel-checked finite certificate by a simple structural transformation. Reuse the certificate transparently instead of adding a new catalogue or threshold axiom.
+
+
+## S047 formalization lesson
+
+### FL-105 — Close discharged interfaces by composition
+
+Once every hypothesis of a previously kernel-checked conditional theorem has
+its own closed proof term, the faithful next step is ordinary proof-term
+composition. Reopening the underlying construction would enlarge the trust
+surface and risk scope drift without adding evidence.
+
+**Lesson:** preserve dependency boundaries in formalization. When the exact
+interface is already proved conditionally, close it from its discharged inputs
+and move to the first genuinely new downstream obligation.
