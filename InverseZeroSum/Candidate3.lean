@@ -230,7 +230,7 @@ theorem shortZero_subset_eq {n : ℕ} {S : PosSeq n}
       omega
     obtain ⟨k, hk⟩ := Finset.card_eq_one.mp hcard
     have hsum : posSum S I + posSum S (J \ I) = posSum S J := by
-      simpa [posSum, add_comm] using (Finset.sum_sdiff hsub (f := fun i => (S i : G))).symm
+      simpa [posSum] using (Finset.sum_sdiff hsub (f := fun i => (S i : G)))
     have hz : posSum S (J \ I) = 0 := by
       rw [hI.2.2, hJ.2.2] at hsum
       simpa using hsum
@@ -240,5 +240,51 @@ theorem shortZero_subset_eq {n : ℕ} {S : PosSeq n}
     simpa [hk] using hz
   · exact Finset.eq_of_subset_of_card_le hsub (by omega)
   · exact Finset.eq_of_subset_of_card_le hsub (by omega)
+
+
+/--
+For a target-avoiding sequence, distinct short zero-sum positional blocks are
+disjoint.  Thus the maximal packed family in the S039 source proof may be
+chosen transparently as the family of all short zero-sum blocks.
+-/
+theorem shortZero_disjoint_of_ne {n : ℕ} {S : PosSeq n}
+    (hAvoid : AvoidsInnerJointPair S) {I J : Finset (Fin n)}
+    (hI : ShortZero S I) (hJ : ShortZero S J) (hne : I ≠ J) :
+    Disjoint I J := by
+  classical
+  rw [Finset.disjoint_left]
+  intro x hxI hxJ
+  have hnonempty : (I ∩ J).Nonempty := by
+    exact ⟨x, Finset.mem_inter.mpr ⟨hxI, hxJ⟩⟩
+  have hzero : posSum S (I ∩ J) = 0 := by
+    simpa [innerJointSum] using hAvoid I J hI hJ
+  have hInter : ShortZero S (I ∩ J) := by
+    refine ⟨hnonempty, ?_, hzero⟩
+    exact (Finset.card_le_card Finset.inter_subset_left).trans hI.2.1
+  have hEq : I ∩ J = I :=
+    shortZero_subset_eq hInter hI Finset.inter_subset_left
+  have hIJ : I ⊆ J := Finset.inter_eq_left.mp hEq
+  exact hne (shortZero_subset_eq hI hJ hIJ)
+
+/-- All short zero-sum positional blocks of a length-24 sequence. -/
+def s039AllBlocks (S : PosSeq 24) : Finset (Finset (Fin 24)) :=
+  Finset.univ.filter (ShortZero S)
+
+@[simp] theorem mem_s039AllBlocks {S : PosSeq 24} {I : Finset (Fin 24)} :
+    I ∈ s039AllBlocks S ↔ ShortZero S I := by
+  classical
+  simp [s039AllBlocks]
+
+/--
+The all-block family is pairwise disjoint under the target avoidance
+hypothesis.  This is the source maximal-packing interface without an opaque
+catalogue.
+-/
+theorem s039AllBlocks_pairwiseDisjoint {S : PosSeq 24}
+    (hAvoid : AvoidsInnerJointPair S) :
+    (s039AllBlocks S : Set (Finset (Fin 24))).PairwiseDisjoint id := by
+  intro I hI J hJ hne
+  exact shortZero_disjoint_of_ne hAvoid
+    (mem_s039AllBlocks.mp hI) (mem_s039AllBlocks.mp hJ) hne
 
 end InverseZeroSum.Candidate3
