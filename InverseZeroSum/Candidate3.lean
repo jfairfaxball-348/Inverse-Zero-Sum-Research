@@ -526,18 +526,25 @@ theorem pair_plane_countT :
   set_option maxHeartbeats 1000000 in
     decide
 
-/--
+/-
 The four affine planes through a line cover the whole three-dimensional affine
-space.  This is the second and final finite incidence check used by the
-structural cap proof.
+space.  The computational antecedent is Boolean so the finite check elaborates
+inside the explicit resource scope.
 -/
-theorem pair_planes_coverT :
-    ∀ x y z : F3T, x ≠ y →
+set_option maxRecDepth 20000 in
+set_option maxHeartbeats 6000000 in
+theorem pair_planes_coverTB :
+    ∀ x y z : F3T, (x == y) = false →
       ∃ p : PlaneIdx,
         onPlaneTB p x = true ∧ onPlaneTB p y = true ∧ onPlaneTB p z = true := by
-  set_option maxRecDepth 10000 in
-  set_option maxHeartbeats 1500000 in
-    decide
+  decide
+
+theorem pair_planes_coverT (x y z : F3T) (hxy : x ≠ y) :
+    ∃ p : PlaneIdx,
+      onPlaneTB p x = true ∧ onPlaneTB p y = true ∧ onPlaneTB p z = true := by
+  apply pair_planes_coverTB x y z
+  simpa [hxy]
+
 
 
 /-- There is no ten-point cap in the affine space \`F_3^3\`. -/
