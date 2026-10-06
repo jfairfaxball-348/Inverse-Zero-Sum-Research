@@ -828,3 +828,21 @@ computation remain CLOSED.
 - No unresolved high-probability target-specific primary-source lead remains.
 - No proof search, manuscript, preprint, submission or outreach occurred.
 - Active owner blockers: NONE. Next session: S043/D42-01 exact Lean formalization.
+
+
+## S043 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S043 | PARTIAL D42-01 EXACT LEAN STATEMENT/POSITIONAL FOUNDATION; FIRST FORMAL BLOCKER IS S039 PACKING | 6a608c12ac25321dacf217989233ea7273a9bbeb | Pinned Lean/mathlib project; exact positional theorem proposition; S039 certificate interface; clean build; semantic correspondence/trust boundary | [S043 closeout](../sessions/S043/CLOSEOUT.md) |
+
+- Live `main` exactly matched the supplied S042 checkpoint and S043 was unique.
+- No prior Lean infrastructure existed, so the brief's minimal-project fallback was used.
+- Lean is pinned at 4.19.0 and mathlib at commit
+  `c44e0c8ee63ca166450922a373c7409c5d26b00b`.
+- `FrozenClassification` encodes the frozen iff theorem with positional
+  subsequence/intersection semantics, but has no proof term.
+- The earliest exact formal blocker is `S039PackingInput`.
+- Palomar was not entered.
+- Active owner blockers: NONE. Next session: S044/D43-01 formalize
+  `S039PackingInput` only.
