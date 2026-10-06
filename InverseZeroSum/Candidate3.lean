@@ -102,6 +102,25 @@ def S039Signature (l s r : ℕ) : Prop :=
   (l = 8 ∧ s = 8 ∧ r = 0) ∨
   (l = 6 ∧ s = 9 ∧ r = 0)
 
+/--
+The integer bookkeeping in S039: the source-derived bounds `l ≥ 6`,
+`s ≥ 8`, together with `l ≤ s` and
+`24 = l + 2s + r`, leave exactly the four recorded signatures.
+-/
+theorem s039_signature_of_arithmetic {l s r : ℕ}
+    (hl : 6 ≤ l) (hs : 8 ≤ s) (hls : l ≤ s)
+    (hlen : l + 2 * s + r = 24) :
+    S039Signature l s r := by
+  omega
+
+theorem s039_signature_s_eq_eight_or_nine {l s r : ℕ}
+    (h : S039Signature l s r) : s = 8 ∨ s = 9 := by
+  rcases h with h | h | h | h
+  · exact Or.inl h.2.1
+  · exact Or.inl h.2.1
+  · exact Or.inl h.2.1
+  · exact Or.inr h.2.1
+
 /-- Union of all packed position blocks. -/
 def blockUnion {s : ℕ} (blocks : Fin s → Finset (Fin 24)) : Finset (Fin 24) :=
   Finset.univ.biUnion blocks
