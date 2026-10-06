@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-03 Lean formalization. S042 completed the deep systematic prior-art audit with no exact/equivalent/stronger-implying prior art located in the documented audit; this is a search non-hit, not a novelty proof. S043 is READY to formalize the frozen `S=U^3` classification in Lean.**
+**Current stage: CAND-03 Lean formalization, PARTIAL. S043 encoded the exact positional classification in a pinned Lean 4.19.0 + mathlib project and clean-built the current formal source, but the final theorem has no proof term. S044 is READY for the exact first blocker, `S039PackingInput`.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -13,13 +13,13 @@ authority; conversation history is not the project state.
 A numbered session runs one bounded task autonomously, validates and
 checkpoints useful work, then automatically provides a close report.
 
-**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S043 is the live Lean-formalization continuation.
+**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S044 is the live Lean-formalization continuation.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-03 is selected at the exact length-24 structural inverse Narkiewicz-sense eta scope.
 2. Publication gate — OPEN: S042 cleared the defined prior-art dependency only in the documented-search sense; E-JC remains the intended journal after the ordered verification/preprint stages.
-3. Mathematical-investigation gate — OPEN for S043/D42-01 exact Lean formalization only; the mathematical theorem itself remains frozen and no new proof architecture is authorized.
+3. Mathematical-investigation gate — OPEN for S044/D43-01 S039-packing formalization only; the mathematical theorem itself remains frozen and no new proof architecture is authorized.
 4. External-review gate — CLOSED and not a CAND-03 pre-submission blocker: the owner explicitly skips independent reviewer/consultation. Lean/Palomar verification and E-JC's ordinary editorial/referee process are the planned verification/review path.
 5. Ordered roadmap — Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC submission.
 
@@ -350,3 +350,18 @@ or submission action was taken.
 ## S042 deep prior-art checkpoint
 
 S042 completed D41-01. The exact status is: **no exact/equivalent/stronger-implying prior art located in the documented deep audit.** Serious overlaps were ingredients only, and no unresolved high-probability lead remains. This is not a logical novelty/open-problem/significance certificate. Per the owner roadmap, S043 is the exact Lean formalization stage. No manuscript, preprint, submission or outreach occurred in S042.
+
+
+## S043 partial Lean checkpoint
+
+S043 created the pinned Lean project and encoded the exact positional theorem
+`FrozenClassification`. The current source builds under Lean 4.19.0 and
+mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`, without
+unchecked proof placeholders.
+
+This is **not** a Lean proof of the classification yet: the final proposition
+has no proof term. The first exact formal blocker is `S039PackingInput`, the
+S039 four-signature packed-atom certificate with the universal
+arbitrary-representative short-free residual property. S044 is restricted to
+that interface. Palomar and all later publication stages remain blocked until
+the complete frozen theorem is proved.
