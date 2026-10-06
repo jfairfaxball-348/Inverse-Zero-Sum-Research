@@ -19,7 +19,7 @@ Lean namespace: `InverseZeroSum.Candidate3`.
 | no two innerly non-zero-sum-joint short zero sums | `AvoidsInnerJointPair S` |
 | canonical representative of `U^3` | `tripleRep U`, positions reduced modulo 8 |
 | sequence equality `S=U^3` | `IsTriplePower S U`: equality after a permutation of the 24 positions |
-| frozen iff theorem | `FrozenClassification` |
+| frozen iff theorem | `FrozenClassification`, using `IsTriplePower` rather than literal fixed-order equality |
 
 The avoidance definition is deliberately positional. It quantifies over two
 finite position sets and requires the sum on their position-set intersection
@@ -53,3 +53,14 @@ pinned Lean/mathlib toolchain. A successful build does not establish literature
 novelty, previous openness, significance, semantic correctness of the human
 correspondence note, or journal review. No `sorry`, `admit`, unsound axiom,
 or external oracle is permitted in the formal source.
+
+
+### Sequence equality semantics
+
+The repository writes sequences multiplicatively and treats position order as
+irrelevant. Lean represents a positional sequence as a function `Fin n → Alphabet`,
+so literal function equality would accidentally choose one ordering. The formal
+normal form therefore uses `IsTriplePower S U`: there exists an equivalence
+`Fin 24 ≃ Fin 24` whose reindexing makes `S` equal to the canonical
+`tripleRep U`. This preserves positional witnesses while matching the
+commutative sequence statement `S=U^3`.
