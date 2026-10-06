@@ -326,19 +326,19 @@ abbrev PlaneCoord := Fin 3 × Fin 3
 /-- The 39 affine planes of \`F_3^3\`: 13 directions and three cosets each. -/
 abbrev PlaneIdx := Fin 13 × Fin 3
 
-/-- The explicit affine-plane equation for one of the 39 planes. -/
-def onPlaneF (p : PlaneIdx) (x : F3G) : Prop :=
+/-- A computable Boolean form of the explicit affine-plane equation. -/
+def onPlaneFB (p : PlaneIdx) (x : F3G) : Bool :=
   let d := p.1.val
   let c : Fin 3 := p.2
   if h9 : d < 9 then
     let a : Fin 3 := ⟨d / 3, by omega⟩
     let b : Fin 3 := ⟨d % 3, Nat.mod_lt _ (by omega)⟩
-    x 0 + a * x 1 + b * x 2 = c
+    x 0 + a * x 1 + b * x 2 == c
   else if h12 : d < 12 then
     let b : Fin 3 := ⟨d - 9, by omega⟩
-    x 1 + b * x 2 = c
+    x 1 + b * x 2 == c
   else
-    x 2 = c
+    x 2 == c
 
 /--
 An explicit parametrisation of every affine plane in the finite model.
@@ -362,19 +362,41 @@ def planePointF (p : PlaneIdx) (q : PlaneCoord) : F3G :=
 
 /-- The point set of an explicitly indexed affine plane. -/
 def planeSetF (p : PlaneIdx) : Finset F3G :=
-  Finset.univ.filter (onPlaneF p)
+  Finset.univ.filter (fun x => onPlaneFB p x = true)
 
-set_option maxRecDepth 10000 in
+/-- The plane parametrisation is injective. -/
 theorem planePointF_injective :
     ∀ p : PlaneIdx, Function.Injective (planePointF p) := by
-  decide
+  set_option maxRecDepth 10000 in
+    decide
 
-set_option maxRecDepth 10000 in
-set_option maxHeartbeats 1000000 in
-theorem planeSetF_eq_image :
-    ∀ p : PlaneIdx,
-      planeSetF p = Finset.univ.image (planePointF p) := by
-  decide
+/-- Every parametrised point satisfies its plane equation. -/
+theorem planePointF_onPlane :
+    ∀ p : PlaneIdx, ∀ q : PlaneCoord,
+      onPlaneFB p (planePointF p q) = true := by
+  set_option maxRecDepth 10000 in
+    decide
+
+/-- Every point satisfying the plane equation occurs in the parametrisation. -/
+theorem planePointF_surjective_on :
+    ∀ p : PlaneIdx, ∀ x : F3G,
+      onPlaneFB p x = true → ∃ q : PlaneCoord, planePointF p q = x := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 500000 in
+    decide
+
+theorem planeSetF_eq_image (p : PlaneIdx) :
+    planeSetF p = Finset.univ.image (planePointF p) := by
+  classical
+  ext x
+  constructor
+  · intro hx
+    have hon : onPlaneFB p x = true := (Finset.mem_filter.mp hx).2
+    obtain ⟨q, hq⟩ := planePointF_surjective_on p x hon
+    exact Finset.mem_image.mpr ⟨q, Finset.mem_univ q, hq⟩
+  · intro hx
+    obtain ⟨q, _hq, rfl⟩ := Finset.mem_image.mp hx
+    exact Finset.mem_filter.mpr ⟨Finset.mem_univ _, planePointF_onPlane p q⟩
 
 @[simp] theorem planeSetF_card (p : PlaneIdx) :
     (planeSetF p).card = 9 := by
@@ -389,53 +411,55 @@ The small affine-plane fact needed by S045: a subset of \`F_3^2\` with no
 three distinct elements summing to zero has at most four elements.  This is a
 single 9-point transparent finite check, not an orbit catalogue.
 -/
-set_option maxRecDepth 10000 in
-set_option maxHeartbeats 500000 in
 theorem planeCoord_cap_le_four :
     ∀ A : Finset PlaneCoord,
       (∀ a ∈ A, ∀ b ∈ A, ∀ c ∈ A,
         a ≠ b → a ≠ c → b ≠ c → a + b + c ≠ 0) →
       A.card ≤ 4 := by
-  decide
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 500000 in
+    decide
 
 /--
 The affine parametrisation preserves zero sums of three coordinate points.
 The translation term disappears because the characteristic is three.
 -/
-set_option maxRecDepth 10000 in
-set_option maxHeartbeats 500000 in
 theorem planePointF_sum_zero_of_coord :
     ∀ p : PlaneIdx, ∀ a b c : PlaneCoord,
       a + b + c = 0 →
       planePointF p a + planePointF p b + planePointF p c = 0 := by
-  decide
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 500000 in
+    decide
 
 /-- Every point of the finite model lies on exactly 13 explicit affine planes. -/
-set_option maxRecDepth 10000 in
-set_option maxHeartbeats 1000000 in
 theorem point_plane_countF :
     ∀ x : F3G,
-      ((Finset.univ : Finset PlaneIdx).filter (fun p => onPlaneF p x)).card = 13 := by
-  decide
+      ((Finset.univ : Finset PlaneIdx).filter
+        (fun p => onPlaneFB p x = true)).card = 13 := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 500000 in
+    decide
 
 /-- Every two distinct finite-model points lie on exactly four affine planes. -/
-set_option maxRecDepth 10000 in
-set_option maxHeartbeats 3000000 in
 theorem pair_plane_countF :
     ∀ x y : F3G, x ≠ y →
       ((Finset.univ : Finset PlaneIdx).filter
-        (fun p => onPlaneF p x ∧ onPlaneF p y)).card = 4 := by
-  decide
+        (fun p => onPlaneFB p x = true ∧ onPlaneFB p y = true)).card = 4 := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 1000000 in
+    decide
 
 /-- Every three distinct non-collinear finite-model points lie on exactly one affine plane. -/
-set_option maxRecDepth 10000 in
-set_option maxHeartbeats 5000000 in
 theorem triple_plane_countF :
     ∀ x y z : F3G,
       x ≠ y → x ≠ z → y ≠ z → x + y + z ≠ 0 →
       ((Finset.univ : Finset PlaneIdx).filter
-        (fun p => onPlaneF p x ∧ onPlaneF p y ∧ onPlaneF p z)).card = 1 := by
-  decide
+        (fun p =>
+          onPlaneFB p x = true ∧ onPlaneFB p y = true ∧ onPlaneFB p z = true)).card = 1 := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 2000000 in
+    decide
 
 
 /--
