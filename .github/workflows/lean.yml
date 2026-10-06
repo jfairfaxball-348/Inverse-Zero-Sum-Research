@@ -35,6 +35,8 @@ jobs:
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: resolve pinned mathlib dependency
         run: lake update
+      - name: show resolved dependency lock
+        run: cat lake-manifest.json
       - name: obtain mathlib cache
         run: lake exe cache get
       - name: lake build
@@ -48,4 +50,7 @@ jobs:
             exit 1
           fi
       - name: authority checker
-        run: python scripts/check_authority.py
+        shell: bash
+        run: |
+          rm -rf .lake
+          python scripts/check_authority.py
