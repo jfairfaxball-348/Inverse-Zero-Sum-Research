@@ -230,7 +230,7 @@ theorem shortZero_subset_eq {n : ℕ} {S : PosSeq n}
       omega
     obtain ⟨k, hk⟩ := Finset.card_eq_one.mp hcard
     have hsum : posSum S I + posSum S (J \ I) = posSum S J := by
-      simpa [posSum] using (Finset.sum_sdiff hsub (f := fun i => (S i : G)))
+      simpa [posSum, add_comm] using (Finset.sum_sdiff hsub (f := fun i => (S i : G)))
     have hz : posSum S (J \ I) = 0 := by
       rw [hI.2.2, hJ.2.2] at hsum
       simpa using hsum
@@ -267,8 +267,9 @@ theorem shortZero_disjoint_of_ne {n : ℕ} {S : PosSeq n}
   exact hne (shortZero_subset_eq hI hJ hIJ)
 
 /-- All short zero-sum positional blocks of a length-24 sequence. -/
-def s039AllBlocks (S : PosSeq 24) : Finset (Finset (Fin 24)) :=
-  Finset.univ.filter (ShortZero S)
+noncomputable def s039AllBlocks (S : PosSeq 24) : Finset (Finset (Fin 24)) := by
+  classical
+  exact Finset.univ.filter (ShortZero S)
 
 @[simp] theorem mem_s039AllBlocks {S : PosSeq 24} {I : Finset (Fin 24)} :
     I ∈ s039AllBlocks S ↔ ShortZero S I := by
