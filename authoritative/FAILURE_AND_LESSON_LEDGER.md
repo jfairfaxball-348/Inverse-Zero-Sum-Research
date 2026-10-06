@@ -309,3 +309,16 @@ not converted into novelty or openness.
 ### FL-101 — Core-equivalent geometry is not sequence-equivalent prior art
 
 A finite-geometric theorem can exactly classify the support core relevant to an inverse zero-sum theorem without classifying the original multisequence. For CAND-03, adjoining zero turns a squarefree short-free length-8 core into a 9-cap in `AG(3,3)`, and maximal 9-cap geometry is known. That does not force an arbitrary length-24 sequence satisfying the indexed two-witness avoidance condition to have multiplicity three on the core. Future prior-art audits must prove equivalence at the full theorem level, including multiplicities and positional hypotheses, before upgrading a geometric result from PA-INGREDIENT to PA-EQUIV/PA-STRONGER.
+
+
+## S043 formalization lesson
+
+### FL-102 — A compiling proposition is not a formal proof
+
+A Lean file can faithfully encode the exact target statement and compile
+cleanly while the target theorem remains unproved. Treating a declaration of
+type `Prop` as machine verification would collapse the distinction between
+statement formalization and proof formalization. Record the earliest missing
+proof-spine obligation explicitly, prohibit unchecked assumptions, and do not
+advance downstream verification/registration stages until the frozen theorem
+itself has a kernel-checked proof term.
