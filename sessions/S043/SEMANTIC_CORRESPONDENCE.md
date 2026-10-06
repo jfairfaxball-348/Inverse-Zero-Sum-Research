@@ -28,9 +28,11 @@ a sequence by its support. The structural conclusion is nevertheless a commutati
 
 ## S040/S041 proof correspondence
 
-The first source-level residual obligations used downstream are separately
-encoded as propositions, not assumptions:
+The exact source-level obligations used downstream are separately encoded as
+propositions, not assumptions:
 
+- `ThreeTerm19Input` records the exact `s(C_3^3)=19` consequence used in
+  S039 to force the 3-atom count bound.
 - `Length16SumZeroInput` corresponds to the S040/S041 use of Fan--Gao--Wang--
   Zhong--Zhuang 2012 Lemma 28.
 - `Eta17Input` corresponds to the `eta(C_3^3)=17` threshold used in the
@@ -38,8 +40,11 @@ encoded as propositions, not assumptions:
 - `Length15NonzeroInput` corresponds to the S040/S041 use of 2012
   Lemma 29(1).
 
-The elementary nonzero-alphabet fact that a singleton position cannot be a
-short zero sum is proved as `singleton_not_shortZero`.
+The purely arithmetic four-signature reduction is proved as
+`s039_signature_of_arithmetic`. The elementary nonzero-alphabet fact that a
+singleton position cannot be a short zero sum is proved as
+`singleton_not_shortZero`, and `shortZero_card_two_or_three` derives the
+two-or-three-term witness dichotomy.
 
 The S039 packed-atom decomposition and its arbitrary-representative residual
 quantifier have not been replaced by an axiom or opaque catalogue. They are the
