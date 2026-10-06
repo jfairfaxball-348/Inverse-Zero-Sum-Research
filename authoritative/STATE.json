@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S042",
-  "next_session": "S043",
-  "next_brief": "authoritative/S043_CANDIDATE_3_LEAN_FORMALIZATION_BRIEF.md",
-  "stage": "P3_CAND03_LEAN_FORMALIZATION_READY",
-  "programme_status": "S043_READY_D42_01_EXACT_LEAN_FORMALIZATION",
+  "next_session": "S044",
+  "next_brief": "authoritative/S044_CANDIDATE_3_S039_PACKING_FORMALIZATION_BRIEF.md",
+  "stage": "P5_CAND03_LEAN_FORMALIZATION_PARTIAL",
+  "programme_status": "S043_PARTIAL_D42_01_S044_READY_S039_PACKING_FORMALIZATION",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 is internally proved and independently reverified. S042 completed a deep systematic prior-art audit with no exact/equivalent/stronger-implying prior art located in the documented deep audit and no unresolved high-risk lead. This is not a logical novelty/open-problem proof. The owner-authorized next stage is exact Lean formalization before Palomar, paper, arXiv or E-JC.",
+  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S043 partially formalized the exact theorem in a pinned Lean 4.19.0 + mathlib environment: positional semantics and the exact FrozenClassification proposition compile, but the final theorem has no proof term. The earliest exact formal blocker is S039PackingInput, the packed-atom/four-signature/arbitrary-representative residual theorem. Palomar remains blocked until the complete Lean theorem is proved.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -110,7 +110,7 @@
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; it remains CAND-02-specific and does not transfer reviewer or status authority to CAND-03.",
     "Treat the S042 deep non-hit conservatively: it supports the authorized workflow transition but is not an absolute proof of novelty or prior openness.",
-    "Complete and pin the exact CAND-03 Lean formalization before Palomar registration. If formalization exposes a semantic/proof defect, stop downstream progression and reconcile it.",
+    "Complete and pin the exact CAND-03 Lean formalization before Palomar registration. S043 is partial; continue from the first formal blocker S039PackingInput. If formalization exposes a semantic/proof defect, stop downstream progression and reconcile it.",
     "After Lean succeeds, recheck then-current Palomar requirements before registering the pinned verified result.",
     "Proceed only in the owner-authorized order: Lean formalization -> Palomar registration -> paper drafting -> arXiv preprint -> E-JC submission."
   ],
@@ -330,6 +330,11 @@
       "id": "S042",
       "status": "COMPLETED",
       "record": "sessions/S042/CLOSEOUT.md"
+    },
+    {
+      "id": "S043",
+      "status": "PARTIAL",
+      "record": "sessions/S043/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -588,5 +593,14 @@
     "status_boundary": "A deep search non-hit supports workflow progression but is not itself a proof of novelty."
   },
   "s042_source_refresh_date": "2026-10-06",
-  "cand03_deep_prior_art_status": "NO EXACT/EQUIVALENT/STRONGER-IMPLYING PRIOR ART LOCATED IN THE DOCUMENTED DEEP AUDIT. This is a documented search non-hit, not a logical proof of novelty, previous openness, significance or exhaustive absence."
+  "cand03_deep_prior_art_status": "NO EXACT/EQUIVALENT/STRONGER-IMPLYING PRIOR ART LOCATED IN THE DOCUMENTED DEEP AUDIT. This is a documented search non-hit, not a logical proof of novelty, previous openness, significance or exhaustive absence.",
+  "s043_formalization_date": "2026-10-06",
+  "cand03_lean_formalization": {
+    "status": "PARTIAL",
+    "toolchain": "Lean 4.19.0 (release commit 6caaee842e94)",
+    "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "compiled_scope": "Exact positional definitions, FrozenClassification proposition, S040/S041 source obligations, S039 certificate interface, and elementary proved declarations.",
+    "earliest_formal_blocker": "S039PackingInput: prove the S039 packed short-zero-sum certificate with exactly the four signatures and the universal arbitrary-representative short-free residual property.",
+    "palomar_status": "BLOCKED_UNTIL_FULL_FROZEN_CLASSIFICATION_PROOF"
+  }
 }
