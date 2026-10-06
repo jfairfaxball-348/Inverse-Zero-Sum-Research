@@ -1,76 +1,53 @@
-# Next session prompt
+# Live next-session prompt
 
-Session: S043.
-
+Session: S044.
 Status: READY.
 
 ```text
-Begin S043 in:
+Begin S044 in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
-Previous verified checkpoint:
-<S042-OUTGOING-CHECKPOINT>
-
 Use committed repository authority, not conversation history. Pin live main,
-reconcile intervening changes and confirm S043 is unique. Read AGENTS.md,
+reconcile intervening changes and confirm S044 is unique. Read AGENTS.md,
 authoritative/START_HERE.md, all required authority,
+sessions/S039/FRESH_STRATEGY_SOURCE_REASSESSMENT.md,
+sessions/S039/SOURCE_CHECK.md,
+sessions/S039/CLOSEOUT.md,
 sessions/S040/DIRECT_PROOF_RESIDUAL_STRUCTURE.md,
-sessions/S040/SOURCE_CHECK.md,
-sessions/S040/VALIDATION.md,
-sessions/S040/CLOSEOUT.md,
 sessions/S041/CLASSIFICATION_VERIFICATION.md,
-sessions/S041/LITERATURE_STATUS_AUDIT.md,
-sessions/S041/SOURCE_CHECK.md,
-sessions/S041/VALIDATION.md,
-sessions/S041/CLOSEOUT.md,
-sessions/S042/SEARCH_LOG.md,
-sessions/S042/DEEP_PRIOR_ART_AUDIT.md,
-sessions/S042/SOURCE_CHECK.md,
-sessions/S042/VALIDATION.md,
-sessions/S042/CLOSEOUT.md, and
-authoritative/S043_CANDIDATE_3_LEAN_FORMALIZATION_BRIEF.md.
+sessions/S043/INPUT_SNAPSHOT.md,
+sessions/S043/SEMANTIC_CORRESPONDENCE.md,
+sessions/S043/FORMALIZATION_PROGRESS.md,
+sessions/S043/VALIDATION.md,
+sessions/S043/CLOSEOUT.md, and
+authoritative/S044_CANDIDATE_3_S039_PACKING_FORMALIZATION_BRIEF.md.
 
 CAND-03 remains frozen at the internally proved and independently reverified
-iff classification: a length-24 sequence S over C_3^3\{0} has no two innerly
-non-zero-sum-joint short zero-sum subsequences, short meaning length at most 3,
-iff S=U^3 for a squarefree short-free length-8 sequence U.
+iff classification. S043 is PARTIAL: the exact positional theorem and
+foundational definitions compile in Lean 4.19.0 with mathlib pinned at
+c44e0c8ee63ca166450922a373c7409c5d26b00b, but the final theorem has no proof
+term. The single earliest formal blocker is S039PackingInput.
 
-S042 completed the deep prior-art audit with the precise status:
-"no exact/equivalent/stronger-implying prior art located in the documented deep
-audit." This is a deep-search non-hit, not a logical proof of novelty, previous
-openness or publication significance.
+Run exactly one formalization unit, D43-01. Prove S039PackingInput faithfully:
+for every target-avoiding length-24 positional sequence construct the S039
+packing certificate with signature exactly one of (6,8,2), (7,8,1), (8,8,0),
+(6,9,0), and prove the arbitrary-representative residual is short-free for
+every representative choice.
 
-Run exactly one formalization unit, D42-01. Formalize the exact theorem and its
-proof in Lean 4 with a pinned reproducible toolchain. Preserve the positional
-sequence semantics and record explicit correspondence between the Lean
-statement/lemmas and the frozen S040/S041 theorem/proof.
+Preserve positional semantics and mirror the checked S039/2024 direct-proof
+architecture. Do not reopen S038, strengthen/weaken the theorem, jump to S040
+residual elimination, use an unchecked assumption, or substitute an opaque
+orbit catalogue.
 
-Inspect first for existing Lean infrastructure. If none exists, create a
-minimal pinned Lean 4 + mathlib project. Formalize C_3^3, the nonzero alphabet,
-finite positional subsequences, zero-sum/short/short-free/squarefree, the
-two-witness avoidance relation, and U^3. Mirror the verified proof
-architecture; do not reopen proof search, repair S038, strengthen/weaken the
-theorem, or replace the proof by an opaque brute-force orbit catalogue.
+Run lake build, focused checks, forbidden-placeholder search and
+scripts/check_authority.py. If the exact S039 input does not fully formalize,
+preserve compiling progress and close PARTIAL with the single earliest formal
+blocker. Do not advance to Palomar. If it succeeds, promote only the next Lean
+proof-spine unit; Palomar remains blocked until FrozenClassification has a full
+proof term and the complete pinned checks pass.
 
-A completed proof may contain no sorry, admit, unsound axiom placeholder or
-hidden external oracle assumption. Run lake build and warranted checks, search
-formal source for forbidden placeholders, run scripts/check_authority.py, and
-record the Lean trust boundary. If the exact theorem does not fully formalize,
-preserve compiling progress and close PARTIAL with the single exact formal
-blocker; do not advance to Palomar.
-
-If D42-01 fully succeeds, the next stage is only to recheck current Palomar
-requirements and register the pinned Lean-verified result. Do not write the
-paper yet, post arXiv, submit to E-JC, or contact reviewers/authors. Owner order
-remains Lean -> Palomar -> paper -> arXiv -> E-JC. Lean/Palomar does not itself
-establish literature novelty.
-
-Independent pre-submission external review/consultation is skipped for CAND-03
-by owner decision. E-JC's ordinary editorial/referee process remains planned.
-Xue Li Stage-1 remains CAND-02-specific and reply pending.
-
-Close under repository protocol: synchronize authority, run
-scripts/check_authority.py and formalization checks, commit safely to main,
-verify remote SHA/tree, automatically give the close report, and provide an
-exact next-session prompt only if the S043 stop/successor rule permits one.
+No paper, arXiv, E-JC submission or outreach. Close under repository protocol,
+commit safely to main, verify remote SHA/tree, automatically give the close
+report, and provide an exact next-session prompt only if the stop/successor rule
+permits one.
 ```
