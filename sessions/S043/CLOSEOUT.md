@@ -12,9 +12,14 @@ report.
 
 S043 inspected for Lean infrastructure, found none, and created a minimal
 pinned Lean 4 + mathlib project. The exact frozen CAND-03 theorem is encoded as
-`FrozenClassification` with positional sequence semantics. The S040/S041
+`FrozenClassification` with positional witness semantics and with the
+commutative sequence conclusion `S=U^3` represented correctly up to a
+permutation of the 24 positions. The S039--S041
 source obligations and the S039 packed-atom interface are represented as
-explicit propositions, not assumed facts.
+explicit propositions, not assumed facts. The purely arithmetic S039
+four-signature deduction is already a proved Lean theorem, as are the
+nonzero-alphabet singleton exclusion and the resulting two-or-three-term
+cardinality lemma.
 
 The full theorem is **not** formalized in D42-01. The first exact blocker is
 `S039PackingInput`: a Lean proof of the S039 packed short-zero-sum
