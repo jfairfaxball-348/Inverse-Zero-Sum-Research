@@ -1,10 +1,10 @@
 # Target register
 
-**Current protocol note (D-030--D-032):** historical entries below preserve
-the gate rules that governed their sessions. External review remains parallel
-rather than a prerequisite for mathematical investigation, but D-071
-temporarily closes the mathematical-investigation gate because newly selected
-CAND-05 still needs full target-specific due diligence.
+**Current protocol note:** historical entries below preserve the gate rules
+and target selections that governed their sessions. CAND-03 is the current
+selected target under D-111. External review remains CLOSED and is not a
+CAND-03 pre-submission blocker under D-127. S043 is a partial Lean
+formalization checkpoint; S044 is the only authorized mathematical unit.
 
 **Selected exact target: CAND-03 — inverse generalized-Narkiewicz
 structure at length 24 over `C_3^3\{0}`.**
