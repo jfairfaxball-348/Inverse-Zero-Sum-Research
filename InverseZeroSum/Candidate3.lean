@@ -1636,27 +1636,69 @@ def basisBuildHomT (a b c : F3T) : F3T →+ F3T where
   rcases c with ⟨c0, c1, c2⟩
   simp [basisBuildT, e3T]
 
-/-- Explicit collision pairs for one proposed basis map. -/
-def basisCollisionsT (a b c : F3T) : Finset (F3T × F3T) :=
-  ((Finset.univ : Finset F3T).product Finset.univ).filter (fun q =>
-    q.1 ≠ q.2 ∧ basisBuildT a b c q.1 = basisBuildT a b c q.2)
+/-- Coordinatewise scalar multiplication in the tuple model. -/
+def scaleT (r : Fin 3) (x : F3T) : F3T :=
+  (r * x.1, r * x.2.1, r * x.2.2)
 
-/--
-For every admissible plane/basis configuration the concrete collision set is
-empty.  The point-pair search is therefore finite and explicit.
--/
-set_option maxRecDepth 10000 in
-set_option maxHeartbeats 30000000 in
-theorem basisCollisionsT_empty_of_plane :
-    ∀ a b c : F3T, ∀ p : PlaneIdx,
-      a ≠ 0 → b ≠ 0 → a ≠ b → a + b ≠ 0 →
-      onPlaneTB p 0 = true →
-      onPlaneTB p a = true →
-      onPlaneTB p b = true →
-      onPlaneTB p c = false →
-      basisCollisionsT a b c = ∅ := by
+/-- The two-vector part of the basis build. -/
+def pairBuildT (a b : F3T) (r s : Fin 3) : F3T :=
+  scaleT r a + scaleT s b
+
+theorem basisBuildT_eq_pair_add_scale (a b c u : F3T) :
+    basisBuildT a b c u =
+      pairBuildT a b u.1 u.2.1 + scaleT u.2.2 c := by
+  rfl
+
+theorem planeValueT_zero :
+    ∀ d : Fin 13, planeValueT d 0 = 0 := by
   decide
 
+theorem planeValueT_add :
+    ∀ d : Fin 13, ∀ x y : F3T,
+      planeValueT d (x + y) = planeValueT d x + planeValueT d y := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 1000000 in
+    decide
+
+theorem planeValueT_scale :
+    ∀ d : Fin 13, ∀ r : Fin 3, ∀ x : F3T,
+      planeValueT d (scaleT r x) = r * planeValueT d x := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 1000000 in
+    decide
+
+theorem planeValueT_pairBuild (d : Fin 13) (a b : F3T) (r s : Fin 3) :
+    planeValueT d (pairBuildT a b r s) =
+      r * planeValueT d a + s * planeValueT d b := by
+  rw [pairBuildT, planeValueT_add, planeValueT_scale, planeValueT_scale]
+
+theorem planeValueT_basisBuild (d : Fin 13) (a b c u : F3T) :
+    planeValueT d (basisBuildT a b c u) =
+      u.1 * planeValueT d a +
+        u.2.1 * planeValueT d b +
+          u.2.2 * planeValueT d c := by
+  rw [basisBuildT_eq_pair_add_scale, planeValueT_add,
+    planeValueT_pairBuild, planeValueT_scale]
+  rfl
+
+/--
+Two nonzero, distinct, non-opposite tuple vectors have unique coefficients
+over F_3.  This is only a 27^2 * 3^4 finite check.
+-/
+theorem pairBuildT_coeff_unique :
+    ∀ a b : F3T,
+      a ≠ 0 → b ≠ 0 → a ≠ b → a + b ≠ 0 →
+      ∀ r s r' s' : Fin 3,
+        pairBuildT a b r s = pairBuildT a b r' s' →
+        r = r' ∧ s = s' := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 3000000 in
+    decide
+
+/--
+The plane functional separates the third coefficient; the preceding tiny
+coefficient check separates the first two.  This avoids a collision catalogue.
+-/
 theorem basisBuildT_injective_of_plane
     (a b c : F3T) (p : PlaneIdx)
     (ha0 : a ≠ 0) (hb0 : b ≠ 0) (hab : a ≠ b) (habSum : a + b ≠ 0)
@@ -1665,17 +1707,46 @@ theorem basisBuildT_injective_of_plane
     (hpb : onPlaneTB p b = true)
     (hpc : onPlaneTB p c = false) :
     Function.Injective (basisBuildT a b c) := by
+  have hp0v : planeValueT p.1 0 = p.2 := by
+    simpa [onPlaneTB] using hp0
+  have hpconst : p.2 = 0 := by
+    calc
+      p.2 = planeValueT p.1 0 := hp0v.symm
+      _ = 0 := planeValueT_zero p.1
+  have hpav : planeValueT p.1 a = 0 := by
+    have ha : planeValueT p.1 a = p.2 := by
+      simpa [onPlaneTB] using hpa
+    exact ha.trans hpconst
+  have hpbv : planeValueT p.1 b = 0 := by
+    have hb : planeValueT p.1 b = p.2 := by
+      simpa [onPlaneTB] using hpb
+    exact hb.trans hpconst
+  have hpcv : planeValueT p.1 c ≠ 0 := by
+    intro hc0
+    have htrue : onPlaneTB p c = true := by
+      simp [onPlaneTB, hc0, hpconst]
+    rw [hpc] at htrue
+    decide
   intro x y hxy
-  by_contra hne
-  have hmem : (x, y) ∈ basisCollisionsT a b c := by
-    exact Finset.mem_filter.mpr
-      ⟨Finset.mem_product.mpr ⟨Finset.mem_univ x, Finset.mem_univ y⟩,
-        hne, hxy⟩
-  have hempty :=
-    basisCollisionsT_empty_of_plane a b c p ha0 hb0 hab habSum
-      hp0 hpa hpb hpc
-  rw [hempty] at hmem
-  simpa using hmem
+  have hphi := congrArg (planeValueT p.1) hxy
+  rw [planeValueT_basisBuild, planeValueT_basisBuild, hpav, hpbv] at hphi
+  simp only [mul_zero, zero_add] at hphi
+  have hthird : x.2.2 = y.2.2 :=
+    mul_right_cancel₀ hpcv hphi
+  have hpair :
+      pairBuildT a b x.1 x.2.1 = pairBuildT a b y.1 y.2.1 := by
+    have hxy' := hxy
+    rw [basisBuildT_eq_pair_add_scale, basisBuildT_eq_pair_add_scale,
+      hthird] at hxy'
+    exact add_right_cancel hxy'
+  have hcoeff :=
+    pairBuildT_coeff_unique a b ha0 hb0 hab habSum
+      x.1 x.2.1 y.1 y.2.1 hpair
+  apply Prod.ext
+  · exact hcoeff.1
+  · apply Prod.ext
+    · exact hcoeff.2
+    · exact hthird
 
 theorem isCapT_map_addEquiv (e : F3T ≃+ F3T) {A : Finset F3T}
     (hA : IsCapT A) :
