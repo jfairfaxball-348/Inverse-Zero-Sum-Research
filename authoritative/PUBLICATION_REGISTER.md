@@ -626,3 +626,10 @@ venue for a future structural CAND-03 result.
 S039 adds an internal target-wide near-equality lemma and a source-backed residual route. It is not a complete inverse classification, novelty certification, independent review or manuscript-ready contribution.
 
 No manuscript, submission authorization, submission, acceptance, publication or outreach occurred. Publication gate remains OPEN as workflow eligibility; E-JC remains the leading eligible route and JCTA a natural comparable venue for a future structural CAND-03 result.
+
+
+## S040 publication boundary
+
+S040 produces an internal necessity-and-sufficiency classification for CAND-03, which is materially stronger than the S039 near-equality lemma. It is not yet a publication-ready contribution because exact prior-art overlap, novelty/significance and independent verification have not been established.
+
+No manuscript was prepared, no submission was authorized or made, and no journal status changed. Publication gate remains OPEN as a workflow gate. E-JC remains the leading plausible route and JCTA a natural comparator pending S041's verification/status audit.
