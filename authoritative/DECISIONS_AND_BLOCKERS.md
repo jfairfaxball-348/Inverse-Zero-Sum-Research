@@ -918,3 +918,17 @@ Active owner blockers: **NONE**. No manuscript, preprint, submission or CAND-03 
 
 Active owner blockers: **NONE**. No manuscript, Palomar registration, preprint,
 submission or outreach is authorized by S043.
+
+
+## S044 formal blocker — non-owner
+
+S044/D43-01 is PARTIAL with no active owner blocker. The packing theorem itself
+is now kernel-checked conditional on the recorded source thresholds. The
+single earliest exact formal blocker is `ThreeTerm19Input`, the existing
+closed proposition expressing the `s(C_3^3)=19` consequence needed first in
+the S039 proof spine. It may not be bypassed by an unchecked axiom, postulate
+or imported assumption.
+
+Decision: promote exactly S045/D44-01 to formalize `ThreeTerm19Input` in the
+pinned project. `Eta17Input` remains downstream and is not co-promoted.
+Palomar and publication stages remain blocked on the complete Lean theorem.
