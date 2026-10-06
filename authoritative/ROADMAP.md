@@ -1345,3 +1345,27 @@ D41-01 closes with: **no exact/equivalent/stronger-implying prior art located in
 The defining/direct 2024 paper, 2012 full-rank source, older Narkiewicz line, 2024--2026 rank-two inverse line, Gao--Thangadurai ordinary rank-three structure and affine-cap literature are proper ingredients at the checked interfaces. Factorization, adjacent-invariant, current-preprint, thesis/institutional and non-English routes produced no checked stronger overlap. This is a documented search non-hit, not a proof of novelty, previous openness or significance.
 
 S043/D42-01 is the sole promoted stage: formalize the frozen iff theorem exactly in Lean with a pinned reproducible toolchain and explicit semantic correspondence. If formalization succeeds, only then recheck Palomar requirements. Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
+
+
+## S043 partial — pinned Lean foundation and first exact blocker
+
+D42-01 did not complete P5. It established the reproducible formal environment
+and encoded the exact frozen theorem with positional semantics, but
+`FrozenClassification` remains unproved.
+
+Pinned environment:
+- Lean 4.19.0, release commit `6caaee842e94`;
+- mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`.
+
+The current Lean source clean-builds. The earliest exact remaining proof-spine
+obligation is `S039PackingInput`: construct the S039 packed short-zero-sum
+certificate for every target-avoiding length-24 positional sequence, prove one
+of exactly the four signatures `(6,8,2)`, `(7,8,1)`, `(8,8,0)`,
+`(6,9,0)`, and preserve the universal arbitrary-representative short-free
+residual quantifier.
+
+S044/D43-01 is the sole promoted successor. It may formalize only this S039
+interface and must stop before the S040 representative-swap elimination.
+Palomar registration remains blocked until the complete
+`FrozenClassification` theorem has a proof term and all pinned checks pass.
+The owner order Lean -> Palomar -> paper -> arXiv -> E-JC is unchanged.
