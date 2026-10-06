@@ -436,6 +436,56 @@ theorem planePointT_sum_zero_of_coord :
   set_option maxHeartbeats 500000 in
     decide
 
+
+/-- A set in the tuple model is a cap when no three distinct points sum to zero. -/
+def IsCapT (A : Finset F3T) : Prop :=
+  ∀ a ∈ A, ∀ b ∈ A, ∀ c ∈ A,
+    a ≠ b → a ≠ c → b ≠ c → a + b + c ≠ 0
+
+/-- A cap meets every affine plane in at most four points. -/
+theorem cap_inter_plane_le_four {A : Finset F3T} (hA : IsCapT A) (p : PlaneIdx) :
+    (A ∩ planeSetT p).card ≤ 4 := by
+  classical
+  let Q : Finset PlaneCoord :=
+    Finset.univ.filter (fun q => planePointT p q ∈ A)
+  have hQcap :
+      ∀ a ∈ Q, ∀ b ∈ Q, ∀ c ∈ Q,
+        a ≠ b → a ≠ c → b ≠ c → a + b + c ≠ 0 := by
+    intro a ha b hb c hc hab hac hbc hzero
+    have haA : planePointT p a ∈ A := (Finset.mem_filter.mp ha).2
+    have hbA : planePointT p b ∈ A := (Finset.mem_filter.mp hb).2
+    have hcA : planePointT p c ∈ A := (Finset.mem_filter.mp hc).2
+    have hab' : planePointT p a ≠ planePointT p b :=
+      (planePointT_injective p).ne hab
+    have hac' : planePointT p a ≠ planePointT p c :=
+      (planePointT_injective p).ne hac
+    have hbc' : planePointT p b ≠ planePointT p c :=
+      (planePointT_injective p).ne hbc
+    exact (hA _ haA _ hbA _ hcA hab' hac' hbc')
+      (planePointT_sum_zero_of_coord p a b c hzero)
+  have hImage :
+      Q.image (planePointT p) = A ∩ planeSetT p := by
+    ext x
+    constructor
+    · intro hx
+      obtain ⟨q, hqQ, rfl⟩ := Finset.mem_image.mp hx
+      have hqA : planePointT p q ∈ A := (Finset.mem_filter.mp hqQ).2
+      refine Finset.mem_inter.mpr ⟨hqA, ?_⟩
+      rw [planeSetT_eq_image p]
+      exact Finset.mem_image.mpr ⟨q, Finset.mem_univ q, rfl⟩
+    · intro hx
+      have hxA : x ∈ A := (Finset.mem_inter.mp hx).1
+      have hxP : x ∈ planeSetT p := (Finset.mem_inter.mp hx).2
+      rw [planeSetT_eq_image p] at hxP
+      obtain ⟨q, _hq, rfl⟩ := Finset.mem_image.mp hxP
+      exact Finset.mem_image.mpr
+        ⟨q, Finset.mem_filter.mpr ⟨Finset.mem_univ q, hxA⟩, rfl⟩
+  calc
+    (A ∩ planeSetT p).card = (Q.image (planePointT p)).card := by
+      rw [hImage]
+    _ = Q.card := Finset.card_image_of_injective Q (planePointT_injective p)
+    _ ≤ 4 := planeCoord_cap_le_four Q hQcap
+
 /-- Every two distinct tuple-model points lie on exactly four affine planes. -/
 theorem pair_plane_countT :
     ∀ x y : F3T, x ≠ y →
