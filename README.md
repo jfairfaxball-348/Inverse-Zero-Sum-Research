@@ -390,3 +390,18 @@ The overall formalization remains partial. `Eta17Input` is now the single
 earliest blocker, so S046 is restricted to that proposition. Palomar and all
 publication stages remain blocked until `FrozenClassification` itself has a
 proof term and the full pinned checks pass.
+
+## S046 Eta17 formalization checkpoint
+
+S046 closes the second source-threshold obligation exposed by S044. The pinned
+Lean source now proves `eta17Input : Eta17Input`: every length-17 positional
+sequence over `C_3^3\{0}` has a short zero-sum witness. The proof reuses the
+transparent S045 cap theorem: a short-free support plus zero is a cap, so the
+support has at most eight values, and multiplicity at most two contradicts
+length 17.
+
+The overall formalization remains partial. S047 is restricted to closing
+`S039PackingInput` from the already checked conditional theorem and the two
+closed threshold proofs. Palomar and all publication stages remain blocked
+until `FrozenClassification` itself has a proof term and the full pinned
+checks pass.
