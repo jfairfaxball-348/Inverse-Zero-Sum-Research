@@ -345,19 +345,22 @@ abbrev PlaneCoord := Fin 3 × Fin 3
 /-- The 39 affine planes of \`F_3^3\`: 13 directions and three cosets each. -/
 abbrev PlaneIdx := Fin 13 × Fin 3
 
+/-- The linear form defining one of the 13 affine-plane directions. -/
+def planeValueT (d : Fin 13) (x : F3T) : Fin 3 :=
+  let k := d.val
+  if h9 : k < 9 then
+    let a : Fin 3 := ⟨k / 3, by omega⟩
+    let b : Fin 3 := ⟨k % 3, Nat.mod_lt _ (by omega)⟩
+    x.1 + a * x.2.1 + b * x.2.2
+  else if h12 : k < 12 then
+    let b : Fin 3 := ⟨k - 9, by omega⟩
+    x.2.1 + b * x.2.2
+  else
+    x.2.2
+
 /-- A computable Boolean form of the explicit affine-plane equation. -/
 def onPlaneTB (p : PlaneIdx) (x : F3T) : Bool :=
-  let d := p.1.val
-  let c : Fin 3 := p.2
-  if h9 : d < 9 then
-    let a : Fin 3 := ⟨d / 3, by omega⟩
-    let b : Fin 3 := ⟨d % 3, Nat.mod_lt _ (by omega)⟩
-    x.1 + a * x.2.1 + b * x.2.2 == c
-  else if h12 : d < 12 then
-    let b : Fin 3 := ⟨d - 9, by omega⟩
-    x.2.1 + b * x.2.2 == c
-  else
-    x.2.2 == c
+  planeValueT p.1 x == p.2
 
 /-- Explicit parametrisation of each nine-point affine plane in the tuple model. -/
 def planePointT (p : PlaneIdx) (q : PlaneCoord) : F3T :=
@@ -526,25 +529,45 @@ theorem pair_plane_countT :
   set_option maxHeartbeats 1000000 in
     decide
 
-/-
-The four affine planes through a line cover the whole three-dimensional affine
-space.  The computational antecedent is Boolean so the finite check elaborates
-inside the explicit resource scope.
--/
-set_option maxRecDepth 20000 in
-set_option maxHeartbeats 6000000 in
-theorem pair_planes_coverTB :
-    ∀ x y z : F3T, (x == y) = false →
-      ∃ p : PlaneIdx,
-        onPlaneTB p x = true ∧ onPlaneTB p y = true ∧ onPlaneTB p z = true := by
+/-- The explicit direction forms are additive. -/
+theorem planeValueT_sub :
+    ∀ d : Fin 13, ∀ x y : F3T,
+      planeValueT d (x - y) = planeValueT d x - planeValueT d y := by
   decide
 
+/--
+Translation-reduced finite incidence check: for every nonzero direction vector
+and every relative third point, one of the 13 plane normals annihilates both.
+This checks only 26*27 relative configurations.
+-/
+theorem relative_plane_directionT :
+    ∀ d e : F3T, d ≠ 0 →
+      ∃ n : Fin 13, planeValueT n d = 0 ∧ planeValueT n e = 0 := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 800000 in
+    decide
+
+/--
+The four affine planes through a line cover the whole three-dimensional affine
+space.  This theorem reconstructs the affine constant from the
+translation-reduced direction check.
+-/
 theorem pair_planes_coverT (x y z : F3T) (hxy : x ≠ y) :
     ∃ p : PlaneIdx,
       onPlaneTB p x = true ∧ onPlaneTB p y = true ∧ onPlaneTB p z = true := by
-  apply pair_planes_coverTB x y z
-  simpa [hxy]
-
+  have hdiff : y - x ≠ 0 := sub_ne_zero.mpr hxy.symm
+  obtain ⟨n, hnyx, hnzx⟩ :=
+    relative_plane_directionT (y - x) (z - x) hdiff
+  have hny : planeValueT n y = planeValueT n x := by
+    have hsub := planeValueT_sub n y x
+    rw [hsub] at hnyx
+    exact sub_eq_zero.mp hnyx
+  have hnz : planeValueT n z = planeValueT n x := by
+    have hsub := planeValueT_sub n z x
+    rw [hsub] at hnzx
+    exact sub_eq_zero.mp hnzx
+  refine ⟨(n, planeValueT n x), ?_⟩
+  simp [onPlaneTB, hny, hnz]
 
 
 /-- There is no ten-point cap in the affine space \`F_3^3\`. -/
