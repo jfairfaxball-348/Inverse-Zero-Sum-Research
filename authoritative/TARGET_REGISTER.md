@@ -6,18 +6,22 @@ rather than a prerequisite for mathematical investigation, but D-071
 temporarily closes the mathematical-investigation gate because newly selected
 CAND-05 still needs full target-specific due diligence.
 
-**Selected exact target: CAND-05 — ordinary inverse `eta` for
-`C_2 \oplus C_{2m} \oplus C_{2m}`, `m>=2`.**
+**Selected exact target: CAND-03 — inverse generalized-Narkiewicz
+structure at length 24 over `C_3^3\{0}`.**
 
-Owner decision D-070 supersedes the earlier CAND-01 and CAND-02 selections.
-The exact target is to classify every sequence `S` over
-`G_m=C_2\oplus C_{2m}\oplus C_{2m}` with
-`|S|=eta(G_m)-1=6m+1` and no nonempty zero-sum subsequence of length at
-most `exp(G_m)=2m`, for every `m>=2`.
+Owner decision D-111 supersedes the historical CAND-05 selection. The exact
+target is to classify every length-24 positional sequence over
+`C_3^3\{0}` with no two innerly non-zero-sum-joint short zero-sum
+subsequences, where short means length at most 3.
 
-CAND-02 is historical and paused; its mathematics is retained. CAND-01 and
-CAND-03 are audited alternatives but no longer selected. CAND-04 remains
-retired as a clean standalone inverse target.
+The frozen programme theorem is: exactly `S=U^3` with `U` squarefree
+short-free of length 8. It is internally proved and independently reverified;
+S042 found no exact/equivalent/stronger-implying prior art in the documented
+deep audit. S043 formalization is partial and does not yet machine-verify the
+full theorem.
+
+CAND-05 and CAND-02 are historical/paused; CAND-04 remains retired; CAND-06
+and CAND-01 remain unselected alternatives.
 
 ## S001 candidate set
 
@@ -1233,3 +1237,22 @@ No PA-EXACT, PA-EQUIV or PA-STRONGER source was verified and no unresolved high-
 The closest finite-geometric equivalence is only at the core level: squarefree short-free length-8 `U` corresponds after adjoining 0 to a 9-cap in `AG(3,3)`. Cap classification does not force an arbitrary target length-24 sequence to have multiplicity three on such a core, so it is not an equivalent or stronger CAND-03 theorem.
 
 S043 is exact Lean formalization. The theorem itself stays frozen; no new mathematical architecture is authorized.
+
+
+## S043 CAND-03 formalization boundary
+
+Date: 2026-10-06.
+
+The selected mathematical target and frozen iff statement are unchanged.
+S043 encoded that exact theorem as `FrozenClassification` in Lean using
+positional semantics. A clean build of definitions and proved foundational
+lemmas is not a proof of the final proposition.
+
+The first exact formal blocker is `S039PackingInput`, corresponding to the
+already programme-proved S039 four-signature packed-atom theorem and its
+universal arbitrary-representative residual quantifier. S044 may formalize
+only that interface. No weakening, strengthening or target replacement is
+authorized.
+
+Formalization status: **PARTIAL**. Palomar status:
+**BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
