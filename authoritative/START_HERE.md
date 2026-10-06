@@ -17,16 +17,15 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S045 is COMPLETED and S046 is READY. CAND-03 remains selected. The exact
+**S046 is COMPLETED and S047 is READY. CAND-03 remains selected. The exact
 classification is internally proved and independently reverified. S042 found
 no exact/equivalent/stronger-implying prior art in the documented deep audit.
-S044 kernel-checks the complete S039 packing construction conditional on the
-recorded source thresholds. S045 now kernel-checks
-`threeTerm19Input : ThreeTerm19Input`, the exact positional
-`s(C_3^3)=19` consequence, by a transparent finite affine-geometry proof.
-The single earliest formal blocker is now `Eta17Input`.
-`FrozenClassification` still has no proof term, so Palomar remains
-blocked.**
+S044 kernel-checks the complete S039 packing construction conditional on its
+two threshold interfaces; S045 and S046 now kernel-check those interfaces as
+`threeTerm19Input : ThreeTerm19Input` and
+`eta17Input : Eta17Input` by transparent finite affine geometry.
+The single earliest formal obligation is now `S039PackingInput` itself.
+`FrozenClassification` still has no proof term, so Palomar remains blocked.**
 
 Selected target:
 
@@ -846,3 +845,17 @@ No `s(C_3^3)=19` axiom, Property-D axiom, `native_decide`, opaque orbit
 catalogue or unchecked theorem is introduced. The next and only promoted
 formal unit is S046/D45-01 on `Eta17Input`. Palomar and all publication stages
 remain blocked until the complete frozen classification has a proof term.
+
+## S046 completed — Eta17Input formalization
+
+S046/D45-01 proves `eta17Input : Eta17Input` in the pinned Lean project.
+For a hypothetical short-free length-17 sequence, adjoining zero to its
+nonzero support preserves the cap property; S045's nine-point cap bound then
+forces at most eight support values, while exponent three permits at most two
+copies of each. This contradiction closes the eta-17 source interface without
+an unchecked numerical threshold.
+
+Both threshold inputs to `s039PackingInput_of_thresholds` are now closed.
+S047/D46-01 is restricted to closing `S039PackingInput` and must stop before
+the S040 proof spine. Palomar and publication stages remain blocked on the full
+`FrozenClassification` proof.
