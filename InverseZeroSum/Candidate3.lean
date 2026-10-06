@@ -13,7 +13,7 @@ abbrev PosSeq (n : ℕ) := Fin n → Alphabet
 
 /-- Sum of the entries whose positions lie in `I`. -/
 def posSum {n : ℕ} (S : PosSeq n) (I : Finset (Fin n)) : G :=
-  ∑ i in I, (S i : G)
+  ∑ i ∈ I, (S i : G)
 
 /-- A nonempty zero-sum positional subsequence of length at most three. -/
 def ShortZero {n : ℕ} (S : PosSeq n) (I : Finset (Fin n)) : Prop :=
@@ -55,7 +55,7 @@ def totalSum {n : ℕ} (S : PosSeq n) : G :=
 
 /--
 Exact frozen CAND-03 statement. S043 records this proposition even when the
-proof term is not yet available; no axiom or placeholder is introduced.
+proof term is not yet available; no unchecked postulate or placeholder is introduced.
 -/
 def FrozenClassification : Prop :=
   ∀ S : PosSeq 24,
@@ -65,14 +65,14 @@ def FrozenClassification : Prop :=
 
 /--
 Formal statement of the 2012 length-16 residual input used by S040.
-This is a proposition to be proved, not an assumed axiom.
+This is a proposition to be proved, not an assumed theorem.
 -/
 def Length16SumZeroInput : Prop :=
   ∀ R : PosSeq 16, ShortFree R → totalSum R = 0
 
 /--
 Formal statement of the ordinary `eta(C_3^3)=17` consequence used in the
-length-15 residual argument. This is a proof obligation, not an axiom.
+length-15 residual argument. This is a proof obligation, not an assumed theorem.
 -/
 def Eta17Input : Prop :=
   ∀ R : PosSeq 17, ∃ I : Finset (Fin 17), ShortZero R I
