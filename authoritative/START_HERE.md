@@ -17,10 +17,11 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S039 is COMPLETED. CAND-03 remains the selected programme target. D38-01
-found a genuinely target-wide near-equality constraint in the defining 2024
-proof and promoted exactly one bounded successor. S040 is READY for the
-full-rank length-16/15 residual-structure test.**
+**S040 is COMPLETED. CAND-03 remains the selected programme target. D39-01
+collapses all four S039 packing signatures and proves the exact internal
+classification `S=U^3` with `U` squarefree short-free of length 8.
+S041 is READY for independent proof-chain verification and focused
+literature/status overlap audit.**
 
 Selected target:
 
@@ -32,12 +33,11 @@ Selected target:
 - Target gate: OPEN.
 - Publication gate: OPEN; E-JC remains the leading eligible workflow route,
   with JCTA a natural comparable venue for CAND-03.
-- Mathematical-investigation gate: OPEN for S040 D39-01, the bounded full-rank residual-structure test.
+- Mathematical-investigation gate: OPEN for S041 D40-01, bounded independent proof verification plus focused exact-overlap/current-status audit.
 - External-review gate: CLOSED; confirmed reviewers: NONE.
 - Active owner blockers: NONE.
-- Next session: S040, D39-01 direct-proof residual-structure test.
-- CAND-03 current status remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**;
-  no bounded search non-hit is an openness or novelty certificate.
+- Next session: S041, D40-01 classification verification and status audit.
+- CAND-03 mathematical classification is **PROGRAMME-PROVED FROM CHECKED SOURCE INPUTS**; exact literature novelty/overlap/current status remains unverified, and no bounded search non-hit is an openness or novelty certificate.
 - David J. Grynkiewicz remains the provisional first independent status/proposal
   lead, with Pingzhi Yuan a strong alternative; no outreach is authorized by
   target selection.
@@ -757,3 +757,38 @@ S040/D39-01 is the sole promoted successor. It may apply the exact full-rank
 to these residuals, but may not reopen the S038 rank-two architecture.
 CAND-03 remains **SOURCE-DEFINED / CURRENT STATUS UNKNOWN**. External review
 remains CLOSED and no outreach is authorized.
+
+
+## S040 completed — exact internal CAND-03 classification
+
+D39-01 applied only the full-rank residual statements authorized by S039.
+
+For `s=8`, every arbitrary representative-deletion residual is short-free of
+length 16 and hence has sum zero by Fan--Gao--Wang--Zhong--Zhuang 2012 Lemma
+28. Comparing two representative choices inside one packed block forces the
+two selected values to agree. Therefore every packed block is constant, no
+2-block can occur, and the signatures `(6,8,2)` and `(7,8,1)` are
+excluded. The sole `s=8` branch is `(8,8,0)`, giving `S=U^3` with
+`U^2` short-free; Property C makes the eight values of `U` distinct.
+
+For a short-free length-15 sequence, D39-01 proves support size exactly 8 with
+multiplicity profile `2^7 1`. If `u` is the unique singleton, then
+duplicating `u` preserves short-freeness, so Lemma 28 gives
+`u=-sigma(R)`; Lemma 29 also gives `sigma(R)!=0`. Applying this singleton
+identity to every representative transversal in the `(6,9,0)` branch shows
+that any nonconstant packed block forces every complementary representative
+sum to vanish. A second nonconstant 2-block contradicts that requirement, so
+`(6,9,0)` is impossible.
+
+Thus every target sequence is exactly
+
+`S=U^3`
+
+for a squarefree short-free length-8 sequence `U`. The converse is supplied
+by the separately rechecked Gao--Hui--Li--Li--Qu--Zhong 2024 Lemma 3.3(2).
+The source construction is used only for sufficiency after necessity has been
+proved internally; it is not treated as an inverse theorem.
+
+S041/D40-01 is the sole promoted successor. It must independently verify this
+proof chain and audit exact literature overlap/current status before any
+publication or outreach decision. No further residual variant is authorized.
