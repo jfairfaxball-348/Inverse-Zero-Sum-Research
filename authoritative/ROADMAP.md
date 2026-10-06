@@ -1258,3 +1258,18 @@ The factorization-type route adds no structural theorem beyond exact `eta*=eta^N
 ### S040 — D39-01 full-rank residual structure
 
 Apply only the exact `C_3^3` short-free structure to the S039 residuals, beginning with Fan--Gao--Wang--Zhong--Zhuang 2012 Lemmas 28--29 and Property C. Decide whether the four signatures collapse or force a canonical support/multiplicity datum. Stop at the first exact reduction or no-go; do not iterate residual variants or reopen S038.
+
+
+## S040 completed — exact internal classification
+
+D39-01 closes the residual-structure route rather than spawning another variant.
+
+For the `s=8` branches, every representative-deletion residual is short-free of length 16 and therefore has sum zero. The arbitrary-choice quantifier then forces every packed block to be constant, excluding both signatures with 2-blocks. The surviving `(8,8,0)` branch is exactly `S=U^3` with `U` squarefree short-free of length 8.
+
+For length 15, the exact residual profile is `2^7 1`, with singleton `u=-sigma(R)`. Under `(6,9,0)`, comparing two representative choices in one nonconstant block leaves only two possible singleton transitions. One contradicts distinctness; the other forces every complementary representative sum to vanish, which a second nonconstant 2-block immediately contradicts. Hence the `s=9` branch is impossible.
+
+The checked 2024 Lemma 3.3(2) supplies sufficiency, so CAND-03 is internally classified by `S=U^3`. This result is not yet novelty/status certified or independently reviewed.
+
+### S041 — D40-01 verification and exact-overlap/status audit
+
+Independently verify every step in the S040 necessity/sufficiency chain and then run a focused primary-source/current-literature audit for exact or implicit prior-art overlap. No new proof architecture, residual variant, orbit enumeration, outreach or manuscript action is authorized. Promote at most one successor only if the verification/status result exposes an exact actionable dependency.
