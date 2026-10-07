@@ -986,3 +986,13 @@ Date: **2026-10-07**.
 | C-207 | FORMAL_REDUCTION | In the pinned Lean project, a short-free positional sequence has tuple support whose union with zero is a cap; its nonzero support has cardinality at most eight; and every tuple-support value occurs at most twice. | `InverseZeroSum/Candidate3.lean`; S048 validation. These are reusable reductions, not a proof of `Length16SumZeroInput`. |
 | C-208 | FORMAL_BLOCKER | The earliest missing step for the length-16 source interface is the maximal nine-cap sum invariant: an eight-point nonzero support `A` with `IsCapT (insert 0 A)` must have zero support sum. | S048 formalization progress. The attempted normalized completion check was transparent but exceeded hosted runner execution limits and was removed from the live checkpoint. |
 | C-209 | PROGRAMME_ROUTE_DECISION | S048 closes PARTIAL and promotes only S049/D48-01 on `Length16SumZeroInput`. | D47-01 stop rule. Palomar remains blocked on `FrozenClassification`. |
+
+## S049 formalization claim additions
+
+Date: **2026-10-07**.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-210 | FORMAL_THEOREM | In the pinned Lean project, every nine-point cap in the explicit tuple model of `F_3^3` has total point-sum zero. | `InverseZeroSum/Candidate3.lean`; S049 validation. The proof is structural affine-plane incidence/counting, not an orbit catalogue. |
+| C-211 | FORMAL_VERIFICATION | The pinned Lean project proves `length16SumZeroInput : Length16SumZeroInput`. | S049 formal source and validation. This verifies the encoded source interface only; it is not a novelty claim. |
+| C-212 | PROGRAMME_ROUTE_DECISION | With the length-16 interface closed, S050/D49-01 is restricted to the S040 `s=8` representative-swap elimination. | S040 proof order; S049 success rule. `Length15NonzeroInput` and the `s=9` branch remain downstream. |
