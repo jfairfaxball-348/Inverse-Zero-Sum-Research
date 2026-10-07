@@ -465,3 +465,15 @@ The overall formalization remains partial. S051 is restricted to
 `Length15NonzeroInput`; the `s=9` elimination and
 `FrozenClassification` remain downstream. Palomar, paper, arXiv and E-JC
 remain blocked until the complete frozen theorem is kernel-checked.
+
+
+## S051 partial length-15 formalization checkpoint
+
+S051/D50-01 preserves a clean kernel-checked formalization of the exact
+length-15 support structure used in S040: every short-free positional
+length-15 sequence has eight support values with multiplicity profile
+`2^7 1`. The unit does not yet close `Length15NonzeroInput`: direct
+source-faithful positional fibre-weight specializations exceeded the clean
+Lean elaboration heartbeat budget and were removed. S052/D51-01 continues
+exactly this interface; the `s=9` elimination and
+`FrozenClassification` remain downstream.

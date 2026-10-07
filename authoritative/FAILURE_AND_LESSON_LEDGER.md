@@ -445,3 +445,18 @@ quantifier in the formal interface rather than choosing a canonical transversal
 too early. A certificate-level normal form can capture the exact structural
 output needed downstream without prematurely formalizing the final global
 permutation or the next proof branch.
+
+
+## S051 formalization lesson
+
+### FL-109 — A proved finite multiplicity profile can still need a low-normalization interface
+
+S051 formalized the exact length-15 support profile `2^7 1`, but directly
+specializing the full filtered-fibre cardinality expression into the final
+tuple sum repeatedly exhausted the reproducible `whnf` heartbeat budget.
+
+**Lesson:** once the structural theorem is kernel-checked, do not keep raising
+elaboration limits around a large reducible expression. Preserve the
+structural checkpoint and introduce a smaller named interface or proof shape
+that avoids repeated unfolding. Runtime/elaboration reproducibility is part of
+the formal trust boundary.
