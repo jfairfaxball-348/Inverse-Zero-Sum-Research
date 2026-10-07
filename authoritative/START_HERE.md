@@ -908,3 +908,24 @@ is restricted to the `s=8` representative-swap elimination. It must stop
 before `Length15NonzeroInput`, the `s=9` branch and
 `FrozenClassification`. Palomar and publication stages remain blocked on the
 complete frozen Lean proof.
+
+## S050 completed — s=8 representative-swap elimination
+
+S050/D49-01 proves `s8RepresentativeSwapInput : S8RepresentativeSwapInput`
+in the pinned Lean project. For every S039 packing certificate with `s=8`,
+the proof faithfully reindexes each representative-deletion residual as a
+length-16 positional sequence, applies `length16SumZeroInput`, and compares
+two arbitrary representative choices differing in one packed block. Every
+selectable value in each packed block is therefore equal.
+
+A constant two-term short zero-sum block is impossible over the nonzero
+alphabet, so the mixed `s=8` signatures are eliminated and only
+`(l,s,r)=(8,8,0)` remains. The certificate-level output retains the universal
+arbitrary-representative residual quantifier and packages the exact constant
+eight-triple structure needed to recover the downstream `U^3` branch.
+
+The overall formalization remains **PARTIAL**: `Length15NonzeroInput`, the
+`s=9` elimination, and `FrozenClassification` remain unproved. S051/D50-01
+is restricted to `Length15NonzeroInput` only. Palomar and all publication
+stages remain blocked until the complete frozen classification has a proof
+term and the pinned validation suite passes.
