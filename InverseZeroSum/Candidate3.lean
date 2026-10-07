@@ -2494,7 +2494,7 @@ theorem weighted_sum_plus_singleton_eq_double
   simp [two_nsmul, add_assoc]
 
 
-/--
+/-
 The exact length-15 support structure determines a nonzero singleton whose
 negative is the tuple-model positional total.
 -/
