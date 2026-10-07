@@ -1517,3 +1517,10 @@ elimination. It must stop before final theorem composition.
 Palomar and all publication stages remain blocked until
 `FrozenClassification` itself has a proof term and the full pinned checks
 pass. Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
+
+
+## S053 partial — s=9 singleton transition interface
+
+D52-01 formalized the unique-singleton sum identity and the local two-fibre count transitions from the already kernel-checked S051–S052 length-15 support profile. The named `S9PackingEliminationInput` is still only a proposition; the intended S040 certificate-level impossibility is not proved in Lean.
+
+The first exact remaining obligation is a counted, sum-preserving transport from arbitrary 15-position `ShortFreeOn` survivor sets to the fixed-length singleton profile, compatible with changing one representative in one packed block. S054/D53-01 continues this same branch only and must stop when the certificate-level impossibility theorem is kernel-checked. The owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC; no downstream stages begin while `FrozenClassification` is unproved.

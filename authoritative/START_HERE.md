@@ -17,15 +17,7 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S052 is COMPLETED and S053 is READY. CAND-03 remains selected. The exact
-classification is internally proved and independently reverified. S042 found
-no exact/equivalent/stronger-implying prior art in the documented deep audit.
-The pinned Lean project now kernel-checks the S039 packing input, the
-length-16 source interface, the complete s=8 representative-swap branch, and
-`length15NonzeroInput : Length15NonzeroInput`. The remaining branch-level
-formal obligation is the recorded s=9 representative/singleton-transition
-elimination. `FrozenClassification` still has no proof term, so Palomar
-remains blocked.**
+**S053 is PARTIAL and S054 is READY. CAND-03 remains selected. The exact classification is internally proved and independently reverified. S042 located no exact/equivalent/stronger-implying prior art in its documented deep audit. The pinned Lean project proves the packing interface, length-16 sum-zero, s=8 swap branch and length-15 nonzero-total input. S053 now retains closed length-15 singleton identity/uniqueness lemmas and the two local multiplicity transitions. The certificate-level s=9 elimination proposition `S9PackingEliminationInput` remains UNPROVED, as does `FrozenClassification`; Palomar is blocked.**
 
 Selected target:
 
@@ -43,7 +35,7 @@ length 8.
 - Mathematical-investigation gate: OPEN for S053/D52-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S053 / D52-01 s=9 representative/singleton-transition elimination.
+- Next session: S054 / D53-01 s=9 certificate-level survivor-fibre transport and transition elimination.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
@@ -962,3 +954,8 @@ scan and `scripts/check_authority.py`. S053/D52-01 is restricted to the
 remaining `s=9` representative/singleton-transition elimination and must
 stop before `FrozenClassification`. Palomar and publication stages remain
 blocked on the complete frozen Lean proof.
+
+
+## S053 partial — singleton transition transport remains
+
+S053/D52-01 retains a proof-bearing length-15 singleton total-sum identity, a uniqueness lemma for singleton fibres, and the elementary two-case local count transition. These reuse the S051–S052 structure without inventing an assumption or changing the frozen mathematical target. `S9PackingEliminationInput` is defined but unproved: the exact earliest bridge is moving the unique singleton fibre and its sum equation through the arbitrary 15-position representative-deletion survivor and swapping one representative. S054/D53-01 is the only promoted continuation. `FrozenClassification`, Palomar and later publication stages remain blocked.
