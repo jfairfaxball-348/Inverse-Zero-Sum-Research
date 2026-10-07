@@ -1775,13 +1775,17 @@ theorem nine_cap_direction_value_sum_zero {A : Finset F3T} (hA : IsCapT A)
       rcases nine_cap_direction_slice_pattern hA hcard d with
         h333 | h144 | h414 | h441
       · rcases h333 with ⟨h0, h1, h2⟩
-        norm_num [Fin.sum_univ_succ, h0, h1, h2]
+        simp only [Fin.sum_univ_succ, h0, h1, h2]
+        decide
       · rcases h144 with ⟨h0, h1, h2⟩
-        norm_num [Fin.sum_univ_succ, h0, h1, h2]
+        simp only [Fin.sum_univ_succ, h0, h1, h2]
+        decide
       · rcases h414 with ⟨h0, h1, h2⟩
-        norm_num [Fin.sum_univ_succ, h0, h1, h2]
+        simp only [Fin.sum_univ_succ, h0, h1, h2]
+        decide
       · rcases h441 with ⟨h0, h1, h2⟩
-        norm_num [Fin.sum_univ_succ, h0, h1, h2]
+        simp only [Fin.sum_univ_succ, h0, h1, h2]
+        decide
 
 /-- The explicit plane direction forms are additive. -/
 theorem planeValueT_add :
