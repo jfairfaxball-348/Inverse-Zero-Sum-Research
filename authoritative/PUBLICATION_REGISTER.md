@@ -717,3 +717,14 @@ No Palomar registration, manuscript, arXiv preprint, E-JC submission,
 acceptance or publication exists. The publication gate remains OPEN only as
 workflow eligibility. The owner-authorized order Lean -> Palomar -> paper ->
 arXiv -> E-JC is unchanged.
+
+## S048 publication-stage checkpoint
+
+No publication-stage transition occurs in S048. The Lean stage remains
+PARTIAL because `Length16SumZeroInput` and therefore
+`FrozenClassification` are not yet proved.
+
+Palomar registration is still blocked. Paper drafting, arXiv posting and E-JC
+submission remain downstream in the owner-ordered sequence
+Lean -> Palomar -> paper -> arXiv -> E-JC. S048 makes no novelty or
+publication-significance claim.

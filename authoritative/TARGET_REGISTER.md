@@ -1332,3 +1332,15 @@ Formalization status remains **PARTIAL**. The next exact obligation is
 `Length16SumZeroInput`, the first source interface used on the recorded S040
 proof spine. Palomar remains **BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS
 A LEAN PROOF TERM**.
+
+## S048 CAND-03 formalization checkpoint
+
+CAND-03 remains the frozen internally proved and independently reverified
+classification. S048 does not alter its mathematical statement or literature
+status. Formalization remains PARTIAL.
+
+The current Lean proof spine has closed `S039PackingInput` and now has
+kernel-checked support lemmas reducing the length-16 source interface to the
+maximal nine-cap sum invariant. `Length16SumZeroInput` itself still has no
+proof term. S049 is the sole formal continuation; no target switch or theorem
+scope change is authorized.

@@ -1425,3 +1425,25 @@ S048/D47-01 is the sole promoted successor and may prove only that interface.
 Palomar remains blocked until `FrozenClassification` itself has a proof term
 and the full pinned checks pass. Owner order remains Lean -> Palomar -> paper ->
 arXiv -> E-JC.
+
+## S048 partial — length-16 source interface remains open
+
+D47-01 makes durable formal progress but does not close the scheduled source
+interface. The current pinned source proves the reusable support facts needed
+for the 2012 Lemma-28 consequence: short-free support plus zero is a cap,
+support cardinality is at most eight, and positional multiplicity of each
+support value is at most two.
+
+At length 16, the proof spine is therefore reduced to the exact maximal
+nine-cap centroid/sum statement. An attempted basis-normalized finite search was
+transparent but too expensive for the clean hosted build and was terminated
+with exit 143, so it is not part of the outgoing Lean source.
+
+S049/D48-01 remains on the same exact obligation,
+`Length16SumZeroInput`. It should derive the eight-value/two-copy structure
+and prove the eight-support sum-zero invariant structurally or via sharply
+smaller transparent finite checks. It must not enter the representative-swap
+elimination, `Length15NonzeroInput`, `FrozenClassification`, Palomar or
+publication stages.
+
+Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.

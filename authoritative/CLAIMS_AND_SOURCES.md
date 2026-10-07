@@ -976,3 +976,13 @@ Date: **2026-10-06**.
 | --- | --- | --- | --- |
 | C-205 | FORMAL_VERIFICATION / PACKING INTERFACE | In the pinned Lean project, `s039PackingInput : S039PackingInput` is proved by direct composition of `s039PackingInput_of_thresholds`, `threeTerm19Input` and `eta17Input`. | `InverseZeroSum/Candidate3.lean`; S047 validation. No packing reproof, new source theorem or novelty claim is introduced. |
 | C-206 | PROGRAMME_ROUTE_DECISION | With the S039 packing proposition closed, `Length16SumZeroInput` is the single earliest exact formal obligation on the recorded S040 proof spine. Promote S048/D47-01 only; Palomar remains blocked on `FrozenClassification`. | S043 semantic correspondence; S047 stop/successor rule; owner Lean-first order. |
+
+## S048 formalization claim additions
+
+Date: **2026-10-07**.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-207 | FORMAL_REDUCTION | In the pinned Lean project, a short-free positional sequence has tuple support whose union with zero is a cap; its nonzero support has cardinality at most eight; and every tuple-support value occurs at most twice. | `InverseZeroSum/Candidate3.lean`; S048 validation. These are reusable reductions, not a proof of `Length16SumZeroInput`. |
+| C-208 | FORMAL_BLOCKER | The earliest missing step for the length-16 source interface is the maximal nine-cap sum invariant: an eight-point nonzero support `A` with `IsCapT (insert 0 A)` must have zero support sum. | S048 formalization progress. The attempted normalized completion check was transparent but exceeded hosted runner execution limits and was removed from the live checkpoint. |
+| C-209 | PROGRAMME_ROUTE_DECISION | S048 closes PARTIAL and promotes only S049/D48-01 on `Length16SumZeroInput`. | D47-01 stop rule. Palomar remains blocked on `FrozenClassification`. |

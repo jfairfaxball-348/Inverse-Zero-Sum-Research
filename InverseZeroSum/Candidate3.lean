@@ -1415,4 +1415,160 @@ conditional packing theorem and its two closed threshold inputs.
 theorem s039PackingInput : S039PackingInput :=
   s039PackingInput_of_thresholds threeTerm19Input eta17Input
 
+
+/-! ### S048 partial: length-16 support reduction -/
+
+def tupleValueT {n : ℕ} (R : PosSeq n) (i : Fin n) : F3T :=
+  finiteModelEquiv (R i : G)
+
+def tupleSupportT {n : ℕ} (R : PosSeq n) : Finset F3T :=
+  (Finset.univ : Finset (Fin n)).image (tupleValueT R)
+
+theorem zero_not_mem_tupleSupportT {n : ℕ} (R : PosSeq n) :
+    (0 : F3T) ∉ tupleSupportT R := by
+  intro h0
+  obtain ⟨i, _hi, hval⟩ := Finset.mem_image.mp h0
+  have hG0 : (R i : G) = 0 := by
+    apply finiteModelEquiv.injective
+    simpa [tupleValueT] using hval
+  exact (R i).property hG0
+
+theorem tupleSupportT_isCap {n : ℕ} (R : PosSeq n) (hFree : ShortFree R) :
+    IsCapT (tupleSupportT R) := by
+  classical
+  intro x hx y hy z hz hxy hxz hyz hxyz
+  obtain ⟨i, _hi, rfl⟩ := Finset.mem_image.mp hx
+  obtain ⟨j, _hj, rfl⟩ := Finset.mem_image.mp hy
+  obtain ⟨k, _hk, rfl⟩ := Finset.mem_image.mp hz
+  have hij : i ≠ j := by
+    intro hij
+    subst j
+    exact hxy rfl
+  have hik : i ≠ k := by
+    intro hik
+    subst k
+    exact hxz rfl
+  have hjk : j ≠ k := by
+    intro hjk
+    subst k
+    exact hyz rfl
+  have hGsum : (R i : G) + (R j : G) + (R k : G) = 0 := by
+    apply finiteModelEquiv.injective
+    simpa [tupleValueT] using hxyz
+  have hIcard : ({i, j, k} : Finset (Fin n)).card = 3 := by
+    simp [hij, hik, hjk]
+  have hpos : posSum R ({i, j, k} : Finset (Fin n)) = 0 := by
+    simpa [posSum, hij, hik, hjk, add_assoc] using hGsum
+  exact (hFree _) ⟨Finset.card_pos.mp (by omega), by omega, hpos⟩
+
+theorem f3t_self_add_ne_zero :
+    ∀ x : F3T, x ≠ 0 → x + x ≠ 0 := by
+  decide
+
+theorem tupleSupportT_no_pair {n : ℕ} (R : PosSeq n) (hFree : ShortFree R) :
+    ∀ x ∈ tupleSupportT R, ∀ y ∈ tupleSupportT R, x + y ≠ 0 := by
+  classical
+  intro x hx y hy hxy
+  obtain ⟨i, _hi, rfl⟩ := Finset.mem_image.mp hx
+  obtain ⟨j, _hj, rfl⟩ := Finset.mem_image.mp hy
+  have hfi0 : tupleValueT R i ≠ 0 := by
+    intro h0
+    have hz : (0 : F3T) ∈ tupleSupportT R :=
+      Finset.mem_image.mpr ⟨i, Finset.mem_univ i, h0⟩
+    exact zero_not_mem_tupleSupportT R hz
+  have hij : i ≠ j := by
+    intro hij
+    subst j
+    exact (f3t_self_add_ne_zero (tupleValueT R i) hfi0) hxy
+  have hGsum : (R i : G) + (R j : G) = 0 := by
+    apply finiteModelEquiv.injective
+    simpa [tupleValueT] using hxy
+  have hIcard : ({i, j} : Finset (Fin n)).card = 2 := by
+    simp [hij]
+  have hpos : posSum R ({i, j} : Finset (Fin n)) = 0 := by
+    simpa [posSum, hij, add_comm] using hGsum
+  exact (hFree _) ⟨Finset.card_pos.mp (by omega), by omega, hpos⟩
+
+theorem insert_zero_tupleSupportT_isCap {n : ℕ} (R : PosSeq n)
+    (hFree : ShortFree R) :
+    IsCapT (insert 0 (tupleSupportT R)) := by
+  classical
+  have hCap := tupleSupportT_isCap R hFree
+  have hNoPair := tupleSupportT_no_pair R hFree
+  intro a ha b hb c hc hab hac hbc hsum
+  simp only [Finset.mem_insert] at ha hb hc
+  rcases ha with rfl | ha
+  · have hbS : b ∈ tupleSupportT R := by
+      rcases hb with hb0 | hbS
+      · exact False.elim (hab hb0.symm)
+      · exact hbS
+    have hcS : c ∈ tupleSupportT R := by
+      rcases hc with hc0 | hcS
+      · exact False.elim (hac hc0.symm)
+      · exact hcS
+    apply hNoPair b hbS c hcS
+    simpa using hsum
+  · rcases hb with rfl | hb
+    · have hcS : c ∈ tupleSupportT R := by
+        rcases hc with hc0 | hcS
+        · exact False.elim (hbc hc0.symm)
+        · exact hcS
+      apply hNoPair a ha c hcS
+      simpa using hsum
+    · rcases hc with rfl | hc
+      · apply hNoPair a ha b hb
+        simpa [add_assoc] using hsum
+      · exact hCap a ha b hb c hc hab hac hbc hsum
+
+theorem tupleFiberT_card_le_two {n : ℕ} (R : PosSeq n) (hFree : ShortFree R) :
+    ∀ x ∈ tupleSupportT R,
+      ((Finset.univ : Finset (Fin n)).filter
+        (fun i => tupleValueT R i = x)).card ≤ 2 := by
+  classical
+  intro x _hx
+  let fiber : Finset (Fin n) :=
+    (Finset.univ : Finset (Fin n)).filter (fun i => tupleValueT R i = x)
+  have hfiber_eq :
+      fiber =
+        (Finset.univ : Finset (Fin n)).filter
+          (fun i => tupleValueT R i = x) := rfl
+  rw [← hfiber_eq]
+  by_contra hle
+  have h3 : 3 ≤ fiber.card := by omega
+  obtain ⟨I, hI_sub, hIcard⟩ :=
+    Finset.exists_subset_card_eq (s := fiber) (n := 3) h3
+  have hconst :
+      ∀ i ∈ I, (R i : G) = finiteModelEquiv.symm x := by
+    intro i hi
+    have hiFiber : i ∈ fiber := hI_sub hi
+    have hfix : tupleValueT R i = x := (Finset.mem_filter.mp hiFiber).2
+    have hback := congrArg finiteModelEquiv.symm hfix
+    simpa [tupleValueT] using hback
+  have hsum : posSum R I = 0 := by
+    unfold posSum
+    calc
+      (∑ i ∈ I, (R i : G)) =
+          ∑ _i ∈ I, finiteModelEquiv.symm x := by
+            exact Finset.sum_congr rfl (fun i hi => hconst i hi)
+      _ = I.card • finiteModelEquiv.symm x := by simp
+      _ = 0 := by
+        rw [hIcard]
+        simpa using
+          ZModModule.char_nsmul_eq_zero 3 (finiteModelEquiv.symm x)
+  exact (hFree I) ⟨Finset.card_pos.mp (by omega), by omega, hsum⟩
+
+theorem tupleSupportT_card_le_eight {n : ℕ} (R : PosSeq n)
+    (hFree : ShortFree R) :
+    (tupleSupportT R).card ≤ 8 := by
+  have hCap0 := insert_zero_tupleSupportT_isCap R hFree
+  have hCap0Card : (insert 0 (tupleSupportT R)).card ≤ 9 :=
+    capT_card_le_nine hCap0
+  have hZeroNot := zero_not_mem_tupleSupportT R
+  have hCard :
+      (insert 0 (tupleSupportT R)).card = (tupleSupportT R).card + 1 := by
+    simp [hZeroNot, Nat.add_comm]
+  rw [hCard] at hCap0Card
+  omega
+
+
 end InverseZeroSum.Candidate3

@@ -419,3 +419,22 @@ The overall formalization remains partial. The next exact obligation is
 `Length16SumZeroInput`, so S048 is restricted to that proposition.
 `FrozenClassification` still has no proof term; Palomar and all downstream
 publication stages remain blocked until the full pinned Lean proof succeeds.
+
+## S048 partial length-16 formalization checkpoint
+
+S048/D47-01 did not close `Length16SumZeroInput`. It does preserve a clean
+kernel-checked reduction in the pinned Lean project: for every short-free
+positional sequence, the tuple-model support together with zero is a cap, the
+nonzero support has cardinality at most eight, and every support value occurs
+at most twice.
+
+For length 16 this leaves one exact missing mathematical/formal step: prove
+that an eight-point nonzero support whose union with zero is a nine-point cap
+has support sum zero. The attempted transparent normalized completion check was
+not accepted as the final proof path because its `lake build` evaluation
+exceeded the hosted runner window and was terminated with exit 143.
+
+S049 is restricted to completing `Length16SumZeroInput` from the preserved
+support reduction with a buildable structural proof or substantially smaller
+transparent finite certificates. `FrozenClassification` remains unproved;
+Palomar, paper, arXiv and E-JC remain blocked.
