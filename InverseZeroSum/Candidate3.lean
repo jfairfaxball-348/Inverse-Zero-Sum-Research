@@ -1775,13 +1775,13 @@ theorem nine_cap_direction_value_sum_zero {A : Finset F3T} (hA : IsCapT A)
       rcases nine_cap_direction_slice_pattern hA hcard d with
         h333 | h144 | h414 | h441
       · rcases h333 with ⟨h0, h1, h2⟩
-        simp [Fin.sum_univ_succ, h0, h1, h2] <;> decide
+        simp [Fin.sum_univ_succ, h0, h1, h2]
       · rcases h144 with ⟨h0, h1, h2⟩
-        simp [Fin.sum_univ_succ, h0, h1, h2] <;> decide
+        simp [Fin.sum_univ_succ, h0, h1, h2]
       · rcases h414 with ⟨h0, h1, h2⟩
-        simp [Fin.sum_univ_succ, h0, h1, h2] <;> decide
+        simp [Fin.sum_univ_succ, h0, h1, h2]
       · rcases h441 with ⟨h0, h1, h2⟩
-        simp [Fin.sum_univ_succ, h0, h1, h2] <;> decide
+        simp [Fin.sum_univ_succ, h0, h1, h2]
 
 /-- The explicit plane direction forms are additive. -/
 theorem planeValueT_add :
@@ -1973,17 +1973,8 @@ theorem length16SumZeroInput : Length16SumZeroInput := by
           _ = (2 : ℕ) • x := by rw [hFiberEq x hx]
   have hDouble :
       (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
-    calc
-      (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) =
-          ∑ x ∈ tupleSupportT R, (x + x) := by
-            apply Finset.sum_congr rfl
-            intro x _hx
-            simp [two_nsmul]
-      _ =
-          (∑ x ∈ tupleSupportT R, x) +
-            (∑ x ∈ tupleSupportT R, x) := by
-              rw [Finset.sum_add_distrib]
-      _ = 0 := by rw [hSupportSum]; simp
+    rw [← Finset.sum_nsmul, hSupportSum]
+    simp
   have hTupleTotal :
       (∑ i ∈ (Finset.univ : Finset (Fin 16)), tupleValueT R i) = 0 := by
     calc
