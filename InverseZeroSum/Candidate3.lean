@@ -2469,11 +2469,34 @@ theorem tupleValueT_sum_eq_support_weight {n : ℕ} (R : PosSeq n) :
               (fun i => tupleValueT R i = x)).card • x := by
                 simp
 
-/-
+
+/--
+Generic support-weight identity: if one support point has weight one and every
+other support point has weight two, adding the singleton value makes the
+weighted sum equal the doubled unweighted support sum.
+-/
+theorem weighted_sum_plus_singleton_eq_double
+    {α M : Type*} [DecidableEq α] [AddCommMonoid M]
+    (A : Finset α) (f : α → M) (w : α → ℕ)
+    {u : α} (hu : u ∈ A) (huOne : w u = 1)
+    (hOther : ∀ x ∈ A.erase u, w x = 2) :
+    (∑ x ∈ A, w x • f x) + f u =
+      ∑ x ∈ A, (2 : ℕ) • f x := by
+  have hErase :
+      (∑ x ∈ A.erase u, w x • f x) =
+        ∑ x ∈ A.erase u, (2 : ℕ) • f x := by
+    apply Finset.sum_congr rfl
+    intro x hx
+    rw [hOther x hx]
+  rw [← Finset.sum_erase_add A (fun x => w x • f x) hu]
+  rw [← Finset.sum_erase_add A (fun x => (2 : ℕ) • f x) hu]
+  rw [hErase, huOne]
+  simp [two_nsmul, add_assoc]
+
+/--
 For the exact length-15 multiplicity profile, adding the singleton once to the
 weighted support sum turns every coefficient into two.
 -/
-set_option maxHeartbeats 1000000 in
 theorem length15_support_weight_plus_singleton_eq_double
     (R : PosSeq 15) (hFree : ShortFree R)
     {u : F3T} (hu : u ∈ tupleSupportT R)
@@ -2487,32 +2510,14 @@ theorem length15_support_weight_plus_singleton_eq_double
   classical
   have hOtherTwo :=
     tupleFiberT_card_eq_two_off_singleton_length15 R hFree hu huOne
-  let w : F3T → F3T :=
-    fun x =>
-      ((Finset.univ : Finset (Fin 15)).filter
-        (fun i => tupleValueT R i = x)).card • x
-  let d : F3T → F3T := fun x => (2 : ℕ) • x
-  have hLeft :
-      (∑ x ∈ tupleSupportT R, w x) =
-        (∑ x ∈ (tupleSupportT R).erase u, w x) + w u := by
-    exact (sum_erase_add_f3t (tupleSupportT R) w hu).symm
-  have hRight :
-      (∑ x ∈ tupleSupportT R, d x) =
-        (∑ x ∈ (tupleSupportT R).erase u, d x) + d u := by
-    exact (sum_erase_add_f3t (tupleSupportT R) d hu).symm
-  have hErase :
-      (∑ x ∈ (tupleSupportT R).erase u, w x) =
-        ∑ x ∈ (tupleSupportT R).erase u, d x := by
-    apply Finset.sum_congr rfl
-    intro x hx
-    dsimp [w, d]
-    rw [hOtherTwo x hx]
-  change (∑ x ∈ tupleSupportT R, w x) + u =
-    ∑ x ∈ tupleSupportT R, d x
-  rw [hLeft, hRight, hErase]
-  dsimp [w, d]
-  rw [huOne]
-  simp [two_nsmul, add_assoc]
+  exact
+    weighted_sum_plus_singleton_eq_double
+      (A := tupleSupportT R)
+      (f := fun x : F3T => x)
+      (w := fun x =>
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card)
+      hu huOne hOtherTwo
 
 /-
 S051/D50-01 closes the exact length-15 source interface by deriving the
