@@ -17,16 +17,15 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S051 is PARTIAL and S052 is READY. CAND-03 remains selected. The exact
+**S052 is COMPLETED and S053 is READY. CAND-03 remains selected. The exact
 classification is internally proved and independently reverified. S042 found
 no exact/equivalent/stronger-implying prior art in the documented deep audit.
 The pinned Lean project now kernel-checks the S039 packing input, the
 length-16 source interface, the complete s=8 representative-swap branch, and
-the exact length-15 support/multiplicity profile `2^7 1`. The closed
-proposition `Length15NonzeroInput` is still missing: the remaining
-positional weighted-sum specialization triggers deterministic elaboration
-timeout on the clean runner. S052 continues only that interface.
-`FrozenClassification` still has no proof term, so Palomar remains blocked.**
+`length15NonzeroInput : Length15NonzeroInput`. The remaining branch-level
+formal obligation is the recorded s=9 representative/singleton-transition
+elimination. `FrozenClassification` still has no proof term, so Palomar
+remains blocked.**
 
 Selected target:
 
@@ -41,10 +40,10 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S052/D51-01 formalization only.
+- Mathematical-investigation gate: OPEN for S053/D52-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S050 / D49-01 s=8 representative-swap formalization.
+- Next session: S053 / D52-01 s=9 representative/singleton-transition elimination.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
@@ -947,3 +946,19 @@ noncompiling closure attempts were removed. S052/D51-01 is the sole promoted
 continuation and remains on `Length15NonzeroInput` only. Palomar and all
 publication stages remain blocked on the complete `FrozenClassification`
 proof.
+
+
+## S052 completed — Length15NonzeroInput closure
+
+S052/D51-01 proves `length15NonzeroInput : Length15NonzeroInput` in the
+pinned Lean project. The proof names the length-15 fibre-cardinality weight
+function locally, uses the retained `2^7 1` profile and generic weighted-sum
+identity, and combines them with the eight-support sum-zero theorem. A zero
+positional total would force the unique singleton support value to be zero,
+contradicting the nonzero alphabet.
+
+The clean proof-head workflow passed `lake build`, the forbidden-placeholder
+scan and `scripts/check_authority.py`. S053/D52-01 is restricted to the
+remaining `s=9` representative/singleton-transition elimination and must
+stop before `FrozenClassification`. Palomar and publication stages remain
+blocked on the complete frozen Lean proof.
