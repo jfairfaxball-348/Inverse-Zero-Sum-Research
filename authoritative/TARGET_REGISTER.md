@@ -1390,3 +1390,20 @@ values with one singleton fibre and seven double fibres. It does **not** yet
 prove `Length15NonzeroInput`; the current blocker is a clean-buildable
 positional sum bridge from that `2^7 1` structure and the existing
 eight-support sum-zero theorem. S052 continues only this interface.
+
+
+## S052 CAND-03 length-15 formalization boundary
+
+Date: 2026-10-07.
+
+The selected target and frozen iff statement are unchanged. D51-01 proves
+
+`length15NonzeroInput : Length15NonzeroInput`.
+
+This closes the length-15 source interface used by the S040 `s=9` branch.
+The proof is internal formal verification of the already-recorded source
+consequence and introduces no new novelty/open-status claim.
+
+Formalization status remains **PARTIAL**. The next exact obligation is the
+`s=9` representative/singleton-transition elimination. Palomar remains
+**BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
