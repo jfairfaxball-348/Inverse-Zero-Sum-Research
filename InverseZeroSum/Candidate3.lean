@@ -2631,4 +2631,26 @@ theorem length15_singleton_unique
       R hFree hu huOne v hvErase
   omega
 
+
+/--
+The elementary local cardinality obstruction behind the S040 transition list.
+Here p,q are the two affected multiplicities before replacing one occurrence
+of b by a; both residuals have at most two copies of each value and at most
+one singleton value. This does not yet transport the property through a
+certificate-level representative swap.
+-/
+theorem s9_two_fibre_count_transitions
+    (p q : ℕ) (hp : p + 1 ≤ 2) (hq : 1 ≤ q) (hq2 : q ≤ 2)
+    (hBefore : p = 1 → q ≠ 1)
+    (hAfter : p + 1 = 1 → q - 1 ≠ 1) :
+    (p = 0 ∧ q = 1) ∨ (p = 1 ∧ q = 2) := by
+  omega
+
+/--
+The exact still-unproved certificate-level target of D52-01. This is a
+proposition, not an asserted theorem or a new assumption.
+-/
+def S9PackingEliminationInput : Prop :=
+  ∀ S : PosSeq 24, ∀ c : S039PackingCertificate S, c.s = 9 → False
+
 end InverseZeroSum.Candidate3
