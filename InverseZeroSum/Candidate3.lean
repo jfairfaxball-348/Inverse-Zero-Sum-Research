@@ -1973,7 +1973,7 @@ theorem length16SumZeroInput : Length16SumZeroInput := by
           _ = (2 : ℕ) • x := by rw [hFiberEq x hx]
   have hDouble :
       (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
-    rw [← Finset.sum_nsmul, hSupportSum]
+    rw [Finset.sum_nsmul, hSupportSum]
     simp
   have hTupleTotal :
       (∑ i ∈ (Finset.univ : Finset (Fin 16)), tupleValueT R i) = 0 := by
