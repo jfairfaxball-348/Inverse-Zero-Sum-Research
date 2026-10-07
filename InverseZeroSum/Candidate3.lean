@@ -2529,8 +2529,14 @@ theorem exists_nonzero_singleton_total_relation_length15
     simp
   have hTupleTotalPlusSingleton :
       (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u = 0 := by
-    rw [hGrouped, hWeightPlus]
-    exact hDouble
+    calc
+      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u =
+          (∑ x ∈ tupleSupportT R,
+            ((Finset.univ : Finset (Fin 15)).filter
+              (fun i => tupleValueT R i = x)).card • x) + u :=
+            congrArg (fun z : F3T => z + u) hGrouped
+      _ = ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := hWeightPlus
+      _ = 0 := hDouble
   have huNe : u ≠ 0 := by
     intro hu0
     subst u
