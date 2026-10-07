@@ -2253,4 +2253,285 @@ theorem s8RepresentativeSwapInput : S8RepresentativeSwapInput := by
   exact ⟨hLR.1, hLR.2, hConst⟩
 
 
+
+/-! ### S051: the length-15 nonzero-total-sum interface -/
+
+/-- A short-free length-15 sequence has exactly eight tuple support values. -/
+theorem tupleSupportT_card_eq_eight_length15 (R : PosSeq 15)
+    (hFree : ShortFree R) :
+    (tupleSupportT R).card = 8 := by
+  classical
+  have hMaps :
+      ∀ i ∈ (Finset.univ : Finset (Fin 15)),
+        tupleValueT R i ∈ tupleSupportT R := by
+    intro i hi
+    exact Finset.mem_image.mpr ⟨i, hi, rfl⟩
+  have hBound :=
+    Finset.card_le_mul_card_image_of_maps_to hMaps 2
+      (tupleFiberT_card_le_two R hFree)
+  have hBound' : 15 ≤ 2 * (tupleSupportT R).card := by
+    simpa using hBound
+  have hLe := tupleSupportT_card_le_eight R hFree
+  omega
+
+/-- A short-free length-15 sequence has a support value occurring exactly once. -/
+theorem exists_tupleFiberT_card_eq_one_length15 (R : PosSeq 15)
+    (hFree : ShortFree R) :
+    ∃ u ∈ tupleSupportT R,
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = u)).card = 1 := by
+  classical
+  have hSupportCard := tupleSupportT_card_eq_eight_length15 R hFree
+  have hMaps :
+      ∀ i ∈ (Finset.univ : Finset (Fin 15)),
+        tupleValueT R i ∈ tupleSupportT R := by
+    intro i hi
+    exact Finset.mem_image.mpr ⟨i, hi, rfl⟩
+  have hFiberSum0 :=
+    Finset.card_eq_sum_card_fiberwise
+      (f := tupleValueT R) (s := (Finset.univ : Finset (Fin 15)))
+      (t := tupleSupportT R) hMaps
+  have hFiberSum :
+      15 =
+        ∑ x ∈ tupleSupportT R,
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = x)).card := by
+    simpa using hFiberSum0
+  by_contra hNo
+  have hNotOne :
+      ∀ x ∈ tupleSupportT R,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card ≠ 1 := by
+    intro x hx hOne
+    exact hNo ⟨x, hx, hOne⟩
+  have hAllTwo :
+      ∀ x ∈ tupleSupportT R,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card = 2 := by
+    intro x hx
+    have hLe := tupleFiberT_card_le_two R hFree x hx
+    have hPos :
+        0 <
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = x)).card := by
+      obtain ⟨i, _hi, hiEq⟩ := Finset.mem_image.mp hx
+      apply Finset.card_pos.mpr
+      exact ⟨i, Finset.mem_filter.mpr ⟨Finset.mem_univ i, hiEq⟩⟩
+    omega
+  have hSixteen :
+      (∑ x ∈ tupleSupportT R,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card) = 16 := by
+    calc
+      (∑ x ∈ tupleSupportT R,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card) =
+          ∑ _x ∈ tupleSupportT R, 2 := by
+            exact Finset.sum_congr rfl (fun x hx => hAllTwo x hx)
+      _ = 16 := by simp [hSupportCard]
+  omega
+
+/-- Away from the singleton, all seven length-15 support fibres have size two. -/
+theorem tupleFiberT_card_eq_two_off_singleton_length15
+    (R : PosSeq 15) (hFree : ShortFree R)
+    {u : F3T} (hu : u ∈ tupleSupportT R)
+    (huOne :
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = u)).card = 1) :
+    ∀ x ∈ (tupleSupportT R).erase u,
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = x)).card = 2 := by
+  classical
+  have hSupportCard := tupleSupportT_card_eq_eight_length15 R hFree
+  have hMaps :
+      ∀ i ∈ (Finset.univ : Finset (Fin 15)),
+        tupleValueT R i ∈ tupleSupportT R := by
+    intro i hi
+    exact Finset.mem_image.mpr ⟨i, hi, rfl⟩
+  have hFiberSum0 :=
+    Finset.card_eq_sum_card_fiberwise
+      (f := tupleValueT R) (s := (Finset.univ : Finset (Fin 15)))
+      (t := tupleSupportT R) hMaps
+  have hFiberSum :
+      15 =
+        ∑ y ∈ tupleSupportT R,
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = y)).card := by
+    simpa using hFiberSum0
+  have hSplitU :
+      (∑ y ∈ tupleSupportT R,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = y)).card) =
+        (∑ y ∈ (tupleSupportT R).erase u,
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = y)).card) +
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = u)).card := by
+    exact
+      (Finset.sum_erase_add (tupleSupportT R)
+        (fun y =>
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = y)).card) hu).symm
+  have hOtherSum :
+      (∑ y ∈ (tupleSupportT R).erase u,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = y)).card) = 14 := by
+    rw [hSplitU, huOne] at hFiberSum
+    omega
+  have hEraseCard : ((tupleSupportT R).erase u).card = 7 := by
+    rw [Finset.card_erase_of_mem hu, hSupportCard]
+  intro x hx
+  have hxSupport : x ∈ tupleSupportT R := Finset.mem_of_mem_erase hx
+  have hxLe := tupleFiberT_card_le_two R hFree x hxSupport
+  by_contra hxNe
+  have hxLeOne :
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = x)).card ≤ 1 := by
+    omega
+  have hRestCard : (((tupleSupportT R).erase u).erase x).card = 6 := by
+    rw [Finset.card_erase_of_mem hx, hEraseCard]
+  have hRestLe :
+      (∑ y ∈ ((tupleSupportT R).erase u).erase x,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = y)).card) ≤ 12 := by
+    calc
+      (∑ y ∈ ((tupleSupportT R).erase u).erase x,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = y)).card)
+          ≤ ∑ _y ∈ ((tupleSupportT R).erase u).erase x, 2 := by
+            exact Finset.sum_le_sum
+              (fun y hy =>
+                tupleFiberT_card_le_two R hFree y
+                  (Finset.mem_of_mem_erase
+                    (Finset.mem_of_mem_erase hy)))
+      _ = 12 := by simp [hRestCard]
+  have hSplitX :
+      (∑ y ∈ (tupleSupportT R).erase u,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = y)).card) =
+        (∑ y ∈ ((tupleSupportT R).erase u).erase x,
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = y)).card) +
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card := by
+    exact
+      (Finset.sum_erase_add ((tupleSupportT R).erase u)
+        (fun y =>
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = y)).card) hx).symm
+  rw [hSplitX] at hOtherSum
+  omega
+
+/--
+S051/D50-01 closes the exact length-15 source interface by deriving the
+eight-support \`2^7 1\` structure and using the existing transparent cap-sum
+invariant.  No s=9 packing argument enters here.
+-/
+theorem length15NonzeroInput : Length15NonzeroInput := by
+  classical
+  intro R hFree
+  have hSupportCard := tupleSupportT_card_eq_eight_length15 R hFree
+  obtain ⟨u, hu, huOne⟩ :=
+    exists_tupleFiberT_card_eq_one_length15 R hFree
+  have hOtherTwo :=
+    tupleFiberT_card_eq_two_off_singleton_length15 R hFree hu huOne
+  have hSupportSum :
+      (∑ x ∈ tupleSupportT R, x) = 0 :=
+    eight_nonzero_cap_sum_zero hSupportCard
+      (zero_not_mem_tupleSupportT R)
+      (insert_zero_tupleSupportT_isCap R hFree)
+  have hSupportEraseSum :
+      (∑ x ∈ (tupleSupportT R).erase u, x) + u = 0 := by
+    have h := Finset.sum_erase_add (tupleSupportT R) (fun x => x) hu
+    rw [hSupportSum] at h
+    exact h
+  have hMaps :
+      ∀ i ∈ (Finset.univ : Finset (Fin 15)),
+        tupleValueT R i ∈ tupleSupportT R := by
+    intro i hi
+    exact Finset.mem_image.mpr ⟨i, hi, rfl⟩
+  have hFiberwise :=
+    Finset.sum_fiberwise_of_maps_to
+      (s := (Finset.univ : Finset (Fin 15))) (t := tupleSupportT R)
+      (g := tupleValueT R) hMaps (tupleValueT R)
+  have hGrouped :
+      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) =
+        ∑ x ∈ tupleSupportT R,
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = x)).card • x := by
+    calc
+      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) =
+          ∑ x ∈ tupleSupportT R,
+            ∑ i ∈ (Finset.univ : Finset (Fin 15)) with
+              tupleValueT R i = x, tupleValueT R i := by
+                simpa using hFiberwise.symm
+      _ =
+          ∑ x ∈ tupleSupportT R,
+            ((Finset.univ : Finset (Fin 15)).filter
+              (fun i => tupleValueT R i = x)).card • x := by
+        apply Finset.sum_congr rfl
+        intro x hx
+        calc
+          (∑ i ∈ (Finset.univ : Finset (Fin 15)) with
+              tupleValueT R i = x, tupleValueT R i) =
+              ∑ _i ∈ (Finset.univ : Finset (Fin 15)).filter
+                (fun i => tupleValueT R i = x), x := by
+                  exact Finset.sum_congr rfl
+                    (fun i hi => (Finset.mem_filter.mp hi).2)
+          _ =
+              ((Finset.univ : Finset (Fin 15)).filter
+                (fun i => tupleValueT R i = x)).card • x := by
+                  simp
+  have hGroupedSplit :
+      (∑ x ∈ tupleSupportT R,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card • x) =
+        (∑ x ∈ (tupleSupportT R).erase u, (2 : ℕ) • x) + u := by
+    calc
+      (∑ x ∈ tupleSupportT R,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card • x) =
+          (∑ x ∈ (tupleSupportT R).erase u,
+            ((Finset.univ : Finset (Fin 15)).filter
+              (fun i => tupleValueT R i = x)).card • x) +
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = u)).card • u := by
+              exact
+                (Finset.sum_erase_add (tupleSupportT R)
+                  (fun x =>
+                    ((Finset.univ : Finset (Fin 15)).filter
+                      (fun i => tupleValueT R i = x)).card • x) hu).symm
+      _ = (∑ x ∈ (tupleSupportT R).erase u, (2 : ℕ) • x) + u := by
+        congr 1
+        · apply Finset.sum_congr rfl
+          intro x hx
+          rw [hOtherTwo x hx]
+        · rw [huOne]
+          simp
+  have hGroupedPlusSingleton :
+      ((∑ x ∈ (tupleSupportT R).erase u, (2 : ℕ) • x) + u) + u = 0 := by
+    rw [Finset.sum_nsmul]
+    calc
+      (2 : ℕ) • (∑ x ∈ (tupleSupportT R).erase u, x) + u + u =
+          (2 : ℕ) • ((∑ x ∈ (tupleSupportT R).erase u, x) + u) := by
+            simp [two_nsmul, add_assoc, add_comm, add_left_comm]
+      _ = 0 := by rw [hSupportEraseSum]; simp
+  have hTupleTotalPlusSingleton :
+      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u = 0 := by
+    rw [hGrouped, hGroupedSplit]
+    exact hGroupedPlusSingleton
+  have huNe : u ≠ 0 := by
+    intro hu0
+    subst u
+    exact (zero_not_mem_tupleSupportT R) hu
+  have hTupleTotalNe :
+      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) ≠ 0 := by
+    intro hZero
+    rw [hZero, zero_add] at hTupleTotalPlusSingleton
+    exact huNe hTupleTotalPlusSingleton
+  intro hTotalZero
+  apply hTupleTotalNe
+  have hMapped := congrArg finiteModelEquiv hTotalZero
+  simpa [totalSum, posSum, tupleValueT] using hMapped
+
 end InverseZeroSum.Candidate3
