@@ -1447,3 +1447,19 @@ elimination, `Length15NonzeroInput`, `FrozenClassification`, Palomar or
 publication stages.
 
 Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
+
+## S049 completed — structural length-16 closure
+
+D48-01 closes `Length16SumZeroInput` in Lean. The retained proof replaces the
+S048 timed-out normalized completion check with an affine incidence argument:
+a nine-cap has no two-point plane intersection, so each parallel class has
+slice pattern `3+3+3` or `1+4+4`; directional sums vanish and the full
+nine-cap sum is zero. The length-16 support is then exactly eight values, each
+twice.
+
+The formalization stage remains PARTIAL because `FrozenClassification` is
+not yet proved. The sole promoted successor is S050/D49-01, the `s=8`
+representative-swap elimination. `Length15NonzeroInput`, the `s=9` branch,
+Palomar and publication work remain downstream.
+
+Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
