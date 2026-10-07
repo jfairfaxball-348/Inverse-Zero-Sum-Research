@@ -2516,6 +2516,7 @@ theorem tupleValueT_sum_plus_singleton_eq_double_support_length15
   have hGrouped := tupleValueT_sum_eq_support_weight R
   have hWeightPlus :=
     weighted_sum_plus_singleton_eq_double
+      (α := F3T) (M := F3T)
       (A := tupleSupportT R)
       (f := fun x : F3T => x)
       (w := fun x =>
