@@ -1000,3 +1000,15 @@ Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical
 investigation is OPEN for S050/D49-01 formalization only. External review
 remains CLOSED and is not a CAND-03 pre-submission blocker. No outreach,
 manuscript, preprint, submission or Palomar action is authorized by S049.
+
+## S050 D49-01 formalization decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-143 | 2026-10-07 | Record D49-01 as **COMPLETED**: the pinned Lean project proves `s8RepresentativeSwapInput : S8RepresentativeSwapInput`. Every `s=8` packing certificate has constant packed blocks, no two-block, and hence `l=8`, `r=0`; the certificate retains the universal arbitrary-representative residual quantifier. | S050 formal source and green pinned workflow run 158; S040 representative-swap proof order. |
+| D-144 | 2026-10-07 | Promote exactly S051/D50-01 on `Length15NonzeroInput`, the next exact source interface on the recorded S040 proof spine. Do not enter the `s=9` representative argument, `FrozenClassification`, Palomar or publication stages in S050. | S050 brief success rule; owner Lean-first order. |
+
+Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical
+investigation is OPEN for S051/D50-01 formalization only. External review
+remains CLOSED and is not a CAND-03 pre-submission blocker. No outreach,
+manuscript, preprint, submission or Palomar action is authorized by S050.
