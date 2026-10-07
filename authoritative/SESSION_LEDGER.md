@@ -903,3 +903,18 @@ D45-01 closes the second threshold interface without importing `eta(C_3^3)=17` a
   clean-run termination with exit 143.
 - Active owner blockers: NONE.
 - Next numbered session: S049 / D48-01.
+
+## S049 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S049 | COMPLETED D48-01 LENGTH-16 SUM-ZERO CLOSURE | `1d72a7d2eb489c913b81a3ad43e28fdea02ba3ea` | Kernel-checked `length16SumZeroInput`; structural nine-cap sum invariant; exact eight-support/two-copy closure | `sessions/S049/CLOSEOUT.md` |
+
+- S049 was unique and reconciled against the S048 PARTIAL checkpoint.
+- `Length16SumZeroInput` is now closed.
+- The S048 global normalized completion enumeration remains stopped and absent.
+- Clean proof-head validation passed `lake build`, the placeholder scan and
+  `scripts/check_authority.py`.
+- Active owner blockers: NONE.
+- Next numbered session: S050 / D49-01, the `s=8` representative-swap
+  elimination only.
