@@ -1020,3 +1020,15 @@ recorded mathematically in S040. `Length15NonzeroInput` itself remains
 unproved in Lean at S051 closeout because the final positional weighted-sum
 specialization is not yet reproducibly elaborable. The S042 prior-art boundary
 is unchanged.
+
+
+## S052 formalization claim additions
+
+Date: **2026-10-07**.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-216 | FORMAL_VERIFICATION | The pinned Lean project proves `length15NonzeroInput : Length15NonzeroInput`. The proof closes the exact S051 positional-sum blocker using the `2^7 1` support profile, a local fibre-cardinality weight, the generic singleton/double-fibre weighted identity, and the eight-support sum-zero theorem. | `InverseZeroSum/Candidate3.lean`; S052 validation; clean workflow run `37691828559`. This verifies the encoded interface only and is not a novelty claim. |
+| C-217 | PROGRAMME_ROUTE_DECISION | With `Length15NonzeroInput` closed, promote only S053/D52-01 on the S040 `s=9` representative/singleton-transition elimination. | S052 success rule and recorded S040 proof order. `FrozenClassification` remains downstream. |
+
+The S042 prior-art boundary is unchanged.
