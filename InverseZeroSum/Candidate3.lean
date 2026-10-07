@@ -2493,15 +2493,17 @@ theorem weighted_sum_plus_singleton_eq_double
   rw [hErase, huOne]
   simp [two_nsmul, add_assoc]
 
-/-
-S051/D50-01 closes the exact length-15 source interface by deriving the
-eight-support \`2^7 1\` structure and using the existing transparent cap-sum
-invariant.  No s=9 packing argument enters here.
+
+/--
+The exact length-15 support structure determines a nonzero singleton whose
+negative is the tuple-model positional total.
 -/
 set_option maxHeartbeats 2000000 in
-theorem length15NonzeroInput : Length15NonzeroInput := by
+theorem exists_nonzero_singleton_total_relation_length15
+    (R : PosSeq 15) (hFree : ShortFree R) :
+    ∃ u : F3T, u ≠ 0 ∧
+      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u = 0 := by
   classical
-  intro R hFree
   have hSupportCard := tupleSupportT_card_eq_eight_length15 R hFree
   obtain ⟨u, hu, huOne⟩ :=
     exists_tupleFiberT_card_eq_one_length15 R hFree
@@ -2533,14 +2535,24 @@ theorem length15NonzeroInput : Length15NonzeroInput := by
     intro hu0
     subst u
     exact (zero_not_mem_tupleSupportT R) hu
-  have hTupleTotalNe :
-      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) ≠ 0 := by
-    intro hZero
-    rw [hZero, zero_add] at hTupleTotalPlusSingleton
-    exact huNe hTupleTotalPlusSingleton
+  exact ⟨u, huNe, hTupleTotalPlusSingleton⟩
+
+/--
+S051/D50-01 closes the exact length-15 source interface by deriving the
+eight-support \`2^7 1\` structure and using the existing transparent cap-sum
+invariant.  No s=9 packing argument enters here.
+-/
+theorem length15NonzeroInput : Length15NonzeroInput := by
+  intro R hFree
+  obtain ⟨u, huNe, hTupleTotalPlusSingleton⟩ :=
+    exists_nonzero_singleton_total_relation_length15 R hFree
   intro hTotalZero
-  apply hTupleTotalNe
-  have hMapped := congrArg finiteModelEquiv hTotalZero
-  simpa [totalSum, posSum, tupleValueT] using hMapped
+  have hTupleTotalZero :
+      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) = 0 := by
+    have hMapped := congrArg finiteModelEquiv hTotalZero
+    simpa [totalSum, posSum, tupleValueT] using hMapped
+  rw [hTupleTotalZero, zero_add] at hTupleTotalPlusSingleton
+  exact huNe hTupleTotalPlusSingleton
+
 
 end InverseZeroSum.Candidate3
