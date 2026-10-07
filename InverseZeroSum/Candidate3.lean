@@ -2500,6 +2500,7 @@ Specialized positional consequence of the generic weight identity.  The large
 fibre-cardinality expression is kept inside this proof; the statement exposes
 only the positional total and the doubled support sum.
 -/
+set_option maxHeartbeats 1000000 in
 theorem tupleValueT_sum_plus_singleton_eq_double_support_length15
     (R : PosSeq 15) {u : F3T}
     (hu : u ∈ tupleSupportT R)
