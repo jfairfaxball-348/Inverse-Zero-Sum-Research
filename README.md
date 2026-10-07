@@ -451,3 +451,17 @@ The overall formalization remains partial. S050 is restricted to the S040
 `s=9` branch and `FrozenClassification` remain downstream; Palomar and all
 publication stages remain blocked until the complete frozen theorem is
 kernel-checked.
+
+## S050 s=8 representative-swap formalization checkpoint
+
+S050 closes the complete S040 `s=8` branch interface. The pinned Lean source
+proves `s8RepresentativeSwapInput : S8RepresentativeSwapInput`: every
+eight-block S039 packing certificate has constant packed blocks, no two-term
+block, and hence the unique signature `(8,8,0)`. The proof faithfully
+reindexes all 16-position representative-deletion residuals and retains the
+certificate's universal arbitrary-representative quantifier.
+
+The overall formalization remains partial. S051 is restricted to
+`Length15NonzeroInput`; the `s=9` elimination and
+`FrozenClassification` remain downstream. Palomar, paper, arXiv and E-JC
+remain blocked until the complete frozen theorem is kernel-checked.
