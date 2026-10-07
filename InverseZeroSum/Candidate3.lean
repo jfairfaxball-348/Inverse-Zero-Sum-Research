@@ -1985,4 +1985,263 @@ theorem length16SumZeroInput : Length16SumZeroInput := by
   simpa [totalSum, posSum, tupleValueT] using hTupleTotal
 
 
+/-! ### S050: the s=8 representative-swap elimination -/
+
+/--
+Faithfully reindex a sixteen-position surviving set as a positional sequence.
+The universal short-freeness-on-the-survivors hypothesis then feeds the closed
+length-16 sum-zero interface.
+-/
+theorem shortFreeOn_card_sixteen_sum_zero
+    (h16 : Length16SumZeroInput) (S : PosSeq 24)
+    {A : Finset (Fin 24)} (hCard : A.card = 16)
+    (hFree : ShortFreeOn S A) :
+    posSum S A = 0 := by
+  classical
+  have h16le : 16 ≤ A.card := by omega
+  let eOrder : Fin 16 ↪o Fin 24 := A.orderEmbOfCardLe h16le
+  let e : Fin 16 ↪ Fin 24 := eOrder.toEmbedding
+  let R : PosSeq 16 := pullSeq S e
+  have hRFree : ShortFree R := by
+    intro I hShort
+    have hMap : ShortZero S (I.map e) :=
+      shortZero_map_pullSeq S e hShort
+    have hSub : I.map e ⊆ A := by
+      intro x hx
+      obtain ⟨i, _hi, rfl⟩ := Finset.mem_map.mp hx
+      simpa [e, eOrder] using Finset.orderEmbOfCardLe_mem A h16le i
+    exact (hFree (I.map e) hSub) hMap
+  have hRZero : totalSum R = 0 :=
+    h16 R hRFree
+  have hMapSub : Finset.univ.map e ⊆ A := by
+    intro x hx
+    obtain ⟨i, _hi, rfl⟩ := Finset.mem_map.mp hx
+    simpa [e, eOrder] using Finset.orderEmbOfCardLe_mem A h16le i
+  have hMapCard : (Finset.univ.map e).card = 16 := by
+    simp
+  have hMapEq : Finset.univ.map e = A := by
+    apply Finset.eq_of_subset_of_card_le hMapSub
+    rw [hCard, hMapCard]
+  have hMapZero : posSum S (Finset.univ.map e) = 0 := by
+    simpa [R, totalSum, posSum, pullSeq] using hRZero
+  simpa [hMapEq] using hMapZero
+
+/-- The sum over a representative position set is the sum over block indices. -/
+theorem posSum_representativeSet_eq_sum {s : ℕ} (S : PosSeq 24)
+    {blocks : Fin s → Finset (Fin 24)} {rep : Fin s → Fin 24}
+    (hBlocks : ∀ i j, i ≠ j → Disjoint (blocks i) (blocks j))
+    (hRep : ∀ j, rep j ∈ blocks j) :
+    posSum S (representativeSet rep) =
+      ∑ j : Fin s, (S (rep j) : G) := by
+  classical
+  have hInj : Function.Injective rep := by
+    intro i j hij
+    by_contra hne
+    have hDisj := hBlocks i j hne
+    have hmemj : rep i ∈ blocks j := by
+      rw [hij]
+      exact hRep j
+    exact (Finset.disjoint_left.mp hDisj) (hRep i) hmemj
+  unfold posSum representativeSet
+  rw [Finset.sum_image]
+  intro i _hi j _hj hij
+  exact hInj hij
+
+/--
+If a representative-deletion residual sums to zero, the selected
+representatives sum to the total sum of the original sequence.
+-/
+theorem representative_sum_eq_total_of_residual_zero {s : ℕ}
+    (S : PosSeq 24) {blocks : Fin s → Finset (Fin 24)}
+    {rep : Fin s → Fin 24}
+    (hBlocks : ∀ i j, i ≠ j → Disjoint (blocks i) (blocks j))
+    (hRep : ∀ j, rep j ∈ blocks j)
+    (hResidualZero :
+      posSum S (Finset.univ \ representativeSet rep) = 0) :
+    (∑ j : Fin s, (S (rep j) : G)) = totalSum S := by
+  have hSplit :
+      posSum S (representativeSet rep) +
+        posSum S (Finset.univ \ representativeSet rep) =
+        totalSum S := by
+    simpa [posSum, totalSum, add_comm] using
+      (Finset.sum_sdiff (Finset.subset_univ (representativeSet rep))
+        (f := fun i => (S i : G)))
+  rw [hResidualZero, add_zero] at hSplit
+  rw [posSum_representativeSet_eq_sum S hBlocks hRep] at hSplit
+  exact hSplit
+
+/--
+The S040 representative swap: in an s=8 certificate, changing only one
+representative preserves a short-free length-16 residual with zero sum, so any
+two selectable values in that packed block are equal.
+-/
+theorem s8_packed_blocks_constant
+    (h16 : Length16SumZeroInput) {S : PosSeq 24}
+    (c : S039PackingCertificate S) (hs : c.s = 8) :
+    ∀ j : Fin c.s, ∀ x ∈ c.blocks j, ∀ y ∈ c.blocks j, S x = S y := by
+  classical
+  intro j x hx y hy
+  let base : Fin c.s → Fin 24 :=
+    fun k => Classical.choose (c.block_shortZero k).1
+  have hBase : ∀ k, base k ∈ c.blocks k := by
+    intro k
+    exact Classical.choose_spec (c.block_shortZero k).1
+  let repX : Fin c.s → Fin 24 := Function.update base j x
+  let repY : Fin c.s → Fin 24 := Function.update base j y
+  have hRepX : ∀ k, repX k ∈ c.blocks k := by
+    intro k
+    by_cases hkj : k = j
+    · subst k
+      simpa [repX] using hx
+    · simpa [repX, hkj] using hBase k
+  have hRepY : ∀ k, repY k ∈ c.blocks k := by
+    intro k
+    by_cases hkj : k = j
+    · subst k
+      simpa [repY] using hy
+    · simpa [repY, hkj] using hBase k
+  have hRepXCard : (representativeSet repX).card = c.s :=
+    representativeSet_card_of_pairwise c.pairwise_disjoint hRepX
+  have hRepYCard : (representativeSet repY).card = c.s :=
+    representativeSet_card_of_pairwise c.pairwise_disjoint hRepY
+  have hResidualXCard :
+      (Finset.univ \ representativeSet repX).card = 16 := by
+    rw [Finset.card_sdiff (Finset.subset_univ _), hRepXCard, hs]
+    decide
+  have hResidualYCard :
+      (Finset.univ \ representativeSet repY).card = 16 := by
+    rw [Finset.card_sdiff (Finset.subset_univ _), hRepYCard, hs]
+    decide
+  have hResidualXFree :=
+    c.every_representative_residual_shortFree repX hRepX
+  have hResidualYFree :=
+    c.every_representative_residual_shortFree repY hRepY
+  have hResidualXZero :
+      posSum S (Finset.univ \ representativeSet repX) = 0 :=
+    shortFreeOn_card_sixteen_sum_zero h16 S hResidualXCard hResidualXFree
+  have hResidualYZero :
+      posSum S (Finset.univ \ representativeSet repY) = 0 :=
+    shortFreeOn_card_sixteen_sum_zero h16 S hResidualYCard hResidualYFree
+  have hSumX :
+      (∑ k : Fin c.s, (S (repX k) : G)) = totalSum S :=
+    representative_sum_eq_total_of_residual_zero S
+      c.pairwise_disjoint hRepX hResidualXZero
+  have hSumY :
+      (∑ k : Fin c.s, (S (repY k) : G)) = totalSum S :=
+    representative_sum_eq_total_of_residual_zero S
+      c.pairwise_disjoint hRepY hResidualYZero
+  have hOther :
+      (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+          (S (repX k) : G)) =
+        ∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+          (S (repY k) : G) := by
+    apply Finset.sum_congr rfl
+    intro k hk
+    have hkj : k ≠ j := (Finset.mem_erase.mp hk).1
+    simp [repX, repY, hkj]
+  have hSplitX :
+      (∑ k : Fin c.s, (S (repX k) : G)) =
+        (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+          (S (repX k) : G)) + (S x : G) := by
+    calc
+      (∑ k : Fin c.s, (S (repX k) : G)) =
+          (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+            (S (repX k) : G)) + (S (repX j) : G) :=
+        (Finset.sum_erase_add (Finset.univ : Finset (Fin c.s))
+          (fun k => (S (repX k) : G)) (Finset.mem_univ j)).symm
+      _ = _ := by simp [repX]
+  have hSplitY :
+      (∑ k : Fin c.s, (S (repY k) : G)) =
+        (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+          (S (repY k) : G)) + (S y : G) := by
+    calc
+      (∑ k : Fin c.s, (S (repY k) : G)) =
+          (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+            (S (repY k) : G)) + (S (repY j) : G) :=
+        (Finset.sum_erase_add (Finset.univ : Finset (Fin c.s))
+          (fun k => (S (repY k) : G)) (Finset.mem_univ j)).symm
+      _ = _ := by simp [repY]
+  have hEq :
+      (∑ k : Fin c.s, (S (repX k) : G)) =
+        ∑ k : Fin c.s, (S (repY k) : G) :=
+    hSumX.trans hSumY.symm
+  rw [hSplitX, hSplitY, hOther] at hEq
+  exact Subtype.ext (add_left_cancel hEq)
+
+/-- A constant nonzero short zero-sum block cannot have cardinality two. -/
+theorem constant_shortZero_block_ne_two {S : PosSeq 24}
+    {B : Finset (Fin 24)} (hShort : ShortZero S B)
+    (hConst : ∀ x ∈ B, ∀ y ∈ B, S x = S y) :
+    B.card ≠ 2 := by
+  classical
+  intro hCard
+  obtain ⟨x, hx⟩ := hShort.1
+  have hConstSum :
+      posSum S B = B.card • (S x : G) := by
+    unfold posSum
+    calc
+      (∑ i ∈ B, (S i : G)) =
+          ∑ _i ∈ B, (S x : G) := by
+            exact Finset.sum_congr rfl
+              (fun i hi => congrArg Subtype.val (hConst i hi x hx))
+      _ = B.card • (S x : G) := by simp
+  have hTwoG : (S x : G) + (S x : G) = 0 := by
+    have hZero := hShort.2.2
+    rw [hConstSum, hCard] at hZero
+    simpa [two_nsmul] using hZero
+  have hTwoT :
+      finiteModelEquiv (S x : G) + finiteModelEquiv (S x : G) = 0 := by
+    simpa using congrArg finiteModelEquiv hTwoG
+  have hNonzeroT : finiteModelEquiv (S x : G) ≠ 0 := by
+    intro hZero
+    apply (S x).property
+    apply finiteModelEquiv.injective
+    simpa using hZero
+  exact (f3t_self_add_ne_zero (finiteModelEquiv (S x : G)) hNonzeroT) hTwoT
+
+/--
+Certificate-level structural output of D49-01.  Together with c.s=8, this says
+the only surviving signature is (8,8,0) and every one of its eight three-term
+packed atoms is constant-valued.  The certificate continues to carry the
+universal arbitrary-representative short-free residual property.
+-/
+def S8RepresentativeSwapOutput (S : PosSeq 24)
+    (c : S039PackingCertificate S) : Prop :=
+  c.l = 8 ∧ c.r = 0 ∧
+    ∀ j : Fin c.s, ∀ x ∈ c.blocks j, ∀ y ∈ c.blocks j, S x = S y
+
+/-- The exact bounded S050 interface for the s=8 branch. -/
+def S8RepresentativeSwapInput : Prop :=
+  ∀ S : PosSeq 24, ∀ c : S039PackingCertificate S,
+    c.s = 8 → S8RepresentativeSwapOutput S c
+
+/--
+S050/D49-01 closes the s=8 representative-swap elimination from the already
+closed packing and length-16 interfaces.  No length-15 or s=9 argument enters.
+-/
+theorem s8RepresentativeSwapInput : S8RepresentativeSwapInput := by
+  intro S c hs
+  have hConst :=
+    s8_packed_blocks_constant length16SumZeroInput c hs
+  have hLR : c.l = 8 ∧ c.r = 0 := by
+    rcases c.signature with h682 | h781 | h880 | h690
+    · let j : Fin c.s := ⟨6, by omega⟩
+      have hCardTwo : (c.blocks j).card = 2 := by
+        rw [c.block_card]
+        simp [j, h682.1]
+      exact False.elim
+        ((constant_shortZero_block_ne_two (c.block_shortZero j) (hConst j))
+          hCardTwo)
+    · let j : Fin c.s := ⟨7, by omega⟩
+      have hCardTwo : (c.blocks j).card = 2 := by
+        rw [c.block_card]
+        simp [j, h781.1]
+      exact False.elim
+        ((constant_shortZero_block_ne_two (c.block_shortZero j) (hConst j))
+          hCardTwo)
+    · exact ⟨h880.1, h880.2.2⟩
+    · omega
+  exact ⟨hLR.1, hLR.2, hConst⟩
+
+
 end InverseZeroSum.Candidate3
