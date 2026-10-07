@@ -2498,7 +2498,7 @@ S051/D50-01 closes the exact length-15 source interface by deriving the
 eight-support \`2^7 1\` structure and using the existing transparent cap-sum
 invariant.  No s=9 packing argument enters here.
 -/
-set_option maxHeartbeats 500000 in
+set_option maxHeartbeats 2000000 in
 theorem length15NonzeroInput : Length15NonzeroInput := by
   classical
   intro R hFree
