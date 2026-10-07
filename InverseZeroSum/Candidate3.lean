@@ -1775,16 +1775,16 @@ theorem nine_cap_direction_value_sum_zero {A : Finset F3T} (hA : IsCapT A)
       rcases nine_cap_direction_slice_pattern hA hcard d with
         h333 | h144 | h414 | h441
       · rcases h333 with ⟨h0, h1, h2⟩
-        simp only [Fin.sum_univ_succ, h0, h1, h2]
+        simp [Fin.sum_univ_succ, h0, h1, h2]
         decide
       · rcases h144 with ⟨h0, h1, h2⟩
-        simp only [Fin.sum_univ_succ, h0, h1, h2]
+        simp [Fin.sum_univ_succ, h0, h1, h2]
         decide
       · rcases h414 with ⟨h0, h1, h2⟩
-        simp only [Fin.sum_univ_succ, h0, h1, h2]
+        simp [Fin.sum_univ_succ, h0, h1, h2]
         decide
       · rcases h441 with ⟨h0, h1, h2⟩
-        simp only [Fin.sum_univ_succ, h0, h1, h2]
+        simp [Fin.sum_univ_succ, h0, h1, h2]
         decide
 
 /-- The explicit plane direction forms are additive. -/
@@ -1953,14 +1953,14 @@ theorem length16SumZeroInput : Length16SumZeroInput := by
       (g := tupleValueT R) hMaps (tupleValueT R)
   have hGrouped :
       (∑ i ∈ (Finset.univ : Finset (Fin 16)), tupleValueT R i) =
-        ∑ x ∈ tupleSupportT R, 2 • x := by
+        ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
     calc
       (∑ i ∈ (Finset.univ : Finset (Fin 16)), tupleValueT R i) =
           ∑ x ∈ tupleSupportT R,
             ∑ i ∈ (Finset.univ : Finset (Fin 16)) with
               tupleValueT R i = x, tupleValueT R i := by
                 simpa using hFiberwise.symm
-      _ = ∑ x ∈ tupleSupportT R, 2 • x := by
+      _ = ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
         apply Finset.sum_congr rfl
         intro x hx
         calc
@@ -1974,11 +1974,11 @@ theorem length16SumZeroInput : Length16SumZeroInput := by
               ((Finset.univ : Finset (Fin 16)).filter
                 (fun i => tupleValueT R i = x)).card • x := by
                   simp
-          _ = 2 • x := by rw [hFiberEq x hx]
+          _ = (2 : ℕ) • x := by rw [hFiberEq x hx]
   have hDouble :
-      (∑ x ∈ tupleSupportT R, 2 • x) = 0 := by
+      (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
     calc
-      (∑ x ∈ tupleSupportT R, 2 • x) =
+      (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) =
           ∑ x ∈ tupleSupportT R, (x + x) := by
             apply Finset.sum_congr rfl
             intro x _hx
@@ -1992,7 +1992,7 @@ theorem length16SumZeroInput : Length16SumZeroInput := by
       (∑ i ∈ (Finset.univ : Finset (Fin 16)), tupleValueT R i) = 0 := by
     calc
       (∑ i ∈ (Finset.univ : Finset (Fin 16)), tupleValueT R i) =
-          ∑ x ∈ tupleSupportT R, 2 • x := hGrouped
+          ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := hGrouped
       _ = 0 := hDouble
   apply finiteModelEquiv.injective
   simpa [totalSum, posSum, tupleValueT] using hTupleTotal
