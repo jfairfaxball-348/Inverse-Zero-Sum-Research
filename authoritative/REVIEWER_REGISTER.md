@@ -825,3 +825,13 @@ the owner's post-S041 decision this is not a pre-submission blocker.
 Independent pre-submission consultation remains skipped for CAND-03; E-JC's
 ordinary editorial/referee process remains planned. Xue Li Stage-1 remains
 CAND-02-specific and reply pending.
+
+
+## S053 reviewer boundary
+
+No CAND-03 reviewer or status expert was contacted, and no independent
+pre-submission consultation was requested in S053. It remains explicitly
+skipped for CAND-03 under the owner-approved roadmap, while E-JC's ordinary
+editorial/referee process is still planned. The Lean partial build is not
+external review. Xue Li Stage-1 remains strictly CAND-02-specific,
+owner-reported SENT and REPLY PENDING, with no transfer.

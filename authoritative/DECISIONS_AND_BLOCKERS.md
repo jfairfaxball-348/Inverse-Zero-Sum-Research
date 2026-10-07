@@ -1034,3 +1034,17 @@ Active owner blockers: **NONE**.
 Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical
 investigation is OPEN for S053/D52-01 formalization only. External review
 remains CLOSED and is not a CAND-03 pre-submission blocker.
+
+
+## S053 D52-01 formalization decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-149 | 2026-10-07 | Close D52-01 as **PARTIAL**, preserving proof-bearing length-15 singleton identity/uniqueness and local two-fibre count transitions; **do not** claim proof of `S9PackingEliminationInput` or `FrozenClassification`. | S053 Lean source, clean validation boundary and exact missing certificate-level survivor transport. |
+| D-150 | 2026-10-07 | Promote only S054/D53-01 to close the same s=9 certificate-level elimination. Work first on faithful singleton/count/sum transport from `ShortFreeOn` 15-position survivors through one-block representative swaps. Stop at the impossibility theorem; do not compose `FrozenClassification` or enter downstream stages. | S053 PARTIAL stop/successor rule; existing S040 verified transition boundary and owner Lean-first order. |
+
+**Active owner blockers: NONE.** CAND-03 stays selected; the mathematical
+investigation gate remains OPEN only for the bounded S054/D53-01 continuation.
+The external-review gate remains CLOSED and does not block CAND-03.
+No outreach, Palomar action, manuscript, preprint or journal submission is
+authorized by this formalization checkpoint.

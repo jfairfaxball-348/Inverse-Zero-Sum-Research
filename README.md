@@ -491,3 +491,18 @@ The overall formalization remains partial. S053 is restricted to the recorded
 S040 `s=9` representative/singleton-transition elimination.
 `FrozenClassification` remains downstream; Palomar, paper, arXiv and E-JC
 remain blocked until the complete frozen theorem is kernel-checked.
+
+
+## S053 partial s=9 formalization checkpoint
+
+S053/D52-01 retains proof-bearing length-15 singleton sum and uniqueness
+lemmas plus the exact two local fibre-count transitions. The named
+`S9PackingEliminationInput` remains an **unproved proposition**:
+the certificate-level transport of singleton/fibre information through
+an arbitrary 15-position representative-deletion survivor is the single
+earliest exact blocker.
+
+S054/D53-01 continues only that s=9 certificate-level elimination.
+`FrozenClassification` still has no proof term. Palomar, paper, arXiv and
+E-JC remain blocked until the complete frozen theorem is proved and the
+pinned formalization checks pass.

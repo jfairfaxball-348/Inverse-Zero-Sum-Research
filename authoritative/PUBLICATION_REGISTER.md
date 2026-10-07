@@ -759,3 +759,16 @@ No publication-stage transition occurs in S051. The Lean stage remains
 PARTIAL because `Length15NonzeroInput`, the `s=9` elimination and
 `FrozenClassification` are not yet closed. Palomar registration remains
 blocked. Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
+
+
+## S053 publication-stage boundary
+
+S053/D52-01 is PARTIAL: auxiliary Lean singleton/transition lemmas were
+retained, but certificate-level s=9 impossibility and FrozenClassification
+are unproved. Formalization is not complete, and Palomar registration is
+blocked. No Palomar registration, manuscript, arXiv posting, E-JC submission
+or publication occurred. Owner order remains
+Lean -> Palomar -> paper -> arXiv -> E-JC.
+
+No novelty, prior-openness, significance, journal acceptance or formalized
+full-classification claim follows from this checkpoint.

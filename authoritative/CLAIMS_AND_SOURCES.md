@@ -1032,3 +1032,16 @@ Date: **2026-10-07**.
 | C-217 | PROGRAMME_ROUTE_DECISION | With `Length15NonzeroInput` closed, promote only S053/D52-01 on the S040 `s=9` representative/singleton-transition elimination. | S052 success rule and recorded S040 proof order. `FrozenClassification` remains downstream. |
 
 The S042 prior-art boundary is unchanged.
+
+
+## S053 partial formalization claim additions
+
+Date: **2026-10-07**.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-218 | FORMAL_VERIFICATION / AUXILIARY LEMMA | A short-free positional length-15 sequence with a singleton support value `u` has tuple total sum plus `u` equal to zero; the singleton fibre is unique. | `InverseZeroSum/Candidate3.lean`, S053 validation; derived from already checked `2^7 1` structure, local fibre weight and eight-support sum invariant. Does not establish the s=9 elimination. |
+| C-219 | FORMAL_VERIFICATION / LOCAL NUMERIC TRANSITION | Under the cardinality bounds and at-most-one-singleton properties of the affected fibres, replacing one occurrence of `b` by `a` permits only `(p,q)=(0,1)` or `(1,2)`. | Lean theorem `s9_two_fibre_count_transitions`, to be validated in the synchronized pinned workflow. Does not automatically supply these hypotheses for arbitrary certificate representatives. |
+| C-220 | FORMALIZATION BLOCKER / ROUTE DECISION | `S9PackingEliminationInput` is defined solely as an unproved proposition. The first missing proof is the singleton/count/sum transport from fixed length 15 into arbitrary certificate residual survivors under a one-block swap. | S053 partial closeout and S054 brief. `FrozenClassification` and all later milestones remain blocked. |
+
+S042's documented prior-art non-hit and its non-certifying status are unchanged.

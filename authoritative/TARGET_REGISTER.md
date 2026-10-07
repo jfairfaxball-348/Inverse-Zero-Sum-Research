@@ -1407,3 +1407,21 @@ consequence and introduces no new novelty/open-status claim.
 Formalization status remains **PARTIAL**. The next exact obligation is the
 `s=9` representative/singleton-transition elimination. Palomar remains
 **BLOCKED UNTIL THE FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
+
+
+## S053 CAND-03 partial s=9 formalization boundary
+
+Date: 2026-10-07.
+
+The selected target and frozen mathematical iff statement are unchanged. S053
+proves the auxiliary singleton identity, singleton uniqueness, and the exact
+two local multiplicity transitions needed by the previously verified S040
+s=9 argument. The named Lean proposition `S9PackingEliminationInput` has
+**no proof term**. No s=9 impossibility or FrozenClassification theorem has
+been kernel-checked.
+
+The earliest formal blocker is the faithful counted singleton/sum transport
+for an arbitrary 15-position ShortFreeOn residual of a certificate, including
+one-block representative swaps. S054 continues this exact s=9 interface.
+Palomar is BLOCKED until FrozenClassification itself is proved and the complete
+pinned suite passes.

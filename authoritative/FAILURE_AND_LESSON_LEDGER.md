@@ -460,3 +460,20 @@ elaboration limits around a large reducible expression. Preserve the
 structural checkpoint and introduce a smaller named interface or proof shape
 that avoids repeated unfolding. Runtime/elaboration reproducibility is part of
 the formal trust boundary.
+
+
+## S053 formalization lesson
+
+### FL-110 — A nonzero-total interface does not retain the singleton witness required by a swap argument
+
+S052 closed `Length15NonzeroInput`, but S040's s=9 transition comparison
+needs the stronger equation identifying the *unique singleton support value*
+with the negative of the total residual sum. S053 retained that identity,
+uniqueness and the transparent local two-fibre arithmetic as small
+proof-bearing lemmas. These local results do not alone transport cardinality
+through an arbitrary 15-position survivor set or its changed representative.
+
+**Lesson:** isolate reusable profile and algebra proofs, but do not mistake
+them for the certificate-level indexed transport needed to apply them. The
+single blocked proof obligation now has a concrete positional/fibre interface;
+no unrelated enumeration or new mathematical route is promoted.
