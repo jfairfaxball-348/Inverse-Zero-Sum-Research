@@ -1483,3 +1483,19 @@ S051/D50-01 is the sole promoted successor and may prove only
 `FrozenClassification`, Palomar or publication work.
 
 Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
+
+
+## S051 partial — length-15 support structure retained
+
+D50-01 kernel-checks the exact source-faithful multiplicity structure for every
+short-free length-15 positional sequence: support cardinality eight with fibre
+profile `2^7 1`. Generic fibrewise grouping and singleton-weight algebra are
+also retained. The closed source interface `Length15NonzeroInput` remains
+unproved because the direct positional weighted-sum specialization repeatedly
+times out during elaboration on the clean pinned runner; noncompiling closure
+attempts were removed.
+
+S052/D51-01 is the sole promoted successor and continues this same exact
+interface. It must close `Length15NonzeroInput` from the preserved structure
+with a reproducible proof and stop before the `s=9` elimination.
+`FrozenClassification`, Palomar and publication stages remain downstream.

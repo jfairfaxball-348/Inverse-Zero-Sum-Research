@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S050",
-  "next_session": "S051",
-  "next_brief": "authoritative/S051_CANDIDATE_3_LENGTH15_NONZERO_FORMALIZATION_BRIEF.md",
+  "next_session": "S052",
+  "next_brief": "authoritative/S052_CANDIDATE_3_LENGTH15_NONZERO_COMPLETION_BRIEF.md",
   "stage": "P5_CAND03_LEAN_FORMALIZATION_PARTIAL",
-  "programme_status": "S050_COMPLETED_D49_01_S051_READY_LENGTH15_NONZERO",
+  "programme_status": "S051_PARTIAL_D50_01_LENGTH15_STRUCTURE_CHECKED_S052_READY_COMPLETION",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. The pinned Lean project now closes S039PackingInput, Length16SumZeroInput, and the complete S040 s=8 representative-swap branch through s8RepresentativeSwapInput. The next exact formal source interface is Length15NonzeroInput; the s=9 elimination and FrozenClassification remain downstream, so Palomar remains blocked.",
+  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S051 kernel-checks the exact length-15 eight-support multiplicity profile 2^7 1 and generic fibre-sum algebra, but Length15NonzeroInput itself remains unproved because the positional weighted-sum specialization repeatedly exceeded the clean Lean elaboration heartbeat budget. S052 continues only that interface; the s=9 elimination and FrozenClassification remain downstream, so Palomar remains blocked.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -374,6 +374,11 @@
       "id": "S050",
       "status": "COMPLETED",
       "record": "sessions/S050/CLOSEOUT.md"
+    },
+    {
+      "id": "S051",
+      "status": "PARTIAL",
+      "record": "sessions/S051/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -638,8 +643,8 @@
     "status": "PARTIAL",
     "toolchain": "Lean 4.19.0 (release commit 6caaee842e94)",
     "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
-    "compiled_scope": "Exact positional definitions and FrozenClassification proposition; S039 certificate/signature arithmetic; positional transport and short-block minimality/disjointness; transparent all-short-zero-sum maximal packing; threshold-to-cardinality transport; s039PackingInput_of_thresholds; closed kernel-checked proofs threeTerm19Input : ThreeTerm19Input, eta17Input : Eta17Input, s039PackingInput : S039PackingInput, length16SumZeroInput : Length16SumZeroInput, and s8RepresentativeSwapInput : S8RepresentativeSwapInput.",
-    "earliest_formal_blocker": "Length15NonzeroInput: prove that every length-15 short-free positional sequence has nonzero total sum; do not enter the s=9 representative elimination in the same unit.",
+    "compiled_scope": "Exact positional definitions and FrozenClassification proposition; S039 certificate/signature arithmetic; positional transport and short-block minimality/disjointness; transparent all-short-zero-sum maximal packing; threshold-to-cardinality transport; s039PackingInput_of_thresholds; closed kernel-checked proofs threeTerm19Input : ThreeTerm19Input, eta17Input : Eta17Input, s039PackingInput : S039PackingInput, length16SumZeroInput : Length16SumZeroInput, and s8RepresentativeSwapInput : S8RepresentativeSwapInput; S051 length-15 structure lemmas tupleSupportT_card_eq_eight_length15, exists_tupleFiberT_card_eq_one_length15, tupleFiberT_card_eq_two_off_singleton_length15, tupleValueT_sum_eq_support_weight and weighted_sum_plus_singleton_eq_double.",
+    "earliest_formal_blocker": "Length15NonzeroInput closure: from the kernel-checked 2^7 1 support/fibre profile and eight-support sum-zero theorem, derive the positional tuple total as the negative of the nonzero singleton in a clean-buildable form. Direct specialization of the fibre-cardinality weighted sum currently triggers deterministic whnf timeout; do not enter the s=9 elimination until this closed proposition exists.",
     "palomar_status": "BLOCKED_UNTIL_FULL_FROZEN_CLASSIFICATION_PROOF"
   },
   "s044_formalization_date": "2026-10-06",
@@ -655,5 +660,6 @@
   "s049_formalization_date": "2026-10-07",
   "cand03_s8_representative_swap_formalization": "COMPLETED: the pinned Lean source proves s8RepresentativeSwapInput : S8RepresentativeSwapInput. For every s=8 S039 packing certificate, all arbitrary representative-deletion residuals reindex faithfully to length 16 and have zero sum; one-block swaps force each packed block constant, constant two-blocks are impossible, and only (l,s,r)=(8,8,0) survives. The certificate retains the universal arbitrary-representative residual quantifier.",
   "s050_formalization_date": "2026-10-07",
-  "cand03_length15_nonzero_formalization": "NEXT: S051/D50-01 is restricted to proving Length15NonzeroInput. The s=9 representative argument and FrozenClassification remain downstream."
+  "cand03_length15_nonzero_formalization": "PARTIAL: S051 proves the exact eight-support 2^7 1 multiplicity structure for every short-free PosSeq 15 and retains generic fibrewise-sum/weighted-sum lemmas. Length15NonzeroInput itself remains unproved: repeated source-faithful attempts to specialize the large positional fibre-weight expression to the total-sum relation timed out during whnf on the clean pinned runner, including a 1,000,000-heartbeat bounded attempt. Those noncompiling closure helpers were removed. S052 continues exactly this interface.",
+  "s051_formalization_date": "2026-10-07"
 }

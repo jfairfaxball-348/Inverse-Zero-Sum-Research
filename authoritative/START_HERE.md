@@ -17,15 +17,16 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S049 is COMPLETED and S050 is READY. CAND-03 remains selected. The exact
+**S051 is PARTIAL and S052 is READY. CAND-03 remains selected. The exact
 classification is internally proved and independently reverified. S042 found
 no exact/equivalent/stronger-implying prior art in the documented deep audit.
-The pinned Lean project now kernel-checks the S039 packing input and the
-length-16 source interface
-`length16SumZeroInput : Length16SumZeroInput`.
-The single earliest formal obligation is now the S040 `s=8`
-representative-swap elimination. `FrozenClassification` still has no proof
-term, so Palomar remains blocked.**
+The pinned Lean project now kernel-checks the S039 packing input, the
+length-16 source interface, the complete s=8 representative-swap branch, and
+the exact length-15 support/multiplicity profile `2^7 1`. The closed
+proposition `Length15NonzeroInput` is still missing: the remaining
+positional weighted-sum specialization triggers deterministic elaboration
+timeout on the clean runner. S052 continues only that interface.
+`FrozenClassification` still has no proof term, so Palomar remains blocked.**
 
 Selected target:
 
@@ -40,7 +41,7 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S050/D49-01 formalization only.
+- Mathematical-investigation gate: OPEN for S052/D51-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
 - Next session: S050 / D49-01 s=8 representative-swap formalization.
@@ -929,3 +930,20 @@ The overall formalization remains **PARTIAL**: `Length15NonzeroInput`, the
 is restricted to `Length15NonzeroInput` only. Palomar and all publication
 stages remain blocked until the complete frozen classification has a proof
 term and the pinned validation suite passes.
+
+
+## S051 partial — length-15 exact support structure
+
+S051/D50-01 does not close `Length15NonzeroInput`. It kernel-checks the
+source-faithful length-15 structural core: every short-free positional
+length-15 sequence has exactly eight support values; one support fibre has
+cardinality one; and the other seven have cardinality two. Generic fibrewise
+sum and singleton-weight identities are also retained.
+
+Direct specializations converting that `2^7 1` profile into the positional
+total-sum relation repeatedly exceeded the reproducible Lean elaboration
+heartbeat budget, including a bounded 1,000,000-heartbeat attempt. Those
+noncompiling closure attempts were removed. S052/D51-01 is the sole promoted
+continuation and remains on `Length15NonzeroInput` only. Palomar and all
+publication stages remain blocked on the complete `FrozenClassification`
+proof.

@@ -1378,3 +1378,15 @@ formalized.
 Formalization status remains **PARTIAL**. The next exact source interface is
 `Length15NonzeroInput`. Palomar remains **BLOCKED UNTIL THE FULL FROZEN
 CLASSIFICATION HAS A LEAN PROOF TERM**.
+
+
+## S051 CAND-03 length-15 formalization boundary
+
+Date: 2026-10-07.
+
+The frozen CAND-03 theorem is unchanged. S051 kernel-checks the exact
+length-15 support/multiplicity structure required by S040: eight support
+values with one singleton fibre and seven double fibres. It does **not** yet
+prove `Length15NonzeroInput`; the current blocker is a clean-buildable
+positional sum bridge from that `2^7 1` structure and the existing
+eight-support sum-zero theorem. S052 continues only this interface.
