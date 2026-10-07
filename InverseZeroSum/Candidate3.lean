@@ -2495,7 +2495,7 @@ theorem weighted_sum_plus_singleton_eq_double
 
 
 
-/--
+/-
 Specialized positional consequence of the generic weight identity.  The large
 fibre-cardinality expression is kept inside this proof; the statement exposes
 only the positional total and the doubled support sum.
