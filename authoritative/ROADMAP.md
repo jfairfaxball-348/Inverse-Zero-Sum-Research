@@ -1499,3 +1499,21 @@ S052/D51-01 is the sole promoted successor and continues this same exact
 interface. It must close `Length15NonzeroInput` from the preserved structure
 with a reproducible proof and stop before the `s=9` elimination.
 `FrozenClassification`, Palomar and publication stages remain downstream.
+
+
+## S052 completed — length-15 nonzero closure
+
+D51-01 closes `Length15NonzeroInput` in Lean. The retained proof avoids the
+S051 elaboration-timeout shape by introducing a small local fibre-weight
+function, grouping the positional tuple sum once, and applying the generic
+singleton/double-fibre weighted identity. The eight-support sum-zero theorem
+then forces the tuple total to be the negative of the nonzero singleton.
+
+The formalization stage remains PARTIAL because the `s=9` branch and
+`FrozenClassification` are not yet formalized. The sole promoted successor
+is S053/D52-01, the verified S040 `s=9` representative/singleton-transition
+elimination. It must stop before final theorem composition.
+
+Palomar and all publication stages remain blocked until
+`FrozenClassification` itself has a proof term and the full pinned checks
+pass. Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
