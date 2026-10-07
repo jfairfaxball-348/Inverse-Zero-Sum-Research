@@ -2493,32 +2493,6 @@ theorem weighted_sum_plus_singleton_eq_double
   rw [hErase, huOne]
   simp [two_nsmul, add_assoc]
 
-/--
-For the exact length-15 multiplicity profile, adding the singleton once to the
-weighted support sum turns every coefficient into two.
--/
-theorem length15_support_weight_plus_singleton_eq_double
-    (R : PosSeq 15) (hFree : ShortFree R)
-    {u : F3T} (hu : u ∈ tupleSupportT R)
-    (huOne :
-      ((Finset.univ : Finset (Fin 15)).filter
-        (fun i => tupleValueT R i = u)).card = 1) :
-    (∑ x ∈ tupleSupportT R,
-      ((Finset.univ : Finset (Fin 15)).filter
-        (fun i => tupleValueT R i = x)).card • x) + u =
-      ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
-  classical
-  have hOtherTwo :=
-    tupleFiberT_card_eq_two_off_singleton_length15 R hFree hu huOne
-  exact
-    weighted_sum_plus_singleton_eq_double
-      (A := tupleSupportT R)
-      (f := fun x : F3T => x)
-      (w := fun x =>
-        ((Finset.univ : Finset (Fin 15)).filter
-          (fun i => tupleValueT R i = x)).card)
-      hu huOne hOtherTwo
-
 /-
 S051/D50-01 closes the exact length-15 source interface by deriving the
 eight-support \`2^7 1\` structure and using the existing transparent cap-sum
@@ -2537,8 +2511,16 @@ theorem length15NonzeroInput : Length15NonzeroInput := by
       (zero_not_mem_tupleSupportT R)
       (insert_zero_tupleSupportT_isCap R hFree)
   have hGrouped := tupleValueT_sum_eq_support_weight R
+  have hOtherTwo :=
+    tupleFiberT_card_eq_two_off_singleton_length15 R hFree hu huOne
   have hWeightPlus :=
-    length15_support_weight_plus_singleton_eq_double R hFree hu huOne
+    weighted_sum_plus_singleton_eq_double
+      (A := tupleSupportT R)
+      (f := fun x : F3T => x)
+      (w := fun x =>
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card)
+      hu huOne hOtherTwo
   have hDouble :
       (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
     rw [Finset.sum_nsmul, hSupportSum]
