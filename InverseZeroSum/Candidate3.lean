@@ -2494,6 +2494,42 @@ theorem weighted_sum_plus_singleton_eq_double
   simp [two_nsmul, add_assoc]
 
 
+
+/--
+Specialized positional consequence of the generic weight identity.  The large
+fibre-cardinality expression is kept inside this proof; the statement exposes
+only the positional total and the doubled support sum.
+-/
+theorem tupleValueT_sum_plus_singleton_eq_double_support_length15
+    (R : PosSeq 15) {u : F3T}
+    (hu : u ∈ tupleSupportT R)
+    (huOne :
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = u)).card = 1)
+    (hOtherTwo :
+      ∀ x ∈ (tupleSupportT R).erase u,
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card = 2) :
+    (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u =
+      ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
+  classical
+  have hGrouped := tupleValueT_sum_eq_support_weight R
+  have hWeightPlus :=
+    weighted_sum_plus_singleton_eq_double
+      (A := tupleSupportT R)
+      (f := fun x : F3T => x)
+      (w := fun x =>
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = x)).card)
+      hu huOne hOtherTwo
+  calc
+    (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u =
+        (∑ x ∈ tupleSupportT R,
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = x)).card • x) + u :=
+          congrArg (fun z : F3T => z + u) hGrouped
+    _ = ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := hWeightPlus
+
 /-
 The exact length-15 support structure determines a nonzero singleton whose
 negative is the tuple-model positional total.
@@ -2512,31 +2548,18 @@ theorem exists_nonzero_singleton_total_relation_length15
     eight_nonzero_cap_sum_zero hSupportCard
       (zero_not_mem_tupleSupportT R)
       (insert_zero_tupleSupportT_isCap R hFree)
-  have hGrouped := tupleValueT_sum_eq_support_weight R
   have hOtherTwo :=
     tupleFiberT_card_eq_two_off_singleton_length15 R hFree hu huOne
-  have hWeightPlus :=
-    weighted_sum_plus_singleton_eq_double
-      (A := tupleSupportT R)
-      (f := fun x : F3T => x)
-      (w := fun x =>
-        ((Finset.univ : Finset (Fin 15)).filter
-          (fun i => tupleValueT R i = x)).card)
-      hu huOne hOtherTwo
+  have hTotalPlusDouble :=
+    tupleValueT_sum_plus_singleton_eq_double_support_length15
+      R hu huOne hOtherTwo
   have hDouble :
       (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
     rw [Finset.sum_nsmul, hSupportSum]
     simp
   have hTupleTotalPlusSingleton :
-      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u = 0 := by
-    calc
-      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u =
-          (∑ x ∈ tupleSupportT R,
-            ((Finset.univ : Finset (Fin 15)).filter
-              (fun i => tupleValueT R i = x)).card • x) + u :=
-            congrArg (fun z : F3T => z + u) hGrouped
-      _ = ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := hWeightPlus
-      _ = 0 := hDouble
+      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u = 0 :=
+    hTotalPlusDouble.trans hDouble
   have huNe : u ≠ 0 := by
     intro hu0
     subst u
