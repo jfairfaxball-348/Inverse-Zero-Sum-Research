@@ -17,15 +17,15 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S047 is COMPLETED and S048 is READY. CAND-03 remains selected. The exact
+**S049 is COMPLETED and S050 is READY. CAND-03 remains selected. The exact
 classification is internally proved and independently reverified. S042 found
 no exact/equivalent/stronger-implying prior art in the documented deep audit.
-S044 kernel-checks the complete S039 packing construction conditional on its
-two threshold interfaces; S045 and S046 kernel-check those interfaces, and
-S047 now kernel-checks the closed proposition
-`s039PackingInput : S039PackingInput` by direct composition.
-The single earliest formal obligation is now `Length16SumZeroInput`.
-`FrozenClassification` still has no proof term, so Palomar remains blocked.**
+The pinned Lean project now kernel-checks the S039 packing input and the
+length-16 source interface
+`length16SumZeroInput : Length16SumZeroInput`.
+The single earliest formal obligation is now the S040 `s=8`
+representative-swap elimination. `FrozenClassification` still has no proof
+term, so Palomar remains blocked.**
 
 Selected target:
 
@@ -40,10 +40,10 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S048/D47-01 formalization only.
+- Mathematical-investigation gate: OPEN for S050/D49-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S048 / D47-01 Length16SumZeroInput formalization.
+- Next session: S050 / D49-01 s=8 representative-swap formalization.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
@@ -892,3 +892,19 @@ S049/D48-01 is the sole promoted continuation. It must finish
 enumeration or introducing an opaque catalogue/oracle. Palomar and all later
 publication stages remain blocked on the complete `FrozenClassification`
 proof.
+
+## S049 completed — Length16SumZeroInput closure
+
+S049/D48-01 proves `length16SumZeroInput : Length16SumZeroInput` in the
+pinned Lean project. The proof is structural rather than an orbit/completion
+enumeration: a nine-point cap cannot meet an affine plane in exactly two
+points; consequently every three-plane parallel class has slice sizes
+`3,3,3` or a permutation of `1,4,4`, which forces every directional
+value-sum to vanish. The three coordinate directions give zero total cap sum.
+
+Together with the S048 support reduction, length 16 forces exactly eight
+support values with multiplicity two, closing the source interface. S050/D49-01
+is restricted to the `s=8` representative-swap elimination. It must stop
+before `Length15NonzeroInput`, the `s=9` branch and
+`FrozenClassification`. Palomar and publication stages remain blocked on the
+complete frozen Lean proof.
