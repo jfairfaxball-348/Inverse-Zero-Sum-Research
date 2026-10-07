@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-03 Lean formalization, PARTIAL. S044 kernel-checks the complete S039 packing construction conditional on the recorded source thresholds, but the final theorem has no proof term. S045 is READY for the single earliest blocker, `ThreeTerm19Input`.**
+**Current stage: CAND-03 Lean formalization, PARTIAL. S049 kernel-checks `length16SumZeroInput : Length16SumZeroInput`; the final theorem still has no proof term. S050 is READY for the `s=8` representative-swap elimination.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -13,13 +13,13 @@ authority; conversation history is not the project state.
 A numbered session runs one bounded task autonomously, validates and
 checkpoints useful work, then automatically provides a close report.
 
-**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S045 is the live Lean-formalization continuation.
+**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S050 is the live Lean-formalization continuation.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-03 is selected at the exact length-24 structural inverse Narkiewicz-sense eta scope.
 2. Publication gate — OPEN: S042 cleared the defined prior-art dependency only in the documented-search sense; E-JC remains the intended journal after the ordered verification/preprint stages.
-3. Mathematical-investigation gate — OPEN for S045/D44-01 three-term length-19 formalization only; the mathematical theorem itself remains frozen and no new proof architecture is authorized.
+3. Mathematical-investigation gate — OPEN for S050/D49-01 s=8 representative-swap formalization only; the mathematical theorem itself remains frozen and no new proof architecture is authorized.
 4. External-review gate — CLOSED and not a CAND-03 pre-submission blocker: the owner explicitly skips independent reviewer/consultation. Lean/Palomar verification and E-JC's ordinary editorial/referee process are the planned verification/review path.
 5. Ordered roadmap — Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC submission.
 
@@ -438,3 +438,16 @@ S049 is restricted to completing `Length16SumZeroInput` from the preserved
 support reduction with a buildable structural proof or substantially smaller
 transparent finite certificates. `FrozenClassification` remains unproved;
 Palomar, paper, arXiv and E-JC remain blocked.
+
+## S049 Length16SumZero formalization checkpoint
+
+S049 closes the length-16 source interface. The pinned Lean source proves
+`length16SumZeroInput : Length16SumZeroInput` using a structural nine-cap
+sum theorem and the S048 support/fibre reduction. No global maximal-cap orbit
+or completion enumeration is retained.
+
+The overall formalization remains partial. S050 is restricted to the S040
+`s=8` representative-swap elimination. `Length15NonzeroInput`, the
+`s=9` branch and `FrozenClassification` remain downstream; Palomar and all
+publication stages remain blocked until the complete frozen theorem is
+kernel-checked.
