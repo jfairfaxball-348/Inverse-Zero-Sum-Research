@@ -3,8 +3,7 @@
 **Current protocol note:** historical entries below preserve the gate rules
 and target selections that governed their sessions. CAND-03 is the current
 selected target under D-111. External review remains CLOSED and is not a
-CAND-03 pre-submission blocker under D-127. S043 is a partial Lean
-formalization checkpoint; S044 is the only authorized mathematical unit.
+CAND-03 pre-submission blocker under D-127. The Lean formalization remains partial; S050 is the only authorized mathematical unit.
 
 **Selected exact target: CAND-03 — inverse generalized-Narkiewicz
 structure at length 24 over `C_3^3\{0}`.**
@@ -1344,3 +1343,19 @@ kernel-checked support lemmas reducing the length-16 source interface to the
 maximal nine-cap sum invariant. `Length16SumZeroInput` itself still has no
 proof term. S049 is the sole formal continuation; no target switch or theorem
 scope change is authorized.
+
+## S049 CAND-03 length-16 formalization boundary
+
+Date: 2026-10-07.
+
+The selected target and frozen iff statement are unchanged. D48-01 proves
+
+`length16SumZeroInput : Length16SumZeroInput`.
+
+The proof uses a structural maximal-cap invariant rather than the S048
+timed-out normalized completion enumeration. This closes the first S040 source
+interface after packing.
+
+Formalization status remains **PARTIAL**. The next exact obligation is the
+`s=8` representative-swap elimination. Palomar remains **BLOCKED UNTIL THE
+FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
