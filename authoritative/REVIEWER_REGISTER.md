@@ -797,3 +797,10 @@ No reviewer or author contact occurred in S048. Independent pre-submission
 external review/consultation remains skipped for CAND-03 by owner decision.
 E-JC's ordinary editorial/referee process remains the planned journal review
 stage. Xue Li Stage-1 remains CAND-02-specific and reply pending.
+
+## S049 review checkpoint
+
+No reviewer or author contact occurred in S049. Independent pre-submission
+external review/consultation remains skipped for CAND-03 by owner decision.
+E-JC's ordinary editorial/referee process remains the planned journal review
+stage. Xue Li Stage-1 remains CAND-02-specific and reply pending.
