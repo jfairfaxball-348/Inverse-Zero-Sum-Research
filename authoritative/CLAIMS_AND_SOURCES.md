@@ -996,3 +996,13 @@ Date: **2026-10-07**.
 | C-210 | FORMAL_THEOREM | In the pinned Lean project, every nine-point cap in the explicit tuple model of `F_3^3` has total point-sum zero. | `InverseZeroSum/Candidate3.lean`; S049 validation. The proof is structural affine-plane incidence/counting, not an orbit catalogue. |
 | C-211 | FORMAL_VERIFICATION | The pinned Lean project proves `length16SumZeroInput : Length16SumZeroInput`. | S049 formal source and validation. This verifies the encoded source interface only; it is not a novelty claim. |
 | C-212 | PROGRAMME_ROUTE_DECISION | With the length-16 interface closed, S050/D49-01 is restricted to the S040 `s=8` representative-swap elimination. | S040 proof order; S049 success rule. `Length15NonzeroInput` and the `s=9` branch remain downstream. |
+
+## S050 formalization claim additions
+
+Date: **2026-10-07**.
+
+| Claim | Classification | Bounded content | Support / limit |
+| --- | --- | --- | --- |
+| C-213 | FORMAL_THEOREM | In the pinned Lean project, every 16-position surviving set that is short-free on its original positions can be faithfully reindexed to `PosSeq 16`; applying `Length16SumZeroInput` gives zero original-position sum. For an `s=8` S039 certificate, comparing two arbitrary representative choices differing in one block therefore forces every selectable block value to be equal. | `InverseZeroSum/Candidate3.lean`; S050 validation. This is the S040 representative-swap argument and preserves the universal certificate quantifier. |
+| C-214 | FORMAL_VERIFICATION | The pinned Lean project proves `s8RepresentativeSwapInput : S8RepresentativeSwapInput`: an `s=8` certificate has `l=8`, `r=0`, and every packed block is constant. Constant two-term short-zero blocks are excluded, so the mixed `s=8` signatures cannot occur. | S050 formal source and green pinned workflow. This packages the bounded certificate-level `(8,8,0)` / `U^3` structural output; it does not prove the `s=9` branch or `FrozenClassification`. |
+| C-215 | PROGRAMME_ROUTE_DECISION | With the `s=8` branch closed, promote only S051/D50-01 on `Length15NonzeroInput`. | S050 brief success rule and recorded S040 proof order. |
