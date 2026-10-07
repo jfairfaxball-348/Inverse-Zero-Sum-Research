@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S050",
-  "next_session": "S052",
-  "next_brief": "authoritative/S052_CANDIDATE_3_LENGTH15_NONZERO_COMPLETION_BRIEF.md",
+  "last_completed_session": "S052",
+  "next_session": "S053",
+  "next_brief": "authoritative/S053_CANDIDATE_3_S9_ELIMINATION_BRIEF.md",
   "stage": "P5_CAND03_LEAN_FORMALIZATION_PARTIAL",
-  "programme_status": "S051_PARTIAL_D50_01_LENGTH15_STRUCTURE_CHECKED_S052_READY_COMPLETION",
+  "programme_status": "S052_COMPLETED_D51_01_LENGTH15_NONZERO_CHECKED_S053_READY_S9_ELIMINATION",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S051 kernel-checks the exact length-15 eight-support multiplicity profile 2^7 1 and generic fibre-sum algebra, but Length15NonzeroInput itself remains unproved because the positional weighted-sum specialization repeatedly exceeded the clean Lean elaboration heartbeat budget. S052 continues only that interface; the s=9 elimination and FrozenClassification remain downstream, so Palomar remains blocked.",
+  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S052 now kernel-checks length15NonzeroInput : Length15NonzeroInput using the retained 2^7 1 support/fibre structure and a bounded local weight interface. The sole next formal obligation is the recorded s=9 representative/singleton-transition elimination. FrozenClassification remains downstream, so Palomar remains blocked.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -114,7 +114,7 @@
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; it remains CAND-02-specific and does not transfer reviewer or status authority to CAND-03.",
     "Treat the S042 deep non-hit conservatively: it supports the authorized workflow transition but is not an absolute proof of novelty or prior openness.",
-    "Complete and pin the exact CAND-03 Lean formalization before Palomar registration. S050 closes the complete s=8 representative-swap branch; continue from the first remaining formal source interface Length15NonzeroInput. If formalization exposes a semantic/proof defect, stop downstream progression and reconcile it.",
+    "Complete and pin the exact CAND-03 Lean formalization before Palomar registration. S052 closes Length15NonzeroInput; continue only with the s=9 elimination, then compose the closed branches into FrozenClassification. If formalization exposes a semantic/proof defect, stop downstream progression and reconcile it.",
     "After Lean succeeds, recheck then-current Palomar requirements before registering the pinned verified result.",
     "Proceed only in the owner-authorized order: Lean formalization -> Palomar registration -> paper drafting -> arXiv preprint -> E-JC submission."
   ],
@@ -379,6 +379,11 @@
       "id": "S051",
       "status": "PARTIAL",
       "record": "sessions/S051/CLOSEOUT.md"
+    },
+    {
+      "id": "S052",
+      "status": "COMPLETED",
+      "record": "sessions/S052/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -406,7 +411,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S050/D49-01 completed after kernel-checking the full s=8 representative-swap elimination. The next exact Lean proof-spine obligation is Length15NonzeroInput; S051/D50-01 is restricted to that proposition. The s=9 elimination and FrozenClassification remain downstream. Palomar remains blocked until FrozenClassification itself has a proof term and the full pinned check suite passes.",
+  "current_route_disposition": "S052/D51-01 completed after kernel-checking length15NonzeroInput : Length15NonzeroInput. The next exact Lean proof-spine obligation is the S040 s=9 representative/singleton-transition elimination; S053/D52-01 is restricted to that branch. FrozenClassification remains downstream. Palomar remains blocked until FrozenClassification itself has a proof term and the full pinned check suite passes.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -643,8 +648,8 @@
     "status": "PARTIAL",
     "toolchain": "Lean 4.19.0 (release commit 6caaee842e94)",
     "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
-    "compiled_scope": "Exact positional definitions and FrozenClassification proposition; S039 certificate/signature arithmetic; positional transport and short-block minimality/disjointness; transparent all-short-zero-sum maximal packing; threshold-to-cardinality transport; s039PackingInput_of_thresholds; closed kernel-checked proofs threeTerm19Input : ThreeTerm19Input, eta17Input : Eta17Input, s039PackingInput : S039PackingInput, length16SumZeroInput : Length16SumZeroInput, and s8RepresentativeSwapInput : S8RepresentativeSwapInput; S051 length-15 structure lemmas tupleSupportT_card_eq_eight_length15, exists_tupleFiberT_card_eq_one_length15, tupleFiberT_card_eq_two_off_singleton_length15, tupleValueT_sum_eq_support_weight and weighted_sum_plus_singleton_eq_double.",
-    "earliest_formal_blocker": "Length15NonzeroInput closure: from the kernel-checked 2^7 1 support/fibre profile and eight-support sum-zero theorem, derive the positional tuple total as the negative of the nonzero singleton in a clean-buildable form. Direct specialization of the fibre-cardinality weighted sum currently triggers deterministic whnf timeout; do not enter the s=9 elimination until this closed proposition exists.",
+    "compiled_scope": "Exact positional definitions and FrozenClassification proposition; S039 certificate/signature arithmetic; positional transport and short-block minimality/disjointness; transparent all-short-zero-sum maximal packing; threshold-to-cardinality transport; s039PackingInput_of_thresholds; closed kernel-checked proofs threeTerm19Input : ThreeTerm19Input, eta17Input : Eta17Input, s039PackingInput : S039PackingInput, length16SumZeroInput : Length16SumZeroInput, s8RepresentativeSwapInput : S8RepresentativeSwapInput, and length15NonzeroInput : Length15NonzeroInput; retained length-15 structure lemmas tupleSupportT_card_eq_eight_length15, exists_tupleFiberT_card_eq_one_length15, tupleFiberT_card_eq_two_off_singleton_length15, tupleValueT_sum_eq_support_weight and weighted_sum_plus_singleton_eq_double.",
+    "earliest_formal_blocker": "The s=9 packing elimination: formalize the verified representative/singleton-transition argument for every S039PackingCertificate with s=9. Do not compose FrozenClassification until this branch-level impossibility theorem is closed.",
     "palomar_status": "BLOCKED_UNTIL_FULL_FROZEN_CLASSIFICATION_PROOF"
   },
   "s044_formalization_date": "2026-10-06",
@@ -660,6 +665,7 @@
   "s049_formalization_date": "2026-10-07",
   "cand03_s8_representative_swap_formalization": "COMPLETED: the pinned Lean source proves s8RepresentativeSwapInput : S8RepresentativeSwapInput. For every s=8 S039 packing certificate, all arbitrary representative-deletion residuals reindex faithfully to length 16 and have zero sum; one-block swaps force each packed block constant, constant two-blocks are impossible, and only (l,s,r)=(8,8,0) survives. The certificate retains the universal arbitrary-representative residual quantifier.",
   "s050_formalization_date": "2026-10-07",
-  "cand03_length15_nonzero_formalization": "PARTIAL: S051 proves the exact eight-support 2^7 1 multiplicity structure for every short-free PosSeq 15 and retains generic fibrewise-sum/weighted-sum lemmas. Length15NonzeroInput itself remains unproved: repeated source-faithful attempts to specialize the large positional fibre-weight expression to the total-sum relation timed out during whnf on the clean pinned runner, including a 1,000,000-heartbeat bounded attempt. Those noncompiling closure helpers were removed. S052 continues exactly this interface.",
-  "s051_formalization_date": "2026-10-07"
+  "cand03_length15_nonzero_formalization": "COMPLETED: S052 proves length15NonzeroInput : Length15NonzeroInput from the exact eight-support 2^7 1 profile, a locally named fibre-weight function, weighted_sum_plus_singleton_eq_double, and the eight-support sum-zero theorem. Clean pinned run 37691828559 passed lake build, placeholder scan and authority checker.",
+  "s051_formalization_date": "2026-10-07",
+  "cand03_s9_formalization": "READY: S053/D52-01 is restricted to the verified S040 s=9 representative/singleton-transition elimination. FrozenClassification remains unproved."
 }
