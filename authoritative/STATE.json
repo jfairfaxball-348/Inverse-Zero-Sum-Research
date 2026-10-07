@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S047",
-  "next_session": "S048",
-  "next_brief": "authoritative/S048_CANDIDATE_3_LENGTH16_SUMZERO_FORMALIZATION_BRIEF.md",
+  "next_session": "S049",
+  "next_brief": "authoritative/S049_CANDIDATE_3_LENGTH16_SUMZERO_CONTINUATION_BRIEF.md",
   "stage": "P5_CAND03_LEAN_FORMALIZATION_PARTIAL",
-  "programme_status": "S047_COMPLETED_D46_01_S048_READY_LENGTH16_SUM_ZERO",
+  "programme_status": "S048_PARTIAL_D47_01_S049_READY_LENGTH16_SUM_ZERO",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S044 kernel-checks the complete S039 packing construction conditional on ThreeTerm19Input and Eta17Input; S045 and S046 kernel-check both threshold interfaces; S047 now kernel-checks the closed proposition s039PackingInput : S039PackingInput by direct composition. The single earliest formal obligation is now Length16SumZeroInput. FrozenClassification still has no proof term, so Palomar remains blocked.",
+  "candidate_under_due_diligence": "CAND-03 remains internally proved and independently reverified. S042 recorded no exact/equivalent/stronger-implying prior art located in the documented deep audit. S045 and S046 kernel-check the two threshold interfaces and S047 kernel-checks s039PackingInput. S048 preserves a clean Lean support reduction for Length16SumZeroInput (support plus zero is a cap, support size at most eight, fiber multiplicity at most two) but does not close the interface. The single earliest formal blocker is the zero-sum invariant for an eight-point nonzero support whose union with zero is a nine-point cap. FrozenClassification still has no proof term, so Palomar remains blocked.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -100,7 +100,8 @@
     "S040 D39-01 PROGRAMME THEOREM: the S039 signatures (6,8,2), (7,8,1), and (6,9,0) are impossible; every maximal packing has signature (8,8,0).",
     "S040 D39-01 PROGRAMME CLASSIFICATION: a length-24 CAND-03 sequence is exactly U^3 for a squarefree short-free length-8 sequence U; necessity is proved internally and sufficiency is supplied by the checked 2024 Lemma 3.3(2). Literature novelty/status remains unverified.",
     "S041 D40-01 PROGRAMME VERIFICATION/STATUS: independent recheck found no defect in C-181--C-185. The bounded primary/current literature audit located the 2024 U^3 sufficiency construction, the 2012 short-free residual ingredients, the defining paper's Narkiewicz antecedents, and later rank-two inverse work, but no checked source-stated or later theorem giving the exact C_3^3 length-24 U^3 iff classification. This non-hit does not certify novelty, previous openness, significance, or publication readiness.",
-    "S047 D46-01 FORMAL VERIFICATION: the pinned Lean project proves s039PackingInput : S039PackingInput by direct composition of s039PackingInput_of_thresholds, threeTerm19Input and eta17Input. The next exact proof-spine obligation is Length16SumZeroInput; FrozenClassification remains unproved."
+    "S047 D46-01 FORMAL VERIFICATION: the pinned Lean project proves s039PackingInput : S039PackingInput by direct composition of s039PackingInput_of_thresholds, threeTerm19Input and eta17Input. The next exact proof-spine obligation is Length16SumZeroInput; FrozenClassification remains unproved.",
+    "S048-F1 FORMAL REDUCTION: in the pinned Lean project, every short-free positional sequence has tuple support whose union with zero is a cap, support size at most eight, and support-fiber multiplicity at most two. This reduces the length-16 source interface to the maximal nine-cap sum invariant; Length16SumZeroInput is not yet proved."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -356,6 +357,11 @@
       "id": "S047",
       "status": "COMPLETED",
       "record": "sessions/S047/CLOSEOUT.md"
+    },
+    {
+      "id": "S048",
+      "status": "PARTIAL",
+      "record": "sessions/S048/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -631,5 +637,7 @@
   "s046_formalization_date": "2026-10-06",
   "cand03_eta17_formalization": "COMPLETED: eta17Input : Eta17Input is kernel-checked in Lean 4.19.0 + pinned mathlib. A short-free length-17 support plus zero is a cap; the S045 cap bound gives support size at most eight and exponent-three multiplicity at most two contradicts length 17. No numerical eta axiom, native_decide, sorry, admit, postulate or opaque orbit catalogue is used.",
   "s047_formalization_date": "2026-10-06",
-  "cand03_s039_packing_closure": "COMPLETED: s039PackingInput : S039PackingInput is kernel-checked in Lean 4.19.0 + pinned mathlib by direct application of s039PackingInput_of_thresholds to threeTerm19Input and eta17Input. No packing reproof or S040 representative-swap work is included."
+  "cand03_s039_packing_closure": "COMPLETED: s039PackingInput : S039PackingInput is kernel-checked in Lean 4.19.0 + pinned mathlib by direct application of s039PackingInput_of_thresholds to threeTerm19Input and eta17Input. No packing reproof or S040 representative-swap work is included.",
+  "s048_formalization_date": "2026-10-07",
+  "cand03_length16_sumzero_formalization": "PARTIAL: the pinned Lean source kernel-checks the reusable support reduction (short-free tuple support plus zero is a cap; support card <= 8; each support fiber card <= 2), but Length16SumZeroInput remains unproved. The earliest exact blocker is the zero-sum invariant for an eight-point nonzero support whose union with zero is a nine-point cap. A transparent normalized completion check was removed because clean hosted lake build runs were terminated with exit 143 before completion."
 }

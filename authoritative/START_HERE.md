@@ -872,3 +872,23 @@ The next exact formal obligation is `Length16SumZeroInput`, the recorded
 length-16 short-free residual sum-zero interface used first by S040. S048/D47-01
 is restricted to that proposition. `FrozenClassification` remains unproved,
 so Palomar and all publication stages remain blocked.
+
+## S048 partial — length-16 support reduction
+
+D47-01 preserves a clean Lean reduction of the published length-16 input. For a
+short-free positional sequence `R`, `tupleSupportT R` is a cap away from
+zero, adjoining zero remains a cap, each support value occurs at most twice,
+and the support has cardinality at most eight.
+
+The unit does **not** yet prove `Length16SumZeroInput`. The single earliest
+exact blocker is the maximal-support sum invariant: an eight-point nonzero
+support `A` with `IsCapT (insert 0 A)` must have
+`(∑ x ∈ A, x) = 0`. A transparent normalization to the origin plus a basis
+was explored, but the resulting finite completion check exceeded the hosted
+runner execution window and was removed from the live checkpoint.
+
+S049/D48-01 is the sole promoted continuation. It must finish
+`Length16SumZeroInput` without reviving the timed-out global completion
+enumeration or introducing an opaque catalogue/oracle. Palomar and all later
+publication stages remain blocked on the complete `FrozenClassification`
+proof.

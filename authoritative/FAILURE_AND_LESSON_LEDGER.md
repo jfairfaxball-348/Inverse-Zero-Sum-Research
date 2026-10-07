@@ -394,3 +394,20 @@ surface and risk scope drift without adding evidence.
 **Lesson:** preserve dependency boundaries in formalization. When the exact
 interface is already proved conditionally, close it from its discharged inputs
 and move to the first genuinely new downstream obligation.
+
+## S048 formalization lesson
+
+### FL-106 — A finite certificate can be transparent and still be the wrong build boundary
+
+S048 reduced the maximal-support case to a basis-normalized finite completion
+problem with only 17 candidate points and five further choices. That trust
+boundary was explicit and did not use `native_decide` or a hidden catalogue,
+but ordinary kernel evaluation still exceeded the hosted runner window and was
+terminated with exit 143.
+
+**Lesson:** transparency is necessary but not sufficient for an acceptable
+formal certificate. When a bounded finite proof is too expensive for the
+pinned reproducible build, keep the smaller structural lemmas that compile and
+replace the global reduction by additional mathematics or substantially
+smaller local certificates. Do not merge a proof whose practical validation
+depends on runner timeout tolerance.

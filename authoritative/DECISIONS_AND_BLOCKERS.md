@@ -967,3 +967,24 @@ Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical
 investigation is OPEN for S048/D47-01 formalization only. External review
 remains CLOSED and is not a CAND-03 pre-submission blocker. No outreach,
 manuscript, preprint, submission or Palomar action is authorized by S047.
+
+## S048 formalization disposition
+
+**Decision.** Close S048/D47-01 as PARTIAL rather than treating a timed-out
+finite normalization as a completed proof.
+
+**Preserved progress.** The live Lean source retains the reusable, compiling
+support reduction: tuple support is cap-like, adjoining zero preserves the cap,
+support cardinality is at most eight, and each support fiber has multiplicity
+at most two.
+
+**Single exact blocker.** `Length16SumZeroInput` still needs the maximal
+support sum invariant
+`A.card = 8 -> 0 ∉ A -> IsCapT (insert 0 A) -> (∑ x ∈ A, x) = 0`
+(or an equivalent source-faithful derivation). The explored global normalized
+completion check exceeded hosted runner limits and is not accepted as the
+outgoing proof.
+
+**Owner blocker status.** NONE. S049/D48-01 may continue the same exact Lean
+obligation. Palomar remains blocked on the full `FrozenClassification`
+proof and pinned validation suite.
