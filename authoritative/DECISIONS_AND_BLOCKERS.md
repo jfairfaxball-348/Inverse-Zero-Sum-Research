@@ -988,3 +988,15 @@ outgoing proof.
 **Owner blocker status.** NONE. S049/D48-01 may continue the same exact Lean
 obligation. Palomar remains blocked on the full `FrozenClassification`
 proof and pinned validation suite.
+
+## S049 D48-01 formalization decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-141 | 2026-10-07 | Record D48-01 as COMPLETED: the pinned Lean project proves `length16SumZeroInput : Length16SumZeroInput` by a structural nine-cap sum argument plus the S048 support/fibre reduction. | S049 formal source and green pinned workflow validation. |
+| D-142 | 2026-10-07 | Promote exactly S050/D49-01 on the S040 `s=8` representative-swap elimination. Do not enter `Length15NonzeroInput`, the `s=9` branch, `FrozenClassification`, Palomar or publication stages in S049. | S049 brief success rule; recorded S040 proof order; owner Lean-first roadmap. |
+
+Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical
+investigation is OPEN for S050/D49-01 formalization only. External review
+remains CLOSED and is not a CAND-03 pre-submission blocker. No outreach,
+manuscript, preprint, submission or Palomar action is authorized by S049.
