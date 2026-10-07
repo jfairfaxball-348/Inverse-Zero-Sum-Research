@@ -1571,4 +1571,276 @@ theorem tupleSupportT_card_le_eight {n : ℕ} (R : PosSeq n)
   omega
 
 
+/-! ### S049: structural maximal-cap sum invariant -/
+
+/--
+A nine-point cap cannot meet an affine plane in exactly two points.
+If it did, the four planes through those two points would cover the ambient
+space.  The distinguished plane contains no further cap point, while each of
+the other three contains at most two further cap points, leaving room for at
+most eight cap points in total.
+-/
+theorem nine_cap_plane_card_ne_two {A : Finset F3T} (hA : IsCapT A)
+    (hcard : A.card = 9) (H : PlaneIdx) :
+    (A ∩ planeSetT H).card ≠ 2 := by
+  classical
+  intro hAH2
+  obtain ⟨a, b, haH, hbH, hab⟩ :=
+    Finset.one_lt_card_iff.mp
+      (show 1 < (A ∩ planeSetT H).card by omega)
+  have haA : a ∈ A := (Finset.mem_inter.mp haH).1
+  have hbA : b ∈ A := (Finset.mem_inter.mp hbH).1
+  have haP : a ∈ planeSetT H := (Finset.mem_inter.mp haH).2
+  have hbP : b ∈ planeSetT H := (Finset.mem_inter.mp hbH).2
+  let P : Finset F3T := {a, b}
+  have hPcard : P.card = 2 := by simp [P, hab]
+  have hPsubA : P ⊆ A := by
+    intro x hx
+    have hx' : x = a ∨ x = b := by simpa [P] using hx
+    rcases hx' with rfl | rfl
+    · exact haA
+    · exact hbA
+  let Rset : Finset F3T := A \ P
+  have hRcard : Rset.card = 7 := by
+    dsimp [Rset]
+    rw [Finset.card_sdiff hPsubA, hcard, hPcard]
+  let T : Finset PlaneIdx :=
+    Finset.univ.filter
+      (fun p => onPlaneTB p a = true ∧ onPlaneTB p b = true)
+  have hTcard : T.card = 4 := by
+    simpa [T] using pair_plane_countT a b hab
+  have hHa : onPlaneTB H a = true := (Finset.mem_filter.mp haP).2
+  have hHb : onPlaneTB H b = true := (Finset.mem_filter.mp hbP).2
+  have hHT : H ∈ T := by
+    exact Finset.mem_filter.mpr ⟨Finset.mem_univ H, hHa, hHb⟩
+  have hRplane :
+      ∀ p ∈ T, (Rset ∩ planeSetT p).card ≤ 2 := by
+    intro p hp
+    have hpab := (Finset.mem_filter.mp hp).2
+    have haPlane : a ∈ planeSetT p :=
+      Finset.mem_filter.mpr ⟨Finset.mem_univ a, hpab.1⟩
+    have hbPlane : b ∈ planeSetT p :=
+      Finset.mem_filter.mpr ⟨Finset.mem_univ b, hpab.2⟩
+    have hPsub : P ⊆ A ∩ planeSetT p := by
+      intro x hx
+      have hx' : x = a ∨ x = b := by simpa [P] using hx
+      rcases hx' with rfl | rfl
+      · exact Finset.mem_inter.mpr ⟨haA, haPlane⟩
+      · exact Finset.mem_inter.mpr ⟨hbA, hbPlane⟩
+    have heq :
+        Rset ∩ planeSetT p = (A ∩ planeSetT p) \ P := by
+      ext x
+      simp [Rset, P, and_assoc, and_left_comm, and_comm]
+    have h4p := cap_inter_plane_le_four hA p
+    rw [heq, Finset.card_sdiff hPsub, hPcard]
+    omega
+  have hPsubH : P ⊆ A ∩ planeSetT H := by
+    intro x hx
+    have hx' : x = a ∨ x = b := by simpa [P] using hx
+    rcases hx' with rfl | rfl
+    · exact haH
+    · exact hbH
+  have hRH : (Rset ∩ planeSetT H).card = 0 := by
+    have heqH :
+        Rset ∩ planeSetT H = (A ∩ planeSetT H) \ P := by
+      ext x
+      simp [Rset, P, and_assoc, and_left_comm, and_comm]
+    rw [heqH, Finset.card_sdiff hPsubH, hAH2, hPcard]
+  have hRsubset :
+      Rset ⊆ T.biUnion (fun p => Rset ∩ planeSetT p) := by
+    intro z hz
+    obtain ⟨p, hpa, hpb, hpz⟩ := pair_planes_coverT a b z hab
+    exact Finset.mem_biUnion.mpr
+      ⟨p,
+        Finset.mem_filter.mpr ⟨Finset.mem_univ p, hpa, hpb⟩,
+        Finset.mem_inter.mpr
+          ⟨hz, Finset.mem_filter.mpr ⟨Finset.mem_univ z, hpz⟩⟩⟩
+  have hRle :
+      Rset.card ≤ ∑ p ∈ T, (Rset ∩ planeSetT p).card :=
+    (Finset.card_le_card hRsubset).trans Finset.card_biUnion_le
+  have hTEraseCard : (T.erase H).card = 3 := by
+    rw [Finset.card_erase_of_mem hHT, hTcard]
+  have hOther :
+      (∑ p ∈ T.erase H, (Rset ∩ planeSetT p).card) ≤ 6 := by
+    calc
+      (∑ p ∈ T.erase H, (Rset ∩ planeSetT p).card)
+          ≤ ∑ _p ∈ T.erase H, 2 := by
+            exact Finset.sum_le_sum
+              (fun p hp => hRplane p (Finset.mem_of_mem_erase hp))
+      _ = 6 := by simp [hTEraseCard]
+  have hsumSplit :
+      (∑ p ∈ T, (Rset ∩ planeSetT p).card) =
+        (∑ p ∈ T.erase H, (Rset ∩ planeSetT p).card) +
+          (Rset ∩ planeSetT H).card := by
+    exact (Finset.sum_erase_add T
+      (fun p => (Rset ∩ planeSetT p).card) hHT).symm
+  have hsumLe :
+      (∑ p ∈ T, (Rset ∩ planeSetT p).card) ≤ 6 := by
+    rw [hsumSplit, hRH, Nat.add_zero]
+    exact hOther
+  omega
+
+/-- The slice of a finite point set by one value of a fixed affine direction. -/
+def directionSliceT (A : Finset F3T) (d : Fin 13) (c : Fin 3) : Finset F3T :=
+  A.filter (fun x => planeValueT d x = c)
+
+theorem directionSliceT_eq_inter (A : Finset F3T) (d : Fin 13) (c : Fin 3) :
+    directionSliceT A d c = A ∩ planeSetT (d, c) := by
+  classical
+  ext x
+  simp [directionSliceT, planeSetT, onPlaneTB]
+
+theorem directionSliceT_card_le_four {A : Finset F3T} (hA : IsCapT A)
+    (d : Fin 13) (c : Fin 3) :
+    (directionSliceT A d c).card ≤ 4 := by
+  rw [directionSliceT_eq_inter]
+  exact cap_inter_plane_le_four hA (d, c)
+
+theorem card_eq_sum_directionSliceT (A : Finset F3T) (d : Fin 13) :
+    A.card = ∑ c : Fin 3, (directionSliceT A d c).card := by
+  classical
+  simpa [directionSliceT] using
+    (Finset.card_eq_sum_card_fiberwise
+      (f := planeValueT d) (s := A) (t := (Finset.univ : Finset (Fin 3)))
+      (fun x _hx => Finset.mem_univ (planeValueT d x)))
+
+/--
+For every direction, a nine-point cap has parallel-plane slice sizes either
+three-three-three or a permutation of one-four-four.
+-/
+theorem nine_cap_direction_slice_pattern {A : Finset F3T} (hA : IsCapT A)
+    (hcard : A.card = 9) (d : Fin 13) :
+    ((directionSliceT A d 0).card = 3 ∧
+      (directionSliceT A d 1).card = 3 ∧
+      (directionSliceT A d 2).card = 3) ∨
+    ((directionSliceT A d 0).card = 1 ∧
+      (directionSliceT A d 1).card = 4 ∧
+      (directionSliceT A d 2).card = 4) ∨
+    ((directionSliceT A d 0).card = 4 ∧
+      (directionSliceT A d 1).card = 1 ∧
+      (directionSliceT A d 2).card = 4) ∨
+    ((directionSliceT A d 0).card = 4 ∧
+      (directionSliceT A d 1).card = 4 ∧
+      (directionSliceT A d 2).card = 1) := by
+  have h0le := directionSliceT_card_le_four hA d 0
+  have h1le := directionSliceT_card_le_four hA d 1
+  have h2le := directionSliceT_card_le_four hA d 2
+  have h0ne : (directionSliceT A d 0).card ≠ 2 := by
+    rw [directionSliceT_eq_inter]
+    exact nine_cap_plane_card_ne_two hA hcard (d, 0)
+  have h1ne : (directionSliceT A d 1).card ≠ 2 := by
+    rw [directionSliceT_eq_inter]
+    exact nine_cap_plane_card_ne_two hA hcard (d, 1)
+  have h2ne : (directionSliceT A d 2).card ≠ 2 := by
+    rw [directionSliceT_eq_inter]
+    exact nine_cap_plane_card_ne_two hA hcard (d, 2)
+  have hsum := card_eq_sum_directionSliceT A d
+  rw [hcard] at hsum
+  have hsum' :
+      (directionSliceT A d 0).card +
+        (directionSliceT A d 1).card +
+        (directionSliceT A d 2).card = 9 := by
+    simpa [Fin.sum_univ_succ, Nat.add_assoc] using hsum.symm
+  omega
+
+theorem sum_planeValueT_directionSliceT (A : Finset F3T) (d : Fin 13)
+    (c : Fin 3) :
+    (∑ x ∈ directionSliceT A d c, planeValueT d x) =
+      (directionSliceT A d c).card • c := by
+  classical
+  calc
+    (∑ x ∈ directionSliceT A d c, planeValueT d x) =
+        ∑ _x ∈ directionSliceT A d c, c := by
+          exact Finset.sum_congr rfl (fun x hx => (Finset.mem_filter.mp hx).2)
+    _ = (directionSliceT A d c).card • c := by simp
+
+/-- Every affine direction has zero value-sum on a nine-point cap. -/
+theorem nine_cap_direction_value_sum_zero {A : Finset F3T} (hA : IsCapT A)
+    (hcard : A.card = 9) (d : Fin 13) :
+    (∑ x ∈ A, planeValueT d x) = 0 := by
+  classical
+  have hFiberwise :=
+    Finset.sum_fiberwise_of_maps_to
+      (s := A) (t := (Finset.univ : Finset (Fin 3))) (g := planeValueT d)
+      (fun x _hx => Finset.mem_univ (planeValueT d x)) (planeValueT d)
+  calc
+    (∑ x ∈ A, planeValueT d x) =
+        ∑ c : Fin 3, ∑ x ∈ directionSliceT A d c, planeValueT d x := by
+          simpa [directionSliceT] using hFiberwise.symm
+    _ = ∑ c : Fin 3, (directionSliceT A d c).card • c := by
+      apply Finset.sum_congr rfl
+      intro c _hc
+      exact sum_planeValueT_directionSliceT A d c
+    _ = 0 := by
+      rcases nine_cap_direction_slice_pattern hA hcard d with
+        h333 | h144 | h414 | h441
+      · rcases h333 with ⟨h0, h1, h2⟩
+        norm_num [Fin.sum_univ_succ, h0, h1, h2]
+      · rcases h144 with ⟨h0, h1, h2⟩
+        norm_num [Fin.sum_univ_succ, h0, h1, h2]
+      · rcases h414 with ⟨h0, h1, h2⟩
+        norm_num [Fin.sum_univ_succ, h0, h1, h2]
+      · rcases h441 with ⟨h0, h1, h2⟩
+        norm_num [Fin.sum_univ_succ, h0, h1, h2]
+
+/-- The explicit plane direction forms are additive. -/
+theorem planeValueT_add :
+    ∀ d : Fin 13, ∀ x y : F3T,
+      planeValueT d (x + y) = planeValueT d x + planeValueT d y := by
+  set_option maxRecDepth 10000 in
+  set_option maxHeartbeats 500000 in
+    decide
+
+theorem planeValueT_zero :
+    ∀ d : Fin 13, planeValueT d (0 : F3T) = 0 := by
+  decide
+
+theorem planeValueT_sum (d : Fin 13) (A : Finset F3T) :
+    planeValueT d (∑ x ∈ A, x) = ∑ x ∈ A, planeValueT d x := by
+  classical
+  induction A using Finset.induction_on with
+  | empty =>
+      simpa using planeValueT_zero d
+  | @insert a s ha ih =>
+      simp [ha, planeValueT_add, ih]
+
+/-- Every nine-point cap in the tuple model has total point-sum zero. -/
+theorem nine_cap_sum_zero {A : Finset F3T} (hA : IsCapT A)
+    (hcard : A.card = 9) :
+    (∑ x ∈ A, x) = 0 := by
+  let d0 : Fin 13 := ⟨0, by omega⟩
+  let d1 : Fin 13 := ⟨9, by omega⟩
+  let d2 : Fin 13 := ⟨12, by omega⟩
+  have h0 : planeValueT d0 (∑ x ∈ A, x) = 0 := by
+    rw [planeValueT_sum]
+    exact nine_cap_direction_value_sum_zero hA hcard d0
+  have h1 : planeValueT d1 (∑ x ∈ A, x) = 0 := by
+    rw [planeValueT_sum]
+    exact nine_cap_direction_value_sum_zero hA hcard d1
+  have h2 : planeValueT d2 (∑ x ∈ A, x) = 0 := by
+    rw [planeValueT_sum]
+    exact nine_cap_direction_value_sum_zero hA hcard d2
+  have hc0 : (∑ x ∈ A, x).1 = 0 := by
+    simpa [d0, planeValueT] using h0
+  have hc1 : (∑ x ∈ A, x).2.1 = 0 := by
+    simpa [d1, planeValueT] using h1
+  have hc2 : (∑ x ∈ A, x).2.2 = 0 := by
+    simpa [d2, planeValueT] using h2
+  apply Prod.ext
+  · exact hc0
+  · apply Prod.ext
+    · exact hc1
+    · exact hc2
+
+/-- The exact maximal-support invariant required by the length-16 interface. -/
+theorem eight_nonzero_cap_sum_zero {A : Finset F3T}
+    (hcard : A.card = 8) (hzero : (0 : F3T) ∉ A)
+    (hcap : IsCapT (insert 0 A)) :
+    (∑ x ∈ A, x) = 0 := by
+  have hcard9 : (insert 0 A).card = 9 := by
+    simp [hzero, hcard]
+  have hsum := nine_cap_sum_zero hcap hcard9
+  simpa [hzero] using hsum
+
+
 end InverseZeroSum.Candidate3
