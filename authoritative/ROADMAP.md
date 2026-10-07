@@ -1463,3 +1463,23 @@ representative-swap elimination. `Length15NonzeroInput`, the `s=9` branch,
 Palomar and publication work remain downstream.
 
 Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
+
+## S050 completed — s=8 representative-swap closure
+
+D49-01 closes the complete `s=8` branch interface in Lean. The proof uses the
+universal representative-deletion residual property already carried by the
+S039 certificate. Every such residual has 16 positions and is reindexed
+faithfully; `length16SumZeroInput` makes its sum zero. Comparing two
+representative choices differing in one block forces the selected entries to
+agree, so every packed block is constant. Constant two-term zero sums are
+impossible, leaving only signature `(8,8,0)`.
+
+The retained output is certificate-level and preserves the universal
+representative quantifier; it is the bounded structural normal form needed for
+the downstream `U^3` construction. The formalization stage remains PARTIAL.
+
+S051/D50-01 is the sole promoted successor and may prove only
+`Length15NonzeroInput`. It must not enter the `s=9` elimination,
+`FrozenClassification`, Palomar or publication work.
+
+Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
