@@ -2310,6 +2310,7 @@ theorem exists_tupleFiberT_card_eq_one_length15 (R : PosSeq 15)
           (fun i => tupleValueT R i = x)).card = 2 := by
     intro x hx
     have hLe := tupleFiberT_card_le_two R hFree x hx
+    have hNeOne := hNotOne x hx
     have hPos :
         0 <
           ((Finset.univ : Finset (Fin 15)).filter
@@ -2442,7 +2443,8 @@ theorem length15NonzeroInput : Length15NonzeroInput := by
       (insert_zero_tupleSupportT_isCap R hFree)
   have hSupportEraseSum :
       (∑ x ∈ (tupleSupportT R).erase u, x) + u = 0 := by
-    have h := Finset.sum_erase_add (tupleSupportT R) (fun x => x) hu
+    have h :=
+      Finset.sum_erase_add (tupleSupportT R) (fun x : F3T => x) hu
     rw [hSupportSum] at h
     exact h
   have hMaps :
