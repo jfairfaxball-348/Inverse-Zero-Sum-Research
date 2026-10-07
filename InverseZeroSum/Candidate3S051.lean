@@ -2,7 +2,7 @@ import InverseZeroSum.Candidate3
 
 namespace InverseZeroSum.Candidate3
 
-/-! ### S051: the length-15 nonzero-total-sum interface -/
+/-! ### S051: the length-15 nonzero-total-sum interface\n\nThis module is intentionally isolated from the already verified Candidate3 spine. -/
 
 /-- Positional multiplicity of one tuple-model support value. -/
 def tupleFiberCountT {n : ℕ} (R : PosSeq n) (x : F3T) : ℕ :=
