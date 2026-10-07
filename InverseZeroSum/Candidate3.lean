@@ -2513,23 +2513,26 @@ theorem tupleValueT_sum_plus_singleton_eq_double_support_length15
     (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u =
       ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
   classical
+  let w : F3T → ℕ :=
+    fun x =>
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = x)).card
+  change w u = 1 at huOne
+  change ∀ x ∈ (tupleSupportT R).erase u, w x = 2 at hOtherTwo
   have hGrouped := tupleValueT_sum_eq_support_weight R
-  have hWeightPlus :=
+  change
+    (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) =
+      ∑ x ∈ tupleSupportT R, w x • x at hGrouped
+  have hWeightPlus :
+      (∑ x ∈ tupleSupportT R, w x • x) + u =
+        ∑ x ∈ tupleSupportT R, (2 : ℕ) • x :=
     weighted_sum_plus_singleton_eq_double
       (α := F3T) (M := F3T)
       (A := tupleSupportT R)
       (f := fun x : F3T => x)
-      (w := fun x =>
-        ((Finset.univ : Finset (Fin 15)).filter
-          (fun i => tupleValueT R i = x)).card)
+      (w := w)
       hu huOne hOtherTwo
-  calc
-    (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u =
-        (∑ x ∈ tupleSupportT R,
-          ((Finset.univ : Finset (Fin 15)).filter
-            (fun i => tupleValueT R i = x)).card • x) + u :=
-          congrArg (fun z : F3T => z + u) hGrouped
-    _ = ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := hWeightPlus
+  exact (congrArg (fun z : F3T => z + u) hGrouped).trans hWeightPlus
 
 /-
 The exact length-15 support structure determines a nonzero singleton whose
