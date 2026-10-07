@@ -2423,106 +2423,125 @@ theorem tupleFiberT_card_eq_two_off_singleton_length15
   rw [hSplitX] at hOtherSum
   omega
 
+/-- Sum decomposition at one erased point, specialized to the tuple codomain. -/
+theorem sum_erase_add_f3t {α : Type*} [DecidableEq α]
+    (A : Finset α) (f : α → F3T) {a : α} (ha : a ∈ A) :
+    (∑ x ∈ A.erase a, f x) + f a = ∑ x ∈ A, f x := by
+  exact Finset.sum_erase_add A f ha
+
+/-- Group a positional tuple sum by its support fibres. -/
+theorem tupleValueT_sum_eq_support_weight {n : ℕ} (R : PosSeq n) :
+    (∑ i ∈ (Finset.univ : Finset (Fin n)), tupleValueT R i) =
+      ∑ x ∈ tupleSupportT R,
+        ((Finset.univ : Finset (Fin n)).filter
+          (fun i => tupleValueT R i = x)).card • x := by
+  classical
+  have hMaps :
+      ∀ i ∈ (Finset.univ : Finset (Fin n)),
+        tupleValueT R i ∈ tupleSupportT R := by
+    intro i hi
+    exact Finset.mem_image.mpr ⟨i, hi, rfl⟩
+  have hFiberwise :=
+    Finset.sum_fiberwise_of_maps_to
+      (s := (Finset.univ : Finset (Fin n))) (t := tupleSupportT R)
+      (g := tupleValueT R) hMaps (tupleValueT R)
+  calc
+    (∑ i ∈ (Finset.univ : Finset (Fin n)), tupleValueT R i) =
+        ∑ x ∈ tupleSupportT R,
+          ∑ i ∈ (Finset.univ : Finset (Fin n)) with
+            tupleValueT R i = x, tupleValueT R i := by
+              simpa using hFiberwise.symm
+    _ =
+        ∑ x ∈ tupleSupportT R,
+          ((Finset.univ : Finset (Fin n)).filter
+            (fun i => tupleValueT R i = x)).card • x := by
+      apply Finset.sum_congr rfl
+      intro x hx
+      calc
+        (∑ i ∈ (Finset.univ : Finset (Fin n)) with
+            tupleValueT R i = x, tupleValueT R i) =
+            ∑ _i ∈ (Finset.univ : Finset (Fin n)).filter
+              (fun i => tupleValueT R i = x), x := by
+                exact Finset.sum_congr rfl
+                  (fun i hi => (Finset.mem_filter.mp hi).2)
+        _ =
+            ((Finset.univ : Finset (Fin n)).filter
+              (fun i => tupleValueT R i = x)).card • x := by
+                simp
+
+/--
+For the exact length-15 multiplicity profile, adding the singleton once to the
+weighted support sum turns every coefficient into two.
+-/
+set_option maxHeartbeats 500000 in
+theorem length15_support_weight_plus_singleton_eq_double
+    (R : PosSeq 15) (hFree : ShortFree R)
+    {u : F3T} (hu : u ∈ tupleSupportT R)
+    (huOne :
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = u)).card = 1) :
+    (∑ x ∈ tupleSupportT R,
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = x)).card • x) + u =
+      ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
+  classical
+  have hOtherTwo :=
+    tupleFiberT_card_eq_two_off_singleton_length15 R hFree hu huOne
+  let w : F3T → F3T :=
+    fun x =>
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = x)).card • x
+  let d : F3T → F3T := fun x => (2 : ℕ) • x
+  have hLeft :
+      (∑ x ∈ tupleSupportT R, w x) =
+        (∑ x ∈ (tupleSupportT R).erase u, w x) + w u := by
+    exact (sum_erase_add_f3t (tupleSupportT R) w hu).symm
+  have hRight :
+      (∑ x ∈ tupleSupportT R, d x) =
+        (∑ x ∈ (tupleSupportT R).erase u, d x) + d u := by
+    exact (sum_erase_add_f3t (tupleSupportT R) d hu).symm
+  have hErase :
+      (∑ x ∈ (tupleSupportT R).erase u, w x) =
+        ∑ x ∈ (tupleSupportT R).erase u, d x := by
+    apply Finset.sum_congr rfl
+    intro x hx
+    dsimp [w, d]
+    rw [hOtherTwo x hx]
+  change (∑ x ∈ tupleSupportT R, w x) + u =
+    ∑ x ∈ tupleSupportT R, d x
+  rw [hLeft, hRight, hErase]
+  dsimp [w, d]
+  rw [huOne]
+  simp [two_nsmul, add_assoc]
+
 /-
 S051/D50-01 closes the exact length-15 source interface by deriving the
 eight-support \`2^7 1\` structure and using the existing transparent cap-sum
 invariant.  No s=9 packing argument enters here.
 -/
-set_option maxHeartbeats 5000000 in
+set_option maxHeartbeats 500000 in
 theorem length15NonzeroInput : Length15NonzeroInput := by
   classical
   intro R hFree
   have hSupportCard := tupleSupportT_card_eq_eight_length15 R hFree
   obtain ⟨u, hu, huOne⟩ :=
     exists_tupleFiberT_card_eq_one_length15 R hFree
-  have hOtherTwo :=
-    tupleFiberT_card_eq_two_off_singleton_length15 R hFree hu huOne
   have hSupportSum :
       (∑ x ∈ tupleSupportT R, x) = 0 :=
     eight_nonzero_cap_sum_zero hSupportCard
       (zero_not_mem_tupleSupportT R)
       (insert_zero_tupleSupportT_isCap R hFree)
-  have hSupportEraseSum :
-      (∑ x ∈ (tupleSupportT R).erase u, x) + u = 0 := by
-    have h :=
-      Finset.sum_erase_add (tupleSupportT R) (fun x : F3T => x) hu
-    rw [hSupportSum] at h
-    exact h
-  have hMaps :
-      ∀ i ∈ (Finset.univ : Finset (Fin 15)),
-        tupleValueT R i ∈ tupleSupportT R := by
-    intro i hi
-    exact Finset.mem_image.mpr ⟨i, hi, rfl⟩
-  have hFiberwise :=
-    Finset.sum_fiberwise_of_maps_to
-      (s := (Finset.univ : Finset (Fin 15))) (t := tupleSupportT R)
-      (g := tupleValueT R) hMaps (tupleValueT R)
-  have hGrouped :
-      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) =
-        ∑ x ∈ tupleSupportT R,
-          ((Finset.univ : Finset (Fin 15)).filter
-            (fun i => tupleValueT R i = x)).card • x := by
-    calc
-      (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) =
-          ∑ x ∈ tupleSupportT R,
-            ∑ i ∈ (Finset.univ : Finset (Fin 15)) with
-              tupleValueT R i = x, tupleValueT R i := by
-                simpa using hFiberwise.symm
-      _ =
-          ∑ x ∈ tupleSupportT R,
-            ((Finset.univ : Finset (Fin 15)).filter
-              (fun i => tupleValueT R i = x)).card • x := by
-        apply Finset.sum_congr rfl
-        intro x hx
-        calc
-          (∑ i ∈ (Finset.univ : Finset (Fin 15)) with
-              tupleValueT R i = x, tupleValueT R i) =
-              ∑ _i ∈ (Finset.univ : Finset (Fin 15)).filter
-                (fun i => tupleValueT R i = x), x := by
-                  exact Finset.sum_congr rfl
-                    (fun i hi => (Finset.mem_filter.mp hi).2)
-          _ =
-              ((Finset.univ : Finset (Fin 15)).filter
-                (fun i => tupleValueT R i = x)).card • x := by
-                  simp
-  have hGroupedSplit :
-      (∑ x ∈ tupleSupportT R,
-        ((Finset.univ : Finset (Fin 15)).filter
-          (fun i => tupleValueT R i = x)).card • x) =
-        (∑ x ∈ (tupleSupportT R).erase u, (2 : ℕ) • x) + u := by
-    calc
-      (∑ x ∈ tupleSupportT R,
-        ((Finset.univ : Finset (Fin 15)).filter
-          (fun i => tupleValueT R i = x)).card • x) =
-          (∑ x ∈ (tupleSupportT R).erase u,
-            ((Finset.univ : Finset (Fin 15)).filter
-              (fun i => tupleValueT R i = x)).card • x) +
-          ((Finset.univ : Finset (Fin 15)).filter
-            (fun i => tupleValueT R i = u)).card • u := by
-              exact
-                (Finset.sum_erase_add (tupleSupportT R)
-                  (fun x =>
-                    ((Finset.univ : Finset (Fin 15)).filter
-                      (fun i => tupleValueT R i = x)).card • x) hu).symm
-      _ = (∑ x ∈ (tupleSupportT R).erase u, (2 : ℕ) • x) + u := by
-        congr 1
-        · apply Finset.sum_congr rfl
-          intro x hx
-          rw [hOtherTwo x hx]
-        · rw [huOne]
-          simp
-  have hGroupedPlusSingleton :
-      ((∑ x ∈ (tupleSupportT R).erase u, (2 : ℕ) • x) + u) + u = 0 := by
-    rw [Finset.sum_nsmul]
-    calc
-      (2 : ℕ) • (∑ x ∈ (tupleSupportT R).erase u, x) + u + u =
-          (2 : ℕ) • ((∑ x ∈ (tupleSupportT R).erase u, x) + u) := by
-            simp [two_nsmul, add_assoc, add_comm, add_left_comm]
-      _ = 0 := by rw [hSupportEraseSum]; simp
+  have hGrouped := tupleValueT_sum_eq_support_weight R
+  have hWeightPlus :=
+    length15_support_weight_plus_singleton_eq_double R hFree hu huOne
+  have hDouble :
+      (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
+    rw [Finset.sum_nsmul, hSupportSum]
+    simp
   have hTupleTotalPlusSingleton :
       (∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i) + u = 0 := by
-    rw [hGrouped, hGroupedSplit]
-    exact hGroupedPlusSingleton
+    rw [hGrouped, hWeightPlus]
+    exact hDouble
   have huNe : u ≠ 0 := by
     intro hu0
     subst u
