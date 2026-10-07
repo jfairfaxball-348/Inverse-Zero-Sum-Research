@@ -427,3 +427,21 @@ ambient space. This restricts every parallel class to `3+3+3` or
 look for a low-complexity incidence invariant that applies simultaneously in
 every direction. A small local exclusion can determine the aggregate quantity
 needed by the formal proof without classifying the objects themselves.
+
+## S050 formalization lesson
+
+### FL-108 — Preserve the universal transversal before comparing representatives
+
+The S040 swap step depends on more than the existence of one short-free
+residual. The S039 certificate quantifies over every choice of one
+representative from each packed block. Reindexing each resulting 16-position
+survivor set through an explicit embedding lets the closed positional
+length-16 theorem apply without changing the original position semantics.
+Two choices differing in one block then have the same representative sum,
+forcing equality inside that block.
+
+**Lesson:** when a paper argument varies arbitrary representatives, keep that
+quantifier in the formal interface rather than choosing a canonical transversal
+too early. A certificate-level normal form can capture the exact structural
+output needed downstream without prematurely formalizing the final global
+permutation or the next proof branch.
