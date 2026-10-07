@@ -20,6 +20,7 @@ on:
       - "sessions/S048/**"
       - "sessions/S049/**"
       - "sessions/S050/**"
+      - "sessions/S051/**"
       - ".github/workflows/lean.yml"
   push:
     branches: [main]
@@ -37,6 +38,7 @@ on:
       - "sessions/S048/**"
       - "sessions/S049/**"
       - "sessions/S050/**"
+      - "sessions/S051/**"
       - ".github/workflows/lean.yml"
 
 jobs:
