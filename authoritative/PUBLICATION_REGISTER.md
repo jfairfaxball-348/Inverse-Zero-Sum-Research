@@ -728,3 +728,14 @@ Palomar registration is still blocked. Paper drafting, arXiv posting and E-JC
 submission remain downstream in the owner-ordered sequence
 Lean -> Palomar -> paper -> arXiv -> E-JC. S048 makes no novelty or
 publication-significance claim.
+
+## S049 publication-stage checkpoint
+
+No publication-stage transition occurs in S049. The Lean stage remains
+PARTIAL because `FrozenClassification` is not yet proved, despite closure of
+`Length16SumZeroInput`.
+
+Palomar registration remains blocked. Paper drafting, arXiv posting and E-JC
+submission remain downstream in the owner-ordered sequence
+Lean -> Palomar -> paper -> arXiv -> E-JC. S049 makes no novelty or
+publication-significance claim.
