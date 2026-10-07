@@ -947,3 +947,18 @@ D45-01 closes the second threshold interface without importing `eta(C_3^3)=17` a
   the proved `2^7 1` profile plus the eight-support sum-zero theorem.
 - Active owner blockers: NONE.
 - Next numbered session: S052 / D51-01 on `Length15NonzeroInput` only.
+
+
+## S052 closeout checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S052 | COMPLETED D51-01 LENGTH-15 NONZERO CLOSURE | `3acebf9054a7ab6376d7e67ebeeb1ddf3a8e08ee` | Kernel-checked `length15NonzeroInput : Length15NonzeroInput`; local fibre-weight bridge closes the S051 blocker | [S052 closeout](../sessions/S052/CLOSEOUT.md) |
+
+- Live `main` exactly matched the incoming checkpoint and S052 was unique.
+- Clean proof-head validation passed `lake build`, the forbidden-placeholder
+  scan and `scripts/check_authority.py`.
+- No `s=9` proof or `FrozenClassification` composition was attempted.
+- Active owner blockers: NONE.
+- Next numbered session: S053 / D52-01 on the `s=9`
+  representative/singleton-transition elimination only.
