@@ -2185,13 +2185,17 @@ theorem constant_shortZero_block_ne_two {S : PosSeq 24}
             exact Finset.sum_congr rfl
               (fun i hi => congrArg Subtype.val (hConst i hi x hx))
       _ = B.card • (S x : G) := by simp
-  have hTwoG : (S x : G) + (S x : G) = 0 := by
+  have hTwoG : (2 : ℕ) • (S x : G) = 0 := by
     have hZero := hShort.2.2
     rw [hConstSum, hCard] at hZero
-    simpa [two_nsmul] using hZero
+    exact hZero
+  have hTwoTn :
+      (2 : ℕ) • finiteModelEquiv (S x : G) = 0 := by
+    simpa using congrArg finiteModelEquiv hTwoG
   have hTwoT :
       finiteModelEquiv (S x : G) + finiteModelEquiv (S x : G) = 0 := by
-    simpa using congrArg finiteModelEquiv hTwoG
+    rw [← two_nsmul]
+    exact hTwoTn
   have hNonzeroT : finiteModelEquiv (S x : G) ≠ 0 := by
     intro hZero
     apply (S x).property
