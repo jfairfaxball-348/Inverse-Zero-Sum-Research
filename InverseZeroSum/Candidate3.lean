@@ -2469,11 +2469,11 @@ theorem tupleValueT_sum_eq_support_weight {n : ℕ} (R : PosSeq n) :
               (fun i => tupleValueT R i = x)).card • x := by
                 simp
 
-/--
+/-
 For the exact length-15 multiplicity profile, adding the singleton once to the
 weighted support sum turns every coefficient into two.
 -/
-set_option maxHeartbeats 500000 in
+set_option maxHeartbeats 1000000 in
 theorem length15_support_weight_plus_singleton_eq_double
     (R : PosSeq 15) (hFree : ShortFree R)
     {u : F3T} (hu : u ∈ tupleSupportT R)
