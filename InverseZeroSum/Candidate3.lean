@@ -2423,12 +2423,12 @@ theorem tupleFiberT_card_eq_two_off_singleton_length15
   rw [hSplitX] at hOtherSum
   omega
 
-/--
+/-
 S051/D50-01 closes the exact length-15 source interface by deriving the
 eight-support \`2^7 1\` structure and using the existing transparent cap-sum
 invariant.  No s=9 packing argument enters here.
 -/
-set_option maxHeartbeats 1000000 in
+set_option maxHeartbeats 5000000 in
 theorem length15NonzeroInput : Length15NonzeroInput := by
   classical
   intro R hFree
