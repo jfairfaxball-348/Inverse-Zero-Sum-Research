@@ -2193,10 +2193,10 @@ theorem constant_shortZero_block_ne_two {S : PosSeq 24}
       (2 : ℕ) • finiteModelEquiv (S x : G) = 0 := by
     calc
       (2 : ℕ) • finiteModelEquiv (S x : G) =
-          finiteModelEquiv ((2 : ℕ) • (S x : G)) := by
-            rw [finiteModelEquiv.map_nsmul]
+          finiteModelEquiv ((2 : ℕ) • (S x : G)) :=
+        (map_nsmul finiteModelEquiv 2 (S x : G)).symm
       _ = finiteModelEquiv 0 := congrArg finiteModelEquiv hTwoG
-      _ = 0 := finiteModelEquiv.map_zero
+      _ = 0 := map_zero finiteModelEquiv
   have hTwoT :
       finiteModelEquiv (S x : G) + finiteModelEquiv (S x : G) = 0 := by
     rw [← two_nsmul]
