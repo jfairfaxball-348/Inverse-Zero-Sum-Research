@@ -1359,3 +1359,22 @@ interface after packing.
 Formalization status remains **PARTIAL**. The next exact obligation is the
 `s=8` representative-swap elimination. Palomar remains **BLOCKED UNTIL THE
 FULL FROZEN CLASSIFICATION HAS A LEAN PROOF TERM**.
+
+## S050 CAND-03 s=8 representative-swap formalization boundary
+
+Date: 2026-10-07.
+
+The selected target and frozen iff statement are unchanged. D49-01 proves
+
+`s8RepresentativeSwapInput : S8RepresentativeSwapInput`.
+
+For any S039 packing certificate with eight blocks, the universal residual
+quantifier plus the closed length-16 sum-zero theorem forces every block to be
+constant. Constant two-blocks are excluded, so only `(l,s,r)=(8,8,0)`
+survives. This is the certificate-level structural form of the S040 `U^3`
+branch needed downstream; it does not claim that the full frozen theorem is
+formalized.
+
+Formalization status remains **PARTIAL**. The next exact source interface is
+`Length15NonzeroInput`. Palomar remains **BLOCKED UNTIL THE FULL FROZEN
+CLASSIFICATION HAS A LEAN PROOF TERM**.
