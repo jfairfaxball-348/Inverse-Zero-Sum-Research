@@ -411,3 +411,19 @@ pinned reproducible build, keep the smaller structural lemmas that compile and
 replace the global reduction by additional mathematics or substantially
 smaller local certificates. Do not merge a proof whose practical validation
 depends on runner timeout tolerance.
+
+## S049 formalization lesson
+
+### FL-107 — Replace expensive maximal-object enumeration by incidence constraints on every direction
+
+S048's transparent global completion certificate was still too expensive for
+the reproducible build boundary. S049 instead proved a local structural fact
+with global force: a nine-point cap cannot have a two-point affine-plane
+intersection, because the four planes through those two points cover the
+ambient space. This restricts every parallel class to `3+3+3` or
+`1+4+4`, and the modular weighted sums then vanish automatically.
+
+**Lesson:** when a maximal finite configuration is too costly to enumerate,
+look for a low-complexity incidence invariant that applies simultaneously in
+every direction. A small local exclusion can determine the aggregate quantity
+needed by the formal proof without classifying the objects themselves.
