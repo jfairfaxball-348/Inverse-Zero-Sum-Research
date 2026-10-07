@@ -813,3 +813,15 @@ owner decision. E-JC's ordinary editorial/referee process remains the planned
 journal review stage. The successful S050 Lean check is formal verification,
 not external peer review. Xue Li Stage-1 remains CAND-02-specific and reply
 pending.
+
+
+## S051 reviewer boundary
+
+Date: 2026-10-07.
+
+No reviewer, author or status expert was contacted in S051. Confirmed CAND-03
+reviewers remain NONE and the external-review gate remains CLOSED, but under
+the owner's post-S041 decision this is not a pre-submission blocker.
+Independent pre-submission consultation remains skipped for CAND-03; E-JC's
+ordinary editorial/referee process remains planned. Xue Li Stage-1 remains
+CAND-02-specific and reply pending.

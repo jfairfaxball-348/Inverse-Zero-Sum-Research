@@ -1006,3 +1006,17 @@ Date: **2026-10-07**.
 | C-213 | FORMAL_THEOREM | In the pinned Lean project, every 16-position surviving set that is short-free on its original positions can be faithfully reindexed to `PosSeq 16`; applying `Length16SumZeroInput` gives zero original-position sum. For an `s=8` S039 certificate, comparing two arbitrary representative choices differing in one block therefore forces every selectable block value to be equal. | `InverseZeroSum/Candidate3.lean`; S050 validation. This is the S040 representative-swap argument and preserves the universal certificate quantifier. |
 | C-214 | FORMAL_VERIFICATION | The pinned Lean project proves `s8RepresentativeSwapInput : S8RepresentativeSwapInput`: an `s=8` certificate has `l=8`, `r=0`, and every packed block is constant. Constant two-term short-zero blocks are excluded, so the mixed `s=8` signatures cannot occur. | S050 formal source and green pinned workflow. This packages the bounded certificate-level `(8,8,0)` / `U^3` structural output; it does not prove the `s=9` branch or `FrozenClassification`. |
 | C-215 | PROGRAMME_ROUTE_DECISION | With the `s=8` branch closed, promote only S051/D50-01 on `Length15NonzeroInput`. | S050 brief success rule and recorded S040 proof order. |
+
+
+## S051 formalization claim boundary
+
+Date: 2026-10-07.
+
+S051 adds no new literature attribution or novelty/status claim. The new
+kernel-checked programme facts are the exact length-15 support structure:
+every short-free `PosSeq 15` has eight tuple support values, one singleton
+fibre and seven double fibres. This is the `2^7 1` multiplicity structure
+recorded mathematically in S040. `Length15NonzeroInput` itself remains
+unproved in Lean at S051 closeout because the final positional weighted-sum
+specialization is not yet reproducibly elaborable. The S042 prior-art boundary
+is unchanged.

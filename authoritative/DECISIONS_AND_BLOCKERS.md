@@ -1012,3 +1012,13 @@ Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical
 investigation is OPEN for S051/D50-01 formalization only. External review
 remains CLOSED and is not a CAND-03 pre-submission blocker. No outreach,
 manuscript, preprint, submission or Palomar action is authorized by S050.
+
+
+## S051 D50-01 formalization decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-145 | 2026-10-07 | Close D50-01 as **PARTIAL**. Retain the kernel-checked exact length-15 support profile `2^7 1` and generic fibre-sum algebra, but do not claim `Length15NonzeroInput`. | Clean S051 checkpoint plus repeated deterministic `whnf` timeout in removed positional weighted-sum closure attempts. |
+| D-146 | 2026-10-07 | Promote exactly S052/D51-01 on the same `Length15NonzeroInput` interface. Do not enter the `s=9` branch, `FrozenClassification`, Palomar or publication stages. | S051 PARTIAL stop rule and owner Lean-first order. |
+
+Active owner blockers: **NONE**.
