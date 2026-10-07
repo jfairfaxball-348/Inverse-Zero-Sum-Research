@@ -667,5 +667,5 @@
   "s050_formalization_date": "2026-10-07",
   "cand03_length15_nonzero_formalization": "COMPLETED: S052 proves length15NonzeroInput : Length15NonzeroInput from the exact eight-support 2^7 1 profile, a locally named fibre-weight function, weighted_sum_plus_singleton_eq_double, and the eight-support sum-zero theorem. Clean pinned run 37691828559 passed lake build, placeholder scan and authority checker.",
   "s051_formalization_date": "2026-10-07",
-  "cand03_s9_formalization": "READY: S053/D52-01 is restricted to the verified S040 s=9 representative/singleton-transition elimination. FrozenClassification remains unproved."
+  "cand03_s9_formalization": "READY: S053/D52-01 is restricted to the verified S040 s=9 representative/singleton-transition elimination. S052/D51-01 is closed by clean proof-head run 37691828559. FrozenClassification remains unproved."
 }
