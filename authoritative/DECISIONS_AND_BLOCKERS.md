@@ -1022,3 +1022,15 @@ manuscript, preprint, submission or Palomar action is authorized by S050.
 | D-146 | 2026-10-07 | Promote exactly S052/D51-01 on the same `Length15NonzeroInput` interface. Do not enter the `s=9` branch, `FrozenClassification`, Palomar or publication stages. | S051 PARTIAL stop rule and owner Lean-first order. |
 
 Active owner blockers: **NONE**.
+
+
+## S052 D51-01 formalization decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-147 | 2026-10-07 | Record D51-01 as **COMPLETED**: the pinned Lean project proves `length15NonzeroInput : Length15NonzeroInput` from the retained `2^7 1` support profile, a locally named fibre-weight function, the generic singleton/double-fibre identity, and the eight-support sum-zero theorem. | S052 formal source and green pinned workflow run `37691828559`. |
+| D-148 | 2026-10-07 | Promote exactly S053/D52-01 on the recorded S040 `s=9` representative/singleton-transition elimination. Do not prove `FrozenClassification`, recheck/register on Palomar, or enter publication work in S052. | S052 brief success rule; owner Lean-first order. |
+
+Active owner blockers: **NONE**. CAND-03 remains selected. Mathematical
+investigation is OPEN for S053/D52-01 formalization only. External review
+remains CLOSED and is not a CAND-03 pre-submission blocker.
