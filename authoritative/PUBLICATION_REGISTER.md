@@ -772,3 +772,7 @@ Lean -> Palomar -> paper -> arXiv -> E-JC.
 
 No novelty, prior-openness, significance, journal acceptance or formalized
 full-classification claim follows from this checkpoint.
+
+## S054 publication-stage boundary
+
+S054 closed PARTIAL: no proof term for certificate-level `S9PackingEliminationInput` or the iff `FrozenClassification` exists. The formalization is not complete; Palomar registration, paper, arXiv preprint and E-JC submission have not begun. The owner-ordered route remains Lean -> Palomar -> paper -> arXiv -> E-JC. A pinned Lean sublemma does not establish novelty, prior openness or editorial review.

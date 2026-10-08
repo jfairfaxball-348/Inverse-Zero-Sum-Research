@@ -1045,3 +1045,11 @@ Date: **2026-10-07**.
 | C-220 | FORMALIZATION BLOCKER / ROUTE DECISION | `S9PackingEliminationInput` is defined solely as an unproved proposition. The first missing proof is the singleton/count/sum transport from fixed length 15 into arbitrary certificate residual survivors under a one-block swap. | S053 partial closeout and S054 brief. `FrozenClassification` and all later milestones remain blocked. |
 
 S042's documented prior-art non-hit and its non-certifying status are unchanged.
+
+## S054 partial formalization claims
+
+| Claim | Classification | Scope and evidence |
+| --- | --- | --- |
+| C-221 | FORMAL_VERIFICATION / CERTIFICATE TRANSPORT | `shortFreeOn_card_fifteen_singleton_identity` proves the complete original-position singleton/count/sum profile for arbitrary 15-position short-free survivors; `s9_certificate_survivor_singleton_profile` applies it for every admissible `s=9` representative transversal. Source: pinned `InverseZeroSum/Candidate3.lean`, S054 CI validation; this is not an s=9 impossibility proof. |
+| C-222 | FORMAL_VERIFICATION / POSITIONAL EXCHANGE AUXILIARIES | `filter_card_exchange`, `representativeSet_update_split`, `complement_insert_swap`, `sum_erase_insert_exchange`, and `shortZero_two_block_has_distinct_values` give generic counted and sum-preserving swap tools. Source: S054 checked Lean proof head; their certificate-level composition remains missing. |
+| C-223 | FORMALIZATION BLOCKER / ROUTE DECISION | `S9PackingEliminationInput` is still a bare proposition; the first remaining proof obligation is the certificate-level one-block transition/singleton-sum comparison before the final second-2-block contradiction. `FrozenClassification` unproved; S055 only. |

@@ -835,3 +835,7 @@ skipped for CAND-03 under the owner-approved roadmap, while E-JC's ordinary
 editorial/referee process is still planned. The Lean partial build is not
 external review. Xue Li Stage-1 remains strictly CAND-02-specific,
 owner-reported SENT and REPLY PENDING, with no transfer.
+
+## S054 reviewer boundary
+
+No CAND-03 external pre-submission reviewer consultation was requested or conducted. The owner decision skipping independent pre-submission review is unchanged, and ordinary E-JC editorial/referee review remains planned. Xue Li Stage-1 remains CAND-02-specific and reply pending; the Lean transport proof is not outside peer review.

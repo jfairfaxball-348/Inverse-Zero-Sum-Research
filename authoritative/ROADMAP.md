@@ -1524,3 +1524,9 @@ pass. Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
 D52-01 formalized the unique-singleton sum identity and the local two-fibre count transitions from the already kernel-checked S051–S052 length-15 support profile. The named `S9PackingEliminationInput` is still only a proposition; the intended S040 certificate-level impossibility is not proved in Lean.
 
 The first exact remaining obligation is a counted, sum-preserving transport from arbitrary 15-position `ShortFreeOn` survivor sets to the fixed-length singleton profile, compatible with changing one representative in one packed block. S054/D53-01 continues this same branch only and must stop when the certificate-level impossibility theorem is kernel-checked. The owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC; no downstream stages begin while `FrozenClassification` is unproved.
+
+## S054 PARTIAL — s=9 certificate-survivor transport
+
+D53-01 closes the faithful `PosSeq 15` to arbitrary 15-position `ShortFreeOn` singleton/fibre-count/sum bridge and instantiates it for every `s=9` certificate representative transversal. Count and survivor-sum exchange helpers are retained. The overall unit is PARTIAL: the proof of the two exact `s9_two_fibre_count_transitions` alternatives at certificate level and the second 2-block contradiction has not been composed. The `S9PackingEliminationInput` proposition is UNPROVED, as is `FrozenClassification`.
+
+The only promoted successor is S055/D54-01 to close that exact s=9 elimination. No new prior-art work, Palomar registration or publication work is authorized. The owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.

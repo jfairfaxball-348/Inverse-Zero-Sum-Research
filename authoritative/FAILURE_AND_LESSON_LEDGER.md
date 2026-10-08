@@ -477,3 +477,7 @@ through an arbitrary 15-position survivor set or its changed representative.
 them for the certificate-level indexed transport needed to apply them. The
 single blocked proof obligation now has a concrete positional/fibre interface;
 no unrelated enumeration or new mathematical route is promoted.
+
+### FL-111 — Positional transport and its application are distinct formal obligations
+
+S054 makes the source-faithful passage from `PosSeq 15` to 15 original survivor positions reusable and retains singleton identity, uniqueness and every fibre count, including universal certificate transversals. Generic one-position count/sum exchange is also now factored. This alone does not establish the specific two-fibre transition for a certificate swap or the second-block contradiction. Retain exact theorem boundaries; apply the numeric case lemma only after proving all its count and singleton hypotheses in the original-position survivor.

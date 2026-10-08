@@ -1,58 +1,53 @@
 # Next session prompt
 
-Session: S054.
+Session: S055.
 
 Status: READY.
 
 ```text
-Begin S054 in:
+Begin S055 in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 Use committed repository authority, not conversation history. Pin live main,
-reconcile intervening changes and confirm S054 is unique. Read AGENTS.md,
-authoritative/START_HERE.md, all required authority, the S039 and S040
-strategy/source/validation/closeout records, S043 semantic correspondence,
-the formalization progress, validations and closeouts from S043 through S052,
-all S053 records (INPUT_SNAPSHOT.md, FORMALIZATION_PROGRESS.md,
-SOURCE_CHECK.md, VALIDATION.md and CLOSEOUT.md), and
-authoritative/S054_CANDIDATE_3_S9_TRANSITION_CONTINUATION_BRIEF.md.
+reconcile changes and confirm S055 is unique. Read AGENTS.md,
+authoritative/START_HERE.md and all required authority; S039/S040 proof,
+source, validation and closeout records; S043 semantic correspondence;
+S051–S053 formalization/validation/closeouts; all S054 records; and
+authoritative/S055_CANDIDATE_3_SWAP_ELIMINATION_CONTINUATION_BRIEF.md.
 
-S053/D52-01 closed PARTIAL. The exact CAND-03 mathematical classification
-remains internally proved and independently reverified; the Lean file now
-has proof terms for length15_singleton_sum_identity,
-length15_singleton_unique and s9_two_fibre_count_transitions. The proposition
-S9PackingEliminationInput is defined but UNPROVED. FrozenClassification
-remains an unproved proposition. No Palomar or publication work has begun.
+S054/D53-01 closed PARTIAL. The exact CAND-03 mathematical classification
+is internally proved and independently reverified. The Lean source now
+kernel-checks shortFreeOn_card_fifteen_singleton_identity,
+s9_certificate_survivor_singleton_profile and one-position set/fibre/sum
+exchange helpers. S9PackingEliminationInput and FrozenClassification
+remain UNPROVED. Palomar and publication stages have not begun.
 
-Run exactly one formalization unit, D53-01. First build a faithful
-certificate-level transport of the unique singleton fibre, counts and
-singleton-total-sum identity from a short-free PosSeq 15 to an arbitrary
-15-position ShortFreeOn survivor of an S039PackingCertificate with s=9.
-Track the change when exactly one representative is exchanged.
-Use the already proved two numeric transitions:
-(0,1)->(1,0) forces equality of distinct selected values;
-(1,2)->(2,1) forces the complementary eight representatives to sum zero.
-Vary a second nonconstant 2-block to contradict the latter.
-Stop as soon as the certificate-level theorem
-S9PackingEliminationInput is kernel-checked.
+Run exactly one formalization unit, D54-01. From the existing s=9
+certificate-level survivor profile, prove the precise two-fibre count change
+when a representative in one packed block is exchanged. Discharge all
+hypotheses of s9_two_fibre_count_transitions. Use singleton sum identities:
+(0,1)->(1,0) forces equal selected values, contradiction;
+(1,2)->(2,1) forces a fixed sum of the complementary eight
+representatives. Vary the representative of a second nonconstant 2-block
+to contradict that fixed sum. Stop immediately once
+S9PackingEliminationInput has a checked Lean proof term.
 
-Do not prove FrozenClassification in this unit, do not recheck or register
-on Palomar, and do not begin manuscript, arXiv or E-JC work. On success,
-promote ONLY the final composition into FrozenClassification. On failure,
-preserve compiling work and close PARTIAL with the single earliest blocker.
-No sorry, admit, unchecked axiom/constant, native_decide, hidden oracle
-or opaque catalogue. Run lake build, the forbidden-placeholder scan,
-scripts/check_authority.py, and warranted focused checks.
+Do not prove FrozenClassification in this unit, do not recheck/register on
+Palomar, and do not begin paper, arXiv, E-JC, outreach or another proof
+architecture. On success promote ONLY the final composition to
+FrozenClassification; on failure preserve compiling progress with one
+earliest exact blocker. No sorry, admit, unchecked axiom or constant,
+native_decide, hidden oracle or opaque catalogue. Run lake build, the
+forbidden-placeholder scan, scripts/check_authority.py and warranted checks.
 
 Palomar remains blocked until FrozenClassification itself has a proof term
-and the complete pinned suite passes. Owner order remains
-Lean -> Palomar -> paper -> arXiv -> E-JC. Independent pre-submission
-external review is skipped for CAND-03, but E-JC's ordinary peer-review
-process remains planned. Xue Li Stage-1 remains CAND-02-specific and
-reply pending.
+and the complete pinned suite passes. Owner order remains Lean -> Palomar
+-> paper -> arXiv -> E-JC. Independent pre-submission consultation is
+skipped for CAND-03; E-JC's ordinary editorial/referee process is planned.
+Xue Li Stage-1 remains CAND-02-specific and reply pending.
 
-Close under repository protocol: synchronize authority, validate,
-commit safely to main, verify remote SHA/tree, report automatically,
-and provide the single exact next-session prompt only if permitted
-by the stop/successor and owner-blocker rules.
+Close under repository protocol: synchronize authority, validate, safely
+commit to main, verify remote SHA/tree, report automatically, and provide
+the single exact next-session prompt only if permitted by the stop/successor
+and owner-blocker rules.
 ```

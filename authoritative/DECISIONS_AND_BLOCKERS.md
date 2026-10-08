@@ -1048,3 +1048,12 @@ investigation gate remains OPEN only for the bounded S054/D53-01 continuation.
 The external-review gate remains CLOSED and does not block CAND-03.
 No outreach, Palomar action, manuscript, preprint or journal submission is
 authorized by this formalization checkpoint.
+
+## S054 D53-01 partial decisions
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-151 | 2026-10-08 | Close D53-01 as **PARTIAL**, retaining kernel-checked length-15 survivor singleton/count/sum transport, certificate universal-transversal profile and generic one-position exchange lemmas; do not claim `S9PackingEliminationInput` or `FrozenClassification` proved. | S054 Lean proof head and pinned CI; exact still-open certificate-level transition composition. |
+| D-152 | 2026-10-08 | Promote only S055/D54-01, completing the first/second one-block fibre transition and second nonconstant two-block contradiction to prove `S9PackingEliminationInput`. Stop before `FrozenClassification`; on success promote only its final composition. | S054 partial stop/successor rule and S040 already verified elimination architecture. |
+
+**Active owner blockers: NONE.** CAND-03 stays selected and mathematical investigation is OPEN for only S055/D54-01. External review gate remains CLOSED; no outreach, Palomar registration or publication stage is authorized.

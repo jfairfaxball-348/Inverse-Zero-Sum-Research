@@ -1425,3 +1425,7 @@ for an arbitrary 15-position ShortFreeOn residual of a certificate, including
 one-block representative swaps. S054 continues this exact s=9 interface.
 Palomar is BLOCKED until FrozenClassification itself is proved and the complete
 pinned suite passes.
+
+## S054 CAND-03 positional transport checkpoint
+
+The exact length-24 iff target is unchanged. S054 now proves that an arbitrary 15-position short-free surviving set has a unique singleton support value, all fibre cardinalities at most two and a singleton-plus-total-sum identity. The same facts are valid for each `s=9` representative transversal in `S039PackingCertificate`. The missing formal theorem is **still** `S9PackingEliminationInput`: the swap consequences and second two-block contradiction have not been kernel-checked. `FrozenClassification` remains UNPROVED. S055 is the sole ready formal continuation; Palomar is BLOCKED.

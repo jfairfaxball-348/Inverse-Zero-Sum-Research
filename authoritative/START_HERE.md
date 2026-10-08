@@ -17,7 +17,7 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S053 is PARTIAL and S054 is READY. CAND-03 remains selected. The exact classification is internally proved and independently reverified. S042 located no exact/equivalent/stronger-implying prior art in its documented deep audit. The pinned Lean project proves the packing interface, length-16 sum-zero, s=8 swap branch and length-15 nonzero-total input. S053 now retains closed length-15 singleton identity/uniqueness lemmas and the two local multiplicity transitions. The certificate-level s=9 elimination proposition `S9PackingEliminationInput` remains UNPROVED, as does `FrozenClassification`; Palomar is blocked.**
+**S054 is PARTIAL and S055 is READY. CAND-03 remains selected and its internal mathematical classification independently reverified. The pinned Lean project now has proof-bearing original-position length-15 survivor singleton/count/sum transport, plus generic representative/survivor exchange auxiliaries. The s=9 certificate elimination `S9PackingEliminationInput` and full `FrozenClassification` still lack proof terms; Palomar and publication work remain blocked.**
 
 Selected target:
 
@@ -32,10 +32,10 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S053/D52-01 formalization only.
+- Mathematical-investigation gate: OPEN for S055/D54-01 formalization only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S054 / D53-01 s=9 certificate-level survivor-fibre transport and transition elimination.
+- Next session: S055 / D54-01 compose s=9 fibre transitions and second-block contradiction.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
@@ -959,3 +959,9 @@ blocked on the complete frozen Lean proof.
 ## S053 partial — singleton transition transport remains
 
 S053/D52-01 retains a proof-bearing length-15 singleton total-sum identity, a uniqueness lemma for singleton fibres, and the elementary two-case local count transition. These reuse the S051–S052 structure without inventing an assumption or changing the frozen mathematical target. `S9PackingEliminationInput` is defined but unproved: the exact earliest bridge is moving the unique singleton fibre and its sum equation through the arbitrary 15-position representative-deletion survivor and swapping one representative. S054/D53-01 is the only promoted continuation. `FrozenClassification`, Palomar and later publication stages remain blocked.
+
+## S054 partial — original-position survivor fibre transport and exchange
+
+D53-01 now proves, for every 15-position `ShortFreeOn` survivor, existence and uniqueness of a singleton fibre, an at-most-two bound on all fibres, and the equation survivor tuple sum plus singleton value equals zero. The `s=9` certificate's universal representative quantifier applies this profile at every representative choice. Generic exact one-position count/sum exchange lemmas and a nonconstant two-block witness are retained.
+
+This does **not** prove `S9PackingEliminationInput`: the earliest missing step is the certificate-level one-block swap composition establishing the permitted two transitions together with the corresponding singleton-sum equations, followed by the second two-block contradiction. S055/D54-01 is restricted to that composition. `FrozenClassification` and downstream stages remain blocked.
