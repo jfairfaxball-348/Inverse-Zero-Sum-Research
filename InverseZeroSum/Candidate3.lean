@@ -3450,4 +3450,37 @@ theorem s056_eight_constant_blocks_cover
       Finset.mem_sdiff.mpr ⟨Finset.mem_univ x, hn⟩
     simpa [hempty] using hm
 
+
+/-- In the avoiding branch, no additional short zero-sum positional block can
+cross the full eight-block partition: each such block is a packed atom. -/
+theorem s056_shortZero_is_packed_block {S : PosSeq 24}
+    (hAvoid : AvoidsInnerJointPair S)
+    (c : S039PackingCertificate S)
+    (h : S8RepresentativeSwapOutput S c)
+    {I : Finset (Fin 24)} (hI : ShortZero S I) :
+    ∃ j : Fin c.s, I = c.blocks j := by
+  classical
+  have hCover := s056_eight_constant_blocks_cover c h
+  obtain ⟨x, hx⟩ := hI.1
+  have hxUnion : x ∈ blockUnion c.blocks := by
+    rw [hCover]
+    exact Finset.mem_univ x
+  obtain ⟨j, _hj, hxBlock⟩ := Finset.mem_biUnion.mp hxUnion
+  refine ⟨j, ?_⟩
+  by_contra hNe
+  have hDisj :=
+    shortZero_disjoint_of_ne hAvoid hI (c.block_shortZero j) hNe
+  exact (Finset.disjoint_left.mp hDisj) hx hxBlock
+
+/-- Every packed block in the surviving certificate has exactly three positions. -/
+theorem s056_eight_constant_block_card
+    {S : PosSeq 24} (c : S039PackingCertificate S)
+    (hs : c.s = 8) (h : S8RepresentativeSwapOutput S c)
+    (j : Fin c.s) :
+    (c.blocks j).card = 3 := by
+  have hj : j.val < c.l := by
+    rw [h.1]
+    simpa [hs] using j.isLt
+  simpa [hj] using c.block_card j
+
 end InverseZeroSum.Candidate3
