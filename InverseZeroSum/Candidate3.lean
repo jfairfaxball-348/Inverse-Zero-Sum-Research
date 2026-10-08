@@ -3789,4 +3789,83 @@ theorem s057_base_triple_zero
   have hac : a = c := s057_base_double_plus_zero U hInj a c hZero
   exact ⟨rfl, hac⟩
 
+
+/-- Exactly three canonical positions reduce modulo eight to any fixed base
+index; this is a small transparent arithmetic count, not an orbit catalogue. -/
+theorem s057_baseIndex_fibre_card (a : Fin 8) :
+    ((Finset.univ : Finset (Fin 24)).filter
+      (fun i => baseIndex i = a)).card = 3 := by
+  fin_cases a <;> decide
+
+/-- Every short zero sum of the canonical triple repetition is precisely
+one complete three-position base-index fibre. -/
+theorem s057_canonical_shortZero_fibre
+    (U : PosSeq 8) (hInj : Squarefree U) (hFree : ShortFree U)
+    {I : Finset (Fin 24)}
+    (hShort : ShortZero (tripleRep U) I) :
+    ∃ a : Fin 8,
+      I = (Finset.univ : Finset (Fin 24)).filter
+        (fun i => baseIndex i = a) := by
+  classical
+  rcases shortZero_card_two_or_three hShort with hTwo | hThree
+  · obtain ⟨x, y, hxy, hIeq⟩ := Finset.card_eq_two.mp hTwo
+    have hZero :
+        (U (baseIndex x) : G) + (U (baseIndex y) : G) = 0 := by
+      simpa [hIeq, posSum, tripleRep, hxy, add_comm] using hShort.2.2
+    exact False.elim (s057_base_pair_nonzero U hFree _ _ hZero)
+  · obtain ⟨x, y, z, hxy, hxz, hyz, hIeq⟩ := Finset.card_eq_three.mp hThree
+    have hZero :
+        (U (baseIndex x) : G) + (U (baseIndex y) : G) +
+          (U (baseIndex z) : G) = 0 := by
+      simpa [hIeq, posSum, tripleRep, hxy, hxz, hyz,
+        add_comm, add_left_comm, add_assoc] using hShort.2.2
+    obtain ⟨hxyBase, hyzBase⟩ :=
+      s057_base_triple_zero U hInj hFree _ _ _ hZero
+    have hSame : ∀ i ∈ I, baseIndex i = baseIndex x := by
+      intro i hi
+      rw [hIeq] at hi
+      simp only [Finset.mem_insert, Finset.mem_singleton] at hi
+      rcases hi with rfl | rfl | rfl
+      · rfl
+      · exact hxyBase.symm
+      · exact (hxyBase.trans hyzBase).symm
+    let A : Finset (Fin 24) :=
+      Finset.univ.filter (fun i => baseIndex i = baseIndex x)
+    have hSub : I ⊆ A := by
+      intro i hi
+      simpa [A] using hSame i hi
+    have hACard : A.card = 3 := s057_baseIndex_fibre_card _
+    have hEq : I = A := by
+      apply Finset.eq_of_subset_of_card_le hSub
+      omega
+    exact ⟨baseIndex x, hEq⟩
+
+/-- Direct sufficiency in the literal original-position model: two canonical
+short-zero-sum witnesses either name the same full fibre (zero sum), or have
+disjoint position sets (empty intersection). -/
+theorem s057_canonical_avoids (U : PosSeq 8)
+    (hInj : Squarefree U) (hFree : ShortFree U) :
+    AvoidsInnerJointPair (tripleRep U) := by
+  classical
+  intro I J hI hJ
+  obtain ⟨a, hIa⟩ := s057_canonical_shortZero_fibre U hInj hFree hI
+  obtain ⟨b, hJb⟩ := s057_canonical_shortZero_fibre U hInj hFree hJ
+  by_cases hab : a = b
+  · have hIJ : I = J := by
+      rw [hIa, hJb, hab]
+    simpa [innerJointSum, hIJ] using hI.2.2
+  · have hEmpty : I ∩ J = ∅ := by
+      ext i
+      constructor
+      · intro hi
+        have hiI := (Finset.mem_inter.mp hi).1
+        have hiJ := (Finset.mem_inter.mp hi).2
+        rw [hIa] at hiI
+        rw [hJb] at hiJ
+        have ha : baseIndex i = a := (Finset.mem_filter.mp hiI).2
+        have hb : baseIndex i = b := (Finset.mem_filter.mp hiJ).2
+        exact (hab (ha.symm.trans hb)).elim
+      · simp
+    simp [innerJointSum, hEmpty, posSum]
+
 end InverseZeroSum.Candidate3
