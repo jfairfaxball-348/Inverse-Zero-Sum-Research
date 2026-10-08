@@ -3868,4 +3868,41 @@ theorem s057_canonical_avoids (U : PosSeq 8)
       · simp
     simp [innerJointSum, hEmpty, posSum]
 
+
+/-- Avoidance is invariant under the exact original-position permutation:
+pull a witness back by the inverse equivalence, apply avoidance, and transport
+the indexed intersection sum through the same bijection. -/
+theorem s057_avoids_of_reindexed (S : PosSeq 24)
+    (e : Fin 24 ≃ Fin 24)
+    (hAvoid : AvoidsInnerJointPair (fun i => S (e i))) :
+    AvoidsInnerJointPair S := by
+  classical
+  intro I J hI hJ
+  let t : Fin 24 ↪ Fin 24 := e.symm.toEmbedding
+  have hPullI : ShortZero (pullSeq (fun i => S (e i)) t) I := by
+    simpa [pullSeq, t] using hI
+  have hPullJ : ShortZero (pullSeq (fun i => S (e i)) t) J := by
+    simpa [pullSeq, t] using hJ
+  have hI' : ShortZero (fun i => S (e i)) (I.map t) :=
+    shortZero_map_pullSeq (fun i => S (e i)) t hPullI
+  have hJ' : ShortZero (fun i => S (e i)) (J.map t) :=
+    shortZero_map_pullSeq (fun i => S (e i)) t hPullJ
+  have hIntersection :=
+    hAvoid (I.map t) (J.map t) hI' hJ'
+  simpa [innerJointSum, posSum, Finset.map_inter, t] using hIntersection
+
+/-- The exact unchanged frozen iff receives a proof term only after the
+verified necessity spine and the direct canonical positional sufficiency. -/
+theorem frozenClassification : FrozenClassification := by
+  intro S
+  constructor
+  · exact s056_frozen_necessity S
+  · rintro ⟨U, hInj, hFree, hTriple⟩
+    obtain ⟨e, he⟩ := hTriple
+    have hReindexed : AvoidsInnerJointPair (fun i => S (e i)) := by
+      have hEq : (fun i => S (e i)) = tripleRep U := funext he
+      rw [hEq]
+      exact s057_canonical_avoids U hInj hFree
+    exact s057_avoids_of_reindexed S e hReindexed
+
 end InverseZeroSum.Candidate3
