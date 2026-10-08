@@ -2653,4 +2653,97 @@ proposition, not an asserted theorem or a new assumption.
 def S9PackingEliminationInput : Prop :=
   ∀ S : PosSeq 24, ∀ c : S039PackingCertificate S, c.s = 9 → False
 
+
+/-! ### S054: faithful length-15 survivor transport -/
+
+/--
+A short-free set of fifteen *original positions* has a unique singleton value
+and the singleton-plus-total-sum identity. The fibre counts and sum are
+transported through an injective enumeration of exactly those positions.
+-/
+theorem shortFreeOn_card_fifteen_singleton_identity
+    (S : PosSeq 24) {A : Finset (Fin 24)}
+    (hCard : A.card = 15) (hFree : ShortFreeOn S A) :
+    ∃ u : F3T,
+      (A.filter (fun i => finiteModelEquiv (S i : G) = u)).card = 1 ∧
+      (∀ v : F3T,
+        (A.filter (fun i => finiteModelEquiv (S i : G) = v)).card = 1 →
+          v = u) ∧
+      (∑ i ∈ A, finiteModelEquiv (S i : G)) + u = 0 := by
+  classical
+  have h15le : 15 ≤ A.card := by omega
+  let eOrder : Fin 15 ↪o Fin 24 := A.orderEmbOfCardLe h15le
+  let e : Fin 15 ↪ Fin 24 := eOrder.toEmbedding
+  let R : PosSeq 15 := pullSeq S e
+  have hRFree : ShortFree R := by
+    intro I hShort
+    have hMap : ShortZero S (I.map e) :=
+      shortZero_map_pullSeq S e hShort
+    have hSub : I.map e ⊆ A := by
+      intro x hx
+      obtain ⟨i, _hi, rfl⟩ := Finset.mem_map.mp hx
+      simpa [e, eOrder] using Finset.orderEmbOfCardLe_mem A h15le i
+    exact (hFree (I.map e) hSub) hMap
+  have hMapSub : Finset.univ.map e ⊆ A := by
+    intro x hx
+    obtain ⟨i, _hi, rfl⟩ := Finset.mem_map.mp hx
+    simpa [e, eOrder] using Finset.orderEmbOfCardLe_mem A h15le i
+  have hMapCard : (Finset.univ.map e).card = 15 := by simp
+  have hMapEq : Finset.univ.map e = A := by
+    apply Finset.eq_of_subset_of_card_le hMapSub
+    rw [hCard, hMapCard]
+  have hFilterMap (v : F3T) :
+      ((Finset.univ : Finset (Fin 15)).filter
+        (fun i => tupleValueT R i = v)).map e =
+      A.filter (fun k => finiteModelEquiv (S k : G) = v) := by
+    rw [← hMapEq]
+    ext x
+    constructor
+    · intro hx
+      obtain ⟨i, hi, rfl⟩ := Finset.mem_map.mp hx
+      have hiEq : finiteModelEquiv (S (e i) : G) = v := by
+        simpa [R, tupleValueT, pullSeq] using (Finset.mem_filter.mp hi).2
+      exact Finset.mem_filter.mpr
+        ⟨Finset.mem_map.mpr ⟨i, Finset.mem_univ _, rfl⟩, hiEq⟩
+    · intro hx
+      obtain ⟨hxMap, hxEq⟩ := Finset.mem_filter.mp hx
+      obtain ⟨i, _hi, rfl⟩ := Finset.mem_map.mp hxMap
+      have hiEq : tupleValueT R i = v := by
+        simpa [R, tupleValueT, pullSeq] using hxEq
+      exact Finset.mem_map.mpr
+        ⟨i, Finset.mem_filter.mpr ⟨Finset.mem_univ _, hiEq⟩, rfl⟩
+  have hFiberEq (v : F3T) :
+      (A.filter (fun k => finiteModelEquiv (S k : G) = v)).card =
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = v)).card := by
+    rw [← hFilterMap v]
+    simp
+  have hSumEq :
+      (∑ i ∈ A, finiteModelEquiv (S i : G)) =
+        ∑ i ∈ (Finset.univ : Finset (Fin 15)), tupleValueT R i := by
+    rw [← hMapEq]
+    simp [R, tupleValueT, pullSeq]
+  obtain ⟨u, hu, huOne⟩ :=
+    exists_tupleFiberT_card_eq_one_length15 R hRFree
+  refine ⟨u, ?_, ?_, ?_⟩
+  · rw [hFiberEq]
+    exact huOne
+  · intro v hvOne
+    have hvOneR :
+        ((Finset.univ : Finset (Fin 15)).filter
+          (fun i => tupleValueT R i = v)).card = 1 := by
+      rw [hFiberEq] at hvOne
+      exact hvOne
+    have hvSupport : v ∈ tupleSupportT R := by
+      have hPos :
+          0 < ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = v)).card := by omega
+      obtain ⟨i, hi⟩ := Finset.card_pos.mp hPos
+      exact Finset.mem_image.mpr
+        ⟨i, Finset.mem_univ _, (Finset.mem_filter.mp hi).2⟩
+    exact length15_singleton_unique R hRFree hu huOne hvSupport hvOneR
+  · rw [hSumEq]
+    exact length15_singleton_sum_identity R hRFree hu huOne
+
+
 end InverseZeroSum.Candidate3
