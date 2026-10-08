@@ -3220,8 +3220,8 @@ theorem s9_certificate_swap_fixed_complement
   change (p = 0 ∧ q = 1) ∨ (p = 1 ∧ q = 2) at hCases
   rcases hCases with h01 | h12
   · have hOldSingleton : u = b := by
-      apply (hUnique b).symm
-      simpa [A, f, q] using h01.2
+      have hb : b = u := hUnique b (by simpa [A, f, q] using h01.2)
+      exact hb.symm
     have hNewACard :
         (A'.filter (fun i => f i = a)).card = 1 := by
       have h := s9_certificate_swap_fibre_counts
@@ -3232,8 +3232,8 @@ theorem s9_certificate_swap_fixed_complement
       simp [hab.symm] at h
       omega
     have hNewSingleton : u' = a := by
-      apply (hUnique' a).symm
-      simpa [A', f, rep'] using hNewACard
+      have ha : a = u' := hUnique' a (by simpa [A', f, rep'] using hNewACard)
+      exact ha.symm
     rw [hOldSplit, hOldSingleton] at hSelectOld
     rw [hNewSplit, hNewSingleton] at hSelectNew
     have hDouble : a + a = b + b := by
@@ -3246,8 +3246,8 @@ theorem s9_certificate_swap_fixed_complement
       decide
     exact (hab (hDoubleInj a b hDouble)).elim
   · have hOldSingleton : u = a := by
-      apply (hUnique a).symm
-      simpa [A, f, p] using h12.1
+      have ha : a = u := hUnique a (by simpa [A, f, p] using h12.1)
+      exact ha.symm
     rw [hOldSplit, hOldSingleton] at hSelectOld
     exact add_right_cancel hSelectOld
 
