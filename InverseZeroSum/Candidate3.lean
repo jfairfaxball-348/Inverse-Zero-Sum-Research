@@ -3417,7 +3417,7 @@ theorem s9PackingEliminationInput : S9PackingEliminationInput := by
 /-! ### S056: final frozen-classification composition -/
 
 /-- Any avoiding sequence has a packed, full eight-triple certificate, with
-constant values on each original-position atom. The remaining normal-form
+uniform values on each original-position atom. The remaining normal-form
 and converse obligations are separate. -/
 theorem s056_eight_constant_certificate (S : PosSeq 24)
     (hAvoid : AvoidsInnerJointPair S) :
