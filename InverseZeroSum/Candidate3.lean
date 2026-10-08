@@ -3879,17 +3879,28 @@ theorem s057_avoids_of_reindexed (S : PosSeq 24)
   classical
   intro I J hI hJ
   let t : Fin 24 ↪ Fin 24 := e.symm.toEmbedding
+  have hFun : pullSeq (fun i => S (e i)) t = S := by
+    funext i
+    simp [pullSeq, t]
   have hPullI : ShortZero (pullSeq (fun i => S (e i)) t) I := by
-    simpa [pullSeq, t] using hI
+    rw [hFun]
+    exact hI
   have hPullJ : ShortZero (pullSeq (fun i => S (e i)) t) J := by
-    simpa [pullSeq, t] using hJ
+    rw [hFun]
+    exact hJ
   have hI' : ShortZero (fun i => S (e i)) (I.map t) :=
     shortZero_map_pullSeq (fun i => S (e i)) t hPullI
   have hJ' : ShortZero (fun i => S (e i)) (J.map t) :=
     shortZero_map_pullSeq (fun i => S (e i)) t hPullJ
   have hIntersection :=
     hAvoid (I.map t) (J.map t) hI' hJ'
-  simpa [innerJointSum, posSum, Finset.map_inter, t] using hIntersection
+  rw [← Finset.map_inter (f := t) I J] at hIntersection
+  change posSum (fun i => S (e i)) ((I ∩ J).map t) = 0 at hIntersection
+  have hSumEq :
+      posSum (fun i => S (e i)) ((I ∩ J).map t) = posSum S (I ∩ J) := by
+    simp [posSum, t]
+  rw [hSumEq] at hIntersection
+  exact hIntersection
 
 /-- The exact unchanged frozen iff receives a proof term only after the
 verified necessity spine and the direct canonical positional sufficiency. -/
