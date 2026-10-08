@@ -1025,3 +1025,7 @@ D45-01 closes the second threshold interface without importing `eta(C_3^3)=17` a
 - Immutable incoming proof/source tree preserved with no modification to `InverseZeroSum/Candidate3.lean`.
 - **No successor prompt while B-014 remains active.** Human metadata/compatibility decision required before any future numbered technical unit.
 - Main-tree GitHub Actions outcome must be confirmed externally after checkpointing; authority-check and Lean validation are not Palomar verification.
+
+## Current in-progress unit (not a completed session checkpoint)
+
+**S059 — ongoing; draft PR #19** `s059-palomar-compat`. Explicit owner permission resolves historical B-014 (D-161); frozen Lean 4.19 on main remains verified. The 4.35 compatibility build and official Palomar full preflight are pending/not passed. This is an **in-progress notice**, not a session closeout or a claim of registration readiness. No next session is scheduled. On validation/closeout, add S059's actual outcome and checkpoint exactly once.

@@ -1095,3 +1095,12 @@ The owner must (1) decide whether to authorize a **separately scoped** Palomar c
 No browser OAuth, Palomar HTTPS submission, public verification dispatch, automated review, registration or publication has been authorized by P57-01. If a technical port is later approved and mechanically ready, request **separate explicit consent** before intake and again before permanent registration, with the owner's own write-access authentication where needed.
 
 **ACTIVE OWNER BLOCKER: B-014.** Next-session and brief: null. `next_prompt_status=SUPPRESSED_OWNER_BLOCKER`; live next-prompt file removed. Frozen CAND-03 theorem and S042 non-certifying prior-art status unchanged. Xue Li Stage-1 is CAND-02-only and reply pending.
+
+## D-161 — B-014 resolved; S059 technical port authorized (2026-10-08)
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-161 | 2026-10-08 | **Resolve B-014**. The owner explicitly answered YES to a proof-preserving Palomar-compatible Lean/Mathlib and module/Challenge/Solution/Comparator/metadata port, and YES to John Fairfax-Ball as human author and responsible maintainer. Technical preparation/testing may proceed autonomously on isolated draft PR #19; this is not a consent to submit or permanently register. | Owner's explicit two affirmative instructions in the S058 follow-up. |
+| D-162 | 2026-10-08 | An immutable commit is **not registration-ready** until both migrated Lean build and official Palomar full mechanical CI pass, with authority/metadata synchronized. Do not call queued jobs passing; preserve original verified Lean 4.19 main until a clean migration. No new theorem architecture, prior art, paper, arXiv, E-JC or outreach. | Owner specifically requests the Palomar preflight CI pass before receiving a registration commit, and accurate documentation without stale readiness. |
+
+**Active owner blockers: NONE for engineering.** S059 is **IN PROGRESS**, not a completed/verified milestone. No live next-session prompt until S059's closeout. Any later actual Palomar portal submission or registration remains the owner's task. Historical B-014 ACTIVE language above describes S058's completed state, not current authority.

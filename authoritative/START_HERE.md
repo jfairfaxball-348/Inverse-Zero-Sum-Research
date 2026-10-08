@@ -17,7 +17,7 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S058/P57-01 COMPLETED as an official Palomar requirements preflight only; B-014 ACTIVE. The frozen iff remains kernel-checked under Lean 4.19.0, but current PalomarSubmission minimum is v4.35.0-rc2, and required module/Challenge/Solution/Comparator/metadata preparation is missing. NO submission or registration occurred. Owner decision required; NO next-session prompt.**
+**S059 PALOMAR PORT IN PROGRESS (owner authorized 2026-10-08; B-014 RESOLVED).** The unchanged frozen CAND-03 iff was fully kernel-checked in the original Lean 4.19 project (main CI 37800488981 success). A separately isolated Lean 4.35.0-rc2/module/Challenge-Solution/metadata port is underway in draft [PR #19](https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/pull/19). The first new-toolchain build exposed source-compatibility errors and has **NOT YET PASSED**. The official Palomar full reusable verifier has been pinned and invoked, but a queued verification job is **not a pass**. No portal submission, registration, paper, arXiv or E-JC activity. **No live successor prompt during S059.**
 
 Selected target:
 
@@ -32,11 +32,11 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN; S058 is a Palomar requirements preflight with no new mathematical proof work.
+- Mathematical-investigation gate: OPEN; S059 is a technical proof-preserving compatibility port; no fresh mathematical architecture or prior-art work.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
-- Active owner blockers: **B-014** (Palomar toolchain/module compatibility and human attribution/owner authorization).
-- Next session: **NONE while B-014 is active**.
-- Live next-session prompt: **SUPPRESSED_OWNER_BLOCKER**; file absent.
+- Active owner blockers: **NONE for the approved technical preparation**. B-014 was resolved by explicit owner approval; actual portal registration remains unperformed.
+- Next session: **NONE while S059 is in progress**, pending its validation/closeout disposition.
+- Live next-session prompt: **NONE** while S059 is in progress; file absent.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
 - Ordered route: **Lean formalization -> Palomar registration -> paper ->
@@ -983,3 +983,7 @@ S057/D56-01 is COMPLETED: the pinned Lean theorem `frozenClassification : Frozen
 ## S058 official Palomar requirements preflight — OWNER BLOCKED
 
 S058 verified the official Palomar policy, portal and minimum toolchain (PalomarSubmission toolchains.json at `d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44`). Its minimum `v4.35.0-rc2` excludes the frozen Lean `v4.19.0` environment; both existing regular `.lean` files lack the mandatory Lean `module` header. The conventional audited Challenge/Solution pair, Comparator configuration and structured `formalization.yaml` are also absent. The immutable proof-source and theorem permalinks and a reviewable checklist are in `sessions/S058/PALOMAR_REQUIREMENTS_PREFLIGHT.md`. No Palomar intake, verification, review, registration or other publication action occurred. B-014 is active: the owner must decide whether to authorize a separately bounded technical port and confirm human metadata responsibility. An actual external Palomar submission and any later final registration require separate explicit authority and portal authentication. All next-session prompts are withheld.
+
+## Post-S058 explicit owner resolution and S059 ongoing validation
+
+D-161 records the owner's unequivocal **YES** to an isolated Palomar-compatible Lean/Mathlib, module/Challenge/Solution/Comparator and metadata port, and to John Fairfax-Ball as the named human author/responsible maintainer. B-014 is **RESOLVED**. Registration through Palomar's portal itself is reserved to the owner only **after** a verified technical pass and release of a full immutable registration commit. Draft PR #19 is a WIP technical checkpoint, not a registration artifact. The original Lean 4.19 proof remains unchanged on `main`; the Palomar port's Lean 4.35 build and full mechanical preflight have not passed as of this state update. The official reusable pipeline currently selects a Namespace-hosted execution profile; queued external-runner jobs do not certify a result. All historic ready/session text preceding this section is archival. No next prompt is emitted until S059 closes.

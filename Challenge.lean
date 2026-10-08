@@ -46,7 +46,7 @@ def AvoidsInnerJointPair {n : ℕ} (S : PosSeq n) : Prop :=
     ShortZero S I → ShortZero S J → innerJointSum S I J = 0
 
 /-- Reduce a length-24 position to the corresponding position in one length-8 copy. -/
-def baseIndex (i : Fin 24) : Fin 8 :=
+@[expose] def baseIndex (i : Fin 24) : Fin 8 :=
   ⟨i.val % 8, Nat.mod_lt _ (by decide)⟩
 
 /-- A canonical positional representative of the commutative sequence `U^3`. -/
