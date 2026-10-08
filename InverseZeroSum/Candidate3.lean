@@ -2667,6 +2667,8 @@ theorem shortFreeOn_card_fifteen_singleton_identity
     ∃ u : F3T,
       (A.filter (fun i => finiteModelEquiv (S i : G) = u)).card = 1 ∧
       (∀ v : F3T,
+        (A.filter (fun i => finiteModelEquiv (S i : G) = v)).card ≤ 2) ∧
+      (∀ v : F3T,
         (A.filter (fun i => finiteModelEquiv (S i : G) = v)).card = 1 →
           v = u) ∧
       (∑ i ∈ A, finiteModelEquiv (S i : G)) + u = 0 := by
@@ -2725,9 +2727,22 @@ theorem shortFreeOn_card_fifteen_singleton_identity
     simp [R, tupleValueT, pullSeq]
   obtain ⟨u, hu, huOne⟩ :=
     exists_tupleFiberT_card_eq_one_length15 R hRFree
-  refine ⟨u, ?_, ?_, ?_⟩
+  refine ⟨u, ?_, ?_, ?_, ?_⟩
   · rw [hFiberEq]
     exact huOne
+  · intro v
+    rw [hFiberEq]
+    by_cases hv : v ∈ tupleSupportT R
+    · exact tupleFiberT_card_le_two R hRFree v hv
+    · have hEmpty :
+          ((Finset.univ : Finset (Fin 15)).filter
+            (fun i => tupleValueT R i = v)) = ∅ := by
+        apply Finset.eq_empty_iff_forall_not_mem.mpr
+        intro i hi
+        apply hv
+        exact Finset.mem_image.mpr
+          ⟨i, Finset.mem_univ _, (Finset.mem_filter.mp hi).2⟩
+      simp [hEmpty]
   · intro v hvOne
     have hvOneR :
         ((Finset.univ : Finset (Fin 15)).filter
@@ -2744,6 +2759,28 @@ theorem shortFreeOn_card_fifteen_singleton_identity
     exact length15_singleton_unique R hRFree hu huOne hvSupport hvOneR
   · rw [hSumEq]
     exact length15_singleton_sum_identity R hRFree hu huOne
+
+
+/--
+Purely positional fibre-count exchange: remove an old position y, insert an
+absent position x, and compare each fibre.  The symmetric addition form avoids
+truncated natural-number subtraction and retains the exact two-value change.
+-/
+theorem filter_card_exchange
+    {α β : Type*} [DecidableEq α] [DecidableEq β]
+    (A : Finset α) (f : α → β) {x y : α}
+    (hx : x ∉ A) (hy : y ∈ A) (v : β) :
+    ((insert x (A.erase y)).filter (fun z => f z = v)).card +
+        (if f y = v then 1 else 0) =
+      (A.filter (fun z => f z = v)).card +
+        (if f x = v then 1 else 0) := by
+  classical
+  have hxErase : x ∉ A.erase y := by
+    intro h
+    exact hx (Finset.mem_of_mem_erase h)
+  by_cases hvx : f x = v <;> by_cases hvy : f y = v
+  all_goals simp [Finset.filter_insert, Finset.filter_erase,
+    hvx, hvy, hxErase, hx, hy, Finset.card_erase_of_mem]
 
 
 end InverseZeroSum.Candidate3
