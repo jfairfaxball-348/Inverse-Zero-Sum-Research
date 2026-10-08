@@ -2878,7 +2878,7 @@ theorem s9_certificate_survivor_singleton_profile
     (hs : c.s = 9) (rep : Fin c.s → Fin 24)
     (hRep : ∀ j, rep j ∈ c.blocks j) :
     ∃ u : F3T,
-      ((Finset.univ \ representativeSet rep).filter
+      (((Finset.univ \ representativeSet rep).filter
         (fun i => finiteModelEquiv (S i : G) = u)).card = 1) ∧
       (∀ v : F3T,
         ((Finset.univ \ representativeSet rep).filter
