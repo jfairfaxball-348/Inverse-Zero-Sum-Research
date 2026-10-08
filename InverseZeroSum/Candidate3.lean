@@ -3413,4 +3413,41 @@ theorem s9PackingEliminationInput : S9PackingEliminationInput := by
   have hValues : f v = f w := add_left_cancel hEq
   exact hvw (Subtype.ext (finiteModelEquiv.injective hValues))
 
+
+/-! ### S056: final frozen-classification composition -/
+
+/-- Any avoiding sequence has a packed, full eight-triple certificate, with
+constant values on each original-position atom. The remaining normal-form
+and converse obligations are separate. -/
+theorem s056_eight_constant_certificate (S : PosSeq 24)
+    (hAvoid : AvoidsInnerJointPair S) :
+    ∃ c : S039PackingCertificate S,
+      c.s = 8 ∧ S8RepresentativeSwapOutput S c := by
+  obtain ⟨c⟩ := s039PackingInput S hAvoid
+  have hs : c.s = 8 := by
+    rcases s039_signature_s_eq_eight_or_nine c.signature with h8 | h9
+    · exact h8
+    · exact False.elim (s9PackingEliminationInput S c h9)
+  exact ⟨c, hs, s8RepresentativeSwapInput S c hs⟩
+
+/-- The eight packed three-blocks of that certificate exhaust all positions. -/
+theorem s056_eight_constant_blocks_cover
+    {S : PosSeq 24} (c : S039PackingCertificate S)
+    (h : S8RepresentativeSwapOutput S c) :
+    blockUnion c.blocks = Finset.univ := by
+  classical
+  have hZero : (Finset.univ \ blockUnion c.blocks).card = 0 := by
+    simpa [h.2.1] using c.remainder_card
+  have hempty : Finset.univ \ blockUnion c.blocks = ∅ :=
+    Finset.card_eq_zero.mp hZero
+  ext x
+  constructor
+  · intro _
+    exact Finset.mem_univ x
+  · intro _
+    by_contra hn
+    have hm : x ∈ Finset.univ \ blockUnion c.blocks :=
+      Finset.mem_sdiff.mpr ⟨Finset.mem_univ x, hn⟩
+    simpa [hempty] using hm
+
 end InverseZeroSum.Candidate3
