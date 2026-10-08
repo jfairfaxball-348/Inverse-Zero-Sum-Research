@@ -2866,4 +2866,35 @@ theorem shortZero_two_block_has_distinct_values
     exact hNo ⟨x, hx, y, hy, hne⟩
   exact (constant_shortZero_block_ne_two hShort hConst) hCard
 
+
+/--
+The S039 certificate's *universal* representative quantifier now supplies
+the full length-15 singleton/count/sum profile for every transversal in the
+s=9 branch, on the surviving original positions (not a chosen support set).
+-/
+theorem s9_certificate_survivor_singleton_profile
+    {S : PosSeq 24} (c : S039PackingCertificate S)
+    (hs : c.s = 9) (rep : Fin c.s → Fin 24)
+    (hRep : ∀ j, rep j ∈ c.blocks j) :
+    ∃ u : F3T,
+      (((Finset.univ \ representativeSet rep).filter
+        (fun i => finiteModelEquiv (S i : G) = u)).card = 1) ∧
+      (∀ v : F3T,
+        ((Finset.univ \ representativeSet rep).filter
+          (fun i => finiteModelEquiv (S i : G) = v)).card ≤ 2) ∧
+      (∀ v : F3T,
+        ((Finset.univ \ representativeSet rep).filter
+          (fun i => finiteModelEquiv (S i : G) = v)).card = 1 →
+          v = u) ∧
+      (∑ i ∈ (Finset.univ \ representativeSet rep),
+          finiteModelEquiv (S i : G)) + u = 0 := by
+  have hRepCard : (representativeSet rep).card = c.s :=
+    representativeSet_card_of_pairwise c.pairwise_disjoint hRep
+  have hResidualCard :
+      (Finset.univ \ representativeSet rep).card = 15 := by
+    rw [Finset.card_sdiff (Finset.subset_univ _), hRepCard, hs]
+    decide
+  exact shortFreeOn_card_fifteen_singleton_identity S hResidualCard
+    (c.every_representative_residual_shortFree rep hRep)
+
 end InverseZeroSum.Candidate3
