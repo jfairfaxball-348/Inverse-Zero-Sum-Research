@@ -190,9 +190,11 @@ def S039PackingInput : Prop :=
 /-- Componentwise exponent-three torsion, avoiding a lost ambient ZMod module instance. -/
 theorem three_nsmul_G (x : G) : (3 : ℕ) • x = 0 := by
   ext i
-  let y : ZMod 3 := x i
-  change (3 : ℕ) • y = 0
-  fin_cases y <;> decide
+  change (3 : ℕ) • x i = 0
+  have hZModTorsion : ∀ z : ZMod 3, (3 : ℕ) • z = 0 := by
+    intro z
+    fin_cases z <;> decide
+  exact hZModTorsion (x i)
 
 theorem singleton_not_shortZero {n : ℕ} (S : PosSeq n) (i : Fin n) :
     ¬ ShortZero S {i} := by
