@@ -1080,3 +1080,18 @@ authorized by this formalization checkpoint.
 | D-158 | 2026-10-08 | Promote **only S058/P57-01** for a current official Palomar eligibility/registration-requirements preflight. No retroactive novelty inference, manuscript, arXiv, E-JC submission or outreach. Registration itself was not performed in S057. | Lean-first owner order, S057 success and publication-stage boundary. |
 
 **Active owner blockers: NONE.** No Palomar registration is assumed. Independent pre-submission CAND-03 consultation skipped; E-JC ordinary review remains intended. Xue Li Stage-1 is CAND-02-specific and reply pending.
+
+## S058/P57-01 official Palomar preflight and owner decision
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-159 | 2026-10-08 | Close S058/P57-01 as **COMPLETED PRE-FLIGHT ONLY**. Current official Palomar minimum is Lean `v4.35.0-rc2`, above the pinned `v4.19.0`; repository regular Lean files lack required `module` headers and no audited Challenge/Solution, comparator.json or formalization.yaml exists. No actual portal submission, verification, review or registration is claimed. | Official PalomarPolicy submission standard, live Palomar submission page and PalomarSubmission `toolchains.json` pinned at `d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44`; S058 source and validation records. |
+| D-160 | 2026-10-08 | Activate **B-014** and suppress all live successor prompts. A Palomar compatibility migration and legal/human attribution require an explicit owner choice; no external submission consent is inherited from preflight. Keep unchanged the frozen mathematical theorem and the ordered route. | S058 technical blockers, Palomar maintainer/authorization requirement, repository external-action policy. |
+
+### B-014 — Palomar compatibility port and human attribution decision (ACTIVE)
+
+The owner must (1) decide whether to authorize a **separately scoped** Palomar compatibility port to a supported Lean release with matching Mathlib, module-system migration, small statement-only Challenge/Solution Comparator interface, validated metadata and unchanged exact frozen mathematical proposition; and (2) confirm the truthful human author and responsible-maintainer attribution and whether the prospective submitter is responsible for the substantive formalization or instead has explicit maintainer approval. No account credential or identity is assumed. A decision to decline or redirect the Palomar port needs a revised owner roadmap, not an invented alternate session.
+
+No browser OAuth, Palomar HTTPS submission, public verification dispatch, automated review, registration or publication has been authorized by P57-01. If a technical port is later approved and mechanically ready, request **separate explicit consent** before intake and again before permanent registration, with the owner's own write-access authentication where needed.
+
+**ACTIVE OWNER BLOCKER: B-014.** Next-session and brief: null. `next_prompt_status=SUPPRESSED_OWNER_BLOCKER`; live next-prompt file removed. Frozen CAND-03 theorem and S042 non-certifying prior-art status unchanged. Xue Li Stage-1 is CAND-02-only and reply pending.

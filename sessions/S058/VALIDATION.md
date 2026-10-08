@@ -1,0 +1,7 @@
+# S058 validation and limits
+
+Date: 2026-10-08. Documentation-only P57-01. Incoming GitHub main SHA `6e20d36bbcdb309dfaefb8f8a36ffd55cb822b5e`, tree `ac8ca1e22c05e18e88ffba6483530ff8d628cdfc`; GitHub compare against supplied checkpoint returned identical (zero commits). Repository tree confirmed S058 unique and absence of `Challenge.lean`, `Solution.lean`, `comparator.json`, `formalization.yaml`. Lean source inspection confirmed two non-module-header files and `v4.19.0` toolchain. Official pinned PalomarSubmission minimum `v4.35.0-rc2` checked.
+
+Verified existing main GitHub Actions run https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/actions/runs/37788617690 was **completed/success** at `6e20d36bbcdb309dfaefb8f8a36ffd55cb822b5e`; it covers `lake build`, forbidden source placeholders and `scripts/check_authority.py` in the old environment. No mathematical source edits or new proof validation attempted.
+
+Closeout authority will be validated by `python3 scripts/check_authority.py` in the synchronized GitHub Actions workflow after publication; the authoring environment cannot locally clone the public repository (no network/DNS access), so local execution is not claimed. Actual final remote main SHA/tree and the full main CI outcome must be checked after the commit. Palomar's official Comparator, NanoDa and editorial screening have **not** been executed, and no registration action occurred. Permission, toolchain migration and truthful human attribution are open. Active B-014 prevents any ready successor.

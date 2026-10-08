@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S057",
-  "next_session": "S058",
-  "next_brief": "authoritative/S058_CANDIDATE_3_PALOMAR_REQUIREMENTS_PREFLIGHT_BRIEF.md",
-  "stage": "P6_CAND03_PALOMAR_PREFLIGHT_READY",
-  "programme_status": "S057_COMPLETED_D56_01_FULL_FROZEN_CLASSIFICATION_KERNEL_CHECKED_S058_PALOMAR_PREFLIGHT_READY",
+  "last_completed_session": "S058",
+  "next_session": null,
+  "next_brief": null,
+  "stage": "P6_CAND03_PALOMAR_COMPATIBILITY_OWNER_DECISION_BLOCKED",
+  "programme_status": "S058_COMPLETED_P57_01_OFFICIAL_PALOMAR_PREFLIGHT_B014_ACTIVE_NO_SUBMISSION",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 internally proved and independently reverified; S057 kernel-checks the exact unchanged FrozenClassification iff in pinned Lean 4.19.0/mathlib (frozenClassification : FrozenClassification, proof-head CI run 37787906708). S042's prior-art non-hit does not certify novelty or previous openness. Palomar not yet checked or registered; no manuscript, arXiv preprint or E-JC submission.",
+  "candidate_under_due_diligence": "CAND-03 exact iff kernel-checked in pinned Lean 4.19.0 at S057; official S058 Palomar intake preflight found an incompatible minimum Lean v4.35.0-rc2 and missing module/Challenge/Solution/metadata files. B-014 active pending owner compatibility-port and attribution decision. S042 non-hit is not novelty or historical-openness certification. No Palomar submission or registration.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -114,15 +114,18 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [],
+  "active_owner_blockers": [
+    "B-014"
+  ],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; it remains CAND-02-specific and does not transfer reviewer or status authority to CAND-03.",
     "Treat the S042 deep non-hit conservatively: it supports the authorized workflow transition but is not an absolute proof of novelty or prior openness.",
     "The exact FrozenClassification iff is proved in Lean and pinned at S057; do not assume mathematical novelty or publication readiness from kernel verification.",
-    "After Lean succeeds, recheck then-current Palomar requirements before registering the pinned verified result.",
-    "Proceed only in the owner-authorized order: Lean formalization -> Palomar registration -> paper drafting -> arXiv preprint -> E-JC submission."
+    "Proceed only in the owner-authorized order: Lean formalization -> Palomar registration -> paper drafting -> arXiv preprint -> E-JC submission.",
+    "B-014: decide whether to authorize a separate Palomar-compatible Lean/Mathlib and module-system port plus Comparator/metadata preparation without changing the frozen theorem's mathematical meaning; confirm responsible human author/maintainer names and relationship before any actual external intake.",
+    "A subsequent Palomar submission, GitHub OAuth/write-access check, public verification workflow, and final permanent registration each require applicable explicit owner authorization/action. None is presumed from P57-01."
   ],
-  "next_prompt_status": "READY",
+  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -413,6 +416,11 @@
       "id": "S057",
       "status": "COMPLETED",
       "record": "sessions/S057/CLOSEOUT.md"
+    },
+    {
+      "id": "S058",
+      "status": "COMPLETED",
+      "record": "sessions/S058/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -440,7 +448,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S057 closes the entire exact CAND-03 Lean formalization: positional necessity s056_frozen_necessity, direct canonical avoidance s057_canonical_avoids, permutation transport and frozenClassification : FrozenClassification, validated on the pinned clean runner. Next S058 is only a Palomar requirements/registration preflight; no registration occurred in S057, and later milestones must retain owner order Lean -> Palomar -> paper -> arXiv -> E-JC.",
+  "current_route_disposition": "S058/P57-01 completed the official Palomar requirements preflight only. Lean 4.19.0 falls below PalomarSubmission's 2026-10-08 minimum v4.35.0-rc2; existing .lean files lack compulsory module headers; Challenge/Solution, Comparator and formalization.yaml have not been prepared. B-014 requires an explicit owner decision on compatibility port and human attribution before any further numbered session. No Palomar intake, verification, review or registration occurred. Frozen theorem unchanged; paper/arXiv/E-JC untouched.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -716,8 +724,22 @@
     "proof_head": "b260652a6b500b3b6ed602610c85bddc000fff96",
     "proof_head_actions_run": 37787906708,
     "scope": "Exact unchanged positional AvoidsInnerJointPair iff squarefree ShortFree triple power up to Fin24 position permutation; necessity and sufficiency",
-    "palomar_status": "NOT_STARTED",
+    "palomar_status": "S058_PREFLIGHT_COMPLETE_INCOMPATIBLE_TOOLCHAIN_AND_MISSING_SUBMISSION_LAYOUT_B014_ACTIVE",
     "source_novelty_boundary": "S042 audit non-hit does not certify novelty, prior openness or significance"
   },
-  "s057_formalization_date": "2026-10-08"
+  "s057_formalization_date": "2026-10-08",
+  "s058_palomar_preflight_date": "2026-10-08",
+  "cand03_palomar_preflight": {
+    "status": "COMPLETED_PREFLIGHT_OWNER_BLOCKED_NOT_SUBMITTED",
+    "official_submission_policy": "https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md",
+    "official_minimum_reference": "https://github.com/PalomarRegistry/PalomarSubmission/blob/d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44/toolchains.json",
+    "minimum_lean": "v4.35.0-rc2",
+    "frozen_lean": "v4.19.0",
+    "frozen_main": "6e20d36bbcdb309dfaefb8f8a36ffd55cb822b5e",
+    "frozen_tree": "ac8ca1e22c05e18e88ffba6483530ff8d628cdfc",
+    "blocker": "B-014",
+    "portal": "https://submit.palomar-registry.org/",
+    "registered": false,
+    "submitted": false
+  }
 }

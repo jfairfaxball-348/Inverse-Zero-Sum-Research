@@ -17,7 +17,7 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S057 COMPLETED. `frozenClassification : FrozenClassification` is kernel-checked for the literal frozen iff with original positional avoidance and a 24-position permutation. The pinned proof-head CI 37787906708 passed. Palomar has not yet been checked or registered; S058 is READY only for a registration-requirements preflight.**
+**S058/P57-01 COMPLETED as an official Palomar requirements preflight only; B-014 ACTIVE. The frozen iff remains kernel-checked under Lean 4.19.0, but current PalomarSubmission minimum is v4.35.0-rc2, and required module/Challenge/Solution/Comparator/metadata preparation is missing. NO submission or registration occurred. Owner decision required; NO next-session prompt.**
 
 Selected target:
 
@@ -34,9 +34,9 @@ length 8.
   the ordered verification/preprint stages.
 - Mathematical-investigation gate: OPEN; S058 is a Palomar requirements preflight with no new mathematical proof work.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
-- Active owner blockers: NONE.
-- Next session: S058 / P57-01 check actual Palomar registration requirements and prepare a bounded registration disposition.
-- Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
+- Active owner blockers: **B-014** (Palomar toolchain/module compatibility and human attribution/owner authorization).
+- Next session: **NONE while B-014 is active**.
+- Live next-session prompt: **SUPPRESSED_OWNER_BLOCKER**; file absent.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
 - Ordered route: **Lean formalization -> Palomar registration -> paper ->
@@ -979,3 +979,7 @@ S056/D55-01 composes the certified S039/s=8/s=9 spine into `s056_frozen_necessit
 ## S057 completed — full frozen Lean iff
 
 S057/D56-01 is COMPLETED: the pinned Lean theorem `frozenClassification : FrozenClassification` proves the exact unchanged CAND-03 iff, using S056 necessity, direct canonical positional avoidance and inverse-permutation transport. Proof-head CI run 37787906708 passed `lake build`, the forbidden-placeholder scan and the authority checker. The S042 prior-art non-hit is not a novelty certificate. Palomar has NOT been checked or registered, and no paper, arXiv preprint or E-JC submission has begun. S058 may perform only a current Palomar requirements/registration preflight; owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC. Independent CAND-03 pre-submission consultation is skipped; ordinary E-JC editorial/referee review is intended.
+
+## S058 official Palomar requirements preflight — OWNER BLOCKED
+
+S058 verified the official Palomar policy, portal and minimum toolchain (PalomarSubmission toolchains.json at `d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44`). Its minimum `v4.35.0-rc2` excludes the frozen Lean `v4.19.0` environment; both existing regular `.lean` files lack the mandatory Lean `module` header. The conventional audited Challenge/Solution pair, Comparator configuration and structured `formalization.yaml` are also absent. The immutable proof-source and theorem permalinks and a reviewable checklist are in `sessions/S058/PALOMAR_REQUIREMENTS_PREFLIGHT.md`. No Palomar intake, verification, review, registration or other publication action occurred. B-014 is active: the owner must decide whether to authorize a separately bounded technical port and confirm human metadata responsibility. An actual external Palomar submission and any later final registration require separate explicit authority and portal authentication. All next-session prompts are withheld.

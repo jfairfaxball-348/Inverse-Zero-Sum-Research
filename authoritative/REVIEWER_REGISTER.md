@@ -851,3 +851,7 @@ No reviewer contact or consultation occurred. Independent CAND-03 pre-submission
 ## S057 formalization closeout and review boundary
 
 The full CAND-03 frozen iff is now verified by a pinned Lean proof, but this does not constitute human peer review. Independent pre-submission CAND-03 consultation remains skipped by explicit owner instruction; ordinary E-JC editorial/referee review remains planned. No CAND-03 reviewer was contacted. Xue Li Stage-1 is historical CAND-02-specific and reply pending. No reviewer status or outreach authority transfers.
+
+## S058 registration review distinction
+
+Palomar's official review after Comparator/NanoDa is an **AI editorial filter**, not independent human refereeing, endorsement or journal peer review. No such Palomar review, author/reviewer outreach or submission occurred in S058. CAND-03 independent pre-submission consultation remains skipped by owner choice; ordinary E-JC editorial/referee review is still intended only at the later journal stage. Xue Li Stage-1 is CAND-02-specific and reply pending; no review authority transfers. B-014 concerns technical eligibility and human authorship/maintainer metadata, not renewed CAND-03 consultation.

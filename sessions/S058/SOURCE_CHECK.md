@@ -1,0 +1,9 @@
+# S058 official-source and eligibility check
+
+Date: 2026-10-08. Unit P57-01. Official live Palomar pages checked: https://palomar-registry.org/how-to-submit, https://submit.palomar-registry.org/, https://palomar-registry.org/about, https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md and https://github.com/PalomarRegistry/PalomarPolicy/blob/main/docs/specification.md . **Exact minimum toolchain** separately read from official https://github.com/PalomarRegistry/PalomarSubmission/blob/d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44/toolchains.json (`minimum: v4.35.0-rc2`).
+
+Official source distinctions: Palomar is a machine-checked registry, not a journal or human peer review. Mechanical Comparator/Lean/NanoDa, metadata scrutiny and AI editorial review are prerequisite gates, not a novelty or significance certificate. A successful automated review permits a **later separate** registration action; it does not register automatically. Public verification leaves public logs even if withdrawn; registered records are intended durable. Submitter identity is not a public registry field, but declared relationship and optional evidence are public.
+
+Repository-specific findings are grounded in the immutable incoming tree `ac8ca1e22c05e18e88ffba6483530ff8d628cdfc` at `6e20d36bbcdb309dfaefb8f8a36ffd55cb822b5e`. `lean-toolchain` says `v4.19.0`; both local Lean source files lack `module` headers; Challenge, Solution, Comparator and metadata are absent. `LICENSE` is Apache-2.0. The theorem permalink and statement are in the preflight record. The incoming-main CI run 37788617690 was confirmed successful on the *old* pinned toolchain.
+
+**No new CAND-03 mathematical prior-art audit.** Preserve S042 non-hit as non-certifying. No external contact, submission, account access, editorial review, DOI/ID or final registration was observed or claimed.

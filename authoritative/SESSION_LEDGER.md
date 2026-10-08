@@ -1014,3 +1014,14 @@ D45-01 closes the second threshold interface without importing `eta(C_3^3)=17` a
 - Live main matched incoming SHA; no prior S057 directory. Proof on isolated draft PR #18.
 - Proof-head CI 37787906708: pinned `lake build`, forbidden-placeholder scan, authority checker PASS.
 - Active owner blockers: NONE; no Palomar, paper, preprint, E-JC or outreach actions in S057.
+
+## S058 completed requirements preflight; owner blocker active
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S058 | COMPLETED P57-01; B-014 ACTIVE | `6e20d36bbcdb309dfaefb8f8a36ffd55cb822b5e` | Official Palomar policy/portal minimum `v4.35.0-rc2` vs frozen Lean `v4.19.0`; required module headers/Comparator statement package absent; source permalink and submission checklist prepared; no external action | [S058 closeout](../sessions/S058/CLOSEOUT.md) |
+
+- Incoming `main` was identical to supplied checkpoint; S058 unique.
+- Immutable incoming proof/source tree preserved with no modification to `InverseZeroSum/Candidate3.lean`.
+- **No successor prompt while B-014 remains active.** Human metadata/compatibility decision required before any future numbered technical unit.
+- Main-tree GitHub Actions outcome must be confirmed externally after checkpointing; authority-check and Lean validation are not Palomar verification.

@@ -495,3 +495,7 @@ The complete s=8 and s=9 certificate proof interfaces do not by themselves close
 ## S057 compositional proof lesson
 
 A direct canonical three-copy avoidance proof must classify actual positional short-zero witnesses, rather than inferring the indexed intersection condition from support alone. Inverse-permutation transport requires explicitly identifying the pulled-back sequence and rewriting the mapped intersection sum; initial proof-head elaboration errors were local definitional-rewriting issues, repaired without any mathematical target change. The final proof-head pinned suite passed (CI 37787906708). No mathematical route failure or new owner strategy blocker is created.
+
+## S058 registration compatibility lesson
+
+**FL-114 (2026-10-08):** An existing pinned kernel-checked Lean proof is not necessarily eligible for a current external proof registry. Palomar's living requirements currently impose a newer minimum toolchain, universal module headers, a small independently trusted Challenge source, Comparator-matched Solution, provenance metadata and explicit human-submitter authorization. The verified old proof is not a failed theorem; trying to register it unchanged would fail intake. Freeze its mathematics, record exact version/source constraints and request the owner's decision on a separate compatibility port rather than silently rewriting proof code or claiming registration.
