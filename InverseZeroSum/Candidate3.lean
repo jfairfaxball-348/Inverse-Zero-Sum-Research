@@ -3524,4 +3524,61 @@ theorem s056_packed_representatives_shortFree
       _ = 1 := by simp
   rcases shortZero_card_two_or_three hI with hTwo | hThree <;> omega
 
+
+/-- Representatives of different constant packed three-blocks carry distinct
+values: otherwise replacing one position in a packed atom by a point from the
+other block constructs an overlapping short zero sum. -/
+theorem s056_packed_representatives_injective
+    {S : PosSeq 24} (hAvoid : AvoidsInnerJointPair S)
+    (c : S039PackingCertificate S) (hs : c.s = 8)
+    (h : S8RepresentativeSwapOutput S c)
+    (rep : Fin c.s → Fin 24)
+    (hRep : ∀ j, rep j ∈ c.blocks j) :
+    Function.Injective (fun j => S (rep j)) := by
+  classical
+  intro j k hEq
+  by_contra hNe
+  have hNotK : rep k ∉ c.blocks j := by
+    intro hk
+    exact (Finset.disjoint_left.mp
+      (c.pairwise_disjoint k j (Ne.symm hNe))) (hRep k) hk
+  have hCard := s056_eight_constant_block_card c hs h j
+  let I : Finset (Fin 24) :=
+    insert (rep k) ((c.blocks j).erase (rep j))
+  have hEraseCard : ((c.blocks j).erase (rep j)).card = 2 := by
+    rw [Finset.card_erase_of_mem (hRep j), hCard]
+    decide
+  have hNotErase : rep k ∉ (c.blocks j).erase (rep j) := by
+    intro hk
+    exact hNotK (Finset.mem_of_mem_erase hk)
+  have hICard : I.card = 3 := by
+    simp [I, hNotErase, hEraseCard]
+  have hBalance :
+      posSum S I + (S (rep j) : G) =
+        posSum S (c.blocks j) + (S (rep k) : G) := by
+    simpa [I, posSum] using
+      (sum_erase_insert_exchange (c.blocks j)
+        (fun z => (S z : G)) hNotK (hRep j))
+  have hEqG : (S (rep j) : G) = (S (rep k) : G) :=
+    congrArg Subtype.val hEq
+  rw [← hEqG] at hBalance
+  have hISum : posSum S I = posSum S (c.blocks j) :=
+    add_right_cancel hBalance
+  have hIShort : ShortZero S I := by
+    refine ⟨Finset.card_pos.mp (by omega), by omega, ?_⟩
+    rw [hISum]
+    exact (c.block_shortZero j).2.2
+  have hINe : I ≠ c.blocks j := by
+    intro heq
+    apply hNotK
+    rw [← heq]
+    exact Finset.mem_insert_self _ _
+  have hDisj :=
+    shortZero_disjoint_of_ne hAvoid hIShort (c.block_shortZero j) hINe
+  have hEraseNonempty : ((c.blocks j).erase (rep j)).Nonempty :=
+    Finset.card_pos.mp (by omega)
+  obtain ⟨z, hz⟩ := hEraseNonempty
+  exact (Finset.disjoint_left.mp hDisj)
+    (Finset.mem_insert_of_mem hz) (Finset.mem_of_mem_erase hz)
+
 end InverseZeroSum.Candidate3
