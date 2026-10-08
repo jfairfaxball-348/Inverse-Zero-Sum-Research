@@ -46,7 +46,7 @@ def AvoidsInnerJointPair {n : ℕ} (S : PosSeq n) : Prop :=
     ShortZero S I → ShortZero S J → innerJointSum S I J = 0
 
 /-- Reduce a length-24 position to the corresponding position in one length-8 copy. -/
-def baseIndex (i : Fin 24) : Fin 8 :=
+@[expose] def baseIndex (i : Fin 24) : Fin 8 :=
   ⟨i.val % 8, Nat.mod_lt _ (by decide)⟩
 
 /-- A canonical positional representative of the commutative sequence `U^3`. -/
@@ -185,7 +185,13 @@ def S039PackingInput : Prop :=
   ∀ S : PosSeq 24, AvoidsInnerJointPair S → Nonempty (S039PackingCertificate S)
 
 @[simp] theorem baseIndex_val (i : Fin 24) :
-    (baseIndex i).val = i.val % 8 := rfl
+    (baseIndex i).val = i.val % 8 := by simp [baseIndex]
+
+/-- Componentwise exponent-three torsion, avoiding a lost ambient ZMod module instance. -/
+theorem three_nsmul_G (x : G) : (3 : ℕ) • x = 0 := by
+  ext i
+  simp only [Pi.nsmul_apply, Pi.zero_apply]
+  exact ZModModule.char_nsmul_eq_zero 3 (x i)
 
 theorem singleton_not_shortZero {n : ℕ} (S : PosSeq n) (i : Fin n) :
     ¬ ShortZero S {i} := by
@@ -230,7 +236,7 @@ theorem shortZero_subset_eq {n : ℕ} {S : PosSeq n}
     rcases shortZero_card_two_or_three hJ with hj | hj
   · exact Finset.eq_of_subset_of_card_le hsub (by omega)
   · have hcard : (J \ I).card = 1 := by
-      rw [Finset.card_sdiff hsub]
+      rw [Finset.card_sdiff, Finset.inter_eq_left.mpr hsub]
       omega
     obtain ⟨k, hk⟩ := Finset.card_eq_one.mp hcard
     have hsum : posSum S I + posSum S (J \ I) = posSum S J := by
@@ -646,7 +652,7 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
   let Rset : Finset F3T := A \ P
   have hRcard : Rset.card = 8 := by
     dsimp [Rset]
-    rw [Finset.card_sdiff hPsubA, hcard, hPcard]
+    rw [Finset.card_sdiff, Finset.inter_eq_left.mpr hPsubA, hcard, hPcard]
   let T : Finset PlaneIdx :=
     Finset.univ.filter
       (fun p => onPlaneTB p a = true ∧ onPlaneTB p b = true)
@@ -675,7 +681,7 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
       ext x
       simp [Rset, P, and_assoc, and_left_comm, and_comm]
     have h4p := cap_inter_plane_le_four hA p
-    rw [heq, Finset.card_sdiff hPsub, hPcard]
+    rw [heq, Finset.card_sdiff, Finset.inter_eq_left.mpr hPsub, hPcard]
     omega
   have hRH : (Rset ∩ planeSetT H).card ≤ 1 := by
     have hPsubH : P ⊆ A ∩ planeSetT H := by
@@ -692,7 +698,7 @@ theorem no_ten_capT {A : Finset F3T} (hA : IsCapT A) (hcard : A.card = 10) : Fal
       have h := hc_le3
       rw [horizontalSliceT_eq_inter A c] at h
       simpa [H] using h
-    rw [heqH, Finset.card_sdiff hPsubH, hPcard]
+    rw [heqH, Finset.card_sdiff, Finset.inter_eq_left.mpr hPsubH, hPcard]
     omega
   have hRsubset :
       Rset ⊆ T.biUnion (fun p => Rset ∩ planeSetT p) := by
@@ -819,7 +825,7 @@ theorem threeTerm19Input : ThreeTerm19Input := by
         _ = 0 := by
           rw [hIcard]
           simpa using
-            ZModModule.char_nsmul_eq_zero 3 (finiteModelEquiv.symm x)
+            three_nsmul_G (finiteModelEquiv.symm x)
     exact (hNo I hIcard) hsum
   have hMaps :
       ∀ i ∈ (Finset.univ : Finset (Fin 19)), f i ∈ support := by
@@ -993,7 +999,7 @@ theorem eta17Input : Eta17Input := by
         _ = 0 := by
           rw [hIcard]
           simpa using
-            ZModModule.char_nsmul_eq_zero 3 (finiteModelEquiv.symm x)
+            three_nsmul_G (finiteModelEquiv.symm x)
     exact (hFree I) ⟨Finset.card_pos.mp (by omega), by omega, hsum⟩
 
   have hMaps :
@@ -1187,7 +1193,7 @@ theorem s039PackingInput_of_thresholds
   let A3 : Finset (Fin 24) := Finset.univ \ representativeSet rep3
   have hA3Card : A3.card = 24 - l := by
     dsimp [A3]
-    rw [Finset.card_sdiff (Finset.subset_univ _), hrep3Card]
+    rw [Finset.card_sdiff, Finset.inter_eq_left.mpr (Finset.subset_univ _), hrep3Card]
     simp
 
   have hNoThreeA3 :
@@ -1244,7 +1250,7 @@ theorem s039PackingInput_of_thresholds
   let AAll : Finset (Fin 24) := Finset.univ \ representativeSet repAll
   have hAAllCard : AAll.card = 24 - P.card := by
     dsimp [AAll]
-    rw [Finset.card_sdiff (Finset.subset_univ _), hrepAllCard]
+    rw [Finset.card_sdiff, Finset.inter_eq_left.mpr (Finset.subset_univ _), hrepAllCard]
     simp
 
   have hAAllFree : ShortFreeOn S AAll := by
@@ -1558,7 +1564,7 @@ theorem tupleFiberT_card_le_two {n : ℕ} (R : PosSeq n) (hFree : ShortFree R) :
       _ = 0 := by
         rw [hIcard]
         simpa using
-          ZModModule.char_nsmul_eq_zero 3 (finiteModelEquiv.symm x)
+          three_nsmul_G (finiteModelEquiv.symm x)
   exact (hFree I) ⟨Finset.card_pos.mp (by omega), by omega, hsum⟩
 
 theorem tupleSupportT_card_le_eight {n : ℕ} (R : PosSeq n)
@@ -1607,7 +1613,7 @@ theorem nine_cap_plane_card_ne_two {A : Finset F3T} (hA : IsCapT A)
   let Rset : Finset F3T := A \ P
   have hRcard : Rset.card = 7 := by
     dsimp [Rset]
-    rw [Finset.card_sdiff hPsubA, hcard, hPcard]
+    rw [Finset.card_sdiff, Finset.inter_eq_left.mpr hPsubA, hcard, hPcard]
   let T : Finset PlaneIdx :=
     Finset.univ.filter
       (fun p => onPlaneTB p a = true ∧ onPlaneTB p b = true)
@@ -1636,7 +1642,7 @@ theorem nine_cap_plane_card_ne_two {A : Finset F3T} (hA : IsCapT A)
       ext x
       simp [Rset, P, and_assoc, and_left_comm, and_comm]
     have h4p := cap_inter_plane_le_four hA p
-    rw [heq, Finset.card_sdiff hPsub, hPcard]
+    rw [heq, Finset.card_sdiff, Finset.inter_eq_left.mpr hPsub, hPcard]
     omega
   have hPsubH : P ⊆ A ∩ planeSetT H := by
     intro x hx
@@ -1649,7 +1655,7 @@ theorem nine_cap_plane_card_ne_two {A : Finset F3T} (hA : IsCapT A)
         Rset ∩ planeSetT H = (A ∩ planeSetT H) \ P := by
       ext x
       simp [Rset, P, and_assoc, and_left_comm, and_comm]
-    rw [heqH, Finset.card_sdiff hPsubH, hAH2, hPcard]
+    rw [heqH, Finset.card_sdiff, Finset.inter_eq_left.mpr hPsubH, hAH2, hPcard]
   have hRsubset :
       Rset ⊆ T.biUnion (fun p => Rset ∩ planeSetT p) := by
     intro z hz
@@ -1780,12 +1786,16 @@ theorem nine_cap_direction_value_sum_zero {A : Finset F3T} (hA : IsCapT A)
         h333 | h144 | h414 | h441
       · rcases h333 with ⟨h0, h1, h2⟩
         simp [Fin.sum_univ_succ, h0, h1, h2]
+        all_goals decide
       · rcases h144 with ⟨h0, h1, h2⟩
         simp [Fin.sum_univ_succ, h0, h1, h2]
+        all_goals decide
       · rcases h414 with ⟨h0, h1, h2⟩
         simp [Fin.sum_univ_succ, h0, h1, h2]
+        all_goals decide
       · rcases h441 with ⟨h0, h1, h2⟩
         simp [Fin.sum_univ_succ, h0, h1, h2]
+        all_goals decide
 
 /-- The explicit plane direction forms are additive. -/
 theorem planeValueT_add :
@@ -2110,11 +2120,11 @@ theorem s8_packed_blocks_constant
     representativeSet_card_of_pairwise c.pairwise_disjoint hRepY
   have hResidualXCard :
       (Finset.univ \ representativeSet repX).card = 16 := by
-    rw [Finset.card_sdiff (Finset.subset_univ _), hRepXCard, hs]
+    rw [Finset.card_sdiff, Finset.inter_eq_left.mpr (Finset.subset_univ _), hRepXCard, hs]
     decide
   have hResidualYCard :
       (Finset.univ \ representativeSet repY).card = 16 := by
-    rw [Finset.card_sdiff (Finset.subset_univ _), hRepYCard, hs]
+    rw [Finset.card_sdiff, Finset.inter_eq_left.mpr (Finset.subset_univ _), hRepYCard, hs]
     decide
   have hResidualXFree :=
     c.every_representative_residual_shortFree repX hRepX
@@ -2499,6 +2509,8 @@ theorem weighted_sum_plus_singleton_eq_double
 
 
 
+set_option maxHeartbeats 2000000
+
 /--
 S052/D51-01 closes the length-15 nonzero-total-sum interface from the retained
 2^7 1 support profile and the eight-support sum-zero invariant.
@@ -2741,8 +2753,9 @@ theorem shortFreeOn_card_fifteen_singleton_identity
     · have hEmpty :
           ((Finset.univ : Finset (Fin 15)).filter
             (fun i => tupleValueT R i = v)) = ∅ := by
-        apply Finset.eq_empty_iff_forall_not_mem.mpr
-        intro i hi
+        ext i
+        simp only [Finset.mem_empty, iff_false]
+        intro hi
         apply hv
         exact Finset.mem_image.mpr
           ⟨i, Finset.mem_univ _, (Finset.mem_filter.mp hi).2⟩
@@ -2897,7 +2910,7 @@ theorem s9_certificate_survivor_singleton_profile
     representativeSet_card_of_pairwise c.pairwise_disjoint hRep
   have hResidualCard :
       (Finset.univ \ representativeSet rep).card = 15 := by
-    rw [Finset.card_sdiff (Finset.subset_univ _), hRepCard, hs]
+    rw [Finset.card_sdiff, Finset.inter_eq_left.mpr (Finset.subset_univ _), hRepCard, hs]
     decide
   exact shortFreeOn_card_fifteen_singleton_identity S hResidualCard
     (c.every_representative_residual_shortFree rep hRep)
@@ -3720,7 +3733,8 @@ theorem s056_frozen_necessity (S : PosSeq 24)
         S (rep (Fin.cast hs.symm i))) :=
     s056_constant_blocks_isTriplePower c hs hConst rep hRep
   refine ⟨U, hUInj, hUFree, ?_⟩
-  simpa [U, V, e, pullSeq] using hTriple
+  change IsTriplePower S (fun i : Fin 8 => S (rep (Fin.cast hs.symm i)))
+  exact hTriple
 
 
 /-! ### S057: direct canonical converse for the frozen positional iff -/
