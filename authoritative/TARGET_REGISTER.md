@@ -1433,3 +1433,9 @@ The exact length-24 iff target is unchanged. S054 now proves that an arbitrary 1
 ## S055 CAND-03 s=9 elimination completion
 
 The exact length-24 iff classification, positional `AvoidsInnerJointPair` semantics and commutative sequence interpretation via `IsTriplePower` are frozen and unchanged. The pinned Lean source now proves `s9PackingEliminationInput : S9PackingEliminationInput` (CI run 37762312828) using only the authorized S040 direct-proof route. The `s=9` packing branch is formally impossible. **The target iff proposition `FrozenClassification` is still unproved**; only its final composition may be pursued in S056. The S042 prior-art non-hit is not a novelty or prior-openness certificate.
+
+## S056 PARTIAL — frozen necessity proof; converse still unproved
+
+S056/D55-01 composes the certified S039/s=8/s=9 spine into `s056_frozen_necessity`: every avoiding positional length-24 sequence is a permutation of `tripleRep U` for a squarefree short-free length-eight U. It uses the eight disjoint constant three-blocks and constructs the position permutation, not a support-only equality. The earliest missing bridge is direct `AvoidsInnerJointPair (tripleRep U)` under `Squarefree U ∧ ShortFree U`, followed by elementary reindexing to finish the unchanged `FrozenClassification` iff. This is a PARTIAL formalization checkpoint, not final Lean certification. No Palomar or publication work has begun. S057/D56-01 alone is ready. Owner order Lean -> Palomar -> paper -> arXiv -> E-JC; independent CAND-03 pre-submission consultation remains skipped, E-JC's ordinary review remains planned.
+
+Exact target and definitions of `FrozenClassification`, `IsTriplePower` and positional `AvoidsInnerJointPair` remain unchanged; verified mathematical theorem and novelty statuses are separate.

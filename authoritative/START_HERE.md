@@ -17,7 +17,7 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S055 is COMPLETED and S056 is READY. The pinned Lean project proves `s9PackingEliminationInput : S9PackingEliminationInput` (CI run 37762312828), completing the `s=9` certificate elimination. The exact CAND-03 classification remains internally proved and independently reverified. `FrozenClassification` still has NO Lean proof term; Palomar and all publication stages remain blocked.**
+**S056 closes PARTIAL. The pinned Lean proof now contains `s056_frozen_necessity`, deriving squarefree short-free length-eight values and a permutation of all 24 original positions from the completed S039, s=8 and s=9 inputs. `FrozenClassification` remains UNPROVED because direct triple-power avoidance and reindex transport are still missing. S057/D56-01 is the sole next unit; Palomar and publication remain blocked.**
 
 Selected target:
 
@@ -32,10 +32,10 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S056/D55-01 final frozen-classification composition only.
+- Mathematical-investigation gate: OPEN for S057/D56-01 direct canonical triple-power converse and the exact unchanged iff only.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S056 / D55-01 compose the verified proof spine into `FrozenClassification`.
+- Next session: S057 / D56-01 prove the exact direct converse and finish `FrozenClassification`.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
@@ -971,3 +971,7 @@ This does **not** prove `S9PackingEliminationInput`: the earliest missing step i
 D54-01 proves `s9PackingEliminationInput : S9PackingEliminationInput` in the pinned Lean source, by tracking original-position fibre changes under one certificate representative swap, deriving both singleton transitions, showing the full s=9 packed total is zero, and varying a second nonconstant two-block to contradict the forced complementary eight-representative sum. CI run 37762312828 passed `lake build`, forbidden-placeholder scan and `scripts/check_authority.py` at proof commit `28f97a740165205e045f97e0ed22833d42b34446`.
 
 The exact mathematical classification and S043 positional semantics are unchanged. S055 did NOT prove `FrozenClassification`. S056/D55-01 may perform ONLY the final composition of existing verified inputs into that frozen iff theorem. No Palomar, paper, arXiv, E-JC, outreach, alternative architecture or new prior-art audit is promoted. Owner blockers: NONE.
+
+## S056 PARTIAL — frozen necessity proof; converse still unproved
+
+S056/D55-01 composes the certified S039/s=8/s=9 spine into `s056_frozen_necessity`: every avoiding positional length-24 sequence is a permutation of `tripleRep U` for a squarefree short-free length-eight U. It uses the eight disjoint constant three-blocks and constructs the position permutation, not a support-only equality. The earliest missing bridge is direct `AvoidsInnerJointPair (tripleRep U)` under `Squarefree U ∧ ShortFree U`, followed by elementary reindexing to finish the unchanged `FrozenClassification` iff. This is a PARTIAL formalization checkpoint, not final Lean certification. No Palomar or publication work has begun. S057/D56-01 alone is ready. Owner order Lean -> Palomar -> paper -> arXiv -> E-JC; independent CAND-03 pre-submission consultation remains skipped, E-JC's ordinary review remains planned.

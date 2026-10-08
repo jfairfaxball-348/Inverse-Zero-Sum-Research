@@ -487,3 +487,7 @@ S054 makes the source-faithful passage from `PosSeq 15` to 15 original survivor 
 ### FL-112 — Exact certificate exchange must be composed before the global contradiction
 
 The S053 numeric transition theorem and S054 positional survivor profile became a closed s=9 elimination only after the actual swap was proved at the certificate level, with both before/after singleton uniqueness hypotheses discharged. A one-block sum comparison then supplies a fixed complementary eight-representative sum, and the second nonconstant packed two-block supplies the contradiction. S055's clean build establishes those claims in Lean. **Lesson:** neither a generic count-exchange identity nor a source-level case split is itself the certificate elimination; retain the original positional semantics and all intervening proof terms. The remaining frozen iff composition is a separate obligation.
+
+## S056 formalization lesson
+
+The complete s=8 and s=9 certificate proof interfaces do not by themselves close a commutative iff. Necessity requires a faithful 24-position permutation, and the reverse implication requires a *direct* Lean proof for positional short-zero intersections of `tripleRep U`. The 2024 construction can explain the mathematics but cannot act as a postulated Lean proof. Retain the checked necessity and make the exact direct converse the sole next formal bridge.

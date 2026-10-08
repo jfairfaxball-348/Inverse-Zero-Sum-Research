@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-03 Lean formalization, PARTIAL. S054 retains proof-bearing 15-position survivor singleton/count/sum transport and representative-exchange machinery. Certificate-level `S9PackingEliminationInput` and final `FrozenClassification` remain unproved. S055 is READY for the exact s=9 contradiction.**
+**Current stage: CAND-03 Lean formalization, PARTIAL. S056 retains the proved frozen necessity direction and exact 24-position permutation; `FrozenClassification` still has no proof term because the direct triple-power positional converse is missing. S057/D56-01 is READY for that exact bridge. Palomar and all publication stages remain blocked.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -13,13 +13,13 @@ authority; conversation history is not the project state.
 A numbered session runs one bounded task autonomously, validates and
 checkpoints useful work, then automatically provides a close report.
 
-**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S055 is the live Lean-formalization continuation.
+**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S057 is the sole live formalization continuation.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-03 is selected at the exact length-24 structural inverse Narkiewicz-sense eta scope.
 2. Publication gate — OPEN: S042 cleared the defined prior-art dependency only in the documented-search sense; E-JC remains the intended journal after the ordered verification/preprint stages.
-3. Mathematical-investigation gate — OPEN for S055/D54-01 certificate-level one-block transition and second-two-block contradiction only; no new proof architecture is authorized.
+3. Mathematical-investigation gate — OPEN for S057/D56-01 direct positional sufficiency and final frozen iff composition only; no new architecture authorized.
 4. External-review gate — CLOSED and not a CAND-03 pre-submission blocker: the owner explicitly skips independent reviewer/consultation. Lean/Palomar verification and E-JC's ordinary editorial/referee process are the planned verification/review path.
 5. Ordered roadmap — Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC submission.
 
@@ -510,3 +510,7 @@ pinned formalization checks pass.
 ## S055 s=9 certificate elimination completed
 
 The pinned Lean project now proves `s9PackingEliminationInput : S9PackingEliminationInput`. S055/D54-01 joins the exact original-position survivor fibre transitions, unique-singleton sum identity, zero packed-block total, and second two-block contradiction. Proof commit `28f97a740165205e045f97e0ed22833d42b34446` passed clean CI run 37762312828 (`lake build`, placeholder scan, authority checker). The complete `FrozenClassification` theorem still has no proof term; S056 is limited to final composition, and Palomar and publication stages remain blocked. No independent pre-submission external consultation is planned for CAND-03; ordinary E-JC review remains the intended journal process.
+
+## S056 PARTIAL — frozen necessity proof; converse still unproved
+
+S056/D55-01 composes the certified S039/s=8/s=9 spine into `s056_frozen_necessity`: every avoiding positional length-24 sequence is a permutation of `tripleRep U` for a squarefree short-free length-eight U. It uses the eight disjoint constant three-blocks and constructs the position permutation, not a support-only equality. The earliest missing bridge is direct `AvoidsInnerJointPair (tripleRep U)` under `Squarefree U ∧ ShortFree U`, followed by elementary reindexing to finish the unchanged `FrozenClassification` iff. This is a PARTIAL formalization checkpoint, not final Lean certification. No Palomar or publication work has begun. S057/D56-01 alone is ready. Owner order Lean -> Palomar -> paper -> arXiv -> E-JC; independent CAND-03 pre-submission consultation remains skipped, E-JC's ordinary review remains planned.

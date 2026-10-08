@@ -780,3 +780,7 @@ S054 closed PARTIAL: no proof term for certificate-level `S9PackingEliminationIn
 ## S055 publication-stage boundary
 
 S055 closes the s=9 certificate-level Lean elimination but does NOT close `FrozenClassification`. Therefore the formalization stage remains PARTIAL, and Palomar registration, manuscript preparation, arXiv posting and E-JC submission remain unstarted and blocked. The owner-authorized ordered route remains **Lean -> Palomar -> paper -> arXiv -> E-JC**. No novelty, significance, journal approval or acceptance follows from a Lean auxiliary proof.
+
+## S056 publication-stage boundary
+
+No final Lean iff theorem, Palomar registration, manuscript, arXiv posting or E-JC submission exists. The proved necessity half does not open Palomar. Ordered route and E-JC referee intentions unchanged. The documented S042 prior-art non-hit is not an absolute novelty certificate.

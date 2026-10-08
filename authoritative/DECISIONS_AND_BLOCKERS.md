@@ -1066,3 +1066,10 @@ authorized by this formalization checkpoint.
 | D-154 | 2026-10-08 | Promote **only S056/D55-01**: compose the already proved s=8/s=9/packing/source interfaces into `FrozenClassification`. Do not begin Palomar or publication while that theorem is unproved. | Authorized S055 success rule, owner Lean-first order. |
 
 **Active owner blockers: NONE.** The mathematical-investigation gate stays OPEN solely for S056/D55-01. The external-review gate remains CLOSED; independent CAND-03 pre-submission consultation is skipped by owner decision, with ordinary E-JC editorial/referee review intended later. Xue Li Stage-1 remains CAND-02-only and reply pending.
+
+## S056 D55-01 partial disposition
+
+| D-155 | 2026-10-08 | Close S056/D55-01 as **PARTIAL**: retain the kernel-checked frozen necessity direction and its exact three-copy original-position permutation, but do not call `FrozenClassification` proved. | S056 Lean progress, validation and closeout. |
+| D-156 | 2026-10-08 | Promote only S057/D56-01: establish direct canonical triple-power avoidance for squarefree short-free U, transport it under `IsTriplePower`, and close the exact frozen iff. No Palomar work until complete Lean proof plus full pinned suite. | S056 partial stop rule; owner Lean-first order. |
+
+**Active owner blockers: NONE.** Mathematical-investigation gate OPEN for S057 formalization only; external-review gate CLOSED, independent CAND-03 pre-submission consultation skipped. E-JC ordinary review planned; Xue Li CAND-02 reply pending.

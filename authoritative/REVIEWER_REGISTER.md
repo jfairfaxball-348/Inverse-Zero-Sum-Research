@@ -843,3 +843,7 @@ No CAND-03 external pre-submission reviewer consultation was requested or conduc
 ## S055 review boundary
 
 No reviewer, author or status expert was contacted. Independent pre-submission external consultation remains skipped for CAND-03 under the owner decision; ordinary E-JC editorial/referee review is still intended after the required earlier stages. S055's kernel check is not peer review. Xue Li Stage-1 remains CAND-02-specific, owner-reported sent, reply pending, without transfer to CAND-03.
+
+## S056 reviewer boundary
+
+No reviewer contact or consultation occurred. Independent CAND-03 pre-submission consultation is skipped per owner decision; E-JC ordinary editorial/referee review remains planned after the ordered stages. The historical Xue Li Stage-1 CAND-02 reply is pending and does not transfer to CAND-03.

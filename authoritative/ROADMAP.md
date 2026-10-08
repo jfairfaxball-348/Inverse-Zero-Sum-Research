@@ -1534,3 +1534,9 @@ The only promoted successor is S055/D54-01 to close that exact s=9 elimination. 
 ## S055 completed — s=9 elimination proved in Lean
 
 D54-01 kernel-checks `s9PackingEliminationInput : S9PackingEliminationInput` from exact certificate representative-count transitions, unique singleton sum identities and a second nonconstant two-block contradiction. Proof head `28f97a740165205e045f97e0ed22833d42b34446`, pinned CI run 37762312828 green. The remaining strict proof-spine obligation is the full `FrozenClassification` iff composition, promoted ONLY to S056/D55-01. Palomar remains blocked until that theorem itself has a Lean proof term and all pinned checks pass. Ordered route: Lean -> Palomar -> paper -> arXiv -> E-JC.
+
+## S056 PARTIAL — frozen necessity proof; converse still unproved
+
+S056/D55-01 composes the certified S039/s=8/s=9 spine into `s056_frozen_necessity`: every avoiding positional length-24 sequence is a permutation of `tripleRep U` for a squarefree short-free length-eight U. It uses the eight disjoint constant three-blocks and constructs the position permutation, not a support-only equality. The earliest missing bridge is direct `AvoidsInnerJointPair (tripleRep U)` under `Squarefree U ∧ ShortFree U`, followed by elementary reindexing to finish the unchanged `FrozenClassification` iff. This is a PARTIAL formalization checkpoint, not final Lean certification. No Palomar or publication work has begun. S057/D56-01 alone is ready. Owner order Lean -> Palomar -> paper -> arXiv -> E-JC; independent CAND-03 pre-submission consultation remains skipped, E-JC's ordinary review remains planned.
+
+Stage gate: **Lean remains PARTIAL** until a proof term for `FrozenClassification` itself passes the full pinned suite. Palomar requirements may be reconsidered only in a later session after that explicit result. The S042 search non-hit does not certify novelty.

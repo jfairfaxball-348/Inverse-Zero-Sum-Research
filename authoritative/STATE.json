@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S055",
-  "next_session": "S056",
-  "next_brief": "authoritative/S056_CANDIDATE_3_FROZEN_CLASSIFICATION_COMPOSITION_BRIEF.md",
+  "next_session": "S057",
+  "next_brief": "authoritative/S057_CANDIDATE_3_DIRECT_CONVERSE_CONTINUATION_BRIEF.md",
   "stage": "P5_CAND03_LEAN_FORMALIZATION_PARTIAL",
-  "programme_status": "S055_COMPLETED_D54_01_S9_PACKING_ELIMINATION_PROVED_S056_READY",
+  "programme_status": "S056_PARTIAL_D55_01_FROZEN_NECESSITY_PROVED_DIRECT_CONVERSE_UNPROVED_S057_READY",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 exact mathematical classification internally proved and independently reverified; S042 documented no equivalent/stronger prior-art hit but does not certify novelty. S055 now kernel-checks s9PackingEliminationInput : S9PackingEliminationInput in pinned Lean 4.19.0/mathlib; FrozenClassification remains an unproved proposition. Next S056/D55-01 is restricted to the final frozen iff composition; Palomar and publication work blocked.",
+  "candidate_under_due_diligence": "CAND-03 exact classification internally proved and independently reverified; S056 adds a proof term for the exact frozen necessity direction, including squarefree/short-free representatives and an original-position 24-permutation. FrozenClassification itself is still unproved; the direct tripleRep avoidance converse is the next formal bridge. Palomar and publication stages remain blocked.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -117,7 +117,7 @@
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; it remains CAND-02-specific and does not transfer reviewer or status authority to CAND-03.",
     "Treat the S042 deep non-hit conservatively: it supports the authorized workflow transition but is not an absolute proof of novelty or prior openness.",
-    "Complete and pin the exact CAND-03 Lean formalization before Palomar registration. S052 closes Length15NonzeroInput; continue only with the s=9 elimination, then compose the closed branches into FrozenClassification. If formalization exposes a semantic/proof defect, stop downstream progression and reconcile it.",
+    "Complete and pin the full FrozenClassification iff in the fixed positional Lean model before any Palomar activity. Necessity is composed in S056; direct canonical triple-power avoidance sufficiency and position-reindex transport remain. Stop downstream progression on a formal semantic defect.",
     "After Lean succeeds, recheck then-current Palomar requirements before registering the pinned verified result.",
     "Proceed only in the owner-authorized order: Lean formalization -> Palomar registration -> paper drafting -> arXiv preprint -> E-JC submission."
   ],
@@ -402,6 +402,11 @@
       "id": "S055",
       "status": "COMPLETED",
       "record": "sessions/S055/CLOSEOUT.md"
+    },
+    {
+      "id": "S056",
+      "status": "PARTIAL",
+      "record": "sessions/S056/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -429,7 +434,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S052/D51-01 completed after kernel-checking length15NonzeroInput : Length15NonzeroInput. The next exact Lean proof-spine obligation is the S040 s=9 representative/singleton-transition elimination; S053/D52-01 is restricted to that branch. FrozenClassification remains downstream. Palomar remains blocked until FrozenClassification itself has a proof term and the full pinned check suite passes.",
+  "current_route_disposition": "S056/D55-01 closed PARTIAL on the existing S039/S040 composition. Its s=8 packing from s9 elimination, eight constant blocks, distinct short-free representative values and original-position permutation yield the necessity direction. Direct AvoidsInnerJointPair for tripleRep of squarefree short-free U is the earliest unproved converse bridge. S057/D56-01 continues only that exact bridge and the final unchanged FrozenClassification iff.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -690,5 +695,13 @@
   "s054_formalization_date": "2026-10-08",
   "cand03_s9_certificate_transport": "PARTIAL; survivor singleton/count/sum profile and positional exchange auxiliaries; S9PackingEliminationInput and FrozenClassification unproved; S055/D54-01 next",
   "s055_formalization_date": "2026-10-08",
-  "cand03_s9_packing_elimination": "COMPLETED S055/D54-01: pinned GitHub Actions run 37762312828 proves s9PackingEliminationInput : S9PackingEliminationInput using certificate-level survivor swap, exact fibre-count transitions, length-15 singleton identities, full s=9 packed-block sum zero, and a second nonconstant two-block contradiction. FrozenClassification has no proof term and was not attempted in S055."
+  "cand03_s9_packing_elimination": "COMPLETED S055/D54-01: pinned GitHub Actions run 37762312828 proves s9PackingEliminationInput : S9PackingEliminationInput using certificate-level survivor swap, exact fibre-count transitions, length-15 singleton identities, full s=9 packed-block sum zero, and a second nonconstant two-block contradiction. FrozenClassification has no proof term and was not attempted in S055.",
+  "s056_formalization_date": "2026-10-08",
+  "cand03_frozen_classification_composition": {
+    "status": "PARTIAL_NECESSITY_PROOF_PRESENT_CONVERSE_UNPROVED",
+    "source": "InverseZeroSum/Candidate3.lean",
+    "proved": "s056_frozen_necessity",
+    "remaining_bridge": "For each squarefree short-free PosSeq 8 U, prove AvoidsInnerJointPair (tripleRep U) directly from the positional short-zero witnesses; then transport along IsTriplePower and close FrozenClassification.",
+    "palomar": "BLOCKED"
+  }
 }
