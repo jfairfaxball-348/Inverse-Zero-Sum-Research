@@ -2803,7 +2803,8 @@ theorem representativeSet_update_split {s : ℕ}
     by_cases hkj : k = j
     · apply Finset.mem_insert.mpr
       left
-      simpa [hkj] using hval.symm
+      subst k
+      simpa [Function.update] using hval.symm
     · apply Finset.mem_insert.mpr
       right
       refine Finset.mem_image.mpr
@@ -2847,7 +2848,7 @@ theorem sum_erase_insert_exchange
   rw [Finset.sum_insert hxErase]
   have hSplit := Finset.sum_erase_add A f hy
   calc
-    (∑ i ∈ A.erase y, f i) + f x + f y =
+    f x + (∑ i ∈ A.erase y, f i) + f y =
         (∑ i ∈ A.erase y, f i) + f y + f x := by
       abel
     _ = (∑ i ∈ A, f i) + f x := by
