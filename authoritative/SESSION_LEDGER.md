@@ -1026,6 +1026,14 @@ D45-01 closes the second threshold interface without importing `eta(C_3^3)=17` a
 - **No successor prompt while B-014 remains active.** Human metadata/compatibility decision required before any future numbered technical unit.
 - Main-tree GitHub Actions outcome must be confirmed externally after checkpointing; authority-check and Lean validation are not Palomar verification.
 
-## Current in-progress unit (not a completed session checkpoint)
+## Historical S059 in-progress checkpoint (superseded by partial closeout below)
 
 **S059 — ongoing; draft PR #19** `s059-palomar-compat`. Explicit owner permission resolves historical B-014 (D-161); frozen Lean 4.19 on main remains verified. The 4.35 compatibility build and official Palomar full preflight are pending/not passed. This is an **in-progress notice**, not a session closeout or a claim of registration readiness. No next session is scheduled. On validation/closeout, add S059's actual outcome and checkpoint exactly once.
+
+## S059 partial closeout — B-015 active
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S059 | PARTIAL P58-01; B-015 ACTIVE | `0d828d51264e11ca372830722726a836035a4b21` (owner-authority merge `d54dcdc0d7c0ae6e92f57319e2456f7716fca9c7`) | Exact iff migrated to Lean 4.35 and passed `lake build`, placeholder and authority CI 37809075335; PalomarTemplate statement Comparator, con-ron (8731 declarations), NanoDa and default Lean kernel CI 37809065386 PASS. Official full reusable PalomarSubmission CI queued on Namespace runner, not passed; no registration-ready release or downstream action. | [S059 closeout](../sessions/S059/CLOSEOUT.md) |
+
+B-014 was resolved by explicit owner port/attribution approval. **B-015 ACTIVE**, requiring official full verification runner capacity or approved equivalent. Next session null; prompt suppressed. Earlier S058 B-014 and S059 in-progress lines are dated history.

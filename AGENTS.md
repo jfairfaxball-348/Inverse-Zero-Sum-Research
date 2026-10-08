@@ -7,7 +7,7 @@ New explicit instructions from John govern the task; record changes to scope or
 preferences before relying on them in subsequent sessions.
 
 
-**CAND-03-specific current exception (owner D-161):** Independent pre-submission CAND-03 consultation is skipped under the post-S041 owner decision; ordinary E-JC editorial/referee review remains the intended future human review. S057 proved the frozen iff in Lean 4.19; S059 is an approved separate Palomar compatibility port, not a new proof claim. Palomar intake and permanent registration remain actions for the owner alone, and a queued reusable workflow does not count as passed verification.
+**CAND-03-specific current exception (owner D-161):** Independent pre-submission CAND-03 consultation is skipped under the post-S041 owner decision; ordinary E-JC editorial/referee review remains the intended future human review. S057 proved the frozen iff in Lean 4.19; S059 completed a proof-preserving Lean 4.35 compatibility port with successful local Comparator/NanoDa/con-ron and authority CI. The official full PalomarSubmission reusable CI has not run on its required Namespace-hosted runner; B-015 is active, and this is not a registration certificate. Palomar intake and permanent registration remain actions for the owner alone, and a queued reusable workflow does not count as passed verification.
 
 ## Non-negotiable scope
 

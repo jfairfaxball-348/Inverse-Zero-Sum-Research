@@ -859,3 +859,7 @@ Palomar's official review after Comparator/NanoDa is an **AI editorial filter**,
 ## S059 current technical gate
 
 A pending Palomar automated verifier is not a completed editorial review, an independent human review, or journal referee review. No CAND-03 human consultation is planned; ordinary E-JC referee review remains future. Xue Li's historical CAND-02 Stage-1 reply remains pending. The owner's D-161 permission concerns technical port and metadata only, not outreach.
+
+## S059 verification/review boundary
+
+Lean kernel, NanoDa and con-ron independent **machine** replay passed, CI 37809065386; this is not mathematical human peer review or Palomar editorial acceptance. The official Palomar full verification job has not run (B-015). Independent CAND-03 pre-submission consultation is explicitly skipped, ordinary E-JC referee review remains future, Xue Li CAND-02 reply pending. No contact or consultation was made.

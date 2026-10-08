@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S058",
+  "last_completed_session": "S059",
   "next_session": null,
   "next_brief": null,
-  "stage": "P6_CAND03_PALOMAR_COMPATIBILITY_PORT_IN_PROGRESS",
-  "programme_status": "S058_COMPLETED_B014_RESOLVED_OWNER_AUTHORIZED_S059_DRAFT_PR19_UNVERIFIED",
+  "stage": "P6_CAND03_PALOMAR_FULL_CI_RUNNER_BLOCKED",
+  "programme_status": "S059_PARTIAL_LEAN435_BUILD_AND_LOCAL_COMPARATOR_INDEPENDENT_KERNELS_PASS_B015_OFFICIAL_FULL_CI_UNRUN",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 frozen iff proved in pinned Lean 4.19 on main (CI 37800488981 success); Palomar compatible Lean 4.35 port IN PROGRESS in draft PR #19; no new mathematical claim or novelty certification; no Palomar registration/submission/paper/arXiv/E-JC.",
+  "candidate_under_due_diligence": "CAND-03 exact iff proved and rechecked under Lean 4.35.0-rc2, local PalomarTemplate Comparator/NanoDa/con-ron PASSED; PalomarSubmission official full CI QUEUED on nscloud execution runner, NOT PASSED; no registration, paper, arXiv or E-JC.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -114,16 +114,19 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [],
+  "active_owner_blockers": [
+    "B-015"
+  ],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; it remains CAND-02-specific and does not transfer reviewer or status authority to CAND-03.",
     "Treat the S042 deep non-hit conservatively: it supports the authorized workflow transition but is not an absolute proof of novelty or prior openness.",
     "The exact FrozenClassification iff is proved in Lean and pinned at S057; do not assume mathematical novelty or publication readiness from kernel verification.",
     "Proceed only in the owner-authorized order: Lean formalization -> Palomar registration -> paper drafting -> arXiv preprint -> E-JC submission.",
     "B-014 resolved 2026-10-08: owner authorized a separate Palomar port and approved John Fairfax-Ball human author/responsible-maintainer attribution. No further approval needed for ordinary reversible engineering, but no portal intake or registration was authorized.",
-    "A subsequent Palomar submission, GitHub OAuth/write-access check, public verification workflow, and final permanent registration each require applicable explicit owner authorization/action. None is presumed from P57-01."
+    "A subsequent Palomar submission, GitHub OAuth/write-access check, public verification workflow, and final permanent registration each require applicable explicit owner authorization/action. None is presumed from P57-01.",
+    "B-015 ACTIVE: official full PalomarSubmission reusable verification at pinned pipeline commit requires Namespace-hosted nscloud-ubuntu-24.04-amd64-16x32-with-features runner. Current jobs are queued without a verifier result. Arrange runner availability or an explicitly Palomar-approved official verification alternative; do not represent local success as full official preflight or release a registration-ready SHA before this is resolved."
   ],
-  "next_prompt_status": "NONE",
+  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -419,6 +422,11 @@
       "id": "S058",
       "status": "COMPLETED",
       "record": "sessions/S058/CLOSEOUT.md"
+    },
+    {
+      "id": "S059",
+      "status": "PARTIAL",
+      "record": "sessions/S059/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -446,7 +454,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S059 technical Palomar compatibility migration underway on draft PR #19, owner explicitly authorized Lean/mathlib 4.35.0-rc2 port and John Fairfax-Ball author/maintainer attribution. Main retains S057 proved frozen iff under Lean 4.19 (main CI 37800488981 green). First migrated Lean 4.35 CI found compatibility errors; corrected WIP branch CI still pending. Official full Palomar reusable workflow invoked but Namespace runner jobs queued, NOT passed. No registration-ready commit, portal intake or registration; owner will register only after verified passing snapshot. Later paper/arXiv/E-JC untouched.",
+  "current_route_disposition": "S059 source/module/metadata port validated on source checkpoint 7b4648b81278655409a43e847e7f384daed32872: Lean 4.35 build + authority CI 37809075335 PASS; local PalomarTemplate Comparator, con-ron (8731 declarations), NanoDa and default Lean kernel CI 37809065386 PASS; original iff mathematical definition unchanged. Official full reusable PalomarSubmission workflow requires a Namespace-hosted runner and remains queued, not passed. B-015 blocks registration-ready commit, not mathematical proof. No Palomar portal submission, registration, paper, arXiv, E-JC or outreach; owner action required to provision compatible runner or approved official alternate verification.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -741,7 +749,7 @@
     "submitted": false
   },
   "s059_port": {
-    "status": "IN_PROGRESS_DRAFT_PR_19_NOT_VERIFIED",
+    "status": "PARTIAL_TECHNICAL_LOCAL_PASS_OFFICIAL_FULL_QUEUE_BLOCKED",
     "owner_authorized_date": "2026-10-08",
     "author": "John Fairfax-Ball",
     "responsible_maintainer": "John Fairfax-Ball",
@@ -752,6 +760,16 @@
     "full_preflight_status": "QUEUED_OR_UNVERIFIED",
     "portal_submitted": false,
     "registered": false,
-    "registration_commit": null
-  }
+    "registration_commit": null,
+    "lean_build": "PASS GitHub Actions 37809075335",
+    "local_comparator": "PASS GitHub Actions 37809065386",
+    "independent_kernels": [
+      "Lean default",
+      "NanoDa",
+      "con-ron"
+    ],
+    "con_ron_accepted_declarations": 8731,
+    "official_full_preflight": "QUEUED_NOT_PASSED_NAMESPACE_RUNNER_B015"
+  },
+  "s059_formalization_date": "2026-10-08"
 }

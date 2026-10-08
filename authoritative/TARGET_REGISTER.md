@@ -1453,3 +1453,7 @@ Exact mathematical target and frozen iff **unchanged**. S057 kernel-checked the 
 ## S059 live port status
 
 The selected frozen CAND-03 theorem, sequence quantifiers, positions and proof meaning are unchanged. Original Lean 4.19 proof validated on main CI 37800488981. The ongoing Palomar 4.35 technical port on PR #19 is NOT YET verified; an initial compatibility build failed. This is **not** a counterexample or loss of the original theorem proof. S042 no-hit is not a priority or novelty certificate. No registration has occurred.
+
+## S059 proved Lean 4.35 target and verification status
+
+Selected exact `FrozenClassification` iff mathematical semantics remain unchanged (original 24-position avoidance and permutation equivalence), now proof-checked under Lean 4.35.0-rc2, with verified matching Challenge source. CI 37809075335 PASS; local PalomarTemplate Comparator con-ron/NanoDa/default kernel CI 37809065386 PASS. This is a FORMALIZED mathematical claim, **not** proof of originality/prior openness, independent human review, official full PalomarSubmission preflight pass, registration, or journal acceptance. B-015 active only for official Namespace runner infrastructure.
