@@ -1,0 +1,11 @@
+# S057 closeout — exact CAND-03 frozen iff proved in Lean
+
+Date: 2026-10-08. **Status: COMPLETED D56-01.** Incoming authoritative main: `3fb24ea9caed0ff5b595da5778343c2c1b90757b`, equal to the supplied preceding main checkpoint; no intervening changes and no earlier S057 session. Work isolated in draft PR #18. The containing synchronized commit cannot embed its own SHA: verify actual outgoing remote SHA/tree and main CI externally.
+
+The literal unchanged `FrozenClassification` iff is proved by `frozenClassification : FrozenClassification`. S056 supplies verified necessity with squarefree short-free U and the exact permutation of all 24 original positions. S057 proves direct converse: zero-sum pairs cannot occur; any zero-sum triple in `tripleRep U` is exactly the entire three-position fibre for one base value; distinct fibres are disjoint and identical ones have zero full intersection sum. Explicit inverse-permutation pullback then transfers avoidance to any `IsTriplePower S U`. No literature sufficiency theorem was silently assumed.
+
+The pinned proof-head full suite passed at commit `b260652a6b500b3b6ed602610c85bddc000fff96`, GitHub Actions run 37787906708: `lake build`, forbidden Lean placeholder scan and `scripts/check_authority.py`. See `VALIDATION.md`. The synchronized outgoing tree must pass the same pinned suite before main advancement. No unsound assumptions, `native_decide`, hidden oracle or opaque catalogue.
+
+The encoded theorem's kernel verification does not establish novelty, previous openness, significance, independent human peer review or publication acceptance. The S042 prior-art non-hit remains non-certifying. No Palomar requirements were checked and no Palomar registration, paper, arXiv, E-JC or outreach work occurred.
+
+**Active owner blockers: NONE.** Exactly one ready successor: S058/P57-01 for a bounded live Palomar registration-requirements and eligibility preflight only. Any real owner-dependent account/submission/authorization step must be recorded as a blocker rather than assumed. Owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC. Independent CAND-03 pre-submission consultation skipped; ordinary E-JC editorial/referee review intended. Xue Li Stage-1 remains CAND-02-specific, reply pending.

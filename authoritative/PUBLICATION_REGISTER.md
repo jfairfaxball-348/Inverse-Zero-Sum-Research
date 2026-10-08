@@ -784,3 +784,7 @@ S055 closes the s=9 certificate-level Lean elimination but does NOT close `Froze
 ## S056 publication-stage boundary
 
 No final Lean iff theorem, Palomar registration, manuscript, arXiv posting or E-JC submission exists. The proved necessity half does not open Palomar. Ordered route and E-JC referee intentions unchanged. The documented S042 prior-art non-hit is not an absolute novelty certificate.
+
+## S057 Lean-first milestone achieved; Palomar still pending
+
+The exact unchanged CAND-03 iff now has a kernel-checked proof term in pinned Lean (proof-head CI 37787906708). S057 did **not** check/register on Palomar, prepare a manuscript, post an arXiv preprint, submit to E-JC or contact anyone. Next S058 is a bounded live Palomar requirement/registration preflight. The publication gate indicates workflow eligibility only, not submission approval or acceptance. S042 non-hit is non-certifying. The owner order Lean -> Palomar -> paper -> arXiv -> E-JC remains.

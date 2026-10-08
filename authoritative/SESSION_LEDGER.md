@@ -1004,3 +1004,13 @@ D45-01 closes the second threshold interface without importing `eta(C_3^3)=17` a
 - Live main matched the supplied checkpoint, with no intervening commits and no earlier S056 session. Isolated draft PR #17.
 - Pinned proof-head and terminal authority CI recorded in [validation](../sessions/S056/VALIDATION.md); no unchecked placeholders or later-stage actions.
 - Active owner blockers: NONE. Only S057/D56-01 is promoted to close the direct positional converse and the unchanged frozen iff.
+
+## S057 completed checkpoint
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S057 | COMPLETED D56-01 FROZEN IFF | `3fb24ea9caed0ff5b595da5778343c2c1b90757b` | Kernel-checked `frozenClassification : FrozenClassification`: exact direct canonical converse plus position-permutation transport; next S058 Palomar preflight only | [S057 closeout](../sessions/S057/CLOSEOUT.md) |
+
+- Live main matched incoming SHA; no prior S057 directory. Proof on isolated draft PR #18.
+- Proof-head CI 37787906708: pinned `lake build`, forbidden-placeholder scan, authority checker PASS.
+- Active owner blockers: NONE; no Palomar, paper, preprint, E-JC or outreach actions in S057.

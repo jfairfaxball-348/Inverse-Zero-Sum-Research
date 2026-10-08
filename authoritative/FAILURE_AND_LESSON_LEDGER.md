@@ -491,3 +491,7 @@ The S053 numeric transition theorem and S054 positional survivor profile became 
 ## S056 formalization lesson
 
 The complete s=8 and s=9 certificate proof interfaces do not by themselves close a commutative iff. Necessity requires a faithful 24-position permutation, and the reverse implication requires a *direct* Lean proof for positional short-zero intersections of `tripleRep U`. The 2024 construction can explain the mathematics but cannot act as a postulated Lean proof. Retain the checked necessity and make the exact direct converse the sole next formal bridge.
+
+## S057 compositional proof lesson
+
+A direct canonical three-copy avoidance proof must classify actual positional short-zero witnesses, rather than inferring the indexed intersection condition from support alone. Inverse-permutation transport requires explicitly identifying the pulled-back sequence and rewriting the mapped intersection sum; initial proof-head elaboration errors were local definitional-rewriting issues, repaired without any mathematical target change. The final proof-head pinned suite passed (CI 37787906708). No mathematical route failure or new owner strategy blocker is created.

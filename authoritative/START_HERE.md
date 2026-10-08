@@ -17,7 +17,7 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
 ## Current state
 
-**S056 closes PARTIAL. The pinned Lean proof now contains `s056_frozen_necessity`, deriving squarefree short-free length-eight values and a permutation of all 24 original positions from the completed S039, s=8 and s=9 inputs. `FrozenClassification` remains UNPROVED because direct triple-power avoidance and reindex transport are still missing. S057/D56-01 is the sole next unit; Palomar and publication remain blocked.**
+**S057 COMPLETED. `frozenClassification : FrozenClassification` is kernel-checked for the literal frozen iff with original positional avoidance and a 24-position permutation. The pinned proof-head CI 37787906708 passed. Palomar has not yet been checked or registered; S058 is READY only for a registration-requirements preflight.**
 
 Selected target:
 
@@ -32,10 +32,10 @@ length 8.
 - Target gate: OPEN.
 - Publication gate: OPEN as workflow eligibility; E-JC remains intended after
   the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN for S057/D56-01 direct canonical triple-power converse and the exact unchanged iff only.
+- Mathematical-investigation gate: OPEN; S058 is a Palomar requirements preflight with no new mathematical proof work.
 - External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
 - Active owner blockers: NONE.
-- Next session: S057 / D56-01 prove the exact direct converse and finish `FrozenClassification`.
+- Next session: S058 / P57-01 check actual Palomar registration requirements and prepare a bounded registration disposition.
 - Live next-session prompt: `authoritative/NEXT_SESSION_PROMPT.md`.
 - S042 status: **no exact/equivalent/stronger-implying prior art located in the
   documented deep audit**; this is not a proof of novelty or prior openness.
@@ -975,3 +975,7 @@ The exact mathematical classification and S043 positional semantics are unchange
 ## S056 PARTIAL — frozen necessity proof; converse still unproved
 
 S056/D55-01 composes the certified S039/s=8/s=9 spine into `s056_frozen_necessity`: every avoiding positional length-24 sequence is a permutation of `tripleRep U` for a squarefree short-free length-eight U. It uses the eight disjoint constant three-blocks and constructs the position permutation, not a support-only equality. The earliest missing bridge is direct `AvoidsInnerJointPair (tripleRep U)` under `Squarefree U ∧ ShortFree U`, followed by elementary reindexing to finish the unchanged `FrozenClassification` iff. This is a PARTIAL formalization checkpoint, not final Lean certification. No Palomar or publication work has begun. S057/D56-01 alone is ready. Owner order Lean -> Palomar -> paper -> arXiv -> E-JC; independent CAND-03 pre-submission consultation remains skipped, E-JC's ordinary review remains planned.
+
+## S057 completed — full frozen Lean iff
+
+S057/D56-01 is COMPLETED: the pinned Lean theorem `frozenClassification : FrozenClassification` proves the exact unchanged CAND-03 iff, using S056 necessity, direct canonical positional avoidance and inverse-permutation transport. Proof-head CI run 37787906708 passed `lake build`, the forbidden-placeholder scan and the authority checker. The S042 prior-art non-hit is not a novelty certificate. Palomar has NOT been checked or registered, and no paper, arXiv preprint or E-JC submission has begun. S058 may perform only a current Palomar requirements/registration preflight; owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC. Independent CAND-03 pre-submission consultation is skipped; ordinary E-JC editorial/referee review is intended.

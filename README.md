@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-03 Lean formalization, PARTIAL. S056 retains the proved frozen necessity direction and exact 24-position permutation; `FrozenClassification` still has no proof term because the direct triple-power positional converse is missing. S057/D56-01 is READY for that exact bridge. Palomar and all publication stages remain blocked.**
+**Current stage: CAND-03 exact Lean formalization COMPLETED. `frozenClassification : FrozenClassification` proves both directions with unchanged positional semantics (pinned proof-head CI 37787906708). Palomar is not registered; S058 is READY for its requirements preflight. Later paper, arXiv and E-JC steps have not begun.**
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -514,3 +514,7 @@ The pinned Lean project now proves `s9PackingEliminationInput : S9PackingElimina
 ## S056 PARTIAL — frozen necessity proof; converse still unproved
 
 S056/D55-01 composes the certified S039/s=8/s=9 spine into `s056_frozen_necessity`: every avoiding positional length-24 sequence is a permutation of `tripleRep U` for a squarefree short-free length-eight U. It uses the eight disjoint constant three-blocks and constructs the position permutation, not a support-only equality. The earliest missing bridge is direct `AvoidsInnerJointPair (tripleRep U)` under `Squarefree U ∧ ShortFree U`, followed by elementary reindexing to finish the unchanged `FrozenClassification` iff. This is a PARTIAL formalization checkpoint, not final Lean certification. No Palomar or publication work has begun. S057/D56-01 alone is ready. Owner order Lean -> Palomar -> paper -> arXiv -> E-JC; independent CAND-03 pre-submission consultation remains skipped, E-JC's ordinary review remains planned.
+
+## S057 COMPLETED — exact frozen classification kernel-checked
+
+S057/D56-01 is COMPLETED: the pinned Lean theorem `frozenClassification : FrozenClassification` proves the exact unchanged CAND-03 iff, using S056 necessity, direct canonical positional avoidance and inverse-permutation transport. Proof-head CI run 37787906708 passed `lake build`, the forbidden-placeholder scan and the authority checker. The S042 prior-art non-hit is not a novelty certificate. Palomar has NOT been checked or registered, and no paper, arXiv preprint or E-JC submission has begun. S058 may perform only a current Palomar requirements/registration preflight; owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC. Independent CAND-03 pre-submission consultation is skipped; ordinary E-JC editorial/referee review is intended.

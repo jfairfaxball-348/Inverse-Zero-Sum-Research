@@ -1073,3 +1073,10 @@ authorized by this formalization checkpoint.
 | D-156 | 2026-10-08 | Promote only S057/D56-01: establish direct canonical triple-power avoidance for squarefree short-free U, transport it under `IsTriplePower`, and close the exact frozen iff. No Palomar work until complete Lean proof plus full pinned suite. | S056 partial stop rule; owner Lean-first order. |
 
 **Active owner blockers: NONE.** Mathematical-investigation gate OPEN for S057 formalization only; external-review gate CLOSED, independent CAND-03 pre-submission consultation skipped. E-JC ordinary review planned; Xue Li CAND-02 reply pending.
+
+## S057 D56-01 completion and successor
+
+| D-157 | 2026-10-08 | Close S057/D56-01 as **COMPLETED**: kernel-check the original `FrozenClassification` iff via `s056_frozen_necessity`, direct `s057_canonical_avoids` and exact positional permutation transport. | Pinned proof-head CI 37787906708; S057 Lean and validation records. |
+| D-158 | 2026-10-08 | Promote **only S058/P57-01** for a current official Palomar eligibility/registration-requirements preflight. No retroactive novelty inference, manuscript, arXiv, E-JC submission or outreach. Registration itself was not performed in S057. | Lean-first owner order, S057 success and publication-stage boundary. |
+
+**Active owner blockers: NONE.** No Palomar registration is assumed. Independent pre-submission CAND-03 consultation skipped; E-JC ordinary review remains intended. Xue Li Stage-1 is CAND-02-specific and reply pending.
