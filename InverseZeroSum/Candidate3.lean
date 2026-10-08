@@ -3251,4 +3251,166 @@ theorem s9_certificate_swap_fixed_complement
     rw [hOldSplit, hOldSingleton] at hSelectOld
     exact add_right_cancel hSelectOld
 
+
+/-- An s=9 packing has no remainder: each of its nine disjoint short-zero
+blocks sums to zero, so its original length-24 sequence sums to zero. -/
+theorem s9_certificate_packed_sum_zero
+    {S : PosSeq 24} (c : S039PackingCertificate S)
+    (hs : c.s = 9) :
+    (∑ i : Fin 24, finiteModelEquiv (S i : G)) = 0 := by
+  classical
+  have hr : c.r = 0 := by
+    rcases c.signature with h | h | h | h <;> omega
+  have hEmpty :
+      (Finset.univ \ blockUnion c.blocks) = ∅ := by
+    apply Finset.card_eq_zero.mp
+    simpa [hr] using c.remainder_card
+  have hAll : blockUnion c.blocks = Finset.univ := by
+    ext i
+    constructor
+    · intro _
+      exact Finset.mem_univ i
+    · intro _
+      by_contra hnot
+      have hi : i ∈ (Finset.univ \ blockUnion c.blocks) :=
+        Finset.mem_sdiff.mpr ⟨Finset.mem_univ i, hnot⟩
+      simpa [hEmpty] using hi
+  have hPair :
+      ((Finset.univ : Finset (Fin c.s)) : Set (Fin c.s)).PairwiseDisjoint
+        c.blocks := by
+    intro i _hi j _hj hij
+    exact c.pairwise_disjoint i j hij
+  let f : Fin 24 → F3T := fun i => finiteModelEquiv (S i : G)
+  have hBlockSum :
+      (∑ i ∈ blockUnion c.blocks, f i) =
+      ∑ j : Fin c.s, ∑ i ∈ c.blocks j, f i := by
+    simpa [blockUnion] using (Finset.sum_biUnion hPair (f := f))
+  have hBlocksZero :
+      ∀ j : Fin c.s, (∑ i ∈ c.blocks j, f i) = 0 := by
+    intro j
+    have hz := congrArg finiteModelEquiv (c.block_shortZero j).2.2
+    simpa [posSum, f] using hz
+  calc
+    (∑ i : Fin 24, finiteModelEquiv (S i : G)) =
+        (∑ i ∈ blockUnion c.blocks, f i) := by simp [hAll, f]
+    _ = ∑ j : Fin c.s, ∑ i ∈ c.blocks j, f i := hBlockSum
+    _ = 0 := by simp [hBlocksZero]
+
+/-- In the s=9 zero-sum packing, the eight representatives complementary to a
+nonconstant packed block must have exactly zero sum. -/
+theorem s9_certificate_swap_fixed_complement_zero
+    {S : PosSeq 24} (c : S039PackingCertificate S)
+    (hs : c.s = 9)
+    (rep : Fin c.s → Fin 24) (hRep : ∀ j, rep j ∈ c.blocks j)
+    (j : Fin c.s) {y : Fin 24} (hy : y ∈ c.blocks j)
+    (hVal : S (rep j) ≠ S y) :
+    (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+      finiteModelEquiv (S (rep k) : G)) = 0 := by
+  calc
+    (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+      finiteModelEquiv (S (rep k) : G)) =
+      ∑ i : Fin 24, finiteModelEquiv (S i : G) :=
+        s9_certificate_swap_fixed_complement c hs rep hRep j hy hVal
+    _ = 0 := s9_certificate_packed_sum_zero c hs
+
+/-- Updating exactly one selected representative retains the block-membership
+condition needed by the certificate's universal residual quantifier. -/
+theorem s9_certificate_update_representative_mem
+    {S : PosSeq 24} (c : S039PackingCertificate S)
+    (rep : Fin c.s → Fin 24)
+    (hRep : ∀ j, rep j ∈ c.blocks j)
+    (j : Fin c.s) {y : Fin 24} (hy : y ∈ c.blocks j) :
+    ∀ k, (Function.update rep j y) k ∈ c.blocks k := by
+  intro k
+  by_cases hkj : k = j
+  · subst k
+    simpa using hy
+  · simpa [Function.update, hkj] using hRep k
+
+/-- S055/D54-01: the three packed two-term atoms force contradictory
+complementary sums when a second nonconstant block representative is varied. -/
+theorem s9PackingEliminationInput : S9PackingEliminationInput := by
+  classical
+  intro S c hs
+  have hl : c.l = 6 := by
+    rcases c.signature with h | h | h | h <;> omega
+  let j : Fin c.s := ⟨6, by omega⟩
+  let k : Fin c.s := ⟨7, by omega⟩
+  have hjk : j ≠ k := by
+    intro heq
+    have hval := congrArg Fin.val heq
+    norm_num [j, k] at hval
+  have hkj : k ≠ j := Ne.symm hjk
+  have hjTwo : (c.blocks j).card = 2 := by
+    simpa [j, hl] using c.block_card j
+  have hkTwo : (c.blocks k).card = 2 := by
+    simpa [k, hl] using c.block_card k
+  obtain ⟨x, hx, y, hy, hxy⟩ :=
+    shortZero_two_block_has_distinct_values (c.block_shortZero j) hjTwo
+  obtain ⟨v, hv, w, hw, hvw⟩ :=
+    shortZero_two_block_has_distinct_values (c.block_shortZero k) hkTwo
+  let base : Fin c.s → Fin 24 :=
+    fun i => Classical.choose (c.block_shortZero i).1
+  have hBase : ∀ i, base i ∈ c.blocks i := by
+    intro i
+    exact Classical.choose_spec (c.block_shortZero i).1
+  let repJ : Fin c.s → Fin 24 := Function.update base j x
+  let repX : Fin c.s → Fin 24 := Function.update repJ k v
+  let repY : Fin c.s → Fin 24 := Function.update repJ k w
+  have hRepJ : ∀ i, repJ i ∈ c.blocks i :=
+    s9_certificate_update_representative_mem c base hBase j hx
+  have hRepX : ∀ i, repX i ∈ c.blocks i :=
+    s9_certificate_update_representative_mem c repJ hRepJ k hv
+  have hRepY : ∀ i, repY i ∈ c.blocks i :=
+    s9_certificate_update_representative_mem c repJ hRepJ k hw
+  have hRepXJ : repX j = x := by
+    simp [repX, repJ, Function.update, hjk]
+  have hRepYJ : repY j = x := by
+    simp [repY, repJ, Function.update, hjk]
+  have hValX : S (repX j) ≠ S y := by
+    simpa [hRepXJ] using hxy
+  have hValY : S (repY j) ≠ S y := by
+    simpa [hRepYJ] using hxy
+  have hZeroX :=
+    s9_certificate_swap_fixed_complement_zero
+      c hs repX hRepX j hy hValX
+  have hZeroY :=
+    s9_certificate_swap_fixed_complement_zero
+      c hs repY hRepY j hy hValY
+  let f : Fin 24 → F3T := fun i => finiteModelEquiv (S i : G)
+  let E : Finset (Fin c.s) := (Finset.univ : Finset (Fin c.s)).erase j
+  have hEq :
+      (∑ i ∈ E, f (repX i)) = ∑ i ∈ E, f (repY i) := by
+    exact hZeroX.trans hZeroY.symm
+  have hkE : k ∈ E :=
+    Finset.mem_erase.mpr ⟨hkj, Finset.mem_univ k⟩
+  have hRepXK : repX k = v := by
+    simp [repX]
+  have hRepYK : repY k = w := by
+    simp [repY]
+  have hOther :
+      (∑ i ∈ E.erase k, f (repX i)) =
+      ∑ i ∈ E.erase k, f (repY i) := by
+    apply Finset.sum_congr rfl
+    intro i hi
+    have hik : i ≠ k := (Finset.mem_erase.mp hi).1
+    simp [repX, repY, Function.update, hik]
+  have hSplitX :
+      (∑ i ∈ E, f (repX i)) =
+        (∑ i ∈ E.erase k, f (repX i)) + f v := by
+    calc
+      _ = (∑ i ∈ E.erase k, f (repX i)) + f (repX k) :=
+        (Finset.sum_erase_add E (fun i => f (repX i)) hkE).symm
+      _ = _ := by rw [hRepXK]
+  have hSplitY :
+      (∑ i ∈ E, f (repY i)) =
+        (∑ i ∈ E.erase k, f (repY i)) + f w := by
+    calc
+      _ = (∑ i ∈ E.erase k, f (repY i)) + f (repY k) :=
+        (Finset.sum_erase_add E (fun i => f (repY i)) hkE).symm
+      _ = _ := by rw [hRepYK]
+  rw [hSplitX, hSplitY, hOther] at hEq
+  have hValues : f v = f w := add_left_cancel hEq
+  exact hvw (Subtype.ext (finiteModelEquiv.injective hValues))
+
 end InverseZeroSum.Candidate3
