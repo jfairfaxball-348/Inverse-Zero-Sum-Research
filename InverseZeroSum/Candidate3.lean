@@ -2781,6 +2781,11 @@ theorem filter_card_exchange
   by_cases hvx : f x = v <;> by_cases hvy : f y = v
   all_goals simp [Finset.filter_insert, Finset.filter_erase,
     hvx, hvy, hxErase, hx, hy, Finset.card_erase_of_mem]
+  all_goals
+    have hPos : 0 < (A.filter (fun z => f z = v)).card := by
+      apply Finset.card_pos.mpr
+      exact ⟨y, Finset.mem_filter.mpr ⟨hy, hvy⟩⟩
+    omega
 
 
 end InverseZeroSum.Candidate3
