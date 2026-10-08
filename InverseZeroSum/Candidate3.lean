@@ -191,7 +191,7 @@ def S039PackingInput : Prop :=
 theorem three_nsmul_G (x : G) : (3 : ℕ) • x = 0 := by
   ext i
   change (3 : ℕ) • x i = 0
-  exact ZModModule.char_nsmul_eq_zero 3 (x i)
+  fin_cases (x i) <;> decide
 
 theorem singleton_not_shortZero {n : ℕ} (S : PosSeq n) (i : Fin n) :
     ¬ ShortZero S {i} := by
@@ -2544,10 +2544,18 @@ theorem length15NonzeroInput : Length15NonzeroInput := by
   have hWeightedPlus :
       (∑ x ∈ tupleSupportT R, w x • x) + u =
         ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
-    exact
-      weighted_sum_plus_singleton_eq_double
-        (tupleSupportT R) (fun x : F3T => x) w
-        hu huOneW hOtherW
+    have hErase :
+        (∑ x ∈ (tupleSupportT R).erase u, w x • x) =
+          ∑ x ∈ (tupleSupportT R).erase u, (2 : ℕ) • x := by
+      apply Finset.sum_congr rfl
+      intro x hx
+      rw [hOtherW x hx]
+    rw [← Finset.sum_erase_add (tupleSupportT R)
+      (fun x => w x • x) hu]
+    rw [← Finset.sum_erase_add (tupleSupportT R)
+      (fun x => (2 : ℕ) • x) hu]
+    rw [hErase, huOneW]
+    simp [two_nsmul, add_assoc]
   have hDouble :
       (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
     rw [Finset.sum_nsmul, hSupportSum]
@@ -2613,10 +2621,18 @@ theorem length15_singleton_sum_identity
   have hWeightedPlus :
       (∑ x ∈ tupleSupportT R, w x • x) + u =
         ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
-    exact
-      weighted_sum_plus_singleton_eq_double
-        (tupleSupportT R) (fun x : F3T => x) w
-        hu huOneW hOtherW
+    have hErase :
+        (∑ x ∈ (tupleSupportT R).erase u, w x • x) =
+          ∑ x ∈ (tupleSupportT R).erase u, (2 : ℕ) • x := by
+      apply Finset.sum_congr rfl
+      intro x hx
+      rw [hOtherW x hx]
+    rw [← Finset.sum_erase_add (tupleSupportT R)
+      (fun x => w x • x) hu]
+    rw [← Finset.sum_erase_add (tupleSupportT R)
+      (fun x => (2 : ℕ) • x) hu]
+    rw [hErase, huOneW]
+    simp [two_nsmul, add_assoc]
   have hDouble :
       (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
     rw [Finset.sum_nsmul, hSupportSum]
