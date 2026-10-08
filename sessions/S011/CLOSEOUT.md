@@ -72,5 +72,4 @@ assuming reflection-pair form. It has not started. This is a different forcing
 attempt, not another name for D10 or a claim that the repair already works.
 
 The [S012 brief](../../authoritative/S012_CANDIDATE_2_PROGRESSIVE_BLOCK_REPAIR_BRIEF.md)
-and [one ready prompt](../../authoritative/NEXT_SESSION_PROMPT.md) require no
-missing owner action. S020 remains the next ten-session audit.
+and the one ready prompt then carried in the rolling `authoritative/NEXT_SESSION_PROMPT.md` (now suppressed under later active B-014) required no missing owner action **at S011 closeout**. S020 remained the next ten-session audit.

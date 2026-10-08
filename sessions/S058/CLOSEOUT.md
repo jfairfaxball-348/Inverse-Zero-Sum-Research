@@ -23,3 +23,7 @@ Main incoming SHA/tree and run checked live; official Palomar policy/minimum cro
 **NEXT-SESSION PROMPT: WITHHELD. Required owner action: approve or decline the Palomar compatibility port and confirm truthful human attribution and maintenance authorization.**
 
 Route stays Lean -> Palomar -> paper -> arXiv -> E-JC, with no downstream activity while this blocker is active.
+
+## S058 validation-repair addendum
+
+The first synchronized run at `9554e8a907efd485d69363a741dcd4865b7dfc96` (Actions 37799622983) passed Lean build and the forbidden-placeholder scan, but detected two historical S010/S011 Markdown links pointing to the intentionally deleted rolling live prompt. Corrected those *links only*, preserving their dated historical statements and the current B-014 prompt suppression. This is an authority-integrity correction with no change to frozen theorem or Palomar requirements. See `VALIDATION.md`; verify actual final corrected main CI externally.

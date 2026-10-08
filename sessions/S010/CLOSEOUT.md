@@ -84,5 +84,4 @@ and respect the audit's stop against equivalent reformulations. If none
 survives, prepare a bounded recovery/pivot. No owner decision is needed to run
 this authorized unit, and no second unit is executed inside S010.
 
-The one ready kickoff is [the authoritative next prompt](../../authoritative/NEXT_SESSION_PROMPT.md),
-governed by [the S011 brief](../../authoritative/S011_CANDIDATE_2_ALL_PAIRINGS_CAPACITY_BRIEF.md).
+The one ready kickoff at the time was carried in the rolling `authoritative/NEXT_SESSION_PROMPT.md` (now suppressed under later active owner blocker B-014), governed by [the S011 brief](../../authoritative/S011_CANDIDATE_2_ALL_PAIRINGS_CAPACITY_BRIEF.md).
