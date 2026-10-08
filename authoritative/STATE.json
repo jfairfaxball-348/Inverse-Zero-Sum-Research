@@ -771,7 +771,7 @@
     ],
     "con_ron_accepted_declarations": 8731,
     "official_full_preflight": "PASS official provider-managed GitHub Actions 37813245157; full verifier report gate succeeded",
-    "checker_contract_note": "A PARTIAL session cannot be `last_completed_session` under check_authority.py: S058 remains last COMPLETED, S059 is latest PARTIAL in checkpoint ledger.",
+    "checker_contract_note": "S059 is COMPLETED following its D-165 official provider-managed full mechanical verification. The historical PARTIAL/checker lesson remains recorded in S059 dated documentation.",
     "source_commit_submitted": "c5f9e5e822020688c72b2a3bfacbf147a801e219",
     "portal_submitted_evidence": "owner-reported 2026-10-08; private status link omitted",
     "portal_verification_status": "PUBLIC_MECHANICAL_REPORT_PASS; portal UI state unavailable",
