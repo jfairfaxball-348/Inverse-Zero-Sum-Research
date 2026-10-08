@@ -3085,4 +3085,170 @@ theorem s9_certificate_swap_count_cases
   change (p = 0 ∧ q = 1) ∨ (p = 1 ∧ q = 2)
   exact hCases
 
+
+/-- The universal s=9 survivor singleton identity is equivalently a
+representative-sum equation, retaining its unique singleton witness. -/
+theorem s9_certificate_representative_sum_profile
+    {S : PosSeq 24} (c : S039PackingCertificate S)
+    (hs : c.s = 9)
+    (rep : Fin c.s → Fin 24) (hRep : ∀ j, rep j ∈ c.blocks j) :
+    ∃ u : F3T,
+      (((Finset.univ \ representativeSet rep).filter
+        (fun i => finiteModelEquiv (S i : G) = u)).card = 1) ∧
+      (∀ v : F3T,
+        ((Finset.univ \ representativeSet rep).filter
+          (fun i => finiteModelEquiv (S i : G) = v)).card = 1 → v = u) ∧
+      (∑ j : Fin c.s, finiteModelEquiv (S (rep j) : G)) =
+        (∑ i : Fin 24, finiteModelEquiv (S i : G)) + u := by
+  classical
+  obtain ⟨u, hOne, _hBound, hUnique, hSum⟩ :=
+    s9_certificate_survivor_singleton_profile c hs rep hRep
+  let f : Fin 24 → F3T := fun i => finiteModelEquiv (S i : G)
+  have hInj : Function.Injective rep := by
+    intro i j hij
+    by_contra hne
+    have hDis := c.pairwise_disjoint i j hne
+    have hj : rep i ∈ c.blocks j := by
+      rw [hij]
+      exact hRep j
+    exact (Finset.disjoint_left.mp hDis) (hRep i) hj
+  have hSelected :
+      (∑ i ∈ representativeSet rep, f i) =
+        ∑ j : Fin c.s, f (rep j) := by
+    unfold representativeSet
+    rw [Finset.sum_image]
+    intro i _hi j _hj hij
+    exact hInj hij
+  have hSplit :
+      (∑ j : Fin c.s, f (rep j)) +
+        (∑ i ∈ (Finset.univ \ representativeSet rep), f i) =
+      ∑ i : Fin 24, f i := by
+    rw [← hSelected]
+    simpa [add_comm] using
+      (Finset.sum_sdiff
+        (Finset.subset_univ (representativeSet rep)) (f := f))
+  have hSum' :
+      (∑ i ∈ (Finset.univ \ representativeSet rep), f i) + u = 0 := by
+    simpa [f] using hSum
+  have hEquation :
+      (∑ j : Fin c.s, f (rep j)) =
+        (∑ i : Fin 24, f i) + u := by
+    calc
+      (∑ j : Fin c.s, f (rep j)) =
+          (∑ j : Fin c.s, f (rep j)) +
+            ((∑ i ∈ (Finset.univ \ representativeSet rep), f i) + u) := by
+              rw [hSum']
+              simp
+      _ = ((∑ j : Fin c.s, f (rep j)) +
+            (∑ i ∈ (Finset.univ \ representativeSet rep), f i)) + u := by
+              abel
+      _ = (∑ i : Fin 24, f i) + u := by rw [hSplit]
+  exact ⟨u, hOne, hUnique, by simpa [f] using hEquation⟩
+
+/-- Every nonconstant packed block in an s=9 certificate fixes the sum of the
+other eight selected representatives to the full packed-sequence sum.
+The forbidden (0,1) transition is eliminated by the two singleton equations. -/
+theorem s9_certificate_swap_fixed_complement
+    {S : PosSeq 24} (c : S039PackingCertificate S)
+    (hs : c.s = 9)
+    (rep : Fin c.s → Fin 24) (hRep : ∀ j, rep j ∈ c.blocks j)
+    (j : Fin c.s) {y : Fin 24} (hy : y ∈ c.blocks j)
+    (hVal : S (rep j) ≠ S y) :
+    (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+      finiteModelEquiv (S (rep k) : G)) =
+    ∑ i : Fin 24, finiteModelEquiv (S i : G) := by
+  classical
+  let f : Fin 24 → F3T := fun i => finiteModelEquiv (S i : G)
+  let A : Finset (Fin 24) := Finset.univ \ representativeSet rep
+  let rep' : Fin c.s → Fin 24 := Function.update rep j y
+  let A' : Finset (Fin 24) := Finset.univ \ representativeSet rep'
+  let a : F3T := f (rep j)
+  let b : F3T := f y
+  let p : ℕ := (A.filter (fun i => f i = a)).card
+  let q : ℕ := (A.filter (fun i => f i = b)).card
+  let t : F3T :=
+    ∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j, f (rep k)
+  let T : F3T := ∑ i : Fin 24, f i
+  have hab : a ≠ b := by
+    intro heq
+    apply hVal
+    apply Subtype.ext
+    exact finiteModelEquiv.injective heq
+  have hxy : rep j ≠ y := by
+    intro h
+    apply hVal
+    rw [h]
+  have hRep' : ∀ k, rep' k ∈ c.blocks k := by
+    intro k
+    by_cases hkj : k = j
+    · subst k
+      simpa [rep'] using hy
+    · simpa [rep', Function.update, hkj] using hRep k
+  obtain ⟨u, _hOne, hUnique, hSelect⟩ :=
+    s9_certificate_representative_sum_profile c hs rep hRep
+  obtain ⟨u', _hOne', hUnique', hSelect'⟩ :=
+    s9_certificate_representative_sum_profile c hs rep' hRep'
+  have hSelectOld :
+      (∑ k : Fin c.s, f (rep k)) = T + u := by
+    simpa [f, T] using hSelect
+  have hSelectNew :
+      (∑ k : Fin c.s, f (rep' k)) = T + u' := by
+    simpa [f, T, rep'] using hSelect'
+  have hOldSplit :
+      (∑ k : Fin c.s, f (rep k)) = t + a := by
+    simpa [t, a] using
+      (Finset.sum_erase_add (Finset.univ : Finset (Fin c.s))
+        (fun k => f (rep k)) (Finset.mem_univ j)).symm
+  have hOther :
+      (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+          f (rep' k)) = t := by
+    unfold t
+    apply Finset.sum_congr rfl
+    intro k hk
+    have hkj : k ≠ j := (Finset.mem_erase.mp hk).1
+    simp [rep', Function.update, hkj]
+  have hNewSplit :
+      (∑ k : Fin c.s, f (rep' k)) = t + b := by
+    calc
+      _ = (∑ k ∈ (Finset.univ : Finset (Fin c.s)).erase j,
+            f (rep' k)) + f (rep' j) :=
+        (Finset.sum_erase_add (Finset.univ : Finset (Fin c.s))
+          (fun k => f (rep' k)) (Finset.mem_univ j)).symm
+      _ = t + b := by rw [hOther]; simp [rep', b]
+  have hCases :=
+    s9_certificate_swap_count_cases c hs rep hRep j hy hVal
+  change (p = 0 ∧ q = 1) ∨ (p = 1 ∧ q = 2) at hCases
+  rcases hCases with h01 | h12
+  · have hOldSingleton : u = b := by
+      apply (hUnique b).symm
+      simpa [A, f, q] using h01.2
+    have hNewACard :
+        (A'.filter (fun i => f i = a)).card = 1 := by
+      have h := s9_certificate_swap_fibre_counts
+        c rep hRep j hy hxy a
+      change (A'.filter (fun i => f i = a)).card +
+          (if b = a then 1 else 0) =
+        p + (if a = a then 1 else 0) at h
+      simp [hab.symm] at h
+      omega
+    have hNewSingleton : u' = a := by
+      apply (hUnique' a).symm
+      simpa [A', f, rep'] using hNewACard
+    rw [hOldSplit, hOldSingleton] at hSelectOld
+    rw [hNewSplit, hNewSingleton] at hSelectNew
+    have hDouble : a + a = b + b := by
+      calc
+        a + a = (t + a) + (T + a) - (t + T) := by abel
+        _ = (T + b) + (t + b) - (t + T) := by
+          rw [hSelectOld, ← hSelectNew]
+        _ = b + b := by abel
+    have hDoubleInj : ∀ v w : F3T, v + v = w + w → v = w := by
+      decide
+    exact (hab (hDoubleInj a b hDouble)).elim
+  · have hOldSingleton : u = a := by
+      apply (hUnique a).symm
+      simpa [A, f, p] using h12.1
+    rw [hOldSplit, hOldSingleton] at hSelectOld
+    exact add_right_cancel hSelectOld
+
 end InverseZeroSum.Candidate3
