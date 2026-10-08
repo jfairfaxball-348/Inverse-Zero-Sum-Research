@@ -839,3 +839,7 @@ owner-reported SENT and REPLY PENDING, with no transfer.
 ## S054 reviewer boundary
 
 No CAND-03 external pre-submission reviewer consultation was requested or conducted. The owner decision skipping independent pre-submission review is unchanged, and ordinary E-JC editorial/referee review remains planned. Xue Li Stage-1 remains CAND-02-specific and reply pending; the Lean transport proof is not outside peer review.
+
+## S055 review boundary
+
+No reviewer, author or status expert was contacted. Independent pre-submission external consultation remains skipped for CAND-03 under the owner decision; ordinary E-JC editorial/referee review is still intended after the required earlier stages. S055's kernel check is not peer review. Xue Li Stage-1 remains CAND-02-specific, owner-reported sent, reply pending, without transfer to CAND-03.

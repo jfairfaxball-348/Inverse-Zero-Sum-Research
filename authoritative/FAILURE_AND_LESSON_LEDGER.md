@@ -481,3 +481,9 @@ no unrelated enumeration or new mathematical route is promoted.
 ### FL-111 — Positional transport and its application are distinct formal obligations
 
 S054 makes the source-faithful passage from `PosSeq 15` to 15 original survivor positions reusable and retains singleton identity, uniqueness and every fibre count, including universal certificate transversals. Generic one-position count/sum exchange is also now factored. This alone does not establish the specific two-fibre transition for a certificate swap or the second-block contradiction. Retain exact theorem boundaries; apply the numeric case lemma only after proving all its count and singleton hypotheses in the original-position survivor.
+
+## S055 formalization lesson
+
+### FL-112 — Exact certificate exchange must be composed before the global contradiction
+
+The S053 numeric transition theorem and S054 positional survivor profile became a closed s=9 elimination only after the actual swap was proved at the certificate level, with both before/after singleton uniqueness hypotheses discharged. A one-block sum comparison then supplies a fixed complementary eight-representative sum, and the second nonconstant packed two-block supplies the contradiction. S055's clean build establishes those claims in Lean. **Lesson:** neither a generic count-exchange identity nor a source-level case split is itself the certificate elimination; retain the original positional semantics and all intervening proof terms. The remaining frozen iff composition is a separate obligation.

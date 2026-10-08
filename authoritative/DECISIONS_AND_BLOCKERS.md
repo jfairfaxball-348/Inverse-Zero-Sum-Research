@@ -1057,3 +1057,12 @@ authorized by this formalization checkpoint.
 | D-152 | 2026-10-08 | Promote only S055/D54-01, completing the first/second one-block fibre transition and second nonconstant two-block contradiction to prove `S9PackingEliminationInput`. Stop before `FrozenClassification`; on success promote only its final composition. | S054 partial stop/successor rule and S040 already verified elimination architecture. |
 
 **Active owner blockers: NONE.** CAND-03 stays selected and mathematical investigation is OPEN for only S055/D54-01. External review gate remains CLOSED; no outreach, Palomar registration or publication stage is authorized.
+
+## S055 D54-01 completion and successor
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-153 | 2026-10-08 | Close S055/D54-01 as **COMPLETED** after `s9PackingEliminationInput` receives a kernel-checked Lean proof term. Preserve exact CAND-03 semantics and do not claim the full frozen iff theorem proved. | S055 proof commit `28f97a740165205e045f97e0ed22833d42b34446`, clean pinned CI run 37762312828. |
+| D-154 | 2026-10-08 | Promote **only S056/D55-01**: compose the already proved s=8/s=9/packing/source interfaces into `FrozenClassification`. Do not begin Palomar or publication while that theorem is unproved. | Authorized S055 success rule, owner Lean-first order. |
+
+**Active owner blockers: NONE.** The mathematical-investigation gate stays OPEN solely for S056/D55-01. The external-review gate remains CLOSED; independent CAND-03 pre-submission consultation is skipped by owner decision, with ordinary E-JC editorial/referee review intended later. Xue Li Stage-1 remains CAND-02-only and reply pending.

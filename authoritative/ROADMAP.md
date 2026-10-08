@@ -1530,3 +1530,7 @@ The first exact remaining obligation is a counted, sum-preserving transport from
 D53-01 closes the faithful `PosSeq 15` to arbitrary 15-position `ShortFreeOn` singleton/fibre-count/sum bridge and instantiates it for every `s=9` certificate representative transversal. Count and survivor-sum exchange helpers are retained. The overall unit is PARTIAL: the proof of the two exact `s9_two_fibre_count_transitions` alternatives at certificate level and the second 2-block contradiction has not been composed. The `S9PackingEliminationInput` proposition is UNPROVED, as is `FrozenClassification`.
 
 The only promoted successor is S055/D54-01 to close that exact s=9 elimination. No new prior-art work, Palomar registration or publication work is authorized. The owner order remains Lean -> Palomar -> paper -> arXiv -> E-JC.
+
+## S055 completed — s=9 elimination proved in Lean
+
+D54-01 kernel-checks `s9PackingEliminationInput : S9PackingEliminationInput` from exact certificate representative-count transitions, unique singleton sum identities and a second nonconstant two-block contradiction. Proof head `28f97a740165205e045f97e0ed22833d42b34446`, pinned CI run 37762312828 green. The remaining strict proof-spine obligation is the full `FrozenClassification` iff composition, promoted ONLY to S056/D55-01. Palomar remains blocked until that theorem itself has a Lean proof term and all pinned checks pass. Ordered route: Lean -> Palomar -> paper -> arXiv -> E-JC.

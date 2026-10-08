@@ -1053,3 +1053,12 @@ S042's documented prior-art non-hit and its non-certifying status are unchanged.
 | C-221 | FORMAL_VERIFICATION / CERTIFICATE TRANSPORT | `shortFreeOn_card_fifteen_singleton_identity` proves the complete original-position singleton/count/sum profile for arbitrary 15-position short-free survivors; `s9_certificate_survivor_singleton_profile` applies it for every admissible `s=9` representative transversal. Source: pinned `InverseZeroSum/Candidate3.lean`, S054 CI validation; this is not an s=9 impossibility proof. |
 | C-222 | FORMAL_VERIFICATION / POSITIONAL EXCHANGE AUXILIARIES | `filter_card_exchange`, `representativeSet_update_split`, `complement_insert_swap`, `sum_erase_insert_exchange`, and `shortZero_two_block_has_distinct_values` give generic counted and sum-preserving swap tools. Source: S054 checked Lean proof head; their certificate-level composition remains missing. |
 | C-223 | FORMALIZATION BLOCKER / ROUTE DECISION | `S9PackingEliminationInput` is still a bare proposition; the first remaining proof obligation is the certificate-level one-block transition/singleton-sum comparison before the final second-2-block contradiction. `FrozenClassification` unproved; S055 only. |
+
+## S055 formal verification claims
+
+| Claim | Classification | Evidence and boundary |
+| --- | --- | --- |
+| C-224 | FORMAL_VERIFICATION / CERTIFICATE SWAP AND TRANSITIONS | `s9_certificate_survivor_swap`, `s9_certificate_swap_fibre_counts`, and `s9_certificate_swap_count_cases` check the exact affected original-position survivor multiplicities and uniqueness restrictions for every valid s=9 certificate transversal. Lean proof commit `28f97a740165205e045f97e0ed22833d42b34446`; pinned CI 37762312828. |
+| C-225 | FORMAL_VERIFICATION / SINGLETON COMPARISON | `s9_certificate_representative_sum_profile`, `s9_certificate_swap_fixed_complement`, and `s9_certificate_swap_fixed_complement_zero` carry the singleton sum and both transition consequences, identifying zero as the complementary eight-representative sum after the packed-block sum is shown zero. Same CI. |
+| C-226 | FORMAL_VERIFICATION / S9 ELIMINATION | `s9PackingEliminationInput : S9PackingEliminationInput` proves all s=9 certificates impossible by varying a representative in a second nonconstant two-term atom. Same pinned CI. |
+| C-227 | REMAINING FORMAL OBLIGATION | `FrozenClassification` remains an unproved proposition. Only S056/D55-01 final iff composition is promoted. Palomar blocked; no novelty, significance or source-status upgrade. |
