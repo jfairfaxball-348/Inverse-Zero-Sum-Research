@@ -2878,7 +2878,7 @@ theorem s9_certificate_survivor_singleton_profile
     (hs : c.s = 9) (rep : Fin c.s → Fin 24)
     (hRep : ∀ j, rep j ∈ c.blocks j) :
     ∃ u : F3T,
-      (((Finset.univ \ representativeSet rep).filter
+      ((Finset.univ \ representativeSet rep).filter
         (fun i => finiteModelEquiv (S i : G) = u)).card = 1) ∧
       (∀ v : F3T,
         ((Finset.univ \ representativeSet rep).filter
@@ -2948,7 +2948,7 @@ theorem s9_certificate_survivor_swap
     apply Finset.mem_sdiff.mpr
     refine ⟨Finset.mem_univ _, ?_⟩
     rw [hOld]
-    exact Finset.not_mem_insert_of_ne (Ne.symm hxy) hyB
+    simpa [Finset.mem_insert, hxy.symm] using hyB
   have hxNotOld : rep j ∉ (Finset.univ \ representativeSet rep) := by
     rw [hOld]
     simp
@@ -2964,8 +2964,7 @@ theorem s9_certificate_swap_fibre_counts
     (j : Fin c.s) {y : Fin 24}
     (hy : y ∈ c.blocks j) (hxy : rep j ≠ y)
     (v : F3T) :
-    (((Finset.univ \
-        representativeSet (Function.update rep j y)).filter
+    ((Finset.univ \ representativeSet (Function.update rep j y)).filter
         (fun i => finiteModelEquiv (S i : G) = v)).card +
       (if finiteModelEquiv (S y : G) = v then 1 else 0) =
     (((Finset.univ \ representativeSet rep).filter
