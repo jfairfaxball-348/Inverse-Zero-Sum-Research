@@ -15,9 +15,11 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
-## Current state
+## Current state — 2026-10-08, owner-reported Palomar submission
 
-**S059 PALOMAR PORT IN PROGRESS (owner authorized 2026-10-08; B-014 RESOLVED).** The unchanged frozen CAND-03 iff was fully kernel-checked in the original Lean 4.19 project (main CI 37800488981 success). A separately isolated Lean 4.35.0-rc2/module/Challenge-Solution/metadata port is underway in draft [PR #19](https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/pull/19). The first new-toolchain build exposed source-compatibility errors and has **NOT YET PASSED**. The official Palomar full reusable verifier has been pinned and invoked, but a queued verification job is **not a pass**. No portal submission, registration, paper, arXiv or E-JC activity. **No live successor prompt during S059.**
+**CAND-03 exact iff proved; Lean 4.35 and local PalomarTemplate Comparator independently PASSED at pinned commit `c5f9e5e822020688c72b2a3bfacbf147a801e219`.** The owner has now submitted this immutable commit through the Palomar portal and supplied a private status link. **The portal's actual verification/editing/registration decision is pending and has NOT been independently inspected.** The secret status URL fragment is not recorded or published. CI 37811409022 (`lake build`, placeholder scan, authority integrity) and 37811408881 (PalomarTemplate statement comparison, con-ron, NanoDa, Lean kernel) PASSED on that submitted commit.
+
+The distinct repository-triggered official full reusable workflow [37811409532](https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/actions/runs/37811409532) remains QUEUED at its Namespace-hosted verification step despite a successful setup/profile job; **do not call that official full CI a pass**. B-015 remains open pending reliable Palomar verification evidence or a permitted infrastructure remedy. No permanent Palomar registry registration, editorial acceptance, manuscript, arXiv or E-JC submission is asserted. No next session prompt while B-015 remains active. Other records of earlier S059 failures were historical checkpoints and are superseded by this live paragraph.
 
 Selected target:
 
@@ -991,3 +993,8 @@ D-161 records the owner's unequivocal **YES** to an isolated Palomar-compatible 
 ## S059 verified technical milestone and exact unpassed gate (supersedes preceding in-progress paragraph)
 
 The repository's latest technical branch proves the exact unaltered frozen iff with Lean 4.35.0-rc2 and records the matching public Challenge, Solution, Comparator and AI-disclosed metadata. On commit `7b4648b81278655409a43e847e7f384daed32872`, CI **37809075335 PASSED** build/authority/placeholder checks and CI **37809065386 PASSED** local template verification, including independent con-ron **8731 accepted declarations**, NanoDa and the default Lean kernel. The official reusable pipeline is pinned at `d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44`. Its `verification` jobs use a Namespace 16-core/32GB profile and are QUEUED, **NOT PASSED** in this repository. B-015 prevents issuing the requested registration-ready SHA. The owner needs to provide suitable runner access or an official Palomar-accepted alternative before an actual full preflight can be recorded. No mathematical obligation remains; no publication-stage promotion or portal action occurred. Dated S058 and intermediate S059 “pending/failed” entries remain historically accurate, not live gates.
+
+
+## D-164 owner Palomar intake report — live post-S059 administrative update
+
+Owner reported placing exact immutable source commit `c5f9e5e822020688c72b2a3bfacbf147a801e219` into the Palomar portal, with a private status link. This is a **reported submission/intake**, not independently observed provider outcome or registration. No secret status link or token is retained in the public repository. The two final on-commit GitHub CI runs succeeded: Lean formalization 37811409022; local template Comparator/NanoDa/con-ron 37811408881. The separate official reusable full CI run 37811409532 still has a queued Namespace `verify` job. Retain B-015 as an unverified official outcome pending portal evidence; wait for Palomar's actual response. Portal submission does not grant permission to elect permanent registration or begin paper/arXiv/E-JC work.
