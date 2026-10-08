@@ -1457,3 +1457,7 @@ The selected frozen CAND-03 theorem, sequence quantifiers, positions and proof m
 ## S059 proved Lean 4.35 target and verification status
 
 Selected exact `FrozenClassification` iff mathematical semantics remain unchanged (original 24-position avoidance and permutation equivalence), now proof-checked under Lean 4.35.0-rc2, with verified matching Challenge source. CI 37809075335 PASS; local PalomarTemplate Comparator con-ron/NanoDa/default kernel CI 37809065386 PASS. This is a FORMALIZED mathematical claim, **not** proof of originality/prior openness, independent human review, official full PalomarSubmission preflight pass, registration, or journal acceptance. B-015 active only for official Namespace runner infrastructure.
+
+## D-166 E-JC-first prewriting scope
+
+Exact frozen iff target is mathematically unchanged. The E-JC suitability exercise focuses on the **converse extremal rigidity**: the known 2024 threefold construction and sharp threshold already exist. Cap-core geometry is an interpretive bridge, NOT a proved substitute for the indexed pair-witness implication. E-JC significance and global novelty remain **unassessed/uncertified pending S060 discovery**, despite successful Lean/Palomar verification and the positive Palomar automated editorial screen. No stronger rank statement is authorized.

@@ -1132,3 +1132,11 @@ No browser OAuth, Palomar HTTPS submission, public verification dispatch, automa
 **Owner-reported status UI issue remains UNSOLVED:** `Could not refresh this submission. Retrying` is emitted after an unsuccessful HTTP status response from `GET /api/submission`. The browser distinguishes 401/403 and 404 with different text; the actual failed status code is unknown, so do not assign a specific infrastructure root cause without evidence. The result is a **status/read API problem**, not a mechanical counterexample to the theorem. It can delay the portal showing verification and dispatching review. No private URL fragment stored. No Palomar registration or editorial outcome is yet asserted, and no automatic or new portal submission was made by this project update.
 
 **Active owner blockers: NONE.** S059 technical closeout is COMPLETED following the later independent official run. Next-session prompt NONE, no live next numbered research session pending the provider's review/status. Historical B-015 ACTIVE entries above accurately describe their earlier checkpoints and are superseded by this new decision.
+
+## D-166 — owner-authorized E-JC-first discovery while Palomar registration is requested (2026-10-08)
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-166 | 2026-10-08 | Record owner-reported successful Palomar automated editorial check (no problems found; no human reviewer) and owner REQUEST for permanent registration at 18:29:46Z; do not call it MERGED or registered. Authorize **S060/D59-01 E-JC-first prewriting publication-fit discovery only**, before paper creation, as a parallel planning unit. Preserve downstream order Palomar registration → paper → arXiv → E-JC; no portal action, external contact or manuscript drafting. E-JC AI authorship policy and human proof-audit obligation are hard pre-submission gates. | Owner's explicit progress report and S060 request; E-JC published author checklist/AI policy inspected 2026-10-08. |
+
+**Active owner blockers for S060 research: NONE.** Human proof rewriting/checking is a future manuscript-and-E-JC submission condition; do not claim it already occurred. Palomar registration and arXiv/E-JC external actions remain unperformed. One S060 kickoff READY; not a conditional or post-registration session.

@@ -867,3 +867,7 @@ Lean kernel, NanoDa and con-ron independent **machine** replay passed, CI 378090
 ## D-165 automated review boundary after official proof verification
 
 Official Palomar full-mode mechanical proof verification **PASSED** on owner-submitted immutable commit `c5f9e5e822020688c72b2a3bfacbf147a801e219` (GitHub Actions 37813245157). This independently checked proof is **not** Palomar's automated editorial review, independent mathematical human review, or E-JC peer review. The private submission status page is currently reporting a refresh failure; no new editorial result is known. Independent CAND-03 pre-submission consultation remains skipped, journal referee process future, and CAND-02-only correspondence unchanged.
+
+## D-166 Palomar automated versus E-JC human review — current boundary
+
+Owner reports the Palomar automated editorial check found no blocking problem, model `codex:gpt-6-sol`, at 2026-10-08T17:55:22Z. Palomar explicitly indicates **no human read the automated report**. This cannot be represented as independent human mathematical peer review, E-JC pre-acceptance, or satisfaction of E-JC human-author AI proof-checking obligations. Independent CAND-03 private pre-submission consultation is still skipped by owner. The later E-JC editor/referee process remains genuinely human. S060 investigates suitability and human-proof-audit requirements only; no reviewer outreach.

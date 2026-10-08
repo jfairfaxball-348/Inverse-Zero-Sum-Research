@@ -5,12 +5,12 @@
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
   "last_completed_session": "S059",
-  "next_session": null,
-  "next_brief": null,
-  "stage": "P6_CAND03_PALOMAR_FULL_MECHANICAL_PASSED_PORTAL_REVIEW_STATUS_PENDING",
-  "programme_status": "S059_COMPLETED_LEAN435_LOCAL_COMPARATOR_AND_PALOMAR_OFFICIAL_FULL_PASS_OWNER_INTAKE_PORTAL_STATUS_REFRESH_ISSUE_REVIEW_UNKNOWN",
+  "next_session": "S060",
+  "next_brief": "authoritative/S060_EJC_PUBLICATION_FIT_PREWRITING_DISCOVERY_BRIEF.md",
+  "stage": "P7_CAND03_EJC_FIRST_PREWRITING_DISCOVERY_READY_PALOMAR_REGISTRATION_REQUESTED_PENDING",
+  "programme_status": "S059_COMPLETED_PALOMAR_VERIFIED_AUTOMATED_REVIEW_NO_PROBLEMS_OWNER_REGISTRATION_REQUESTED_UNMERGED_S060_EJC_DISCOVERY_READY",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 exact iff proved and rechecked under Lean 4.35.0-rc2, local PalomarTemplate Comparator/NanoDa/con-ron PASSED; PalomarSubmission official full CI QUEUED on nscloud execution runner, NOT PASSED; no registration, paper, arXiv or E-JC.",
+  "candidate_under_due_diligence": "CAND-03 exact iff proved and rechecked in Lean 4.35, local Comparator+NanoDa+con-ron PASSED and official PalomarSubmission full-mode PASS (37813245157). Palomar automated editorial review no problems identified (owner report; no human review), registration REQUESTED/UNDER WAY but no merged registry record verified. S060 E-JC prewriting suitability due diligence READY.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -123,9 +123,11 @@
     "B-014 resolved 2026-10-08: owner authorized a separate Palomar port and approved John Fairfax-Ball human author/responsible-maintainer attribution. No further approval needed for ordinary reversible engineering, but no portal intake or registration was authorized.",
     "A subsequent Palomar submission, GitHub OAuth/write-access check, public verification workflow, and final permanent registration each require applicable explicit owner authorization/action. None is presumed from P57-01.",
     "D-165: Official PalomarSubmission full-mode mechanical verification on the owner-submitted exact source commit succeeded (GitHub Actions 37813245157, 2026-10-08); the separate caller-repository Namespace reusable CI remains queued and is not itself passed, but no longer blocks technical verification.",
-    "Palomar portal status page is returning 'Could not refresh this submission. Retrying'; private token was not recorded. Await provider status/review confirmation or seek Palomar support if status API continues to fail. Do not equate mechanical proof verification with editorial review, eligibility decision, permanent registration, paper, arXiv or E-JC."
+    "Palomar status as of 2026-10-08: automated review reported no problems and permanent registration requested, but no merged registry record or identifier has been evidenced. Update only on independently verified completion; do not store private submission token.",
+    "E-JC AI authorship condition must be met BEFORE PAPER SUBMISSION: human author personally checks and rewrites AI-assisted proof in their own words and vouches for every step; AI/Lean/Palomar do not substitute for the owner's comprehension and authorial accountability.",
+    "Before actual E-JC submission later, owner must verify no paper submitted to E-JC in the previous three calendar months; and before arXiv deposit check account/category endorsement, suitable rights and E-JC preprint compatibility. None of these later external actions are authorized by S060 discovery."
   ],
-  "next_prompt_status": "NONE",
+  "next_prompt_status": "READY",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -453,7 +455,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "Original CAND-03 exact theorem proved in Lean 4.35 and locally on submitted SHA c5f9e5e822020688c72b2a3bfacbf147a801e219 (Actions 37811409022 and 37811408881 PASS). Palomar's actual provider-managed official FULL verifier ran at https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157 on 2026-10-08 17:00-17:06 UTC; source repository and SHA matched, final full-mode mechanical gate PASS (the official gate requires report status pass). B-015 technical runner blocker RESOLVED via the provider's own runner, notwithstanding distinct queued caller-repository reusable run 37811409532. Owner reported Palomar status UI 'Could not refresh this submission. Retrying'; implementation implies unsuccessful /api/submission HTTP response but specific code and server cause not known. Palomar portal review-status acknowledgement, editorial outcome and permanent registry registration not known. Do not resubmit or expose private status token; no paper, arXiv, E-JC or outreach.",
+  "current_route_disposition": "Owner reported Palomar full mechanical verification PASS and automated editorial review by codex:gpt-6-sol at 2026-10-08T17:55:22Z with no problems identified (no human read it); owner requested Palomar permanent registration at 2026-10-08T18:29:46Z. Registration is UNDER WAY, not confirmed merged, with no registry ID claimed. Exact source commit c5f9e5e822020688c72b2a3bfacbf147a801e219, official Palomar run 37813245157 passed. Owner explicitly authorized S060 prior-manuscript discovery optimizing publication fit for E-JC, without altering downstream order or drafting paper. E-JC current AI policy requires human author to personally verify, rewrite AI-assisted proof in own words, and vouch for all steps; formal verification cannot substitute. S060 READY; no submission/preprint/manuscript prepared.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -773,10 +775,26 @@
     "source_commit_submitted": "c5f9e5e822020688c72b2a3bfacbf147a801e219",
     "portal_submitted_evidence": "owner-reported 2026-10-08; private status link omitted",
     "portal_verification_status": "PUBLIC_MECHANICAL_REPORT_PASS; portal UI state unavailable",
-    "portal_review_status": "UNKNOWN_STATUS_PAGE_API_RETRY",
-    "palomar_registration_status": "NOT_REPORTED",
+    "portal_review_status": "OWNER_REPORTED_2026-10-08T17:55:22Z_AUTOMATED_REVIEW_NO_PROBLEMS",
+    "palomar_registration_status": "REQUESTED_PENDING_MERGE_UNVERIFIED",
     "portal_status_page_issue": "owner reported Could not refresh this submission. Retrying; server /api/submission non-OK response; exact status code not observed",
-    "technical_blocker_B015": "RESOLVED_BY_OFFICIAL_PROVIDER_MANAGED_RUN_37813245157"
+    "technical_blocker_B015": "RESOLVED_BY_OFFICIAL_PROVIDER_MANAGED_RUN_37813245157",
+    "portal_review_model": "codex:gpt-6-sol",
+    "portal_review_human_checked": false,
+    "registration_requested": true,
+    "registration_requested_at": "2026-10-08T18:29:46Z",
+    "private_status_token_recorded": false
   },
-  "s059_formalization_date": "2026-10-08"
+  "s059_formalization_date": "2026-10-08",
+  "s060_prewriting": {
+    "authorization_date": "2026-10-08",
+    "unit": "D59-01",
+    "status": "READY",
+    "stage": "DISCOVERY_ONLY_NO_MANUSCRIPT",
+    "brief": "authoritative/S060_EJC_PUBLICATION_FIT_PREWRITING_DISCOVERY_BRIEF.md",
+    "journal": "Electronic Journal of Combinatorics",
+    "human_author_proof_rewrite": "REQUIRED_BEFORE_EJC_SUBMISSION_NOT_YET_ATTESTED",
+    "palomar_registration": "REQUESTED_PENDING_MERGE",
+    "planned_deliverable": "source-checked E-JC fit/narrative/novelty/proof-readiness and GO-or-HOLD decision"
+  }
 }
