@@ -2788,4 +2788,82 @@ theorem filter_card_exchange
     omega
 
 
+
+/-- The representative set after updating one block has an explicit split. -/
+theorem representativeSet_update_split {s : ℕ}
+    (base : Fin s → Fin 24) (j : Fin s) (z : Fin 24) :
+    representativeSet (Function.update base j z) =
+      insert z (((Finset.univ : Finset (Fin s)).erase j).image base) := by
+  classical
+  unfold representativeSet
+  ext x
+  constructor
+  · intro hx
+    obtain ⟨k, _hk, hval⟩ := Finset.mem_image.mp hx
+    by_cases hkj : k = j
+    · apply Finset.mem_insert.mpr
+      left
+      simpa [hkj] using hval.symm
+    · apply Finset.mem_insert.mpr
+      right
+      refine Finset.mem_image.mpr
+        ⟨k, Finset.mem_erase.mpr ⟨hkj, Finset.mem_univ _⟩, ?_⟩
+      simpa [Function.update, hkj] using hval
+  · intro hx
+    rcases Finset.mem_insert.mp hx with hval | hother
+    · refine Finset.mem_image.mpr ⟨j, Finset.mem_univ _, ?_⟩
+      simpa using hval.symm
+    · obtain ⟨k, hk, hval⟩ := Finset.mem_image.mp hother
+      have hkj : k ≠ j := (Finset.mem_erase.mp hk).1
+      refine Finset.mem_image.mpr ⟨k, Finset.mem_univ _, ?_⟩
+      simpa [Function.update, hkj] using hval
+
+/-- Swapping one deleted representative exchanges exactly two survivors. -/
+theorem complement_insert_swap
+    {α : Type*} [Fintype α] [DecidableEq α]
+    (B : Finset α) {x y : α} (hx : x ∉ B) (hxy : x ≠ y) :
+    (Finset.univ \ insert y B) =
+      insert x ((Finset.univ \ insert x B).erase y) := by
+  classical
+  ext z
+  by_cases hzx : z = x
+  · subst z
+    simp [hx, hxy]
+  · by_cases hzy : z = y
+    · subst z
+      simp [hxy, hzx]
+    · simp [hzx, hzy]
+
+/-- Additive sum balance for exchanging one old and one new survivor. -/
+theorem sum_erase_insert_exchange
+    {α M : Type*} [DecidableEq α] [AddCommMonoid M]
+    (A : Finset α) (f : α → M) {x y : α}
+    (hx : x ∉ A) (hy : y ∈ A) :
+    (∑ i ∈ insert x (A.erase y), f i) + f y =
+      (∑ i ∈ A, f i) + f x := by
+  have hxErase : x ∉ A.erase y := by
+    intro h
+    exact hx (Finset.mem_of_mem_erase h)
+  rw [Finset.sum_insert hxErase]
+  have hSplit := Finset.sum_erase_add A f hy
+  calc
+    (∑ i ∈ A.erase y, f i) + f x + f y =
+        (∑ i ∈ A.erase y, f i) + f y + f x := by
+      abel
+    _ = (∑ i ∈ A, f i) + f x := by
+      rw [hSplit]
+
+/-- A zero-sum two-block on the nonzero alphabet is nonconstant. -/
+theorem shortZero_two_block_has_distinct_values
+    {S : PosSeq 24} {B : Finset (Fin 24)}
+    (hShort : ShortZero S B) (hCard : B.card = 2) :
+    ∃ x ∈ B, ∃ y ∈ B, S x ≠ S y := by
+  classical
+  by_contra hNo
+  have hConst : ∀ x ∈ B, ∀ y ∈ B, S x = S y := by
+    intro x hx y hy
+    by_contra hne
+    exact hNo ⟨x, hx, y, hy, hne⟩
+  exact (constant_shortZero_block_ne_two hShort hConst) hCard
+
 end InverseZeroSum.Candidate3
