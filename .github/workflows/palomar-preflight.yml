@@ -2,7 +2,7 @@ name: Palomar mechanical preflight
 
 on:
   push:
-    branches: [main, s059-palomar-compat]
+    branches: [main]
   workflow_dispatch:
 
 permissions:

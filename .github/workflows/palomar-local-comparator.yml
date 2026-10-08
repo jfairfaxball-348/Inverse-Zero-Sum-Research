@@ -2,7 +2,6 @@ name: Palomar local comparator and metadata
 on:
   push:
     branches: [s059-palomar-compat, main]
-  pull_request:
   workflow_dispatch:
 permissions:
   contents: read
