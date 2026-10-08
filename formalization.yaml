@@ -1,0 +1,126 @@
+version: "v0.4"
+
+project:
+  name: "Inverse classification for innerly joint short zero-sum subsequences in C3^3"
+  description: >-
+    We formalize an exact positional inverse classification in the elementary
+    abelian group C3^3. For a sequence of 24 nonzero elements, every pair of
+    nonempty zero-sum subsequences of length at most three has intersection
+    sum zero if and only if the original sequence, up to a permutation of
+    all 24 positions, consists of three copies of eight distinct elements
+    having no short nonempty zero sum. The two implications, including the
+    positional intersection condition, are proved in Lean. The existing
+    literature review did not locate the exact inverse classification, but
+    historical novelty, priority and significance are not certified.
+  authors:
+    - "John Fairfax-Ball"
+  responsible_maintainers:
+    - "John Fairfax-Ball"
+  license: "Apache-2.0"
+
+classification:
+  arxiv: ["math.CO", "math.NT"]
+  msc2020: ["11B75"]
+
+sources:
+  - title: "Inverse classification of innerly joint short zero sums in the elementary abelian group of order 27"
+    type: original-proof
+    relationship: other
+    note: >-
+      Internal independently verified mathematical classification subsequently
+      formalized in this repository. An extensive documented prior-art search
+      located no equivalent theorem, but that non-hit is not a novelty or
+      historical-priority certificate.
+  - title: "On generalized Narkiewicz constants of finite abelian groups"
+    authors:
+      - "Weidong Gao"
+      - "Wanzhen Hui"
+      - "Xue Li"
+      - "Yuanlin Li"
+      - "Yongke Qu"
+      - "Qinghai Zhong"
+    id: "https://doi.org/10.4064/aa230118-1-10"
+    relationship: background
+    type: article
+    note: "Threshold results and direct-proof packing technique; not an exact source statement of the new iff."
+  - title: "On short zero-sum subsequences of zero-sum sequences"
+    authors:
+      - "Yushuang Fan"
+      - "Weidong Gao"
+      - "Guoqing Wang"
+      - "Qinghai Zhong"
+      - "Jujuan Zhuang"
+    id: "Electronic Journal of Combinatorics 19(3) (2012), P31"
+    relationship: background
+    type: article
+    note: "Rank-three short-free residual facts used in the mathematical and Lean proof."
+
+related_formalizations: []
+
+status:
+  scope: >-
+    Complete length-24 iff, for nonzero C3^3 positional sequences and
+    intersection sums of short zero-sum positional witnesses (length 1–3).
+    The conclusion uses an exact permutation of 24 original positions.
+    No claim about rank four, other exponents or historical novelty is made.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: []
+
+automation:
+  methods:
+    - method: agent
+      models: ["OpenAI ChatGPT GPT-series (including GPT-6)"]
+      framework: "OpenAI ChatGPT with Lean 4 and Mathlib"
+      tool_setup: >-
+        Substantive AI-assisted mathematical research, lemma design, Lean
+        proof construction, iterative CI debugging, independent machine
+        checking and documentation, supervised by the human owner.
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "subscription-based / not tracked"
+        hardware: "GitHub-hosted CI and hosted AI inference"
+      prompting_notes: >-
+        Session-scoped prompts require preservation of the exact frozen
+        theorem, immutable source attribution, explicit proof obligations,
+        test logs and faithful milestone records.
+  spend_usd: "subscription-based / not tracked"
+  notes: >-
+    The human owner directed the programme, approved author and responsible
+    maintainer attribution, and retains responsibility for submission.
+    AI made substantive contributions; no independent human review of the
+    CAND-03 result has been conducted.
+
+fidelity:
+  divergences: >-
+    The headline result is the programme's internally proved exact inverse
+    classification, not the verbatim theorem of either cited background paper.
+    The original indexed pairwise short-zero-sum avoidance and full
+    threefold-repetition up-to-permutation conclusion are unchanged.
+
+review:
+  status: "self-assessed; machine formalization checked; no independent human review"
+  reviewers: []
+  notes: >-
+    Mathematical proof internally cross-checked and positional semantics
+    audited. Lean 4 kernel checks formal statements; no external human
+    mathematician reviewed this CAND-03 result. Ordinary E-JC peer review
+    is intended only after a later paper and separate journal submission.
+
+alignment:
+  namespace: "InverseZeroSum.Candidate3"
+  statements:
+    - source: "S040 frozen CAND-03 iff classification; S043 semantic correspondence"
+      lean: "InverseZeroSum.Candidate3.frozenClassification"
+      module: "InverseZeroSum.Candidate3"
+      status: proved
+      note: >-
+        Fin 24 positions, original pairwise short-zero intersection sum,
+        squarefree short-free core of eight, explicit reindexing by Fin 24
+        equivalence, both directions.
+
+acknowledgements: >-
+  Mathlib and Lean contributors, the cited foundational source authors and
+  open-source verification tools. The use of substantive generative AI is
+  explicitly disclosed above; attribution to cited source authors does not
+  imply their endorsement.
