@@ -3718,4 +3718,75 @@ theorem s056_frozen_necessity (S : PosSeq 24)
   refine ⟨U, hUInj, hUFree, ?_⟩
   simpa [U, V, e, pullSeq] using hTriple
 
+
+/-! ### S057: direct canonical converse for the frozen positional iff -/
+
+/-- No pair of values selected from a short-free base sequence sums to zero,
+even when the two base indices coincide. -/
+theorem s057_base_pair_nonzero (U : PosSeq 8)
+    (hFree : ShortFree U) (a b : Fin 8) :
+    (U a : G) + (U b : G) ≠ 0 := by
+  classical
+  by_cases hab : a = b
+  · subst b
+    intro hZero
+    have hNonzero : finiteModelEquiv (U a : G) ≠ 0 := by
+      intro h
+      apply (U a).property
+      apply finiteModelEquiv.injective
+      simpa using h
+    apply f3t_self_add_ne_zero _ hNonzero
+    simpa using congrArg finiteModelEquiv hZero
+  · intro hZero
+    have hShort : ShortZero U ({a, b} : Finset (Fin 8)) := by
+      refine ⟨by simp, by simp [hab], ?_⟩
+      simpa [posSum, hab, add_comm] using hZero
+    exact hFree _ hShort
+
+/-- In exponent three, a three-term zero sum containing the same nonzero
+base value twice must have that same value in its remaining position. -/
+theorem s057_base_double_plus_zero
+    (U : PosSeq 8) (hInj : Squarefree U)
+    (a b : Fin 8)
+    (hZero : (U a : G) + (U a : G) + (U b : G) = 0) :
+    a = b := by
+  have hTuple :
+      finiteModelEquiv (U a : G) +
+        finiteModelEquiv (U a : G) +
+          finiteModelEquiv (U b : G) = 0 := by
+    simpa using congrArg finiteModelEquiv hZero
+  have hIdentity :
+      ∀ x y : F3T, x + x + y = 0 → x = y := by decide
+  apply hInj
+  apply Subtype.ext
+  apply finiteModelEquiv.injective
+  exact hIdentity _ _ hTuple
+
+/-- Three base values from a squarefree short-free sequence can sum to zero
+only when all three indices coincide. -/
+theorem s057_base_triple_zero
+    (U : PosSeq 8) (hInj : Squarefree U) (hFree : ShortFree U)
+    (a b c : Fin 8)
+    (hZero : (U a : G) + (U b : G) + (U c : G) = 0) :
+    a = b ∧ b = c := by
+  classical
+  have hab : a = b := by
+    by_contra hne
+    by_cases hac : a = c
+    · have h : (U a : G) + (U a : G) + (U b : G) = 0 := by
+        simpa [hac, add_comm, add_left_comm, add_assoc] using hZero
+      exact hne (s057_base_double_plus_zero U hInj a b h)
+    · by_cases hbc : b = c
+      · have h : (U b : G) + (U b : G) + (U a : G) = 0 := by
+          simpa [hbc, add_comm, add_left_comm, add_assoc] using hZero
+        exact hne (s057_base_double_plus_zero U hInj b a h).symm
+      · have hShort : ShortZero U ({a, b, c} : Finset (Fin 8)) := by
+          refine ⟨by simp, by simp [hne, hac, hbc], ?_⟩
+          simpa [posSum, hne, hac, hbc,
+            add_comm, add_left_comm, add_assoc] using hZero
+        exact hFree _ hShort
+  subst b
+  have hac : a = c := s057_base_double_plus_zero U hInj a c hZero
+  exact ⟨rfl, hac⟩
+
 end InverseZeroSum.Candidate3
