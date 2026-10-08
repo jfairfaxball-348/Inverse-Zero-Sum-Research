@@ -190,7 +190,7 @@ def S039PackingInput : Prop :=
 /-- Componentwise exponent-three torsion, avoiding a lost ambient ZMod module instance. -/
 theorem three_nsmul_G (x : G) : (3 : ℕ) • x = 0 := by
   ext i
-  simp only [Pi.nsmul_apply, Pi.zero_apply]
+  change (3 : ℕ) • x i = 0
   exact ZModModule.char_nsmul_eq_zero 3 (x i)
 
 theorem singleton_not_shortZero {n : ℕ} (S : PosSeq n) (i : Fin n) :
@@ -2509,7 +2509,7 @@ theorem weighted_sum_plus_singleton_eq_double
 
 
 
-set_option maxHeartbeats 2000000
+set_option maxHeartbeats 500000
 
 /--
 S052/D51-01 closes the length-15 nonzero-total-sum interface from the retained
@@ -2544,10 +2544,10 @@ theorem length15NonzeroInput : Length15NonzeroInput := by
   have hWeightedPlus :
       (∑ x ∈ tupleSupportT R, w x • x) + u =
         ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
-    simpa using
-      (weighted_sum_plus_singleton_eq_double
+    exact
+      weighted_sum_plus_singleton_eq_double
         (tupleSupportT R) (fun x : F3T => x) w
-        hu huOneW hOtherW)
+        hu huOneW hOtherW
   have hDouble :
       (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
     rw [Finset.sum_nsmul, hSupportSum]
@@ -2613,10 +2613,10 @@ theorem length15_singleton_sum_identity
   have hWeightedPlus :
       (∑ x ∈ tupleSupportT R, w x • x) + u =
         ∑ x ∈ tupleSupportT R, (2 : ℕ) • x := by
-    simpa using
-      (weighted_sum_plus_singleton_eq_double
+    exact
+      weighted_sum_plus_singleton_eq_double
         (tupleSupportT R) (fun x : F3T => x) w
-        hu huOneW hOtherW)
+        hu huOneW hOtherW
   have hDouble :
       (∑ x ∈ tupleSupportT R, (2 : ℕ) • x) = 0 := by
     rw [Finset.sum_nsmul, hSupportSum]
@@ -2754,11 +2754,12 @@ theorem shortFreeOn_card_fifteen_singleton_identity
           ((Finset.univ : Finset (Fin 15)).filter
             (fun i => tupleValueT R i = v)) = ∅ := by
         ext i
-        simp only [Finset.mem_empty, iff_false]
-        intro hi
-        apply hv
-        exact Finset.mem_image.mpr
-          ⟨i, Finset.mem_univ _, (Finset.mem_filter.mp hi).2⟩
+        constructor
+        · intro hi
+          exact (hv (Finset.mem_image.mpr
+            ⟨i, Finset.mem_univ _, (Finset.mem_filter.mp hi).2⟩)).elim
+        · intro hi
+          simp at hi
       simp [hEmpty]
   · intro v hvOne
     have hvOneR :
