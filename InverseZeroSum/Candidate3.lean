@@ -191,7 +191,7 @@ def S039PackingInput : Prop :=
 theorem three_nsmul_G (x : G) : (3 : ℕ) • x = 0 := by
   ext i
   change (3 : ℕ) • x i = 0
-  fin_cases (x i) <;> decide
+  exact ZModModule.char_nsmul_eq_zero 3 (x i)
 
 theorem singleton_not_shortZero {n : ℕ} (S : PosSeq n) (i : Fin n) :
     ¬ ShortZero S {i} := by
