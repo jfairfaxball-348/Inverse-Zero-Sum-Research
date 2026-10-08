@@ -3894,6 +3894,7 @@ theorem s057_avoids_of_reindexed (S : PosSeq 24)
     shortZero_map_pullSeq (fun i => S (e i)) t hPullJ
   have hIntersection :=
     hAvoid (I.map t) (J.map t) hI' hJ'
+  change posSum (fun i => S (e i)) (I.map t ∩ J.map t) = 0 at hIntersection
   rw [← Finset.map_inter (f := t) I J] at hIntersection
   change posSum (fun i => S (e i)) ((I ∩ J).map t) = 0 at hIntersection
   have hSumEq :
