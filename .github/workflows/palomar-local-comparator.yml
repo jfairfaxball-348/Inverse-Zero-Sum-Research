@@ -1,0 +1,43 @@
+name: Palomar local comparator and metadata
+on:
+  push:
+    branches: [s059-palomar-compat, main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Validate metadata against official template sentinel contract
+        run: ruby scripts/validate-formalization.rb formalization.yaml
+      - name: Validate source module headers and size caps
+        run: python3 scripts/check-lean-sources.py
+      - name: Validate metadata and source content boundary
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          challenge = Path("Challenge.lean").read_text()
+          proof = Path("InverseZeroSum/Candidate3.lean").read_text()
+          assert challenge.count("sorry") == 1, "Challenge must have exactly the one expected hole"
+          assert "sorry" not in proof and "admit" not in proof, "No proof placeholders"
+          assert "def FrozenClassification : Prop :=" in challenge
+          assert "theorem frozenClassification : FrozenClassification := by" in challenge
+          assert "theorem frozenClassification : FrozenClassification := by" in proof
+          print("source and Challenge shape correct")
+          PY
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          build: false
+      - name: Install Comparator sandbox dependency
+        run: |
+          sudo apt-get update -qq >/dev/null
+          sudo apt-get install -y -qq bubblewrap >/dev/null
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - name: Run bundled lake comparator and NanoDa/con-ron replay
+        run: bash scripts/verify-comparator.sh
