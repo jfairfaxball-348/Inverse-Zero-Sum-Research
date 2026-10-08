@@ -4,11 +4,11 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S058",
+  "last_completed_session": "S059",
   "next_session": null,
   "next_brief": null,
-  "stage": "P6_CAND03_PALOMAR_PORTAL_INTAKE_REPORTED_VERIFICATION_PENDING",
-  "programme_status": "S059_PARTIAL_TECHNICAL_LEAN_AND_LOCAL_KERNELS_PASS_OWNER_PORTAL_SUBMISSION_REPORTED_OFFICIAL_VERIFICATION_UNKNOWN_B015_OPEN",
+  "stage": "P6_CAND03_PALOMAR_FULL_MECHANICAL_PASSED_PORTAL_REVIEW_STATUS_PENDING",
+  "programme_status": "S059_COMPLETED_LEAN435_LOCAL_COMPARATOR_AND_PALOMAR_OFFICIAL_FULL_PASS_OWNER_INTAKE_PORTAL_STATUS_REFRESH_ISSUE_REVIEW_UNKNOWN",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
   "candidate_under_due_diligence": "CAND-03 exact iff proved and rechecked under Lean 4.35.0-rc2, local PalomarTemplate Comparator/NanoDa/con-ron PASSED; PalomarSubmission official full CI QUEUED on nscloud execution runner, NOT PASSED; no registration, paper, arXiv or E-JC.",
   "mathematical_results": [
@@ -114,9 +114,7 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [
-    "B-015"
-  ],
+  "active_owner_blockers": [],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; it remains CAND-02-specific and does not transfer reviewer or status authority to CAND-03.",
     "Treat the S042 deep non-hit conservatively: it supports the authorized workflow transition but is not an absolute proof of novelty or prior openness.",
@@ -124,9 +122,10 @@
     "Proceed only in the owner-authorized order: Lean formalization -> Palomar registration -> paper drafting -> arXiv preprint -> E-JC submission.",
     "B-014 resolved 2026-10-08: owner authorized a separate Palomar port and approved John Fairfax-Ball human author/responsible-maintainer attribution. No further approval needed for ordinary reversible engineering, but no portal intake or registration was authorized.",
     "A subsequent Palomar submission, GitHub OAuth/write-access check, public verification workflow, and final permanent registration each require applicable explicit owner authorization/action. None is presumed from P57-01.",
-    "B-015 ACTIVE as an unverified official full mechanical outcome. Owner-reported Palomar portal intake of exact SHA c5f9e5e822020688c72b2a3bfacbf147a801e219 may provide provider-managed verification independently of the queued caller-repository nscloud job. Await the actual Palomar verifier/status result, preserve private status token, do not assume PASS/registration, and only arrange extra runner access if still needed."
+    "D-165: Official PalomarSubmission full-mode mechanical verification on the owner-submitted exact source commit succeeded (GitHub Actions 37813245157, 2026-10-08); the separate caller-repository Namespace reusable CI remains queued and is not itself passed, but no longer blocks technical verification.",
+    "Palomar portal status page is returning 'Could not refresh this submission. Retrying'; private token was not recorded. Await provider status/review confirmation or seek Palomar support if status API continues to fail. Do not equate mechanical proof verification with editorial review, eligibility decision, permanent registration, paper, arXiv or E-JC."
   ],
-  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
+  "next_prompt_status": "NONE",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -425,7 +424,7 @@
     },
     {
       "id": "S059",
-      "status": "PARTIAL",
+      "status": "COMPLETED",
       "record": "sessions/S059/CLOSEOUT.md"
     }
   ],
@@ -454,7 +453,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "S059 frozen classification Lean 4.35 and PalomarTemplate Comparator/kernel CI PASS on exact submitted commit c5f9e5e822020688c72b2a3bfacbf147a801e219 (GitHub Actions 37811409022 and 37811408881). Owner reported Palomar portal submission on 2026-10-08 and supplied a private status URL (not recorded in repository). Actual Palomar verification, editorial outcome and registration are UNKNOWN; no permanent registry record established. Separate repository full reusable CI 37811409532 has passed profile and queued nscloud verify; NOT PASS. B-015 remains open until trusted official outcome or permitted infrastructure route is confirmed. No paper, arXiv, E-JC or outreach.",
+  "current_route_disposition": "Original CAND-03 exact theorem proved in Lean 4.35 and locally on submitted SHA c5f9e5e822020688c72b2a3bfacbf147a801e219 (Actions 37811409022 and 37811408881 PASS). Palomar's actual provider-managed official FULL verifier ran at https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157 on 2026-10-08 17:00-17:06 UTC; source repository and SHA matched, final full-mode mechanical gate PASS (the official gate requires report status pass). B-015 technical runner blocker RESOLVED via the provider's own runner, notwithstanding distinct queued caller-repository reusable run 37811409532. Owner reported Palomar status UI 'Could not refresh this submission. Retrying'; implementation implies unsuccessful /api/submission HTTP response but specific code and server cause not known. Palomar portal review-status acknowledgement, editorial outcome and permanent registry registration not known. Do not resubmit or expose private status token; no paper, arXiv, E-JC or outreach.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -749,7 +748,7 @@
     "submitted": false
   },
   "s059_port": {
-    "status": "PARTIAL_TECHNICAL_LOCAL_PASS_OFFICIAL_FULL_QUEUE_BLOCKED",
+    "status": "COMPLETED_TECHNICAL_PROOF_PALOMAR_OFFICIAL_FULL_PASS_PORTAL_STATUS_ISSUE",
     "owner_authorized_date": "2026-10-08",
     "author": "John Fairfax-Ball",
     "responsible_maintainer": "John Fairfax-Ball",
@@ -757,25 +756,27 @@
     "pr": 19,
     "toolchain_target": "leanprover/lean4:v4.35.0-rc2",
     "palomar_pipeline_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
-    "full_preflight_status": "QUEUED_OR_UNVERIFIED",
+    "full_preflight_status": "PASS",
     "portal_submitted": true,
     "registered": false,
     "registration_commit": null,
-    "lean_build": "PASS exact commit CI 37811409022",
-    "local_comparator": "PASS exact commit CI 37811408881",
+    "lean_build": "PASS exact submitted commit 37811409022",
+    "local_comparator": "PASS exact submitted commit 37811408881",
     "independent_kernels": [
       "Lean default",
       "NanoDa",
       "con-ron"
     ],
     "con_ron_accepted_declarations": 8731,
-    "official_full_preflight": "REPOSITORY_REUSABLE_CI_37811409532_VERIFY_QUEUED_NOT_PASSED",
+    "official_full_preflight": "PASS official provider-managed GitHub Actions 37813245157; full verifier report gate succeeded",
     "checker_contract_note": "A PARTIAL session cannot be `last_completed_session` under check_authority.py: S058 remains last COMPLETED, S059 is latest PARTIAL in checkpoint ledger.",
     "source_commit_submitted": "c5f9e5e822020688c72b2a3bfacbf147a801e219",
     "portal_submitted_evidence": "owner-reported 2026-10-08; private status link omitted",
-    "portal_verification_status": "UNKNOWN_AWAITING_PROVIDER_RESULT",
-    "portal_review_status": "UNKNOWN_NOT_CLAIMED",
-    "palomar_registration_status": "NOT_REPORTED"
+    "portal_verification_status": "PUBLIC_MECHANICAL_REPORT_PASS; portal UI state unavailable",
+    "portal_review_status": "UNKNOWN_STATUS_PAGE_API_RETRY",
+    "palomar_registration_status": "NOT_REPORTED",
+    "portal_status_page_issue": "owner reported Could not refresh this submission. Retrying; server /api/submission non-OK response; exact status code not observed",
+    "technical_blocker_B015": "RESOLVED_BY_OFFICIAL_PROVIDER_MANAGED_RUN_37813245157"
   },
   "s059_formalization_date": "2026-10-08"
 }

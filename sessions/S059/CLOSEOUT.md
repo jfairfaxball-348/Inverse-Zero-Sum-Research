@@ -1,8 +1,8 @@
-# S059 closeout — PARTIAL: verified Palomar-compatible local package; official full verifier runner blocked
+# S059 closeout — COMPLETED after subsequent official full verification (initially PARTIAL)
 
 Date: 2026-10-08.
 Unit: P58-01 (owner-approved B-014 resolution and Palomar-compatible proof-preserving port).
-Status: **PARTIAL**, due to **B-015 ACTIVE**.
+Status at initial closeout: **PARTIAL**, due to then-active **B-015**. Subsequently **COMPLETED** after official provider-managed full verifier PASS (D-165 addendum below).
 
 ## Authority and exact theorem
 
@@ -29,3 +29,9 @@ Next session: **NONE while B-015 active**. Next-session prompt **SUPPRESSED_OWNE
 ## Post-closeout state-integrity correction
 
 The first S059 PARTIAL checkpoint assigned `last_completed_session=S059`, but the repository authority checker requires that field to point to a `COMPLETED` checkpoint. Repaired by keeping `last_completed_session=S058` while retaining a distinct latest `S059 / PARTIAL` session checkpoint, source validation and active B-015. No mathematical or Palomar mechanical status changed; the synchronized repair must be verified in fresh CI.
+
+## D-165 post-closeout external verification addendum — final technical COMPLETED status
+
+**New independent evidence supersedes the historical PARTIAL conclusion above:** On 2026-10-08 at approximately 17:06 UTC, [official PalomarSubmission full mechanical verification run 37813245157](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157) concluded SUCCESS in the PalomarRegistry/PalomarSubmission repository. Its public logs identify the exact owner-submitted `jfairfaxball-348/Inverse-Zero-Sum-Research@c5f9e5e822020688c72b2a3bfacbf147a801e219`. Final mandatory full-mode `workflow_report.py gate` passed; the official code requires `mechanical-report.status == pass`, valid report upload and successful setup steps. Hence the sole technical gap B-015 is **RESOLVED** and S059 is retrospectively closed **COMPLETED** as to proof-preserving Lean 4.35 compatibility, Challenge/Solution, authoritative metadata and official Palomar verification. The distinct caller-repository reusable CI never ran its Namespace-hosted verify job; it is not relabeled PASS.
+
+The **owner's Palomar private portal status page currently displays a retrying refresh error**. The public PalomarServer browser implementation identifies this as a failed `GET /api/submission` HTTP response other than an invalid/missing token response; its exact HTTP code and backend root cause are not observed. The portal's subsequent automated editorial review/status and later permanent registration **are not confirmed**, so no next publication stage is promoted. Keep the private status token secret; no duplicate submission or new portal action was attempted. No manuscript, arXiv preprint, E-JC filing or outreach. A new session prompt is not prepared while the owner awaits status/review information.

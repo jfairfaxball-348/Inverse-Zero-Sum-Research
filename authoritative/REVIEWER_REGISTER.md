@@ -863,3 +863,7 @@ A pending Palomar automated verifier is not a completed editorial review, an ind
 ## S059 verification/review boundary
 
 Lean kernel, NanoDa and con-ron independent **machine** replay passed, CI 37809065386; this is not mathematical human peer review or Palomar editorial acceptance. The official Palomar full verification job has not run (B-015). Independent CAND-03 pre-submission consultation is explicitly skipped, ordinary E-JC referee review remains future, Xue Li CAND-02 reply pending. No contact or consultation was made.
+
+## D-165 automated review boundary after official proof verification
+
+Official Palomar full-mode mechanical proof verification **PASSED** on owner-submitted immutable commit `c5f9e5e822020688c72b2a3bfacbf147a801e219` (GitHub Actions 37813245157). This independently checked proof is **not** Palomar's automated editorial review, independent mathematical human review, or E-JC peer review. The private submission status page is currently reporting a refresh failure; no new editorial result is known. Independent CAND-03 pre-submission consultation remains skipped, journal referee process future, and CAND-02-only correspondence unchanged.
