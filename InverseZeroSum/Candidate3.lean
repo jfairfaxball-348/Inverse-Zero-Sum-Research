@@ -2967,7 +2967,7 @@ theorem s9_certificate_swap_fibre_counts
     ((Finset.univ \ representativeSet (Function.update rep j y)).filter
         (fun i => finiteModelEquiv (S i : G) = v)).card +
       (if finiteModelEquiv (S y : G) = v then 1 else 0) =
-    (((Finset.univ \ representativeSet rep).filter
+    ((Finset.univ \ representativeSet rep).filter
         (fun i => finiteModelEquiv (S i : G) = v)).card +
       (if finiteModelEquiv (S (rep j) : G) = v then 1 else 0) := by
   classical
