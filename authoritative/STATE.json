@@ -4,7 +4,7 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S059",
+  "last_completed_session": "S058",
   "next_session": null,
   "next_brief": null,
   "stage": "P6_CAND03_PALOMAR_FULL_CI_RUNNER_BLOCKED",
@@ -769,7 +769,8 @@
       "con-ron"
     ],
     "con_ron_accepted_declarations": 8731,
-    "official_full_preflight": "QUEUED_NOT_PASSED_NAMESPACE_RUNNER_B015"
+    "official_full_preflight": "QUEUED_NOT_PASSED_NAMESPACE_RUNNER_B015",
+    "checker_contract_note": "A PARTIAL session cannot be `last_completed_session` under check_authority.py: S058 remains last COMPLETED, S059 is latest PARTIAL in checkpoint ledger."
   },
   "s059_formalization_date": "2026-10-08"
 }

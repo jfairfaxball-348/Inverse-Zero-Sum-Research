@@ -25,3 +25,7 @@ The repository also called the **official full PalomarSubmission reusable verifi
 S059 closes **PARTIAL** with exact machine-checked technical results, official CI infrastructure blocker and no remaining mathematical proof obligations. No Palomar registration or record, paper, arXiv preprint, E-JC journal submission, independent CAND-03 consultation or outreach occurred. CAND-02 Xue Li correspondence remains separate. Future order: finish official Palomar full CI -> owner registers -> paper -> arXiv -> E-JC.
 
 Next session: **NONE while B-015 active**. Next-session prompt **SUPPRESSED_OWNER_BLOCKER**. This closeout and the synchronized `STATE.json`, register, roadmap, decisions and claims supersede dated in-progress status paragraphs but preserve their historical factual errors/repairs.
+
+## Post-closeout state-integrity correction
+
+The first S059 PARTIAL checkpoint assigned `last_completed_session=S059`, but the repository authority checker requires that field to point to a `COMPLETED` checkpoint. Repaired by keeping `last_completed_session=S058` while retaining a distinct latest `S059 / PARTIAL` session checkpoint, source validation and active B-015. No mathematical or Palomar mechanical status changed; the synchronized repair must be verified in fresh CI.

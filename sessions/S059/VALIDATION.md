@@ -13,3 +13,7 @@
 - **NOT PASSED / QUEUED:** pinned official PalomarSubmission full reusable verifier (pipeline d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44). Namespace 16x32 execution profile cannot be demonstrated available to this caller; verification jobs remained queued as of closure. This is blocker B-015, not a proof failure.
 - **ABSENT:** portal intake, proof registration record, registry identifier, editorial decision, manuscript, arXiv, E-JC submission, outreach. No registration-ready commit may be handed over under owner D-162 before the official full gate is confirmed.
 - The final docs-only closeout update requires a new branch/main CI run; source/Challenge/Comparator declarations and pinned toolchain remain unchanged from the above proven checkpoint. Check remote runs before asserting final docs commit integrity.
+
+## Final authority-integrity repair
+
+The initial synchronized S059 partial-closeout commit `1557ec2875444a923ea9c16ef07d2b97432004fa` passed the Lean source steps but `scripts/check_authority.py` reported `Last completed session is not completed in checkpoint ledger`: its historical contract permits `last_completed_session` to name only a COMPLETED record. Because S059 is PARTIAL, preserve S058 as the last COMPLETED session and record S059 separately as the latest PARTIAL checkpoint. This is authority bookkeeping only; no source changes or upgrade to a completed official Palomar run. Retest after this repair.
