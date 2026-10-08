@@ -3580,4 +3580,39 @@ theorem s056_packed_representatives_injective
   exact (Finset.disjoint_left.mp hDisj)
     (Finset.mem_insert_of_mem hz) (Finset.mem_of_mem_erase hz)
 
+
+/-- The verified packing spine constructs the eight distinct short-free
+representative values as a positional length-eight sequence. This does not yet
+assert a permutation witness for the original length-24 sequence. -/
+theorem s056_exists_squarefree_shortFree_eight (S : PosSeq 24)
+    (hAvoid : AvoidsInnerJointPair S) :
+    ∃ U : PosSeq 8, Squarefree U ∧ ShortFree U := by
+  classical
+  obtain ⟨c, hs, hConst⟩ := s056_eight_constant_certificate S hAvoid
+  let rep : Fin c.s → Fin 24 :=
+    fun j => Classical.choose (c.block_shortZero j).1
+  have hRep : ∀ j, rep j ∈ c.blocks j := by
+    intro j
+    exact Classical.choose_spec (c.block_shortZero j).1
+  let V : PosSeq c.s := fun j => S (rep j)
+  have hVFree : ShortFree V :=
+    s056_packed_representatives_shortFree hAvoid c hConst rep hRep
+  have hVInj : Squarefree V :=
+    s056_packed_representatives_injective hAvoid c hs hConst rep hRep
+  let e : Fin 8 ↪ Fin c.s :=
+    ⟨Fin.cast hs.symm, by
+      intro i j hij
+      have hh := congrArg (Fin.cast hs) hij
+      simpa using hh⟩
+  let U : PosSeq 8 := pullSeq V e
+  refine ⟨U, ?_, ?_⟩
+  · intro i j hij
+    apply e.injective
+    apply hVInj
+    simpa [U, pullSeq] using hij
+  · intro I hI
+    apply hVFree (I.map e)
+    apply shortZero_map_pullSeq V e
+    simpa [U] using hI
+
 end InverseZeroSum.Candidate3
