@@ -4,7 +4,7 @@ A distinct research programme in combinatorial number theory, aiming for an
 original mathematical contribution and genuine peer-reviewed journal
 publication.
 
-**Current stage: CAND-03 exact Lean formalization COMPLETED. `frozenClassification : FrozenClassification` proves both directions with unchanged positional semantics (pinned proof-head CI 37787906708). Palomar is not registered; S058 is READY for its requirements preflight. Later paper, arXiv and E-JC steps have not begun.**
+**Current stage (2026-10-08):** CAND-03's exact positional `frozenClassification : FrozenClassification` was proved and validated under pinned Lean 4.19.0 at [main checkpoint 0d828d5](https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/commit/0d828d51264e11ca372830722726a836035a4b21) (run [37800488981](https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/actions/runs/37800488981): all checks passed). S058 completed an official Palomar requirements preflight, **not registration**. The owner has now approved both a separate technical compatibility port and John Fairfax-Ball's author/responsible-maintainer attribution (D-161; B-014 RESOLVED). S059 is **in progress on draft PR #19**. Lean 4.35.0-rc2 migration and official full Palomar mechanical preflight are **NOT YET PASSED**; no registration-ready commit has been issued. No Palomar portal submission, paper, arXiv posting or E-JC submission has occurred.
 
 Start every session at [authoritative/START_HERE.md](authoritative/START_HERE.md)
 and follow [AGENTS.md](AGENTS.md). Committed records are the source of research
@@ -13,15 +13,17 @@ authority; conversation history is not the project state.
 A numbered session runs one bounded task autonomously, validates and
 checkpoints useful work, then automatically provides a close report.
 
-**A next-session prompt appears only when it is immediately runnable. If an active blocker requires the owner, the session ends with the specific request and no next-session prompt.** B-006 through B-013 are resolved. S057 is the sole live formalization continuation.
+**A next-session prompt appears only when immediately runnable; the current S059 work is in progress, so no new session is being promoted.** B-014 is resolved by owner decision; this is **technical port authorization only**, not an actual Palomar submission or registration.
 
 ## Current readiness dimensions
 
 1. Target gate — OPEN: CAND-03 is selected at the exact length-24 structural inverse Narkiewicz-sense eta scope.
 2. Publication gate — OPEN: S042 cleared the defined prior-art dependency only in the documented-search sense; E-JC remains the intended journal after the ordered verification/preprint stages.
-3. Mathematical-investigation gate — OPEN for S057/D56-01 direct positional sufficiency and final frozen iff composition only; no new architecture authorized.
+3. Mathematical-investigation gate — OPEN, but the exact mathematical iff was already proved in Lean 4.19. S059 is a separate Palomar-compatible verification port, not new mathematical research.
 4. External-review gate — CLOSED and not a CAND-03 pre-submission blocker: the owner explicitly skips independent reviewer/consultation. Lean/Palomar verification and E-JC's ordinary editorial/referee process are the planned verification/review path.
-5. Ordered roadmap — Lean formalization -> Palomar registration -> paper -> arXiv -> E-JC submission.
+5. Ordered roadmap — frozen Lean proof complete -> Palomar compatibility + full mechanical preflight IN PROGRESS -> owner-led Palomar registration after passing -> paper -> arXiv -> E-JC submission.
+
+**Historical programme commentary follows.** Statements about past session readiness or an unproved theorem are dated historical checkpoints and do not supersede the live status above or `authoritative/STATE.json`.
 
 S010's exact capacity equivalence and witness-complement obstruction remain
 intact, S011's local-hole/capacity exchange route remains stopped, and S012's

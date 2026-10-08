@@ -1449,3 +1449,7 @@ This is formal verification of the encoded theorem, not independent confirmation
 ## S058 CAND-03 registration-eligibility boundary
 
 Exact mathematical target and frozen iff **unchanged**. S057 kernel-checked the positional `FrozenClassification` under Lean 4.19.0; S058 tested official Palomar registration requirements only. The active Palomar minimum is `v4.35.0-rc2` (official `toolchains.json`, 2026-10-08), so the current proof cannot simply be uploaded as an eligible Palomar submission. Neither the technical requirement nor S042's non-hit changes the theorem or establishes novelty, historical openness or significance. B-014 active; no next session, no submission or registry ID.
+
+## S059 live port status
+
+The selected frozen CAND-03 theorem, sequence quantifiers, positions and proof meaning are unchanged. Original Lean 4.19 proof validated on main CI 37800488981. The ongoing Palomar 4.35 technical port on PR #19 is NOT YET verified; an initial compatibility build failed. This is **not** a counterexample or loss of the original theorem proof. S042 no-hit is not a priority or novelty certificate. No registration has occurred.
