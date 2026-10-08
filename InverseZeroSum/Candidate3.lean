@@ -3547,7 +3547,6 @@ theorem s056_packed_representatives_injective
     insert (rep k) ((c.blocks j).erase (rep j))
   have hEraseCard : ((c.blocks j).erase (rep j)).card = 2 := by
     rw [Finset.card_erase_of_mem (hRep j), hCard]
-    decide
   have hNotErase : rep k ∉ (c.blocks j).erase (rep j) := by
     intro hk
     exact hNotK (Finset.mem_of_mem_erase hk)
