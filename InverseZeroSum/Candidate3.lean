@@ -3668,7 +3668,7 @@ theorem s056_constant_blocks_isTriplePower
     apply Fin.ext
     omega
   have hSurj : Function.Surjective f :=
-    Finite.surjective_of_injective f hFInj
+    Finite.surjective_of_injective hFInj
   refine ⟨Equiv.ofBijective f ⟨hFInj, hSurj⟩, ?_⟩
   intro i
   change S (f i) = S (rep (idx (baseIndex i)))
