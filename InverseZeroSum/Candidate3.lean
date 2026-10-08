@@ -3675,4 +3675,47 @@ theorem s056_constant_blocks_isTriplePower
   exact hConst.2.2 (idx (baseIndex i))
     (f i) (hMem i) (rep (idx (baseIndex i))) (hRep _)
 
+
+/-- Frozen iff, necessity half: the previously checked proof spine together
+with the original-position three-block permutation yields the exact structural
+normal form, without using any sufficiency statement. -/
+theorem s056_frozen_necessity (S : PosSeq 24)
+    (hAvoid : AvoidsInnerJointPair S) :
+    ∃ U : PosSeq 8,
+      Squarefree U ∧ ShortFree U ∧ IsTriplePower S U := by
+  classical
+  obtain ⟨c, hs, hConst⟩ := s056_eight_constant_certificate S hAvoid
+  let rep : Fin c.s → Fin 24 :=
+    fun j => Classical.choose (c.block_shortZero j).1
+  have hRep : ∀ j, rep j ∈ c.blocks j := by
+    intro j
+    exact Classical.choose_spec (c.block_shortZero j).1
+  let V : PosSeq c.s := fun j => S (rep j)
+  have hVFree : ShortFree V :=
+    s056_packed_representatives_shortFree hAvoid c hConst rep hRep
+  have hVInj : Squarefree V :=
+    s056_packed_representatives_injective hAvoid c hs hConst rep hRep
+  let e : Fin 8 ↪ Fin c.s :=
+    ⟨Fin.cast hs.symm, by
+      intro i j hij
+      have hh := congrArg (Fin.cast hs) hij
+      simpa using hh⟩
+  let U : PosSeq 8 := pullSeq V e
+  have hUInj : Squarefree U := by
+    intro i j hij
+    apply e.injective
+    apply hVInj
+    simpa [U, pullSeq] using hij
+  have hUFree : ShortFree U := by
+    intro I hI
+    apply hVFree (I.map e)
+    apply shortZero_map_pullSeq V e
+    simpa [U] using hI
+  have hTriple :
+      IsTriplePower S (fun i : Fin 8 =>
+        S (rep (Fin.cast hs.symm i))) :=
+    s056_constant_blocks_isTriplePower c hs hConst rep hRep
+  refine ⟨U, hUInj, hUFree, ?_⟩
+  simpa [U, V, e, pullSeq] using hTriple
+
 end InverseZeroSum.Candidate3
