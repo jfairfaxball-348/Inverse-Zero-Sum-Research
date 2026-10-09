@@ -15,11 +15,11 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
-## Current state — S060 E-JC discovery COMPLETED; S061 proof-audit PREPARATION READY (D-167)
+## Current state — PALOMAR REGISTERED; S061 E-JC working-manuscript DRAFT READY (D-168)
 
-The exact CAND-03 frozen iff has Lean 4.35, trusted Comparator/NanoDa/con-ron, and official Palomar full mechanical verification PASSED on the owner-submitted immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219` ([official full run 37813245157](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157)). Owner reports Palomar's automated editorial checker `codex:gpt-6-sol` identified **no problems** at `2026-10-08T17:55:22Z` and explicitly **no human read it**. Owner REQUESTED registration at `2026-10-08T18:29:46Z`. **No merged registry record is yet known; no private status token is recorded.**
+The exact CAND-03 frozen iff has Lean 4.35, trusted Comparator/NanoDa/con-ron, and official Palomar full mechanical verification PASSED on the owner-submitted immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219` ([official full run 37813245157](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157)). Owner reports Palomar's automated editorial checker `codex:gpt-6-sol` identified **no problems** at `2026-10-08T17:55:22Z` and explicitly **no human read it**. Owner REQUESTED registration at `2026-10-08T18:29:46Z`. **SUPERSEDED 2026-10-09:** official registered [PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1), public status `registered` at 15:53:49Z. No private status token is recorded.
 
-Owner authorized S060 solely for **E-JC-first prewriting journal-fit discovery**, which can be undertaken before Palomar registration merges. Active owner blockers NONE. **Next: S060 READY**, brief `authoritative/S060_EJC_PUBLICATION_FIT_PREWRITING_DISCOVERY_BRIEF.md`, live prompt `authoritative/NEXT_SESSION_PROMPT.md`. Future stages remain registration → manuscript → arXiv → E-JC. Human author must personally verify, rewrite AI-assisted proof in own words and vouch for every step before E-JC submission; no such human completion is presumed. No manuscript, portal action, arXiv or E-JC filing authorized in S060.
+Owner authorized S060 solely for **E-JC-first prewriting journal-fit discovery**, which can be undertaken before Palomar registration merges. Active owner blockers NONE. **S060 COMPLETED GO-WITH-CONDITIONS. Next: S061 READY** for E-JC-targeted working manuscript drafting plus proof-audit worksheet, governed by `authoritative/S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md` and live prompt `authoritative/NEXT_SESSION_PROMPT.md`. Future stages remain registration → manuscript → arXiv → E-JC. Human author must personally verify, rewrite AI-assisted proof in own words and vouch for every step before E-JC submission; no such human completion is presumed. No manuscript, portal action, arXiv or E-JC filing authorized in S060.
 
 Selected target:
 
@@ -47,6 +47,10 @@ length 8.
 
 CAND-05 and CAND-02 remain historical/paused; CAND-04 remains retired;
 CAND-06 and CAND-01 remain unselected alternatives.
+
+## D-168 LIVE publication-stage update (9 October 2026; supersedes dated S060/S059 passages below)
+
+Public [Palomar PALOMAR-2026-10-09-000011, immutable version 1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1), listed `registered`, published **2026-10-09T15:53:49Z** in [official registry data](https://data.palomar-registry.org/recent.json); theorem `InverseZeroSum.Candidate3.frozenClassification` and immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`. Registration milestone DONE, no ID speculation. Machine review is NOT E-JC peer review. **S060 COMPLETED GO-WITH-CONDITIONS**; next **S061: E-JC working manuscript draft + separate human-audit/source ledger** is READY as a *drafting* session, superseding the older audit-only brief. Human author still must PERSONALLY check every AI-assisted proof step, rewrite in own words and vouch for it before future submission; compliance NOT ATTESTED. No arXiv preprint, E-JC submission or new contact. Route: **Palomar registered → paper draft → arXiv → E-JC**. Link to governing [S061 brief](S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md).
 
 ## Historical CAND-05 mathematical frontier (proof paused)
 

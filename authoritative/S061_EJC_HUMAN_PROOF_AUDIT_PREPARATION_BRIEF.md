@@ -1,6 +1,6 @@
-# S061 — E-JC human-proof-audit preparation brief
+# S061 — historical audit-preparation brief (SUPERSEDED by D-168)
 
-**Status: READY.** Single unit D60-01: prepare a *human-author-checkable worksheet and source-accurate lemma matrix* from S060 for a future E-JC manuscript. This is **NOT** the manuscript and must not impersonate the owner's independent verification.
+**Status: SUPERSEDED / NOT LIVE after Palomar registry confirmation (D-168, 2026-10-09).** The present live S061 brief is `authoritative/S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md`; this older preparatory brief remains as an audit trail, not a kickoff. Previously:  Single unit D60-01: prepare a *human-author-checkable worksheet and source-accurate lemma matrix* from S060 for a future E-JC manuscript. This is **NOT** the manuscript and must not impersonate the owner's independent verification.
 
 ## Entry and scope
 Pin live `main`, read AGENTS, START_HERE, STATE, charter/protocol, S060 seven records and all current registers; S039/S040/S041/S042/S043, S057/S059 validation and Lean `Candidate3.lean`. Confirm S061 unique. Preserve frozen exact 24-position theorem and proof source. Palomar full verification passed on `c5f9e5e822020688c72b2a3bfacbf147a801e219`, official run 37813245157; permanent registration REQUESTED but not independently merged. Human E-JC personal proof verification and rewrite **not completed/attested**.

@@ -1461,3 +1461,7 @@ Selected exact `FrozenClassification` iff mathematical semantics remain unchange
 ## D-166 E-JC-first prewriting scope
 
 Exact frozen iff target is mathematically unchanged. The E-JC suitability exercise focuses on the **converse extremal rigidity**: the known 2024 threefold construction and sharp threshold already exist. Cap-core geometry is an interpretive bridge, NOT a proved substitute for the indexed pair-witness implication. E-JC significance and global novelty remain **unassessed/uncertified pending S060 discovery**, despite successful Lean/Palomar verification and the positive Palomar automated editorial screen. No stronger rank statement is authorized.
+
+## D-168 registration does not change CAND-03 theorem or novelty (2026-10-09)
+
+Palomar official [PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1) publicly registered the exact frozen Lean theorem on `c5f9e5e822020688c72b2a3bfacbf147a801e219` at 2026-10-09T15:53:49Z. The mathematical target remains the full positional 24-term `C_3^3\setminus\{0\}` iff, `S=U^3` for squarefree short-free 8-term U *up to position permutation*. Published direct 2024 threshold/construction and 2012 residual inputs are not new. S042 no-hit is not a global novelty certification. This administrative milestone allows an E-JC-targeted working draft, not new mathematics or human-author proof certification.
