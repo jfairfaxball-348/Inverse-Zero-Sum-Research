@@ -3,26 +3,65 @@
 Session: S061.
 Status: READY.
 
-This prompt supersedes the older S061 audit-only kickoff under owner D-168, after public Palomar registration.
+Copy this complete research-session kickoff. The current repository is authoritative.
 
 ```text
 Session: S061.
 Status: READY.
 
-Begin S061 — E-JC-targeted working manuscript drafting plus human proof-audit ledger — in:
+Begin S061 — write the full E-JC-targeted CAND-03 research paper — in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
-Pin live main, reconcile any intervening changes and verify S061 unique. Follow AGENTS.md, authoritative/START_HERE.md, STATE.json, charter/protocol and all governing registers; read the seven S060 records, S039/S040 direct proofs and source checks, S041/S042 audits, S043 semantic correspondence, S057 Lean iff, S059 Palomar validation, and authoritative/S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md.
+Pin live main, reconcile intervening changes, and confirm S061 is unique.
+Read AGENTS.md, authoritative/START_HERE.md, authoritative/STATE.json,
+the charter/session protocol and all governing registers; read all seven
+S060 records; S039/S040 proofs and sources; S041/S042 novelty and status
+audits; S043 semantic correspondence; S057 completed Lean theorem;
+S059 Palomar verification; and the binding brief:
+authoritative/S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md.
 
-The full positional iff has official Palomar registration:
-PALOMAR-2026-10-09-000011, version 1, registered 2026-10-09T15:53:49Z.
+PALOMAR PERMANENT REGISTRATION: COMPLETE
+ID: PALOMAR-2026-10-09-000011, version 1
 https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1
-Immutable Lean/Palomar source: c5f9e5e822020688c72b2a3bfacbf147a801e219.
-Official full run 37813245157 PASS. Registration is formal proof documentation, NOT peer review, novelty certification, or a human proof audit.
+Immutable proof source: c5f9e5e822020688c72b2a3bfacbf147a801e219
+Official full mechanical verification run: 37813245157 PASS.
 
-Carry out exactly D60-01 as respecified by D-168: create a source-accurate, mathematically complete E-JC-targeted WORKING manuscript draft (editable LaTeX and a PDF if reproducibly buildable), plus a distinct fine-grained human proof-checking worksheet and a claim/source/Lean correspondence ledger. Prioritize the new inverse 24-term necessity and equality rigidity, not the published 2024 direct threshold and U^3 construction or the existing 2012 residual ingredients. Explain the universal packing transversal, all four signatures, s=8 swaps, 15-term 2^7 1 singleton identity, s=9 second 2-atom contradiction, permutation semantics and sufficiency. Keep the cap-core interpretation secondary. Preserve exact quantifiers, original positions and length restrictions.
+Execute exactly one bounded S061/D60-01 PAPER-WRITING session.
+Produce a genuine, complete first manuscript targeting the Electronic
+Journal of Combinatorics: LaTeX source, correct references, a reproducible
+PDF if possible, and a compact mathematical source/proof-consistency record.
 
-The draft is NOT human verified and NOT submission-ready. E-JC requires the human author personally verify, understand, rewrite AI-assisted proof in their own words, and vouch for every step before E-JC submission. Do NOT fill the human attestation on the owner's behalf. S042 prior-art non-hit does not establish global novelty. No new result beyond the frozen theorem without separate verification and authorization.
+The precise original contribution relative to inspected published works
+is the inverse NECESSITY/equality classification for all indexed 24-term
+avoiding multisequences over C_3^3\{0}: exactly U^3, up to permutation
+of positions, for squarefree short-free |U|=8. Preserve the exact
+pairwise positional-intersection sum condition and witness lengths <=3.
 
-No arXiv upload, E-JC filing, outside contact or other external action in S061. Retain the order: Palomar registered → paper → arXiv → E-JC. Independently validate manuscript/build/checklist, update session records/authority and GitHub Actions, checkpoint main, and prepare at most one following ready prompt only if no actual owner blocker. Never promise E-JC acceptance.
+Do not claim the known 2024 Gao–Hui–Li–Li–Qu–Zhong threshold 25,
+direct construction U^3 or packing machinery as new. Credit the 2012
+Fan–Gao–Wang–Zhong–Zhuang length-16 and length-15 residual inputs.
+S042 found no exact prior equivalent in its bounded search, but this
+does not establish global novelty or historical openness.
+
+Write an informative abstract, focused introduction, exact definitions,
+fully sourced preliminary results, a complete readable proof, discussion
+of mathematical meaning/limits, and accurate bibliography. Explain:
+four packing signatures, universal representative deletion, s=8
+length-16 residual swap forcing constant three-blocks, the length-15
+profile 2^7 1 and singleton sum identity, the s=9 two-block
+contradiction, all-position permutation and direct sufficiency.
+Keep any nine-cap geometry to a brief optional explanatory remark.
+
+Follow E-JC manuscript conventions and accurate disclosure policies.
+Do not include private development-process details or unsupported claims
+of peer-reviewed publication or guaranteed acceptance.
+
+Compile and inspect the PDF if possible, check citations/source inputs,
+run authority and appropriate GitHub Actions validation, synchronize
+records, commit/push, and independently verify final remote main.
+At most one next-session prompt, only if no owner blocker is active.
+
+Do not contact anyone, upload to arXiv or submit to E-JC in S061.
+Preserve the route: Palomar registered → paper → arXiv → E-JC.
+STOP after S061.
 ```

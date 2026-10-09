@@ -1157,3 +1157,11 @@ No browser OAuth, Palomar HTTPS submission, public verification dispatch, automa
 | D-168 | 2026-10-09 | Following the owner's supplied permanent [Palomar PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1) link, independent [registry JSON](https://data.palomar-registry.org/recent.json) confirms **REGISTERED** at 2026-10-09T15:53:49Z for the *same* immutable proof `c5f9e5e822020688c72b2a3bfacbf147a801e219`. The owner requests reworking the next handoff on that basis. The previous registration-pending condition is resolved. Replace S061's preparatory-workbook-only READY unit with an **E-JC-targeted working manuscript DRAFT plus integrated human-proof worksheet and source ledger**; no arXiv, journal filing or outside consultation. Keep S060 GO-WITH-CONDITIONS and the author-only E-JC AI-proof requirement. | Official public registry ID/version and machine-readable record; user request to rejig after registration. |
 
 **Active owner blockers: NONE for drafting.** Human author must still personally check, rewrite AI-assisted proof in own words and vouch stepwise **before E-JC submission**. The draft must be explicitly NOT SUBMISSION-READY until that owner-only condition is discharged. No owner action is required to start an AI-assisted working draft now. Maintain the approved registration → paper → arXiv → E-JC order.
+
+## D-169 — S061 manuscript-writing stage (2026-10-09)
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-169 | 2026-10-09 | Direct S061 to **write the E-JC-targeted CAND-03 paper**, including full LaTeX manuscript, credible proof narrative, source citations and reproducible PDF where possible; retire the separate preparatory-workbook deliverable. Preserve the Palomar-registered theorem and honest publication-status distinctions; no external action in S061. | Latest explicit owner instruction. |
+
+**Active owner blockers: NONE for S061 article writing.** Maintain the original stage order: Palomar registered → paper → arXiv → E-JC. The new S061 brief and live prompt supersede former variations.
