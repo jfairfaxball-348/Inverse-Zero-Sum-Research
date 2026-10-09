@@ -34,9 +34,11 @@ identification gap was found. No global novelty or prior-openness claim is made.
 
 See `VALIDATION.md` and `BUILD_MANIFEST.json`. Source examples, final TeX/BibTeX,
 rendered pages and deterministic local rebuild are checked. The outgoing
-main must pass the actual manuscript and Lean workflows, including the
-frozen-theorem axioms audit. The Lean statement, proof and registered source
-are unchanged. Published source inputs are cited rather than presented as new.
+main must pass the actual manuscript workflow. The Lean statement, proof and
+registered source are unchanged; the source-layout and registered-source
+checks are retained as local consistency checks, while the separate Lean
+hosted workflow is not an S061 gate. Published source inputs are cited rather
+than presented as new.
 
 This delivers a paper, not arXiv posting, E-JC submission or acceptance.
 Substantive AI assistance is disclosed. No person was contacted and no portal
