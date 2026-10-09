@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S061",
-  "next_session": "S062",
-  "next_brief": "authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md",
-  "stage": "P8_CAND03_EJC_MANUSCRIPT_COMPLETE_ARXIV_PREPARATION_READY",
-  "programme_status": "S061_COMPLETED_FULL_MANUSCRIPT_S062_RELEASE_PREPARATION_READY",
+  "last_completed_session": "S062",
+  "next_session": null,
+  "next_brief": null,
+  "stage": "P8_CAND03_ARXIV_PACKAGE_PREPARED_OWNER_RELEASE_DECISION_REQUIRED",
+  "programme_status": "S062_COMPLETED_PREPARATION_B016_OWNER_BLOCKED_NO_PUBLICATION",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 frozen positional iff formally proved and registered as PALOMAR-2026-10-09-000011 v1 on source c5f9e5e822020688c72b2a3bfacbf147a801e219. S061 complete first E-JC manuscript with six examples, five vector figures and exact attribution. No arXiv or E-JC submission.",
+  "candidate_under_due_diligence": "CAND-03 exact positional iff formally proved and permanently Palomar-registered; nine-page S061 manuscript intact; S062 arXiv source package and metadata prepared with clean extraction/build check in CI. No arXiv or E-JC submission; owner release licence/approval/endorsement check required.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -116,7 +116,9 @@
   "external_review_gate": "CLOSED",
   "leading_journal": "Electronic Journal of Combinatorics",
   "confirmed_reviewers": [],
-  "active_owner_blockers": [],
+  "active_owner_blockers": [
+    "B-016"
+  ],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; it remains CAND-02-specific and does not transfer reviewer or status authority to CAND-03.",
     "Treat the S042 deep non-hit conservatively: it supports the authorized workflow transition but is not an absolute proof of novelty or prior openness.",
@@ -126,9 +128,10 @@
     "D-165: Official PalomarSubmission full-mode mechanical verification on the owner-submitted exact source commit succeeded (GitHub Actions 37813245157, 2026-10-08); the separate caller-repository Namespace reusable CI remains queued and is not itself passed, but no longer blocks technical verification.",
     "D-168 update: public Palomar registration confirmed PALOMAR-2026-10-09-000011 version 1 on 2026-10-09T15:53:49Z for frozen source c5f9e5e822020688c72b2a3bfacbf147a801e219. Historical requested/pending status is superseded. Do not conflate registration with journal peer review or novelty certification.",
     "Before actual E-JC submission later, owner must verify no paper submitted to E-JC in the previous three calendar months; and before arXiv deposit check account/category endorsement, suitable rights and E-JC preprint compatibility. None of these later external actions are authorized by S060 discovery.",
-    "S061 paper completed. S062 prepares a reviewable arXiv release package only; no preprint or journal upload without separate explicit authorization. Preserve registration → paper → arXiv → E-JC."
+    "S061 paper completed. S062 prepares a reviewable arXiv release package only; no preprint or journal upload without separate explicit authorization. Preserve registration → paper → arXiv → E-JC.",
+    "B-016: Before any public arXiv posting, owner must select licence, inspect/approve the exact manuscript/metadata/portable source and give explicit release authorization, and check account/category endorsement. No ready successor until resolved."
   ],
-  "next_prompt_status": "READY",
+  "next_prompt_status": "SUPPRESSED_OWNER_BLOCKER",
   "session_checkpoints": [
     {
       "id": "S000",
@@ -439,6 +442,11 @@
       "id": "S061",
       "status": "COMPLETED",
       "record": "sessions/S061/CLOSEOUT.md"
+    },
+    {
+      "id": "S062",
+      "status": "COMPLETED",
+      "record": "sessions/S062/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -466,7 +474,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "Registration complete; complete first paper delivered in paper/main.tex and paper/main.pdf. S062 prepares a concrete arXiv release package and final source/policy refresh only. External posting and E-JC filing require separate authorization. S042 non-hit is not global novelty or prior-openness certification.",
+  "current_route_disposition": "S062 completed publication-preparation only. Future arXiv preprint stage blocked by B-016 (author selects paper licence, approves public release and checks actual arXiv account/category/endorsement). Next-session prompt suppressed; E-JC later requires personal author verification/rewrite of AI-derived proof. Palomar→paper completed; arXiv→E-JC future.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -849,10 +857,22 @@
     "scope": "FORMALIZED_RESULT_NOT_JOURNAL_PEER_REVIEW"
   },
   "s062_release_preparation": {
-    "status": "READY",
+    "status": "COMPLETED_PREPARATION_B016_OWNER_BLOCKED",
     "unit": "D61-01",
-    "brief": "authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md",
-    "scope": "FINAL_MANUSCRIPT_SOURCE_POLICY_REFRESH_AND_ARXIV_PACKAGE_PREPARATION",
-    "external_actions": "NOT_AUTHORIZED"
+    "date": "2026-10-09",
+    "incoming_main": "e908dc2d67363909ccaa4b4b68c7ae5ebfc0c2b6",
+    "source_refresh": "sessions/S062/SOURCE_POLICY_REFRESH.md",
+    "metadata": "paper/arxiv-metadata.json",
+    "worksheet": "paper/ARXIV_RELEASE.md",
+    "archive_script": "scripts/prepare_arxiv_release.py",
+    "clean_unpacked_build": "GITHUB_ACTIONS_CHECK_PENDING_EXTERNAL_OBSERVATION",
+    "paper_unchanged": true,
+    "registered_proof_unchanged": true,
+    "arxiv_submitted": false,
+    "ejc_submitted": false,
+    "owner_license_selection": "PENDING",
+    "owner_release_authorization": "PENDING",
+    "arxiv_account_endorsement": "UNKNOWN",
+    "blocker": "B-016"
   }
 }

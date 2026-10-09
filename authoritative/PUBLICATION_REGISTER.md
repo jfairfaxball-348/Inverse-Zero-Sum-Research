@@ -1,6 +1,6 @@
 # Publication register
 
-**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
 
 
 Policy observations date: **2026-10-05**. Refresh at target selection and again
@@ -843,3 +843,7 @@ abstract, accurate bibliography and substantive AI disclosure supplied. No
 journal acceptance or submission is presumed. Registration is complete;
 arXiv and E-JC remain unperformed. S062 prepares the concrete preprint release
 package and final current-source/policy checks, without external action.
+
+## S062 — release materials prepared, arXiv not deposited (2026-10-09)
+
+The E-JC-oriented initial PDF has no substantive revisions. [Exact arXiv release worksheet](../paper/ARXIV_RELEASE.md), [metadata](../paper/arxiv-metadata.json) and source-only archive generator/clean-build workflow supplied. Category recommendation `math.CO` (optional `math.NT`); arXiv account endorsement unverified, irrevocable paper licence unchosen and public release not authorized. E-JC initial PDF rules and human proof-rewrite/attestation remain mandatory; official checklist did not give an explicit blanket arXiv-preprint approval. **B-016 active; next prompt withheld.** Nothing submitted, contacted or released.

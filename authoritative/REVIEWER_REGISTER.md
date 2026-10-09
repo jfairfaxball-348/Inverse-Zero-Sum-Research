@@ -1,6 +1,6 @@
 # External reviewer register
 
-**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
 
 
 **Confirmed reviewer: NONE.** Owner decision D-070 selects CAND-05.
@@ -886,3 +886,7 @@ S061 completed manuscript drafting and technical validation only. No recipient
 was contacted, invited or assigned; no correspondence status changed. The
 current manuscript and source-consistency record are in `paper/`. S062 is
 preprint-package preparation; no outreach or journal action is authorized.
+
+## S062 publication/review distinction (2026-10-09)
+
+No outside mathematician, editor or referee contacted, invited or appointed. CAND-03 pre-submission private consultation stays skipped under owner policy; Palomar automated/machine verification remains distinct from future E-JC journal refereeing. Human-author personal check and rewrite of AI-derived proof for E-JC are **not** attested. B-016 concerns arXiv release permission/account, not independent review.

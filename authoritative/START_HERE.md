@@ -15,35 +15,18 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
-## Current state - S061 manuscript complete; S062 release preparation READY
+## Current state — S062 release preparation completed, B-016 active
 
-CAND-03 is the exact positional length-24 iff over `C_3^3\{0}`: every pair
-of short zero-sum witnesses has zero intersection sum iff `S=U^3`, up to
-permutation of all original positions, for squarefree short-free length-8 U.
-It is formally proved and [registered as Palomar v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1)
-on immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`;
-official full mechanical run `37813245157` passed.
+CAND-03 remains the exact all-positions length-24 iff over `C_3^3\\{0}`: the indexed intersection avoidance holds exactly for permutations of `U^3` with squarefree short-free eight-term U. The theorem is formally registered at [Palomar v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1), immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`, full provider run `37813245157` PASS.
 
-**S061 COMPLETED D60-01:** [complete paper](../paper/main.pdf),
-[editable LaTeX](../paper/main.tex), six examples and five vector figures.
-[Source-to-proof consistency](../paper/SOURCE_AND_PROOF_CHECK.md) explicitly
-corrects attribution: the length-15 profile/completion argument is already
-in Fan et al. (2012), proof of Lemma 27(3). The paper's contribution is the
-complete inverse necessity and equality application, not the published
-threshold, construction, deletion machinery or residual lemma.
+**S061** produced [complete nine-page paper](../paper/main.pdf), [editable LaTeX](../paper/main.tex), six worked examples, five vector figures and [source-to-proof consistency](../paper/SOURCE_AND_PROOF_CHECK.md), including full 2024/2012 attribution. **S062** prepared [arXiv metadata](../paper/arxiv-metadata.json), [reviewable owner release worksheet](../paper/ARXIV_RELEASE.md), reproducible minimal source archive and clean-unpacked build script, plus [source/policy refresh](../sessions/S062/SOURCE_POLICY_REFRESH.md) and [closeout](../sessions/S062/CLOSEOUT.md). Manuscript and Lean remain unchanged. No arXiv/E-JC submission has occurred.
 
-- Target, publication-eligibility and mathematical-investigation gates: OPEN.
-- Active owner blockers: NONE.
-- Next: **S062 / D61-01**, final manuscript and arXiv release preparation.
-- Live brief: `authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md`.
-- The [single ready prompt](NEXT_SESSION_PROMPT.md) authorizes preparation only.
-- Ordered route: **Palomar registered → paper written → arXiv preprint → E-JC**.
-- No arXiv posting or E-JC submission has occurred; no contact is authorized.
-- S042's bounded non-hit is not proof of global originality or previous openness.
-
-The following historical frontier sections preserve earlier checkpoints;
-the current state above and `STATE.json` control dispatch. Other candidates
-remain paused or retired under their recorded decisions.
+- Mathematical target and publication feasibility gates: OPEN; private CAND-03 external review remains skipped.
+- **Active owner blocker: B-016** — arXiv paper licence, owner release approval and actual arXiv account/category/endorsement check pending.
+- **No next-session prompt** until the owner decision resolves B-016.
+- E-JC later requires personal author proof-check/rewrite and submission attestations, not assumed here.
+- Milestone order: **Palomar completed → paper written → arXiv not yet posted → E-JC not yet submitted**.
+- Scoped no-hit is not global novelty/open-status proof.
 
 ## Historical CAND-05 mathematical frontier (proof paused)
 

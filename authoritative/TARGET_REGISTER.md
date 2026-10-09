@@ -1,6 +1,6 @@
 # Target register
 
-**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
 
 
 **Current protocol note:** historical entries below preserve the gate rules
@@ -1477,3 +1477,7 @@ The stated contribution is the complete inverse equality application. The 2024
 direct results and 2012 Lemma 27(3)/28/29 residual arguments are published inputs.
 Six examples and five figures are explanatory; no new target, rank extension,
 core-orbit classification, novelty certification or external filing is claimed.
+
+## S062 target invariance (2026-10-09)
+
+No target edit. Frozen positional `C_3^3\\{0}` 24-term iff, triple powers, all original positions and squarefree short-free 8-core unchanged; S062 is packaging/policy work only. No exact/equivalent/stronger-implying primary theorem found within the documented targeted refresh; no global novelty inference. Rank-two Hui–Zhong 2026 does not state a rank-three classification. [S062 record](../sessions/S062/SOURCE_POLICY_REFRESH.md). Owner release gate B-016 active.

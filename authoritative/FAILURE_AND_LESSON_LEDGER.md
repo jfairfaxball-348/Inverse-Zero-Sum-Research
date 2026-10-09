@@ -1,6 +1,6 @@
 # Failure and lesson ledger
 
-**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
 
 
 This ledger includes literature/status lessons from the pre-proof stages and
@@ -534,3 +534,7 @@ S061 corrects the attribution and reserves the contribution for the complete
 inverse classification and simultaneous representative exchanges. The theorem
 and its formal proof survive unchanged. A source statement search alone can
 miss an ingredient already proved inside a neighbouring lemma.
+
+## FL-122 — Prepare a portable LaTeX archive without mistaking it for a public release
+
+S062 produces a minimal two-file TeX archive, extracts it afresh and compiles with BibTeX in an isolated directory. The manuscript's tracked PDF, programme Apache-2.0 licence and registered Lean source do **not** determine the paper's irrevocable arXiv licence, author account endorsement or public posting permission. Keep author decisions as a real B-016 blocker, suppress successor prompts, and never label GitHub Actions source-build PASS as arXiv acceptance, novelty certification or E-JC human-review clearance.

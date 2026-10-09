@@ -22,13 +22,7 @@ immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`,
 [official full mechanical verification 37813245157](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157) PASS.
 The proof files are unchanged by S061.
 
-**S062 READY:** final manuscript and arXiv release-package preparation under
-[the brief](authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md) and
-[single runnable prompt](authoritative/NEXT_SESSION_PROMPT.md). No arXiv posting
-or E-JC submission has occurred. Preserve **Palomar registration → paper →
-arXiv preprint → Electronic Journal of Combinatorics**. The intended journal,
-formal registration and bounded prior-art audit do not imply acceptance or
-certified global novelty. Substantive AI assistance is disclosed in the paper.
+**S062 release package PREPARED:** [arXiv author worksheet](paper/ARXIV_RELEASE.md), [exact metadata](paper/arxiv-metadata.json), and [S062 source-policy/validation records](sessions/S062/CLOSEOUT.md). The hosted Manuscript validation workflow creates a minimal LaTeX archive and compiles it in a clean directory. **No arXiv posting or E-JC submission**. Author-only release decision **B-016 ACTIVE**: choose the paper's arXiv licence, approve final public posting, and check actual account/endorsement requirements. No next-session prompt while that action is pending. Preserve **Palomar registration → paper → arXiv preprint → E-JC**. A source search non-hit does not certify global novelty; substantive AI assistance is disclosed in the paper.
 
 ## Navigation and reproducibility
 

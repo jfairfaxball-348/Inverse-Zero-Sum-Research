@@ -1,6 +1,6 @@
 # Session ledger
 
-**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
 
 
 | Session | Status | Incoming checkpoint | Useful output | Closeout |
@@ -1080,3 +1080,11 @@ positional proof, reproducible build and source/Lean map. D-171 corrects the
 checkpoint in `sessions/S061/CLOSEOUT.md`; actual outgoing SHA and CI are verified
 externally after push. No arXiv/E-JC action. S062/D61-01 preparation READY;
 active owner blockers NONE.
+
+## S062 — preparation complete; owner release decision required (2026-10-09)
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S062 | COMPLETED D61-01 / B-016 owner blocker for further action | `e908dc2d67363909ccaa4b4b68c7ae5ebfc0c2b6` | Current targeted source/policy refresh; exact arXiv metadata, sources-only deterministic package, clean-unpacked LaTeX/BibTeX validation in hosted workflow, author licence/release worksheet. Manuscript/Lean unchanged; no upload. | [S062 closeout](../sessions/S062/CLOSEOUT.md) |
+
+Owner release licence/authorization/account check is required next; **no runnable S063 prompt**. CI outcomes observed after commit are reported externally, not assigned to the containing record.

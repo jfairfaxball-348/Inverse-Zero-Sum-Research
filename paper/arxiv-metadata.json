@@ -1,0 +1,22 @@
+{
+  "title": "An inverse theorem for extremal generalized Narkiewicz sequences over $C_3^3$",
+  "authors": [
+    "John Fairfax-Ball"
+  ],
+  "abstract": "Let $G=(\\mathbb Z/3\\mathbb Z)^3$. A short zero-sum witness in an indexed sequence over $G\\setminus\\{0\\}$ is a nonempty set of at most three positions whose entries sum to zero. The generalized Narkiewicz threshold for two such witnesses having a nonzero intersection sum is known to be $25$. We prove the complete inverse statement at length $24$: every pair of short zero-sum witnesses has zero intersection sum if and only if, up to a permutation of the original positions, the sequence is $U^3$, where $U$ consists of eight distinct nonzero elements and has no short zero sum. Thus the known threefold constructions exhaust the extremal sequences. The necessity proof combines the published packing and representative-deletion method with short-free residual structure. Swapping representatives forces constant blocks in the length-$16$ residual case; the uniquely determined singleton of a length-$15$ residual excludes the remaining packing case.",
+  "primary_category": "math.CO",
+  "secondary_category_suggestion": "math.NT (optional, subject to author's judgement and arXiv moderation)",
+  "comments": "9 pages, 5 figures, 6 worked examples. Formal proof: Palomar Registry PALOMAR-2026-10-09-000011 v1.",
+  "msc_2020": [
+    "11B75",
+    "11B30"
+  ],
+  "journal_reference": null,
+  "doi": null,
+  "report_number": null,
+  "license": "AUTHOR_CHOICE_REQUIRED",
+  "endorsement_status": "ACCOUNT_CHECK_REQUIRED",
+  "external_submission": "NOT_AUTHORIZED",
+  "manuscript": "paper/main.tex",
+  "immutable_formal_source": "c5f9e5e822020688c72b2a3bfacbf147a801e219"
+}

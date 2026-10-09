@@ -1,6 +1,6 @@
 # Claims and source register
 
-**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
 
 
 Observations below are bounded source inspections through **2026-10-02**.
@@ -1148,3 +1148,11 @@ S042's documented prior-art non-hit and its non-certifying status are unchanged.
 | C-256 | **COMPLETE MANUSCRIPT:** full positional iff and inverse equality proof written, preserving all quantifiers and all four packing signatures. No global novelty/prior-openness certification. | paper/main.tex; unchanged frozenClassification. |
 | C-257 | **VERIFIED EXAMPLES:** explicit eight-value core, U², U³, singleton residual and forbidden overlaps checked exactly; five vector figures and six worked examples. Not an extremal enumeration or separate Lean formalization. | scripts/check_paper.py; paper/main.tex. |
 | C-258 | **REPRODUCIBLE PAPER BUILD:** final PDF, full source, bibliography, clean log gate, page inspection and build manifest. Exact outgoing hosted runs verified after push. | sessions/S061/VALIDATION.md; sessions/S061/BUILD_MANIFEST.json; manuscript CI. |
+
+## S062 current source, build and publication boundary (2026-10-09)
+
+| ID | Status | Evidence and limitation |
+| --- | --- | --- |
+| C-259 | **TARGETED CURRENT NON-HIT**, not global novelty: no exact/equivalent/stronger-implying `C_3^3` 24-position inverse found in this bounded refresh. The published Hui–Zhong 2026 inverse `eta^N` theorem is explicitly **rank two** by publisher abstract, not the target rank-three theorem. | [S062 refresh](../sessions/S062/SOURCE_POLICY_REFRESH.md); DOI https://doi.org/10.1016/j.jcta.2026.106238. |
+| C-260 | **RELEASE PACKAGE PREPARED**, not submitted: exact metadata, minimal two-file archive generator, clean-unpacked TeX/BibTeX reproducibility workflow; original paper and formal source unchanged. | [arXiv release worksheet](../paper/ARXIV_RELEASE.md); [script](../scripts/prepare_arxiv_release.py); hosted outcomes require independent observation. |
+| C-261 | **AUTHOR ACTION REQUIRED**: paper license, explicit public-posting decision and actual account/endorsement status unknown; E-JC personally checked/rewritten AI-derived proof not attested. | Official https://info.arxiv.org/help/license/index.html ; https://info.arxiv.org/help/endorsement.html ; https://www.combinatorics.org/ojs/index.php/eljc/about/submissions ; B-016. |

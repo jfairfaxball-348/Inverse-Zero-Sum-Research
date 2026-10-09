@@ -8,6 +8,8 @@ on:
       - 'scripts/check_paper.py'
       - 'authoritative/**'
       - 'sessions/S061/**'
+      - 'sessions/S062/**'
+      - 'scripts/prepare_arxiv_release.py'
       - '.github/workflows/paper.yml'
   pull_request:
     paths:
@@ -15,6 +17,8 @@ on:
       - 'scripts/check_paper.py'
       - 'authoritative/**'
       - 'sessions/S061/**'
+      - 'sessions/S062/**'
+      - 'scripts/prepare_arxiv_release.py'
       - '.github/workflows/paper.yml'
   workflow_dispatch:
 
@@ -41,15 +45,27 @@ jobs:
           rm -rf paper/build
           bash paper/build.sh
           sha256sum --check /tmp/paper-before.sha256
+      - name: Portable arXiv source and clean unpacked rebuild
+        shell: bash
+        run: |
+          python3 scripts/prepare_arxiv_release.py
+          sha256sum paper/release/arxiv-source.tar.gz > /tmp/arxiv-source-before.sha256
+          python3 scripts/prepare_arxiv_release.py
+          sha256sum --check /tmp/arxiv-source-before.sha256
       - name: Authority consistency
         run: python3 scripts/check_authority.py
       - name: Upload compiled manuscript and logs
         uses: actions/upload-artifact@v4
         with:
-          name: S061-manuscript-${{ github.sha }}
+          name: S062-arxiv-release-${{ github.sha }}
           path: |
             paper/main.pdf
             paper/main.tex
+            paper/arxiv-metadata.json
+            paper/ARXIV_RELEASE.md
+            paper/release/arxiv-source.tar.gz
+            paper/release/preview.pdf
+            paper/release/manifest.json
             paper/references.bib
             paper/build/main.bbl
             paper/build/main.log

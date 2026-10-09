@@ -7,7 +7,7 @@ New explicit instructions from John govern the task; record changes to scope or
 preferences before relying on them in subsequent sessions.
 
 
-**CAND-03 current paper stage:** The exact indexed 24-term iff is formally proved and permanently registered as PALOMAR-2026-10-09-000011 v1 on immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`. **S061 COMPLETED:** full E-JC-oriented manuscript in `paper/main.tex` and `paper/main.pdf`, with six examples, five vector figures and `paper/SOURCE_AND_PROOF_CHECK.md`. **S062 READY:** final manuscript and arXiv release-package preparation, not posting or submission. Credit Gao et al. (2024) for the threshold, construction and deletion argument, and Fan et al. (2012), including the proof of Lemma 27(3), for the residual structure. Preserve the exact theorem and truthful AI-use disclosure. No external action is authorized by a preparation kickoff.
+**CAND-03 current publication stage:** The exact indexed 24-term iff was formally proved and registered as PALOMAR-2026-10-09-000011 v1. S061 delivered the complete nine-page manuscript with six examples and five TikZ figures. **S062 COMPLETED release preparation**: exact metadata, source-only archive generator and clean-extracted-directory build workflow. No theorem/proof/PDF modification, public posting, E-JC filing or contact. **Active B-016**: the owner must choose the arXiv paper licence, inspect/authorize public release and check actual arXiv account/endorsement. Until then **NO NEXT-SESSION PROMPT**. Preserve Gao et al. 2024 and Fan et al. 2012 proof of Lemma 27(3)/Lemmas 28/29 attribution, exact positional iff and substantive AI disclosure. Human personal proof verification/rewrite remains mandatory for eventual E-JC filing.
 
 ## Non-negotiable scope
 

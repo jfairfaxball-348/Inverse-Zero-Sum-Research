@@ -2,7 +2,7 @@
 
 **An inverse theorem for extremal generalized Narkiewicz sequences over C₃³**
 
-John Fairfax-Ball. Complete first manuscript from S061, intended for the
+John Fairfax-Ball. Complete nine-page manuscript from S061; S062 source-release materials prepared, intended for the
 Electronic Journal of Combinatorics. No arXiv or journal submission has occurred.
 
 - [Compiled paper](main.pdf): complete proof, six worked examples and five vector figures.
@@ -41,3 +41,7 @@ It is not a search through extremal sequences and does not replace the proof.
 The ordinary `article` class is for an initial E-JC PDF. The journal's final
 accepted-version style is a later typesetting step, not a claim of acceptance.
 The inherited repository licence remains Apache-2.0.
+
+## S062 release preparation
+
+See [arXiv metadata](arxiv-metadata.json), [release worksheet](ARXIV_RELEASE.md) and [S062 validation](../sessions/S062/VALIDATION.md). `python3 scripts/prepare_arxiv_release.py` (repository root) builds a deterministic two-file `paper/release/arxiv-source.tar.gz` and validates an isolated clean unpacked PDF/BibTeX build. The hosted Manuscript validation workflow uploads source, PDF preview, checksums and metadata. These **do not** constitute arXiv deposit. Owner-controlled B-016 licence/release/account gate remains active; no next prompt.

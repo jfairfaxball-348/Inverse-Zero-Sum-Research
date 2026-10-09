@@ -1,6 +1,6 @@
 # Decisions and owner blockers
 
-**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
 
 
 ## Binding decisions
@@ -1179,3 +1179,7 @@ No browser OAuth, Palomar HTTPS submission, public verification dispatch, automa
 
 **Active owner blockers: NONE.** S062 preparation is immediately runnable.
 The order remains Palomar registered → paper written → arXiv → E-JC.
+
+## D-173 — S062 final source package; B-016 author-only arXiv release decision (2026-10-09)
+
+S062/D61-01 **COMPLETED preparation**: exact arXiv metadata, deterministic sources-only archive script, clean-unpacked-build workflow and bounded source/policy refresh. The unchanged frozen Lean theorem and S061 manuscript preserve attribution to Gao et al. 2024 and Fan et al. 2012 Lemma 27(3)/28/29. **B-016 ACTIVE:** owner must select an arXiv paper licence, review/authorize public release and inspect actual arXiv account/category/endorsement requirements. This consent cannot be imputed from instructions to prepare. **Next prompt suppressed**; no arXiv/E-JC action. Human-authored verification/rewrite for E-JC also remains a future unmet obligation.

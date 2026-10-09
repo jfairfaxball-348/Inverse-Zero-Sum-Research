@@ -1,6 +1,6 @@
 # Roadmap and stage gates
 
-**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
 
 
 **Protocol supersession D-030--D-032:** external proposal/status review is now a parallel risk-control and publication-readiness process, not a prerequisite for mathematical investigation. Historical sections later in this file preserve earlier session states; any statement there that proof/computation must wait for external-review completion is superseded and has no current force.
@@ -1602,3 +1602,7 @@ reproducible LaTeX/PDF and corrected primary attribution. Registration and paper
 are complete milestones. **S062/D61-01 READY:** final manuscript/source-policy
 refresh and concrete arXiv release package, with no external posting or filing.
 See `authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md`. Stop after S061.
+
+## S062 completed — public-preprint release gate B-016
+
+S062 finished the release source/metadata worksheet and scripts/workflow for reproducible source archive and clean unpacked-directory PDF. Final manuscript, attribution, Lean theorem and nine-page S061 PDF unchanged. [S062 closeout](../sessions/S062/CLOSEOUT.md). **Owner release decision B-016 active; NEXT_SESSION_PROMPT suppressed.** Next milestone, only after authorization, is **arXiv preprint**, then later E-JC submission subject to its separate AI-proof personal checking requirements. No external publication has occurred.
