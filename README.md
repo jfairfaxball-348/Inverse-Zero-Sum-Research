@@ -6,17 +6,29 @@ This repository documents a source-audited inverse zero-sum classification for t
 
 The frozen `InverseZeroSum.Candidate3.frozenClassification : FrozenClassification` proves, for every length-24 positional sequence of nonzero elements in \(C_3^3\), an exact **if and only if**: the absence of two short nonempty zero-sum positional subsequences (length at most three) whose common positions have nonzero sum is equivalent to being, after a permutation of all 24 positions, three copies of an eight-term squarefree short-free sequence.
 
-The original Lean 4.19 proof is validated on the established main checkpoint ([CI 37800488981](https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/actions/runs/37800488981)); the owner-approval/documentation follow-up is validated on main ([CI 37805436021](https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/actions/runs/37805436021)). This **proves the encoded mathematical statement under Lean's trust boundary**; it does not certify historical novelty, mathematical significance, independent human review, or Palomar registration. The deep S042 prior-art audit located no equivalent or stronger-implying theorem **within its documented search**, which is not proof of priority.
+The original Lean 4.19 proof is validated on the established main checkpoint ([CI 37800488981](https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/actions/runs/37800488981)); the owner-approval/documentation follow-up is validated on main ([CI 37805436021](https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/actions/runs/37805436021)). This **proves the encoded mathematical statement under Lean's trust boundary**; it does not certify historical novelty, mathematical significance, or journal acceptance. The deep S042 prior-art audit located no equivalent or stronger-implying theorem **within its documented search**, which is not proof of priority.
 
-## Current Palomar and publication status — 2026-10-08
+## Paper and publication status - 2026-10-09
 
-**Palomar formal verification passed.** The exact owner-submitted immutable CAND-03 source `c5f9e5e822020688c72b2a3bfacbf147a801e219` passed [official full mechanical verification 37813245157](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157), Lean 4.35, local Comparator, con-ron and NanoDa checks.
+**S061 complete:** [read the paper](paper/main.pdf), edit [the LaTeX](paper/main.tex)
+and [bibliography](paper/references.bib), or consult [build instructions](paper/README.md)
+and [source-to-proof consistency](paper/SOURCE_AND_PROOF_CHECK.md). The manuscript
+contains the full inverse proof, six worked examples and five vector figures.
+It credits the 2024 threshold/construction/deletion method and the 2012 residual
+results, including the proof of Lemma 27(3).
 
-**Owner-reported next milestones:** Palomar automated editorial reviewer `codex:gpt-6-sol` found **no problems** (2026-10-08T17:55:22Z); its report explicitly says **no human read it**. At `2026-10-08T18:29:46Z` the owner requested permanent registration. **Registration is under way, not yet known merged; no permanent registry ID is claimed.** The private capability-bearing submission link is never reproduced here.
+**Palomar registered:** [PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1),
+immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`,
+[official full mechanical verification 37813245157](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157) PASS.
+The proof files are unchanged by S061.
 
-**S060 READY:** The next authorized task is [E-JC-first prewriting and publication-fit discovery](authoritative/S060_EJC_PUBLICATION_FIT_PREWRITING_DISCOVERY_BRIEF.md); the [copyable prompt](authoritative/NEXT_SESSION_PROMPT.md) is prepared. This is not manuscript drafting, arXiv posting or E-JC submission. E-JC requires an original, self-contained, substantial theorem and, where AI contributed to a proof, **human author checking, rewriting in their own words, and vouching for every step** before journal submission ([AI policy](https://www.combinatorics.org/ojs/index.php/eljc/about/index), [submission checklist](https://www.combinatorics.org/ojs/index.php/eljc/about/submissions)). Lean and Palomar machine checks do not replace the journal's human-proof condition. Nor does the bounded S042 prior-art search prove global originality.
-
-**Owner-approved sequence:** Palomar registration → paper → arXiv preprint → Electronic Journal of Combinatorics. No permanent registration, paper, preprint, journal filing or human referee endorsement is presumed.
+**S062 READY:** final manuscript and arXiv release-package preparation under
+[the brief](authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md) and
+[single runnable prompt](authoritative/NEXT_SESSION_PROMPT.md). No arXiv posting
+or E-JC submission has occurred. Preserve **Palomar registration → paper →
+arXiv preprint → Electronic Journal of Combinatorics**. The intended journal,
+formal registration and bounded prior-art audit do not imply acceptance or
+certified global novelty. Substantive AI assistance is disclosed in the paper.
 
 ## Navigation and reproducibility
 

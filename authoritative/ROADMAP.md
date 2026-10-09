@@ -1,5 +1,8 @@
 # Roadmap and stage gates
 
+**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+
+
 **Protocol supersession D-030--D-032:** external proposal/status review is now a parallel risk-control and publication-readiness process, not a prerequisite for mathematical investigation. Historical sections later in this file preserve earlier session states; any statement there that proof/computation must wait for external-review completion is superseded and has no current force.
 
 The stages are outcome-driven and may overlap where the owner has explicitly decoupled dependencies.
@@ -1591,3 +1594,11 @@ Public [PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id
 ## Current successor — S061 E-JC paper writing (2026-10-09)
 
 Following permanent [Palomar registration v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1) and S060 GO-WITH-CONDITIONS, **S061 writes the article**: full prose mathematical proof, independently useful abstract and introduction, source-accurate lemmas, editable LaTeX, bibliography and PDF if reproducibly compiled. The proposed contribution is **new converse/rigidity** relative to checked literature, not the 2024 direct threshold/construction. A concise source/proof-consistency note should help check exact positional semantics. The next brief is `authoritative/S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md`. arXiv upload and E-JC submission remain future and separately controlled. No outreach.
+
+## S061 completed; one successor
+
+D60-01 delivered the complete first E-JC paper, six examples, five exact figures,
+reproducible LaTeX/PDF and corrected primary attribution. Registration and paper
+are complete milestones. **S062/D61-01 READY:** final manuscript/source-policy
+refresh and concrete arXiv release package, with no external posting or filing.
+See `authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md`. Stop after S061.

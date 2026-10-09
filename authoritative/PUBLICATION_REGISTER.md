@@ -1,5 +1,8 @@
 # Publication register
 
+**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+
+
 Policy observations date: **2026-10-05**. Refresh at target selection and again
 before submission. Status refers to subject/workflow eligibility, never
 acceptance likelihood.
@@ -829,3 +832,14 @@ The target is E-JC, which accepts appropriately verified AI-assisted mathematica
 ## S061 current paper-writing stage
 
 CAND-03 is permanently registered as [PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1); that is not an E-JC paper. The next authorized work is **writing an original, substantial, properly sourced E-JC-oriented manuscript** with initial-submission PDF, informative standalone abstract and accurate bibliographic information, not another standalone preparation exercise. Credit Gao et al. 2024 and Fan et al. 2012 precisely. Follow the journal's current disclosure, author, originality and submission requirements, and distinguish arXiv/E-JC filings as future actions. No paper, preprint or journal submission has occurred in this update.
+
+## S061 paper delivered (2026-10-09)
+
+Complete first E-JC-oriented article in `paper/main.tex`, compiled `paper/main.pdf`,
+`paper/references.bib`, reproducible build and source-to-proof note. Six examples
+and five vector figures supplement the full inverse proof. Current official
+E-JC manuscript/policy pages checked; initial PDF/article format, standalone
+abstract, accurate bibliography and substantive AI disclosure supplied. No
+journal acceptance or submission is presumed. Registration is complete;
+arXiv and E-JC remain unperformed. S062 prepares the concrete preprint release
+package and final current-source/policy checks, without external action.

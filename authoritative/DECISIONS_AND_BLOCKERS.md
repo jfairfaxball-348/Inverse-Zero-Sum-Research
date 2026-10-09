@@ -1,5 +1,8 @@
 # Decisions and owner blockers
 
+**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+
+
 ## Binding decisions
 
 | ID | Date | Decision | Basis |
@@ -1165,3 +1168,14 @@ No browser OAuth, Palomar HTTPS submission, public verification dispatch, automa
 | D-169 | 2026-10-09 | Direct S061 to **write the E-JC-targeted CAND-03 paper**, including full LaTeX manuscript, credible proof narrative, source citations and reproducible PDF where possible; retire the separate preparatory-workbook deliverable. Preserve the Palomar-registered theorem and honest publication-status distinctions; no external action in S061. | Latest explicit owner instruction. |
 
 **Active owner blockers: NONE for S061 article writing.** Maintain the original stage order: Palomar registered → paper → arXiv → E-JC. The new S061 brief and live prompt supersede former variations.
+
+## S061 decisions (2026-10-09)
+
+| ID | Decision | Basis |
+| --- | --- | --- |
+| D-170 | Incorporate substantial appropriate examples and exact vector figures in the complete manuscript. No extremal search or target change. | Explicit S061 owner steering, archived in sessions/S061/INPUT_PROMPT.md. |
+| D-171 | Correct residual attribution: Fan et al. 2012 proof of Lemma 27(3) contains the profile/completion argument. Claim the complete inverse equality application, not a new short-free residual lemma. | Direct primary proof inspection; paper/SOURCE_AND_PROOF_CHECK.md. |
+| D-172 | Close S061/D60-01 with complete paper, source, PDF, consistency note and validation. Promote exactly S062/D61-01 final manuscript/arXiv package preparation; no upload, outreach or journal filing. | S061 deliverables and standing autonomous closeout protocol. |
+
+**Active owner blockers: NONE.** S062 preparation is immediately runnable.
+The order remains Palomar registered → paper written → arXiv → E-JC.

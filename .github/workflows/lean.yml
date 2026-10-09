@@ -59,10 +59,28 @@ jobs:
         run: lake exe cache get
       - name: lake build
         run: lake build
+      - name: frozen theorem axioms audit
+        shell: bash
+        run: |
+          cat > /tmp/s061-axioms.lean <<'LEAN'
+          import InverseZeroSum.Candidate3
+          #print axioms InverseZeroSum.Candidate3.frozenClassification
+          LEAN
+          lake env lean /tmp/s061-axioms.lean | tee /tmp/s061-axioms.txt
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          output = Path('/tmp/s061-axioms.txt').read_text()
+          match = re.search(r'depends on axioms:\s*\[([^\]]*)\]', output)
+          assert match, output
+          axioms = {x.strip() for x in match.group(1).split(',') if x.strip()}
+          assert axioms <= {'propext', 'Classical.choice', 'Quot.sound'}, axioms
+          print('PASS: frozen theorem uses only standard Lean axioms:', sorted(axioms))
+          PY
       - name: forbidden Lean placeholders
         shell: bash
         run: |
-          if grep -R -nE '(^|[^A-Za-z])(sorry|admit)([^A-Za-z]|$)|^[[:space:]]*(axiom|constant)[[:space:]]' \
+          if grep -R -nE '(^|[^A-Za-z])(sorry|admit|native_decide)([^A-Za-z]|$)|^[[:space:]]*(axiom|constant)[[:space:]]' \
               --include='*.lean' InverseZeroSum.lean InverseZeroSum; then
             echo "Forbidden Lean placeholder found."
             exit 1

@@ -7,7 +7,7 @@ New explicit instructions from John govern the task; record changes to scope or
 preferences before relying on them in subsequent sessions.
 
 
-**CAND-03 current paper stage:** Exact indexed 24-term iff in `C_3^3` is formally proved and [permanently registered on Palomar, v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1) from immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`. S060 E-JC publication-fit discovery is completed. **S061 READY: produce a full E-JC-oriented manuscript**, complete mathematical argument, source-accurate citations, editable LaTeX and PDF where buildable. Do not confuse the published 2024 direct threshold/construction with the new inverse necessity. No arXiv or E-JC submission or outreach is authorized during S061. Retain publication requirements, truthful AI-use disclosures and the distinction between formal registration and journal publication.
+**CAND-03 current paper stage:** The exact indexed 24-term iff is formally proved and permanently registered as PALOMAR-2026-10-09-000011 v1 on immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`. **S061 COMPLETED:** full E-JC-oriented manuscript in `paper/main.tex` and `paper/main.pdf`, with six examples, five vector figures and `paper/SOURCE_AND_PROOF_CHECK.md`. **S062 READY:** final manuscript and arXiv release-package preparation, not posting or submission. Credit Gao et al. (2024) for the threshold, construction and deletion argument, and Fan et al. (2012), including the proof of Lemma 27(3), for the residual structure. Preserve the exact theorem and truthful AI-use disclosure. No external action is authorized by a preparation kickoff.
 
 ## Non-negotiable scope
 

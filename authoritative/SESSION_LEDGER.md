@@ -1,5 +1,8 @@
 # Session ledger
 
+**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+
+
 | Session | Status | Incoming checkpoint | Useful output | Closeout |
 | --- | --- | --- | --- | --- |
 | S000 | COMPLETED: initialization | 32b9f63c393995de5dddf7e8367d42e339816c24 | Charter, authority, preflight gates, source/contact leads and strict blocker/no-prompt protocol | [S000 closeout](../sessions/S000/CLOSEOUT.md) |
@@ -1066,3 +1069,14 @@ On 2026-10-09 the owner provided [Palomar PALOMAR-2026-10-09-000011 v1](https://
 ## Current S061 dispatch after D-169 (administrative; not a new numbered session)
 
 S060 remains COMPLETED GO-WITH-CONDITIONS; [Palomar record PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1) is registered on source `c5f9e5e822020688c72b2a3bfacbf147a801e219`. S061 is unique and not yet begun. The READY work unit now produces the **full E-JC manuscript**, LaTeX, source citations, PDF if reproducible and a technical source-to-proof check. Live brief `authoritative/S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md` and prompt `authoritative/NEXT_SESSION_PROMPT.md`; earlier S061 preparations are superseded. No arXiv/E-JC filing and no new theorem are claimed.
+
+## S061 - complete E-JC paper writing
+
+2026-10-09; **COMPLETED D60-01**. Incoming main
+`154e9f4c45d2e31829be94ea25b168962c3773d6`; no intervening changes, unique session.
+Full paper in `paper/`, with six worked examples, five vector figures, exact
+positional proof, reproducible build and source/Lean map. D-171 corrects the
+2012 residual attribution without changing the theorem. Validation and containing
+checkpoint in `sessions/S061/CLOSEOUT.md`; actual outgoing SHA and CI are verified
+externally after push. No arXiv/E-JC action. S062/D61-01 preparation READY;
+active owner blockers NONE.

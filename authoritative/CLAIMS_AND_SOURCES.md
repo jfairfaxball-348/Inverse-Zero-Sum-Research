@@ -1,5 +1,8 @@
 # Claims and source register
 
+**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+
+
 Observations below are bounded source inspections through **2026-10-02**.
 Source entries are attributed claims, not programme proofs. Programme-proved
 claims from S007 onward are recorded separately below with their exact proof
@@ -1136,3 +1139,12 @@ S042's documented prior-art non-hit and its non-certifying status are unchanged.
 | Claim | Classification | Independently observed primary record and exact boundary |
 | --- | --- | --- |
 | C-254 | **REGISTERED FORMALIZATION / SOURCE-VERIFIED** | [Palomar PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1) is public; [official registry JSON](https://data.palomar-registry.org/recent.json) records status **registered**, version **1**, published **2026-10-09T15:53:49Z**, trust **high**, theorem `InverseZeroSum.Candidate3.frozenClassification`, author John Fairfax-Ball, subject math.CO/math.NT / MSC2020 11B75; repository `jfairfaxball-348/Inverse-Zero-Sum-Research`, source SHA `c5f9e5e822020688c72b2a3bfacbf147a801e219`, preservation fork `PalomarArchive/jfairfaxball-348--Inverse-Zero-Sum-Research--d48564ec88c4`. Official full verifier 37813245157 had previously passed. This upgrades C-245's registration *request* to an actually observed merged public record; it is NOT a journal acceptance, human refereeing, novelty proof, paper draft or E-JC AI-author check. |
+
+## S061 paper and corrected attribution (2026-10-09)
+
+| Claim | Status and exact boundary | Evidence |
+| --- | --- | --- |
+| C-255 | **SOURCE CORRECTION:** length-15 profile 2⁷1 and singleton completion already occur in Fan et al. 2012 proof of Lemma 27(3); u=−σ(R) follows with Lemma 28. Supersedes S060's attribution of this isolated residual step as new. | Primary journal PDF p. 15; paper/SOURCE_AND_PROOF_CHECK.md. |
+| C-256 | **COMPLETE MANUSCRIPT:** full positional iff and inverse equality proof written, preserving all quantifiers and all four packing signatures. No global novelty/prior-openness certification. | paper/main.tex; unchanged frozenClassification. |
+| C-257 | **VERIFIED EXAMPLES:** explicit eight-value core, U², U³, singleton residual and forbidden overlaps checked exactly; five vector figures and six worked examples. Not an extremal enumeration or separate Lean formalization. | scripts/check_paper.py; paper/main.tex. |
+| C-258 | **REPRODUCIBLE PAPER BUILD:** final PDF, full source, bibliography, clean log gate, page inspection and build manifest. Exact outgoing hosted runs verified after push. | sessions/S061/VALIDATION.md; sessions/S061/BUILD_MANIFEST.json; manuscript CI. |

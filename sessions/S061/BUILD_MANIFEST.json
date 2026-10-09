@@ -1,0 +1,75 @@
+{
+  "session": "S061",
+  "date": "2026-10-09",
+  "incoming_main": "154e9f4c45d2e31829be94ea25b168962c3773d6",
+  "registered_proof_source": "c5f9e5e822020688c72b2a3bfacbf147a801e219",
+  "pdf_pages": 9,
+  "figures": 5,
+  "worked_examples": 6,
+  "toolchain": {
+    "pdftex": "1.40.25 (TeX Live 2023/Debian)",
+    "latexmk": "4.83",
+    "python": "3.12.14"
+  },
+  "checks": {
+    "finite_examples": "PASS",
+    "tex_bibtex_final_logs": "PASS_NO_WARNINGS_OR_OVERFULL_BOXES",
+    "two_clean_build_sha256_comparison": "PASS",
+    "pdf_visual_inspection": "PASS_ALL_9_PAGES",
+    "authority_checker": "PASS",
+    "lean_source_layout": "PASS",
+    "git_diff_check": "PASS",
+    "registered_proof_file_comparison": "UNCHANGED"
+  },
+  "files": {
+    "paper/main.tex": {
+      "sha256": "5f232378f84466856273062bec9a369433989d2b51bad3ea8d4c627d75bf034f",
+      "size_bytes": 31087
+    },
+    "paper/references.bib": {
+      "sha256": "04a68e6ebf4769147d4e0e2f00bfdc22ed420cbf8aa586de7708dde3d3be3f36",
+      "size_bytes": 1164
+    },
+    "paper/main.pdf": {
+      "sha256": "39acd80329065af53799d0037224f3be0d92340b4c23a729ba0d8c6d40d87501",
+      "size_bytes": 382601
+    },
+    "paper/build.sh": {
+      "sha256": "29148329257ce98bc40bb75213b2603ea7e43b6579f87b0d331c9b132c776e67",
+      "size_bytes": 380
+    },
+    "paper/SOURCE_AND_PROOF_CHECK.md": {
+      "sha256": "e8fff851e78a083e78ea2ace0e421634f94855fc28cd07ba79647e38ce4f0d72",
+      "size_bytes": 9304
+    },
+    "scripts/check_paper.py": {
+      "sha256": "4c4372b2c97be8d2d96e1a3213b2a867fe580f465872b71502feac58ee043838",
+      "size_bytes": 4620
+    },
+    "InverseZeroSum/Candidate3.lean": {
+      "sha256": "fdf3a8f77950118d87b8099d2d147a345e8108b39e7796079efd84695f36e496",
+      "size_bytes": 149298
+    },
+    "Challenge.lean": {
+      "sha256": "2ca7fffa07a80e0adb10abe922eeaf01f7d6d8991eb0680255de7d3781ef6ca6",
+      "size_bytes": 2842
+    },
+    "Solution.lean": {
+      "sha256": "40126a5a5a375068b7e02c29d697163777c19a9137ae6a6b85362667cd365488",
+      "size_bytes": 243
+    },
+    "lean-toolchain": {
+      "sha256": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a",
+      "size_bytes": 29
+    },
+    "lakefile.toml": {
+      "sha256": "43674df718c06dad5cef6ea3dc522c44a7a8a25a62bb0d396dbc2cf20be62557",
+      "size_bytes": 360
+    },
+    "comparator.json": {
+      "sha256": "984e284fdfcd0c38ecacba0087084fad527c80c35b17635f5fe20a9c1e15d3b9",
+      "size_bytes": 286
+    }
+  },
+  "hosted_verification": "Actual outgoing SHA and run outcomes must be independently observed after push; supplied in final close report."
+}

@@ -1,5 +1,8 @@
 # External reviewer register
 
+**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+
+
 **Confirmed reviewer: NONE.** Owner decision D-070 selects CAND-05.
 
 The 2026-10-02 Xue Li Stage-1 message remains a historical **CAND-02-specific**
@@ -876,3 +879,10 @@ Owner reports the Palomar automated editorial check found no blocking problem, m
 ## S060 E-JC author-versus-referee distinction (2026-10-09)
 
 No outside mathematician/reviewer/editor contacted or invited; no pre-submission CAND-03 consultation planned by owner decision. Palomar automated no-problem editorial report was **not read by any human** according to owner report; Lean/Comparator/Palomar full mechanical checks are not human refereeing. E-JC's official board/editor/referee procedure supplies prospective *future* human journal review but no editor/referee is assigned to this unsubmitted work. Its AI policy and checklist require the HUMAN author personally verify, understand, rewrite and defend an AI-assisted proof. That obligation is **UNFULFILLED / not attested**, and cannot be offloaded to a proposed S061 worksheet. Xue Li Stage-1 remains CAND-02-specific, reply pending. Active CAND-03 reviewer status NONE; independent pre-submission consultation remains skipped, future E-JC review intended.
+
+## S061 scope synchronization (2026-10-09)
+
+S061 completed manuscript drafting and technical validation only. No recipient
+was contacted, invited or assigned; no correspondence status changed. The
+current manuscript and source-consistency record are in `paper/`. S062 is
+preprint-package preparation; no outreach or journal action is authorized.

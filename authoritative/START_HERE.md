@@ -15,39 +15,35 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
-## Current state — Palomar registered; S061 E-JC article WRITING READY
+## Current state - S061 manuscript complete; S062 release preparation READY
 
-CAND-03 has full formal proof on immutable `c5f9e5e822020688c72b2a3bfacbf147a801e219`; Palomar official full verification passed (run `37813245157`) and the result is [permanently registered as PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1), published 2026-10-09T15:53:49Z. No manuscript, arXiv preprint or E-JC submission is yet recorded.
+CAND-03 is the exact positional length-24 iff over `C_3^3\{0}`: every pair
+of short zero-sum witnesses has zero intersection sum iff `S=U^3`, up to
+permutation of all original positions, for squarefree short-free length-8 U.
+It is formally proved and [registered as Palomar v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1)
+on immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`;
+official full mechanical run `37813245157` passed.
 
-**S060 COMPLETED** E-JC-first suitability analysis with GO-WITH-CONDITIONS. **S061 READY:** write the complete paper in LaTeX with PDF when buildable and accurate sources, leading with the inverse necessity of the full positional 24-term classification rather than the known 2024 direct results. The only live brief is `authoritative/S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md`, and the only ready kickoff is `authoritative/NEXT_SESSION_PROMPT.md`. No external action is authorized. S042's literature non-hit is not an exhaustive novelty certificate. Follow the route: Palomar registered → paper → arXiv → E-JC.
+**S061 COMPLETED D60-01:** [complete paper](../paper/main.pdf),
+[editable LaTeX](../paper/main.tex), six examples and five vector figures.
+[Source-to-proof consistency](../paper/SOURCE_AND_PROOF_CHECK.md) explicitly
+corrects attribution: the length-15 profile/completion argument is already
+in Fan et al. (2012), proof of Lemma 27(3). The paper's contribution is the
+complete inverse necessity and equality application, not the published
+threshold, construction, deletion machinery or residual lemma.
 
+- Target, publication-eligibility and mathematical-investigation gates: OPEN.
+- Active owner blockers: NONE.
+- Next: **S062 / D61-01**, final manuscript and arXiv release preparation.
+- Live brief: `authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md`.
+- The [single ready prompt](NEXT_SESSION_PROMPT.md) authorizes preparation only.
+- Ordered route: **Palomar registered → paper written → arXiv preprint → E-JC**.
+- No arXiv posting or E-JC submission has occurred; no contact is authorized.
+- S042's bounded non-hit is not proof of global originality or previous openness.
 
-Selected target:
-
-> Classify all sequences `S` over `C_3^3\{0}` with `|S|=24` that
-> contain no two innerly non-zero-sum-joint short zero-sum subsequences, where
-> short means length at most `3`, by a structural necessity-and-sufficiency
-> theorem.
-
-Frozen classification: exactly `S=U^3` with `U` squarefree short-free of
-length 8.
-
-- Target gate: OPEN.
-- Publication gate: OPEN as workflow eligibility; E-JC remains intended after
-  the ordered verification/preprint stages.
-- Mathematical-investigation gate: OPEN; S059 is a technical proof-preserving compatibility port; no fresh mathematical architecture or prior-art work.
-- External-review gate: CLOSED and not a CAND-03 pre-submission blocker.
-- Active owner blockers: **NONE for the approved technical preparation**. B-014 was resolved by explicit owner approval; actual portal registration remains unperformed.
-- Next session: **NONE while S059 is in progress**, pending its validation/closeout disposition.
-- Live next-session prompt: **NONE** while S059 is in progress; file absent.
-- S042 status: **no exact/equivalent/stronger-implying prior art located in the
-  documented deep audit**; this is not a proof of novelty or prior openness.
-- Ordered route: **Lean formalization -> Palomar registration -> paper ->
-  arXiv -> E-JC submission**.
-- Xue Li Stage-1 remains CAND-02-specific, reply pending, with no transfer.
-
-CAND-05 and CAND-02 remain historical/paused; CAND-04 remains retired;
-CAND-06 and CAND-01 remain unselected alternatives.
+The following historical frontier sections preserve earlier checkpoints;
+the current state above and `STATE.json` control dispatch. Other candidates
+remain paused or retired under their recorded decisions.
 
 ## Historical CAND-05 mathematical frontier (proof paused)
 

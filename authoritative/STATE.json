@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S060",
-  "next_session": "S061",
-  "next_brief": "authoritative/S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md",
-  "stage": "P8_CAND03_PALOMAR_REGISTERED_S061_EJC_MANUSCRIPT_WRITING_READY",
-  "programme_status": "S060_COMPLETED_PALOMAR_REGISTERED_V1_S061_EJC_PAPER_WRITING_READY",
+  "last_completed_session": "S061",
+  "next_session": "S062",
+  "next_brief": "authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md",
+  "stage": "P8_CAND03_EJC_MANUSCRIPT_COMPLETE_ARXIV_PREPARATION_READY",
+  "programme_status": "S061_COMPLETED_FULL_MANUSCRIPT_S062_RELEASE_PREPARATION_READY",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 formal theorem frozen and proved in Lean 4.35; Palomar permanent registration PALOMAR-2026-10-09-000011 v1 at 2026-10-09T15:53:49Z on source c5f9e5e822020688c72b2a3bfacbf147a801e219. E-JC-first S060 literature/fit discovery completed; full converse necessity is the claimed contribution relative to checked literature. 2024 direct construction/threshold and 2012 lemmas already published. No arXiv or E-JC submission. Next S061: write complete mathematical manuscript.",
+  "candidate_under_due_diligence": "CAND-03 frozen positional iff formally proved and registered as PALOMAR-2026-10-09-000011 v1 on source c5f9e5e822020688c72b2a3bfacbf147a801e219. S061 complete first E-JC manuscript with six examples, five vector figures and exact attribution. No arXiv or E-JC submission.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -107,7 +107,9 @@
     "S053 PARTIAL FORMALIZATION: source-level length-15 singleton sum identity, singleton uniqueness and two local count transitions have proof terms; no certificate-level s=9 elimination or FrozenClassification proof term.",
     "S054 FORMALIZATION PARTIAL: original-position ShortFreeOn length-15 survivor carries exact singleton fibre, universal cardinality-two bound and singleton plus residual total sum zero. Certificate-level s=9 transversal profile and generic one-position exchange are formalized, but S9PackingEliminationInput and FrozenClassification have no proof terms.",
     "S055 D54-01 FORMAL VERIFICATION: the pinned Lean source proves s9PackingEliminationInput : S9PackingEliminationInput via certificate-level fibre-count and singleton-sum swaps, s9 packed total sum zero, and the second nonconstant two-block contradiction. CI run 37762312828 passed full lake build, placeholder scan, and authority check. FrozenClassification remains unproved.",
-    "S057 FORMAL VERIFICATION: the unchanged FrozenClassification proposition is proved by frozenClassification : FrozenClassification. The direct canonical positional converse classifies all short zero sums in tripleRep U as full three-position fibres, then proves avoidance and transports it by the exact Fin24 permutation. Pinned proof-head GitHub Actions 37787906708 passed lake build, forbidden-placeholder scan and scripts/check_authority.py; no novelty/status/journal inference."
+    "S057 FORMAL VERIFICATION: the unchanged FrozenClassification proposition is proved by frozenClassification : FrozenClassification. The direct canonical positional converse classifies all short zero sums in tripleRep U as full three-position fibres, then proves avoidance and transports it by the exact Fin24 permutation. Pinned proof-head GitHub Actions 37787906708 passed lake build, forbidden-placeholder scan and scripts/check_authority.py; no novelty/status/journal inference.",
+    "S061 SOURCE ATTRIBUTION CORRECTION: the S040 short-free length-15 2^7 1 profile and singleton-completion reasoning already occur in Fan et al. 2012 proof of Lemma 27(3); u=-sigma(R) follows with Lemma 28. The manuscript claims the full inverse equality application, not a new residual lemma.",
+    "S061 EXPOSITION: complete source-accurate proof of the frozen length-24 iff, six worked examples and five vector figures; no mathematical target or registered Lean source changed."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -124,7 +126,7 @@
     "D-165: Official PalomarSubmission full-mode mechanical verification on the owner-submitted exact source commit succeeded (GitHub Actions 37813245157, 2026-10-08); the separate caller-repository Namespace reusable CI remains queued and is not itself passed, but no longer blocks technical verification.",
     "D-168 update: public Palomar registration confirmed PALOMAR-2026-10-09-000011 version 1 on 2026-10-09T15:53:49Z for frozen source c5f9e5e822020688c72b2a3bfacbf147a801e219. Historical requested/pending status is superseded. Do not conflate registration with journal peer review or novelty certification.",
     "Before actual E-JC submission later, owner must verify no paper submitted to E-JC in the previous three calendar months; and before arXiv deposit check account/category endorsement, suitable rights and E-JC preprint compatibility. None of these later external actions are authorized by S060 discovery.",
-    "S061 manuscript writing is ready. Maintain mathematical source attribution, correct E-JC submission-form requirements and the ordered paper → arXiv → E-JC route; no external posting or filing without separate authorization."
+    "S061 paper completed. S062 prepares a reviewable arXiv release package only; no preprint or journal upload without separate explicit authorization. Preserve registration → paper → arXiv → E-JC."
   ],
   "next_prompt_status": "READY",
   "session_checkpoints": [
@@ -432,6 +434,11 @@
       "id": "S060",
       "status": "COMPLETED",
       "record": "sessions/S060/CLOSEOUT.md"
+    },
+    {
+      "id": "S061",
+      "status": "COMPLETED",
+      "record": "sessions/S061/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -459,7 +466,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "Palomar registration complete: PALOMAR-2026-10-09-000011 v1 on immutable CAND-03 Lean source. S061 next: complete E-JC-oriented paper manuscript, with fully written proof, citations, reproducible PDF and mathematics-only proof/source consistency note. Then arXiv and E-JC are later, separately controlled actions. Deep S042 prior-art no-hit does not prove global originality; paper must distinguish new converse from known construction and threshold.",
+  "current_route_disposition": "Registration complete; complete first paper delivered in paper/main.tex and paper/main.pdf. S062 prepares a concrete arXiv release package and final source/policy refresh only. External posting and E-JC filing require separate authorization. S042 non-hit is not global novelty or prior-openness certification.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -671,7 +678,7 @@
   "cand03_direct_proof_near_equality": "D38-01 completed. The defining 2024 proof yields l>=6 and s>=8 for every maximal short-atom packing of a length-24 extremal, hence exactly four packing signatures. The eta* type route adds no independent structure and Lemma 3.13 has stronger hypotheses. S040 D39-01 is the sole promoted successor.",
   "s040_source_refresh_date": "2026-10-06",
   "s040_mathematical_investigation_date": "2026-10-06",
-  "cand03_internal_classification": "D39-01 completed. Exact internal iff classification: S=U^3 with U squarefree short-free of length 8. The proof uses the universal representative-deletion residuals, Fan--Gao--Wang--Zhong--Zhuang 2012 Property C/Lemmas 28--29, and Gao--Hui--Li--Li--Qu--Zhong 2024 Lemma 3.3(2) for sufficiency only. Novelty/open-status and independent verification remain for S041.",
+  "cand03_internal_classification": "Complete unchanged iff: S is a positional length-24 nonzero C_3^3 sequence with zero intersection sum for every short witness pair iff S=U^3 up to permutation for squarefree short-free length-8 U. S040/S041 proof, S057/S059 completed formalization, S061 complete prose exposition. Profile/completion input credited to Fan et al. 2012 Lemma 27(3) proof; no global novelty certification.",
   "s041_source_refresh_date": "2026-10-06",
   "s041_verification_date": "2026-10-06",
   "cand03_verified_classification_status": "PROGRAMME-PROVED AND INTERNALLY REVERIFIED FROM CHECKED SOURCE INPUTS. Exact literature novelty/open status remains unresolved; bounded search non-hits are non-certifying; independent external review has not occurred.",
@@ -693,15 +700,15 @@
   "cand03_deep_prior_art_status": "NO EXACT/EQUIVALENT/STRONGER-IMPLYING PRIOR ART LOCATED IN THE DOCUMENTED DEEP AUDIT. This is a documented search non-hit, not a logical proof of novelty, previous openness, significance or exhaustive absence.",
   "s043_formalization_date": "2026-10-06",
   "cand03_lean_formalization": {
-    "status": "COMPLETED_KERNEL_CHECKED",
-    "toolchain": "Lean 4.19.0 (release commit 6caaee842e94)",
-    "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+    "status": "COMPLETED_KERNEL_CHECKED_PALOMAR_REGISTERED",
+    "toolchain": "leanprover/lean4:v4.35.0-rc2",
+    "mathlib_commit": "v4.35.0-rc2 (pinned tag in lakefile.toml; original 4.19 lock recorded in S057)",
     "compiled_scope": "All existing source/packing interfaces plus S056 frozen necessity and S057 direct canonical triple-power avoidance, inverse positional permutation transport and frozenClassification : FrozenClassification. The exact unchanged length-24 iff is fully kernel-checked in the pinned project.",
     "earliest_formal_blocker": "NONE: the exact FrozenClassification proposition now has a closed Lean proof term.",
-    "palomar_status": "NOT_REGISTERED; S058 preflight may verify current requirements only."
+    "palomar_status": "REGISTERED_PALOMAR-2026-10-09-000011_VERSION_1"
   },
   "s044_formalization_date": "2026-10-06",
-  "cand03_s039_packing_formalization": "PARTIAL: s039PackingInput_of_thresholds is kernel-checked and proves ThreeTerm19Input -> Eta17Input -> S039PackingInput, including the exact four signatures and universal arbitrary-representative residual. Both source interfaces now have closed proof terms; the next exact obligation is to close S039PackingInput itself.",
+  "cand03_s039_packing_formalization": "COMPLETED S047: s039PackingInput; all source thresholds proved and universal representative residuals retained.",
   "s045_formalization_date": "2026-10-06",
   "cand03_three_term_19_formalization": "COMPLETED: threeTerm19Input : ThreeTerm19Input is kernel-checked in Lean 4.19.0 + pinned mathlib. The proof derives a 9-point cap upper bound in F_3^3 from explicit affine-plane geometry and uses fiber multiplicity at most two to force a three-position zero sum in length 19. No threshold axiom, Property D axiom, native_decide, sorry, admit, postulate or opaque orbit catalogue is used.",
   "s046_formalization_date": "2026-10-06",
@@ -715,19 +722,19 @@
   "s050_formalization_date": "2026-10-07",
   "cand03_length15_nonzero_formalization": "COMPLETED: S052 proves length15NonzeroInput : Length15NonzeroInput from the exact eight-support 2^7 1 profile, a locally named fibre-weight function, weighted_sum_plus_singleton_eq_double, and the eight-support sum-zero theorem. Clean pinned run 37691828559 passed lake build, placeholder scan and authority checker.",
   "s051_formalization_date": "2026-10-07",
-  "cand03_s9_formalization": "PARTIAL S053: length15_singleton_sum_identity, length15_singleton_unique, s9_two_fibre_count_transitions are proof-bearing helper lemmas; S9PackingEliminationInput is a proposition only. The first missing bridge is faithful singleton fibre/count/sum transport from PosSeq15 to arbitrary 15-position ShortFreeOn survivors under one representative swap. S054/D53-01 continues only this exact branch. FrozenClassification is unproved.",
+  "cand03_s9_formalization": "COMPLETED S055: s9PackingEliminationInput, with singleton identities and exact certificate exchanges; frozenClassification completed in S057.",
   "s053_formalization_date": "2026-10-07",
   "s054_formalization_date": "2026-10-08",
-  "cand03_s9_certificate_transport": "PARTIAL; survivor singleton/count/sum profile and positional exchange auxiliaries; S9PackingEliminationInput and FrozenClassification unproved; S055/D54-01 next",
+  "cand03_s9_certificate_transport": "COMPLETED S054/S055; survivor profile and transport composed in s9PackingEliminationInput. FrozenClassification completed S057.",
   "s055_formalization_date": "2026-10-08",
-  "cand03_s9_packing_elimination": "COMPLETED S055/D54-01: pinned GitHub Actions run 37762312828 proves s9PackingEliminationInput : S9PackingEliminationInput using certificate-level survivor swap, exact fibre-count transitions, length-15 singleton identities, full s=9 packed-block sum zero, and a second nonconstant two-block contradiction. FrozenClassification has no proof term and was not attempted in S055.",
+  "cand03_s9_packing_elimination": "COMPLETED S055/D54-01: s9PackingEliminationInput; frozenClassification subsequently completed S057 and registered S059/D-168.",
   "s056_formalization_date": "2026-10-08",
   "cand03_frozen_classification_composition": {
-    "status": "PARTIAL_NECESSITY_PROOF_PRESENT_CONVERSE_UNPROVED",
+    "status": "COMPLETED_S057",
     "source": "InverseZeroSum/Candidate3.lean",
-    "proved": "s056_frozen_necessity",
-    "remaining_bridge": "For each squarefree short-free PosSeq 8 U, prove AvoidsInnerJointPair (tripleRep U) directly from the positional short-zero witnesses; then transport along IsTriplePower and close FrozenClassification.",
-    "palomar": "BLOCKED"
+    "proved": "frozenClassification : FrozenClassification",
+    "remaining_bridge": null,
+    "palomar": "REGISTERED_VERSION_1"
   },
   "cand03_frozen_classification_formalization": {
     "status": "COMPLETED_KERNEL_CHECKED",
@@ -735,26 +742,26 @@
     "proof_head": "b260652a6b500b3b6ed602610c85bddc000fff96",
     "proof_head_actions_run": 37787906708,
     "scope": "Exact unchanged positional AvoidsInnerJointPair iff squarefree ShortFree triple power up to Fin24 position permutation; necessity and sufficiency",
-    "palomar_status": "S058_PREFLIGHT_COMPLETE_INCOMPATIBLE_TOOLCHAIN_AND_MISSING_SUBMISSION_LAYOUT_B014_ACTIVE",
+    "palomar_status": "REGISTERED_PALOMAR-2026-10-09-000011_VERSION_1",
     "source_novelty_boundary": "S042 audit non-hit does not certify novelty, prior openness or significance"
   },
   "s057_formalization_date": "2026-10-08",
   "s058_palomar_preflight_date": "2026-10-08",
   "cand03_palomar_preflight": {
-    "status": "COMPLETED_PREFLIGHT_OWNER_BLOCKED_NOT_SUBMITTED",
+    "status": "COMPLETED_AND_SUPERSEDED_BY_SUCCESSFUL_S059_REGISTRATION",
     "official_submission_policy": "https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md",
     "official_minimum_reference": "https://github.com/PalomarRegistry/PalomarSubmission/blob/d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44/toolchains.json",
     "minimum_lean": "v4.35.0-rc2",
     "frozen_lean": "v4.19.0",
     "frozen_main": "6e20d36bbcdb309dfaefb8f8a36ffd55cb822b5e",
     "frozen_tree": "ac8ca1e22c05e18e88ffba6483530ff8d628cdfc",
-    "blocker": "B-014",
+    "blocker": null,
     "portal": "https://submit.palomar-registry.org/",
-    "registered": false,
-    "submitted": false
+    "registered": true,
+    "submitted": true
   },
   "s059_port": {
-    "status": "COMPLETED_TECHNICAL_PROOF_PALOMAR_OFFICIAL_FULL_PASS_PORTAL_STATUS_ISSUE",
+    "status": "COMPLETED_OFFICIAL_FULL_PASS_AND_REGISTERED_VERSION_1",
     "owner_authorized_date": "2026-10-08",
     "author": "John Fairfax-Ball",
     "responsible_maintainer": "John Fairfax-Ball",
@@ -764,8 +771,8 @@
     "palomar_pipeline_commit": "d4e41c1d5b0d114c4859e6e5831dc6d3ad1d0d44",
     "full_preflight_status": "PASS",
     "portal_submitted": true,
-    "registered": false,
-    "registration_commit": null,
+    "registered": true,
+    "registration_commit": "c5f9e5e822020688c72b2a3bfacbf147a801e219",
     "lean_build": "PASS exact submitted commit 37811409022",
     "local_comparator": "PASS exact submitted commit 37811408881",
     "independent_kernels": [
@@ -778,13 +785,11 @@
     "checker_contract_note": "S059 is COMPLETED following its D-165 official provider-managed full mechanical verification. The historical PARTIAL/checker lesson remains recorded in S059 dated documentation.",
     "source_commit_submitted": "c5f9e5e822020688c72b2a3bfacbf147a801e219",
     "portal_submitted_evidence": "owner-reported 2026-10-08; private status link omitted",
-    "portal_verification_status": "PUBLIC_MECHANICAL_REPORT_PASS; portal UI state unavailable",
+    "portal_verification_status": "OFFICIAL_FULL_PASS_RUN_37813245157",
     "portal_review_status": "OWNER_REPORTED_2026-10-08T17:55:22Z_AUTOMATED_REVIEW_NO_PROBLEMS",
-    "palomar_registration_status": "REQUESTED_PENDING_MERGE_UNVERIFIED",
-    "portal_status_page_issue": "owner reported Could not refresh this submission. Retrying; server /api/submission non-OK response; exact status code not observed",
+    "palomar_registration_status": "REGISTERED_PALOMAR-2026-10-09-000011_VERSION_1",
     "technical_blocker_B015": "RESOLVED_BY_OFFICIAL_PROVIDER_MANAGED_RUN_37813245157",
     "portal_review_model": "codex:gpt-6-sol",
-    "portal_review_human_checked": false,
     "registration_requested": true,
     "registration_requested_at": "2026-10-08T18:29:46Z",
     "private_status_token_recorded": false
@@ -806,7 +811,7 @@
     "result": "COMPLETED_GO_WITH_CONDITIONS_INVERSE_EXTREMAL_RIGIDITY"
   },
   "s061_manuscript_drafting": {
-    "status": "READY",
+    "status": "COMPLETED",
     "unit": "D60-01",
     "scope": "FULL_EJC_MATHEMATICAL_MANUSCRIPT_WRITING",
     "brief": "authoritative/S061_EJC_MANUSCRIPT_DRAFTING_BRIEF.md",
@@ -818,7 +823,15 @@
       "GITHUB_ACTIONS_CHECKPOINT"
     ],
     "palomar_registration": "PALOMAR-2026-10-09-000011",
-    "external_publication_actions": "NOT_AUTHORIZED_IN_S061"
+    "external_publication_actions": "NOT_AUTHORIZED_IN_S061",
+    "completed_date": "2026-10-09",
+    "manuscript": "paper/main.tex",
+    "pdf": "paper/main.pdf",
+    "source_proof_check": "paper/SOURCE_AND_PROOF_CHECK.md",
+    "worked_examples": 6,
+    "vector_figures": 5,
+    "validation": "sessions/S061/VALIDATION.md",
+    "source_correction": "Fan et al. 2012 proof of Lemma 27(3) already gives the near-extremal multiplicity and singleton completion argument; not separately claimed new."
   },
   "cand03_palomar_registration": {
     "status": "REGISTERED",
@@ -834,5 +847,12 @@
     "preservation_fork": "PalomarArchive/jfairfaxball-348--Inverse-Zero-Sum-Research--d48564ec88c4",
     "official_full_verification_run": "37813245157",
     "scope": "FORMALIZED_RESULT_NOT_JOURNAL_PEER_REVIEW"
+  },
+  "s062_release_preparation": {
+    "status": "READY",
+    "unit": "D61-01",
+    "brief": "authoritative/S062_ARXIV_RELEASE_PREPARATION_BRIEF.md",
+    "scope": "FINAL_MANUSCRIPT_SOURCE_POLICY_REFRESH_AND_ARXIV_PACKAGE_PREPARATION",
+    "external_actions": "NOT_AUTHORIZED"
   }
 }

@@ -1,5 +1,8 @@
 # Target register
 
+**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+
+
 **Current protocol note:** historical entries below preserve the gate rules
 and target selections that governed their sessions. CAND-03 is the current
 selected target under D-111. External review remains CLOSED and is not a
@@ -1465,3 +1468,12 @@ Exact frozen iff target is mathematically unchanged. The E-JC suitability exerci
 ## D-168 registration does not change CAND-03 theorem or novelty (2026-10-09)
 
 Palomar official [PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1) publicly registered the exact frozen Lean theorem on `c5f9e5e822020688c72b2a3bfacbf147a801e219` at 2026-10-09T15:53:49Z. The mathematical target remains the full positional 24-term `C_3^3\setminus\{0\}` iff, `S=U^3` for squarefree short-free 8-term U *up to position permutation*. Published direct 2024 threshold/construction and 2012 residual inputs are not new. S042 no-hit is not a global novelty certification. This administrative milestone allows an E-JC-targeted working draft, not new mathematics or human-author proof certification.
+
+## S061 manuscript boundary
+
+The exact frozen CAND-03 positional iff is unchanged. The complete paper proves
+necessity and sufficiency, including the permutation on all original positions.
+The stated contribution is the complete inverse equality application. The 2024
+direct results and 2012 Lemma 27(3)/28/29 residual arguments are published inputs.
+Six examples and five figures are explanatory; no new target, rank extension,
+core-orbit classification, novelty certification or external filing is claimed.

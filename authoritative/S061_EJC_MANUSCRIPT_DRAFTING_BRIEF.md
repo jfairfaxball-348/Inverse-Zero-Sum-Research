@@ -1,6 +1,6 @@
 # S061 — Electronic Journal of Combinatorics manuscript writing
 
-**Status:** READY. **Single bounded unit:** D60-01, E-JC-targeted article writing. S060 discovery is complete; S061 has not begun. This brief supersedes previous S061 preparation variants.
+**Status:** COMPLETED in S061; historical input brief. **Single bounded unit:** D60-01, E-JC-targeted article writing. S061 delivery and validation are recorded in `sessions/S061/CLOSEOUT.md`. This brief supersedes previous S061 preparation variants.
 
 ## Authority and frozen result
 

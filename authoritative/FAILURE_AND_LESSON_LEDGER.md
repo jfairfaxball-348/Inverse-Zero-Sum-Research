@@ -1,5 +1,8 @@
 # Failure and lesson ledger
 
+**Current S061 checkpoint:** full manuscript completed; S062/D61-01 release-package preparation READY; no external filing. Current state is `STATE.json`; dated records below retain their historical scope.
+
+
 This ledger includes literature/status lessons from the pre-proof stages and
 mathematical-investigation lessons from S007 onward. Historical entries retain
 their original session context.
@@ -522,3 +525,12 @@ A successful provider full-verifier run and owner-initiated registration request
 ## FL-120 — Move from published/formal theorem to self-contained mathematical exposition
 
 S061 should use the S039–S043 packing and residual arguments, formal Lean correspondence and exact published source inputs to produce a readable stand-alone mathematical paper rather than a repository export or a proof-by-formal-verifier claim. Journal value must be argued in terms of the new **inverse necessity**, not the known sharp threshold/construction. Preserve all original-position quantifiers and distinguish the cap-core interpretation from multiplicity-three rigidity. Manuscript PDF and bibliography are reproducible deliverables; no journal outcome may be inferred from Palomar registration.
+
+## FL-121 - Inspect neighbouring source proofs before attributing a lemma
+
+S060's source matrix treated the length-15 singleton profile/completion as new.
+Reading Fan et al. (2012), proof of Lemma 27(3), exposed that same argument.
+S061 corrects the attribution and reserves the contribution for the complete
+inverse classification and simultaneous representative exchanges. The theorem
+and its formal proof survive unchanged. A source statement search alone can
+miss an ingredient already proved inside a neighbouring lemma.
