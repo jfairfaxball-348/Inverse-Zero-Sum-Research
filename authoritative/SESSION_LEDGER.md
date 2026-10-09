@@ -1049,3 +1049,12 @@ B-014 was resolved by explicit owner port/attribution approval. **B-015 ACTIVE**
 ## Next numbered unit READY (not begun): S060 E-JC-first prewriting discovery
 
 After S059 COMPLETED and official full Palomar proof verification, owner reported Palomar automated editorial no-problem outcome (no human review), registration requested at 2026-10-08T18:29:46Z but awaiting a merged registry record. Owner explicitly selected S060 **before-writing journal-fit discovery** to maximize later E-JC suitability, separate from paper-writing and all external filings. S060 has **not started**; verify no S060 files/branch exist when kicking off. Live brief `authoritative/S060_EJC_PUBLICATION_FIT_PREWRITING_DISCOVERY_BRIEF.md`, READY prompt `authoritative/NEXT_SESSION_PROMPT.md`. Active owner blockers NONE; future E-JC human-authored proof checking remains a real later-stage requirement.
+
+
+## S060 completed — D59-01 E-JC prewriting discovery (2026-10-09)
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S060 | COMPLETED; GO-WITH-CONDITIONS | `a92a333f21eb12da0e8a2e02ffe156ea97bd886e` | Primary E-JC AI/originality/checklist recheck, E-JC inverse genre evidence, exact published-vs-new necessity boundary, three ranked publication narratives, full human-check proof dependency plan, prospective title/theorem/section/abstract-content map (NO manuscript), arXiv policy/endorsement/license preflight; S061 audit-prep only | [S060 closeout](../sessions/S060/CLOSEOUT.md) |
+
+Incoming main equalled supplied verified SHA; S060 was absent. No paper/arXiv/journal/registration/contact action occurred. Palomar full proof run 37813245157 PASSED on immutable c5f9e5e822020688c72b2a3bfacbf147a801e219; registration only REQUESTED, not confirmed merged. Human author has not attested E-JC-required personal proof check and own-word rewrite. Active owner blockers NONE for independent S061 workbook preparation. Main-CI source/authority validation must be verified after outgoing checkpoint.

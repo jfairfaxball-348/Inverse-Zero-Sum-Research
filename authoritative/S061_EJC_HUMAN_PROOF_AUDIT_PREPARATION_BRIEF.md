@@ -1,0 +1,15 @@
+# S061 — E-JC human-proof-audit preparation brief
+
+**Status: READY.** Single unit D60-01: prepare a *human-author-checkable worksheet and source-accurate lemma matrix* from S060 for a future E-JC manuscript. This is **NOT** the manuscript and must not impersonate the owner's independent verification.
+
+## Entry and scope
+Pin live `main`, read AGENTS, START_HERE, STATE, charter/protocol, S060 seven records and all current registers; S039/S040/S041/S042/S043, S057/S059 validation and Lean `Candidate3.lean`. Confirm S061 unique. Preserve frozen exact 24-position theorem and proof source. Palomar full verification passed on `c5f9e5e822020688c72b2a3bfacbf147a801e219`, official run 37813245157; permanent registration REQUESTED but not independently merged. Human E-JC personal proof verification and rewrite **not completed/attested**.
+
+## Bounded preparatory output
+1. Construct numbered *logical obligation sheet*, one substep per assertion of S039/S040 new necessity, with explicit sources, types of quantifiers, intermediate equalities and Lean declaration correspondence. Include universal representative-transversal provenance, signature enumeration, 16-term zero-sum swap, 15-term `2^7 1` proof, both local count transitions and second 2-atom contradiction, necessity permutation and direct canonical converse. Flag any source/Lean semantic ambiguity.
+2. Construct a human author **question/checklist workbook**, with proof-check questions and blanks for the owner's own mathematical derivation, corrections, and dated attestation. Do not auto-fill comprehension status, author sign-off, prose rewrite or verified-by-human results. Distinguish published fact from programme step; include exact paper/page/lemma access.
+3. Prepare a non-manuscript originality/venue-conformity reference matrix with E-JC author checklist and notation glossary. Keep current source-status non-hit qualified.
+4. Determine whether the genuinely independent *next* unit can write a paper in owner's approved order; if permanent Palomar registration is still not verified merged, do **not** start writing, and handle an actual next-stage owner dependency using protocol without a spurious ready prompt.
+5. Write bounded S061 session records, synchronize authority, verify `scripts/check_authority.py` in GitHub Actions and exact main SHA; produce at most one successor if unblocked.
+
+**Forbidden:** abstract, introduction, manuscript proof/sections, LaTeX article, arXiv upload, E-JC filing, outreach, private status URL, registration-ID speculation or automatic author attestation. **Important:** E-JC insists the *human* author personally checks every AI-assisted proof step and rewrites proof in own words before submission; a workbook and machine validation are not substitutes.

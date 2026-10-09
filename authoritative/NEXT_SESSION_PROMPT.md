@@ -1,32 +1,22 @@
 # Live ready next-session prompt
 
-Session: S060.
+Session: S061.
 Status: READY.
 
-Copy verbatim after confirming no newer owner blocker; repository authority still governs:
+Copy verbatim after checking the repository's current main authority:
 
 ```text
-Session: S060.
+Session: S061.
 Status: READY.
 
-Begin S060 — E-JC publication-fit and prewriting discovery — in:
+Begin S061 — human proof-audit preparation, NOT paper drafting — in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
-Previous fully verified research checkpoint:
-8c95178d0a07209aaac999ef269c3a11279a4942
-The actual live main may contain later administrative updates: pin it, reconcile every intervening change, and confirm S060 is unique before doing work. Committed repository authority supersedes this prompt.
+Pin the live main SHA and reconcile intervening changes with the S060 completed checkpoint. Confirm S061 is unique. Follow AGENTS.md, authoritative/START_HERE.md, authoritative/STATE.json, the charter/session protocol and all current registers; read all seven sessions/S060 records, S039/S040 mathematical sources/proofs, S041/S042 literature audits, S043 semantics, S057 frozen Lean completion, S059 Palomar validation and authoritative/S061_EJC_HUMAN_PROOF_AUDIT_PREPARATION_BRIEF.md.
 
-Read AGENTS.md, authoritative/START_HERE.md, authoritative/STATE.json, the project charter and session protocol, current roadmap/publication/claims/decisions/reviewer/target registers, S039/S040 mathematical strategy/proofs/sources/validations/closeouts, S041 status verification, S042 deep prior-art audit, S043 semantic correspondence, S057 completed Lean theorem, all S059 closeout/validation/source/metadata records, and authoritative/S060_EJC_PUBLICATION_FIT_PREWRITING_DISCOVERY_BRIEF.md.
+D60-01 ONLY: assemble the line-by-line human-author audit worksheet, exact published-input versus new proof-lemma matrix and source/Lean correspondence for the inverse length-24 C_3^3 positional theorem. Pay particular attention to the every-transversal 2024 packing input, 16-term residual swaps, 15-term 2^7 1 singleton identity, s=9 two-block contradiction and permutation/converse. Include owner-only verification questions and empty attestation fields. DO NOT personally certify verification on owner's behalf, rewrite proofs as a manuscript, draft an abstract/introduction/LaTeX paper, request arXiv endorsement, contact anybody or submit anywhere.
 
-The frozen CAND-03 exact iff is proved in Lean 4.35 and PASSED Palomar full mechanical verification on submitted immutable commit c5f9e5e822020688c72b2a3bfacbf147a801e219 (official PalomarSubmission run 37813245157). The owner reports Palomar automated editorial review with no problems identified, NO HUMAN reviewer, and a registration REQUEST at 2026-10-08T18:29:46Z. Registration is still UNDER WAY, not confirmed merged; do not invent its identifier. Never copy the owner's private status link/token.
+Official Palomar full verification is already passed for immutable c5f9e5e822020688c72b2a3bfacbf147a801e219 (run 37813245157). Permanent registry registration was requested, NOT yet shown merged; do not invent any identifier or reproduce any secret URL. E-JC AI policy requires the human author personally verify and rewrite AI-assisted proofs and vouch for each step. Prior-art no-hit never establishes global novelty. Preserve order registration → paper → arXiv → E-JC.
 
-Owner authorizes publication preparation, retaining order: Palomar registration -> paper -> arXiv -> Electronic Journal of Combinatorics. In this session perform ONLY D59-01: source-first PREWRITING DISCOVERY designed around E-JC's real editorial requirements, not manuscript writing or an external submission.
-
-Independently verify current E-JC policies at https://www.combinatorics.org/ojs/index.php/eljc/about/index and https://www.combinatorics.org/ojs/index.php/eljc/about/submissions. CRITICAL: E-JC requires that AI-assisted proofs be personally verified, rewritten by the human author in their own words, and defensible step by step; its standards demand original, self-contained mathematics of substantial interest. Lean/Palomar machine checks and Palomar automated editorial review do not discharge that human obligation. Do not presume the owner has already completed it. The previously documented owner decision skips independent pre-submission CAND-03 consultation; this does NOT skip E-JC's later ordinary refereeing.
-
-Compare our precise NEW converse with the 2024 Gao–Hui–Li–Li–Qu–Zhong existing direct construction and threshold; the Fan–Gao–Wang–Zhong–Zhuang 2012 E-JC short-zero-sum results; S042's non-certifying deep search; and primary E-JC examples including Zeng–Yuan 2023. Map source attribution, novelty/scope risk, referee interest, and mathematical proof readability. Rank 2–3 honest E-JC paper narratives, recommend the strongest one, lay out a source-checked theorem/lemma dependency and human-authored proof-audit plan, describe only an outline/abstract content map and likely referee objections. Check downstream arXiv math category/endorsement and E-JC initial PDF/final LaTeX rules, but do not draft any manuscript prose, upload files, contact people, submit anything, or extend the theorem without authority.
-
-Produce a scored, evidence-linked E-JC suitability decision: GO / GO-WITH-CONDITIONS / REFRAME / HOLD. If a collision or human-comprehension obstacle arises, say exactly so. Write S060 evidence, risk, proof-readiness, policy, validation and closeout records; synchronize authoritative registers and live state; validate via GitHub Actions; commit verified main. No new session inside S060. Promote at most one following bounded writing-preparation unit if genuinely unblocked. If owner action becomes mandatory, record the blocker and output NO next-session prompt.
-
-Use source-backed claims only. E-JC acceptance is never guaranteed.
+Produce S061 records and source-checked findings; synchronize authority and validate GitHub Actions on main. If an actual owner-dependent blocker is activated, report the exact required action and output NO further session prompt. Do not start another numbered session now; E-JC acceptance is not promised.
 ```

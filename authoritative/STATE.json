@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S059",
-  "next_session": "S060",
-  "next_brief": "authoritative/S060_EJC_PUBLICATION_FIT_PREWRITING_DISCOVERY_BRIEF.md",
-  "stage": "P7_CAND03_EJC_FIRST_PREWRITING_DISCOVERY_READY_PALOMAR_REGISTRATION_REQUESTED_PENDING",
-  "programme_status": "S059_COMPLETED_PALOMAR_VERIFIED_AUTOMATED_REVIEW_NO_PROBLEMS_OWNER_REGISTRATION_REQUESTED_UNMERGED_S060_EJC_DISCOVERY_READY",
+  "last_completed_session": "S060",
+  "next_session": "S061",
+  "next_brief": "authoritative/S061_EJC_HUMAN_PROOF_AUDIT_PREPARATION_BRIEF.md",
+  "stage": "P7_CAND03_EJC_FIT_DISCOVERY_COMPLETED_S061_HUMAN_AUDIT_PREPARATION_READY_REGISTRATION_PENDING",
+  "programme_status": "S060_COMPLETED_GO_WITH_CONDITIONS_NO_MANUSCRIPT_REGISTRATION_REQUESTED_UNMERGED_S061_READY",
   "exact_target": "CAND-03 selected by owner: classify all length-24 sequences over C_3^3\\{0} with no two innerly non-zero-sum-joint short zero-sum subsequences (short means length at most 3), by a structural necessity-and-sufficiency theorem",
-  "candidate_under_due_diligence": "CAND-03 exact iff proved and rechecked in Lean 4.35, local Comparator+NanoDa+con-ron PASSED and official PalomarSubmission full-mode PASS (37813245157). Palomar automated editorial review no problems identified (owner report; no human review), registration REQUESTED/UNDER WAY but no merged registry record verified. S060 E-JC prewriting suitability due diligence READY.",
+  "candidate_under_due_diligence": "CAND-03 exact frozen iff Lean 4.35 and Palomar full mechanical PASS; publication positioning S060 GO-WITH-CONDITIONS with inverse extremal rigidity narrative. New relative to checked literature: full rank-three necessity, NOT published 2024 direct construction/threshold. Deep audit non-hit non-certifying; E-JC author personally checked/re-written AI proof NOT ATTESTED; Palomar permanent registration REQUESTED NOT MERGED. No paper, preprint or journal submission.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -125,7 +125,8 @@
     "D-165: Official PalomarSubmission full-mode mechanical verification on the owner-submitted exact source commit succeeded (GitHub Actions 37813245157, 2026-10-08); the separate caller-repository Namespace reusable CI remains queued and is not itself passed, but no longer blocks technical verification.",
     "Palomar status as of 2026-10-08: automated review reported no problems and permanent registration requested, but no merged registry record or identifier has been evidenced. Update only on independently verified completion; do not store private submission token.",
     "E-JC AI authorship condition must be met BEFORE PAPER SUBMISSION: human author personally checks and rewrites AI-assisted proof in their own words and vouches for every step; AI/Lean/Palomar do not substitute for the owner's comprehension and authorial accountability.",
-    "Before actual E-JC submission later, owner must verify no paper submitted to E-JC in the previous three calendar months; and before arXiv deposit check account/category endorsement, suitable rights and E-JC preprint compatibility. None of these later external actions are authorized by S060 discovery."
+    "Before actual E-JC submission later, owner must verify no paper submitted to E-JC in the previous three calendar months; and before arXiv deposit check account/category endorsement, suitable rights and E-JC preprint compatibility. None of these later external actions are authorized by S060 discovery.",
+    "S060 GO-WITH-CONDITIONS: the author must personally verify and rewrite all AI-assisted proof arguments in their own words and vouch stepwise before E-JC filing; this is NOT ATTESTED. Confirm permanent Palomar registration before actual manuscript writing, maintain separate arXiv endorsement/licensing/preprint compatibility and E-JC three-calendar-month checks."
   ],
   "next_prompt_status": "READY",
   "session_checkpoints": [
@@ -428,6 +429,11 @@
       "id": "S059",
       "status": "COMPLETED",
       "record": "sessions/S059/CLOSEOUT.md"
+    },
+    {
+      "id": "S060",
+      "status": "COMPLETED",
+      "record": "sessions/S060/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -455,7 +461,7 @@
   "last_ten_session_audit": "sessions/S020/TEN_SESSION_AUDIT.md",
   "audit_verdict": "S036 strategy blocker B-011 resolved by owner choice of option 2: reassess/switch target. CAND-05 proof work is paused; S037 is a source-first target reassessment, not a proof session.",
   "s011_mathematical_investigation_date": "2026-10-03",
-  "current_route_disposition": "Owner reported Palomar full mechanical verification PASS and automated editorial review by codex:gpt-6-sol at 2026-10-08T17:55:22Z with no problems identified (no human read it); owner requested Palomar permanent registration at 2026-10-08T18:29:46Z. Registration is UNDER WAY, not confirmed merged, with no registry ID claimed. Exact source commit c5f9e5e822020688c72b2a3bfacbf147a801e219, official Palomar run 37813245157 passed. Owner explicitly authorized S060 prior-manuscript discovery optimizing publication fit for E-JC, without altering downstream order or drafting paper. E-JC current AI policy requires human author to personally verify, rewrite AI-assisted proof in own words, and vouch for all steps; formal verification cannot substitute. S060 READY; no submission/preprint/manuscript prepared.",
+  "current_route_disposition": "S060 GO-WITH-CONDITIONS for future E-JC-focused manuscript; not a manuscript permission now. Strongest narrative new converse/extremal rigidity; 2024 direct construction and threshold preexist; 2012 residual lemmas cited. S042 non-hit is not novelty proof. E-JC human author must personally audit and rewrite AI proof before submission; not attested. Official Palomar full PASS retained, permanent registry merge NOT verified. S061 independent audit worksheet preparation READY without paper writing; ordered external route unchanged.",
   "s012_mathematical_investigation_date": "2026-10-04",
   "s013_source_refresh_date": "2026-10-04",
   "owner_strategy_resolution_date": "2026-10-05",
@@ -789,12 +795,24 @@
   "s060_prewriting": {
     "authorization_date": "2026-10-08",
     "unit": "D59-01",
-    "status": "READY",
+    "status": "COMPLETED_GO_WITH_CONDITIONS",
     "stage": "DISCOVERY_ONLY_NO_MANUSCRIPT",
     "brief": "authoritative/S060_EJC_PUBLICATION_FIT_PREWRITING_DISCOVERY_BRIEF.md",
     "journal": "Electronic Journal of Combinatorics",
     "human_author_proof_rewrite": "REQUIRED_BEFORE_EJC_SUBMISSION_NOT_YET_ATTESTED",
     "palomar_registration": "REQUESTED_PENDING_MERGE",
-    "planned_deliverable": "source-checked E-JC fit/narrative/novelty/proof-readiness and GO-or-HOLD decision"
+    "planned_deliverable": "source-checked E-JC fit/narrative/novelty/proof-readiness and GO-or-HOLD decision",
+    "completed_date": "2026-10-09",
+    "decision": "GO-WITH-CONDITIONS",
+    "leading_narrative": "INVERSE_EXTREMAL_RIGIDITY",
+    "documentation": "sessions/S060/CLOSEOUT.md"
+  },
+  "s061_prewriting_audit_preparation": {
+    "status": "READY",
+    "unit": "D60-01",
+    "scope": "HUMAN_AUTHOR_PROOF_CHECK_WORKBOOK_ONLY_NO_MANUSCRIPT",
+    "brief": "authoritative/S061_EJC_HUMAN_PROOF_AUDIT_PREPARATION_BRIEF.md",
+    "owner_personal_proof_audit": "NOT_ATTESTED",
+    "palomar_registration": "REQUESTED_PENDING_MERGE"
   }
 }
