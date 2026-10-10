@@ -1,6 +1,6 @@
 # Failure and lesson ledger
 
-**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S063 checkpoint (D-174, 2026-10-10):** B-016 resolved by owner withdrawal of the CAND-03 release (manuscript, release package and PALOMAR v1 kept unchanged as historical records). New target CAND-03G (general-rank extension) frozen; Stage 1 prior-art audit S064 READY; no active owner blocker; no preprint, filing or contact. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 This ledger includes literature/status lessons from the pre-proof stages and
@@ -538,3 +538,18 @@ miss an ingredient already proved inside a neighbouring lemma.
 ## FL-122 — Prepare a portable LaTeX archive without mistaking it for a public release
 
 S062 produces a minimal two-file TeX archive, extracts it afresh and compiles with BibTeX in an isolated directory. The manuscript's tracked PDF, programme Apache-2.0 licence and registered Lean source do **not** determine the paper's irrevocable arXiv licence, author account endorsement or public posting permission. Keep author decisions as a real B-016 blocker, suppress successor prompts, and never label GitHub Actions source-build PASS as arXiv acceptance, novelty certification or E-JC human-review clearance.
+
+## FL-123 — Ask for the parametric form before release (S063, provisional)
+
+CAND-03 was proved through a long rank-specific chain (S039–S057), with inputs
+`s=19`, `eta=17` and the 2012 length-16/15 residual lemmas. It was written up
+and packaged to the release-decision point. Only then was a candidate all-rank
+argument proposed (externally, by AI) whose sole rank-dependent input is the
+cap number `c_r`. Yet the programme had recorded the **general-rank** direct
+formula of ZS-72 Lemma 3.3(3) since S039. S042 treated the cap route as
+ingredient only (C-193/D-129), and the S061 paper disclaimed all other ranks.
+**Lesson (provisional until Stage 2a):** once a target's direct value is known
+for a whole family through a parameter, ask before the paper stage whether the
+inverse statement has the same parametric form, and inspect the equality case
+of the published general proof. If Stage 2a refutes the candidate, amend this
+entry with a superseding note; do not delete it.

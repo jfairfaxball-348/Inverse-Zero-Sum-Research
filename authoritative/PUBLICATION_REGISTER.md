@@ -1,6 +1,6 @@
 # Publication register
 
-**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S063 checkpoint (D-174, 2026-10-10):** B-016 resolved by owner withdrawal of the CAND-03 release (manuscript, release package and PALOMAR v1 kept unchanged as historical records). New target CAND-03G (general-rank extension) frozen; Stage 1 prior-art audit S064 READY; no active owner blocker; no preprint, filing or contact. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 Policy observations date: **2026-10-05**. Refresh at target selection and again
@@ -847,3 +847,29 @@ package and final current-source/policy checks, without external action.
 ## S062 — release materials prepared, arXiv not deposited (2026-10-09)
 
 The E-JC-oriented initial PDF has no substantive revisions. [Exact arXiv release worksheet](../paper/ARXIV_RELEASE.md), [metadata](../paper/arxiv-metadata.json) and source-only archive generator/clean-build workflow supplied. Category recommendation `math.CO` (optional `math.NT`); arXiv account endorsement unverified, irrevocable paper licence unchosen and public release not authorized. E-JC initial PDF rules and human proof-rewrite/attestation remain mandatory; official checklist did not give an explicit blanket arXiv-preprint approval. **B-016 active; next prompt withheld.** Nothing submitted, contacted or released.
+
+## S063 — CAND-03 release withdrawn; CAND-03G publication route (D-174, 2026-10-10)
+
+**CAND-03 paper: withdrawn from release by owner decision.** The S061
+manuscript will not be posted to arXiv or filed with E-JC. It stays, with the
+S062 metadata, worksheet, archive script and workflow, **unchanged as a
+historical record**. The worksheet's "live owner-dependent gate — B-016"
+wording has no current force, because B-016 was resolved by D-174. No arXiv
+licence was chosen and no account or endorsement check was made. PALOMAR v1
+remains a valid registered formalization.
+
+**CAND-03G route.** E-JC remains the leading journal candidate (D-005). This is
+neither a submission decision nor an acceptance prediction. `publication_gate`
+stays OPEN on the S060/S062 verification of a substantive-AI-compatible E-JC
+route in the same field (D-176). Stage 4 must recheck, at that time: the
+current E-JC and arXiv policies; disclosure of **both** ChatGPT and Claude for
+their actual roles ([AI-use record](AI_USE_RECORD.md)); the arXiv licence,
+endorsement and author decisions (a fresh owner release blocker); the E-JC
+rule against filings in the preceding three calendar months; and the owner's
+personal check and own-words rewrite of the proof.
+
+**Scope and significance to be reassessed, not assumed.** If Stage 1 finds
+Claim A already known, or the Claim B argument inside a published proof, the
+contribution narrows and the paper type (full article or short note) must be
+decided on that evidence in Stage 4. Nothing was submitted, posted or
+contacted in S063.

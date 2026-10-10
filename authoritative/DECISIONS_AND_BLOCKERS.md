@@ -1,6 +1,6 @@
 # Decisions and owner blockers
 
-**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S063 checkpoint (D-174, 2026-10-10):** B-016 RESOLVED by owner decision. The CAND-03 manuscript is withdrawn from release and kept, with its release package and PALOMAR v1, as historical records. New target CAND-03G (general-rank extension) is frozen; Stage 1 prior-art audit S064 is READY; no active owner blocker. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 ## Binding decisions
@@ -1183,3 +1183,34 @@ The order remains Palomar registered → paper written → arXiv → E-JC.
 ## D-173 — S062 final source package; B-016 author-only arXiv release decision (2026-10-09)
 
 S062/D61-01 **COMPLETED preparation**: exact arXiv metadata, deterministic sources-only archive script, clean-unpacked-build workflow and bounded source/policy refresh. The unchanged frozen Lean theorem and S061 manuscript preserve attribution to Gao et al. 2024 and Fan et al. 2012 Lemma 27(3)/28/29. **B-016 ACTIVE:** owner must select an arXiv paper licence, review/authorize public release and inspect actual arXiv account/category/endorsement requirements. This consent cannot be imputed from instructions to prepare. **Next prompt suppressed**; no arXiv/E-JC action. Human-authored verification/rewrite for E-JC also remains a future unmet obligation.
+
+## D-174 — owner redirect: B-016 resolved by withdrawal; CAND-03G staged route (2026-10-10)
+
+| ID | Date | Decision | Basis |
+| --- | --- | --- | --- |
+| D-174 | 2026-10-10 | **Owner direction (John Fairfax-Ball).** (1) **B-016 is resolved by owner decision, not by a licence choice.** The S061/S062 CAND-03 manuscript is withdrawn from release: it will **not** be posted to arXiv and **not** filed with E-JC, because a shorter proof of a stronger all-rank theorem has been proposed. The manuscript, the S062 release package and [PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1) (immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`) stay **unchanged as historical records**. The registered theorem remains valid. (2) **Open a new staged route**, logged as a target change: **CAND-03G, "general-rank extension of CAND-03"**. Order: Stage 1 full prior-art/novelty audit → Stage 2 informal verification (2a), then Lean formalization (2b) → Stage 3 new Palomar registration → Stage 4 paper rewritten around the general theorem. Each stage runs as one or more normal bounded sessions. **Stages are never compressed.** (3) With B-016 resolved there is no active owner blocker, and S063 ends with one ready S064 prompt. (4) The candidate argument came from a separate Claude Code session (Anthropic's Claude) and is AI-generated and unreviewed. Record it in the claims register as an **unverified external candidate**, and add Claude to the AI-use record alongside ChatGPT. Flag C-193 for Stage 2 reassessment without editing it. (5) Throughout: no arXiv posting, E-JC filing, Palomar submission, email or contact without explicit owner action. Preserve PALOMAR v1, the frozen CAND-03 theorem, all attribution/disclosure duties and the E-JC requirement that the owner personally checks and rewrites the proof. | Explicit owner instruction, S063 kickoff 2026-10-10, archived verbatim in [sessions/S063/INPUT_PROMPT.md](../sessions/S063/INPUT_PROMPT.md). |
+
+### B-016 — RESOLVED by D-174 (owner decision, 2026-10-10)
+
+The owner withdrew the CAND-03 release instead of choosing a licence. No arXiv
+licence was chosen, no release was approved and no arXiv account or endorsement
+check was performed or is required now. Nothing was posted or filed. The S062
+worksheet `paper/ARXIV_RELEASE.md` keeps its historical "live B-016" wording
+unchanged, as D-174 requires. That wording has **no current force**. A future
+release blocker for the CAND-03G paper will be raised fresh at the end of
+Stage 4.
+
+## S063 D62-01 setup decisions (2026-10-10)
+
+| ID | Decision | Basis |
+| --- | --- | --- |
+| D-175 | **Freeze the CAND-03G statement** exactly as written in the [target register](TARGET_REGISTER.md#d-174--s063-target-change--cand-03g-general-rank-extension-of-cand-03-2026-10-10): definitions D1–D8, Claim A (`eta^N(C_3^r)=3c_r-2` for all `r>=1`), Claim B (the iff at length `3c_r-3`), all quantifiers, and `c_r` as an undetermined parameter (largest cap size in `AG(r,3)`). STATE `exact_target` becomes CAND-03G. CAND-03 stays the registered frozen theorem, and the r=3 instance of Claim B restates it. CAND-03 is **not** superseded or weakened. | D-174(2); S043 semantics; S061 theorem statement. |
+| D-176 | **Gate disposition.** `target_gate` OPEN: the exact CAND-03G target and scope are owner-authorized. `publication_gate` OPEN: the E-JC route verified at S060/S062 is in the same field, and Stage 4 must recheck it. **`mathematical_investigation_gate` CLOSED for CAND-03G** until Stage 1 closes cleanly (or re-scoped to Claim B); the CAND-03G literature due diligence is not yet mature (AGENTS.md; precedent D-124 → D-131). A clean Stage 1 closeout reopens the gate for Stage 2a's bounded role only. `external_review_gate` stays CLOSED. | AGENTS.md investigation rule; D-174 "no proof work in Stage 1". |
+| D-177 | **Evidence boundaries.** The candidate Claims A/B, sketch L1–L5 and reported computations are **unverified external AI input** (C-262–C-266), not programme claims. The committed S039 record of ZS-72 Lemma 3.3(3) is logged as a **high-probability Claim A prior-art lead** for Stage 1. C-193 and D-129 are flagged for Stage 2a reassessment and left unedited. A new [AI-use record](AI_USE_RECORD.md) names OpenAI ChatGPT and Anthropic Claude. `formalization.yaml` still describes the registered v1 formalization and is unchanged. | D-174(4); `sessions/S039/SOURCE_CHECK.md`; C-193. |
+| D-178 | **Adopt the staged CAND-03G route** with the entry criteria, deliverables and stop rules in [ROADMAP](ROADMAP.md#cand-03g-staged-route-d-174-frozen-at-s063). Promote **only S064 = Stage 1 (prior-art/novelty audit)**, [brief](S064_CAND03G_STAGE1_PRIOR_ART_AUDIT_BRIEF.md). The private pre-submission review that D-127 skipped for CAND-03 has no stage in D-174's ordered route. S063 therefore treats the skip as continuing for CAND-03G and records this as an interpretation, not a new owner decision. The Stage 4 release blocker must ask the owner to confirm or override it. | D-174(2)–(3); D-127; charter CAND-03 supersession. |
+
+**Active owner blockers: NONE.** B-016 resolved by D-174. S064 (Stage 1) is
+READY and immediately runnable. Stage 3 portal submission and the Stage 4
+release decision will be raised as fresh owner blockers when reached. Before
+E-JC submission the owner must still personally check and rewrite the proof.
+No posting, filing, Palomar action or contact occurred in S063.

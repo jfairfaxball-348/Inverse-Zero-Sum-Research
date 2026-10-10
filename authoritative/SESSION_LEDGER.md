@@ -1,6 +1,6 @@
 # Session ledger
 
-**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S063 checkpoint (D-174, 2026-10-10):** B-016 resolved by owner withdrawal of the CAND-03 release (manuscript, release package and PALOMAR v1 kept unchanged as historical records). New target CAND-03G (general-rank extension) frozen; Stage 1 prior-art audit S064 READY; no active owner blocker; no preprint, filing or contact. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 | Session | Status | Incoming checkpoint | Useful output | Closeout |
@@ -1088,3 +1088,9 @@ active owner blockers NONE.
 | S062 | COMPLETED D61-01 / B-016 owner blocker for further action | `e908dc2d67363909ccaa4b4b68c7ae5ebfc0c2b6` | Current targeted source/policy refresh; exact arXiv metadata, sources-only deterministic package, clean-unpacked LaTeX/BibTeX validation in hosted workflow, author licence/release worksheet. Manuscript/Lean unchanged; no upload. | [S062 closeout](../sessions/S062/CLOSEOUT.md) |
 
 Owner release licence/authorization/account check is required next; **no runnable S063 prompt**. CI outcomes observed after commit are reported externally, not assigned to the containing record.
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S063 | COMPLETED D62-01 setup (owner redirect D-174) | `496cefb8e0672d069991f759adbfbc954b70f471` | D-174 recorded; B-016 resolved by owner withdrawal of the CAND-03 release; CAND-03G target change with frozen Claims A/B and `c_r` as parameter; staged route 1→2a→2b→3→4 with entry criteria, deliverables and stop rules; unverified external candidate C-262–C-266; new AI-use record (ChatGPT, Claude); S064 Stage 1 brief and prompt. No proof, Lean, computation, posting, Palomar action or contact. | [S063 closeout](../sessions/S063/CLOSEOUT.md) |
+
+S064 (Stage 1 prior-art/novelty audit only) is READY. CI outcomes observed after commit are reported externally, not assigned to the containing record.

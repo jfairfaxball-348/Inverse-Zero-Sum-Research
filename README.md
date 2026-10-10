@@ -1,6 +1,6 @@
 # Inverse Zero-Sum Research Programme
 
-This repository documents a source-audited inverse zero-sum classification for the group \(C_3^3\), its kernel-checked Lean formalization, and a controlled route to registration and scholarly publication. **The live source of authority is [STATE.json](authoritative/STATE.json), read with [START_HERE.md](authoritative/START_HERE.md) and [AGENTS.md](AGENTS.md).**
+This repository documents a source-audited inverse zero-sum classification for the group \(C_3^3\), its kernel-checked and Palomar-registered Lean formalization, and, since S063, a staged audit-first route toward a general-rank extension over \(C_3^r\) (CAND-03G). **The live source of authority is [STATE.json](authoritative/STATE.json), read with [START_HERE.md](authoritative/START_HERE.md) and [AGENTS.md](AGENTS.md).**
 
 ## Verified mathematical result
 
@@ -22,7 +22,11 @@ immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`,
 [official full mechanical verification 37813245157](https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157) PASS.
 The proof files are unchanged by S061.
 
-**S062 release package PREPARED:** [arXiv author worksheet](paper/ARXIV_RELEASE.md), [exact metadata](paper/arxiv-metadata.json), and [S062 source-policy/validation records](sessions/S062/CLOSEOUT.md). The hosted Manuscript validation workflow creates a minimal LaTeX archive and compiles it in a clean directory. **No arXiv posting or E-JC submission**. Author-only release decision **B-016 ACTIVE**: choose the paper's arXiv licence, approve final public posting, and check actual account/endorsement requirements. No next-session prompt while that action is pending. Preserve **Palomar registration → paper → arXiv preprint → E-JC**. A source search non-hit does not certify global novelty; substantive AI assistance is disclosed in the paper.
+**S062 release package (historical):** [arXiv author worksheet](paper/ARXIV_RELEASE.md), [exact metadata](paper/arxiv-metadata.json) and [S062 records](sessions/S062/CLOSEOUT.md). **Withdrawn from release by owner decision D-174 (2026-10-10):** the CAND-03 paper will not be posted to arXiv or filed with E-JC. The paper and package are kept unchanged as historical records, and the worksheet's "live B-016" wording no longer applies. A source search non-hit does not certify global novelty.
+
+## Current route — CAND-03G general-rank extension (S063, 2026-10-10)
+
+The owner opened a staged route for the **general-rank extension**. With `c_r` the largest cap size in `AG(r,3)`, Claim A is `eta^N(C_3^r)=3c_r-2` and Claim B is the classification of all length-`(3c_r-3)` extremal sequences as `U^3` ([exact frozen statement](authoritative/TARGET_REGISTER.md)). The candidate proof is **unverified external AI input**. Route: Stage 1 prior-art/novelty audit (S064, next) → informal verification → Lean → new Palomar registration → paper. Stages are never compressed, and nothing is posted, filed or submitted without explicit owner action. See the [roadmap](authoritative/ROADMAP.md) and the [AI-use record](authoritative/AI_USE_RECORD.md).
 
 ## Navigation and reproducibility
 
@@ -30,5 +34,5 @@ Read [START_HERE](authoritative/START_HERE.md) and [STATE](authoritative/STATE.j
 
 Original baseline is Lean 4.19.0; the S059 port uses `leanprover/lean4:v4.35.0-rc2` with Mathlib pinned in `lake-manifest.json`. On a compatible Linux host, `lake build` checks the project and `bash scripts/verify-comparator.sh` runs the bundled trusted Comparator with NanoDa and con-ron (requires bubblewrap). `python3 scripts/check_authority.py` checks repository-record consistency, not mathematical novelty. The Palomar root metadata is `formalization.yaml` and the statement configuration is `comparator.json`.
 
-Substantive AI assistance in mathematical exploration, Lean proof production, and documentation is explicitly disclosed in `formalization.yaml`; John Fairfax-Ball retains human author and maintainer responsibility. Root code and programme text are Apache-2.0 licensed; external papers remain independently owned.
+Substantive AI assistance is recorded in the [AI-use record](authoritative/AI_USE_RECORD.md): OpenAI ChatGPT for the programme through S062 (disclosed for the registered v1 formalization in `formalization.yaml`), and Anthropic Claude for the CAND-03G candidate argument and S063 setup; John Fairfax-Ball retains human author and maintainer responsibility. Root code and programme text are Apache-2.0 licensed; external papers remain independently owned.
 

@@ -9,24 +9,50 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 3. docs/SESSION_PROTOCOL.md and docs/CLOSEOUT_TEMPLATE.md.
 4. authoritative/DECISIONS_AND_BLOCKERS.md.
 5. authoritative/ROADMAP.md and authoritative/SESSION_LEDGER.md.
-6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, and authoritative/FAILURE_AND_LESSON_LEDGER.md.
+6. authoritative/TARGET_REGISTER.md, authoritative/PUBLICATION_REGISTER.md, authoritative/REVIEWER_REGISTER.md, authoritative/CLAIMS_AND_SOURCES.md, authoritative/FAILURE_AND_LESSON_LEDGER.md and authoritative/AI_USE_RECORD.md.
 7. The completed S002–S037 records before later target-specific work, with
    particular attention to the S010 and S020 audits, S011 exchange obstruction,
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
-## Current state — S062 release preparation completed, B-016 active
+## Current state — S063 owner redirect (D-174); CAND-03G Stage 1 READY
 
-CAND-03 remains the exact all-positions length-24 iff over `C_3^3\\{0}`: the indexed intersection avoidance holds exactly for permutations of `U^3` with squarefree short-free eight-term U. The theorem is formally registered at [Palomar v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1), immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`, full provider run `37813245157` PASS.
+**Owner direction D-174 (2026-10-10).** B-016 is resolved by owner decision,
+not by a licence choice. The CAND-03 S061 manuscript is **withdrawn from
+release**: no arXiv posting and no E-JC filing. The [paper](../paper/main.pdf),
+the S062 [release worksheet](../paper/ARXIV_RELEASE.md) and package, and
+[Palomar v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1)
+(immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`, provider run
+`37813245157` PASS) are kept **unchanged as historical records**. The
+worksheet's "live B-016" wording has no current force. The registered
+length-24 `C_3^3` theorem remains valid.
 
-**S061** produced [complete nine-page paper](../paper/main.pdf), [editable LaTeX](../paper/main.tex), six worked examples, five vector figures and [source-to-proof consistency](../paper/SOURCE_AND_PROOF_CHECK.md), including full 2024/2012 attribution. **S062** prepared [arXiv metadata](../paper/arxiv-metadata.json), [reviewable owner release worksheet](../paper/ARXIV_RELEASE.md), reproducible minimal source archive and clean-unpacked build script, plus [source/policy refresh](../sessions/S062/SOURCE_POLICY_REFRESH.md) and [closeout](../sessions/S062/CLOSEOUT.md). Manuscript and Lean remain unchanged. No arXiv/E-JC submission has occurred.
+**Selected target: CAND-03G**, the general-rank extension, frozen by D-175 in
+the [target register](TARGET_REGISTER.md#d-174--s063-target-change--cand-03g-general-rank-extension-of-cand-03-2026-10-10).
+With `c_r` the largest cap size in `AG(r,3)`: Claim A is
+`eta^N(C_3^r)=3c_r-2`; Claim B says that at length `3c_r-3` a sequence is
+avoiding iff `S=U^3` up to positions with `U` squarefree, short-free and of
+length `c_r-1`. At `r=3` Claim B is exactly the registered CAND-03 theorem.
+The candidate proof is **unverified external AI input**
+(C-262–C-266; [AI-use record](AI_USE_RECORD.md)).
 
-- Mathematical target and publication feasibility gates: OPEN; private CAND-03 external review remains skipped.
-- **Active owner blocker: B-016** — arXiv paper licence, owner release approval and actual arXiv account/category/endorsement check pending.
-- **No next-session prompt** until the owner decision resolves B-016.
-- E-JC later requires personal author proof-check/rewrite and submission attestations, not assumed here.
-- Milestone order: **Palomar completed → paper written → arXiv not yet posted → E-JC not yet submitted**.
-- Scoped no-hit is not global novelty/open-status proof.
+- **Staged route** ([ROADMAP](ROADMAP.md#cand-03g-staged-route-d-174-frozen-at-s063)):
+  Stage 1 prior-art/novelty audit → 2a informal verification → 2b Lean →
+  3 new Palomar registration (owner portal blocker) → 4 paper (owner release
+  blocker). Stages are never compressed.
+- **Next: S064 = Stage 1 only**, [brief](S064_CAND03G_STAGE1_PRIOR_ART_AUDIT_BRIEF.md),
+  ready prompt in `authoritative/NEXT_SESSION_PROMPT.md`.
+- Gates: target OPEN, publication OPEN, **mathematical investigation CLOSED
+  for CAND-03G until Stage 1 closes cleanly** (D-176), external review CLOSED.
+- **Active owner blockers: NONE.**
+- Claim A has a high-probability prior-art lead (ZS-72 Lemma 3.3(3), recorded
+  at S039). If only Claim A is known, the target is re-scoped to Claim B under
+  D-174.
+- C-193/D-129 are flagged for Stage 2a reassessment and left unedited.
+- Before any E-JC filing the owner must still personally check and rewrite the
+  proof. No posting, filing, Palomar action or contact is allowed without
+  explicit owner action.
+- A scoped search non-hit is not proof of global novelty or open status.
 
 ## Historical CAND-05 mathematical frontier (proof paused)
 
@@ -988,3 +1014,10 @@ Owner has **authorized one new bounded independent S060 session for E-JC-first P
 ## S060 2026-10-09 live update (supersedes earlier S060 READY snapshot above)
 
 S060/D59-01 COMPLETED **GO-WITH-CONDITIONS**; seven evidence records in `sessions/S060/`. E-JC inverse-extremal-rigidity narrative ranked first; source construction/threshold from 2024 and shortfree residual facts from 2012 NOT newly claimed. S042 deep non-hit not global novelty proof. E-JC mandatory human author own-word rewrite and complete step-by-step verification NOT ATTESTED. Palomar full proof PASS unchanged; permanent registration REQUESTED, not known merged. No manuscript, preprint, E-JC submission, outreach. **S061 READY**, preparatory audit worksheet ONLY; do not write paper before confirmed Palomar registration and separately authorized stage. `authoritative/NEXT_SESSION_PROMPT.md` and `authoritative/S061_EJC_HUMAN_PROOF_AUDIT_PREPARATION_BRIEF.md` are current.
+
+## S063 reading note (2026-10-10)
+
+Sections above dated before 2026-10-10, including those labelled "live" or
+"current", are historical snapshots. The live state is the **"Current state —
+S063 owner redirect (D-174)"** section near the top of this file, together with
+`STATE.json`.

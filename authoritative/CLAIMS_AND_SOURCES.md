@@ -1,6 +1,6 @@
 # Claims and source register
 
-**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S063 checkpoint (D-174, 2026-10-10):** B-016 resolved by owner withdrawal of the CAND-03 release (manuscript, release package and PALOMAR v1 kept unchanged as historical records). New target CAND-03G (general-rank extension) frozen; Stage 1 prior-art audit S064 READY; no active owner blocker; no preprint, filing or contact. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 Observations below are bounded source inspections through **2026-10-02**.
@@ -1156,3 +1156,21 @@ S042's documented prior-art non-hit and its non-certifying status are unchanged.
 | C-259 | **TARGETED CURRENT NON-HIT**, not global novelty: no exact/equivalent/stronger-implying `C_3^3` 24-position inverse found in this bounded refresh. The published Hui–Zhong 2026 inverse `eta^N` theorem is explicitly **rank two** by publisher abstract, not the target rank-three theorem. | [S062 refresh](../sessions/S062/SOURCE_POLICY_REFRESH.md); DOI https://doi.org/10.1016/j.jcta.2026.106238. |
 | C-260 | **RELEASE PACKAGE PREPARED**, not submitted: exact metadata, minimal two-file archive generator, clean-unpacked TeX/BibTeX reproducibility workflow; original paper and formal source unchanged. | [arXiv release worksheet](../paper/ARXIV_RELEASE.md); [script](../scripts/prepare_arxiv_release.py); hosted outcomes require independent observation. |
 | C-261 | **AUTHOR ACTION REQUIRED**: paper license, explicit public-posting decision and actual account/endorsement status unknown; E-JC personally checked/rewritten AI-derived proof not attested. | Official https://info.arxiv.org/help/license/index.html ; https://info.arxiv.org/help/endorsement.html ; https://www.combinatorics.org/ojs/index.php/eljc/about/submissions ; B-016. |
+
+## S063 — CAND-03G unverified external candidate and release withdrawal (2026-10-10)
+
+**Provenance of C-262–C-264.** Anthropic Claude generated these in a separate
+Claude Code session. John supplied them on 2026-10-10 with the S063 kickoff,
+archived verbatim in [sessions/S063/INPUT_PROMPT.md](../sessions/S063/INPUT_PROMPT.md).
+They are **AI-generated and not independently reviewed**. They are **not
+programme claims**, and S063 did not check them, by design. See the
+[AI-use record](AI_USE_RECORD.md).
+
+| Claim | Classification | Bounded content | Support / remaining boundary |
+| --- | --- | --- | --- |
+| C-262 | **CONJECTURE — UNVERIFIED EXTERNAL AI CANDIDATE** | Claim A, frozen by D-175: `eta^N(C_3^r)=3c_r-2` for every `r>=1`, where `c_r` is the largest cap size in `AG(r,3)`. | **Prior-art lead:** `sessions/S039/SOURCE_CHECK.md` records ZS-72 Lemma 3.3(3) as `eta^N(C_3^r)=3(eta(C_3^r)-1)/2+1`. With the classical identity `eta(C_3^r)=2c_r-1` (C-265, unverified) this equals `3c_r-2`. Stage 1 must classify it. If only Claim A is known, the target is re-scoped to Claim B under D-174. |
+| C-263 | **CONJECTURE — UNVERIFIED EXTERNAL AI CANDIDATE** | Claim B, frozen by D-175: at length `3c_r-3`, avoiding iff `S=U^3` up to positions with `U` squarefree, short-free and of length `c_r-1` (cap form: `U∪{0}` a maximum cap). Proposed proof: sketch L1–L5, verbatim in the archived prompt. | **Unchecked.** Stage 2a must re-derive the proof independently from the frozen statement and check it adversarially, lemma by lemma. The `r=3` instance coincides with the proved and registered CAND-03 theorem (C-254, C-256). That agreement is consistent with the general claim but is not evidence for general `r`. General-`r` literature status is unknown until Stage 1. |
+| C-264 | **EXPERIMENTAL — EXTERNAL, UNREPRODUCED** | Reported (unreviewed): an exhaustive `r=2` check gave maximum avoiding length 9, with exactly 24 extremal multisets, all `U^3` with `U∪{0}` a 4-cap. Randomized maximal-sequence tests of L1–L4 at `r=3,4` found no failures. | No code, data, seeds or logs were received or committed. This is not programme evidence until Stage 2a reproduces it with committed scripts and logs. |
+| C-265 | **SOURCE VALUES PENDING** | `c_1..c_6=2,4,9,20,45,112`; classical analogues `eta(C_3^r)=2c_r-1` and `s(C_3^r)=2c_r+1`. At `r=3` these give 17 and 19, the inputs used by the CAND-03 paper and Lean. | Stage 1 verifies them from primary sources. `c_3=9` is already supported inside the programme (S045 formal cap bound; S061 explicit 8-term core). The other values and both identities in general `r` are **not** yet source-checked. |
+| C-266 | **REASSESSMENT FLAG (no edit)** | The owner states that the candidate argument contradicts C-193 ("affine-cap classification does not imply sequence-level necessity"), and hence also the D-129 / S042 treatment of the cap route (ZS-81) as PA-INGREDIENT only. | C-193 and D-129 stay unedited. Stage 2a must reassess them. Note for that reassessment: C-193 speaks of cap *classification*, whereas the candidate uses the cap-*size* bound `c_r` plus sequence-level lemmas L1–L4. Stage 2a decides whether C-193 is false, misleading, or correct but beside the point, and what follows for the novelty and significance narrative. Any correction is a new superseding entry. |
+| C-267 | **PROGRAMME STATUS (D-174)** | The CAND-03 S061 manuscript and S062 release package are **withdrawn from release**: no arXiv posting and no E-JC filing. Both are kept unchanged as historical records. The registered theorem stays valid; C-254 is unchanged. | C-261's "AUTHOR ACTION REQUIRED" (licence, release, endorsement) is superseded: no such action is now required. The owner's E-JC personal proof check/rewrite requirement carries forward to any future CAND-03G paper. |

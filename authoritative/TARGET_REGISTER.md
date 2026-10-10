@@ -1,26 +1,26 @@
 # Target register
 
-**Current S062 checkpoint:** final nine-page paper and source package prepared; public arXiv release is OWNER BLOCKED B-016 for licence, approval and actual account/endorsement check; no preprint or E-JC filing. Current state is `STATE.json`; dated records below retain their historical scope.
+**Current S063 checkpoint (D-174, 2026-10-10):** the selected exact target is now **CAND-03G, the general-rank extension of CAND-03**, frozen [below](#d-174--s063-target-change--cand-03g-general-rank-extension-of-cand-03-2026-10-10). Stage 1 (prior-art/novelty audit, S064) is READY. The mathematical-investigation gate is CLOSED for CAND-03G until Stage 1 closes cleanly. B-016 was resolved by owner withdrawal of the CAND-03 release. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 **Current protocol note:** historical entries below preserve the gate rules
-and target selections that governed their sessions. CAND-03 is the current
-selected target under D-111. External review remains CLOSED and is not a
-CAND-03 pre-submission blocker under D-127. The Lean formalization remains partial; S050 is the only authorized mathematical unit.
+and target selections that governed their sessions. External review remains
+CLOSED. D-127 skipped private pre-submission review for CAND-03, and D-178
+records the interpretation that the skip continues for CAND-03G, subject to
+owner confirmation at the Stage 4 release blocker.
 
-**Selected exact target: CAND-03 — inverse generalized-Narkiewicz
-structure at length 24 over `C_3^3\{0}`.**
+**Selected exact target: CAND-03G — inverse classification for the
+generalized Narkiewicz short-zero-sum intersection condition over
+`C_3^r\{0}`, all ranks `r>=1`** (owner target change D-174; statement frozen
+by D-175 in the section at the end of this file).
 
-Owner decision D-111 supersedes the historical CAND-05 selection. The exact
-target is to classify every length-24 positional sequence over
-`C_3^3\{0}` with no two innerly non-zero-sum-joint short zero-sum
-subsequences, where short means length at most 3.
-
-The frozen programme theorem is: exactly `S=U^3` with `U` squarefree
-short-free of length 8. It is internally proved and independently reverified;
-S042 found no exact/equivalent/stronger-implying prior art in the documented
-deep audit. S043 formalization is partial and does not yet machine-verify the
-full theorem.
+**CAND-03 is retained, not superseded.** Its frozen positional length-24
+`C_3^3\{0}` iff (`S=U^3` up to position permutation, `U` squarefree
+short-free of length 8) is proved, kernel-checked and registered as
+[PALOMAR-2026-10-09-000011 v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1)
+on immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`. It is the
+`r=3` instance of CAND-03G Claim B. Its S061 manuscript and S062 release
+package are withdrawn from release and kept unchanged as historical records.
 
 CAND-05 and CAND-02 are historical/paused; CAND-04 remains retired; CAND-06
 and CAND-01 remain unselected alternatives.
@@ -1481,3 +1481,136 @@ core-orbit classification, novelty certification or external filing is claimed.
 ## S062 target invariance (2026-10-09)
 
 No target edit. Frozen positional `C_3^3\\{0}` 24-term iff, triple powers, all original positions and squarefree short-free 8-core unchanged; S062 is packaging/policy work only. No exact/equivalent/stronger-implying primary theorem found within the documented targeted refresh; no global novelty inference. Rank-two Hui–Zhong 2026 does not state a rank-three classification. [S062 record](../sessions/S062/SOURCE_POLICY_REFRESH.md). Owner release gate B-016 active.
+
+## D-174 / S063 target change — CAND-03G, general-rank extension of CAND-03 (2026-10-10)
+
+**Target change log.** Changed from CAND-03, the length-24 positional iff over
+`C_3^3\{0}` (registered PALOMAR v1, retained unchanged), to **CAND-03G**,
+the general-rank extension. Authority: owner direction D-174 (John,
+2026-10-10). Statement frozen by D-175 in S063. Reason given by the owner: a
+shorter proof of a stronger all-rank theorem has been proposed. That proposal
+is **unverified external AI input** (C-262–C-266) and is not a programme
+result. No repository rename is involved. Internal references updated in
+S063: AGENTS.md, README, START_HERE, STATE and all registers.
+
+**Name.** Inverse classification for the generalized Narkiewicz
+short-zero-sum intersection condition in elementary abelian 3-groups `C_3^r`,
+all ranks.
+
+**Genre / contribution type.** Inverse zero-sum problem: a direct value
+(Claim A) together with a structural iff classification of all extremal
+sequences (Claim B), uniform in the rank through the affine-cap parameter
+`c_r`. The rank-3 instance is the registered CAND-03 theorem, as a corollary.
+At freeze, the candidate *contribution* is Claim B for general `r`. Claim A may
+already be known (see "Status at freeze").
+
+### Frozen definitions (D-175)
+
+- **D1 (group).** `r>=1` is an integer. `G_r=(Z/3Z)^r=F_3^r`, written
+  additively, and `G_r^•=G_r\{0}`. `exp(G_r)=3`.
+- **D2 (positional sequence).** A sequence over `G_r^•` is a family
+  `S=(a_p)_{p in P}` indexed by a finite position set `P`, with every
+  `a_p in G_r^•` and length `|S|=|P|`. Repetitions are allowed and positions
+  are part of the data. For `I subseteq P`, `sigma_S(I)=sum_{p in I} a_p`, and
+  `sigma_S(empty)=0`.
+- **D3 (short witness).** A short zero-sum witness of `S` is a position set
+  `I subseteq P` with `1<=|I|<=3` and `sigma_S(I)=0`.
+- **D4 (avoidance).** `S` is **avoiding** iff `sigma_S(I cap J)=0` for
+  **every** pair `I,J` of short zero-sum witnesses of `S`. `I=J` is allowed and
+  then the condition holds automatically. This is the exact negation of "S has
+  two innerly non-zero-sum-joint short zero-sum subsequences" in the sense of
+  Gao et al. 2024 (ZS-72) Definition 1.1. The semantics are identical to CAND-03
+  (S043 `AvoidsInnerJointPair`; S061 Theorem 1.1(1)) with `C_3^3` replaced by
+  `G_r`.
+- **D5 (constant).** `eta^N(G_r)` is the ZS-72 Definition 1.1 constant: the
+  least integer `t` such that every sequence over `G_r^•` of length at least
+  `t` is not avoiding.
+- **D6 (core properties).** A sequence is *squarefree* if its terms are
+  pairwise distinct, and *short-free* if it has no short zero-sum witness.
+- **D7 (cap parameter).** A *cap* in `AG(r,3)` (point set `F_3^r`) is a
+  set of points with no three distinct collinear points.
+  **`c_r = max{|C| : C subseteq F_3^r is a cap}`.** `c_r` is a **parameter**:
+  neither claim assumes a numerical value of it. In characteristic 3, distinct
+  `x,y,z` are collinear iff `x+y+z=0`. This standard fact is used only to state
+  the cap form below.
+- **D8 (threefold repetition).** For `m>=1` and `u_1,...,u_m in G_r^•`, say
+  `S=U^3` (up to positions) with `U=u_1...u_m` iff `|P|=3m` and there is a
+  bijection `phi:{1..m}x{1,2,3}->P` with `a_{phi(i,j)}=u_i` for all
+  `i,j`.
+
+### Frozen claims (D-175)
+
+> **Claim A (direct value).** For every integer `r>=1`,
+> `eta^N(C_3^r)=3c_r-2`.
+
+> **Claim B (inverse classification).** For every integer `r>=1` and every
+> sequence `S=(a_p)_{p in P}` over `C_3^r\{0}` with `|P|=3c_r-3`, the
+> following are equivalent:
+>
+> 1. `S` is avoiding (D4);
+> 2. there are pairwise distinct `u_1,...,u_{c_r-1} in C_3^r\{0}` such that
+>    `U=u_1...u_{c_r-1}` is short-free, and a bijection
+>    `phi:{1..c_r-1}x{1,2,3}->P` with `a_{phi(i,j)}=u_i`, i.e. `S=U^3` up to
+>    positions with `U` squarefree and short-free.
+
+**Cap form of Claim B(2), as supplied by the input.** For pairwise distinct
+nonzero `u_i`, the set `{0,u_1,...,u_{c_r-1}}` is a cap in `AG(r,3)`. That
+set has `c_r` points and is therefore a maximum cap. The input asserts that
+this cap form is equivalent to "squarefree and short-free". The sequence form
+(2) is the official frozen wording, because it matches `FrozenClassification`
+at `r=3`. The equivalence of (2) with the cap form is a **Stage 2a lemma
+obligation**. The frozen target accepts both forms only once that lemma is
+verified.
+
+**Quantifier notes.** Claim B is an iff at the single length `3c_r-3`, for
+all positions and all multiplicities. The witness quantifier is positional.
+The conclusion uses a bijection on **all** original positions. Claim A covers
+every length `>=3c_r-2` through D5. Neither claim asserts anything about
+shorter avoiding sequences.
+
+**Rank-3 specialization.** `c_3=9`. This is classical, and within the
+programme the S045 Lean cap bound and the S061 explicit 8-term core support
+it. Claim A at `r=3` reads `eta^N(C_3^3)=25`, which is ZS-72 Theorem 3.6(4).
+The v1 Lean statement does **not** contain this threshold. Claim B at `r=3`
+is exactly the frozen CAND-03 theorem: `|P|=24`, an 8-term squarefree
+short-free core and a bijection of all 24 positions (S061 Theorem 1.1;
+`FrozenClassification` via `IsTriplePower`). CAND-03G therefore strictly
+generalizes CAND-03 and cannot contradict it at `r=3`.
+
+**Excluded from scope.** Exponents other than 3, non-elementary groups,
+sequences containing `0`, lengths below `3c_r-3`, the classification of maximum
+caps themselves (the admissible cores are exactly the maximum caps through `0`,
+minus `0`), and any numerical value of `c_r` for `r>=7`.
+
+### Status at freeze (not a novelty or correctness claim)
+
+- **Claim A:** a **high-probability prior-art lead.** `sessions/S039/SOURCE_CHECK.md`
+  records that ZS-72 Lemma 3.3(3) gives `eta^N(C_3^r)=3(eta(C_3^r)-1)/2+1`.
+  If the classical identity `eta(C_3^r)=2c_r-1` holds (still to be
+  source-verified), this equals `3c_r-2`. Stage 1 must resolve it.
+- **Claim B, direction (2)⇒(1):** the CAND-03 records credit ZS-72
+  Lemma 3.3(2) with the `U^3` construction at `r=3`. Its general-`r` scope is
+  a Stage 1 check.
+- **Claim B, direction (1)⇒(2) for general `r`:** current status UNKNOWN.
+  The only support is the unverified external sketch (C-263). The S042 deep
+  audit (C-192) covered only the `r=3` instance.
+- **Values to source-verify (Stage 1), not part of the frozen statement:**
+  `c_1..c_6=2,4,9,20,45,112`, giving `3c_r-2=4,10,25,58,133,334` and extremal
+  lengths `3,9,24,57,132,333`. Also the classical analogues
+  `eta(C_3^r)=2c_r-1` and `s(C_3^r)=2c_r+1`, which give 17 and 19 at `r=3`.
+- C-193 / D-129 are flagged for Stage 2a reassessment. They are unedited.
+
+### Staged route (D-174 order; full criteria in [ROADMAP](ROADMAP.md#cand-03g-staged-route-d-174-frozen-at-s063))
+
+1. **Stage 1 — prior-art/novelty audit.** S064, plus more sessions if needed.
+   No proof work.
+2. **Stage 2a — informal verification**, then **Stage 2b — Lean
+   formalization**. The v1 source stays unmodified.
+3. **Stage 3 — new Palomar registration.** Preflight and package, then an
+   owner portal blocker.
+4. **Stage 4 — paper rewritten around the general theorem.** Then a new owner
+   release blocker.
+
+Stages are never compressed. PALOMAR v1, the frozen CAND-03 theorem, all
+attribution and disclosure duties, and the owner's E-JC personal proof
+check/rewrite are preserved throughout.
