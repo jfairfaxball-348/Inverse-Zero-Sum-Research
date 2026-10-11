@@ -4,13 +4,13 @@
   "repository": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
   "authority_branch": "main",
   "bootstrap_predecessor": "32b9f63c393995de5dddf7e8367d42e339816c24",
-  "last_completed_session": "S063",
-  "next_session": "S064",
-  "next_brief": "authoritative/S064_CAND03G_STAGE1_PRIOR_ART_AUDIT_BRIEF.md",
-  "stage": "G1_CAND03G_STAGE1_PRIOR_ART_AUDIT_READY",
-  "programme_status": "S063_COMPLETED_D174_SETUP_CAND03G_STAGE1_READY_NO_OWNER_BLOCKER",
-  "exact_target": "CAND-03G (D-174 target change, frozen D-175): for every r>=1, with c_r the largest cap size in AG(r,3) as a parameter, Claim A eta^N(C_3^r)=3c_r-2, and Claim B a positional sequence over C_3^r\\{0} of length 3c_r-3 has every two short (length<=3) zero-sum witnesses with zero intersection sum iff S=U^3 up to a bijection of all positions with U squarefree short-free of length c_r-1 (cap form U∪{0} a maximum cap). Exact definitions in authoritative/TARGET_REGISTER.md (D-174/S063 section). The r=3 instance of Claim B is the registered CAND-03 theorem (PALOMAR-2026-10-09-000011 v1), retained unchanged.",
-  "candidate_under_due_diligence": "CAND-03G general-rank extension: Stage 1 prior-art/novelty audit READY (S064). Claim A carries a high-probability prior-art lead (ZS-72 Lemma 3.3(3), S039 record); Claim B general-r status unknown; candidate proof is unverified external AI input (C-262--C-266). CAND-03 (r=3) remains proved, Lean-verified and Palomar-registered; its S061 manuscript and S062 release package are withdrawn from release (D-174) and kept unchanged as historical records.",
+  "last_completed_session": "S064",
+  "next_session": "S065",
+  "next_brief": "authoritative/S065_CAND03G_STAGE2A_INFORMAL_VERIFICATION_BRIEF.md",
+  "stage": "G2A_CAND03G_STAGE2A_INFORMAL_VERIFICATION_READY",
+  "programme_status": "S064_COMPLETED_STAGE1_CLAIM_A_SOURCE_KNOWN_RESCOPED_TO_CLAIM_B_STAGE2A_READY_NO_OWNER_BLOCKER",
+  "exact_target": "CAND-03G (D-174 target change, frozen D-175): for every r>=1, with c_r the largest cap size in AG(r,3) as a parameter, Claim A eta^N(C_3^r)=3c_r-2, and Claim B a positional sequence over C_3^r\\{0} of length 3c_r-3 has every two short (length<=3) zero-sum witnesses with zero intersection sum iff S=U^3 up to a bijection of all positions with U squarefree short-free of length c_r-1 (cap form U∪{0} a maximum cap). Exact definitions in authoritative/TARGET_REGISTER.md (D-174/S063 section). The r=3 instance of Claim B is the registered CAND-03 theorem (PALOMAR-2026-10-09-000011 v1), retained unchanged. S064/D-179: Claim A is source-known (Gao et al. 2024 Lemma 3.3(3) with eta(C_3^r)=2c_r-1) and credited; the CAND-03G contribution is re-scoped to Claim B; the frozen statement is unchanged.",
+  "candidate_under_due_diligence": "CAND-03G general-rank extension: Stage 1 COMPLETED (S064). Claim A SOURCE-KNOWN (PA-EQUIV: Gao et al. 2024 Lemma 3.3(3) + eta(C_3^r)=2c_r-1), credited; contribution re-scoped to Claim B (D-179). Claim B and rank-3 case: no exact/equivalent/stronger-implying prior art located in the documented Stage 1 audit (not a novelty claim); proof-interior overlap with the Lemma 3.3(3) proof recorded as a significance risk (C-272). Claim B is unverified external AI input (C-263) until Stage 2a (S065 READY). CAND-03 (r=3) remains proved, Lean-verified and Palomar-registered; its S061 manuscript and S062 release package are withdrawn from release (D-174) and kept unchanged.",
   "mathematical_results": [
     "S007-P1 PROGRAMME LEMMA: the progressive-subsums condition is equivalent, after translation by -h, to having zero-sum subsequences of every cardinality; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
     "S007-P2 PROGRAMME LEMMA: any sufficiently large reflection-balanced block about h satisfies the progressive-subsums condition; proof in sessions/S007/PROGRESSIVE_SUBSUMS_BRIDGE.md.",
@@ -109,7 +109,8 @@
     "S055 D54-01 FORMAL VERIFICATION: the pinned Lean source proves s9PackingEliminationInput : S9PackingEliminationInput via certificate-level fibre-count and singleton-sum swaps, s9 packed total sum zero, and the second nonconstant two-block contradiction. CI run 37762312828 passed full lake build, placeholder scan, and authority check. FrozenClassification remains unproved.",
     "S057 FORMAL VERIFICATION: the unchanged FrozenClassification proposition is proved by frozenClassification : FrozenClassification. The direct canonical positional converse classifies all short zero sums in tripleRep U as full three-position fibres, then proves avoidance and transports it by the exact Fin24 permutation. Pinned proof-head GitHub Actions 37787906708 passed lake build, forbidden-placeholder scan and scripts/check_authority.py; no novelty/status/journal inference.",
     "S061 SOURCE ATTRIBUTION CORRECTION: the S040 short-free length-15 2^7 1 profile and singleton-completion reasoning already occur in Fan et al. 2012 proof of Lemma 27(3); u=-sigma(R) follows with Lemma 28. The manuscript claims the full inverse equality application, not a new residual lemma.",
-    "S061 EXPOSITION: complete source-accurate proof of the frozen length-24 iff, six worked examples and five vector figures; no mathematical target or registered Lean source changed."
+    "S061 EXPOSITION: complete source-accurate proof of the frozen length-24 iff, six worked examples and five vector figures; no mathematical target or registered Lean source changed.",
+    "S064 SOURCE STATUS (not a programme proof): Claim A eta^N(C_3^r)=3c_r-2 is already known for all r: Gao et al. 2024 Lemma 3.3(3) gives eta^N(C_3^r)=3(eta(C_3^r)-1)/2+1, and eta(C_3^r)=2c_r-1 (Edel et al. 2007 Lemmas 2.3.2, 5.2; Harborth 1973; Fan-Gao-Zhong 2011 Prop. 4.1). Values c_1..c_6=2,4,9,20,45,112 source-checked (C-270)."
   ],
   "target_gate": "OPEN",
   "publication_gate": "OPEN",
@@ -119,7 +120,7 @@
   "active_owner_blockers": [],
   "future_owner_requirements": [
     "Preserve and assess any substantive Xue Li reply honestly; it remains CAND-02-specific and does not transfer reviewer or status authority to CAND-03 or CAND-03G.",
-    "Treat the S042 deep non-hit conservatively: it supports the authorized workflow transition but is not an absolute proof of novelty or prior openness; it covered only the r=3 instance of CAND-03G.",
+    "Treat the S042 deep non-hit and the S064 Stage 1 non-hit conservatively: they are documented search non-hits, not proofs of novelty or prior openness. S064 covered general r for Claim B; Claim A is source-known (C-268) and must be credited to Gao et al. 2024.",
     "The exact FrozenClassification iff is proved in Lean and registered as PALOMAR-2026-10-09-000011 v1 (immutable source c5f9e5e822020688c72b2a3bfacbf147a801e219); preserve it and its v1 source unchanged; do not assume novelty or publication readiness from kernel verification.",
     "D-174: CAND-03 route Lean -> Palomar -> paper completed; arXiv posting and E-JC filing of the CAND-03 paper are withdrawn. CAND-03G follows Stage 1 prior-art audit -> 2a informal verification -> 2b Lean -> 3 new Palomar registration -> 4 paper; stages are never compressed.",
     "Official Palomar v1 registration is complete; do not repeat intake. Stage 3 (CAND-03G) will raise an owner blocker for the owner's own portal submission, exactly as D-164/D-165; registration is recorded only after the official full run and public registry record are observed.",
@@ -128,7 +129,9 @@
     "Stage 2a stop rule: any genuine gap or counterexample in the CAND-03G argument is recorded in the failure ledger and requires an owner decision (owner blocker, no prompt).",
     "Stage 4: a fresh owner release blocker for the new paper (arXiv licence, release approval, actual arXiv account/category/endorsement check) plus confirmation or override of the D-178 carry-over of the D-127 private-review skip.",
     "Before any E-JC submission: the owner personally checks and rewrites the AI-assisted proof in own words and can vouch for every step, and verifies no paper was submitted to E-JC in the previous three calendar months. Standing; not attested.",
-    "AI disclosure: future CAND-03G registrations and manuscripts must name both OpenAI ChatGPT and Anthropic Claude for their actual roles (authoritative/AI_USE_RECORD.md); v1 artifacts stay unchanged."
+    "AI disclosure: future CAND-03G registrations and manuscripts must name both OpenAI ChatGPT and Anthropic Claude for their actual roles (authoritative/AI_USE_RECORD.md); v1 artifacts stay unchanged.",
+    "C-273: before any submission (Stage 4), recheck the residual surfaces S064 could not access (Hui-Zhong 2026 and Fan-Zhong 2025 full texts, the Geroldinger-Grynkiewicz-Zhong 2026 monograph, OpenAlex/Google Scholar/MathSciNet citations, thesis databases); owner institutional access would close them.",
+    "C-272 significance risk: Stage 4 must decide positioning and paper type (full article vs short note) using the Stage 2a step correspondence with the published Gao et al. 2024 Lemma 3.3(2)/(3) proofs."
   ],
   "next_prompt_status": "READY",
   "session_checkpoints": [
@@ -451,6 +454,11 @@
       "id": "S063",
       "status": "COMPLETED",
       "record": "sessions/S063/CLOSEOUT.md"
+    },
+    {
+      "id": "S064",
+      "status": "COMPLETED",
+      "record": "sessions/S064/CLOSEOUT.md"
     }
   ],
   "bootstrap_verified_sources_date": "2026-10-02",
@@ -464,7 +472,7 @@
   "s005_source_refresh_date": "2026-10-02",
   "s006_source_refresh_date": "2026-10-02",
   "s007_mathematical_investigation_date": "2026-10-03",
-  "mathematical_investigation_gate": "CLOSED",
+  "mathematical_investigation_gate": "OPEN",
   "gate_semantics": {
     "target_gate": "OPEN means the exact mathematical target and contribution scope are owner-authorized and source-disciplined.",
     "publication_gate": "OPEN means at least one relevant substantive-AI-compatible journal route has been verified; it is not submission approval or an acceptance prediction.",
@@ -913,30 +921,45 @@
       "values_pending": "c_1..c_6=2,4,9,20,45,112; eta(C_3^r)=2c_r-1; s(C_3^r)=2c_r+1 (C-265)",
       "reassessment_flag": "C-193/D-129 flagged for Stage 2a (C-266); unedited"
     },
-    "excluded": "other exponents, non-elementary groups, sequences containing 0, lengths below 3c_r-3, classification of maximum caps, numerical c_r for r>=7"
+    "excluded": "other exponents, non-elementary groups, sequences containing 0, lengths below 3c_r-3, classification of maximum caps, numerical c_r for r>=7",
+    "stage1_outcome": {
+      "claim_a": "SOURCE_KNOWN_PA_EQUIV: Gao et al. 2024 (ZS-72) Lemma 3.3(3) + eta(C_3^r)=2c_r-1 (ZS-81 Lemmas 2.3.2/5.2, ZS-82 Prop 4.1.2, ZS-83); credited (C-268)",
+      "claim_b": "NO EXACT/EQUIV/STRONGER LOCATED IN DOCUMENTED STAGE 1 AUDIT (C-269); PA-INGREDIENT: ZS-72 Lemma 3.3(2) U^3 construction (in proof), ZS-72 Lemma 3.3(3) proof-interior overlap, GPZ13/ZS-79 r=2 inverse; unverified (C-263) until Stage 2a",
+      "rank3": "UNCHANGED: proved, Lean-verified, Palomar-registered; S042/S062/S064 non-hit",
+      "values": "VERIFIED (C-270): c_1..c_6=2,4,9,20,45,112; eta=2c_r-1; s=2c_r+1; c_r for r>=7 unknown",
+      "contribution": "RE-SCOPED TO CLAIM B (D-179); frozen statement unchanged",
+      "significance_risk": "C-272",
+      "residual_surfaces": "C-273"
+    }
   },
   "cand03g_staged_route": {
     "authority": "D-174 order; D-178 criteria; authoritative/ROADMAP.md#cand-03g-staged-route-d-174-frozen-at-s063",
-    "current_stage": "STAGE_1_READY",
+    "current_stage": "STAGE_2A_READY",
     "stages": [
       {
         "id": "1",
         "name": "prior-art/novelty audit",
-        "status": "READY",
+        "status": "COMPLETED",
         "sessions": [
           "S064"
         ],
         "entry": "D-175 frozen statement; mathematical_investigation_gate CLOSED",
         "deliverables": "S042-taxonomy classification for Claim A, Claim B and rank-3 case; trace ZS-72 (general-rank statements, proofs of Lemma 3.3(2)/(3), eta^N=eta*) and citers, ZS-73/ZS-79 (reconcile r=2), GGW eta* line, ZS-81 and cap literature; primary-source c_1..c_6 and eta/s identities",
-        "stop_rules": "EXACT/EQUIV/STRONGER for Claim B or rank-3 case, unresolved high-probability lead, or contradicting r<=2 statement -> stop, owner blocker, no prompt; only Claim A known -> re-scope to Claim B and continue; clean -> open gate for Stage 2a only"
+        "stop_rules": "EXACT/EQUIV/STRONGER for Claim B or rank-3 case, unresolved high-probability lead, or contradicting r<=2 statement -> stop, owner blocker, no prompt; only Claim A known -> re-scope to Claim B and continue; clean -> open gate for Stage 2a only",
+        "outcome": "S064 (D-179/D-180): Claim A PA-EQUIV (source-known, credited; contribution re-scoped to Claim B); Claim B and rank-3: no exact/equivalent/stronger-implying prior art located in the documented Stage 1 audit; stop rules (a)-(c) not triggered; residual surfaces C-273",
+        "record": "sessions/S064/PRIOR_ART_AUDIT.md"
       },
       {
         "id": "2a",
         "name": "informal verification",
-        "status": "NOT_STARTED",
+        "status": "READY",
         "entry": "Stage 1 clean (or re-scoped to Claim B)",
         "deliverables": "independent derivation from frozen statement; adversarial lemma-by-lemma check; exhaustive r=1,2 and structured r=3,4 computation with committed scripts/logs; r=3 Lean reconciliation; C-193 reassessment",
-        "stop_rules": "genuine gap or counterexample -> failure ledger, report, owner blocker, no prompt"
+        "stop_rules": "genuine gap or counterexample -> failure ledger, report, owner blocker, no prompt",
+        "sessions": [
+          "S065"
+        ],
+        "brief": "authoritative/S065_CAND03G_STAGE2A_INFORMAL_VERIFICATION_BRIEF.md"
       },
       {
         "id": "2b",
@@ -991,5 +1014,32 @@
     "proof_lean_computation_posting_contact": "NONE",
     "closeout": "sessions/S063/CLOSEOUT.md"
   },
-  "ai_use_record": "authoritative/AI_USE_RECORD.md"
+  "ai_use_record": "authoritative/AI_USE_RECORD.md",
+  "mathematical_investigation_gate_scope": "D-180 (S064): OPEN for CAND-03G Stage 2a's bounded role only (independent derivation, adversarial check, scoped computation for r=1,2 exhaustive and r=3,4 structured, read-only r=3 Lean reconciliation, C-193 reassessment). Not Lean (Stage 2b), not Palomar, not paper.",
+  "s064_stage1_audit": {
+    "status": "COMPLETED",
+    "unit": "D63-01",
+    "date": "2026-10-11",
+    "incoming": "f5b054468c93d8ca2e24f05dd8ff3f614af84756 (S063 branch claude/general-rank-extension-setup-ve7yg2; main 496cefb8 lacks S063)",
+    "decisions": [
+      "D-179",
+      "D-180"
+    ],
+    "claims": [
+      "C-268",
+      "C-269",
+      "C-270",
+      "C-271",
+      "C-272",
+      "C-273"
+    ],
+    "sources": "ZS-82..ZS-92",
+    "lesson": "FL-124",
+    "ai_tool": "Anthropic Claude via Claude Code",
+    "gate_change": "mathematical_investigation_gate CLOSED -> OPEN for CAND-03G Stage 2a bounded role only (D-180)",
+    "proof_lean_computation_posting_contact": "NONE",
+    "records": "sessions/S064/ (INPUT_SNAPSHOT, SEARCH_LOG, PRIOR_ART_AUDIT, SOURCE_CHECK, VALIDATION, CLOSEOUT)",
+    "closeout": "sessions/S064/CLOSEOUT.md"
+  },
+  "s064_source_refresh_date": "2026-10-11"
 }

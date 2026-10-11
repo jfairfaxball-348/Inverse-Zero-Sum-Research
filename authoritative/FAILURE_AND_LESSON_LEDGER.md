@@ -1,6 +1,6 @@
 # Failure and lesson ledger
 
-**Current S063 checkpoint (D-174, 2026-10-10):** B-016 resolved by owner withdrawal of the CAND-03 release (manuscript, release package and PALOMAR v1 kept unchanged as historical records). New target CAND-03G (general-rank extension) frozen; Stage 1 prior-art audit S064 READY; no active owner blocker; no preprint, filing or contact. Current state is `STATE.json`; dated records below keep their historical scope.
+**Current S064 checkpoint (D-179/D-180, 2026-10-11):** CAND-03G Stage 1 prior-art audit COMPLETED. Claim A is source-known: Gao et al. 2024 Lemma 3.3(3) with the classical identity `eta(C_3^r)=2c_r-1`. It is credited, and the contribution is re-scoped to Claim B under D-174. For Claim B and the rank-3 case, no exact/equivalent/stronger-implying prior art was located in the documented Stage 1 audit. This is not a novelty claim. Mathematical investigation is OPEN for Stage 2a's bounded role only. S065 (Stage 2a) is READY. No owner blocker is active; nothing has been posted, filed or sent to anyone. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 This ledger includes literature/status lessons from the pre-proof stages and
@@ -553,3 +553,23 @@ for a whole family through a parameter, ask before the paper stage whether the
 inverse statement has the same parametric form, and inspect the equality case
 of the published general proof. If Stage 2a refutes the candidate, amend this
 entry with a superseding note; do not delete it.
+
+## FL-124 — Resolve recorded leads at proof level before staging work (S064)
+
+The Claim A lead had been in the repository since S039 (C-176, S039 source
+check). It still took a dedicated Stage 1 session to show that it settles
+Claim A for **every** `r`. That needed only one classical identity
+(`eta(C_3^r)=2c_r-1`, Edel et al. 2007 Lemma 5.2; Harborth 1973). The same
+reading showed that the published proof's counting stops one length short of
+the equality case. That is the exact boundary of the claimed contribution, and
+it is the significance risk (C-272). **Lesson:** when a recorded source states
+a parametric direct value, read its proof at the threshold *and* one length
+below. Record both the parametrized statement and the precise point where the
+published argument stops. Do this before freezing any contribution claim.
+Corollary: zbMATH reviews are a usable secondary route to the exact statements
+of paywalled papers. They must be labelled S-review and never upgraded to
+proof inspection.
+
+**FL-123 status note (S064):** the direct-value half of FL-123 is confirmed.
+Claim A was already parametric in the 2024 source. The inverse half stays
+provisional until Stage 2a.

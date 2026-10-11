@@ -1,6 +1,6 @@
 # External reviewer register
 
-**Current S063 checkpoint (D-174, 2026-10-10):** B-016 resolved by owner withdrawal of the CAND-03 release (manuscript, release package and PALOMAR v1 kept unchanged as historical records). New target CAND-03G (general-rank extension) frozen; Stage 1 prior-art audit S064 READY; no active owner blocker; no preprint, filing or contact. Current state is `STATE.json`; dated records below keep their historical scope.
+**Current S064 checkpoint (D-179/D-180, 2026-10-11):** CAND-03G Stage 1 prior-art audit COMPLETED. Claim A is source-known: Gao et al. 2024 Lemma 3.3(3) with the classical identity `eta(C_3^r)=2c_r-1`. It is credited, and the contribution is re-scoped to Claim B under D-174. For Claim B and the rank-3 case, no exact/equivalent/stronger-implying prior art was located in the documented Stage 1 audit. This is not a novelty claim. Mathematical investigation is OPEN for Stage 2a's bounded role only. S065 (Stage 2a) is READY. No owner blocker is active; nothing has been posted, filed or sent to anyone. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 **Confirmed reviewer: NONE.** Owner decision D-070 selects CAND-05.
@@ -903,3 +903,11 @@ interpretation that D-174's ordered route carries this skip to CAND-03G. The
 owner confirms or overrides that at the Stage 4 release blocker. E-JC's
 ordinary editorial/referee process remains the intended journal review. Xue
 Li's CAND-02 Stage-1 status is unchanged.
+
+## S064 — no contact (2026-10-11)
+
+Stage 1 was a literature audit only. No author, mathematician, editor or
+referee was contacted, including to ask about prior art. `external_review_gate`
+stays CLOSED. The audit was AI-run (Anthropic Claude via Claude Code) and is not
+independent review. The D-178 interpretation (D-127 skip carried to CAND-03G)
+still awaits owner confirmation at the Stage 4 release blocker.

@@ -1,6 +1,6 @@
 # Claims and source register
 
-**Current S063 checkpoint (D-174, 2026-10-10):** B-016 resolved by owner withdrawal of the CAND-03 release (manuscript, release package and PALOMAR v1 kept unchanged as historical records). New target CAND-03G (general-rank extension) frozen; Stage 1 prior-art audit S064 READY; no active owner blocker; no preprint, filing or contact. Current state is `STATE.json`; dated records below keep their historical scope.
+**Current S064 checkpoint (D-179/D-180, 2026-10-11):** CAND-03G Stage 1 prior-art audit COMPLETED. Claim A is source-known: Gao et al. 2024 Lemma 3.3(3) with the classical identity `eta(C_3^r)=2c_r-1`. It is credited, and the contribution is re-scoped to Claim B under D-174. For Claim B and the rank-3 case, no exact/equivalent/stronger-implying prior art was located in the documented Stage 1 audit. This is not a novelty claim. Mathematical investigation is OPEN for Stage 2a's bounded role only. S065 (Stage 2a) is READY. No owner blocker is active; nothing has been posted, filed or sent to anyone. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 Observations below are bounded source inspections through **2026-10-02**.
@@ -1174,3 +1174,42 @@ programme claims**, and S063 did not check them, by design. See the
 | C-265 | **SOURCE VALUES PENDING** | `c_1..c_6=2,4,9,20,45,112`; classical analogues `eta(C_3^r)=2c_r-1` and `s(C_3^r)=2c_r+1`. At `r=3` these give 17 and 19, the inputs used by the CAND-03 paper and Lean. | Stage 1 verifies them from primary sources. `c_3=9` is already supported inside the programme (S045 formal cap bound; S061 explicit 8-term core). The other values and both identities in general `r` are **not** yet source-checked. |
 | C-266 | **REASSESSMENT FLAG (no edit)** | The owner states that the candidate argument contradicts C-193 ("affine-cap classification does not imply sequence-level necessity"), and hence also the D-129 / S042 treatment of the cap route (ZS-81) as PA-INGREDIENT only. | C-193 and D-129 stay unedited. Stage 2a must reassess them. Note for that reassessment: C-193 speaks of cap *classification*, whereas the candidate uses the cap-*size* bound `c_r` plus sequence-level lemmas L1–L4. Stage 2a decides whether C-193 is false, misleading, or correct but beside the point, and what follows for the novelty and significance narrative. Any correction is a new superseding entry. |
 | C-267 | **PROGRAMME STATUS (D-174)** | The CAND-03 S061 manuscript and S062 release package are **withdrawn from release**: no arXiv posting and no E-JC filing. Both are kept unchanged as historical records. The registered theorem stays valid; C-254 is unchanged. | C-261's "AUTHOR ACTION REQUIRED" (licence, release, endorsement) is superseded: no such action is now required. The owner's E-JC personal proof check/rewrite requirement carries forward to any future CAND-03G paper. |
+
+## S064 — CAND-03G Stage 1 prior-art/novelty audit (2026-10-11)
+
+Records: [audit](../sessions/S064/PRIOR_ART_AUDIT.md),
+[source check](../sessions/S064/SOURCE_CHECK.md) (inspection levels, cap-value
+table), [search log](../sessions/S064/SEARCH_LOG.md). The external candidate
+argument (C-262–C-266) was **not** checked, repaired or extended. Run by
+Anthropic Claude via Claude Code ([AI-use record](AI_USE_RECORD.md)).
+
+### New sources
+
+| ID | Source | Exact boundary (inspection level) |
+| --- | --- | --- |
+| ZS-82 | Y. Fan, W. Gao, Q. Zhong, *On the Erdős–Ginzburg–Ziv constant of finite abelian groups of high rank*, J. Number Theory 131 (2011), 1864–1874, DOI 10.1016/j.jnt.2011.02.017 | Prop. 4.1.2: for `G=F_3^r`, maximal cap size `=g(G)-1` and `s(G)=2g(G)-1`. Lemma 2.4: `C_3^r` has Property D. p. 2: exact cap values known only for `r<=6`. (P-statement, preprint.) |
+| ZS-83 | H. Harborth, *Ein Extremalproblem für Gitterpunkte*, J. Reine Angew. Math. 262 (1973), 356–360 | Hilfssatz 3, `s(C_3^r)=2g(C_3^r)-1`, as attributed by ZS-81 Lemma 5.2(3) and ZS-82 Prop. 4.1.2. (Not accessed; secondary attribution.) |
+| ZS-84 | R. C. Bose, *Mathematical theory of the symmetrical factorial design*, Sankhyā 8 (1947), 107–166, Zbl 0038.09601 | `c_3=9` per ZS-81 p. 20. (Metadata.) |
+| ZS-85 | G. Pellegrino, *The maximal order of the spherical cap in S_{4,3}*, Le Matematiche 25 (1970), 149–157 (publ. 1971), Zbl 0223.50020 | `c_4=20` per ZS-81 p. 20; uniqueness R. Hill 1983. (Metadata.) |
+| ZS-86 | Y. Edel, S. Ferret, I. Landjev, L. Storme, *The classification of the largest caps in AG(5,3)*, JCTA 99 (2002), 95–110, DOI 10.1006/jcta.2002.3261 | "45 is the size of the largest caps in AG(5,3)". (P-abstract.) |
+| ZS-87 | A. Potechin, *Maximal caps in AG(6,3)*, Des. Codes Cryptogr. 46 (2008), 243–259, DOI 10.1007/s10623-007-9132-z | Maximal cap in `AG(6,3)` has size 112 and is unique up to affine equivalence. (P-abstract.) |
+| ZS-88 | H. R. Thackeray, *The cap set problem: Up to dimension 7*, arXiv:2206.09804 (2022) | No 289-cap in `AG(7,3)`. `c_7` is not determined. (P-abstract.) |
+| ZS-89 | OEIS A090245, revision 128 (2026-08-12) | Lists 1, 2, 4, 9, 20, 45, 112 for dimensions 0–6 only. (Secondary aggregator.) |
+| ZS-90 | G. Wang, *Disproof of a Conjectured Upper Bound for the Davenport Constant*, arXiv:2609.29878 (v1 2026-09-24; v3 2026-10-05) | Davenport excess; Narkiewicz–Śliwa disproof for rank `>=8`. Cites ZS-72 only as related inverse work. PA-NONHIT. (P-statement, v3.) |
+| ZS-91 | A. Geroldinger, W. Yang, *On a classical zero-sum invariant*, arXiv:2608.19090 (2026) | The invariant `nu(G)`; cites ZS-78. PA-NONHIT. (P-statement.) |
+| ZS-92 | A. Geroldinger, D. J. Grynkiewicz, Q. Zhong, *Combinatorial Factorization Theory: Factorization Theory in Krull Monoids via Additive Combinatorics*, AMS Math. Surveys Monogr. 296 (2026) | TOC only: an inverse-problems chapter and an open-problems appendix. **Inaccessible.** PA-MENTION; residual surface (C-273). (Metadata.) |
+
+**Register note.** ZS-71 and ZS-73 are the same paper (Hui–Zhong, JCTA 224
+(2026) 106238), registered twice in S037 and S038. Both IDs are kept; S064
+refers to it as ZS-73.
+
+### Claims
+
+| Claim | Classification | Bounded content | Support / remaining boundary |
+| --- | --- | --- | --- |
+| C-268 | **SOURCE-KNOWN (PA-EQUIV) — Claim A** | `eta^N(C_3^r)=3c_r-2` for every `r>=1` is already known. ZS-72 Lemma 3.3(3) (2024) states `eta^N(C_3^r)=3(eta(C_3^r)-1)/2+1` for all `r`, and the classical identity `eta(C_3^r)=2c_r-1` turns this into `3c_r-2`. | Full statement and proof of ZS-72 Lemma 3.3(3) inspected (author manuscript; numbering consistent with zbMATH Zbl 1547.11125). Identity: ZS-81 Lemmas 2.3.2, 5.2(2),(3); ZS-82 Prop. 4.1.2; ZS-83. Resolves the C-262 lead; supersedes C-262's "CONJECTURE" status for Claim A. **Credit: Gao, Hui, Li, Li, Qu, Zhong 2024**, with Harborth 1973 and Edel et al. 2007. |
+| C-269 | **SOURCE STATUS BOUNDARY — Claim B and rank-3 case** | **No exact/equivalent/stronger-implying prior art located in the documented Stage 1 audit** for Claim B (both directions, general `r`) or for the rank-3 case. PA-INGREDIENT overlaps: ZS-72 Lemma 3.3(2) `U^3` construction (B-con, inside a proof, all `r`); ZS-72 Lemma 3.3(3) proof (**proof-interior overlap**, technique only; no equality case stated; slack 2 at length `3c_r-3`); ZS-77 / ZS-79 Thm 1.3 at `m=3` (`r=2` inverse); ZS-81 Lemma 5.2(3) (multiplicity-2 analogue for `s`). | A finite search non-hit. **Not** a proof of novelty, openness or significance. Claim B remains **unverified** (C-263) until Stage 2a. The S042/S062 rank-3 baseline (C-192, C-259) is unchanged. |
+| C-270 | **SOURCE VALUES VERIFIED (resolves C-265)** | `c_1..c_6=2,4,9,20,45,112`; `s(C_3^r)=2c_r+1`; `eta(C_3^r)=2c_r-1`. Hence `3c_r-2=4,10,25,58,133,334` and Claim-B lengths `3,9,24,57,132,333`. `c_r` for `r>=7` is unknown (ZS-88, ZS-89). | Inspection levels per value in the S064 cap-value table: P-statement for ZS-81/ZS-82; P-abstract for ZS-86/ZS-87; Metadata for ZS-83–ZS-85. Cross-checked by independently published `s`, `eta`, `eta^N` values for `r<=5`. |
+| C-271 | **SPECIAL-CASE CONSISTENCY (`r=1,2`)** | Published `r=1,2` values match Claim A: `eta^N(C_3)=4`, `eta^N(C_3^2)=10`. The published `r=2` inverse at length 9 (ZS-77 for `p=3`; ZS-79 Thm 1.3 for `m=3`) has the same `U^3` shape. It is a one-directional superset statement and does not contradict Claim B. ZS-73 Thm 1.1 classifies length `3n-1=eta^N-2` (8 at `n=3`), a sub-extremal length, so the ZS-73 record is correct and does not state Claim B at `r=2`. No `r=1` inverse statement was located. | S-review level for ZS-73, ZS-77, ZS-79. Stop rule (c) not triggered. |
+| C-272 | **PROGRAMME STATUS — RE-SCOPE (D-179)** | Under the owner's D-174 rule, the CAND-03G **contribution is re-scoped to Claim B**. Claim A is credited to ZS-72 Lemma 3.3(3) plus the classical identity. The frozen D-175 statement is unchanged. **Significance risk:** the C-269 proof-interior overlap may lead referees to view Claim B as a short equality-case extension of a published proof. Stage 2a records the step correspondence; Stage 4 decides positioning and paper type. | D-174, D-179. The withdrawn S061 manuscript already credited `eta^N(C_3^3)=25` and the `U^3` construction to Gao et al. 2024 (`paper/main.tex`, citing Lemma 3.3(2)–(3) and Thm 3.6(4)). |
+| C-273 | **RESIDUAL SURFACES — RECHECK BEFORE SUBMISSION** | Not inspected for lack of access; judged not to be high-probability leads: ZS-73 full text (introduction remarks on rank `>=3`); ZS-79 full text (CC BY, blocked here); ZS-92 inverse-problems chapter and Appendix B; the OpenAlex citing-works list; Google Scholar and MathSciNet citations; Chinese thesis databases. | Recheck at Stage 4, before any submission, or earlier if the owner supplies access. Any substantive hit pauses the direction (AGENTS.md). |

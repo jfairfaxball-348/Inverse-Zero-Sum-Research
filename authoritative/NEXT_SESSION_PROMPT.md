@@ -1,87 +1,77 @@
 # Single ready next-session prompt
 
-Session: S064.
+Session: S065.
 Status: READY.
 
-The S063 close report gives the verified outgoing SHA. A file cannot contain
+The S064 close report gives the verified outgoing SHA. A file cannot contain
 the hash of its own commit.
 
 ```text
-Session: S064.
+Session: S065.
 Status: READY.
 
-Begin S064 — CAND-03G Stage 1 prior-art/novelty audit (Unit D63-01) — in:
+Begin S065 — CAND-03G Stage 2a informal verification (Unit D64-01) — in:
 https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
 
-Run exactly ONE numbered session, S064, under docs/SESSION_PROTOCOL.md.
-Stage 1 only. Do not do proof work, run computations on the mathematics,
-touch Lean or start Stage 2a. Do not post, file, take Palomar action or
-contact anyone, including authors.
+Run exactly ONE numbered session, S065, under docs/SESSION_PROTOCOL.md.
+Stage 2a only. No Lean or formal-config edits (that is Stage 2b), no Palomar
+action, no paper writing. Do not post, file or contact anyone, including
+authors.
 
 ENTRY
-Pin the S063 checkpoint. If live main contains sessions/S063/CLOSEOUT.md, pin
-main. Otherwise S063 is published on branch
-claude/general-rank-extension-setup-ve7yg2 as a fast-forward of main
-496cefb8e0672d069991f759adbfbc954b70f471. In that case pin that branch head,
-use it as the incoming authority and record the reconciliation in
-sessions/S064/INPUT_SNAPSHOT.md. Confirm S064 is unique. Committed repository
-authority controls.
+Pin the S064 checkpoint. If live main contains sessions/S064/CLOSEOUT.md, pin
+main. Otherwise S064 is published on branch
+claude/cand-03g-stage-1-audit-18s10o as a fast-forward of main
+496cefb8e0672d069991f759adbfbc954b70f471 (through S063 f5b0544). In that case
+pin that branch head, use it as the incoming authority and record the
+reconciliation in sessions/S065/INPUT_SNAPSHOT.md. Confirm S065 is unique.
+Committed repository authority controls.
 
 Read AGENTS.md, authoritative/START_HERE.md, STATE.json, the charter, the
-protocol, the closeout template and DECISIONS_AND_BLOCKERS (D-174–D-178).
-Read all registers, especially the CAND-03G section of TARGET_REGISTER, the
-ROADMAP Stage 1 row, C-190–C-194, C-259, C-262–C-267 and ZS-71–ZS-81. Also
-read authoritative/AI_USE_RECORD.md, sessions/S039/SOURCE_CHECK.md, the S041
-literature audit, the S042 audit, search log and brief, the S062 source
-refresh, sessions/S063/, and:
-authoritative/S064_CAND03G_STAGE1_PRIOR_ART_AUDIT_BRIEF.md
+protocol, the closeout template and DECISIONS_AND_BLOCKERS (D-174–D-180).
+Read all registers (especially the CAND-03G sections of TARGET_REGISTER and
+ROADMAP, C-262–C-273 and ZS-72, ZS-79, ZS-81, ZS-82), the AI-use record,
+sessions/S064/ and:
+authoritative/S065_CAND03G_STAGE2A_INFORMAL_VERIFICATION_BRIEF.md
+Do NOT open sessions/S063/INPUT_PROMPT.md (sketch L1–L5) until your
+independent derivation is written to sessions/S065/INDEPENDENT_DERIVATION.md.
 
-EXECUTE exactly D63-01.
-Audit the frozen CAND-03G statement (D-175) using the S042 taxonomy
-(PA-EXACT/EQUIV/STRONGER/INGREDIENT/MENTION/NONHIT). Classify separately for
-Claim A (eta^N(C_3^r)=3c_r-2), Claim B for general r (both directions) and
-the rank-3 case (the registered CAND-03 theorem; baseline S042/S062).
-
-Trace these sources:
-- Gao et al. 2024: every general-rank statement, the proofs of
-  Lemma 3.3(2)/(3) (the recorded Claim A lead), Definition 1.1 and
-  Lemma 2.4 (eta^N = eta*), and all its citers.
-- Hui–Zhong 2026 and Fan–Zhong 2025. Reconcile the recorded ZS-73 length
-  3n-1 = eta^N(C_n^2)-2 with Claims A and B at r=2.
-- The Gao–Geroldinger–Wang eta* line.
-- Edel–Elsholtz–Geroldinger–Kubertin–Rackham 2007 and later zero-sum/cap
-  literature.
-- Current preprints.
-
-Verify c_1..c_6 = 2,4,9,20,45,112, eta(C_3^r)=2c_r-1 and s(C_3^r)=2c_r+1
-from primary sources. The candidate argument (C-262–C-266) is unverified
-external AI input: do not check, repair or extend it.
+EXECUTE exactly D64-01 (ROADMAP Stage 2a row):
+(i) independent derivation of Claim B (both directions, all r) from the
+frozen D-175 statement, including eta^N = 1 + max avoiding length and the
+sequence-form/cap-form equivalence; Claim A is source-known (Gao et al. 2024
+Lemma 3.3(3) + eta(C_3^r)=2c_r-1) and may be cited;
+(ii) only then, an adversarial lemma-by-lemma check of sketch L1–L5 and all
+listed edge cases;
+(iii) exhaustive computation for r=1,2 through length 3c_r-2 and structured,
+seeded tests for r=3,4, with committed scripts and logs (experimental
+evidence, not proof);
+(iv) read-only reconciliation of r=3 with Lean FrozenClassification;
+(v) a superseding C-193/D-129 reassessment plus an exact step correspondence
+with the published Gao et al. 2024 Lemma 3.3(2)/(3) proofs.
 
 STOP RULES
-- PA-EXACT/EQUIV/STRONGER for Claim B or the rank-3 case, an unresolvable
-  high-probability lead, or a published r<=2 statement contradicting Claim A
-  or B: stop, record it, raise an owner blocker, and output NO prompt.
-- Only Claim A already known: re-scope the contribution to Claim B under
-  D-174, credit Claim A to its source, and continue.
-- Search surface incomplete with no open lead: promote one S065 Stage 1
-  continuation.
-- Clean: record the precise non-hit wording (never "novel" or "open"). Open
-  mathematical_investigation_gate for Stage 2a's bounded role only. Write the
-  S065 Stage 2a brief from the ROADMAP row and one ready prompt. Do not start
-  Stage 2a.
+- Genuine gap (a failing step not replaced in-session by a fully written
+  correct step inside the frozen statement) or any computed counterexample,
+  or a needed change to the frozen statement: record it in the failure ledger,
+  report it, raise an owner blocker and output NO prompt.
+- Complete checked programme proof agreeing with the computations: promote
+  exactly one Stage 2b (Lean) brief and prompt. Do not start Stage 2b.
+- Incomplete with no gap: close PARTIAL and promote one Stage 2a continuation.
 
 CLOSEOUT
-Create the sessions/S064 records: INPUT_SNAPSHOT, SEARCH_LOG,
-PRIOR_ART_AUDIT, SOURCE_CHECK (with the cap-value/identity table), VALIDATION
-and CLOSEOUT. Assign ZS IDs to new sources. Synchronize STATE and all
-registers. Name the AI tool used in the closeout and in the AI-use record. Run
-python3 scripts/check_authority.py, then commit and push (to main, or to the
-session's designated branch if the environment requires it; never present
-branch-only work as main) and verify the remote SHA.
+Create the sessions/S065 records named in the brief. Label results programme
+proof or experimental evidence, never peer review or novelty. Synchronize
+STATE and all registers. Name the AI tool used in the closeout and the AI-use
+record. Run python3 scripts/check_authority.py and the committed computation
+scripts, then commit and push (to main, or to the session's designated branch
+if the environment requires it; never present branch-only work as main) and
+verify the remote SHA.
 
 Preserve PALOMAR v1 and its immutable source, the frozen CAND-03 theorem, the
-unchanged S061 manuscript and S062 package, all attribution and disclosure
-duties, and the owner's E-JC personal proof check/rewrite requirement.
+unchanged S061 manuscript and S062 package, the credit of Claim A to Gao et
+al. 2024, all attribution and disclosure duties, and the owner's E-JC personal
+proof check/rewrite requirement.
 
-STOP after S064. Do not execute S065.
+STOP after S065. Do not execute S066.
 ```

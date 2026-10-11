@@ -1,6 +1,6 @@
 # Session ledger
 
-**Current S063 checkpoint (D-174, 2026-10-10):** B-016 resolved by owner withdrawal of the CAND-03 release (manuscript, release package and PALOMAR v1 kept unchanged as historical records). New target CAND-03G (general-rank extension) frozen; Stage 1 prior-art audit S064 READY; no active owner blocker; no preprint, filing or contact. Current state is `STATE.json`; dated records below keep their historical scope.
+**Current S064 checkpoint (D-179/D-180, 2026-10-11):** CAND-03G Stage 1 prior-art audit COMPLETED. Claim A is source-known: Gao et al. 2024 Lemma 3.3(3) with the classical identity `eta(C_3^r)=2c_r-1`. It is credited, and the contribution is re-scoped to Claim B under D-174. For Claim B and the rank-3 case, no exact/equivalent/stronger-implying prior art was located in the documented Stage 1 audit. This is not a novelty claim. Mathematical investigation is OPEN for Stage 2a's bounded role only. S065 (Stage 2a) is READY. No owner blocker is active; nothing has been posted, filed or sent to anyone. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 | Session | Status | Incoming checkpoint | Useful output | Closeout |
@@ -1094,3 +1094,9 @@ Owner release licence/authorization/account check is required next; **no runnabl
 | S063 | COMPLETED D62-01 setup (owner redirect D-174) | `496cefb8e0672d069991f759adbfbc954b70f471` | D-174 recorded; B-016 resolved by owner withdrawal of the CAND-03 release; CAND-03G target change with frozen Claims A/B and `c_r` as parameter; staged route 1→2a→2b→3→4 with entry criteria, deliverables and stop rules; unverified external candidate C-262–C-266; new AI-use record (ChatGPT, Claude); S064 Stage 1 brief and prompt. No proof, Lean, computation, posting, Palomar action or contact. | [S063 closeout](../sessions/S063/CLOSEOUT.md) |
 
 S064 (Stage 1 prior-art/novelty audit only) is READY. CI outcomes observed after commit are reported externally, not assigned to the containing record.
+
+| Session | Status | Incoming checkpoint | Useful output | Closeout |
+| --- | --- | --- | --- | --- |
+| S064 | COMPLETED D63-01 (CAND-03G Stage 1) | `f5b054468c93d8ca2e24f05dd8ff3f614af84756` (S063, branch-only fast-forward of `main` `496cefb8`) | Source-first Stage 1 audit with the S042 taxonomy, run separately for A, B and B3. **Claim A PA-EQUIV**: Gao et al. 2024 Lemma 3.3(3) with `eta(C_3^r)=2c_r-1`; credited, and contribution re-scoped to Claim B (D-179). **B and B3: no exact/equivalent/stronger-implying prior art located in the documented Stage 1 audit.** Proof-interior overlap recorded as a significance risk. `c_1..c_6` and the `eta`/`s` identities source-checked. ZS-73 `r=2` reconciliation: no conflict. Gate OPEN for Stage 2a only (D-180). No proof, computation, Lean, posting, Palomar action or contact. | [S064 closeout](../sessions/S064/CLOSEOUT.md) |
+
+S065 (Stage 2a informal verification only) is READY. CI outcomes observed after commit are reported externally, not assigned to the containing record.

@@ -1,6 +1,6 @@
 # Publication register
 
-**Current S063 checkpoint (D-174, 2026-10-10):** B-016 resolved by owner withdrawal of the CAND-03 release (manuscript, release package and PALOMAR v1 kept unchanged as historical records). New target CAND-03G (general-rank extension) frozen; Stage 1 prior-art audit S064 READY; no active owner blocker; no preprint, filing or contact. Current state is `STATE.json`; dated records below keep their historical scope.
+**Current S064 checkpoint (D-179/D-180, 2026-10-11):** CAND-03G Stage 1 prior-art audit COMPLETED. Claim A is source-known: Gao et al. 2024 Lemma 3.3(3) with the classical identity `eta(C_3^r)=2c_r-1`. It is credited, and the contribution is re-scoped to Claim B under D-174. For Claim B and the rank-3 case, no exact/equivalent/stronger-implying prior art was located in the documented Stage 1 audit. This is not a novelty claim. Mathematical investigation is OPEN for Stage 2a's bounded role only. S065 (Stage 2a) is READY. No owner blocker is active; nothing has been posted, filed or sent to anyone. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 Policy observations date: **2026-10-05**. Refresh at target selection and again
@@ -873,3 +873,21 @@ Claim A already known, or the Claim B argument inside a published proof, the
 contribution narrows and the paper type (full article or short note) must be
 decided on that evidence in Stage 4. Nothing was submitted, posted or
 contacted in S063.
+
+## S064 — Stage 1 effect on the CAND-03G publication route (2026-10-11)
+
+No venue action. E-JC remains the leading candidate (D-005). This is neither
+a submission decision nor an acceptance prediction. `publication_gate` stays
+OPEN.
+
+- **Contribution re-scoped to Claim B** (D-179). Claim A is already known
+  (Gao et al. 2024 Lemma 3.3(3) plus the classical identity). Any paper must
+  credit it and must not present `eta^N(C_3^r)=3c_r-2` as new.
+- **Significance risk** (C-272): Claim B may be read as an equality-case
+  extension of the published Lemma 3.3(3) proof. Stage 4 must weigh this,
+  using the Stage 2a step correspondence, when choosing between a full article
+  and a short note.
+- **Pre-submission recheck** (C-273): the ZS-73 and ZS-79 full texts, the
+  ZS-92 monograph and the citation databases unavailable to S064.
+
+Nothing was submitted, posted or sent to anyone in S064.

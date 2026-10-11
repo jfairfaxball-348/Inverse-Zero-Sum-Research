@@ -1,6 +1,6 @@
 # Decisions and owner blockers
 
-**Current S063 checkpoint (D-174, 2026-10-10):** B-016 RESOLVED by owner decision. The CAND-03 manuscript is withdrawn from release and kept, with its release package and PALOMAR v1, as historical records. New target CAND-03G (general-rank extension) is frozen; Stage 1 prior-art audit S064 is READY; no active owner blocker. Current state is `STATE.json`; dated records below keep their historical scope.
+**Current S064 checkpoint (D-179/D-180, 2026-10-11):** CAND-03G Stage 1 prior-art audit COMPLETED. Claim A is source-known: Gao et al. 2024 Lemma 3.3(3) with the classical identity `eta(C_3^r)=2c_r-1`. It is credited, and the contribution is re-scoped to Claim B under D-174. For Claim B and the rank-3 case, no exact/equivalent/stronger-implying prior art was located in the documented Stage 1 audit. This is not a novelty claim. Mathematical investigation is OPEN for Stage 2a's bounded role only. S065 (Stage 2a) is READY. No owner blocker is active; nothing has been posted, filed or sent to anyone. Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 ## Binding decisions
@@ -1214,3 +1214,17 @@ READY and immediately runnable. Stage 3 portal submission and the Stage 4
 release decision will be raised as fresh owner blockers when reached. Before
 E-JC submission the owner must still personally check and rewrite the proof.
 No posting, filing, Palomar action or contact occurred in S063.
+
+## S064 D63-01 Stage 1 decisions (2026-10-11)
+
+| ID | Decision | Basis |
+| --- | --- | --- |
+| D-179 | **Stage 1 classification and pre-authorized re-scope.** (1) **Claim A is PA-EQUIV, i.e. already known.** Gao, Hui, Li, Li, Qu, Zhong 2024 (ZS-72) Lemma 3.3(3) states `eta^N(C_3^r)=3(eta(C_3^r)-1)/2+1` for every `r`. With the classical identity `eta(C_3^r)=s(C_3^r)-2=2g(C_3^r)-3=2c_r-1` (ZS-81 Lemmas 2.3.2, 5.2; ZS-82 Prop. 4.1.2; Harborth 1973) this is exactly `3c_r-2`. (2) **Claim B (both directions, general `r`) and the rank-3 case:** no PA-EXACT, PA-EQUIV or PA-STRONGER candidate. The closest overlaps are PA-INGREDIENT: the ZS-72 Lemma 3.3(2) `U^3` construction (inside a proof); a **proof-interior overlap** with the Lemma 3.3(3) representative-deletion technique (no equality case stated); and the published `r=2` inverse (GPZ13 / Fan–Zhong 2025 at `m=3`). (3) No published `r<=2` statement contradicts Claim A or B. No identified high-probability lead is unresolved; inaccessible residual surfaces are recorded as recheck obligations (C-273). (4) Under the **owner's D-174 rule** ("if only Claim A is already known, re-scope to Claim B and continue", restated in the ROADMAP Stage 1 row and D-176), the CAND-03G **contribution is re-scoped to Claim B**, with Claim A credited to ZS-72 Lemma 3.3(3) and the classical identity. The **frozen D-175 statement is unchanged**: Claim A stays in it as a source-known component, and Stage 2b still formalizes both claims. (5) The proof-interior overlap is a **significance risk**, not prior art. Stage 2a records the step correspondence; Stage 4 decides positioning and paper type on that evidence. | [S064 audit](../sessions/S064/PRIOR_ART_AUDIT.md), [source check](../sessions/S064/SOURCE_CHECK.md), [search log](../sessions/S064/SEARCH_LOG.md); D-174; ROADMAP Stage 1 row; D-176. |
+| D-180 | **Clean Stage 1 exit for the re-scoped target.** The precise result: "no exact/equivalent/stronger-implying prior art located in the documented Stage 1 audit" for Claim B and for the rank-3 case. This is not a statement of novelty, openness or significance. `mathematical_investigation_gate` → **OPEN for Stage 2a's bounded role only** (independent derivation, adversarial check, scoped computation, read-only `r=3` Lean reconciliation, C-193 reassessment). Promote **S065 = Stage 2a, Unit D64-01** with [brief](S065_CAND03G_STAGE2A_INFORMAL_VERIFICATION_BRIEF.md) and one ready prompt. Stage 2a was not started in S064. | ROADMAP Stage 1 clean-exit rule; D-176; D-178. |
+
+**Active owner blockers: NONE.** S065 (Stage 2a) is READY and runnable. The
+Stage 3 portal submission and the Stage 4 release decision remain future
+owner blockers. Before any submission, the C-273 residual surfaces must be
+rechecked; the owner's institutional access would help. Before any E-JC filing
+the owner must still personally check and rewrite the proof. No posting,
+filing, Palomar action or contact occurred in S064.

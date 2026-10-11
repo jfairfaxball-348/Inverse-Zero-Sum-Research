@@ -1,6 +1,6 @@
 # Target register
 
-**Current S063 checkpoint (D-174, 2026-10-10):** the selected exact target is now **CAND-03G, the general-rank extension of CAND-03**, frozen [below](#d-174--s063-target-change--cand-03g-general-rank-extension-of-cand-03-2026-10-10). Stage 1 (prior-art/novelty audit, S064) is READY. The mathematical-investigation gate is CLOSED for CAND-03G until Stage 1 closes cleanly. B-016 was resolved by owner withdrawal of the CAND-03 release. Current state is `STATE.json`; dated records below keep their historical scope.
+**Current S064 checkpoint (D-179/D-180, 2026-10-11):** CAND-03G Stage 1 prior-art audit COMPLETED. Claim A is source-known: Gao et al. 2024 Lemma 3.3(3) with the classical identity `eta(C_3^r)=2c_r-1`. It is credited, and the contribution is re-scoped to Claim B under D-174. For Claim B and the rank-3 case, no exact/equivalent/stronger-implying prior art was located in the documented Stage 1 audit. This is not a novelty claim. Mathematical investigation is OPEN for Stage 2a's bounded role only. S065 (Stage 2a) is READY. No owner blocker is active; nothing has been posted, filed or sent to anyone. The frozen D-175 statement is unchanged; see the [S064 Stage 1 outcome](#s064-stage-1-outcome--claim-a-source-known-contribution-re-scoped-to-claim-b-2026-10-11). Current state is `STATE.json`; dated records below keep their historical scope.
 
 
 **Current protocol note:** historical entries below preserve the gate rules
@@ -1614,3 +1614,29 @@ minus `0`), and any numerical value of `c_r` for `r>=7`.
 Stages are never compressed. PALOMAR v1, the frozen CAND-03 theorem, all
 attribution and disclosure duties, and the owner's E-JC personal proof
 check/rewrite are preserved throughout.
+
+## S064 Stage 1 outcome — Claim A source-known, contribution re-scoped to Claim B (2026-10-11)
+
+Authority: D-179, D-180;
+[S064 audit](../sessions/S064/PRIOR_ART_AUDIT.md). The frozen D-175 statement
+above (D1–D8, Claims A and B, `c_r` a parameter) is **unchanged**.
+
+| Audit object | Stage 1 result | Status now |
+| --- | --- | --- |
+| **Claim A** | **PA-EQUIV**: Gao et al. 2024 Lemma 3.3(3) `eta^N(C_3^r)=3(eta(C_3^r)-1)/2+1`, all `r`, with `eta(C_3^r)=2c_r-1` (Harborth 1973; Edel et al. 2007 Lemmas 2.3, 5.2; Fan–Gao–Zhong 2011 Prop. 4.1) | **SOURCE-KNOWN, credited** (C-268). Not part of the claimed contribution. |
+| **Claim B**, general `r`, both directions | No exact/equivalent/stronger-implying prior art located in the documented Stage 1 audit. PA-INGREDIENT: ZS-72 Lemma 3.3(2) `U^3` construction (inside a proof); ZS-72 Lemma 3.3(3) proof (proof-interior overlap, no equality case stated); published `r=2` inverse (GPZ13, Fan–Zhong 2025 Thm 1.3 at `m=3`) | **The contribution (re-scoped, D-179).** Unverified (C-263) until Stage 2a. |
+| **Rank-3 case** (CAND-03) | Same non-hit wording; S042/S062 baseline unchanged; no general-rank source specializes to it | Proved, Lean-verified, Palomar-registered (v1). |
+
+**Values** (C-270, source-checked): `c_1..c_6=2,4,9,20,45,112`; Claim A
+values `4,10,25,58,133,334`; Claim B lengths `3,9,24,57,132,333`;
+`c_r` for `r>=7` unknown.
+
+**Significance risk (C-272).** Claim B's novelty is not established and was
+not claimed. Its significance may be judged against the published Lemma 3.3(3)
+upper-bound proof. Stage 2a records the exact step correspondence; Stage 4
+decides positioning and the paper type (full article or short note).
+
+**Next:** Stage 2a, S065
+([brief](S065_CAND03G_STAGE2A_INFORMAL_VERIFICATION_BRIEF.md)).
+`mathematical_investigation_gate` is OPEN for that bounded role only.
+Residual recheck surfaces: C-273.

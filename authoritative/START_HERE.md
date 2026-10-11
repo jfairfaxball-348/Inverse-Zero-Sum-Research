@@ -15,39 +15,50 @@ Repository: https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research
    S012 progressive-block repair, S013 source-route comparison, and S014–S019
    ambient/counting/incidence chain.
 
-## Current state — S063 owner redirect (D-174); CAND-03G Stage 1 READY
+## Current state — S064 Stage 1 COMPLETED; CAND-03G Stage 2a READY
 
-**Owner direction D-174 (2026-10-10).** B-016 is resolved by owner decision,
-not by a licence choice. The CAND-03 S061 manuscript is **withdrawn from
-release**: no arXiv posting and no E-JC filing. The [paper](../paper/main.pdf),
-the S062 [release worksheet](../paper/ARXIV_RELEASE.md) and package, and
+**Owner direction D-174 (2026-10-10).** B-016 was resolved by owner decision.
+The CAND-03 S061 manuscript is **withdrawn from release** (no arXiv, no E-JC).
+The [paper](../paper/main.pdf), the S062
+[release worksheet](../paper/ARXIV_RELEASE.md) and package, and
 [Palomar v1](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-09-000011&version=1)
 (immutable source `c5f9e5e822020688c72b2a3bfacbf147a801e219`, provider run
 `37813245157` PASS) are kept **unchanged as historical records**. The
-worksheet's "live B-016" wording has no current force. The registered
-length-24 `C_3^3` theorem remains valid.
+registered length-24 `C_3^3` theorem remains valid.
 
 **Selected target: CAND-03G**, the general-rank extension, frozen by D-175 in
 the [target register](TARGET_REGISTER.md#d-174--s063-target-change--cand-03g-general-rank-extension-of-cand-03-2026-10-10).
-With `c_r` the largest cap size in `AG(r,3)`: Claim A is
-`eta^N(C_3^r)=3c_r-2`; Claim B says that at length `3c_r-3` a sequence is
-avoiding iff `S=U^3` up to positions with `U` squarefree, short-free and of
-length `c_r-1`. At `r=3` Claim B is exactly the registered CAND-03 theorem.
-The candidate proof is **unverified external AI input**
-(C-262–C-266; [AI-use record](AI_USE_RECORD.md)).
+With `c_r` the largest cap size in `AG(r,3)`, Claim A is
+`eta^N(C_3^r)=3c_r-2`. Claim B says that at length `3c_r-3` a sequence is
+avoiding iff `S=U^3` up to positions, with `U` squarefree, short-free and of
+length `c_r-1`. At `r=3`, Claim B is exactly the registered CAND-03 theorem.
+
+**Stage 1 result (S064, D-179/D-180;
+[audit](../sessions/S064/PRIOR_ART_AUDIT.md)):**
+
+- **Claim A is already known:** Gao et al. 2024 Lemma 3.3(3),
+  `eta^N(C_3^r)=3(eta(C_3^r)-1)/2+1`, with `eta(C_3^r)=2c_r-1` (Harborth 1973;
+  Edel et al. 2007). It is **credited**, and the CAND-03G **contribution is
+  re-scoped to Claim B** under D-174. The frozen statement is unchanged.
+- **Claim B (general `r`) and the rank-3 case:** no
+  exact/equivalent/stronger-implying prior art was located in the documented
+  Stage 1 audit. This is not a novelty claim. The published Lemma 3.3(3)
+  proof overlaps Claim B's likely technique but states no equality case. That
+  is a **significance risk** for Stage 4 (C-272).
+- `c_1..c_6=2,4,9,20,45,112` and the `eta`/`s` identities are source-checked
+  (C-270). Residual inaccessible surfaces are recheck obligations (C-273).
+- Claim B itself is still **unverified external AI input**
+  (C-263; [AI-use record](AI_USE_RECORD.md)).
 
 - **Staged route** ([ROADMAP](ROADMAP.md#cand-03g-staged-route-d-174-frozen-at-s063)):
-  Stage 1 prior-art/novelty audit → 2a informal verification → 2b Lean →
-  3 new Palomar registration (owner portal blocker) → 4 paper (owner release
-  blocker). Stages are never compressed.
-- **Next: S064 = Stage 1 only**, [brief](S064_CAND03G_STAGE1_PRIOR_ART_AUDIT_BRIEF.md),
+  Stage 1 (done) → 2a informal verification → 2b Lean → 3 new Palomar
+  registration (owner portal blocker) → 4 paper (owner release blocker).
+  Stages are never compressed.
+- **Next: S065 = Stage 2a only**, [brief](S065_CAND03G_STAGE2A_INFORMAL_VERIFICATION_BRIEF.md),
   ready prompt in `authoritative/NEXT_SESSION_PROMPT.md`.
-- Gates: target OPEN, publication OPEN, **mathematical investigation CLOSED
-  for CAND-03G until Stage 1 closes cleanly** (D-176), external review CLOSED.
+- Gates: target OPEN, publication OPEN, **mathematical investigation OPEN for
+  Stage 2a's bounded role only** (D-180), external review CLOSED.
 - **Active owner blockers: NONE.**
-- Claim A has a high-probability prior-art lead (ZS-72 Lemma 3.3(3), recorded
-  at S039). If only Claim A is known, the target is re-scoped to Claim B under
-  D-174.
 - C-193/D-129 are flagged for Stage 2a reassessment and left unedited.
 - Before any E-JC filing the owner must still personally check and rewrite the
   proof. No posting, filing, Palomar action or contact is allowed without
