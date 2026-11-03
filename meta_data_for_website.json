@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "title": "An Inverse Theorem for Extremal Generalized Narkiewicz Sequences over C₃³",
+  "slug": "inverse-zero-sum-classification",
+  "status": "Awaiting arXiv",
+  "headline": "A Lean-verified inverse classification of extremal length-24 sequences in the three-dimensional group over the field of three elements.",
+  "year": 2026,
+  "date": "2026-10-09",
+  "description": "For the three-dimensional group over the field of three elements, earlier work established a threshold of 25 terms for forcing two short zero-sum subsequences whose intersection has nonzero sum. This project proves the exact length-24 inverse theorem for nonzero entries: avoidance of such a pair holds if and only if the sequence is, up to a permutation of its original positions, three copies of eight distinct elements with no nonempty zero sum of length at most three. Both directions are formalised in Lean 4 and registered with Palomar. An illustrated manuscript and reproducible arXiv source package are prepared, but the repository records no arXiv posting or journal submission.",
+  "summary": "The classification preserves the original positions of each term, so it is stronger than an analysis of the set of distinct values alone. The proof draws on published zero-sum thresholds, constructions and residual-sequence lemmas, with a new necessity argument constraining all possible extremal multiplicities. Its established scope is this particular group and length; the documented prior-art search is not a certification of worldwide novelty or priority.",
+  "topics": [
+    "Additive combinatorics",
+    "Zero-sum theory",
+    "Finite abelian groups",
+    "Inverse theorems",
+    "Formal verification"
+  ],
+  "github_url": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research",
+  "palomar_id": "PALOMAR-2026-10-09-000011",
+  "palomar_url": "https://palomar-registry.org/entry?id=PALOMAR-2026-10-09-000011&version=1",
+  "paper_url": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/blob/main/paper/main.pdf",
+  "arxiv_id": null,
+  "arxiv_url": null,
+  "doi": null,
+  "formalisation_system": "Lean 4 with Mathlib",
+  "verification": "The exact two-direction positional classification is proved by InverseZeroSum.Candidate3.frozenClassification. Palomar Registry v1 records successful Lean kernel and independent NanoDa/con-ron checks of the pinned proof (mechanical verification run 37813245157); the repository's S062 Lean and manuscript-validation workflows also passed. These checks do not establish historical priority or journal publication.",
+  "attribution": "John Fairfax-Ball is the named author and responsible maintainer. This project supplies the complete inverse necessity and equality argument building on published threshold, construction and residual-sequence results by Gao and collaborators (2024) and Fan and collaborators (2012); those earlier results are credited rather than claimed as new. Substantial OpenAI ChatGPT assistance contributed to mathematical exploration, proof construction, Lean formalisation, checking and documentation under the author's direction.",
+  "original_source": "W. Gao, W. Hui, X. Li, Y. Li, Y. Qu and Q. Zhong, “On generalized Narkiewicz constants of finite abelian groups,” Acta Arithmetica 212(2) (2024), 133–172, DOI: 10.4064/aa230118-1-10 (known threshold, threefold construction and packing/deletion method). Y. Fan, W. Gao, G. Wang, Q. Zhong and J. Zhuang, “On Short Zero-Sum Subsequences of Zero-Sum Sequences,” Electronic Journal of Combinatorics 19(3) (2012), P31, DOI: 10.37236/2602 (short-free residual structure, including the proof of Lemma 27(3)).",
+  "featured": false,
+  "additional_links": [
+    {
+      "label": "Lean formalisation of the classification",
+      "url": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/blob/main/InverseZeroSum/Candidate3.lean"
+    },
+    {
+      "label": "Detailed prior-art audit (S042)",
+      "url": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/blob/main/sessions/S042/DEEP_PRIOR_ART_AUDIT.md"
+    },
+    {
+      "label": "Manuscript source-and-proof audit",
+      "url": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/blob/main/paper/SOURCE_AND_PROOF_CHECK.md"
+    },
+    {
+      "label": "arXiv release preparation worksheet",
+      "url": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/blob/main/paper/ARXIV_RELEASE.md"
+    },
+    {
+      "label": "S062 successful manuscript validation",
+      "url": "https://github.com/jfairfaxball-348/Inverse-Zero-Sum-Research/actions/runs/37972705667"
+    },
+    {
+      "label": "Palomar mechanical verification run",
+      "url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/37813245157"
+    }
+  ]
+}
